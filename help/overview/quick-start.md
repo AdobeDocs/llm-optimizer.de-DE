@@ -1,9 +1,9 @@
 ---
 title: Schnellstart
-description: Erfahren Sie, wie Sie mit LLM Optimizer beginnen und den Onboarding-Prozess durchlaufen.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+description: Erste Schritte mit Adobe LLM Optimizer - Integrieren Sie Ihre Marke, erschließen Sie Einblicke in die KI-Sichtbarkeit und erkunden Sie Dashboards, um die Suchleistung zu verbessern.
+source-git-commit: db42183c922e6156a890e4e56732f348c26e7e44
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ Der Onboarding-Prozess beginnt mit dem Onboarding Ihrer Domain. Der Prozess unte
 
 ### AEM Cloud-Kunden
 
-AEM Cloud-Kunden (Cloud Service/Managed Services/Edge Delivery Service) sehen die Option, LLM Optimizer über die Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
+AEM Cloud-Kunden (Cloud Service/Managed Services/Edge Delivery Service) sehen die Option, LLM Optimizer über die Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
 
 >[!NOTE]
 >Neu hinzugefügte Eingabeaufforderungen werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist. AEM Cloud-Kunden (Cloud Service, Managed Services/Edge Delivery Service) können die kostenlose Testversion von LLM Optimizer verwenden. Die Verwendung von mehr als 200 Eingabeaufforderungen erfordert eine separate Lizenzvereinbarung. Der Zugriff erfolgt „wie besehen“ und „wie verfügbar“ und kann von Adobe jederzeit geändert, eingeschränkt oder entfernt werden. Wenden Sie sich an Ihren [Kundenbetreuer], um weitere Informationen zu erhalten.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
-Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
+Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
 
 ![LLM Optimizer-Domain](/help/overview/assets/domain.png)
 
@@ -43,7 +43,7 @@ Darüber hinaus müssen Sie für die Traffic-Analyse auch die CDN-Protokollweite
 
 ### Nicht-AEM Cloud-Kunden
 
-Nach Vertragsunterzeichnung erfolgt das Onboarding über den Befehl slackbot für die Domain, die bei LLM Optimizer integriert werden soll. Sobald dieses Onboarding abgeschlossen ist, können Sie sich über [https://llmo.now bei LLM Optimizer &#x200B;](https://llmo.now).
+Nach Vertragsunterzeichnung erfolgt das Onboarding über den Befehl slackbot für die Domain, die bei LLM Optimizer integriert werden soll. Sobald dieses Onboarding abgeschlossen ist, können Sie sich über [https://llmo.now bei LLM Optimizer ](https://llmo.now).
 
 ### Schritt 2: Automatisches Vorausfüllen von Insights
 
