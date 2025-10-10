@@ -21,7 +21,7 @@ Der Onboarding-Prozess beginnt mit dem Onboarding Ihrer Domain. Der Prozess unte
 
 ### AEM Cloud-Kunden
 
-AEM Cloud-Kunden (Cloud Service/Managed Services/Edge Delivery Service) sehen die Option, LLM Optimizer über die Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
+AEM Cloud-Kunden (Cloud Service/Managed Services/Edge Delivery Service) sehen die Option, LLM Optimizer über die Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
 
 >[!NOTE]
 >Neu hinzugefügte Eingabeaufforderungen werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist. AEM Cloud-Kunden (Cloud Service, Managed Services/Edge Delivery Service) können die kostenlose Testversion von LLM Optimizer verwenden. Die Verwendung von mehr als 200 Eingabeaufforderungen erfordert eine separate Lizenzvereinbarung. Der Zugriff erfolgt „wie besehen“ und „wie verfügbar“ und kann von Adobe jederzeit geändert, eingeschränkt oder entfernt werden. Wenden Sie sich an Ihren [Kundenbetreuer], um weitere Informationen zu erhalten.
