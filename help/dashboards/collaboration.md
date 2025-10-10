@@ -1,20 +1,20 @@
 ---
 title: Zusammenarbeit
 description: Dies ist die Artikelübersicht.
-source-git-commit: 57d086bbdb08200d832a1374ee356e5357a64d94
+source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 4%
+source-wordcount: '94'
+ht-degree: 1%
 
 ---
 
 
-# Überblick
+# Zusammenarbeit
 
-Mit Collaboration können Sie Teammitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen, damit jeder an einem Ort auf Einblicke und Analysen zugreifen kann. Durch das Hinzufügen von Kollegen stellen Sie sicher, dass Marketing-, SEO-, PR- und technische Teams nahtlos an Verbesserungen der Markenwahrnehmung zusammenarbeiten, Erkenntnisse austauschen und koordinierte Maßnahmen im Hinblick auf Opportunities ergreifen können.
+Mit Collaboration können Sie Teammitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen, damit jeder von einem Ort aus auf Einblicke und Analysen zugreifen kann. Durch das Hinzufügen von Kollegen stellen Sie sicher, dass Marketing-, SEO-, PR- und technische Teams nahtlos an Verbesserungen der Markenwahrnehmung zusammenarbeiten, Erkenntnisse austauschen und koordinierte Maßnahmen im Hinblick auf Opportunities ergreifen können.
 
-**Bild hier hinzufügen**
+## Einladen von Team-Mitgliedern
 
-## Filter
+Sie können Mitglieder des Teams einladen, indem Sie ihre E-Mail-Adresse in das Feld **E-Mail** einfügen und auf **Einladung senden** klicken. Wenn sie zustimmen, werden sie in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens aufgenommen.
 
-Oben im Dashboard können Sie Ihre Ansicht wie folgt verfeinern:
+![Collaboration-Einladung](/help/dashboards/assets/collaboration.png)

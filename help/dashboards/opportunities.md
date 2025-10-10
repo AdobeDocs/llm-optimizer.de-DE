@@ -1,9 +1,9 @@
 ---
 title: Optimierungsmöglichkeiten
 description: Dies ist die Artikelübersicht.
-source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
+source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
 
 ### Chancen zur Wiederherstellung der Inhaltssichtbarkeit {#recover-contet}
 
-Wie bereits erwähnt, kennzeichnet die Opportunity für die Sichtbarkeit von Inhalten Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund von Client-seitigem Rendering verloren gehen. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agenten-Ansicht fehlen, sodass Sie Sichtbarkeitslücken identifizieren können. Unterstützt wird sie auch durch eine Edge-basierte Vorab-Rendering-Funktion, mit der mehr HTML-Inhalte für den agenten Traffic bereitgestellt werden können, ohne dass Änderungen am Content Management System (CMS) erforderlich sind. Diese Funktion befindet sich derzeit im **Early Access** und erfordert außerdem die Einrichtung durch das LLMO-Team, um eine optimierte Inhaltsbereitstellung zu ermöglichen.
+Wie bereits erwähnt, kennzeichnet die Opportunity für die Sichtbarkeit von Inhalten Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund von Client-seitigem Rendering verloren gehen. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agenten-Ansicht fehlen, sodass Sie Sichtbarkeitslücken identifizieren können. Unterstützt wird sie auch durch eine Edge-basierte Vorab-Rendering-Funktion, mit der mehr HTML-Inhalte für den agenten Traffic bereitgestellt werden können, ohne dass Änderungen am Content Management System (CMS) erforderlich sind. Diese Funktion befindet sich derzeit im Early Access-Modus und muss vom LLMO-Team eingerichtet werden. Bitte kontaktieren Sie `llmo-at-edge@adobe.com`, um die Opportunity für die Sichtbarkeit des Inhalts zu aktivieren.
 
 ### Weitere Tools
 
