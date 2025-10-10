@@ -28,7 +28,7 @@ AEM Cloud-Kunden (Cloud Service/Managed Services/Edge Delivery Service) sehen di
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
-Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
+Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
 
 ![LLM Optimizer-Domain](/help/overview/assets/domain.png)
 
@@ -43,7 +43,7 @@ Darüber hinaus müssen Sie für die Traffic-Analyse auch die CDN-Protokollweite
 
 ### Nicht-AEM Cloud-Kunden
 
-Nach Vertragsunterzeichnung erfolgt das Onboarding über den Befehl slackbot für die Domain, die bei LLM Optimizer integriert werden soll. Sobald dieses Onboarding abgeschlossen ist, können Sie sich über [https://llmo.now bei LLM Optimizer ](https://llmo.now).
+Nach Vertragsunterzeichnung erfolgt das Onboarding über den Befehl slackbot für die Domain, die bei LLM Optimizer integriert werden soll. Sobald dieses Onboarding abgeschlossen ist, können Sie sich über [https://llmo.now bei LLM Optimizer &#x200B;](https://llmo.now).
 
 ### Schritt 2: Automatisches Vorausfüllen von Insights
 
