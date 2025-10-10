@@ -64,7 +64,7 @@ Um einen Markenalias zu löschen, klicken Sie in der Alias-Liste auf das Symbol 
 
 Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Dateneinblicke zur Markenpräsenz](/help/dashboards/brand-presence.md#data-insights) hochladen und die Liste mit Eingabeaufforderungen und Themen aus dieser Analyse füllen. Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
 
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
 
 1. Klicken Sie im Dashboard auf **CSV hochladen**.
 2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.

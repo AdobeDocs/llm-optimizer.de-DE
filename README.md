@@ -17,7 +17,7 @@ Für dieses Projekt gilt der [Adobe Open Source-Verhaltenskodex](code-of-conduct
 
 **Wenn Sie kein Adobe-Mitarbeiter sind** können Sie einen externen Community-Beitrag einreichen. Community-Beiträge werden in unsere internen Systeme importiert und im öffentlichen Repository bearbeitet und zusammengeführt. Das öffentliche Repository wird dann mit den neuesten Änderungen synchronisiert und im privaten Repository zusammengeführt.
 
-**Wenn Sie Adobe-Mitarbeiter sind** können Sie direkt zum privaten [Adobe GitHub-Repository ](https://git.corp.adobe.com/AdobeDocs/). Weitere Informationen finden Sie im Adobe Experience League Authoring-Handbuch für Adobe-Mitarbeiter.
+**Wenn Sie Adobe-Mitarbeiter sind** können Sie direkt zum privaten [Adobe GitHub-Repository &#x200B;](https://git.corp.adobe.com/AdobeDocs/). Weitere Informationen finden Sie im Adobe Experience League Authoring-Handbuch für Adobe-Mitarbeiter.
 
 ## Externe Mitwirkende
 
