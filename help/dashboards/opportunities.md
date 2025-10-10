@@ -1,9 +1,9 @@
 ---
 title: Optimierungsmöglichkeiten
 description: Dies ist die Artikelübersicht.
-source-git-commit: 77bddfa7351d573c20a0f68a08b69000bc06beb8
+source-git-commit: 8c38027e46b53d85776fffe17597883c742235d6
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '610'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,16 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
 | Zusammenfassen langer Absätze | Inhalt (OnSite) | Erkennt Absätze, die empfohlene Längenschwellen überschreiten. Zeigt betroffene URLs und übergroße Textbausteine an. | Erstellen Sie Abstracts oder teilen Sie langen Text in kürzere, überschaubare Abschnitte auf. |
 | Empfohlene strukturierte Inhalte (FAQs) | Inhalt (OnSite) | Erkennt Eingabeaufforderungen mit hoher Popularität ohne übereinstimmende FAQ-Einträge. Zeigt verwandte Eingabeaufforderungen, Kategorien und betroffene URLs an. | Fügen Sie häufig gestellte Fragen (FAQ) zu Schemablöcken mit knappen Antworten hinzu, um gängige Abfragen abzugleichen. |
 | Fehlenden Hrefang erkennen | Inhalt (OnSite) | Markiert Seiten ohne Heflang-Attribute. Betroffene URLs und erwartete Abdeckung nach Sprache/Region. | Implementieren Sie Heflang-Tags, um die richtigen lokalisierten Versionen anzugeben. |
-| Fehlende Kanonikale erkennen | Inhalt (OnSite) | Erkennt Absätze, die empfohlene Längenschwellen überschreiten. Zeigt betroffene URLs und übergroße Textbausteine an. | Erstellen Sie Abstracts oder teilen Sie langen Text in kürzere, überschaubare Abschnitte auf. |
+| Fehlende Kanonikale erkennen | Inhalt (OnSite) | Sucht nach Seiten ohne kanonische Tags oder mit widersprüchlichen Tags. Listet die betroffenen URLs und Duplikate auf. | Fügen Sie kanonische Tags hinzu, die auf die bevorzugte Version jeder Seite verweisen. Sicherstellung einer konsistenten Nutzung über Varianten hinweg. |
 | Leere Überschriften erkennen | Inhalt (OnSite) | Kennzeichnet Seiten, bei denen Überschriften-Tags vorhanden sind, aber keinen Text enthalten. Zeigt URL und Speicherort leerer Tags an. | Fügen Sie Überschriften, die den darunter liegenden Inhalt widerspiegeln, beschreibenden Text hinzu. |
 | Doppelte Überschriften erkennen | Inhalt (OnSite) | Scannt HTML-Überschriften-Tags und kennzeichnet wiederholte Überschriften. Zeigt betroffene URLs und duplizierte Textausschnitte an. | Überschriften ändern, um eindeutig zu sein und die Hierarchie beizubehalten (H1 → H2 → H3). Doppelte Abschnitte zusammenführen oder umbenennen. |
 | Erkennen von blockiertem Agentenverkehr | Technische GEO | Analysiert CDN-Protokolle auf blockierte Anfragen bekannter KI-Agenten (z. B. GPTBot, PerplexBot). meldet betroffene URLs und Agenten. | Aktualisieren Sie die robots.txt- oder Server-Konfigurationen, um ggf. Zugriff für unterstützte KI-Crawler zu ermöglichen. |
 | 404s/403s/5xx Probleme erkennen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. meldet Häufigkeit, betroffene URLs und geschätzte verlorene Treffer. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200 Antworten zurückgeben. |
+
+### Chancen zur Wiederherstellung der Inhaltssichtbarkeit {#recover-contet}
+
+Wie bereits erwähnt, kennzeichnet die Opportunity für die Sichtbarkeit von Inhalten Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund von Client-seitigem Rendering verloren gehen. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agenten-Ansicht fehlen, sodass Sie Sichtbarkeitslücken identifizieren können. Unterstützt wird sie auch durch eine Edge-basierte Vorab-Rendering-Funktion, mit der mehr HTML-Inhalte für den agenten Traffic bereitgestellt werden können, ohne dass Änderungen am Content Management System (CMS) erforderlich sind. Diese Funktion befindet sich derzeit im **Early Access** und erfordert außerdem die Einrichtung durch das LLMO-Team, um eine optimierte Inhaltsbereitstellung zu ermöglichen.
+
+### Weitere Tools
+
+Der [LLM-Sichtbarkeitsprüfer](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) ist eine Chrome-Erweiterung, mit der Sie genau sehen können, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung. Mit einem einzigen Klick können Benutzer die maschinelle Lesbarkeit jeder Site bewerten und einen Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen. Außerdem schätzt, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte.
