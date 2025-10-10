@@ -1,9 +1,9 @@
 ---
 title: Kundenkonfiguration
-description: Dies ist die Artikelübersicht.
-source-git-commit: 5dbf794b87df92583daec83ab02063821ee7a412
+description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
+source-git-commit: 7d01b35cb2153e020f0b64e493aad263fb9bb09f
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '736'
 ht-degree: 1%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Kundenkonfiguration
 
-In der Kundenkonfiguration legen Sie fest, wie Ihre Marke innerhalb der Plattform überwacht und analysiert wird. Sie können Kategorien (z. B. Geschäftsbereiche oder Produktlinien) anpassen, Mitbewerber verfolgen und Aliase für Markenbezeichnungen hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+In der Kundenkonfiguration legen Sie fest, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird. Sie können Kategorien (z. B. Geschäftsbereiche oder Produktlinien) anpassen, Mitbewerber verfolgen und Aliase für Markenbezeichnungen hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
 
 ![Kundenkonfigurations-Dashboard](/help/dashboards/assets/customer-config.png)
 
@@ -64,7 +64,7 @@ Um einen Markenalias zu löschen, klicken Sie in der Alias-Liste auf das Symbol 
 
 Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Dateneinblicke zur Markenpräsenz](/help/dashboards/brand-presence.md#data-insights) hochladen und die Liste mit Eingabeaufforderungen und Themen aus dieser Analyse füllen. Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
 
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
 
 1. Klicken Sie im Dashboard auf **CSV hochladen**.
 2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.
