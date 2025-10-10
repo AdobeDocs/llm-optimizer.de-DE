@@ -1,9 +1,9 @@
 ---
 title: URL-Inspektor
-description: Dies ist die Artikelübersicht.
-source-git-commit: e35ddb9b055d2f974fd94b3a21e13e92d05c8799
+description: Erfahren Sie, wie Sie mit dem URL-Inspektor analysieren können, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---

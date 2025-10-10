@@ -1,9 +1,9 @@
 ---
 title: Optimierungsmöglichkeiten
-description: Dies ist die Artikelübersicht.
-source-git-commit: ea8434daef2402f0dc9ac2d4f6060c38c9137fe6
+description: Erfahren Sie, wie Sie mit dem Opportunities-Dashboard automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Sichtbarkeit Ihrer Marke zu erhöhen.
+source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
