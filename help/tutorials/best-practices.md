@@ -85,7 +85,7 @@ Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für eine bessere Sichtba
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
 Im Folgenden finden Sie einige Best Practices zur Optimierung:
 
@@ -117,7 +117,7 @@ Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit 
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
 
 Wichtige externe Kanäle:
