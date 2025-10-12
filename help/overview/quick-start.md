@@ -1,7 +1,7 @@
 ---
 title: Schnellstart
 description: Erste Schritte mit Adobe LLM Optimizer - Integrieren Sie Ihre Marke, erschließen Sie Einblicke in die KI-Sichtbarkeit und erkunden Sie Dashboards, um die Suchleistung zu verbessern.
-source-git-commit: c64995176f6cb50bf23543fe95471c4723ae9a10
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -32,14 +32,14 @@ Im folgenden Abschnitt finden Sie Details zum Aktivieren der kostenlosen Testver
 
 ### AEM Cloud-Kunden
 
-Wenn Sie AEM Cloud-Kunde sind, haben Sie die Möglichkeit, LLM Optimizer mithilfe der Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
+Wenn Sie AEM Cloud-Kunde sind, haben Sie die Möglichkeit, LLM Optimizer mithilfe der Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
 
 >[!NOTE]
 >Neu hinzugefügte Eingabeaufforderungen werden erst dann im Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) angezeigt, wenn die Verarbeitung abgeschlossen ist. AEM Cloud-Kunden (Cloud Service, Managed Services/Edge Delivery Service) können die kostenlose Testversion von LLM Optimizer verwenden. Die Verwendung von mehr als 200 Eingabeaufforderungen erfordert eine separate Lizenzvereinbarung. Der Zugriff erfolgt „wie besehen“ und „wie verfügbar“ und kann von Adobe jederzeit geändert, eingeschränkt oder entfernt werden. Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie weitere Informationen benötigen.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
-Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
+Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
 
 ![LLM Optimizer-Domain](/help/overview/assets/domain.png)
 
@@ -50,7 +50,7 @@ Um einen Trigger der Markenpräsenzanalyse zu erhalten, müssen Sie Kategorien, 
 
 ![Analyse der Markenpräsenz](/help/overview/assets/bp-analysis.png)
 
-Darüber hinaus müssen Sie für die Traffic[Analyse auch &#x200B;](#step-4)CDN-Protokollweiterleitung“ konfigurieren. LLM Optimizer erfordert Daten zur Markenpräsenz sowie Einblicke aus dem Agent- und Empfehlungs-Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zu geben, um die KI-Sichtbarkeit zu erhöhen.
+Darüber hinaus müssen Sie für die Traffic[Analyse auch ](#step-4)CDN-Protokollweiterleitung“ konfigurieren. LLM Optimizer erfordert Daten zur Markenpräsenz sowie Einblicke aus dem Agent- und Empfehlungs-Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zu geben, um die KI-Sichtbarkeit zu erhöhen.
 
 ### Nicht-AEM Cloud-Kunden
 
@@ -58,7 +58,7 @@ Sobald der Geschäftsvertrag abgeschlossen ist, erfolgt das Onboarding über den
 
 ### Schritt 2: Kategorien, Themen und Eingabeaufforderungen anpassen
 
-Um einen Trigger der Markenpräsenzanalyse zu erhalten und das Dashboard mit Einblicken in die Sichtbarkeit Ihrer Marke zu füllen, müssen Sie Kategorien, Themen und Eingabeaufforderungen anpassen. Diese Konfiguration wird im Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Um einen Trigger der Markenpräsenzanalyse zu erhalten und das Dashboard mit Einblicken in die Sichtbarkeit Ihrer Marke zu füllen, müssen Sie Kategorien, Themen und Eingabeaufforderungen anpassen. Diese Konfiguration wird im Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
 
 ![Kundenkonfigurations-Dashboard](/help/overview/assets/prompt-creation.png)
 
@@ -79,11 +79,11 @@ Sobald Sie mit der Einführung Ihrer Domain Kategorien und Themen angegeben habe
 
 ### Schritt 4: Bereitstellen von Informationen für die CDN-Protokollweiterleitung {#step-4}
 
-Um Einblicke in den Agent-Traffic und den Verweisdatenverkehr zu entsperren, müssen Sie Informationen für die CDN-Protokollweiterleitung angeben. Sie können ihn über das Dashboard für Kundenkonfigurationen hinzufügen, indem Sie auf die Registerkarte CDN-Konfiguration klicken und auf **Integriertes CDN**.
+Um Einblicke in den Agent-Traffic und den Verweisdatenverkehr zu entsperren, müssen Sie Informationen für die CDN-Protokollweiterleitung angeben. Sie kann über das Dashboard [Kundenkonfiguration“ hinzugefügt werden](/help/dashboards/customer-configuration.md) indem Sie zur Registerkarte **CDN-Konfiguration** navigieren und auf **Integriertes CDN** klicken.
 
 ![Kundenkonfigurations-CDN](/help/overview/assets/cc-cdn.png)
 
-Wenn zuvor kein CDN-Anbieter ausgewählt wurde, werden Sie alternativ dazu aufgefordert, beim erstmaligen Zugriff auf die Dashboards Agent und Referrer-Traffic eine CDN-Protokollweiterleitung hinzuzufügen. Weitere Informationen finden Sie unter:
+Wenn zuvor kein CDN-Anbieter hinzugefügt wurde, werden Sie alternativ dazu aufgefordert, beim erstmaligen Zugriff auf die Dashboards Agent und Verweisdatenverkehr die CDN-Protokollweiterleitung hinzuzufügen. Weitere Informationen finden Sie unter:
 
 * [Agenturverkehr](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Empfehlungsverkehr](/help/dashboards/referral-traffic.md#setup#setup)

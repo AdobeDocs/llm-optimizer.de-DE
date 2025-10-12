@@ -1,9 +1,9 @@
 ---
 title: Agenturverkehr
 description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1127'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,26 @@ Auf dieser Seite wird Folgendes beschrieben:
 * [Top- und Bottom-Mover](#top-bottom-movers)
 * [Benutzeragent- und URL-Leistungsanalyse](#user-url-performance)
 
-## CDN-Setup {#cdn-setup}
+## CDN-Protokollweiterleitung {#cdn-setup}
 
-Bei der ersten Anmeldung ist das Dashboard für den Agentenverkehr leer. Um agentische Interaktionen anzuzeigen, müssen Sie die **CDN-Protokollweiterleitung“**. **TBD Verweisen Sie auf das CDN-Setup in „Schnellstart/Onboarding“**
+Ohne **CDN-Protokollweiterleitung** ist das Agent-Traffic-Dashboard leer. Um agentische Interaktionen anzuzeigen, müssen Sie die **CDN-Protokollweiterleitung“**.  Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
 
-![CDN-Setup](/help/dashboards/assets/ag-log-forward.png)
+![CDN-Setup](/help/dashboards/assets/ag-log-forward1.png)
+
+Wählen Sie **Wechseln zur Konfiguration** aus und Sie navigieren automatisch zur Registerkarte **CDN-Konfiguration** des Dashboards [Kundenkonfiguration](/help/dashboards/customer-configuration.md).
+
+![Integriertes CDN-Setup](/help/dashboards/assets/ag-log-forward2.png)
+
+Wählen Sie auf dieser Registerkarte die Option **Integriertes CDN** aus. Daraufhin wird das Fenster CDN-Anbieter angezeigt.
+
+![CDN-Anbieter](/help/dashboards/assets/ag-log-forward3.png)
+
+Im Fenster **Onboarding CDN Provider**:
 
 1. Wählen Sie Ihren CDN-Provider aus (z. B. Akamai, Adobe-Managed Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare oder andere).
-2. Primäre Kontakt-E-Mail eingeben.
-3. Klicken Sie **Aktivierungsanfrage**, um die Protokollweiterleitung zu aktivieren.
+2. Klicken Sie **Onboard**, um die Protokollweiterleitung zu aktivieren.
+
+Wenn Sie **Sonstige** auswählen, müssen Sie sich an Adobe wenden, um Hilfe zu erhalten.
 
 Nach der Aktivierung werden Protokolle aufgenommen und im Dashboard Metriken wie Gesamtanzahl der Agenteninteraktionen, Erfolgsrate, Treffer nach Markt, Analyse der Benutzeragenten und Leistung auf URL-Ebene angezeigt.
 
@@ -39,11 +50,11 @@ Nach der Aktivierung werden Protokolle aufgenommen und im Dashboard Metriken wie
 Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. Die ausgewählten Filter wirken sich auf **alle** Abschnitte im Dashboard aus. Sie können Folgendes anpassen:
 
 * **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
-* **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien. Sie können diesem Feld auch benutzerdefinierte Kategorien hinzufügen (**SR**-how?).
+* **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
 * **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
 * **Agent-Typ** - Filtern Sie nach dem Typ des KI-Agenten, der mit Ihrer Site interagiert hat. Sie können nach Crawlern, Chatbots oder allen Agenten filtern.
-* **Erfolgsrate** - Filtern nach der Interaktionsqualität (hoch, mittel oder niedrig). Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich sowohl direkter erfolgreicher Antworten als auch Umleitungen.
-* **Content-Typ** - Filtern nach Content-Typ, entweder HTML oder TXT.
+* **Erfolgsrate** - Filtern nach der Interaktionsqualität (hoch, mittel oder niedrig). Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich sowohl direkter erfolgreicher Antworten (2xx Status-Codes) als auch Umleitungen (3xx Status-Codes).
+* **Content-**: Anzeigen der agenten Interaktion für verschiedene Inhaltstypen wie HTML, PDF usw.
 
 Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter anwenden** um die Auswahl auf das Dashboard anzuwenden.
 
@@ -69,10 +80,9 @@ Verwenden Sie das Diagramm Agentenmäßige Traffic-Trends , um die wöchentliche
 
 ## Top- und Bottom-Mover {#top-bottom-movers}
 
-Mit diesen beiden Metriken werden die URLs wie folgt sortiert:
+Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. Top Movers zeigen Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während Bottom Movers URLs mit den stärksten Rückgängen anzeigen. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert, und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
-* **Top Movers** - Die URLs mit dem größten Anstieg des Agent-Traffics von der ältesten zur neuesten Woche.
-* **Bottom Movers** - URLs mit dem größten Rückgang im Agentenverkehr von der ältesten zur neuesten Woche.
+![Top und Bottom Mover](/help/dashboards/assets/movers.png)
 
 ## Benutzeragent- und URL-Leistungsanalyse {#user-url-performance}
 
@@ -104,6 +114,12 @@ Die Tabelle URL-Leistungsanalyse zeigt eine detaillierte Ansicht der einzelnen U
 * **Erfolgsrate** - Der Prozentsatz erfolgreicher HTTP-Anfragen, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
 * **Kategorie** - Die Kategorie, die dem Inhalt Ihrer Seite am ehesten entspricht.
 
-Die URL-Leistungstabelle enthält ein Suchfeld für den schnellen Zugriff auf URLs. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen.
+Die URL-Leistungstabelle enthält ein Suchfeld für den schnellen Zugriff auf URLs. Sie können auch zusätzliche Details für jede URL anzeigen, indem Sie auf das Informationssymbol am Ende jeder Zeile klicken.
+
+![URL-Details](/help/dashboards/assets/details.png)
+
+Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistung einer Seite - sie zeigt, wie oft sie zitiert wird, die Stimmung bei KI-Antworten, wo sie erwähnt wird, die Themen und Eingabeaufforderungen, in denen sie angezeigt wird, und die Trends beim Agent- und Verweisdatenverkehr im Laufe der Zeit.
 
 >[!ENDTABS]
+
+Für beide Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das ausführende Reporting aufzunehmen.

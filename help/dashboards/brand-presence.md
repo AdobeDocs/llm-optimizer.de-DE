@@ -1,9 +1,9 @@
 ---
 title: Markenauftritt
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ verstehen können, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,17 @@ Auf dieser Seite wird Folgendes beschrieben:
 Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. Die ausgewählten Filter wirken sich auf **alle** Abschnitte im Dashboard aus. Sie können Folgendes anpassen:
 
 * **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
-* **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien. Sie können diesem Feld auch benutzerdefinierte Kategorien hinzufügen (**SR**-how?).
+* **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
 * **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
+* **Prompts-Herkunft** - Wählen Sie den Ursprung der Prompts aus. Der Ursprung kann entweder vom Benutzer eingegeben oder per KI generiert werden.
+* **Prompt-Branding** - Filtern Sie Ergebnisse nach gebrandeten oder nicht gebrandeten Eingabeaufforderungen.
 * **Region** - Filtern der Ergebnisse nach Geografie. Nicht alle Regionen werden zum Start verfügbar sein.
 
 Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter anwenden** um die Auswahl auf das Dashboard anzuwenden.
 
 ## Übersichtsmetriken {#overview-metrics}
 
-Im Dashboard werden drei sehr wichtige Metriken oben auf der Seite hervorgehoben: Sichtbarkeitsbewertung, Erwähnungen und Zitate. Je niedriger die Anzahl für diese Metriken ist, desto schlechter wird Ihre Marke wahrgenommen, und Sie sollten handeln, um Ihre Markenpräsenz zu verbessern. wie **SR - Fügen Sie hier einen Optimierungs-Link hinzu**. Nachfolgend finden Sie eine kurze Beschreibung jeder Metrik und dessen, was sie darstellt.
+Im Dashboard werden drei sehr wichtige Metriken oben auf der Seite hervorgehoben: Sichtbarkeitsbewertung, Erwähnungen und Zitate. Je niedriger die Anzahl für diese Metriken ist, desto schlechter wird Ihre Marke wahrgenommen, und Sie sollten handeln, um Ihre Markenpräsenz zu verbessern. Nachfolgend finden Sie eine kurze Beschreibung jeder Metrik und dessen, was sie darstellt.
 
 ![Übersichtsmetriken](/help/dashboards/assets/overview-metrics.png)
 
@@ -84,25 +86,26 @@ Klicken Sie auf die Registerkarten unten, um Details zu jeder Tabelle und den zu
 
 Die Tabelle „Dateneinblicke“ hilft Ihnen, Themen und Benutzeraufforderungen zu erkunden, um die Auswirkungen von Inhalten zu bewerten und zu optimieren. Angezeigt werden die folgenden Metriken:
 
-* **Kategorie** - Die Themenkategorie stellt SEO-Schlüsselwörter und Benutzerfragen dar, die sich auf Ihre Marke beziehen. Sie können auf klicken, um jedes Thema zu erweitern und einzelne Eingabeaufforderungen für die Markenpräsenz zu analysieren. Jedes Thema und jede Schaltfläche verfügt über eine Schaltfläche **Details**, wenn Sie den Mauszeiger darüber bewegen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt.
+* **Thema** - Die Themenkategorie stellt SEO-Schlüsselwörter und Benutzerfragen dar, die sich auf Ihre Marke beziehen. Sie können auf klicken, um jedes Thema zu erweitern und einzelne Eingabeaufforderungen für die Markenpräsenz zu analysieren. Jedes Thema und jede Schaltfläche verfügt über eine Schaltfläche **Details**, wenn Sie den Mauszeiger darüber bewegen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt.
+* **Region** - zeigt die Region der Eingabeaufforderungen an.
 * **Beliebtheit** - Die Beliebtheitskategorie gibt das Suchvolumen für dieses Thema in Bezug auf alle anderen Themen in der Analyse an. Der Wert kann entweder Hoch, Medium oder Niedrig sein.
 * **Sichtbarkeitswert** - Der Sichtbarkeitswert für dieses Thema. Sie spiegelt gewichtete Faktoren wie Erwähnungen, Zitate, Stimmung und Rang wider.
 * **Erwähnungen** - Die Häufigkeit, mit der Ihre Marke in KI-Antworten für dieses Thema oder diese Themen-/Eingabeaufforderungskombination erwähnt wurde.
-* **Sentiment** - Die Markenwahrnehmung in KI-Antworten in Bezug auf jedes Thema. Die Stimmungsmetrik kann entweder positiv, neutral oder negativ sein.
-* **Position** - Wie früh Ihre Marke in der KI-Antwort erscheint, berechnet als Durchschnitt über alle Wochen hinweg.
+* **Sentiment** - Die Markenwahrnehmung in KI-Antworten in Bezug auf jedes Thema, berechnet als Durchschnitt über alle Wochen hinweg. Wird nur aufgefüllt, wenn Ihre Marke tatsächlich erwähnt wird
+* **Position** - Die relative Bekanntheit Ihrer Marke in KI-Antworten, berechnet als Durchschnitt über alle Wochen hinweg.
 * **Alle Zitate** - Die Anzahl der eindeutigen Quellen, die in KI-Antworten für dieses Thema oder diese Themen-/Eingabeaufforderungskombination zitiert werden (umfasst eigene Zitate).
 * **Eigene Zitate** - Die Häufigkeit, mit der Ihre Marke in KI-Antworten für dieses Keyword oder diese Keyword-/Fragekombination zitiert wurde.
 
 >[!TAB Stimmanteil]
 
-Die Tabelle **Anteil der Stimme** vergleicht Ihre Markenstimme themenübergreifend mit der anderer Mitbewerber. Angezeigt werden die folgenden Metriken:
+Die Tabelle Anteil der Stimmen bietet einen vergleichenden Überblick über die Leistung Ihrer Marke in wichtigen Themen in generativen KI-Antworten. Es hilft Ihnen, Sichtbarkeitslücken zu identifizieren, die Leistung der Konkurrenz zu verfolgen und Bereiche für die Optimierung zu priorisieren. Angezeigt werden die folgenden Metriken:
 
 * **Thema** - Das analysierte Thema.
 * **Beliebtheit** - Das Suchvolumen für das Thema in Bezug auf alle anderen Themen in Ihrer Analyse.
 * **Erwähnungen** - Gibt an, wie oft Ihre Marke in KI-Antworten für das Thema oder die Themen-/Eingabeaufforderungskombination erwähnt wurde.
 * **Rangfolge** - Die Rangfolge des Stimmanteils Ihrer Marke im Verhältnis zu allen identifizierten Mitbewerbern.
-* **Anteil der Stimme** - Der Prozentsatz der Zeit, in der eine Marke erwähnt wird, im Verhältnis zu allen Erwähnungen in KI-Antworten.
-* **Top 5 Wettbewerber** - Die fünf wichtigsten Wettbewerber, organisiert nach ihrem Anteil an der Stimme (am höchsten bis zum niedrigsten).
+* **Anteil der Stimme** - Der Prozentsatz der Erwähnungen insgesamt, die Ihre Marke in KI-generierten Antworten enthält.
+* **Top 5 Wettbewerber** - Die fünf Top-Marken, die am häufigsten für dieselben Themen erwähnt werden. Die Teilnehmer sind nach ihrem Stimmanteil (vom höchsten zum niedrigsten) organisiert.
 
 >[!ENDTABS]
 
