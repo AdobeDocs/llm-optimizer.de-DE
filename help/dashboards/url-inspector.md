@@ -1,9 +1,9 @@
 ---
 title: URL-Inspektor
 description: Erfahren Sie, wie Sie mit dem URL-Inspektor analysieren können, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: 6d845628264885fd40fc6e14dff89b8aa80f9ca5
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # URL-Inspektor
 
-Mit dem URL-Inspektor können Sie analysieren, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren. Es kombiniert Sichtbarkeit, Agentendatenverkehr und Verweisdaten auf URL-Ebene, um Ihnen einen granularen Überblick darüber zu geben, welche URLs zitiert werden und wie oft sie in Antworten angezeigt werden. **SR-BENÖTIGT CDN?**
+Mit dem URL-Inspektor können Sie analysieren, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren. Es kombiniert Sichtbarkeit, Agentendatenverkehr und Verweisdaten auf URL-Ebene, um Ihnen einen granularen Überblick darüber zu geben, welche URLs zitiert werden und wie oft sie in Antworten angezeigt werden.
 
 ![URL-Inspektor](/help/dashboards/assets/url-insp.png)
 
@@ -22,26 +22,27 @@ Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. D
 * **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
 * **Kategorie** - Filtert die angezeigten Ergebnisse nach Kategorien.
 * **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
-* **Channel** - Filtern Sie zwischen Kanälen wie „Verdient“, „Konkurrent“ und „Social“.
+* **Seiteninhaltstyp** - Filtern nach Inhaltstyp.
 * **Region** - Filtern der Ergebnisse nach Geografie. Nicht alle Regionen werden zum Start verfügbar sein.
+
 Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter anwenden** um die Auswahl auf das Dashboard anzuwenden.
 
 ## Übersichtsmetriken
 
 Der URL-Inspektor bietet mehrere Übersichtsmetriken, mit denen Sie schnell beurteilen können, wie Ihre Seiten in KI-Suchen abschneiden. Die folgenden Metriken werden bereitgestellt:
 
-* **Eindeutige Eingabeaufforderungen mit eigenen Zitaten** - Die Gesamtzahl der eindeutigen AI-Eingabeaufforderungen mit eigenen Zitaten.(**SR-mehr Details? Was sind eigene Zitate**)
+* **Eindeutige Eingabeaufforderungen mit eigenen Zitaten** - Die Gesamtzahl der eindeutigen AI-Eingabeaufforderungen mit eigenen Zitaten.
 * **Eindeutige Eingabeaufforderungen insgesamt** - Die Gesamtzahl der eindeutigen AI-Eingabeaufforderungen.
 * **Eindeutig zitierte URLs** - Die Anzahl der eindeutigen eigenen URLs, die zitiert wurden.
 * **Gesamtzahl der angegebenen**: Gesamtzahl der Fälle, in denen eine eigene URL in KI-generierten Antworten zitiert wurde.
-* **Gesamtzahl der Agententreffer** - Die Gesamtzahl der Treffer von KI-Agenten auf Ihren URLs.
-* **Verweistreffer von LLMs** - Die Gesamtzahl der Treffer, die von KI-generierten Antworten an Ihre URLs weitergeleitet werden.
+<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
+* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
 
 Trendindikatoren für jede Übersichtsmetrik zeigen, wie sich diese Werte im Zeitverlauf im Vergleich zum vorherigen Zeitraum ändern.
 
 ## Ihre zitierten URLs
 
-Die Ansicht der zitierten URLs enthält alle URLs Ihrer Marke, die in KI-generierten Antworten zitiert wurden, einschließlich unterstützender Metriken. Die Datentabelle verfügt auch über ein Suchfeld für den schnellen Zugriff auf bestimmte URLs. Die folgenden Metriken werden bereitgestellt:
+Die Ansicht der zitierten URLs enthält alle URLs Ihrer Marke, die in KI-generierten Antworten zitiert wurden, einschließlich unterstützender Metriken. Die Datentabelle verfügt auch über ein Suchfeld für den schnellen Zugriff auf bestimmte URLs. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen. Die folgenden Metriken werden bereitgestellt:
 
 * **URL** - die analysierte URL
 * **Mal zitiert** - Die Häufigkeit, mit der die URL in KI-generierten Antworten zitiert wurde.
@@ -66,4 +67,8 @@ Die folgenden Metriken werden bereitgestellt:
 * **Kategorien** - Die Produktkategorien oder Themen, die mit der URL verknüpft sind.
 * **Regions** - Die geografische Region, in der die URL zitiert wurde.
 
-Jede URL verfügt über eine Schaltfläche **Details**, wenn Sie den Mauszeiger darüber bewegen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt.
+### Fenster „Details“
+
+Sowohl für die zitierte als auch für die Trendansicht verfügen die URLs über eine Schaltfläche **Details**, wenn Sie den Mauszeiger über eine bestimmte URL bewegen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt. Das Detailfenster zeigt an, wie oft die URL zitiert wird, wie die Stimmung der KI-Antworten, wo sie erwähnt wird, die Themen und Eingabeaufforderungen, in denen sie angezeigt wird, und die Trends beim Agent- und Verweisdatenverkehr im Zeitverlauf (für eigene URLs).
+
+![Detailfenster](/help/dashboards/assets/details-url.png)
