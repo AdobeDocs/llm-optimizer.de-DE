@@ -1,9 +1,9 @@
 ---
 title: Best Practices für LLM Optimizer
 description: Entdecken Sie Best Practices für die LLM-Optimierung, um die Markensichtbarkeit bei der KI-Suche zu verbessern. Insights für Benchmarking und Inhaltsoptimierung.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: a76d348a94495682d648ef0aad268e835e321017
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Mit LLM-Optimierung, auch Generative Engine Optimization (GEO) oder Answer Engin
 
 Wenn Ihnen die herkömmliche SEO geholfen hat, seitenweise Ranglisten zu gewinnen, hilft Ihnen die LLM-Optimierung, KI-Zitate und Sichtbarkeit innerhalb der Antwort-Engines zu gewinnen. Mit der Adobe LLM Optimizer können Sie die Sichtbarkeit Ihrer Marke innerhalb von Antwort-Engines messen und verbessern.
 
-In diesem Artikel werden Best Practices zum Messen und Verbessern der Sichtbarkeit und des Einflusses in KI-gesteuerten Suchumgebungen mit Adobe LLM Optimizer beschrieben.
+In diesem Artikel werden Best Practices für die Messung und Verbesserung Ihrer Sichtbarkeit und Ihres Einflusses in KI-gestützten Suchumgebungen mit Adobe LLM Optimizer beschrieben.
 
 * [LLM vs SEO: Die wichtigsten Unterschiede](#key-differences)
 * [Strategische Kampagnenplanung](#strategic-campaign-planning)
@@ -30,7 +30,7 @@ Eine starke SEO-Foundation unterstützt die LLM-Optimierung, aber es sind neue T
 
 >[!NOTE]
 >
->Derzeit ist SEO Traffic immer noch der größte Treiber von Traffic zu den meisten Websites, was es sehr wichtig für die Sichtbarkeitsstrategie Ihrer Marke macht.
+>Derzeit ist SEO Traffic immer noch der größte Treiber von Traffic zu den meisten Web, was es sehr wichtig für die Sichtbarkeitsstrategie Ihrer Marke ist.
 
 
 | SEO | LLM |
@@ -85,7 +85,7 @@ Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für eine bessere Sichtba
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
 Im Folgenden finden Sie einige Best Practices zur Optimierung:
 
@@ -117,7 +117,7 @@ Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit 
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
 
 Wichtige externe Kanäle:
@@ -224,7 +224,7 @@ Das Tracking des Agent-Traffics hilft Ihnen zu verstehen, wie KI Ihre Inhalte si
 So optimieren Sie den Agent-Traffic:
 
 * Stellen Sie die Crawlbarkeit sicher, indem Sie die robots.txt- und CDN-Einstellungen überprüfen.
-* Verwenden Sie den [URL-Inspektor](/help/dashboards/url-inspector.md), um die URL-Leistung zu analysieren.
+* Verwenden Sie den [URL Inspector](/help/dashboards/url-inspector.md) um die URL-Leistung zu analysieren.
 * Verfolgen Sie das Bot-Verhalten, indem Sie auf Ihre CDN-Protokolle im [Agent-Traffic-Dashboard](/help/dashboards/agentic-traffic.md) zugreifen.
 * Segmentieren Sie Traffic, um Geschäftsergebnisse zu verstehen. Siehe [Best Practices für Kategorien, Themen, Eingabeaufforderungen und Mitbewerber](/help/overview/best-practices-topics-prompts.md).
 
