@@ -1,7 +1,7 @@
 ---
-title: LLM Optimizer-Grundlagen
+title: Übersicht über LLM Optimizer
 description: Erfahren Sie, wie Adobe LLM Optimizer die Sichtbarkeit der Marke in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
-source-git-commit: b39a6acbcb86c91d23c3aab790266f37b579f651
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -32,9 +32,6 @@ Adobe LLM Optimizer bietet eine Reihe von Tools zur Optimierung der generativen 
 * Entdecken Sie umsetzbare Möglichkeiten: Identifizieren Sie Inhalte und technische Verbesserungen (wie häufig gestellte Fragen, Abstracts, Schema, Crawlability), um Erwähnungen und Zitate zu optimieren.
 * Traffic-Auswirkungen verfolgen: Überwachen Sie sowohl den Agenten (KI-Assistent) als auch den Verweisverkehr zu Ihren eigenen Eigenschaften und verknüpfen Sie Sichtbarkeit mit Interaktion.
 * Team Collaboration aktivieren: Dashboards freigeben, Eigentümer zuweisen und Ziele über Marketing-, SEO- und Kommunikations-Teams hinweg abstimmen.
-
-
-<!-- I'm adding headings because LLMs like them and that way we'll rank better. Generally question format/question words in the the title is preferred. We can discuss. Or we can mirror what we did for Sites Optimizer and have this info on another page-->
 
 ## Warum die LLM-Optimierung für Ihre Marke wichtig ist
 

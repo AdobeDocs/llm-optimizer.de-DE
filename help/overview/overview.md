@@ -1,9 +1,9 @@
 ---
 title: Übersicht über LLM Optimizer
 description: Erfahren Sie, wie Adobe LLM Optimizer die Sichtbarkeit der Marke in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
-source-git-commit: bb3e3e4ebc7499fb8c8dfc165eb87595b40a4b4c
+source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,8 @@ Hier finden Sie Ressourcen, die Ihnen helfen, LLM Optimizer optimal zu nutzen:
 
 * [Schnellstart](/help/overview/quick-start.md) bringt Sie schnell zum Laufen.
 * [Dashboards - Übersicht](/help/dashboards/dashboards-overview.md) beschreibt alle in der LLM Optimizer verfügbaren Dashboards.
-* [Best Practices](/help/tutorials/best-practices.md) führt Sie durch die Verwendung des Tools, um die benötigten Einblicke für Ihre Marke zu erhalten.
+* [Best Practices für die Konfiguration von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern](/help/overview/best-practices-topics-prompts.md) enthalten wichtige Informationen zur Einrichtung von LLM Optimizer.
+* [Best Practices](/help/tutorials/best-practices.md) ermöglicht es Ihnen, Best Practices für die LLM-Optimierung zu entdecken, um die Sichtbarkeit Ihrer Marke bei der KI-Suche zu verbessern.
 
 
 
