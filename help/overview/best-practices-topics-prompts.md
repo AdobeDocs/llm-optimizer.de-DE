@@ -1,9 +1,9 @@
 ---
 title: Best Practices für Kategorien, Themen und Eingabeaufforderungen
 description: Optimieren Sie LLM-Erkenntnisse, indem Sie Kategorien, Themen, Eingabeaufforderungen und Mitbewerber für ein maßgeschneidertes Markenmonitoring und eine strategische Inhaltsanalyse konfigurieren.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Beachten Sie beim Erstellen der Liste Folgendes:
 
 * Kann ein Editor das Thema in 5 Sekunden nach der Eingabeaufforderung verstehen? Falls nicht, benennen/vereinfachen Sie um.
 * Wird die Fehlerbehebung für verschiedene Themen einem anderen Team gehören? Wenn ja, haben Sie nützliche Themen ausgewählt.
-  <!-- Last bullet point does not make sense. Clarification needed.-->
+  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Einige zusätzliche hilfreiche Hinweise:
 
@@ -94,8 +94,8 @@ Einige zusätzliche hilfreiche Hinweise:
 >
 > * Behalten Sie Themen bei, die absichtsbasiert, nicht organisatorisch sind.
 > * Fügen Sie keine Kategorien/Filter für Marke/Nicht-Marke/Geografie hinzu, da Sie auf der Registerkarte **[!UICONTROL Marken]** gezielt danach filtern können.
-> * Themen sind über mehrere Kategorien verteilt. Sie können **verschiedene Themen** Kategorie haben.
-> * Eine Eingabeaufforderung kann in mehreren Themen oder Kategorien vorhanden sein.
+> * Die Themen sind über mehrere Kategorien verteilt. Es **nicht möglich** eindeutige Themen für jede Kategorie zu definieren.
+> * Eine einzelne Eingabeaufforderung **kann** in mehreren Themen oder Kategorien vorhanden sein.
 
 ## Best Practices für Eingabeaufforderungen
 
@@ -103,9 +103,15 @@ Anhand von Eingabeaufforderungen werden die spezifischen Fragen oder Abfragen id
 
 Stellen Sie sicher, dass Eingabeaufforderungen regelmäßig überprüft und aktualisiert werden, um sicherzustellen, dass sie mit den Kundenanforderungen und Geschäftszielen übereinstimmen.
 
+Best Practices für Eingabeaufforderungen:
+
+* Gruppieren Sie ähnliche Eingabeaufforderungen basierend auf den Fragen der Benutzer.
+* Konzentrieren Sie sich auf die Eingabeaufforderungen, die für Ihre Kunden am wichtigsten sind.
+* Überprüfen Sie, ob Ihre Marke gute Chancen hat, bei bestimmten Eingabeaufforderungen erwähnt zu werden.
+
 >[!TIP]
 >
->* Sie können Tools wie die Adobe LLM Optimizer- und Google-Suchkonsole mit Regex-Filtern verwenden, um gängige Fragestrukturen zu identifizieren (z. B. „wie“, „was“, „wann“, „wo„) und herauszufinden, welche Aufforderungen die Personen für den Besuch Ihrer Site verwenden.
+>* Sie können Tools wie die Adobe LLM Optimizer- und die Google-Suchkonsole mit Regex-Filtern verwenden, um gängige Fragestrukturen zu identifizieren (z. B. „wie“, „was“, „wann“, „wo„) und herauszufinden, welche Aufforderungen die Personen für den Besuch Ihrer Site verwenden.
 >* Um herauszufinden, welche Eingabeaufforderungen für Ihre Site/Marke relevant sind, können Sie Suchdaten auf der Site verwenden, FAQs auf Suchmaschinenergebnisseiten verwenden oder sogar LLM-Chatbots direkt fragen, welche Fragen Kunden zu Ihrer Marke stellen könnten.
 
 ## Best Practices für Mitbewerber

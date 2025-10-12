@@ -1,9 +1,9 @@
 ---
 title: Übersicht über LLM Optimizer
 description: Erfahren Sie, wie Adobe LLM Optimizer die Sichtbarkeit der Marke in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,11 @@ Generative Engine Optimization ist von Natur aus funktionsübergreifend. LLM Opt
 
 Mit Adobe LLM Optimizer können Sie:
 
-**Messen der Markensichtbarkeit** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einem klaren Sichtbarkeitswert, den Sie im Laufe der Zeit vergleichen können, können Sie über reine Spekulationen hinausgehen.
-**Benchmark-Wettbewerber** - Erfahren Sie, wie Ihre Marke im Vergleich zu Mitbewerbern bei Generativmotoren abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile.
-**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemas) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt erhöhen.
-**Traffic-Auswirkungen von KI verfolgen** - Überwachen Sie den Agent-Traffic (von KI-Assistenten) und den Verweisverkehr (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion.
-**Team Collaboration aktivieren** - Dashboards freigeben, Besitzer für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, SEO- und Kommunikationsfunktionen verfolgt werden.
-
+**Messen der Markensichtbarkeit** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einem klaren Sichtbarkeitswert, den Sie im Laufe der Zeit vergleichen können, können Sie über reine Spekulationen hinausgehen. Siehe [Dashboard für Markenpräsenz](/help/dashboards/brand-presence.md).
+**Benchmark-Wettbewerber** - Erfahren Sie, wie Ihre Marke im Vergleich zu Mitbewerbern bei Generativmotoren abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile. Siehe [Dashboard für Markenpräsenz](/help/dashboards/brand-presence.md).
+**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemas) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt erhöhen. Siehe [Opportunities-Dashboard](/help/dashboards/opportunities.md).
+**Traffic-Auswirkungen von KI verfolgen** - Überwachen Sie den Agent-Traffic (von KI-Assistenten) und den Verweisverkehr (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion. Siehe [Agententraffic-Dashboard](/help/dashboards/agentic-traffic.md) und [Dashboard für Empfehlungstraffic](/help/dashboards/referral-traffic.md).
+**Team Collaboration aktivieren** - Dashboards freigeben, Verantwortliche für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, Suchmaschinenoptimierung (SEO)- und Kommunikationsfunktionen verfolgt werden. Siehe [Collaboration-Dashboard](/help/dashboards/collaboration.md).
 
 ## Weitere Informationen
 

@@ -1,9 +1,9 @@
 ---
 title: Best Practices für LLM Optimizer
 description: Entdecken Sie Best Practices für die LLM-Optimierung, um die Markensichtbarkeit bei der KI-Suche zu verbessern. Insights für Benchmarking und Inhaltsoptimierung.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1655'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,12 @@ Wenn Ihnen die herkömmliche SEO geholfen hat, seitenweise Ranglisten zu gewinne
 
 In diesem Artikel werden Best Practices zum Messen und Verbessern der Sichtbarkeit und des Einflusses in KI-gesteuerten Suchumgebungen mit Adobe LLM Optimizer beschrieben.
 
-* [LLM im Vergleich zu SEO](#key-differences)
-* [Entfesseln der Sichtbarkeit der LLM-Marke](#unlocking-llm-brand-visibility)
+* [LLM vs SEO: Die wichtigsten Unterschiede](#key-differences)
 * [Strategische Kampagnenplanung](#strategic-campaign-planning)
-* [Umsetzbare Optimierungsschritte](#actionable-optimization-steps)
-* [Offsite-Optimierung für LLM-Sichtbarkeit](#offsite-optimization-for-llm-visibility)
-* [LLM-Sichtbarkeit messen](#measuring-llm-visibility)
-* [Änderungen der Sichtbarkeit verfolgen](#tracking-visibility-changes)
+* [Onsite-Optimierung](#onsite-optimization---strengthening-your-owned-content)
+* [Offsite-Optimierung](#offsite-optimization---expanding-your-brand-footprint)
+* [Messung der LLM-Sichtbarkeit und Tracking von Änderungen](#measuring-llm-visibility-and-tracking-changes)
+* [Optimieren von für agenten Traffic](#how-to-optimize-for-agentic-traffic)
 
 ## LLM vs SEO: Die wichtigsten Unterschiede {#key-differences}
 
@@ -52,69 +51,98 @@ Weitere Überlegungen zur LLM-Optimierung:
 * Die Aktualität der Inhalte ist wichtig: Bei LLMs haben kürzlich aktualisierte Inhalte Priorität. (Suchmaschinen priorisieren dies auch für zeitkritische Abfragen, setzen aber stärker auf andere Werte.)
 * Es ist sehr wichtig, sich in Form von Erwähnungen und Zitaten zu verdienen (Drittanbieter).
 
-## Entfesseln der Sichtbarkeit der LLM-Marke
+## Strategische Kampagnenplanung
+
+Die Erstellung einer erfolgreichen LLM-Optimierungskampagne umfasst Folgendes:
+
+* Identifizieren Sie hochwertige Themen, die auf die Kundenabsicht abgestimmt sind. Richten Sie die Eingabeaufforderung an den Geschäftszielen und den Kundenanforderungen aus.
+* Spot-Wettbewerber erwähnt, um Lücken und Chancen zu finden. Konzentrieren Sie sich auf Eingabeaufforderungen, bei denen Konkurrenten genannt werden, und zeigen Sie die Möglichkeit für die Markeneinbindung an.
+* Eingabeaufforderungen nach Absicht mithilfe von Themen-Clustering gruppieren: Verwenden Sie Themen und Suchfelder, um ähnliche Benutzerziele für das Benchmarking der Sichtbarkeit zu gruppieren.
+* Beurteilen Sie die Glaubwürdigkeit Ihrer Marke anhand von EAT-Standards (Experience, Expertise, Authoritativity, Trustworthy) und YMYL-Standards (Your Money or Your Life).
+
+Dieser strategische Ansatz gewährleistet gezielte, datengestützte Verbesserungen der LLM-Sichtbarkeit.
+
+### Entfesseln der Sichtbarkeit der LLM-Marke
 
 Bei der LLM-Sichtbarkeit geht es darum, wie oft und wie deutlich Ihre Marke in KI-generierten Antworten zu sehen ist.
 
-Zur Verbesserung der Sichtbarkeit
+Folgen Sie diesem Zyklus, um Ihre Sichtbarkeit zu verbessern:
 
-1. **Analysieren:** Überprüfen Sie in allen LLMs, wie Ihre Marke in den wichtigsten Kundenaufforderungen erscheint.
-2. **Plan** Targeting von Eingabeaufforderungen-Clustern mit ähnlichem Zweck für fokussierte Kampagnen.
-3. **Act** Implementieren Sie Änderungen und überwachen Sie Veränderungen der LLM-Sichtbarkeit im Laufe der Zeit.
-4. **Anpassen** Verfeinern von Strategien auf der Grundlage umsetzbarer Einblicke aus dem Optimizer.
+Analysieren > Plan > Handeln > Anpassen
+
+* **Analysieren:** Überprüfen Sie in allen LLMs, wie Ihre Marke in den wichtigsten Kundenaufforderungen erscheint.
+* **Plan** Targeting von Eingabeaufforderungen-Clustern mit ähnlichem Zweck für fokussierte Kampagnen.
+* **Act** Implementieren Sie Änderungen und überwachen Sie Veränderungen der LLM-Sichtbarkeit im Laufe der Zeit.
+* **Anpassen** Verfeinern von Strategien auf der Grundlage umsetzbarer Einblicke aus dem Optimizer.
 
 <!--insert image-->
 
 Wenn Sie diese Schritte verstehen und nutzen, kann Ihre Marke relevant bleiben, da KI für die Informationsfindung von zentraler Bedeutung ist.
 
-## Strategische Kampagnenplanung
+## Onsite-Optimierung - Stärkung Ihrer eigenen Inhalte
 
-Die Erstellung einer erfolgreichen LLM-Optimierungskampagne umfasst Folgendes:
+Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für eine bessere Sichtbarkeit von LLM. Dies sind Aktionen, die Sie auf Ihrer eigenen Website und in Ihren digitalen Eigenschaften durchführen, um die Wahrnehmung, den Zugriff und die Zitat Ihrer Marke durch LLMs zu verbessern.
 
-* Identifizieren Sie hochwertige Themen: Stimmen Sie die sofortige Absicht mit den Geschäftszielen und den Kundenanforderungen ab.
-* Spot-Wettbewerber erwähnt: Konzentrieren Sie sich auf Eingabeaufforderungen, bei denen Wettbewerber genannt werden, und zeigen Sie die Möglichkeit für die Markeneinbindung an.
-* Eingabeaufforderungen nach Absicht gruppieren: Verwenden Sie Themen und Suchfelder, um ähnliche Benutzerziele für das Benchmarking der Sichtbarkeit zu gruppieren.
-* Bewertung der realistischen Markeninklusion: Beurteilen Sie, ob Ihre Marke glaubwürdig erwähnt werden kann, unter Berücksichtigung von Faktoren wie EEAT (Experience, Expertise, Authoritativity, Trustworthy) und YMYL (Your Money or Your Life) Standards.
+>[!TIP]
+>
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
-Dieser strategische Ansatz gewährleistet gezielte, datengestützte Verbesserungen der LLM-Sichtbarkeit.
+Im Folgenden finden Sie einige Best Practices zur Optimierung:
 
-## Umsetzbare Optimierungsschritte
+1. Gewährleistung der technischen Barrierefreiheit
 
-Die LLM Optimizer schlägt Optimierungsmöglichkeiten im Dashboard [Opportunities](/help/dashboards/opportunities.md) vor.
+   * Überprüfen Sie die robots.txt- und CDN-Einstellungen, damit KI-Agenten Ihre Site durchsuchen können.
+   * Identifizieren Sie mit dem URL-Inspektor blockierte oder nicht zugängliche Seiten. Siehe [URL-](/help/dashboards/url-inspector.md).
 
-Im Folgenden finden Sie einige praktische Maßnahmen, die Sie in Betracht ziehen sollten, um die Sichtbarkeit der Marke in LLMs zu erhöhen:
+2. Inhalt aktualisieren und strukturieren
 
-* Wikipedia-Seiten aktualisieren: Stellen Sie sicher, dass die Firmen- und die zitierten Seiten aktuell und relevant sind.
-* LLM-Zugriff aktivieren: Überwachen Sie die Einstellungen von robots.txt und CDN, um das Blockieren von KI-Bots zu verhindern.
-* Inhalt neu gestalten: 10-15 % des Seiteninhalts aktualisieren, Verweise hinzufügen und Struktur mit Kopfzeilen verbessern (H1, H2, H3).
-* FAQs hinzufügen: Integrieren Sie relevante FAQs auf der Grundlage einer sofortigen Analyse, um Benutzeranfragen zu beantworten.
-* Erhöhen Sie die Erwähnungen von Marken auf Reddit/Quora: Tragen Sie zu benutzergenerierten Inhaltsplattformen bei, auf denen LLMs Zitate zur Quelle liefern. Pass auf, wie du dies angehst, da du Trigger machen kannst
+   * Aktualisieren Sie 10-15 % des Seiteninhalts regelmäßig. LLMs priorisieren neue Inhalte.
+   * Hinzufügen von Zitaten und Verweisen auf autoritative Quellen.
+   * Verwenden Sie strukturierte Kopfzeilen (H1, H2, H3) für ein besseres Parsen.
 
-Eine konsistente Ausführung dieser Schritte kann die Präsenz Ihrer Marke in KI-gestützten Suchergebnissen erheblich verbessern.
+3. Häufig gestellte Fragen zur Integration
 
-## Offsite-Optimierung für LLM-Sichtbarkeit
+   * Fügen Sie FAQs in natürlicher Sprache hinzu, die auf einer sofortigen Analyse basieren.
+   * Beantworten gängiger Benutzerfragen in Dialogformaten.
 
-Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit Ihrer Marke in KI-generierten Antworten durch die Beeinflussung von Drittanbieter-Inhaltsquellen, die von LLMs häufig zitiert werden.
+4. Überwachen und iterieren
+
+   * Verwenden Sie das [Opportunities-Dashboard](/help/dashboards/opportunities.md) um Recommendations zu identifizieren und zu bearbeiten.
+   * Tracking von Sichtbarkeitsbewertung, Stimmung und Zitationshäufigkeit.
+   * Anpassen auf der Grundlage der Aktivität der Mitbewerber und der zeitnahen Trends.
+
+## Offsite-Optimierung - Erweiterung des Markenaufkommens
+
+Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit Ihrer Marke in KI-generierten Antworten durch die Beeinflussung von Drittanbieter-Inhaltsquellen, die von LLMs häufig zitiert werden. Dies sind Aktionen, die außerhalb Ihrer eigenen Eigenschaften durchgeführt werden, um zu beeinflussen, wie LLMs Ihre Marke finden und zitieren.
+
+>[!TIP]
+>
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+
 
 Wichtige externe Kanäle:
 
 * Wikipedia: Stellen Sie sicher, dass Seiten aktuell, gut belegt und neutral geschrieben sind.
-* Reddit &amp; Quora: Nehmen Sie an Diskussionen mit authentischen, hilfreichen Beiträgen teil.
-* Affiliate-Artikel und Rezensionen: Zusammenarbeit mit Herausgebern für qualitativ hochwertige Inhalte.
+* Reddit und Quora: Nehmen Sie an Diskussionen mit authentischen, hilfreichen Beiträgen und Markenbezeichnungen teil.
+* Affiliate-Artikel und Rezensionen: Zusammenarbeit mit Herausgebern für hochwertige Inhalte.
 * YouTube und Social Media: Erstellen Sie Videos und Posts, die häufig gestellte Fragen beantworten.
-* News &amp; PR: Sichere Berichterstattung in seriösen Outlets.
+* News und PR: Sichere Berichterstattung in seriösen Outlets.
 
 Best Practices:
 
 * Diversifizieren Sie Ihren Offsite-Platzbedarf.
-* Überwachen Sie Zitate mit Adobes LLM Optimizer.
+* Überwachen von Zitaten mit Adobe LLM Optimizer. Siehe [Dashboard für Markenpräsenz](/help/dashboards/brand-presence.md).
 * Veraltete Inhalte aktualisieren und neue Einbeziehungsmöglichkeiten suchen.
 * Koordinieren Sie sich mit PR- und Social-Teams.
 * Stellen Sie sicher, dass die Beiträge unvoreingenommen und informativ sind.
 
-## LLM-Sichtbarkeit messen
+Eine konsistente Ausführung dieser Schritte kann die Präsenz Ihrer Marke in KI-gestützten Suchergebnissen erheblich verbessern.
 
-Verfolgen Sie diese Schlüsselmetriken, um die Sichtbarkeit Ihrer Website zu bewerten oder Verbesserungen der Sichtbarkeit anzuzeigen:
+## Messung der LLM-Sichtbarkeit und Tracking von Änderungen
+
+Um LLMs optimieren zu können, ist es wichtig zu verstehen, wie Ihre Marke in KI-generierten Antworten angezeigt wird. Adobe LLM Optimizer bietet eine strukturierte Möglichkeit, die Sichtbarkeit zu messen, die Leistung zu vergleichen und Verbesserungen im Zeitverlauf zu verfolgen
+
+Verfolgen Sie diese Schlüsselmetriken:
 
 * **Erwähnungen:** wie oft Ihre Marke in Antworten erwähnt wird.
 * **Zitate:** Wie oft LLMs Ihre Inhalte oder Quellen zur Beantwortung von Fragen verwenden.
@@ -123,26 +151,26 @@ Verfolgen Sie diese Schlüsselmetriken, um die Sichtbarkeit Ihrer Website zu bew
 
 Diese Metriken werden zu einem **Sichtbarkeitswert** der Ihnen mitteilt, wie stark die Präsenz Ihrer Marke in LLM-Antworten ist. Siehe das Board [Markenpräsenz](/help/dashboards/brand-presence.md).
 
-## Änderungen der Sichtbarkeit verfolgen
+### Tracking-Strategie
 
 Im Folgenden finden Sie Schritte, mit denen Sie den Fortschritt überwachen können:
 
-1. Überprüfen der aktuellen Sichtbarkeit
-   * Verwenden Sie Adobe LLM Optimizer, um anzuzeigen, wie oft Ihre Marke erwähnt und zitiert wird und wie die Stimmung in den LLM-Antworten ist. Siehe das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md).
+1. Vergleichen Sie Ihre aktuelle Sichtbarkeit.
+   * Ermitteln Sie, wie oft und wo Ihre Marke erwähnt und zitiert wird und wie die Stimmung in Adobe LLM Optimizer ist. Siehe das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md).
    * Analysieren Sie Eingabeaufforderungen, wo Ihre Marke erscheint und wo nicht.
-   * Benchmark gegenüber Wettbewerbern.
-   * Überprüfen Sie die Sichtbarkeit auf benutzergenerierten Plattformen wie Reddit, Quora und Wikipedia. Diese UGC-Plattformen werden von LLMs häufig zitiert, um Informationen zu erhalten.
+   * Sichtbarkeit im Vergleich zu Mitbewerbern.
+   * Überprüfen Sie die Sichtbarkeit auf benutzergenerierten Plattformen wie Reddit, Quora und Wikipedia. Segment für Plattform (ChatGPT, Google-KI-Modus usw.)
    * Überwachen Sie den Agent-Traffic, um zu verstehen, welche Seiten LLMs besuchen. Agent-Traffic **oft nicht** die Startseite, sondern auf andere Seiten weiter unten in der Hierarchie. Siehe das Dashboard [Agent Traffic](/help/assets/overview/agentic-traffic-card.png).
-   * Stellen Sie sicher, dass Ihre Inhalte für LLMs sichtbar und zugänglich sind. Sie können das Chrome-Plug-in verwenden, um zu sehen, was KI-Agenten sehen können.
-
-1. Strategie planen
-   * Gruppieren Sie ähnliche Eingabeaufforderungen basierend auf den Fragen der Benutzer.
-   * Konzentrieren Sie sich auf die Eingabeaufforderungen, die für Ihre Kunden am wichtigsten sind.
-   * Überprüfen Sie, ob Ihre Marke gute Chancen hat, bei bestimmten Eingabeaufforderungen erwähnt zu werden.
-   * Stellen Sie sicher, dass Ihre Inhalte Ihr Fachwissen, Ihre Vertrauenswürdigkeit und Ihre Autorität (EEAT) zeigen.
-
+1. Änderungen im Zeitverlauf überwachen.
+   * Zeitfilter zur Nachverfolgung von Wochen- und Monatsschichten verwenden
+   * Achten Sie auf Spitzen oder Rückgänge im Sichtbarkeitswert.
+   * Analysieren Sie Stimmungstrends, um die Markenwahrnehmung zu verstehen.
+1. Korrelieren Sie Sichtbarkeit mit Traffic, Interaktion und Konversionen.
+   * Verwenden Sie Attributionsfunktionen, um Verbesserungen der Sichtbarkeit mit Traffic, Interaktion und Konversionen zu verbinden. Mit Attributionsfunktionen in Adobe LLM Optimizer können Sie Verbesserungen bei Sichtbarkeitsmetriken (Erwähnungen, Zitate, Empfindungen) mit echten Geschäftsergebnissen wie Site-Traffic, Benutzerinteraktion und Konversionen verbinden. Dies belegt den ROI Ihrer Optimierungsbemühungen.
+   * Verfolgen Sie Änderungen im Agent- und Verweisdatenverkehr, um den ROI der Optimierung zu validieren.
 1. Verbessern von Inhalten
-   * Verwenden Sie die LLM Optimizer-Opportunities, um speziell empfohlene, sofortige Änderungen an Ihrer Site zu identifizieren und vorzunehmen. Siehe [Opportunities](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Überprüfen Sie regelmäßig den Abschnitt Opportunitys und ergreifen Sie Maßnahmen entsprechend den bereitgestellten Empfehlungen.
+   * Verwenden Sie das LLM Optimizer[Opportunities-Dashboard](/help/dashboards/opportunities.md) um speziell empfohlene sofortige Änderungen an Ihrer Site zu identifizieren und vorzunehmen. Siehe [Opportunities](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Überprüfen Sie regelmäßig den Abschnitt Opportunitys und ergreifen Sie Maßnahmen entsprechend den bereitgestellten Empfehlungen.
+   * Priorisieren Sie Seiten mit abnehmender Sichtbarkeit.
    * Aktualisieren Sie Ihre Website und andere Inhalte, um sie für die Eingabeaufforderungen, die Sie ansprechen möchten, relevanter zu machen.
    * Fügen Sie Ihren Seiten FAQs hinzu, die häufig gestellte Fragen beantworten.
    * Stellen Sie sicher, dass Ihre Inhalte für LLMs leicht zu finden und zu lesen sind. Beheben von Problemen wie blockierten Seiten oder Problemen mit dem Code Ihrer Website.
@@ -150,8 +178,13 @@ Im Folgenden finden Sie Schritte, mit denen Sie den Fortschritt überwachen kön
    * Verwenden Sie Adobe LLM Optimizer, um zu verfolgen, wie sich Ihre Sichtbarkeit im Laufe der Zeit ändert.
    * Wenn Sie bemerken, dass Mitbewerber öfter erwähnt werden, passen Sie Ihre Strategie an, um einen Vorsprung zu haben.
    * Aktualisieren Sie Ihre Inhalte immer wieder, damit sie mit dem übereinstimmen, wonach gesucht und gefragt wird.
+1. Anpassen von [Offsite](#offsite-optimization---expanding-your-brand-footprint) und [Onsite](#onsite-optimization---strengthening-your-owned-content)-Strategien basierend auf Erkenntnissen.
 
-## Grundlagen zum Agentenverkehr
+>[!NOTE]
+>
+>Stellen Sie sicher, dass Ihre Inhalte für LLMs sichtbar und zugänglich sind. Sie können das Chrome-Plug-in verwenden, um zu sehen, was KI-Agenten sehen können.
+
+## Verstehen des Agentenverkehrs
 
 Agentenverkehr bezieht sich auf Besuche von KI-Agenten wie ChatGPT, Googles KI-Modus/Übersichten, Copilot oder Ratlosigkeit. Diese Agenten durchsuchen Ihre Website, um Informationen zum Generieren von Antworten zu sammeln.
 
@@ -186,7 +219,7 @@ Warum dies wichtig ist:
 
 Das Tracking des Agent-Traffics hilft Ihnen zu verstehen, wie KI Ihre Inhalte sieht und verwendet.
 
-### Optimieren des Agentenverkehrs:
+### Optimieren von für agenten Traffic
 
 So optimieren Sie den Agent-Traffic:
 
