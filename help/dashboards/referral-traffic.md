@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Empfehlungsverkehr
 
-Der Verweis-Traffic zeigt an, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen. Es verfolgt und analysiert Traffic-Quellen, Verweismuster und Konversionsmetriken von externen Websites und Plattformen. Auf diese Weise lässt sich erkennen, welche Quellen, Regionen und Seiten den am meisten interagierenden Traffic leiten. Die Daten werden entweder aus den CDN-Protokollen oder der [AEM Operational Telemetry](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service) bezogen. Beide Quellen schützen die Privatsphäre und erfassen keine personenbezogenen Benutzerdaten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Der Verweis-Traffic zeigt an, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen. Es verfolgt und analysiert Traffic-Quellen, Verweismuster und Konversionsmetriken von externen Websites und Plattformen. Auf diese Weise lässt sich erkennen, welche Quellen, Regionen und Seiten den am meisten interagierenden Traffic leiten. Die Daten werden entweder aus den CDN-Protokollen oder der [AEM Operational Telemetry](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service) bezogen. Beide Quellen schützen die Privatsphäre und erfassen keine personenbezogenen Benutzerdaten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 ![Empfehlungsseite](/help/dashboards/assets/referral-traffic.png)
 
