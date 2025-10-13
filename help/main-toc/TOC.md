@@ -2,9 +2,9 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: Steigern Sie Ihre Markendarstellung mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen, entdecken Sie Einblicke und dominieren Sie die KI-gesteuerte Suche. Übernehmen Sie die Kontrolle über Ihre Sichtbarkeit - jetzt mit der Optimierung beginnen!
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: 1be26ad8f8e3abb87c5d897172c1ac5dcbf01f87
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '65'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
    + [Übersicht über LLM Optimizer](/help/overview/overview.md)
    + [Schnellstart](/help/overview/quick-start.md)
    + [Best Practices](/help/tutorials/best-practices.md)
-   + [Best Practices für Kategorien, Themen, Eingabeaufforderungen und Mitbewerber](/help/overview/best-practices-topics-prompts.md)
+   + [Best Practices für zu verfolgende Kategorien, Themen, Eingabeaufforderungen und andere](/help/overview/best-practices-topics-prompts.md)
 + Dashboards{#dashboards}
    + [Dashboards - Übersicht](/help/dashboards/dashboards-overview.md)
    + [Markenauftritt](/help/dashboards/brand-presence.md)
