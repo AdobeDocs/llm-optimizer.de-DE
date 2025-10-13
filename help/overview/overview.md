@@ -66,7 +66,7 @@ Hier finden Sie Ressourcen, die Ihnen helfen, LLM Optimizer optimal zu nutzen:
 
 * [Schnellstart](/help/overview/quick-start.md) bringt Sie schnell zum Laufen.
 * [Dashboards - Übersicht](/help/dashboards/dashboards-overview.md) beschreibt alle in der LLM Optimizer verfügbaren Dashboards.
-* [Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen ](/help/overview/best-practices-topics-prompts.md) wichtige Informationen zum Einrichten von LLM Optimizer.
+* [Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen &#x200B;](/help/overview/best-practices-topics-prompts.md) wichtige Informationen zum Einrichten von LLM Optimizer.
 * [Best Practices](/help/tutorials/best-practices.md) ermöglicht es Ihnen, Best Practices für die LLM-Optimierung zu entdecken, um die Sichtbarkeit Ihrer Marke bei der KI-Suche zu verbessern.
 
 
