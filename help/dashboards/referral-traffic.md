@@ -1,7 +1,7 @@
 ---
 title: Empfehlungsverkehr
 description: Erfahren Sie, wie Sie mit dem Dashboard für Empfehlungs-Traffic anzeigen können, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
 workflow-type: tm+mt
 source-wordcount: '629'
 ht-degree: 0%
@@ -78,10 +78,10 @@ Die Tabellen Details zu Verweisquellen und URL-Leistungsanalyse helfen Ihnen dab
 
 Die Ansicht Details zu Verweisquellen enthält Traffic, der von verschiedenen Plattformen wie OpenAI, Microsoft, Google und Perplexity stammt. Es werden Schlüsselmetriken wie Besuche, Absprungrate und Kanaltyp angezeigt, damit Sie verstehen können, welche KI- und Suchquellen den meisten interaktiven Traffic zu Ihrer Site leiten.
 
-**Source** - Die Quelle des Verweisdatenverkehrs.
-**Besuche** - Die Gesamtzahl der Besuche für jede Quelle.
-**Absprungrate** - Der Prozentsatz der Sitzungen von der Empfehlungsquelle, die kein Interaktionsereignis hatten.
-**channel** - der Kanal für die Quelle, entweder verdient, bezahlt oder beides.
+* **Source** - Die Quelle des Verweisdatenverkehrs.
+* **Besuche** - Die Gesamtzahl der Besuche für jede Quelle.
+* **Absprungrate** - Der Prozentsatz der Sitzungen von der Empfehlungsquelle, die kein Interaktionsereignis hatten.
+* **channel** - der Kanal für die Quelle, entweder verdient, bezahlt oder beides.
 
 >[!TAB URL-Leistungsanalyse]
 
