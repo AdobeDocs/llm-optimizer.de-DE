@@ -1,9 +1,9 @@
 ---
 title: Empfehlungsverkehr
 description: Erfahren Sie, wie Sie mit dem Dashboard für Empfehlungs-Traffic anzeigen können, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Empfehlungsverkehr
 
-Der Verweis-Traffic zeigt an, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen. Es verfolgt und analysiert Traffic-Quellen, Verweismuster und Konversionsmetriken von externen Websites und Plattformen. Auf diese Weise lässt sich erkennen, welche Quellen, Regionen und Seiten den am meisten interagierenden Traffic leiten. Die Daten werden entweder aus den CDN-Protokollen oder aus der operativen Telemetrie von AEM bezogen. Beide Quellen schützen die Privatsphäre und erfassen keine personenbezogenen Benutzerdaten.
+Der Verweis-Traffic zeigt an, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen. Es verfolgt und analysiert Traffic-Quellen, Verweismuster und Konversionsmetriken von externen Websites und Plattformen. Auf diese Weise lässt sich erkennen, welche Quellen, Regionen und Seiten den am meisten interagierenden Traffic leiten. Die Daten werden entweder aus den CDN-Protokollen oder der [AEM Operational Telemetry](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service) bezogen. Beide Quellen schützen die Privatsphäre und erfassen keine personenbezogenen Benutzerdaten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
-Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+![Empfehlungsseite](/help/dashboards/assets/referral-traffic.png)
 
 Auf dieser Seite wird Folgendes beschrieben:
 
@@ -89,4 +89,4 @@ Die Ansicht URL-Leistungsanalyse listet die leistungsstärksten Seiten auf, basi
 
 >[!ENDTABS]
 
-In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle Verweisdatenverkehr in das Reporting für Führungskräfte aufzunehmen.
+In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Insights mit Ihrem Team zu teilen oder die Tabelle Verweisdatenverkehr in das Executive-Reporting einzuschließen.

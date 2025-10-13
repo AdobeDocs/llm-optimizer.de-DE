@@ -1,9 +1,9 @@
 ---
 title: Markenauftritt
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ verstehen können, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Markenauftritt {#brand-presence}
 
-Das Dashboard „Markenpräsenz“ bietet einen Überblick darüber, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitate zu verfolgen, Wettbewerber zu vergleichen und Stimmungstrends zu untersuchen. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Einblicke bieten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke auf der Ebene der KI-generierten Reaktionen wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitate zu verfolgen, Wettbewerber zu vergleichen und Stimmungstrends zu untersuchen. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Einblicke bieten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 ![Markenpräsenz](/help/dashboards/assets/brand-main.png)
 
@@ -44,7 +44,7 @@ Im Dashboard werden drei sehr wichtige Metriken oben auf der Seite hervorgehoben
 
 ### Sichtbarkeitswert {#visibility-score}
 
-Der Sichtbarkeitswert besteht aus Faktoren wie: Erwähnungen, Zitate, Stimmung und Rang. Jedem Faktor ist ein bestimmtes „Gewicht“ zugeordnet, das zum Endwert hinzuaddiert. Zum Beispiel erwähnt „mehr Gewicht“, weil Sichtbarkeit nur wichtig ist, wenn Ihre Marke zitiert wird.
+Der Sichtbarkeitswert besteht aus Faktoren wie: Erwähnungen, Zitate, Stimmung und Rang. Jedem Faktor ist ein bestimmtes „Gewicht“ zugeordnet, das zum Endwert hinzuaddiert.
 
 ### Erwähnungen {#mentions}
 
@@ -72,7 +72,9 @@ Im Abschnitt zur Stimmungstrendanalyse können Sie verfolgen, wie Ihre Marke in 
 
 ## Data Insights und Share of Voice {#data-insights}
 
-Um das Dashboard aufzurunden, haben wir zwei wichtige Tabellen: Dateneinblicke und Stimmanteil. Die Informationen in diesen Tabellen helfen Ihnen dabei zu erkennen, wo Ihre Marke stark ist und wo eine Optimierung erforderlich ist.  Mithilfe der Tabelle **Dateneinblicke** können Sie Themen und Benutzerfragen erkunden, um die Auswirkungen von Inhalten zu bewerten und zu optimieren. Die Ergebnisse werden nach Themen und Eingabeaufforderungen aufgeführt. Währenddessen vergleicht die **share of voice**-Tabelle Ihre Markenstimme mit anderen Mitbewerbern themenübergreifend und hilft Ihnen, Lücken zu identifizieren und zukünftige Themen zu priorisieren.
+Um das Dashboard aufzurunden, haben wir zwei wichtige Tabellen: Dateneinblicke und Stimmanteil. Die Informationen in diesen Tabellen helfen Ihnen dabei zu erkennen, wo Ihre Marke stark ist und wo eine Optimierung erforderlich ist.
+
+Mithilfe der Tabelle **Dateneinblicke** können Sie Themen und Benutzerfragen erkunden, um die Auswirkungen von Inhalten zu bewerten und zu optimieren. Die Ergebnisse werden nach Themen und Eingabeaufforderungen aufgeführt. Währenddessen vergleicht die **share of voice**-Tabelle Ihre Markenstimme mit anderen Mitbewerbern themenübergreifend und hilft Ihnen, Lücken zu identifizieren und zukünftige Themen zu priorisieren.
 
 ![Dateneinblicke](/help/dashboards/assets/data-insights.png)
 
@@ -86,12 +88,12 @@ Klicken Sie auf die Registerkarten unten, um Details zu jeder Tabelle und den zu
 
 Die Tabelle „Dateneinblicke“ hilft Ihnen, Themen und Benutzeraufforderungen zu erkunden, um die Auswirkungen von Inhalten zu bewerten und zu optimieren. Angezeigt werden die folgenden Metriken:
 
-* **Thema** - Die Themenkategorie stellt SEO-Schlüsselwörter und Benutzerfragen dar, die sich auf Ihre Marke beziehen. Sie können auf klicken, um jedes Thema zu erweitern und einzelne Eingabeaufforderungen für die Markenpräsenz zu analysieren. Jedes Thema und jede Schaltfläche verfügt über eine Schaltfläche **Details**, wenn Sie den Mauszeiger darüber bewegen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt.
+* **Thema** - Die Themenkategorie stellt SEO-Schlüsselwörter und Benutzerfragen dar, die sich auf Ihre Marke beziehen. Sie können auf klicken, um jedes Thema zu erweitern und einzelne Eingabeaufforderungen für die Markenpräsenz zu analysieren. Jedes Thema verfügt über eine Schaltfläche **Details**, wenn Sie mit der Maus darauf zeigen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt.
 * **Region** - zeigt die Region der Eingabeaufforderungen an.
 * **Beliebtheit** - Die Beliebtheitskategorie gibt das Suchvolumen für dieses Thema in Bezug auf alle anderen Themen in der Analyse an. Der Wert kann entweder Hoch, Medium oder Niedrig sein.
 * **Sichtbarkeitswert** - Der Sichtbarkeitswert für dieses Thema. Sie spiegelt gewichtete Faktoren wie Erwähnungen, Zitate, Stimmung und Rang wider.
 * **Erwähnungen** - Die Häufigkeit, mit der Ihre Marke in KI-Antworten für dieses Thema oder diese Themen-/Eingabeaufforderungskombination erwähnt wurde.
-* **Sentiment** - Die Markenwahrnehmung in KI-Antworten in Bezug auf jedes Thema, berechnet als Durchschnitt über alle Wochen hinweg. Wird nur aufgefüllt, wenn Ihre Marke tatsächlich erwähnt wird
+* **Sentiment** - Die Markenwahrnehmung in KI-Antworten in Bezug auf jedes Thema, berechnet als Durchschnitt über alle Wochen hinweg. Wird nur aufgefüllt, wenn Ihre Marke tatsächlich erwähnt wird.
 * **Position** - Die relative Bekanntheit Ihrer Marke in KI-Antworten, berechnet als Durchschnitt über alle Wochen hinweg.
 * **Alle Zitate** - Die Anzahl der eindeutigen Quellen, die in KI-Antworten für dieses Thema oder diese Themen-/Eingabeaufforderungskombination zitiert werden (umfasst eigene Zitate).
 * **Eigene Zitate** - Die Häufigkeit, mit der Ihre Marke in KI-Antworten für dieses Keyword oder diese Keyword-/Fragekombination zitiert wurde.

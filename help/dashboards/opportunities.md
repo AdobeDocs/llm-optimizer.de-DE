@@ -1,9 +1,9 @@
 ---
 title: Optimierungsmöglichkeiten
 description: Erfahren Sie, wie Sie mit dem Opportunities-Dashboard automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Sichtbarkeit Ihrer Marke zu erhöhen.
-source-git-commit: e8ea9ae0d6592ea3d1e9945ec117f852112ba9d7
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Optimierungsmöglichkeiten
 
-Optimierungsmöglichkeiten werden automatisch erkannt und zeigen, wo Ihre Website und externe Präsenz verbessert werden kann, um die Sichtbarkeit der Marke bei der KI-Suche zu erhöhen. Diese Optimierungen umfassen Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawlern oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autorisierenden Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten ansprechen, wird Ihre Marke genau dargestellt und wird eher in generativen Antworten zitiert.
+Optimierungsmöglichkeiten werden automatisch erkannt und zeigen, wo Ihre Website und externe Präsenz verbessert werden kann, um die Sichtbarkeit der Marke bei der KI-Suche zu erhöhen.
+
+Diese Optimierungen umfassen Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawlern oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autorisierenden Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten ansprechen, wird Ihre Marke genau dargestellt und wird eher in generativen Antworten zitiert.
 
 ![Optimierungsmöglichkeiten](/help/dashboards/assets/oport.png)
 
@@ -35,10 +37,11 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
 | Doppelte Überschriften erkennen | Inhalt (OnSite) | Scannt HTML-Überschriften-Tags und kennzeichnet wiederholte Überschriften. Zeigt betroffene URLs und duplizierte Textausschnitte an. | Überschriften ändern, um eindeutig zu sein und die Hierarchie beizubehalten (H1 → H2 → H3). Doppelte Abschnitte zusammenführen oder umbenennen. |
 | Erkennen von blockiertem Agentenverkehr | Technische GEO | Analysiert CDN-Protokolle auf blockierte Anfragen bekannter KI-Agenten (z. B. GPTBot, PerplexBot). meldet betroffene URLs und Agenten. | Aktualisieren Sie die robots.txt- oder Server-Konfigurationen, um ggf. Zugriff für unterstützte KI-Crawler zu ermöglichen. |
 | 404s/403s/5xx Probleme erkennen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. meldet Häufigkeit, betroffene URLs und geschätzte verlorene Treffer. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200 Antworten zurückgeben. |
+| Content-Sichtbarkeit wiederherstellen (Early Access) | Technische GEO | Markiert Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für KI-Agenten ohne JavaScript-Ausführung verfügbar ist. |
 
 ### Chancen zur Wiederherstellung der Inhaltssichtbarkeit {#recover-contet}
 
-Wie bereits erwähnt, kennzeichnet die Opportunity für die Sichtbarkeit von Inhalten Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund von Client-seitigem Rendering verloren gehen. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agenten-Ansicht fehlen, sodass Sie Sichtbarkeitslücken identifizieren können. Unterstützt wird sie auch durch eine Edge-basierte Vorab-Rendering-Funktion, mit der mehr HTML-Inhalte für den agenten Traffic bereitgestellt werden können, ohne dass Änderungen am Content Management System (CMS) erforderlich sind. Diese Funktion befindet sich derzeit im Early Access-Modus und muss vom LLMO-Team eingerichtet werden. Bitte kontaktieren Sie `llmo-at-edge@adobe.com`, um die Opportunity für die Sichtbarkeit des Inhalts zu aktivieren.
+Wie bereits erwähnt, kennzeichnet die Opportunity für die Sichtbarkeit von Inhalten Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund von Client-seitigem Rendering verloren gehen. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agenten-Ansicht fehlen, sodass Sie Sichtbarkeitslücken identifizieren können. Unterstützt wird sie auch durch eine Edge-basierte Vorab-Rendering-Funktion, mit der mehr HTML-Inhalte für den agenten Traffic bereitgestellt werden können, ohne dass Änderungen am Content Management System (CMS) erforderlich sind. Diese Funktion befindet sich derzeit im Early Access-Modus und muss vom LLM Optimizer-Team eingerichtet werden. Bitte kontaktieren Sie `llmo-at-edge@adobe.com`, um die Opportunity für die Sichtbarkeit des Inhalts zu aktivieren.
 
 ### Weitere Tools
 

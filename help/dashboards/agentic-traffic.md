@@ -1,9 +1,9 @@
 ---
 title: Agenturverkehr
 description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
-source-git-commit: 4cbfbe420a8419a04c2d6c465b6a290ee00ff3d4
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '1127'
+source-wordcount: '1100'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,9 @@ ht-degree: 0%
 
 # Agenturverkehr {#agentic-traffic}
 
-Das Dashboard für den Agentenverkehr zeigt an, wie KI-Agenten (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agenten anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie **CDN-Protokollweiterleitung“**, um Metriken anzuzeigen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Das Dashboard für den Agent-Traffic zeigt an, wie KI-Agenten (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agenten anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie **CDN-Protokollweiterleitung“**, um Metriken anzuzeigen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+
+![Traffic-Verteilung](/help/dashboards/assets/ag-main.png)
 
 Auf dieser Seite wird Folgendes beschrieben:
 
@@ -34,8 +36,7 @@ Wählen Sie **Wechseln zur Konfiguration** aus und Sie navigieren automatisch zu
 
 Wählen Sie auf dieser Registerkarte die Option **Integriertes CDN** aus. Daraufhin wird das Fenster CDN-Anbieter angezeigt.
 
-![CDN-Anbieter](/help/dashboards/assets/ag-log-forward3.png)
-
+<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
 Im Fenster **Onboarding CDN Provider**:
 
 1. Wählen Sie Ihren CDN-Provider aus (z. B. Akamai, Adobe-Managed Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare oder andere).
@@ -80,7 +81,7 @@ Verwenden Sie das Diagramm Agentenmäßige Traffic-Trends , um die wöchentliche
 
 ## Top- und Bottom-Mover {#top-bottom-movers}
 
-Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. Top Movers zeigen Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während Bottom Movers URLs mit den stärksten Rückgängen anzeigen. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert, und wo sich KI-gesteuerte Erkennungsmuster verschieben.
+Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. Top Movers zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während Bottom Movers URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert, und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
 ![Top und Bottom Mover](/help/dashboards/assets/movers.png)
 
@@ -99,8 +100,6 @@ Die Tabelle Benutzeragentenanalyse enthält eine Aufschlüsselung des Traffics n
 * **Seitentyp** - Der Seitentyp.
 * **Agent Type** - Der KI-Agent, der die Seite durchsucht, entweder ein Crawler oder ein Chatbot.
 * **Treffer** - Die Gesamtzahl der Anfragen, die von KI-Agenten für diesen bestimmten Seitentyp gestellt wurden.
-
-Sie können auch die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Agentenanalyse für Ihr Team freizugeben oder in das Reporting für Führungskräfte aufzunehmen.
 
 >[!TAB URL-Leistungsanalyse]
 
@@ -122,4 +121,4 @@ Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistun
 
 >[!ENDTABS]
 
-Für beide Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das ausführende Reporting aufzunehmen.
+In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das ausführende Reporting einzuschließen.

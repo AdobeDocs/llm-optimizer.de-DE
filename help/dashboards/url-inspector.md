@@ -1,9 +1,9 @@
 ---
 title: URL-Inspektor
 description: Erfahren Sie, wie Sie mit dem URL-Inspektor analysieren können, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren.
-source-git-commit: 6d845628264885fd40fc6e14dff89b8aa80f9ca5
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -42,9 +42,13 @@ Trendindikatoren für jede Übersichtsmetrik zeigen, wie sich diese Werte im Zei
 
 ## Ihre zitierten URLs
 
-Die Ansicht der zitierten URLs enthält alle URLs Ihrer Marke, die in KI-generierten Antworten zitiert wurden, einschließlich unterstützender Metriken. Die Datentabelle verfügt auch über ein Suchfeld für den schnellen Zugriff auf bestimmte URLs. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen. Die folgenden Metriken werden bereitgestellt:
+Die Ansicht „zitierte URLs“ listet alle URLs Ihrer Marke auf, die in KI-generierten Antworten zitiert wurden, einschließlich unterstützender Metriken. Die Datentabelle verfügt auch über ein Suchfeld für den schnellen Zugriff auf bestimmte URLs. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen.
 
-* **URL** - die analysierte URL
+![zitierte URLs](/help/dashboards/assets/cited-urls.png)
+
+Die folgenden Metriken werden bereitgestellt:
+
+* **URL** - die analysierte URL.
 * **Mal zitiert** - Die Häufigkeit, mit der die URL in KI-generierten Antworten zitiert wurde.
 * **Eingabeaufforderungen in** - Die Anzahl der eindeutigen AI-Eingabeaufforderungen, die die URL angegeben haben.
 * **Kategorien** - Die Produktkategorien oder Themen, die mit der URL verknüpft sind.

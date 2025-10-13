@@ -1,23 +1,19 @@
 ---
 title: Kundenkonfiguration
 description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
-source-git-commit: 4192fe32c9e7cea4218ea580a9300f1fceb0f909
+source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
 
 
-# Kundenkonfiguration
+# Kundenkonfiguration {#customer-configuration}
 
-In der Kundenkonfiguration legen Sie fest, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird. Sie können Kategorien (z. B. Geschäftsbereiche oder Produktlinien) anpassen, Mitbewerber verfolgen und Aliase für Markenbezeichnungen hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+Das Dashboard für Kundenkonfigurationen ist ein leistungsstarkes Tool, das Einblicke in die Sichtbarkeit Ihrer Marke in LLMs bietet. Durch das korrekte Einrichten von Kategorien, Themen, Eingabeaufforderungen und Konkurrenten können Sie sicherstellen, dass Ihre Marke gut positioniert ist, um in LLM-generierten Antworten angezeigt zu werden. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
 
 ![Kundenkonfigurations-Dashboard](/help/dashboards/assets/customer-config.png)
-
-## Kundenkonfigurations-Dashboard
-
-Das Dashboard für Kundenkonfigurationen ist ein leistungsstarkes Tool, das Einblicke in die Sichtbarkeit Ihrer Marke in LLMs bietet. Durch das korrekte Einrichten von Kategorien, Themen, Eingabeaufforderungen und Konkurrenten können Sie sicherstellen, dass Ihre Marke gut positioniert ist, um in LLM-generierten Antworten angezeigt zu werden. Das regelmäßige Überprüfen von Einblicken wie Stimmanteil, Sichtbarkeit von Inhalten und Chancen hilft Ihnen, Ihre Strategie anzupassen und der Konkurrenz einen Schritt voraus zu sein.
 
 Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz auf verschiedenen Märkten und in verschiedenen Wettbewerbslandschaften überwacht und analysiert, haben Sie Zugriff auf die folgenden Registerkarten:
 
@@ -25,11 +21,15 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz auf verschiedenen Mä
 * [Mitbewerber-Tracking](#competitor-tracking)
 * [Markenalias](#brand-aliases)
 * [Data Insights](#data-insights)
-* [Agent-CDN](#agentic-cdn)
+* [CDN-Konfiguration](#agentic-cdn)
+
+>[!IMPORTANT]
+>
+> Weitere Informationen zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern](/help/overview/best-practices-topics-prompts.md) .
 
 ## Kategorien {#categories}
 
-Auf der Registerkarte Kategorien können Sie Geschäftskategorien oder Produktlinien definieren, die Sie verfolgen möchten, und sie mit bestimmten Regionen verknüpfen. Insgesamt bezieht sich die Registerkarte Kategorien auf jede andere Anpassung auf dieser Seite, da Kategorien im Feld Kategorie für die anderen Anpassungen angezeigt werden (Wettbewerber-Tracking, Aliase usw.). Hinzufügen einer neuen Kategorie:
+Auf der Registerkarte Kategorien können Sie Geschäftskategorien oder Produktlinien definieren, die Sie verfolgen möchten, und sie mit bestimmten Regionen verknüpfen. Insgesamt bezieht sich die Registerkarte Kategorien auf fast jede andere Anpassung auf dieser Seite, da Kategorien im Feld Kategorie für die anderen Anpassungen angezeigt werden (Konkurrenten-Tracking, Aliase usw.). Hinzufügen einer neuen Kategorie:
 
 1. Klicken Sie auf die Schaltfläche **Hinzufügen**.
 2. Fügen Sie im Fenster für die neue Konfiguration den **Kategorienamen“**.
@@ -68,7 +68,7 @@ Um einen Markenalias zu löschen, klicken Sie in der Alias-Liste auf das Symbol 
 
 Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Dateneinblicke zur Markenpräsenz](/help/dashboards/brand-presence.md#data-insights) hochladen und die Liste mit Eingabeaufforderungen und Themen aus dieser Analyse füllen. Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
 
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
 
 1. Klicken Sie im Dashboard auf **CSV hochladen**.
 2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.
@@ -90,7 +90,15 @@ Darüber hinaus können Sie der Liste auch Themen/Eingabeaufforderungen unabhän
 
 In der Liste können Sie auf jedes Thema klicken, und die zugehörigen Eingabeaufforderungen werden angezeigt. Um das Thema und die zugehörigen Eingabeaufforderungen zu löschen, klicken Sie auf das Löschsymbol in der Liste.
 
-<!--## Agentic CDN {#agentic-cdn}
+## CDN-Konfiguration {#cdn-configuration}
 
-Not available (will it be available for release?).-->
+Auf dieser Registerkarte können Sie Ihre CDN-Streams konfigurieren, damit Adobe LLM Optimizer Ihre CDN-Daten analysieren kann. Diese Daten werden für Dashboards (wie den Agentenverkehr) verwendet, die Einblicke in Traffic-Muster, Leistungsmetriken und Optimierungsmöglichkeiten bieten. Um Ihren CDN-Provider zu integrieren, klicken Sie auf **Onboarding CDN**.
 
+![Kundenkonfigurations-CDN](/help/overview/assets/cc-cdn.png)
+
+Im Fenster **Onboarding CDN Provider**:
+
+1. Wählen Sie Ihren CDN-Provider aus (z. B. Akamai, Adobe-Managed Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare oder andere).
+2. Klicken Sie **Onboard**, um die Protokollweiterleitung zu aktivieren.
+
+Wenn Sie **Sonstige** auswählen, müssen Sie sich an Adobe wenden, um Hilfe zu erhalten.
