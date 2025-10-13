@@ -1,9 +1,9 @@
 ---
 title: Best Practices für LLM Optimizer
 description: Entdecken Sie Best Practices für die LLM-Optimierung, um die Markensichtbarkeit bei der KI-Suche zu verbessern. Insights für Benchmarking und Inhaltsoptimierung.
-source-git-commit: a76d348a94495682d648ef0aad268e835e321017
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Weitere Überlegungen zur LLM-Optimierung:
 Die Erstellung einer erfolgreichen LLM-Optimierungskampagne umfasst Folgendes:
 
 * Identifizieren Sie hochwertige Themen, die auf die Kundenabsicht abgestimmt sind. Richten Sie die Eingabeaufforderung an den Geschäftszielen und den Kundenanforderungen aus.
-* Spot-Wettbewerber erwähnt, um Lücken und Chancen zu finden. Konzentrieren Sie sich auf Eingabeaufforderungen, bei denen Konkurrenten genannt werden, und zeigen Sie die Möglichkeit für die Markeneinbindung an.
+* Spot erwähnt andere, einschließlich Konkurrenten, um Lücken und Chancen zu finden. Konzentrieren Sie sich auf Eingabeaufforderungen, bei denen andere zitiert werden, und zeigen Sie die Möglichkeit für die Markeneinbindung an.
 * Eingabeaufforderungen nach Absicht mithilfe von Themen-Clustering gruppieren: Verwenden Sie Themen und Suchfelder, um ähnliche Benutzerziele für das Benchmarking der Sichtbarkeit zu gruppieren.
 * Beurteilen Sie die Glaubwürdigkeit Ihrer Marke anhand von EAT-Standards (Experience, Expertise, Authoritativity, Trustworthy) und YMYL-Standards (Your Money or Your Life).
 
@@ -85,7 +85,7 @@ Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für eine bessere Sichtba
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
 Im Folgenden finden Sie einige Best Practices zur Optimierung:
 
@@ -109,7 +109,7 @@ Im Folgenden finden Sie einige Best Practices zur Optimierung:
 
    * Verwenden Sie das [Opportunities-Dashboard](/help/dashboards/opportunities.md) um Recommendations zu identifizieren und zu bearbeiten.
    * Tracking von Sichtbarkeitsbewertung, Stimmung und Zitationshäufigkeit.
-   * Anpassen auf der Grundlage der Aktivität der Mitbewerber und der zeitnahen Trends.
+   * Passen Sie sich je nach Aktivität des anderen (einschließlich der Konkurrenz) und den zeitnahen Trends an.
 
 ## Offsite-Optimierung - Erweiterung des Markenaufkommens
 
@@ -117,7 +117,7 @@ Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit 
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
 
 
 Wichtige externe Kanäle:
@@ -158,11 +158,11 @@ Im Folgenden finden Sie Schritte, mit denen Sie den Fortschritt überwachen kön
 1. Vergleichen Sie Ihre aktuelle Sichtbarkeit.
    * Ermitteln Sie, wie oft und wo Ihre Marke erwähnt und zitiert wird und wie die Stimmung in Adobe LLM Optimizer ist. Siehe das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md).
    * Analysieren Sie Eingabeaufforderungen, wo Ihre Marke erscheint und wo nicht.
-   * Sichtbarkeit im Vergleich zu Mitbewerbern.
+   * Sichtbarkeit mit anderen, einschließlich Mitbewerbern, vergleichen (in **Andere-Tracking** im [Kundenkonfigurations-Dashboard](/help/dashboards/customer-configuration.md)).
    * Überprüfen Sie die Sichtbarkeit auf benutzergenerierten Plattformen wie Reddit, Quora und Wikipedia. Segment für Plattform (ChatGPT, Google-KI-Modus usw.)
    * Überwachen Sie den Agent-Traffic, um zu verstehen, welche Seiten LLMs besuchen. Agent-Traffic **oft nicht** die Startseite, sondern auf andere Seiten weiter unten in der Hierarchie. Siehe das Dashboard [Agent Traffic](/help/assets/overview/agentic-traffic-card.png).
 1. Änderungen im Zeitverlauf überwachen.
-   * Zeitfilter zur Nachverfolgung von Wochen- und Monatsschichten verwenden
+   * Verwenden Sie Zeitfilter, um Wochen- und Monatsschichten zu verfolgen.
    * Achten Sie auf Spitzen oder Rückgänge im Sichtbarkeitswert.
    * Analysieren Sie Stimmungstrends, um die Markenwahrnehmung zu verstehen.
 1. Korrelieren Sie Sichtbarkeit mit Traffic, Interaktion und Konversionen.
@@ -176,7 +176,7 @@ Im Folgenden finden Sie Schritte, mit denen Sie den Fortschritt überwachen kön
    * Stellen Sie sicher, dass Ihre Inhalte für LLMs leicht zu finden und zu lesen sind. Beheben von Problemen wie blockierten Seiten oder Problemen mit dem Code Ihrer Website.
    * Stellen Sie sicher, dass Beiträge zu Plattformen wie Wikipedia und Reddit unvoreingenommen und nicht kommerziell sind und einen Mehrwert bieten.
    * Verwenden Sie Adobe LLM Optimizer, um zu verfolgen, wie sich Ihre Sichtbarkeit im Laufe der Zeit ändert.
-   * Wenn Sie bemerken, dass Mitbewerber öfter erwähnt werden, passen Sie Ihre Strategie an, um einen Vorsprung zu haben.
+   * Wenn Sie bemerken, dass andere, darunter auch Wettbewerber, häufiger erwähnt werden, passen Sie Ihre Strategie an, um einen Vorsprung zu haben.
    * Aktualisieren Sie Ihre Inhalte immer wieder, damit sie mit dem übereinstimmen, wonach gesucht und gefragt wird.
 1. Anpassen von [Offsite](#offsite-optimization---expanding-your-brand-footprint) und [Onsite](#onsite-optimization---strengthening-your-owned-content)-Strategien basierend auf Erkenntnissen.
 
@@ -226,7 +226,7 @@ So optimieren Sie den Agent-Traffic:
 * Stellen Sie die Crawlbarkeit sicher, indem Sie die robots.txt- und CDN-Einstellungen überprüfen.
 * Verwenden Sie den [URL Inspector](/help/dashboards/url-inspector.md) um die URL-Leistung zu analysieren.
 * Verfolgen Sie das Bot-Verhalten, indem Sie auf Ihre CDN-Protokolle im [Agent-Traffic-Dashboard](/help/dashboards/agentic-traffic.md) zugreifen.
-* Segmentieren Sie Traffic, um Geschäftsergebnisse zu verstehen. Siehe [Best Practices für Kategorien, Themen, Eingabeaufforderungen und Mitbewerber](/help/overview/best-practices-topics-prompts.md).
+* Segmentieren Sie Traffic, um Geschäftsergebnisse zu verstehen. Siehe [Best Practices für Kategorien, Themen und Eingabeaufforderungen](/help/overview/best-practices-topics-prompts.md).
 
 Im Folgenden finden Sie die zu überwachenden Metriken:
 

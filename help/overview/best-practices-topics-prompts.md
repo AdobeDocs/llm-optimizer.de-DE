@@ -1,17 +1,17 @@
 ---
-title: Best Practices für Kategorien, Themen und Eingabeaufforderungen
-description: Optimieren Sie LLM-Erkenntnisse, indem Sie Kategorien, Themen, Eingabeaufforderungen und Mitbewerber für ein maßgeschneidertes Markenmonitoring und eine strategische Inhaltsanalyse konfigurieren.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+title: Best Practices für Kategorien, Themen, Eingabeaufforderungen und andere
+description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Eingabeaufforderungen und andere Marken konfigurieren, einschließlich Mitbewerbern für ein maßgeschneidertes Markenmonitoring und eine strategische Inhaltsanalyse.
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
 
 
-# Best Practices für die Konfiguration von Kategorien, Themen, Eingabeaufforderungen und Mitbewerbern
+# Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen zu verfolgenden Themen
 
-In diesem Abschnitt werden Best Practices beschrieben, mit deren Hilfe Sie entscheiden können, wie Sie Kategorien, Themen, Eingabeaufforderungen und Mitbewerber einrichten möchten.
+In diesem Abschnitt werden Best Practices beschrieben, mit deren Hilfe Sie entscheiden können, wie Sie Ihre Kategorien, Themen, Eingabeaufforderungen und andere Nachverfolgungsoptionen einrichten möchten.
 
 Dies ist ein entscheidender erster Schritt. Was Sie jetzt entscheiden, bestimmt, wie Informationen auf Ihren Geschäftskontext zugeschnitten werden. Alle Änderungen an Kategorien in der Zukunft setzen historische Daten zurück.
 
@@ -19,7 +19,7 @@ Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-config
 
 ![Fenster „Kundenkonfiguration“](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), Wettbewerber verfolgen und Aliase für Markenbezeichnungen hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Markenbezeichnungsaliase hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
 
 ## Best Practices für Kategorien
 
@@ -44,6 +44,8 @@ Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss auf den Ber
 * Wenn Sie ein *Business Leader* sind, wählen Sie den **SBU**-Ansatz.
 * Wenn Sie „Web */Inhalts-Inhaber“ sind* wählen Sie den **URL_DIR**-Ansatz.
 * Wenn Sie ein *Merchandising-/Angebotsmanager* sind, wählen Sie den Ansatz **Produkt-/**).
+
+![Hinzufügen von Kategorien in LLM Optimizer](/help/assets/best-practices/add-category.png)
 
 >[!IMPORTANT]
 >
@@ -79,6 +81,8 @@ Bei der Entscheidung über Themen sollten Sie eine kurze, flache Liste erstellen
 * Support-Kontakt
 * Firmen/Nachrichten (wenn Sie dies wirklich benötigen)
 
+![Hinzufügen von Themen in LLM Optimizer](/help/assets/best-practices/add-topic.png)
+
 Beachten Sie beim Erstellen der Liste Folgendes:
 
 * Kann ein Editor das Thema in 5 Sekunden nach der Eingabeaufforderung verstehen? Falls nicht, benennen/vereinfachen Sie um.
@@ -88,7 +92,7 @@ Beachten Sie beim Erstellen der Liste Folgendes:
 Einige zusätzliche hilfreiche Hinweise:
 
 * Nutzen Sie Ihre geschäftlichen oder Site-Kenntnisse, um Themen zu definieren, die den strategischen Zielen Ihrer Marke entsprechen
-* Berücksichtigen Sie bei bestimmten Themen den Vergleich Ihrer Marke mit Konkurrenten.
+* Beachten Sie, wie Ihre Marke im Vergleich zu anderen Marken innerhalb bestimmter Themen abschneidet.
 
 >[!IMPORTANT]
 >
@@ -114,20 +118,20 @@ Best Practices für Eingabeaufforderungen:
 >* Sie können Tools wie die Adobe LLM Optimizer- und die Google-Suchkonsole mit Regex-Filtern verwenden, um gängige Fragestrukturen zu identifizieren (z. B. „wie“, „was“, „wann“, „wo„) und herauszufinden, welche Aufforderungen die Personen für den Besuch Ihrer Site verwenden.
 >* Um herauszufinden, welche Eingabeaufforderungen für Ihre Site/Marke relevant sind, können Sie Suchdaten auf der Site verwenden, FAQs auf Suchmaschinenergebnisseiten verwenden oder sogar LLM-Chatbots direkt fragen, welche Fragen Kunden zu Ihrer Marke stellen könnten.
 
-## Best Practices für Mitbewerber
+## Best Practices für die Verfolgung anderer Marken
 
-Mitbewerber ermöglichen es Ihnen, die Sichtbarkeit und Erwähnungen in den LLM-Antworten auf für Ihr Unternehmen wichtige Eingabeaufforderungen und Themen zu überwachen.
+Mit „Andere nachverfolgen“ können Sie die Sichtbarkeit und Erwähnungen in LLM-Antworten auf für Ihr Unternehmen wichtige Eingabeaufforderungen und Themen überwachen.
 
-Auf [!UICONTROL **Registerkarte**] Wettbewerbs-Tracking“ können Sie Konkurrenten hinzufügen und ihre Sichtbarkeit für bestimmte Eingabeaufforderungen und Themen verfolgen.
+Auf der Registerkarte [!UICONTROL **Andere Tracking**] können Sie weitere hinzufügen, einschließlich Wettbewerbern, um ihre Sichtbarkeit für bestimmte Eingabeaufforderungen und Themen zu verfolgen.
 
-Mit dem Wettbewerb-Tracking können Sie sehen, wie oft Wettbewerber neben Ihrer Marke in verschiedenen Regionen und Kategorien erwähnt werden, und ihre Sichtbarkeit mit Ihrer eigenen vergleichen.
+Bei der Nachverfolgung durch andere Benutzer können Sie sehen, wie oft andere Marken neben Ihrer Marke in verschiedenen Regionen und Kategorien erwähnt werden, und ihre Sichtbarkeit mit der Ihrer eigenen vergleichen.
 
 >[!TIP]
 >
->Überprüfen Sie regelmäßig die Erwähnungen und Zitate von Mitbewerbern, um Bereiche zu identifizieren, in denen sich Ihre Marke verbessern kann.
+>Überprüfen Sie regelmäßig die Erwähnungen und Zitate von Mitbewerbern oder anderen Anbietern, um Bereiche zu identifizieren, in denen sich Ihre Marke verbessern kann.
 
 ## Weitere Informationen
 
-* [Dashboard für Kundenkonfigurationen](/help/dashboards/customer-configuration.md) konfigurieren Sie Ihre Kategorien, Themen, Eingabeaufforderungen und Konkurrenten.
+* [Dashboard für Kundenkonfiguration](/help/dashboards/customer-configuration.md) konfigurieren Sie Kategorien, Themen, Eingabeaufforderungen und anderes Tracking.
 * [Best Practices für LLM Optimizer](/help/tutorials/best-practices.md) beschreibt Best Practices für die LLM-Optimierung
 

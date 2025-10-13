@@ -1,9 +1,9 @@
 ---
 title: Grundlagen zu LLM Optimizer
 description: Erfahren Sie, wie Adobe LLM Optimizer die Sichtbarkeit der Marke in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
-source-git-commit: 29e067086f9b6dd41c04b349c86ddc1c2baf8d2f
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
 Adobe LLM Optimizer bietet eine Reihe von Tools zur Optimierung der generativen Engine:
 
 * Sichtbarkeit von Marken messen: Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen angezeigt wird, mit einem klaren Sichtbarkeitswert für das Benchmarking.
-* Benchmark-Mitbewerber: Vergleichen Sie den Stimmanteil Ihrer Marke und die Präsenz mit Mitbewerbern bei Generativmotoren.
+* Benchmark Others: Vergleichen Sie den Stimmanteil und die Präsenz Ihrer Marke mit Wettbewerbern und anderen in generativen Engines.
 * Entdecken Sie umsetzbare Möglichkeiten: Identifizieren Sie Inhalte und technische Verbesserungen (wie häufig gestellte Fragen, Abstracts, Schema, Crawlability), um Erwähnungen und Zitate zu optimieren.
 * Traffic-Auswirkungen verfolgen: Überwachen Sie sowohl den Agenten (KI-Assistent) als auch den Verweisverkehr zu Ihren eigenen Eigenschaften und verknüpfen Sie Sichtbarkeit mit Interaktion.
 * Team Collaboration aktivieren: Dashboards freigeben, Eigentümer zuweisen und Ziele über Marketing-, SEO- und Kommunikations-Teams hinweg abstimmen.
@@ -53,7 +53,7 @@ Generative Engine Optimization ist von Natur aus funktionsübergreifend. LLM Opt
 Mit Adobe LLM Optimizer können Sie:
 
 **Messen der Markensichtbarkeit** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einem klaren Sichtbarkeitswert, den Sie im Laufe der Zeit vergleichen können, können Sie über reine Spekulationen hinausgehen.
-**Benchmark-Wettbewerber** - Erfahren Sie, wie Ihre Marke im Vergleich zu Mitbewerbern bei Generativmotoren abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile.
+**Benchmark Others** - Sehen Sie, wie Ihre Marke in generativen Engines im Vergleich zu anderen abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile.
 **Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemas) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt erhöhen.
 **Traffic-Auswirkungen von KI verfolgen** - Überwachen Sie den Agent-Traffic (von KI-Assistenten) und den Verweisverkehr (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion.
 **Team Collaboration aktivieren** - Dashboards freigeben, Besitzer für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, SEO- und Kommunikationsfunktionen verfolgt werden.

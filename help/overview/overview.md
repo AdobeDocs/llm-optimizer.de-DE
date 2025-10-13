@@ -1,9 +1,9 @@
 ---
 title: Übersicht über LLM Optimizer
 description: Erfahren Sie, wie Adobe LLM Optimizer die Sichtbarkeit der Marke in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
-source-git-commit: c7c66566137ad1f5bda89f55748b9d81ddf36f76
+source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
 Adobe LLM Optimizer bietet eine Reihe von Tools zur Optimierung der generativen Engine:
 
 * **Messen der Markensichtbarkeit**: Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen angezeigt wird, mit einem klaren Sichtbarkeitswert für das Benchmarking.
-* **Benchmark-Wettbewerber**: Vergleichen Sie den Stimmanteil Ihrer Marke und die Präsenz mit Wettbewerbern in generativen Engines.
+* **Benchmark Others**: Vergleichen Sie den Anteil Ihrer Marke an Stimme und Präsenz mit anderen, einschließlich Wettbewerbern in generativen Engines.
 * **Entdecken Sie umsetzbare Opportunities**: Identifizieren Sie Inhalte und technische Verbesserungen (wie FAQs, Abstracts, Schema, Crawlability), um Erwähnungen und Zitate zu optimieren.
 * **Traffic-Auswirkungen verfolgen**: Überwachen Sie sowohl den Agent (KI-Assistent) als auch den Verweisverkehr zu Ihren eigenen Eigenschaften und verknüpfen Sie Sichtbarkeit mit Interaktion.
 * **Team-Collaboration aktivieren**: Freigeben von Dashboards, Zuweisen von Inhabern und Ausrichten von Zielen in Marketing-, SEO- und Kommunikations-Teams.
@@ -55,7 +55,7 @@ Generative Engine Optimization ist von Natur aus funktionsübergreifend. LLM Opt
 Mit Adobe LLM Optimizer können Sie:
 
 **Messen der Markensichtbarkeit** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einem klaren Sichtbarkeitswert, den Sie im Laufe der Zeit vergleichen können, können Sie über reine Spekulationen hinausgehen. Siehe [Dashboard für Markenpräsenz](/help/dashboards/brand-presence.md).
-**Benchmark-Wettbewerber** - Erfahren Sie, wie Ihre Marke im Vergleich zu Mitbewerbern bei Generativmotoren abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile. Siehe [Dashboard für Markenpräsenz](/help/dashboards/brand-presence.md).
+**Benchmark Others** - Erfahren Sie, wie Ihre Marke im Vergleich zu anderen, einschließlich Wettbewerbern in Generative Engines, abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile. Siehe [Dashboard für Markenpräsenz](/help/dashboards/brand-presence.md).
 **Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemas) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt erhöhen. Siehe [Opportunities-Dashboard](/help/dashboards/opportunities.md).
 **Traffic-Auswirkungen von KI verfolgen** - Überwachen Sie den Agent-Traffic (von KI-Assistenten) und den Verweisverkehr (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion. Siehe [Agententraffic-Dashboard](/help/dashboards/agentic-traffic.md) und [Dashboard für Empfehlungstraffic](/help/dashboards/referral-traffic.md).
 **Team Collaboration aktivieren** - Dashboards freigeben, Verantwortliche für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, Suchmaschinenoptimierung (SEO)- und Kommunikationsfunktionen verfolgt werden. Siehe [Collaboration-Dashboard](/help/dashboards/collaboration.md).
@@ -66,7 +66,7 @@ Hier finden Sie Ressourcen, die Ihnen helfen, LLM Optimizer optimal zu nutzen:
 
 * [Schnellstart](/help/overview/quick-start.md) bringt Sie schnell zum Laufen.
 * [Dashboards - Übersicht](/help/dashboards/dashboards-overview.md) beschreibt alle in der LLM Optimizer verfügbaren Dashboards.
-* [Best Practices für die Konfiguration von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern](/help/overview/best-practices-topics-prompts.md) enthalten wichtige Informationen zur Einrichtung von LLM Optimizer.
+* [Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen ](/help/overview/best-practices-topics-prompts.md) wichtige Informationen zum Einrichten von LLM Optimizer.
 * [Best Practices](/help/tutorials/best-practices.md) ermöglicht es Ihnen, Best Practices für die LLM-Optimierung zu entdecken, um die Sichtbarkeit Ihrer Marke bei der KI-Suche zu verbessern.
 
 
