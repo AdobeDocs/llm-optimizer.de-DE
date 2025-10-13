@@ -1,9 +1,9 @@
 ---
 title: Schnellstart
 description: Erste Schritte mit Adobe LLM Optimizer - Integrieren Sie Ihre Marke, erschließen Sie Einblicke in die KI-Sichtbarkeit und erkunden Sie Dashboards, um die Suchleistung zu verbessern.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -32,14 +32,14 @@ Im folgenden Abschnitt finden Sie Details zum Aktivieren der kostenlosen Testver
 
 ### AEM Cloud-Kunden
 
-Wenn Sie AEM Cloud-Kunde sind, haben Sie die Möglichkeit, LLM Optimizer mithilfe der Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
+Wenn Sie AEM Cloud-Kunde sind, haben Sie die Möglichkeit, LLM Optimizer mithilfe der Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
 
 >[!NOTE]
 >Neu hinzugefügte Eingabeaufforderungen werden erst dann im Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) angezeigt, wenn die Verarbeitung abgeschlossen ist. AEM Cloud-Kunden können die kostenlose Testversion von LLM Optimizer verwenden. Die Verwendung von mehr als 200 Eingabeaufforderungen erfordert eine separate Lizenzvereinbarung. Der Zugriff erfolgt „wie besehen“ und „wie verfügbar“ und kann von Adobe jederzeit geändert, eingeschränkt oder entfernt werden. Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie weitere Informationen benötigen.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
-Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
+Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
 
 ![LLM Optimizer-Domain](/help/overview/assets/domain.png)
 
@@ -50,7 +50,7 @@ Um einen Trigger der Markenpräsenzanalyse zu erhalten, müssen Sie Kategorien, 
 
 ![Analyse der Markenpräsenz](/help/overview/assets/bp-analysis.png)
 
-Darüber hinaus müssen Sie für die Traffic[Analyse auch &#x200B;](#step-4)CDN-Protokollweiterleitung“ konfigurieren. LLM Optimizer erfordert Daten zur Markenpräsenz sowie Einblicke aus dem Agent- und Empfehlungs-Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zu geben, um die KI-Sichtbarkeit zu erhöhen.
+Darüber hinaus müssen Sie für die Traffic[Analyse auch ](#step-4)CDN-Protokollweiterleitung“ konfigurieren. LLM Optimizer erfordert Daten zur Markenpräsenz sowie Einblicke aus dem Agent- und Empfehlungs-Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zu geben, um die KI-Sichtbarkeit zu erhöhen.
 
 ### Nicht-AEM Cloud-Kunden
 
@@ -58,7 +58,7 @@ Sobald der Geschäftsvertrag abgeschlossen ist, erfolgt das Onboarding über den
 
 ### Schritt 2: Kategorien, Themen und Eingabeaufforderungen anpassen
 
-Um einen Trigger der Markenpräsenzanalyse zu erhalten und das Dashboard mit Einblicken in die Sichtbarkeit Ihrer Marke zu füllen, müssen Sie Kategorien, Themen und Eingabeaufforderungen anpassen. Diese Konfiguration wird im Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Um einen Trigger der Markenpräsenzanalyse zu erhalten und das Dashboard mit Einblicken in die Sichtbarkeit Ihrer Marke zu füllen, müssen Sie Kategorien, Themen und Eingabeaufforderungen anpassen. Diese Konfiguration wird im Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
 
 ![Kundenkonfigurations-Dashboard](/help/overview/assets/prompt-creation.png)
 
@@ -68,14 +68,14 @@ Von diesem Dashboard aus haben Sie folgende Möglichkeiten:
 * Geben Sie **benutzerdefinierte Themen** oder Unterthemen ein, die verfolgt werden sollen. Bei Themen kann es sich um spezifische Themen handeln, die mit umfangreichen, nicht markenspezifischen Keywords in Verbindung gebracht werden, die mit Ihrer Domain verknüpft sind.
 * Erstellen **Eingabeaufforderungen** um die Sichtbarkeit in bestimmten Abfragen zu überwachen. Eingabeaufforderungen sind Abfragen (mit oder ohne Marke), die eine allgemeine Sichtbarkeit bieten. Je nach den von Ihnen angegebenen Kategorien und Themen wird nur eine begrenzte Anzahl von Eingabeaufforderungen automatisch generiert.
 * Definieren Sie **Aliase**, um sicherzustellen, dass alle Erwähnungen einer Marke erfasst und berücksichtigt werden.
-* Definieren Sie **Mitbewerber-Aliase**, um Mitbewerber genau zu verfolgen.
+* Definieren Sie **andere Aliase**, um andere Marken genau zu verfolgen.
 
 >[!NOTE]
 >Die von Ihnen angeforderten Eingabeaufforderungen sind nicht öffentlich verfügbar, da sie von den LLMs nicht offen gelegt werden.
 
 >[!NOTE]
 >
-> Weitere Informationen zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern](/help/overview/best-practices-topics-prompts.md) .
+> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und ](/help/overview/best-practices-topics-prompts.md)&quot;.
 
 ### Schritt 3: Automatische Vorausfüllung von Insights
 
@@ -96,9 +96,9 @@ Wenn zuvor kein CDN-Anbieter wie im obigen Beispiel hinzugefügt wurde, werden S
 
 Nachdem Sie Informationen für die CDN-Protokollweiterleitung angegeben haben, können Sie:
 
-* Zeigen Sie das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) an, zeigen Sie Ihre Sichtbarkeitsbewertung an und verfolgen Sie Ihre Leistung im Vergleich zu Ihren Mitbewerbern.
+* Zeigen Sie das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) an, zeigen Sie Ihre Sichtbarkeitsbewertung an und verfolgen Sie Ihre Leistung in Bezug auf andere Marken.
 * Erkunden Sie die Dashboards [Agent](/help/dashboards/agentic-traffic.md) und [Referral Traffic](/help/dashboards/referral-traffic.md), wenn die CDN-Protokollweiterleitung konfiguriert wurde.
 * Verwenden Sie [Opportunities](/help/dashboards/opportunities.md) um Inhalte und technische Verbesserungen zu identifizieren.
 * Exportieren Sie Daten und arbeiten Sie mit Ihrem Team zusammen oder laden Sie Ihren Kollegen zur Verwendung des Produkts ein.
 
-Um die Funktionen von LLM Optimizer vollständig zu verstehen, sollten Sie schließlich alle verfügbaren [Dashboards“ &#x200B;](/help/dashboards/dashboards-overview.md).
+Um die Funktionen von LLM Optimizer vollständig zu verstehen, sollten Sie schließlich alle verfügbaren [Dashboards“ ](/help/dashboards/dashboards-overview.md).

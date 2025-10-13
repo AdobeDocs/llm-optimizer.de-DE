@@ -1,9 +1,9 @@
 ---
 title: Markenauftritt
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ verstehen können, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Markenauftritt {#brand-presence}
 
-Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke auf der Ebene der KI-generierten Reaktionen wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitate zu verfolgen, Wettbewerber zu vergleichen und Stimmungstrends zu untersuchen. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Einblicke bieten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke auf der Ebene der KI-generierten Reaktionen wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitate zu verfolgen und Stimmungstrends zu untersuchen. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Einblicke bieten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
-![Markenpräsenz](/help/dashboards/assets/brand-main.png)
+![Markenpräsenz](/help/dashboards/assets/brand-main1.png)
 
 Auf dieser Seite wird Folgendes beschrieben:
 
 * [Filter](#filters)
 * [Übersichtsmetriken](##key-metrics)
-* [Vergleich mit Mitbewerbern](##competitor-comparison)
+* [Vergleich mit anderen](##others-comparison)
 * [Stimmungstrend](#sentiment-trend)
 * [Data Insights](#data-insights)
 
@@ -56,13 +56,13 @@ Diese Metrik gibt an, wie oft die Site als Quelle referenziert wurde.
 
 Trendindikatoren für jede Schlüsselmetrik zeigen, wie sich diese Werte im Laufe der Zeit im Vergleich zum vorherigen Zeitraum ändern.
 
-## Vergleich mit Mitbewerbern {#competitor-comparison}
+## Vergleich mit anderen {#others-comparison}
 
-Im Bereich Wettbewerb-Vergleich können Sie bis zu fünf Wettbewerber auswählen und ihre Erwähnungen und Zitate mit Ihrer Marke vergleichen. Auf diese Weise können Sie Ihre Leistung im Verhältnis zur Konkurrenz anzeigen und bewerten.
+Im Abschnitt Vergleich anderer Marken können Sie bis zu fünf andere Marken auswählen und ihre Erwähnungen und Zitate mit Ihrer Marke vergleichen. Auf diese Weise können Sie Ihre Leistung im Verhältnis zu anderen Marken anzeigen und bewerten.
 
-![Wettbewerbsvergleich](/help/dashboards/assets/competitor-comparison.png)
+![Sonstige - Vergleich](/help/dashboards/assets/competitor-comparison1.png)
 
-Die Wettbewerber werden aus der Dropdown-Liste ausgewählt und die Diagramme werden aktualisiert, wenn Sie auf **Filter anwenden** klicken. Die Diagramme zeigen wöchentliche Erwähnungen und wöchentliche Zitate nebeneinander. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
+Die anderen Marken werden aus der Dropdown-Liste ausgewählt und die Diagramme werden aktualisiert, wenn Sie auf **Filter anwenden** klicken. Die Diagramme zeigen wöchentliche Erwähnungen und wöchentliche Zitate nebeneinander. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
 
 ## Stimmungstrendanalyse {#sentiment-trend}
 
@@ -74,7 +74,7 @@ Im Abschnitt zur Stimmungstrendanalyse können Sie verfolgen, wie Ihre Marke in 
 
 Um das Dashboard aufzurunden, haben wir zwei wichtige Tabellen: Dateneinblicke und Stimmanteil. Die Informationen in diesen Tabellen helfen Ihnen dabei zu erkennen, wo Ihre Marke stark ist und wo eine Optimierung erforderlich ist.
 
-Mithilfe der Tabelle **Dateneinblicke** können Sie Themen und Benutzerfragen erkunden, um die Auswirkungen von Inhalten zu bewerten und zu optimieren. Die Ergebnisse werden nach Themen und Eingabeaufforderungen aufgeführt. Währenddessen vergleicht die **share of voice**-Tabelle Ihre Markenstimme mit anderen Mitbewerbern themenübergreifend und hilft Ihnen, Lücken zu identifizieren und zukünftige Themen zu priorisieren.
+Mithilfe der Tabelle **Dateneinblicke** können Sie Themen und Benutzerfragen erkunden, um die Auswirkungen von Inhalten zu bewerten und zu optimieren. Die Ergebnisse werden nach Themen und Eingabeaufforderungen aufgeführt. In der **Share of Voice**-Tabelle wird Ihre Markensprache mit anderen Marken themenübergreifend verglichen. So können Sie Lücken identifizieren und zukünftige Themen priorisieren.
 
 ![Dateneinblicke](/help/dashboards/assets/data-insights.png)
 
@@ -105,9 +105,9 @@ Die Tabelle Anteil der Stimmen bietet einen vergleichenden Überblick über die 
 * **Thema** - Das analysierte Thema.
 * **Beliebtheit** - Das Suchvolumen für das Thema in Bezug auf alle anderen Themen in Ihrer Analyse.
 * **Erwähnungen** - Gibt an, wie oft Ihre Marke in KI-Antworten für das Thema oder die Themen-/Eingabeaufforderungskombination erwähnt wurde.
-* **Rangfolge** - Die Rangfolge des Stimmanteils Ihrer Marke im Verhältnis zu allen identifizierten Mitbewerbern.
+* **Rangfolge** - Die Rangfolge des Stimmanteils Ihrer Marke im Verhältnis zu allen anderen identifizierten Marken.
 * **Anteil der Stimme** - Der Prozentsatz der Erwähnungen insgesamt, die Ihre Marke in KI-generierten Antworten enthält.
-* **Top 5 Wettbewerber** - Die fünf Top-Marken, die am häufigsten für dieselben Themen erwähnt werden. Die Teilnehmer sind nach ihrem Stimmanteil (vom höchsten zum niedrigsten) organisiert.
+* **Top 5 Andere** - Die fünf Top-Marken, die am häufigsten für dieselben Themen erwähnt werden. Die Marken sind nach ihrem Anteil an der Stimme (vom höchsten zum niedrigsten) organisiert.
 
 >[!ENDTABS]
 
@@ -119,5 +119,5 @@ Wichtige Verwendungsmöglichkeiten der Tabelle:
 
 * Priorisieren Sie Themen mit hoher Popularität bei geringer Sichtbarkeit - Fokusoptimierung, bei der die Zielgruppennachfrage stark ist, aber Ihre Markenpräsenz schwach ist.
 * Stimmungsänderungen verfolgen - erkennen Sie Themen, bei denen die Erwähnungen negativ oder neutral sind, und koordinieren Sie Ihre Reaktion.
-* Zitate mit eigenen Zitaten vergleichen - Identifizieren Sie Eingabeaufforderungen, in denen Ihre Marke erwähnt wird, aber der Inhalt des Mitbewerbers zitiert wird, was eine Inhaltslücke signalisiert.
+* Zitate mit eigenen Zitaten vergleichen - Identifizieren Sie Eingabeaufforderungen, in denen Ihre Marke erwähnt wird, aber der Inhalt einer anderen Marke zitiert wird, was eine Inhaltslücke signalisiert.
 * Positionsbereich auswerten - Überwachen Sie, ob Ihre Marke frühzeitig in KI-Reaktionen (Positionen 1-3) oder weiter unten (6-10) erscheint.

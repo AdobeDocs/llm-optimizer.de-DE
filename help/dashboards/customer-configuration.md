@@ -1,35 +1,35 @@
 ---
 title: Kundenkonfiguration
 description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 1%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
 
 # Kundenkonfiguration {#customer-configuration}
 
-Das Dashboard für Kundenkonfigurationen ist ein leistungsstarkes Tool, das Einblicke in die Sichtbarkeit Ihrer Marke in LLMs bietet. Durch das korrekte Einrichten von Kategorien, Themen, Eingabeaufforderungen und Konkurrenten können Sie sicherstellen, dass Ihre Marke gut positioniert ist, um in LLM-generierten Antworten angezeigt zu werden. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+Das Dashboard für Kundenkonfigurationen ist ein leistungsstarkes Tool, das Einblicke in die Sichtbarkeit Ihrer Marke in LLMs bietet. Durch das korrekte Einrichten von Kategorien, Themen und Eingabeaufforderungen können Sie sicherstellen, dass Ihre Marke gut positioniert ist, um in LLM-generierten Antworten angezeigt zu werden. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
 
 ![Kundenkonfigurations-Dashboard](/help/dashboards/assets/customer-config.png)
 
 Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz auf verschiedenen Märkten und in verschiedenen Wettbewerbslandschaften überwacht und analysiert, haben Sie Zugriff auf die folgenden Registerkarten:
 
 * [Kategorien](#categories)
-* [Mitbewerber-Tracking](#competitor-tracking)
+* [Andere Tracking-Optionen](#others-tracking)
 * [Markenalias](#brand-aliases)
 * [Data Insights](#data-insights)
 * [CDN-Konfiguration](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Weitere Informationen zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und Wettbewerbern](/help/overview/best-practices-topics-prompts.md) .
+> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und ](/help/overview/best-practices-topics-prompts.md)&quot;.
 
 ## Kategorien {#categories}
 
-Auf der Registerkarte Kategorien können Sie Geschäftskategorien oder Produktlinien definieren, die Sie verfolgen möchten, und sie mit bestimmten Regionen verknüpfen. Insgesamt bezieht sich die Registerkarte Kategorien auf fast jede andere Anpassung auf dieser Seite, da Kategorien im Feld Kategorie für die anderen Anpassungen angezeigt werden (Konkurrenten-Tracking, Aliase usw.). Hinzufügen einer neuen Kategorie:
+Auf der Registerkarte Kategorien können Sie Geschäftskategorien oder Produktlinien definieren, die Sie verfolgen möchten, und sie mit bestimmten Regionen verknüpfen. Insgesamt bezieht sich die Registerkarte Kategorien auf fast jede andere Anpassung auf dieser Seite, da Kategorien im Kategoriefeld für die anderen Anpassungen angezeigt werden (andere Anpassungen, Aliase usw.). Hinzufügen einer neuen Kategorie:
 
 1. Klicken Sie auf die Schaltfläche **Hinzufügen**.
 2. Fügen Sie im Fenster für die neue Konfiguration den **Kategorienamen“**.
@@ -38,19 +38,19 @@ Auf der Registerkarte Kategorien können Sie Geschäftskategorien oder Produktli
 
 Durch das Hinzufügen neuer Kategorien werden nicht automatisch Themen und Eingabeaufforderungen generiert. Diese müssen manuell über die Registerkarte [Dateneinblicke](#data-insights) hinzugefügt werden.
 
-Um eine Kategorie zu löschen, klicken Sie in der Kategorieliste auf das Löschsymbol. Vorsicht ist geboten, da **beim Löschen einer Kategorie auch die zugehörigen Elemente gelöscht werden** z. B. Wettbewerber, die Sie möglicherweise eingerichtet haben, oder Markenaliase, die mit dieser bestimmten Kategorie verknüpft sind.
+Um eine Kategorie zu löschen, klicken Sie in der Kategorieliste auf das Löschsymbol. Vorsicht ist geboten, da **Löschen einer Kategorie auch die zugehörigen Elemente**, z. B. Markenaliase, die mit dieser bestimmten Kategorie verknüpft sind.
 
-## Mitbewerber-Tracking {#competitor-tracking}
+## Andere Tracking-Optionen {#others-tracking}
 
-Mithilfe des Wettbewerbs-Trackings können Sie verfolgen, wie Ihre Konkurrenten in Bezug auf Ihre Marke in verschiedenen Kategorien und Regionen erwähnt werden. Überwachen Sie deren Präsenz und Leistung in Ihren Marktsegmenten. So passen Sie das Mitbewerber-Tracking an:
+Mithilfe dieser Registerkarte können Sie verfolgen, wie Ihre anderen in Bezug auf Ihre Marke in verschiedenen Kategorien und Regionen erwähnt werden. Überwachen Sie deren Präsenz und Leistung in Ihren Marktsegmenten. Anpassen des Trackings:
 
-1. Um einen neuen Mitbewerber hinzuzufügen, klicken Sie auf die Schaltfläche **Hinzufügen**.
+1. Klicken Sie auf die Schaltfläche **Hinzufügen**.
 2. Wählen Sie im Fenster für die neue Konfiguration die Option **Kategorie** aus. Zuvor erstellte Kategorien werden hier angezeigt.
-3. Fügen Sie den Namen des Mitbewerbers hinzu.
-4. Passen Sie bei Bedarf den Konkurrenzalias und die Domains an.
-5. Klicken Sie **Speichern** und der neue Mitbewerber wird auf der Liste der Mitbewerber angezeigt.
+3. Den Namen der anderen Person hinzufügen.
+4. Passen Sie bei Bedarf den anderen Alias und die Domains an.
+5. Klicken Sie auf **Speichern**.
 
-Um einen Mitbewerber zu löschen, klicken Sie auf das Löschsymbol in der Liste der Mitbewerber.
+Um einen Eintrag auf der Liste zu löschen, klicken Sie auf das Löschsymbol.
 
 ## Markenalias {#brand-aliases}
 
@@ -68,7 +68,7 @@ Um einen Markenalias zu löschen, klicken Sie in der Alias-Liste auf das Symbol 
 
 Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Dateneinblicke zur Markenpräsenz](/help/dashboards/brand-presence.md#data-insights) hochladen und die Liste mit Eingabeaufforderungen und Themen aus dieser Analyse füllen. Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
 
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
 
 1. Klicken Sie im Dashboard auf **CSV hochladen**.
 2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.

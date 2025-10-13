@@ -1,7 +1,7 @@
 ---
 title: URL-Inspektor
 description: Erfahren Sie, wie Sie mit dem URL-Inspektor analysieren können, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Die Ansicht der Trend-URLs, die um Zitate konkurrieren, zeigt externe URLs an, d
 Die folgenden Metriken werden bereitgestellt:
 
 * **URL** - die analysierte URL
-* **Content-**: Der Typ des Inhalts (Inhaber, Social, Verdient, Mitbewerber).
+* **Content-**: Der Typ des Inhalts (privat, sozial, verdient, andere).
 * **Mal zitiert** - Die Häufigkeit, mit der die URL in KI-generierten Antworten zitiert wurde.
 * **Eingabeaufforderungen in** - Die Anzahl der eindeutigen AI-Eingabeaufforderungen, die die URL angegeben haben.
 * **Kategorien** - Die Produktkategorien oder Themen, die mit der URL verknüpft sind.
