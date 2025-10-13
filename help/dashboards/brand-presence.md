@@ -1,7 +1,7 @@
 ---
 title: Markenauftritt
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ verstehen können, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird.
-source-git-commit: 5e8efde82c10c9afa09d51ec9ef20fc006363210
+source-git-commit: a37c4e7d2e26f16dc10dc7bc39ba58ba1df77cd5
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke auf der Ebene der KI-generierten Reaktionen wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitate zu verfolgen und Stimmungstrends zu untersuchen. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Einblicke bieten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
-![Markenpräsenz](/help/dashboards/assets/brand-main1.png)
+![Markenpräsenz](/help/dashboards/assets/brand-main.png)
 
 Auf dieser Seite wird Folgendes beschrieben:
 
@@ -60,7 +60,7 @@ Trendindikatoren für jede Schlüsselmetrik zeigen, wie sich diese Werte im Lauf
 
 Im Abschnitt Vergleich anderer Marken können Sie bis zu fünf andere Marken auswählen und ihre Erwähnungen und Zitate mit Ihrer Marke vergleichen. Auf diese Weise können Sie Ihre Leistung im Verhältnis zu anderen Marken anzeigen und bewerten.
 
-![Sonstige - Vergleich](/help/dashboards/assets/competitor-comparison1.png)
+![Sonstige - Vergleich](/help/dashboards/assets/other-comparison.png)
 
 Die anderen Marken werden aus der Dropdown-Liste ausgewählt und die Diagramme werden aktualisiert, wenn Sie auf **Filter anwenden** klicken. Die Diagramme zeigen wöchentliche Erwähnungen und wöchentliche Zitate nebeneinander. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
 
