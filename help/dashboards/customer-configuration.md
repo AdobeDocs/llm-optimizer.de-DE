@@ -1,7 +1,8 @@
 ---
 title: Kundenkonfiguration
 description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Customer Configuration
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 2%
@@ -25,7 +26,7 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz auf verschiedenen Mä
 
 >[!IMPORTANT]
 >
-> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und &#x200B;](/help/overview/best-practices-topics-prompts.md)&quot;.
+> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und ](/help/overview/best-practices-topics-prompts.md)&quot;.
 
 ## Kategorien {#categories}
 
@@ -68,7 +69,7 @@ Um einen Markenalias zu löschen, klicken Sie in der Alias-Liste auf das Symbol 
 
 Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Dateneinblicke zur Markenpräsenz](/help/dashboards/brand-presence.md#data-insights) hochladen und die Liste mit Eingabeaufforderungen und Themen aus dieser Analyse füllen. Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
 
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
 
 1. Klicken Sie im Dashboard auf **CSV hochladen**.
 2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.

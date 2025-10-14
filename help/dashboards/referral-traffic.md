@@ -1,7 +1,8 @@
 ---
 title: Empfehlungsverkehr
 description: Erfahren Sie, wie Sie mit dem Dashboard für Empfehlungs-Traffic anzeigen können, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen.
-source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
+feature: Referral Traffic
+source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -62,7 +63,7 @@ Neben den oben dargestellten Gesamtleistungsmetriken schlüsselt der Bereich **T
 
 <!--## Top Referral URLs {#top-referrals}
 
-The Top Referral URLs list surfaces your site’s most visited pages from referrals.
+The Top Referral URLs list surfaces your site's most visited pages from referrals.
 
 ![Top Referral URLs](/help/dashboards/assets/top-url.png)-->
 
