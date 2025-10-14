@@ -1,9 +1,9 @@
 ---
 title: Empfehlungsverkehr
 description: Erfahren Sie, wie Sie mit dem Dashboard für Empfehlungs-Traffic anzeigen können, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen.
-source-git-commit: a699f8f3c50f77d07f29cd354fd1ef8e6eed8ff9
+source-git-commit: a6d050516e681094d97b25fcdc59e9ed4e60e104
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Empfehlungsverkehr
 
-Der Verweis-Traffic zeigt an, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen. Es verfolgt und analysiert Traffic-Quellen, Verweismuster und Konversionsmetriken von externen Websites und Plattformen. Auf diese Weise lässt sich erkennen, welche Quellen, Regionen und Seiten den am meisten interagierenden Traffic leiten. Die Daten werden entweder aus den CDN-Protokollen oder der [AEM Operational Telemetry](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/sites/operational-telemetry-for-aem-as-a-cloud-service) bezogen. Beide Quellen schützen die Privatsphäre und erfassen keine personenbezogenen Benutzerdaten. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Der Verweis-Traffic zeigt an, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen. Es verfolgt und analysiert Traffic-Quellen, Verweismuster und Konversionsmetriken von externen Websites und Plattformen. Auf diese Weise lässt sich erkennen, welche Quellen, Regionen und Seiten den am meisten interagierenden Traffic leiten. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 ![Empfehlungsseite](/help/dashboards/assets/referral-traffic.png)
 
@@ -25,7 +25,7 @@ Auf dieser Seite wird Folgendes beschrieben:
 
 ## Setup {#setup}
 
-Bei der ersten Anmeldung kann das Dashboard für den Empfehlungs-Traffic leer erscheinen. Um Ihre Daten anzuzeigen, müssen Sie einen Anbieter für Empfehlungs-Traffic konfigurieren, indem Sie **Zur Konfiguration wechseln** auswählen.
+Bei der ersten Anmeldung kann das Dashboard für den Empfehlungs-Traffic leer erscheinen. Um Ihre Daten anzuzeigen, müssen Sie die [CDN-Protokollweiterleitung](/help/dashboards/customer-configuration.md#cdn-configuration) konfigurieren, indem Sie **Zur Konfiguration wechseln** auswählen.
 
 ![Verweiseinrichtung](/help/dashboards/assets/referral-setup1.png)
 
@@ -33,7 +33,7 @@ Bei der ersten Anmeldung kann das Dashboard für den Empfehlungs-Traffic leer er
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Nachdem ein Anbieter von Empfehlungs-Traffic ausgewählt wurde, wird das Dashboard mit Verweisungs-Traffic-Metriken gefüllt.
+Nach der Aktivierung wird das Dashboard mit Traffic-Metriken für Verweise gefüllt.
 
 ## Filter {#filters}
 
