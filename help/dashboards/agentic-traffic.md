@@ -2,9 +2,9 @@
 title: Agenturverkehr
 description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Oben auf der Seite gibt es drei Schlüsselmetriken, die Sie beachten müssen:
 
 * **Agenteninteraktionen** - Diese Metrik stellt die Gesamtzahl der Anfragen dar, die von KI-Agenten an Ihre Website gesendet wurden. Dies umfasst den gesamten Traffic von Suchmaschinen, Chatbots und anderem nicht-menschlichen Traffic.
 * **Erfolgsrate** - Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
-* **Durchschnittliche TTFB** - Zeit bis zum ersten Byte (Time To First Byte, TTFB) misst die Zeit, die für das erste Byte der Daten benötigt wird, die vom Server empfangen werden. Niedrigere Werte bedeuten kürzere Serverreaktionszeiten.
+* **Durchschnittliche TTFB** - Zeit bis zum ersten Byte (Time To First Byte, TTFB) misst die Zeit, die für das erste Byte der Daten benötigt wird, die vom Server empfangen werden. Der Durchschnittswert wird auf der Grundlage der Anzahl der Anfragen gewichtet, die jeden Code zurückgeben, und schließt Anfragen aus, die zu Antworten von 5xx geführt haben. Niedrigere Werte bedeuten kürzere Serverreaktionszeiten.
 
 Trendindikatoren für jede Schlüsselmetrik zeigen, wie sich diese Werte im Laufe der Zeit im Vergleich zum vorherigen Zeitraum ändern.
 
@@ -82,7 +82,7 @@ Verwenden Sie das Diagramm Agentenmäßige Traffic-Trends , um die wöchentliche
 
 ## Top- und Bottom-Mover {#top-bottom-movers}
 
-Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. Top Movers zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während Bottom Movers URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert, und wo sich KI-gesteuerte Erkennungsmuster verschieben.
+Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. **Top Movers** zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während **Bottom Movers** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert, und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
 ![Top und Bottom Mover](/help/dashboards/assets/movers.png)
 
@@ -102,6 +102,8 @@ Die Tabelle Benutzeragentenanalyse enthält eine Aufschlüsselung des Traffics n
 * **Agent Type** - Der KI-Agent, der die Seite durchsucht, entweder ein Crawler oder ein Chatbot.
 * **Treffer** - Die Gesamtzahl der Anfragen, die von KI-Agenten für diesen bestimmten Seitentyp gestellt wurden.
 
+Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken.
+
 >[!TAB URL-Leistungsanalyse]
 
 Die Tabelle URL-Leistungsanalyse zeigt eine detaillierte Ansicht der einzelnen URLs. Dazu gehören Treffer, eindeutige Agenten, Top-Agenten, Erfolgsraten und Kategorien. Auf diese Weise können Sie hochwertige Seiten identifizieren, Durchforstungslücken erkennen und Inhalte für KI-Engines optimieren. Die URLs werden nach Traffic-Volumen sortiert. Die Tabelle enthält die folgenden Kategorien:
@@ -113,13 +115,15 @@ Die Tabelle URL-Leistungsanalyse zeigt eine detaillierte Ansicht der einzelnen U
 * **Top-Agent-**: Der Typ des KI-Agenten, der den meisten Traffic zu dieser URL generiert hat.
 * **Erfolgsrate** - Der Prozentsatz erfolgreicher HTTP-Anfragen, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
 * **Kategorie** - Die Kategorie, die dem Inhalt Ihrer Seite am ehesten entspricht.
+* **Durchschnittliche TTFB (ms)** - Die Zeit bis zum ersten Byte (TTFB) misst die Zeit, die für das erste Byte von Daten benötigt wird, die vom Server empfangen werden (in Millisekunden). Der Durchschnittswert wird auf der Grundlage der Anzahl der Anfragen gewichtet, die jeden Code zurückgeben, und schließt Anfragen aus, die zu Antworten von 5xx geführt haben. Niedrigere Werte bedeuten kürzere Serverreaktionszeiten.
+* **Antwort-Codes** - die HTTP-Status-Codes, die für die URL beobachtet werden.
 
-Die URL-Leistungstabelle enthält ein Suchfeld für den schnellen Zugriff auf URLs. Sie können auch zusätzliche Details für jede URL anzeigen, indem Sie auf das Informationssymbol am Ende jeder Zeile klicken.
+Die URL-Leistungstabelle enthält ein Suchfeld für den schnellen Zugriff auf URLs. Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken. Sie können auch zusätzliche Details für jede URL anzeigen, indem Sie auf das **Details**-Symbol am Ende jeder Zeile klicken.
 
 ![URL-Details](/help/dashboards/assets/details.png)
 
-Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistung einer Seite - sie zeigt, wie oft sie zitiert wird, die Stimmung bei KI-Antworten, wo sie erwähnt wird, die Themen und Eingabeaufforderungen, in denen sie angezeigt wird, und die Trends beim Agent- und Verweisdatenverkehr im Laufe der Zeit.
+Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistung einer Seite, das zeigt, wie oft sie zitiert wird, die Stimmung bei KI-Antworten, wo sie erwähnt wird, die Themen und Eingabeaufforderungen, in denen sie angezeigt wird, und die Trends beim Agent- und Verweisdatenverkehr im Laufe der Zeit.
 
 >[!ENDTABS]
 
-In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das ausführende Reporting einzuschließen.
+In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabellen in das Reporting für Führungskräfte aufzunehmen.

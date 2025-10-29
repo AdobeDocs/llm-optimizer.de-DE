@@ -2,9 +2,9 @@
 title: URL-Inspektor
 description: Erfahren Sie, wie Sie mit dem URL-Inspektor analysieren können, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren.
 feature: URL Inspector
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,14 @@ Der URL-Inspektor bietet mehrere Übersichtsmetriken, mit denen Sie schnell beur
 * **Eindeutige Eingabeaufforderungen insgesamt** - Die Gesamtzahl der eindeutigen AI-Eingabeaufforderungen.
 * **Eindeutig zitierte URLs** - Die Anzahl der eindeutigen eigenen URLs, die zitiert wurden.
 * **Gesamtzahl der angegebenen**: Gesamtzahl der Fälle, in denen eine eigene URL in KI-generierten Antworten zitiert wurde.
-<!-- * **Total agentic hits** - The total number of hits from AI agents on your URLs.
-* **Referral hits from LLMs** - The total number of hits directed from AI-generated answers to your URLs.-->
+* **Gesamtzahl der Agententreffer** - Die Gesamtzahl der Treffer von KI-Agenten auf Ihren URLs.
+* **Verweistreffer von LLMs** - Die Gesamtzahl der Treffer, die von KI-generierten Antworten an Ihre URLs weitergeleitet werden.
 
 Trendindikatoren für jede Übersichtsmetrik zeigen, wie sich diese Werte im Zeitverlauf im Vergleich zum vorherigen Zeitraum ändern.
 
 ## Ihre zitierten URLs
 
-Die Ansicht „zitierte URLs“ listet alle URLs Ihrer Marke auf, die in KI-generierten Antworten zitiert wurden, einschließlich unterstützender Metriken. Die Datentabelle verfügt auch über ein Suchfeld für den schnellen Zugriff auf bestimmte URLs. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen.
+Die Ansicht „zitierte URLs“ listet alle URLs Ihrer Marke auf, die in KI-generierten Antworten zitiert wurden, einschließlich unterstützender Metriken. Beide Tabellen verfügen über ein Suchfeld für den schnellen Zugriff auf Themen. Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen.
 
 ![zitierte URLs](/help/dashboards/assets/cited-urls.png)
 
@@ -74,6 +74,6 @@ Die folgenden Metriken werden bereitgestellt:
 
 ### Fenster „Details“
 
-Sowohl für die zitierte als auch für die Trendansicht verfügen die URLs über eine Schaltfläche **Details**, wenn Sie den Mauszeiger über eine bestimmte URL bewegen. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt. Das Detailfenster zeigt an, wie oft die URL zitiert wird, wie die Stimmung der KI-Antworten, wo sie erwähnt wird, die Themen und Eingabeaufforderungen, in denen sie angezeigt wird, und die Trends beim Agent- und Verweisdatenverkehr im Zeitverlauf (für eigene URLs).
+Sowohl für die Zitat- als auch für die Trendansicht verfügen die URLs über **Schaltfläche** Details“ am Ende jeder Zeile. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt. Das Detailfenster zeigt an, wie oft die URL zitiert wird, <!--the sentiment of AI responses where it is mentioned,--> Themen und Eingabeaufforderungen, in denen sie angezeigt wird, sowie Trends beim Agent- und Verweisdatenverkehr im Zeitverlauf (für eigene URLs).
 
 ![Detailfenster](/help/dashboards/assets/details-url.png)

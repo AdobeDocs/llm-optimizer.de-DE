@@ -2,9 +2,9 @@
 title: Markenauftritt
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ verstehen können, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird.
 feature: Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,7 @@ Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. D
 
 * **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
 * **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
+* **Thema** - Filtern Sie nach Thema, um Inhaltsthemen und Themenbereiche zu analysieren, in denen Ihre Marke in KI-Antworten erscheint.
 * **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
 * **Prompts-Herkunft** - Wählen Sie den Ursprung der Prompts aus. Der Ursprung kann entweder vom Benutzer eingegeben oder per KI generiert werden.
 * **Prompt-Branding** - Filtern Sie Ergebnisse nach gebrandeten oder nicht gebrandeten Eingabeaufforderungen.
@@ -47,9 +48,9 @@ Im Dashboard werden drei sehr wichtige Metriken oben auf der Seite hervorgehoben
 
 Der Sichtbarkeitswert besteht aus Faktoren wie: Erwähnungen, Zitate, Stimmung und Rang. Jedem Faktor ist ein bestimmtes „Gewicht“ zugeordnet, das zum Endwert hinzuaddiert.
 
-### Erwähnungen {#mentions}
+### Erwähnungen der Marke {#mentions}
 
-Diese Metrik stellt die Gesamtzahl der Male dar, in denen Ihre Marke oder Ihre Kategorien in den KI-Eingabeaufforderungen der Stichprobe erwähnt wurden. Sie haben beispielsweise die Marke „Kaffee B“ mit den Kategorien „Maschinen“ und „Zubehör“, und diese Metrik zählt, wie oft diese insgesamt in den abgefragten KI-Antworten erscheinen.
+Diese Metrik stellt die Gesamtzahl der Male dar, in denen Ihre Marke oder Ihre Kategorien in den KI-Eingabeaufforderungen der Stichprobe erwähnt wurden. Wenn Sie beispielsweise die Marke „Coffe B“ mit den Kategorien „Maschinen“ und „Zubehör“ verwenden, zählt diese Metrik die Gesamtzahl der Fälle, in denen diese in den KI-Stichprobenantworten erscheinen.
 
 ### Zitate {#citations}
 
@@ -63,11 +64,11 @@ Im Abschnitt Vergleich anderer Marken können Sie bis zu fünf andere Marken aus
 
 ![Sonstige - Vergleich](/help/dashboards/assets/other-comparison.png)
 
-Die anderen Marken werden aus der Dropdown-Liste ausgewählt und die Diagramme werden aktualisiert, wenn Sie auf **Filter anwenden** klicken. Die Diagramme zeigen wöchentliche Erwähnungen und wöchentliche Zitate nebeneinander. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
+Die anderen Marken werden aus der Dropdown-Liste ausgewählt und die Diagramme werden aktualisiert, wenn Sie auf **Filter anwenden** klicken. In den Diagrammen werden wöchentliche Markenbezeichnungen und wöchentliche Markenzitate nebeneinander angezeigt. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
 
 ## Stimmungstrendanalyse {#sentiment-trend}
 
-Im Abschnitt zur Stimmungstrendanalyse können Sie verfolgen, wie Ihre Marke in den befragten KI-Antworten wahrgenommen wird. Die Stimmungstrendmetrik kann entweder positiv, neutral oder negativ sein. Beispielsweise kann es positiv sein, wenn Antworten die Produktqualität hervorheben, oder negativ, wenn sie schlechten Service erwähnen. Das Trenddiagramm zeigt die Veränderungen der Markenwahrnehmung von Woche zu Woche. Der Abschnitt wird erst ausgefüllt, nachdem Ihre Marke erwähnt wurde.
+Im Abschnitt zur Stimmungstrendanalyse können Sie verfolgen, wie Ihre Marke in den befragten KI-Antworten wahrgenommen wird. Die Stimmungstrendmetrik kann entweder positiv, neutral oder negativ sein. Beispielsweise kann es positiv sein, wenn Antworten die Produktqualität hervorheben, oder negativ, wenn sie schlechten Service erwähnen. Das Trenddiagramm zeigt die Veränderungen der Markenwahrnehmung von Woche zu Woche. Dieser Abschnitt wird erst ausgefüllt, nachdem Ihre Marke erwähnt wurde.
 
 ![Stimmung](/help/dashboards/assets/sentiment-trend.png)
 
@@ -79,7 +80,7 @@ Mithilfe der Tabelle **Dateneinblicke** können Sie Themen und Benutzerfragen er
 
 ![Dateneinblicke](/help/dashboards/assets/data-insights.png)
 
-Beide Tabellen verfügen über ein Suchfeld für den schnellen Zugriff auf Themen. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen.
+Beide Tabellen verfügen über ein Suchfeld für den schnellen Zugriff auf Themen. Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabellen in das Reporting für Führungskräfte aufzunehmen.
 
 Klicken Sie auf die Registerkarten unten, um Details zu jeder Tabelle und den zugehörigen Metriken anzuzeigen.
 
@@ -98,6 +99,9 @@ Die Tabelle „Dateneinblicke“ hilft Ihnen, Themen und Benutzeraufforderungen 
 * **Position** - Die relative Bekanntheit Ihrer Marke in KI-Antworten, berechnet als Durchschnitt über alle Wochen hinweg.
 * **Alle Zitate** - Die Anzahl der eindeutigen Quellen, die in KI-Antworten für dieses Thema oder diese Themen-/Eingabeaufforderungskombination zitiert werden (umfasst eigene Zitate).
 * **Eigene Zitate** - Die Häufigkeit, mit der Ihre Marke in KI-Antworten für dieses Keyword oder diese Keyword-/Fragekombination zitiert wurde.
+  <!--* **Executions**-->
+
+Sie können auch zusätzliche Details zu jedem Thema anzeigen, indem Sie auf das **Details**-Symbol am Ende jeder Zeile klicken.
 
 >[!TAB Stimmanteil]
 
@@ -119,6 +123,6 @@ Die Tabelle „Dateneinblicke“ hilft Ihnen, von Metriken zu Aktionen zu wechse
 Wichtige Verwendungsmöglichkeiten der Tabelle:
 
 * Priorisieren Sie Themen mit hoher Popularität bei geringer Sichtbarkeit - Fokusoptimierung, bei der die Zielgruppennachfrage stark ist, aber Ihre Markenpräsenz schwach ist.
-* Stimmungsänderungen verfolgen - erkennen Sie Themen, bei denen die Erwähnungen negativ oder neutral sind, und koordinieren Sie Ihre Reaktion.
+* Stimmungsänderungen verfolgen - erkennen Sie Themen, bei denen Erwähnungen im negativen oder neutralen Bereich liegen, und koordinieren Sie Ihre Reaktion.
 * Zitate mit eigenen Zitaten vergleichen - Identifizieren Sie Eingabeaufforderungen, in denen Ihre Marke erwähnt wird, aber der Inhalt einer anderen Marke zitiert wird, was eine Inhaltslücke signalisiert.
 * Positionsbereich auswerten - Überwachen Sie, ob Ihre Marke frühzeitig in KI-Reaktionen (Positionen 1-3) oder weiter unten (6-10) erscheint.

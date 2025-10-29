@@ -2,9 +2,9 @@
 title: Empfehlungsverkehr
 description: Erfahren Sie, wie Sie mit dem Dashboard für Empfehlungs-Traffic anzeigen können, wie Besucher von externen Plattformen, KI-Zitaten und Verweis-Links zu Ihrer Site gelangen.
 feature: Referral Traffic
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Bei der ersten Anmeldung kann das Dashboard für den Empfehlungs-Traffic leer er
 2. Enter a primary contact email.
 3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
 
-Nach der Aktivierung wird das Dashboard mit Traffic-Metriken für Verweise gefüllt.
+Nach der Aktivierung wird das Dashboard mit Verweisungs-Traffic-Metriken gefüllt.
 
 ## Filter {#filters}
 
@@ -54,12 +54,13 @@ Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter 
 Das Dashboard zeigt die Gesamtleistung der Empfehlung durch die Anzeige von Schlüsselmetriken an, darunter:
 
 * **Total Referral Traffic** - Der gesamte Empfehlungs-Traffic aus allen Quellen.
+* **Empfehlungs-Traffic von LLMs** - Der gesamte Empfehlungs-Traffic von LLMs.
 * **Einverständnisrate** - Der Prozentsatz der Besucherinnen und Besucher, die eine Einverständnisaufforderung akzeptieren.
 * **Absprungrate** - Der Prozentsatz der Sitzungen aus Empfehlungsquellen, die kein Interaktionsereignis hatten.
 
 ![Empfehlungsseite](/help/dashboards/assets/referral-traffic.png)
 
-Neben den oben dargestellten Gesamtleistungsmetriken schlüsselt der Bereich **Top-Regionen** den Traffic nach Geografie auf. Währenddessen zeigt das Bedienfeld **Top-Empfehlungsquellen** die Plattformen an, auf denen die meisten Besuche stattfinden. Trendindikatoren für die Metriken zeigen, wie sich diese Werte im Zeitverlauf im Vergleich zum vorherigen Zeitraum ändern.
+Neben den oben vorgestellten allgemeinen Leistungsmetriken gibt es drei zusätzliche Bedienfelder, die die Traffic-Verteilung auf verschiedene Märkte, Verweisquellen und Seitenabsichtskategorien anzeigen <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
 <!--## Top Referral URLs {#top-referrals}
 
@@ -90,4 +91,4 @@ Die Ansicht URL-Leistungsanalyse listet die leistungsstärksten Seiten auf, basi
 
 >[!ENDTABS]
 
-In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Insights mit Ihrem Team zu teilen oder die Tabelle Verweisdatenverkehr in das Executive-Reporting einzuschließen.
+In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabellen in das Reporting für Führungskräfte aufzunehmen. Darüber hinaus können Sie für beide Tabellen anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken.
