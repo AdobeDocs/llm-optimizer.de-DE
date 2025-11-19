@@ -2,9 +2,9 @@
 title: Best Practices für LLM Optimizer
 description: Entdecken Sie Best Practices für die LLM-Optimierung, um die Markensichtbarkeit bei der KI-Suche zu verbessern. Insights für Benchmarking und Inhaltsoptimierung.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für eine bessere Sichtba
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können mithilfe von LLM Optimizer direkt auf Ihrer Site bereitgestellt werden.
 
 Im Folgenden finden Sie einige Best Practices zur Optimierung:
 
@@ -118,7 +118,7 @@ Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit 
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Oft kann es Optimierungen direkt auf Ihrer Site bereitstellen.
+>Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [ im Dashboard ](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können mithilfe von LLM Optimizer direkt auf Ihrer Site bereitgestellt werden.
 
 
 Wichtige externe Kanäle:
