@@ -2,9 +2,9 @@
 title: Schnellstart
 description: Erste Schritte mit Adobe LLM Optimizer - Integrieren Sie Ihre Marke, erschließen Sie Einblicke in die KI-Sichtbarkeit und erkunden Sie Dashboards, um die Suchleistung zu verbessern.
 feature: Quickstart, Onboarding
-source-git-commit: 3068247d9d13d0c3cd22e2077daa06fd1680d6b3
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1099'
 ht-degree: 0%
 
 ---
@@ -44,14 +44,14 @@ Im folgenden Abschnitt finden Sie Details zum Aktivieren der kostenlosen Testver
 
 ### AEM Cloud-Kunden
 
-Wenn Sie AEM Cloud-Kunde sind, haben Sie die Möglichkeit, LLM Optimizer mithilfe der Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
+Wenn Sie AEM Cloud-Kunde sind, haben Sie die Möglichkeit, LLM Optimizer mithilfe der Produktankündigungskarte in [Experience Hub](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) auszuprobieren.
 
 >[!NOTE]
 >Neu hinzugefügte Eingabeaufforderungen werden erst dann im Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) angezeigt, wenn die Verarbeitung abgeschlossen ist. AEM Cloud-Kunden können die kostenlose Testversion von LLM Optimizer verwenden. Die Verwendung von mehr als 200 Eingabeaufforderungen erfordert eine separate Lizenzvereinbarung. Der Zugriff erfolgt „wie besehen“ und „wie verfügbar“ und kann von Adobe jederzeit geändert, eingeschränkt oder entfernt werden. Wenden Sie sich an Ihren Kundenbetreuer, wenn Sie weitere Informationen benötigen.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
-Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
+Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Anschließend müssen Sie sich über IMS anmelden. Nach der Anmeldung starten Sie den Onboarding-Prozess, indem Sie eine Domain und den Markennamen angeben.
 
 ![LLM Optimizer-Domain](/help/overview/assets/domain.png)
 
@@ -60,9 +60,9 @@ Nachdem Sie auf die Schaltfläche **LLM Optimizer ausprobieren** geklickt haben,
 
 Während der Onboarding-Phase wird eine kleine Reihe von Kategorien, Themen und Eingabeaufforderungen generiert. Die Analyse der Markenpräsenz zu diesen Eingabeaufforderungen steht kurz nach dem Onboarding Ihrer Site zur Verfügung.
 
-![Analyse der Markenpräsenz](/help/overview/assets/bp-analysis.png)
+<!--![Brand Presence Analysis](/help/overview/assets/bp-analysis.png)-->
 
-Darüber hinaus müssen Sie für die Traffic[Analyse auch &#x200B;](#step-4)CDN-Protokollweiterleitung“ konfigurieren. LLM Optimizer erfordert Daten zur Markenpräsenz sowie Einblicke aus dem Agent- und Empfehlungs-Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zu geben, um die KI-Sichtbarkeit zu erhöhen.
+Darüber hinaus müssen Sie für die Traffic[Analyse auch ](#step-4)CDN-Protokollweiterleitung“ konfigurieren. LLM Optimizer erfordert Daten zur Markenpräsenz sowie Einblicke aus dem Agent- und Empfehlungs-Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zu geben, um die KI-Sichtbarkeit zu erhöhen.
 
 ### Nicht-AEM Cloud-Kunden
 
@@ -70,7 +70,7 @@ Sobald der Geschäftsvertrag abgeschlossen ist, erhalten Sie eine Einführung in
 
 ### Schritt 2: Kategorien, Themen und Eingabeaufforderungen anpassen
 
-Nach dem Onboarding einer Site können Sie die Markenpräsenzanalyse auf der Grundlage der kleinen Eingabeaufforderungen anzeigen, die während der Onboarding-Phase automatisch generiert wurden. Ab nun können Sie die Kategorien, Themen und Eingabeaufforderungen für Ihre Marke anpassen. Diese Konfiguration wird im Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Nach dem Onboarding einer Site können Sie die Markenpräsenzanalyse auf der Grundlage der kleinen Eingabeaufforderungen anzeigen, die während der Onboarding-Phase automatisch generiert wurden. Ab nun können Sie die Kategorien, Themen und Eingabeaufforderungen für Ihre Marke anpassen. Diese Konfiguration wird im Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
 
 ![Kundenkonfigurations-Dashboard](/help/overview/assets/prompt-creation.png)
 
@@ -87,7 +87,7 @@ Von diesem Dashboard aus haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
-> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und &#x200B;](/help/overview/best-practices-topics-prompts.md)&quot;.
+> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und ](/help/overview/best-practices-topics-prompts.md)&quot;.
 
 ### Schritt 3: Einblicke in die Markenpräsenz
 
@@ -113,4 +113,4 @@ Nachdem Sie Informationen für die CDN-Protokollweiterleitung angegeben haben, k
 * Verwenden Sie [Opportunities](/help/dashboards/opportunities.md) um Inhalte und technische Verbesserungen zu identifizieren.
 * Exportieren Sie Daten und arbeiten Sie mit Ihrem Team zusammen oder laden Sie Ihren Kollegen zur Verwendung des Produkts ein.
 
-Um die Funktionen von LLM Optimizer vollständig zu verstehen, sollten Sie schließlich alle verfügbaren [Dashboards“ &#x200B;](/help/dashboards/dashboards-overview.md).
+Um die Funktionen von LLM Optimizer vollständig zu verstehen, sollten Sie schließlich alle verfügbaren [Dashboards“ ](/help/dashboards/dashboards-overview.md).

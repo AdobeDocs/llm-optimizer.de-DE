@@ -2,9 +2,9 @@
 title: Markenauftritt
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ verstehen können, wie Ihre Marke auf der Ebene der KI-generierten Antworten wahrgenommen wird.
 feature: Brand Presence
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
 workflow-type: tm+mt
-source-wordcount: '1275'
+source-wordcount: '1292'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. D
 * **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
 * **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
 * **Thema** - Filtern Sie nach Thema, um Inhaltsthemen und Themenbereiche zu analysieren, in denen Ihre Marke in KI-Antworten erscheint.
-* **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
+* **Platform** - Wählen Sie die zu analysierende KI-Engine aus. LLM Optimizer unterstützt derzeit ChatGPT, Google-KI-Übersichten, den Google-KI-Modus, den Microsoft-Co-Piloten, Google Gemini und Perplexity.
 * **Prompts-Herkunft** - Wählen Sie den Ursprung der Prompts aus. Der Ursprung kann entweder vom Benutzer eingegeben oder per KI generiert werden.
 * **Prompt-Branding** - Filtern Sie Ergebnisse nach gebrandeten oder nicht gebrandeten Eingabeaufforderungen.
 * **Region** - Filtern der Ergebnisse nach Geografie. Nicht alle Regionen werden zum Start verfügbar sein.
