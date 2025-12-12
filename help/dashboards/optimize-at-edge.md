@@ -459,7 +459,7 @@ Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agente
 
 Ist Ihre Webseite nachvollziehbar? Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit einer Site bewerten, einen Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mit LLM Optimizer wiederhergestellt werden könnte. Siehe [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension).
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit einer Site bewerten, einen Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mit LLM Optimizer wiederhergestellt werden könnte. Siehe [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension).
 
 ### Optimieren von Überschriften für LLMs
 
