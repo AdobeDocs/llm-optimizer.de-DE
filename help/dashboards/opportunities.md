@@ -2,9 +2,9 @@
 title: Optimierungsmöglichkeiten
 description: Erfahren Sie, wie Sie mit dem Opportunities-Dashboard automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Sichtbarkeit Ihrer Marke zu erhöhen.
 feature: Opportunities
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: 533565d089076d651bb633ea7e426b0a4282de97
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,10 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
 | Erkennen von blockiertem Agentenverkehr | Technische GEO | Analysiert CDN-Protokolle auf blockierte Anfragen bekannter KI-Agenten (z. B. GPTBot, PerplexBot). meldet betroffene URLs und Agenten. | Aktualisieren Sie die robots.txt- oder Server-Konfigurationen, um ggf. Zugriff für unterstützte KI-Crawler zu ermöglichen. |
 | 404s/403s/5xx Probleme erkennen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. meldet Häufigkeit, betroffene URLs und geschätzte verlorene Treffer. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200 Antworten zurückgeben. |
 | Content-Sichtbarkeit wiederherstellen (Early Access) | Technische GEO | Markiert Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für KI-Agenten ohne JavaScript-Ausführung verfügbar ist. |
+
+## Automatische Optimierung {#auto-optimization}
+
+Die automatische Optimierung ermöglicht die Bereitstellung empfohlener Optimierungen mit einem Klick und reduziert so den manuellen Aufwand und die Wertschöpfungszeit. Optimierungen können entweder an der Inhaltsquelle oder am CDN-Edge angewendet werden. Die Edge-basierte automatische Optimierung ist derzeit für ausgewählte Opportunitys im Early Access-Modus verfügbar. Weitere Informationen finden Sie auf der Seite [Optimieren bei Edge](/help/dashboards/optimize-at-edge.md).
 
 ### Chancen zur Wiederherstellung der Inhaltssichtbarkeit {#recover-contet}
 

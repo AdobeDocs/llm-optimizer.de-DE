@@ -2,9 +2,9 @@
 title: Optimieren bei Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer am CDN-Edge Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 3c6f287b3c3787cee95f99b7031412f26692a88b
+source-git-commit: 522abddcabaf02ce86fb4d7978ef7fa4d6eb0358
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2218'
 ht-degree: 1%
 
 ---
@@ -12,68 +12,82 @@ ht-degree: 1%
 
 # Optimieren bei Edge
 
-Dieser Abschnitt …
+Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am CDN-Edge ohne Authoring-Änderungen bereitgestellt werden können. Es behandelt den Onboarding-Prozess, die verfügbaren Optimierungsmöglichkeiten und die automatische Optimierung am Edge.
+
+>[!NOTE]
+>Auf diese Funktion wird derzeit frühzeitig zugegriffen.
 
 ## Was ist Optimieren bei Edge?
 
-Optimize at Edge ist eine Edge-basierte Bereitstellungsfunktion in LLM Optimizer, die KI-freundliche Änderungen an LLM-Benutzeragenten bereitstellen kann. Da es Optimierungen am CDN-Edge bietet, sind keine Authoring-Änderungen im Content Management System (CMS) erforderlich. Es zielt auch nur auf den agenten Traffic ab und hat keine Auswirkungen auf menschliche Benutzer oder SEO-Bots.
+Optimize at Edge ist eine Edge-basierte Bereitstellungsfunktion in LLM Optimizer, die KI-freundliche Änderungen an LLM-Benutzeragenten bereitstellt. Im aktuellen Kontext bedeutet &quot;Edge&quot;, dass die Optimierung auf der CDN-Ebene angewendet wird. Da dies zu Optimierungen auf CDN-Ebene führt, sind keine Authoring-Änderungen im Content Management System (CMS) erforderlich, sodass Ihr Ursprungs-CMS unverändert bleibt. Durch diese Trennung können Sie die LLM-Sichtbarkeit verbessern, ohne Ihre vorhandenen Publishing-Workflows zu verändern. Es zielt nur auf den Traffic von Agenten ab und hat keine Auswirkungen auf menschliche Benutzer oder SEO-Bots. Wenn LLM Optimizer Möglichkeiten zur Seitenoptimierung erkennt, können Benutzende Fehlerbehebungen direkt am CDN-Edge bereitstellen.
 
-Wenn LLM Optimizer Möglichkeiten zur Seitenoptimierung erkennt, können Benutzende Fehlerbehebungen direkt am Edge bereitstellen, ohne dass die Plattform geändert werden muss.
+Optimize bei Edge ist eine schnellere, schlankere Alternative zu herkömmlichen Fehlerbehebungen, die einen komplexen technischen Aufwand erfordern. Wie bereits erwähnt, sind nach Abschluss einer einmaligen Einrichtung keine Plattformänderungen oder langen Entwicklungszyklen erforderlich, um die Änderungen anzuwenden. Sie können Verbesserungen in Minuten veröffentlichen, ohne dass Entwicklerinteraktionen erforderlich sind. Dies ist eine risikoarme, keinen Code umfassende Möglichkeit, Ihre Website für KI-Agenten zu optimieren.
 
-Auf diese Funktion wird derzeit frühzeitig zugegriffen.
+Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, Content und digitale Strategien entwickelt. Business-Anwendern wird so die Möglichkeit geboten, das vollständige Journey in LLM Optimizer abzuschließen: durch Ermittlung von Chancen, Verständnis von Vorschlägen und einfache Bereitstellung der Fehlerbehebungen. Mit Optimieren in Edge können Benutzende eine Vorschau der Änderungen anzeigen, diese schnell am CDN-Edge bereitstellen und überprüfen, ob die Optimierungen live sind. Die Leistung kann im LLM Optimizer-Ökosystem verfolgt werden.
 
-## Warum sollte ein Kunde Interesse haben?
+### Die wichtigsten Vorteile
 
-Optimize bei Edge ist eine schnellere, schlankere Alternative zu herkömmlichen Fehlerbehebungen, die einen komplexen technischen Aufwand erfordern. Sobald Kunden eine einmalige Einrichtung abgeschlossen haben, sind keine Plattformänderungen oder langen Entwicklungszyklen erforderlich, um die Änderungen auf die Web-Seiten anzuwenden. Der Benutzer kann Verbesserungen in Minuten veröffentlichen, nicht in Wochen, ohne dass Entwicklerinteraktionen erforderlich sind. Dies ist eine risikoarme, keinen Code umfassende Methode, um Ihre Website für KI-Agenten zu optimieren.
-
-### Wichtigste Vorteile und Vorteile
-
-* **Nur-KI-Bereitstellung:** Bereitstellung optimierter HTML für KI-Agenten nur ohne Auswirkungen auf menschliche Besucher oder SEO-Bots.
+* **Nur-KI-Bereitstellung:** Bereitstellung von optimiertem HTML nur für KI-Agenten ohne Auswirkungen auf menschliche Besucher oder SEO-Bots.
 * **Schnellere Zyklen:** Veröffentlichungsänderungen in Minuten, nicht Wochen. Es sind keine Plattformänderungen oder lange Entwicklungszyklen erforderlich.
 * **Niedriges Risiko und umkehrbar:** Wird mit einer Rollback-Funktion mit einem Klick unterstützt, die die Seite in Minuten zurücksetzen kann.
 * **Keine Leistungsbeeinträchtigung:** Edge-basierte Optimierungen und Caching wirken sich nicht auf die Site-Latenz aus.
-* **CDN- und CMS-unabhängig** Funktioniert mit jeder CDN-Konfiguration und jedem Frontend-Setup unabhängig von CMS.
+* **CDN- und CMS-unabhängig** Funktioniert mit jeder CDN-Konfiguration und jedem Frontend-Setup, unabhängig vom Content Management System.
 
-## Wer sollte es verwenden?
+### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, Inhalte und digitale Strategie entwickelt. Business-Anwendern wird so die Möglichkeit geboten, das vollständige Journey in LLM Optimizer abzuschließen: durch Ermittlung von Chancen, Verständnis von Vorschlägen und einfache Bereitstellung der Fehlerbehebungen. Mit der Option „Optimieren“ in Edge können Benutzende eine Vorschau der Änderungen anzeigen, diese schnell am Edge bereitstellen und überprüfen, ob die Optimierungen live sind. Die Leistung kann im LLM Optimizer-Ökosystem verfolgt werden.
-
-## Welche Chancen hat Optimize bei Edge?
-
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden [&#x200B; im Abschnitt &#x200B;](/help/dashboards/opportunities.md)Opportunitys“.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
-Sie können die Option Optimieren bei Edge aktivieren, nachdem Sie sich bei LLM Optimizer angemeldet haben und Ihre CDN-Protokolle weiterleiten lassen.
+Wenden Sie sich entweder an Ihr Adobe-Account-Team oder an Ihr FDE-Team, um den Onboarding-Prozess zu starten. Ihr IT- oder CDN-Team muss außerdem die Voraussetzungen und den Einrichtungsprozess abschließen. Darüber hinaus können Sie sich auch an unser Team unter `llmo-at-edge@adobe.com` wenden, um weitere Unterstützung beim Onboarding zu erhalten.
 
-Zur Aktivierung von Optimieren bei Edge ist ein CDN-Techniker erforderlich, der die Ersteinrichtung abschließt.
+Voraussetzungen für das Onboarding von Optimizer bei Edge:
 
-Voraussetzungen für das Setup:
+* Schließen Sie den Onboarding-Prozess bei LLM Optimizer ab.
+* Schließen Sie den Protokollweiterleitungsprozess für Ihre CDN-Protokolle ab.
+
+Anforderungen an Ihr IT-/CDN-Team:
 
 * API-Schlüssel generieren.
 * Fügen Sie unter Edge Routing-Regeln im CDN Optimieren hinzu.
 * Zulassungsliste der benutzerdefinierten Pfade für die gesamte Domain.
 * Fügen Sie Target eine benutzerdefinierte Liste von LLM-Benutzeragenten hinzu.
-* Stellen Sie sicher, dass robots.txt keine Benutzeragenten blockiert, die als Ziel dienen sollen.
-* Bestätigen Sie, dass das Optimieren bei Edge in der LLM Optimizer-Benutzeroberfläche aufgeführt wird.
+* Stellen Sie sicher, dass `robots.txt` keine Benutzeragenten blockiert, die angesprochen werden sollen.
+* Bestätigen Sie die Option Optimieren beim Edge-Routing in der Benutzeroberfläche von LLM Optimizer.
 
-Adobe bietet Beispiel-Konfigurations-Snippets für die meisten gängigen CDNs, um den Einrichtungsprozess zu leiten. Die in unseren Richtlinien enthaltenen Snippet-Beispiele müssen an die tatsächliche Live-Konfiguration angepasst werden. Adobe empfiehlt, zunächst Änderungen in den unteren Umgebungen zu implementieren.
+Anleitungen für den Einrichtungsprozess finden Sie in der Beispielkonfiguration für eine Reihe von CDN-Setups. Diese Beispiele sollten an Ihre tatsächliche Live-Konfiguration angepasst werden. Es wird empfohlen, Änderungen zuerst in den unteren Umgebungen anzuwenden.
+
+>[!NOTE]
+>In den folgenden Code-Beispielen werden möglicherweise Verweise auf „tokowaka“ angezeigt, den funktionierenden Projektnamen für „Optimieren“ bei Edge. Diese Kennungen bleiben aus Kompatibilitätsgründen im Code und beziehen sich auf dieselben Funktionen, die in dieser Dokumentation beschrieben werden.
 
 >[!BEGINTABS]
 
->[!TAB AEM Cloud Service Managed CDN (Fastly)]
+>[!TAB Adobe Managed CDN]
 
-**Tokowaka BYOCDN - Adobe Managed CDN**
+**Adobe Managed CDN**
 
-Verwendet nur originSelectors, um den Tokowaka-Ursprung auszuwählen.
+Der Zweck dieser Konfiguration besteht darin, Anfragen mit agenten Benutzeragenten zu konfigurieren, die an den Optimizer-Service (`edge.tokowaka.now`-Backend) weitergeleitet werden. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-tokowaka-request-id`.
 
-Im folgenden Beispiel werden LLM-Agenten-Anfragen an eine bestimmte Domain weitergeleitet, die dem Muster &quot;/es/*&quot; oder exakten Pfaden entspricht (es werden nur HTML-Seiten weitergeleitet). Das Beispiel soll einen Ausgangspunkt bereitstellen. Falls Sie mehrere originSelectors in Ihrer Konfiguration haben, wird empfohlen, diese zuerst zu platzieren.
+```
+curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatgpt-user"
+< HTTP/2 200
+< x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+```
 
-Wichtige Hinweise:
+Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
 
-* x-tokowaka-request muss vor dem Routing zum Tokowaka-Backend überprüft werden. Nur Anfragen, die diesen Header nicht haben, sollten an das Tokowaka-Backend weitergeleitet werden.
-* Die OriginSelector-Regel, die an das Tokowaka-Backend weitergeleitet wird, sollte zuerst in der Liste aufgeführt werden, wenn mehrere Regeln vorhanden sind.
-* Das Geheimnis TOKOWAKA_API_KEY muss vor der Bereitstellung von cdn.yaml bereitgestellt werden.
+* Festlegen der zu rotierenden Domain
+* Festlegen der zu verlegenden Pfade
+* Festlegen, welche Benutzeragenten weitergeleitet werden sollen (empfohlener Regex)
+* Abrufen eines API-Schlüssels aus Adobe für das `edge.tokowaka.now` Backend
+
+Um die Regel bereitzustellen, ist Folgendes erforderlich:
+
+* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* Übertragen Sie die `cdn.yaml` Konfigurationsdatei in das Repository
+* Bereitstellen des API-Schlüssels als [geheime Umgebungsvariable](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
+* Ausführen der Konfigurations-Pipeline
+
 
 ```
 kind: "CDN"
@@ -106,7 +120,15 @@ data:
         domain: "edge.tokowaka.now"
 ```
 
->[!TAB Akamai (BYOCDN)]
+Führen Sie zum Testen des Setups eine cURL aus und erwarten Sie Folgendes:
+
+```
+curl -svo page.html https://www.example.com/page.html --header "user-agent: chatgpt-user"
+< HTTP/2 200
+< x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+```
+
+<!-- >>[!TAB Akamai (BYOCDN)]
 
 **Tokowaka BYOCDN - Akamai**
 
@@ -371,16 +393,16 @@ data:
 }
 ```
 
-Wichtige Überlegungen:
+Important considerations:
 
-* Tokowaka-Regel wird auf Basis von Benutzeragent + Pfad + x-tokowaka-request (falls nicht vorhanden) + TOKOWAKA_DISABLE-Variable aktiviert (um das Abschalten mit einem einzigen Variablen-Umschalter zu ermöglichen)
-* Regeln einrichten, um die Regel **Eingehende Anfragekopfzeilen ändern** zum Festlegen benutzerdefinierter Kopfzeilen festzulegen
-* Legen Sie den Cache-Schlüssel in Akamai mithilfe der benutzerdefinierten Variablen über den Cache-ID-Änderungsmechanismus fest. Es ist nur eine einzige benutzerdefinierte Variable zulässig. Erstellen Sie daher eine separate Variable für cache_key und legen Sie sie entsprechend fest.
-* Sprache: aus dem Accept-Language-Header mit „regex“ extrahiert: &quot;^([a-zA-Z]{2}).*&quot;
-* Bei einer Cache-ID-Änderung innerhalb einer Übereinstimmung im Benutzeragenten kann der Inhalt nicht nach URL bereinigt werden (nur zu Ihrer Information)
-* Standort-Failover-Mechanismus: Mit der Regel „Übereinstimmung bei Benutzeragenten“ ermöglicht Akamai kein Failover basierend auf der Konsistenzprüfung, sondern nur auf der Grundlage der ursprünglichen Antwort/Konnektivität pro Anfrage. Setzen Sie **x-tokowaka-fo:true** resp-Header im Falle einer Failover-Antwort.
-* SWR wird von Akamai nicht unterstützt. Es ist also nur eine TTL-basierte Zwischenspeicherung vorhanden. Konfigurieren Sie daher eine Regel in Akamai, um die Age-Kopfzeile aus der Ursprungsantwort zu entfernen, da das TTL-basierte Caching sonst nicht funktioniert.
-* Stellen Sie sicher, dass die Tokowaka-Regel die Regel in der Regelhierarchie ist, die am untersten liegt (sodass sie alle anderen Regeln überschreibt).
+* Tokowaka Rule will be ON based on User-Agent + Path + x-tokowaka-request (if not present) + TOKOWAKA_DISABLE variable (to allow switch off using a single variable toggle)
+* Set up rules to **Modify Incoming Request Headers** rule to set custom headers
+* Set cache-key in Akamai using user defined variable through Cache-ID modification mechanism. Only a single user defined variable is allowed, so create a separate variable for cache_key and set it accordingly.
+* Lang: extracted from Accept-Language header using "regex": "^([a-zA-Z]{2}).*"
+* With Cache ID Modification within a match on User Agent, the content can't be purged by URL (just FYI)
+* Site failover mechanism: With the match on User-Agent rule, Akamai does not allows to failover based on health check, but only only basis of origin response/connectivity per request. Set **x-tokowaka-fo:true**  resp header in case of failover response.
+* SWR is not supported by Akamai. So, only TTL based caching is there. So, configure a rule in Akamai to strip Age header from origin response else TTL based caching would not work.
+* Ensure that the Tokowaka rule is the bottom most rule in the rule hierarchy (so that it overrides all other rules).-->
 
 >[!TAB Fastly (BYOCDN)]
 
@@ -432,42 +454,46 @@ if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
 
 >[!ENDTABS]
 
-
-Bei anderen CDN-Anbietern wenden Sie sich bitte an llmo-at-edge@adobe.com, um Ihre IT-/CDN-Teams beim Onboarding zu unterstützen.
-
-<!--This should probably be included Opportunities dashboard content. Content also needs serious editing - lots of "customer needs"and business user" etc.-->
-
-Nach Abschluss der Konfigurationen können Business-Anwender bei Edge Opportunities in LLM Optimizer Optimierungsvorschläge bereitstellen.
+>[!NOTE]
+>Wenden Sie sich bei anderen CDN-Anbietern an `llmo-at-edge@adobe.com`, um Ihre IT-/CDN-Teams beim Onboarding zu unterstützen. Sobald die Einrichtungskonfigurationen abgeschlossen sind, können Sie bei den Opportunities von Edge in LLM Optimizer Optimierungsvorschläge bereitstellen.
 
 ## Möglichkeiten
+
+In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web-Erlebnis verbessern können und die bei Edge von Optimize unterstützt werden.
 
 | Opportunity | Typ | Automatisch identifizieren | Automatische Vorschläge | Automatische Optimierung |
 |---------|----------|----------|----------|----------|
 | Content-Sichtbarkeit wiederherstellen | Technische GEO | Erkennt Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Hebt Inhalte hervor, die für KI-Agenten verfügbar gemacht werden können, und empfiehlt, das Pre-Rendering für diese Seiten zu aktivieren. | Stellt einen vollständig gerenderten, KI-freundlichen HTML-Schnappschuss für den Agent-Traffic bereit, der den zuvor ausgeblendeten Inhalt wiederherstellt. |
-| Optimieren von Überschriften für KI | Inhaltsoptimierung | Scannt Überschriften, um leere, doppelte, fehlende oder mehrdeutige Überschriften zu erkennen, die die Maschinenlesbarkeit beeinträchtigen können. | Schlägt eine sauberere Überschriftenhierarchie und verbesserte Beschriftungen vor und zeigt eine Vorschau der aktualisierten Struktur für jede Seite an. | Fügt die verbesserte Überschriftenstruktur für KI-Agenten ein, behält Ihr visuelles Design bei und macht die Seite für LLMs verständlicher. |
-| Hinzufügen von KI-freundlichen Zusammenfassungen | Inhaltsoptimierung | kennzeichnet lange oder komplexe Seiten, denen kurze Zusammenfassungen auf Seiten- oder Abschnittsebene fehlen, was es KI erschwert, diese schnell zu durchsuchen und zu verstehen. | empfiehlt kurze, KI-generierte Zusammenfassungen auf Seiten- und Abschnittsebene, die wichtige Inhalte erfassen. | Fügt die Zusammenfassungen in die entsprechenden HTML-Abschnitte ein, wodurch die Interpretation und Beschreibung des Seiteninhalts durch Modelle verbessert wird. |
-| Relevante FAQs hinzufügen | Inhaltsoptimierung | Erkennt Absichtslücken im vorhandenen Seiteninhalt, die von den häufig gestellten Fragen profitieren könnten. | Empfiehlt KI-generierte FAQ-Inhalte, die auf Benutzerinhalte und vorhandene Themen abgestimmt sind. | Bringt FAQ-Inhalte in die HTML ein, sodass Seiten in KI-gestützten Antworten leichter auffindbar und relevanter werden. |
-| Vereinfachung komplexer Inhalte | Inhaltsoptimierung | Kennzeichnet Seiten mit komplexem Text, der das Verständnis von KI behindern kann. | Stellt KI-generierte vereinfachte Versionen komplexer Tests bereit, wobei die ursprüngliche Bedeutung erhalten bleibt. | Schreibt komplexe Abschnitte auf der Seite neu, wodurch die Lesbarkeit der KI verbessert wird. |
+| Optimieren von Überschriften für LLMs | Inhaltsoptimierung | Scannt Überschriften, um leere, doppelte, fehlende oder mehrdeutige Überschriften zu erkennen, die die Maschinenlesbarkeit beeinträchtigen können. | Schlägt eine sauberere Überschriftenhierarchie und verbesserte Beschriftungen vor und zeigt eine Vorschau der aktualisierten Struktur für jede Seite an. | Fügt die verbesserte Überschriftenstruktur für KI-Agenten ein, behält Ihr visuelles Design bei und macht die Seite für LLMs besser lesbar. |
+| Hinzufügen von LLM-freundlichen Zusammenfassungen | Inhaltsoptimierung | kennzeichnet lange oder komplexe Seiten, denen kurze Zusammenfassungen auf Seiten- oder Abschnittsebene fehlen, was es KI erschwert, diese schnell zu durchsuchen und zu verstehen. | empfiehlt kurze, KI-generierte Zusammenfassungen auf Seiten- und Abschnittsebene, die wichtige Inhalte erfassen. | Fügt die Zusammenfassungen in die entsprechenden HTML-Abschnitte ein, wodurch die Interpretation und Beschreibung des Seiteninhalts durch Modelle verbessert wird. |
+| Relevante FAQs hinzufügen | Inhaltsoptimierung | Erkennt Absichtslücken im vorhandenen Seiteninhalt, die von den häufig gestellten Fragen profitieren könnten. | Schreibt KI-generierte FAQ-Inhalte vor, die auf die Benutzerabsicht und vorhandene Themen abgestimmt sind. | Bringt FAQ-Inhalte in die HTML ein, sodass Seiten in KI-gestützten Antworten leichter auffindbar und relevanter werden. |
+| Vereinfachung komplexer Inhalte | Inhaltsoptimierung | Kennzeichnet Seiten mit komplexem Text, der das Verständnis von KI behindern kann. | Stellt KI-generierte vereinfachte Versionen von komplexem Text bereit, wobei die ursprüngliche Bedeutung erhalten bleibt. | Schreibt komplexe Abschnitte auf der Seite neu, wodurch die Lesbarkeit der KI verbessert wird. |
+
+### Weitere Tools
+
+Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
+
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
+
+## Opportunities detailliert
+
+In den folgenden Abschnitten können Sie zusätzliche Details zu jeder Opportunity anzeigen, die von Optimieren bei Edge unterstützt wird.
 
 ### Content-Sichtbarkeit wiederherstellen
 
-Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund des Client-seitigen Renderings ausgeblendet sind. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der Ansicht des KI-Agenten fehlen, Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die ausgeblendeten Inhalte wiederherzustellen. Wenn Sie diese Opportunity mit Optimieren in Edge bereitstellen, wird eine vorgerenderte, KI-optimierte Version der Seite LLM-Benutzeragenten bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne JavaScript auszuführen.
+Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund des Client-seitigen Renderings ausgeblendet sind. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agent-Ansicht fehlen, Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die ausgeblendeten Inhalte wiederherzustellen. Wenn Sie diese Opportunity mit Optimieren in Edge bereitstellen, wird eine vorgerenderte, KI-optimierte Version der Seite LLM-Benutzeragenten bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne JavaScript auszuführen.
+Dadurch wird sichergestellt, dass die Seite zuerst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.
 
-**Diese Pre-Rendering-Funktion gilt automatisch für alle Opportunitys, die bei der Bereitstellung von Optimize in Edge folgen.** Dadurch wird sichergestellt, dass die Seite zuerst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.
-
-#### Weitere Tools
-
-Ist Ihre Webseite nachvollziehbar? Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
-
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit einer Site bewerten, einen Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mit LLM Optimizer wiederhergestellt werden könnte. Siehe [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension).
+>[!IMPORTANT]
+>Diese Pre-Rendering-Funktion gilt automatisch für alle unten dargestellten Opportunitys, wenn sie mit Optimize in Edge bereitgestellt werden.
 
 ### Optimieren von Überschriften für LLMs
 
-Diese Opportunity erkennt Seiten, bei denen die Überschriftenstruktur es KI-Agenten erschwert, die Seite aufgrund leerer, doppelter, fehlender oder mehrdeutiger Überschriften zu verstehen. Für jede betroffene Seite zeigt die Opportunity die suboptimalen Überschriften und empfiehlt eine klarere Hierarchie. Bei der Bereitstellung mit Optimieren in Edge werden die verbesserten Überschriften in der HTML angewendet, die dem agenten Traffic dient. Dies kann die Maschinenlesbarkeit verbessern und dabei Ihr menschliches Layout unverändert lassen.
+Diese Opportunity erkennt Seiten, bei denen die Überschriftenstruktur es KI-Agenten erschwert, die Seite aufgrund leerer, doppelter, fehlender oder mehrdeutiger Überschriften zu verstehen. Für jede betroffene Seite zeigt die Opportunity die suboptimalen Überschriften und empfiehlt eine klarere Hierarchie. Bei der Bereitstellung mit „Optimieren“ in Edge werden die verbesserten Überschriften in dem HTML angewendet, das dem Agentdatenverkehr dient. Dies erleichtert die Maschinenlesbarkeit, während das Layout für Menschen unverändert bleibt.
 
 ### Hinzufügen von LLM-freundlichen Zusammenfassungen
 
-Diese Opportunity identifiziert Seiten, die von knappen Zusammenfassungen profitieren können, damit LLMs schnell verstehen können, worum es auf der Seite geht. Für jede Seite erkennt die Opportunity, wo eine Zusammenfassung am meisten benötigt wird, und erstellt KI-generierte Zusammenfassungen auf Seiten- und/oder Abschnittsebene. Wenn Sie bei Edge mit Optimieren bereitstellen, werden diese Zusammenfassungen in die HTML eingefügt, die KI-Agenten abrufen, wodurch sich die Chancen erhöhen, dass Ihre Inhalte genauer beschrieben werden.
+Diese Opportunity identifiziert Seiten, die von knappen Zusammenfassungen profitieren können, damit LLMs schnell verstehen können, worum es bei dem Seiteninhalt geht. Für jede Seite erkennt die Opportunity, wo eine Zusammenfassung am meisten benötigt wird, und erstellt KI-generierte Zusammenfassungen entweder auf Seitenebene oder auf Abschnittsebene. Wenn Sie bei Edge mit Optimieren bereitstellen, werden diese Zusammenfassungen in die HTML eingefügt, die KI-Agenten abrufen, wodurch sich die Chancen erhöhen, dass Ihre Inhalte genauer beschrieben werden.
 
 ### Relevante FAQs hinzufügen
 
@@ -475,39 +501,39 @@ Diese Opportunity kennzeichnet Seiten, auf denen zusätzliche Q&amp;A-Inhalte be
 
 ### Vereinfachung komplexer Inhalte
 
-Bei dieser Gelegenheit werden Seiten mit langen, komplexen Absätzen gefunden, die das Verständnis von KI reduzieren können. Für jede Seite, die die Lesbarkeitsschwellen überschreitet, wird ein KI-generierter Inhalt erstellt, der einfacher und besser überschaubar ist, während die ursprüngliche Bedeutung erhalten bleibt. Bei der Bereitstellung am Edge helfen die vereinfachten Inhalte, die für den Agent-Traffic bereitgestellt werden, LLMs, Ihre Inhalte besser zu interpretieren und zusammenzufassen.
+Bei dieser Gelegenheit werden Seiten mit langen, komplexen Absätzen gefunden, die das Verständnis von KI reduzieren können. Für jede Seite, die die Lesbarkeitsschwellen überschreitet, wird ein KI-generierter Inhalt erstellt, der einfacher und einfacher zu scannen ist, während die ursprüngliche Bedeutung erhalten bleibt. Bei der Bereitstellung am Edge helfen die vereinfachten Inhalte, die für den Agent-Traffic bereitgestellt werden, LLMs, Ihre Inhalte besser zu interpretieren und zusammenzufassen.
 
-## Vorschläge
+## Automatische Optimierung bei Edge
 
 Für jede Opportunity können Sie die Optimierungen am Edge in der Vorschau anzeigen, bearbeiten, bereitstellen, Live-Vorschau anzeigen und zurücksetzen.
 
 ### Vorschau
 
-In der Vorschau können Benutzer die Auswirkungen eines Vorschlags auf die Seite sehen, bevor etwas live geschaltet wird. Dadurch wird ein Unterschied zwischen der aktuellen Seite und der KI-optimierten Version angezeigt, die nach der Anwendung des Vorschlags erwartet wird. In dieser Ansicht wird dieselbe Logik von Optimize in Edge verwendet, die Live-Traffic steuert, jedoch in einem sicheren, isolierten Vorschaumodus. Dies wirkt sich nicht auf den Live-Traffic aus, da es sich um eine schreibgeschützte Simulation zur Überprüfung handelt.
+**Vorschau** zeigt die Wirkung eines Vorschlags an, bevor er veröffentlicht wird. Dadurch wird ein Unterschied zwischen der aktuellen Seite und der KI-optimierten Version angezeigt, die nach der Anwendung des Vorschlags erwartet wird. In dieser Ansicht wird dieselbe Logik von Optimize in Edge verwendet, die Live-Traffic steuert, jedoch in einem isolierten Vorschaumodus. Dies wirkt sich nicht auf den Live-Traffic aus, da es sich um eine schreibgeschützte Simulation zur Überprüfung handelt.
 
 ![Vorschau](/help/assets/optimize-at-edge/preview.png)
 
 ### Bearbeiten
 
-Mit Bearbeiten können Benutzer den automatisch generierten Vorschlag vor der Bereitstellung verfeinern oder vollständig neu schreiben. Anstatt den Vorschlag passiv zu akzeptieren, behalten Benutzer durch diesen menschlichen in-the-Loop-Workflow die volle Kontrolle. Die Ansicht zeigt vorgeschlagene Änderungen in einem strukturierten Editor an, in dem Benutzer den Text ändern können, damit er besser zu ihrer Absicht passt. Die bearbeitete Version wird dann nach der Bereitstellung für KI-Agenten bereitgestellt.
+**Bearbeiten** ermöglicht es Ihnen, den automatisch generierten Vorschlag vor der Bereitstellung zu verfeinern oder vollständig neu zu schreiben. Anstatt den Vorschlag zu akzeptieren, behalten Sie durch den Workflow „Bearbeiten“ die volle Kontrolle. Die Ansicht zeigt vorgeschlagene Änderungen in einem strukturierten Editor an, in dem Sie den Text ändern können, damit er besser zu Ihrem ursprünglichen Zweck passt. Die bearbeitete Version wird dann nach der Bereitstellung für KI-Agenten bereitgestellt.
 
 ![Bearbeiten](/help/assets/optimize-at-edge/edit.png)
 
 ### Bereitstellen
 
-Bereitstellen veröffentlicht die ausgewählten Vorschläge, damit die optimierten Erlebnisse vom Edge zu KI-Agenten bereitgestellt werden können. Wenn das CDN vollständig weitergeleitet wird, werden alle Seiten in der Domain innerhalb von Minuten mit den neuen Änderungen live geschaltet. Auf die Zulassungsliste setzen Wenn das Routing nur für ausgewählte Pfade konfiguriert wurde, werden nur die ausgewählten Seiten mit den Optimierungen live geschaltet.
+**Bereitstellen** veröffentlicht die ausgewählten Vorschläge, damit die optimierten Erlebnisse den KI-Agenten vom Edge aus bereitgestellt werden können. Wenn das CDN vollständig weitergeleitet wird, werden alle Seiten in der Domain mit den neuen Änderungen in der Regel innerhalb von Minuten live geschaltet. Auf die Zulassungsliste setzen Wenn das Routing nur für ausgewählte Pfade konfiguriert wurde, werden nur die ausgewählten Seiten mit den Optimierungen live geschaltet.
 
 ![Bereitstellen](/help/assets/optimize-at-edge/deploy.png)
 
 ### Live anzeigen
 
-Mit Live-Ansicht können Benutzer überprüfen, ob die Optimierung live ist und sich wie erwartet für den agenten Traffic verhält. Dies wäre sonst schwer zugänglich. Benutzer können die Live-Seite unter Feste Vorschläge anzeigen. Dadurch wird die Seite wie für KI-Agenten gezeigt gerendert.
+Mit **Live anzeigen** können Sie überprüfen, ob die Optimierung live ist und sich wie erwartet für den agenten Traffic verhält, eine Ansicht, auf die sonst schwer zugegriffen werden könnte. Sie können die Live-Seite unter Feste Vorschläge anzeigen. Dadurch wird die Seite wie für KI-Agenten gezeigt gerendert.
 
 ![Live anzeigen](/help/assets/optimize-at-edge/view-live.png)
 
 ### Rollback
 
-Das Rollback setzt eine zuvor bereitgestellte Optimierung sicher zurück. Die Nur-KI-Version der Seite wird normalerweise innerhalb von Minuten in den vorherigen Status zurückversetzt, sodass Benutzende bei Bedarf sicher mit Optimierungen experimentieren können.
+Das Rollback setzt eine zuvor bereitgestellte Optimierung sicher zurück. Die Nur-KI-Version der Seite wird normalerweise innerhalb von Minuten in den vorherigen Status zurückversetzt, sodass Sie bei Bedarf problemlos mit Optimierungen experimentieren können.
 
 ![Rollback](/help/assets/optimize-at-edge/rollback.png)
 
@@ -515,46 +541,29 @@ Das Rollback setzt eine zuvor bereitgestellte Optimierung sicher zurück. Die Nu
 
 F. Welche Arten von LLMs zielen Sie bei Edge mit Optimize ab?
 
-Die Liste der anzusprechenden Benutzeragenten wird vom Kunden beim Onboarding vollständig definiert.
+Die Liste der Benutzeragenten, die angesprochen werden sollen, wird von Ihnen während des Onboarding-Prozesses definiert.
 
-F. Was bedeutet &quot;Edge&quot; in „Optimieren“ bei Edge?
+<!--Q. What does "Edge" in Optimize at Edge mean?
 
-In unserem Kontext bedeutet &quot;Edge&quot;, dass die Optimierung auf der CDN-Ebene und nicht innerhalb Ihrer CMS angewendet wird.
+In our context, "Edge" means that the optimization is applied at the CDN layer and not inside your CMS.
 
-F. Warum erfordert diese Optimierung ein CDN?
+Q. Why does this optimization require a CDN?
 
-Im CDN wird die optimierte Version der Seite zusammengestellt und an KI-Agenten bereitgestellt. Wir nutzen das CDN, um sicherzustellen, dass Ihr Ursprungs-CMS unverändert bleibt. Durch diese Trennung können Sie die LLM-Sichtbarkeit verbessern, ohne Ihre vorhandenen Publishing-Workflows zu verändern.
+The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.-->
 
 F. Was passiert, wenn ich noch nicht zu Optimize bei Edge hinzugefügt habe?
 
-Wenn Sie auf **Optimierungen bereitstellen** klicken, bevor Sie die erforderliche Einrichtung abgeschlossen haben, wird nichts auf Ihre Site angewendet. Stattdessen werden Sie in einem Popup-Dialogfeld aufgefordert, sich an unser Team unter llmo-at-edge@adobe.com zu wenden, um Unterstützung beim Onboarding zu erhalten. Bis zum Abschluss des Onboarding können Sie weiterhin die erkannten Opportunitys und Vorschläge erkunden, aber der Bereitstellungs-Workflow mit einem Klick bleibt inaktiv.
+Wenn Sie auf **Optimierungen bereitstellen** klicken, bevor Sie die erforderliche Einrichtung abgeschlossen haben, wird nichts auf Ihre Site angewendet. Stattdessen werden Sie in einem Popup-Dialogfeld aufgefordert, sich an unser Team unter `llmo-at-edge@adobe.com` zu wenden, um Unterstützung beim Onboarding zu erhalten. Bis zum Abschluss des Onboarding können Sie weiterhin die erkannten Opportunitys und Vorschläge erkunden, aber der Bereitstellungs-Workflow mit einem Klick bleibt inaktiv.
 
 F: Was passiert, wenn der Inhalt an der Quelle aktualisiert wird?
 
-Wir bedienen die optimierte Version der Seite aus dem Cache, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle jedoch ändert, wird unser System automatisch aktualisiert, sodass KI-Agenten immer die aktuellsten Inhalte erhalten. Dies liegt daran, dass wir niedrige Cache-TTLs in der Reihenfolge von Minuten verwenden, sodass jedes Inhaltsupdate auf Ihrer Site Trigger eine neue Optimierung innerhalb dieses Fensters ermöglicht. Da es keine universelle TTL gibt, die zu jeder Site passt, können wir diese TTL auf der Grundlage Ihrer Regeln zur Cache-Invalidierung konfigurieren, um sicherzustellen, dass beide Systeme synchron bleiben.
+Wir bedienen die optimierte Version der Seite aus dem Cache, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle jedoch ändert, wird unser System automatisch aktualisiert, sodass KI-Agenten immer die aktuellsten Inhalte erhalten. Dies liegt daran, dass wir niedrige TTL-Einstellungen (Cache Time To Live) verwenden (in der Reihenfolge von Minuten), sodass jedes Inhaltsupdate auf Ihrer Site eine neue Optimierung innerhalb dieses Triggers ermöglicht. Da es keine universelle TTL gibt, die zu jeder Site passt, können wir diese TTL auf der Grundlage Ihrer Regeln zur Cache-Invalidierung konfigurieren, um sicherzustellen, dass beide Systeme synchron bleiben.
 
 F. Ist „Optimieren“ bei Edge nur für Sites, die Adobe Edge Delivery Service (EDS) verwenden?
 
-Nein. Optimize at Edge ist CDN-unabhängig und kann mit jeder Frontend-Architektur verwendet werden, nicht nur mit einer, die im EDS-Stack von Adobe bereitgestellt wird.
+Nein. Optimize at Edge ist CDN-unabhängig und funktioniert mit jeder Frontend-Architektur, nicht nur mit der, die im EDS-Stack von Adobe bereitgestellt wird.
 
 F. Wie unterscheidet sich das Optimieren beim Edge-Pre-Rendering vom herkömmlichen Server-seitigen Rendering (SSR)?
 
 Beide lösen unterschiedliche Probleme und können zusammenarbeiten. Herkömmliche SSR rendert Server-seitige Inhalte, schließt jedoch keine Inhalte ein, die später im Browser geladen werden. Optimieren am Edge-Pre-Rendering : Erfasst die Seite nach dem Laden von JavaScript- und Client-seitigen Daten und erzeugt die vollständig assemblierte Version am CDN-Edge. SSR konzentriert sich auf die Verbesserung des menschlichen Erlebnisses und „Optimize“ bei Edge verbessert das Web-Erlebnis für LLMs.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
