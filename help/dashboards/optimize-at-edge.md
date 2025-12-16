@@ -2,9 +2,9 @@
 title: Optimieren bei Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer am CDN-Edge Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
+source-git-commit: 52984ea987ecacbd6d3bb08a6d04ff634fdf2779
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2206'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, C
 
 ### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [&#x200B; Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
@@ -74,18 +74,16 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
+Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
 
 * Festlegen der zu rotierenden Domain
 * Festlegen der zu verlegenden Pfade
 * Festlegen, welche Benutzeragenten weitergeleitet werden sollen (empfohlener Regex)
-* Abrufen eines API-Schlüssels aus Adobe für das `edge.tokowaka.now` Backend
 
 Um die Regel bereitzustellen, ist Folgendes erforderlich:
 
-* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * Übertragen Sie die `cdn.yaml` Konfigurationsdatei in das Repository
-* Bereitstellen des API-Schlüssels als [geheime Umgebungsvariable](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * Ausführen der Konfigurations-Pipeline
 
 
@@ -113,8 +111,6 @@ data:
         action:
           type: selectOrigin
           originName: tokowaka-backend
-          headers:
-            x-tokowaka-api-key: "${{TOKOWAKA_API_KEY}}"
     origins:
       - name: tokowaka-backend
         domain: "edge.tokowaka.now"
@@ -471,9 +467,9 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web
 
 ### Weitere Tools
 
-Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
+Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
 
 ## Opportunities detailliert
 
@@ -506,6 +502,8 @@ Bei dieser Gelegenheit werden Seiten mit langen, komplexen Absätzen gefunden, d
 ## Automatische Optimierung bei Edge
 
 Für jede Opportunity können Sie die Optimierungen am Edge in der Vorschau anzeigen, bearbeiten, bereitstellen, live anzeigen und zurücksetzen.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477983/?learn=on&enablevpops)
 
 ### Vorschau
 
