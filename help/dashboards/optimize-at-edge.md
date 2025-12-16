@@ -2,9 +2,9 @@
 title: Optimieren bei Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer am CDN-Edge Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 522abddcabaf02ce86fb4d7978ef7fa4d6eb0358
+source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2224'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am
 
 Optimize at Edge ist eine Edge-basierte Bereitstellungsfunktion in LLM Optimizer, die KI-freundliche Änderungen an LLM-Benutzeragenten bereitstellt. Im aktuellen Kontext bedeutet &quot;Edge&quot;, dass die Optimierung auf der CDN-Ebene angewendet wird. Da dies zu Optimierungen auf CDN-Ebene führt, sind keine Authoring-Änderungen im Content Management System (CMS) erforderlich, sodass Ihr Ursprungs-CMS unverändert bleibt. Durch diese Trennung können Sie die LLM-Sichtbarkeit verbessern, ohne Ihre vorhandenen Publishing-Workflows zu verändern. Es zielt nur auf den Traffic von Agenten ab und hat keine Auswirkungen auf menschliche Benutzer oder SEO-Bots. Wenn LLM Optimizer Möglichkeiten zur Seitenoptimierung erkennt, können Benutzende Fehlerbehebungen direkt am CDN-Edge bereitstellen.
 
-Optimize bei Edge ist eine schnellere, schlankere Alternative zu herkömmlichen Fehlerbehebungen, die einen komplexen technischen Aufwand erfordern. Wie bereits erwähnt, sind nach Abschluss einer einmaligen Einrichtung keine Plattformänderungen oder langen Entwicklungszyklen erforderlich, um die Änderungen anzuwenden. Sie können Verbesserungen in Minuten veröffentlichen, ohne dass Entwicklerinteraktionen erforderlich sind. Dies ist eine risikoarme, keinen Code umfassende Möglichkeit, Ihre Website für KI-Agenten zu optimieren.
+Optimize bei Edge ist eine schnellere, schlankere Alternative zu herkömmlichen Fehlerbehebungen, die einen komplexen technischen Aufwand erfordern. Wie bereits erwähnt, sind nach Abschluss einer einmaligen Einrichtung keine Plattformänderungen oder langen Entwicklungszyklen erforderlich, um die Änderungen anzuwenden. Sie können Verbesserungen in Minuten veröffentlichen, ohne dass Entwicklerinteraktionen erforderlich sind. Dies ist eine unkodierte Methode, um Ihre Website für KI-Agenten zu optimieren.
 
 Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, Content und digitale Strategien entwickelt. Business-Anwendern wird so die Möglichkeit geboten, das vollständige Journey in LLM Optimizer abzuschließen: durch Ermittlung von Chancen, Verständnis von Vorschlägen und einfache Bereitstellung der Fehlerbehebungen. Mit Optimieren in Edge können Benutzende eine Vorschau der Änderungen anzeigen, diese schnell am CDN-Edge bereitstellen und überprüfen, ob die Optimierungen live sind. Die Leistung kann im LLM Optimizer-Ökosystem verfolgt werden.
 
@@ -29,13 +29,13 @@ Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, C
 
 * **Nur-KI-Bereitstellung:** Bereitstellung von optimiertem HTML nur für KI-Agenten ohne Auswirkungen auf menschliche Besucher oder SEO-Bots.
 * **Schnellere Zyklen:** Veröffentlichungsänderungen in Minuten, nicht Wochen. Es sind keine Plattformänderungen oder lange Entwicklungszyklen erforderlich.
-* **Niedriges Risiko und umkehrbar:** Wird mit einer Rollback-Funktion mit einem Klick unterstützt, die die Seite in Minuten zurücksetzen kann.
+* **Reversible:** Wird mit der Funktion „Rollback mit einem Klick“ unterstützt, mit der die Seite in Minuten zurückgesetzt werden kann.
 * **Keine Leistungsbeeinträchtigung:** Edge-basierte Optimierungen und Caching wirken sich nicht auf die Site-Latenz aus.
 * **CDN- und CMS-unabhängig** Funktioniert mit jeder CDN-Konfiguration und jedem Frontend-Setup, unabhängig vom Content Management System.
 
 ### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [&#x200B; Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
+Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
 
 * Festlegen der zu rotierenden Domain
 * Festlegen der zu verlegenden Pfade
@@ -83,7 +83,7 @@ Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](http
 
 Um die Regel bereitzustellen, ist Folgendes erforderlich:
 
-* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * Übertragen Sie die `cdn.yaml` Konfigurationsdatei in das Repository
 * Bereitstellen des API-Schlüssels als [geheime Umgebungsvariable](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-credentials-authentication)
 * Ausführen der Konfigurations-Pipeline
@@ -471,9 +471,9 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web
 
 ### Weitere Tools
 
-Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
+Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
 
 ## Opportunities detailliert
 
@@ -482,10 +482,10 @@ In den folgenden Abschnitten können Sie zusätzliche Details zu jeder Opportuni
 ### Content-Sichtbarkeit wiederherstellen
 
 Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund des Client-seitigen Renderings ausgeblendet sind. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agent-Ansicht fehlen, Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die ausgeblendeten Inhalte wiederherzustellen. Wenn Sie diese Opportunity mit Optimieren in Edge bereitstellen, wird eine vorgerenderte, KI-optimierte Version der Seite LLM-Benutzeragenten bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne JavaScript auszuführen.
-Dadurch wird sichergestellt, dass die Seite zuerst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.
+Dadurch wird sichergestellt, dass die Seite zunächst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.
 
 >[!IMPORTANT]
->Diese Pre-Rendering-Funktion gilt automatisch für alle unten dargestellten Opportunitys, wenn sie mit Optimize in Edge bereitgestellt werden.
+>Diese Vorab-Rendering-Funktion gilt automatisch für alle unten dargestellten Opportunitys bei der Bereitstellung von Optimieren in Edge, um sicherzustellen, dass die Seite für KI-Agenten vollständig sichtbar ist.
 
 ### Optimieren von Überschriften für LLMs
 
@@ -505,7 +505,7 @@ Bei dieser Gelegenheit werden Seiten mit langen, komplexen Absätzen gefunden, d
 
 ## Automatische Optimierung bei Edge
 
-Für jede Opportunity können Sie die Optimierungen am Edge in der Vorschau anzeigen, bearbeiten, bereitstellen, Live-Vorschau anzeigen und zurücksetzen.
+Für jede Opportunity können Sie die Optimierungen am Edge in der Vorschau anzeigen, bearbeiten, bereitstellen, live anzeigen und zurücksetzen.
 
 ### Vorschau
 
@@ -566,4 +566,3 @@ Nein. Optimize at Edge ist CDN-unabhängig und funktioniert mit jeder Frontend-A
 F. Wie unterscheidet sich das Optimieren beim Edge-Pre-Rendering vom herkömmlichen Server-seitigen Rendering (SSR)?
 
 Beide lösen unterschiedliche Probleme und können zusammenarbeiten. Herkömmliche SSR rendert Server-seitige Inhalte, schließt jedoch keine Inhalte ein, die später im Browser geladen werden. Optimieren am Edge-Pre-Rendering : Erfasst die Seite nach dem Laden von JavaScript- und Client-seitigen Daten und erzeugt die vollständig assemblierte Version am CDN-Edge. SSR konzentriert sich auf die Verbesserung des menschlichen Erlebnisses und „Optimize“ bei Edge verbessert das Web-Erlebnis für LLMs.
-
