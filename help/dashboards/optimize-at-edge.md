@@ -2,9 +2,9 @@
 title: Optimieren bei Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer am CDN-Edge Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 24585a5743a3291d2440c98f91495416bbbe1760
+source-git-commit: 3986fec2dcb9537f5b8f94ce9c72558845aba376
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2191'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am CDN-Edge ohne Authoring-Änderungen bereitgestellt werden können. Es behandelt den Onboarding-Prozess, die verfügbaren Optimierungsmöglichkeiten und die automatische Optimierung am Edge.
 
 >[!NOTE]
->Auf diese Funktion wird derzeit frühzeitig zugegriffen. Weitere Informationen zu Early Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Auf diese Funktion wird derzeit frühzeitig zugegriffen. Weitere Informationen zu Early Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Was ist Optimieren bei Edge?
 
@@ -30,16 +30,16 @@ Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, C
 * **Nur-KI-Bereitstellung:** Bereitstellung von optimiertem HTML nur für KI-Agenten ohne Auswirkungen auf menschliche Besucher oder SEO-Bots.
 * **Schnellere Zyklen:** Veröffentlichungsänderungen in Minuten, nicht Wochen. Es sind keine Plattformänderungen oder lange Entwicklungszyklen erforderlich.
 * **Reversible:** Wird mit der Funktion „Rollback mit einem Klick“ unterstützt, mit der die Seite in Minuten zurückgesetzt werden kann.
-* **Keine Leistungsbeeinträchtigung:** Edge-basierte Optimierungen und Caching wirken sich nicht auf die Site-Latenz aus.
+* **Keine Leistungsbeeinträchtigung:** Edge-basierte Optimierungen und das Caching wirken sich nicht auf die Site-Latenz aus.
 * **CDN- und CMS-unabhängig** Funktioniert mit jeder CDN-Konfiguration und jedem Frontend-Setup, unabhängig vom Content Management System.
 
 ### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [&#x200B; Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
-Wenden Sie sich entweder an Ihr Adobe-Account-Team oder an Ihr FDE-Team, um den Onboarding-Prozess zu starten. Ihr IT- oder CDN-Team muss außerdem die Voraussetzungen und den Einrichtungsprozess abschließen. Darüber hinaus können Sie sich auch an unser Team unter `llmo-at-edge@adobe.com` wenden, um weitere Unterstützung beim Onboarding zu erhalten.
+Wenden Sie sich entweder an Ihr Adobe-Account-Team oder an das FDE-Team, um den Onboarding-Prozess zu starten. Ihr IT- oder CDN-Team muss außerdem die Voraussetzungen und den Einrichtungsprozess abschließen. Darüber hinaus können Sie sich auch an `llmo-at-edge@adobe.com` wenden, um weitere Unterstützung beim Onboarding zu erhalten.
 
 Voraussetzungen für das Onboarding von Optimizer bei Edge:
 
@@ -55,7 +55,7 @@ Anforderungen an Ihr IT-/CDN-Team:
 * Stellen Sie sicher, dass `robots.txt` keine Benutzeragenten blockiert, die angesprochen werden sollen.
 * Bestätigen Sie die Option Optimieren beim Edge-Routing in der Benutzeroberfläche von LLM Optimizer.
 
-Anleitungen für den Einrichtungsprozess finden Sie in der Beispielkonfiguration für eine Reihe von CDN-Setups. Diese Beispiele sollten an Ihre tatsächliche Live-Konfiguration angepasst werden. Es wird empfohlen, Änderungen zuerst in den unteren Umgebungen anzuwenden.
+Als Anleitung für den Einrichtungsprozess dienen im Folgenden Beispielkonfigurationen für eine Reihe von CDN-Setups. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden sollten. Es wird empfohlen, Änderungen zuerst in den unteren Umgebungen anzuwenden.
 
 >[!NOTE]
 >In den folgenden Code-Beispielen werden möglicherweise Verweise auf „tokowaka“ angezeigt, den funktionierenden Projektnamen für „Optimieren“ bei Edge. Diese Kennungen bleiben aus Kompatibilitätsgründen im Code und beziehen sich auf dieselben Funktionen, die in dieser Dokumentation beschrieben werden.
@@ -74,7 +74,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
+Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
 
 * Festlegen der zu rotierenden Domain
 * Festlegen der zu verlegenden Pfade
@@ -82,7 +82,7 @@ Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](http
 
 Um die Regel bereitzustellen, ist Folgendes erforderlich:
 
-* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * Übertragen Sie die `cdn.yaml` Konfigurationsdatei in das Repository
 * Ausführen der Konfigurations-Pipeline
 
@@ -467,9 +467,9 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web
 
 ### Weitere Tools
 
-Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit &#x200B;](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
+Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?Mit ](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung können Sie genau sehen, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
 
 ## Opportunities detailliert
 
