@@ -1,7 +1,7 @@
 ---
 title: Adobe LLM Optimizer
 description: Steigern Sie Ihre Markendarstellung mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen, entdecken Sie Einblicke und dominieren Sie die KI-gesteuerte Suche. Übernehmen Sie die Kontrolle über Ihre Sichtbarkeit - jetzt mit der Optimierung beginnen!
-source-git-commit: 66993ce43c6b25c27dcd2affdb56352802949e18
+source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 3%
@@ -126,7 +126,7 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/de/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -185,7 +185,7 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://business.adobe.com/de/products/llm-optimizer.html" title="Erkunden der Funktionen von Adobe LLM Optimizer" target="_blank" rel="referrer">
+                    <a href="https://business.adobe.com/products/llm-optimizer.html" title="Erkunden der Funktionen von Adobe LLM Optimizer" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="/help/assets/overview/business-adobe.png" alt="Erkunden der Funktionen von Adobe LLM Optimizer"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -194,11 +194,11 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/de/products/llm-optimizer.html" target="_blank" rel="referrer" title="Erkunden der Funktionen von Adobe LLM Optimizer">Erkunden Sie die Funktionen von Adobe LLM Optimizer</a>
+                        <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" title="Erkunden der Funktionen von Adobe LLM Optimizer">Erkunden Sie die Funktionen von Adobe LLM Optimizer</a>
                     </p>
                     <p class="is-size-6">Gestalten Sie mit Adobe LLM Optimizer die Präsenz Ihrer Marke in den KI-Suchergebnissen. Gewinnen Sie GEO-Einblicke, verbessern Sie die Sichtbarkeit aller LLMs und steigern Sie das messbare Traffic-Wachstum.</p>
                 </div>
-                <a href="https://business.adobe.com/de/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://business.adobe.com/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
@@ -246,3 +246,4 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
     </div>
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
