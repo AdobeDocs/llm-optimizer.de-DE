@@ -2,9 +2,9 @@
 title: Best Practices für Kategorien, Themen, Eingabeaufforderungen und andere
 description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Eingabeaufforderungen und andere Marken konfigurieren, einschließlich Mitbewerbern für ein maßgeschneidertes Markenmonitoring und eine strategische Inhaltsanalyse.
 feature: Best Practices, Customer Configuration
-source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
+source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
-source-wordcount: '1406'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -28,16 +28,18 @@ Um Ihnen den Einstieg in Eingabeaufforderungen und Themen zu erleichtern, hat Ad
 
 So verwenden Sie die Bibliothek mit Eingabeaufforderungen für die Branche:
 
-1. Laden Sie die Bibliotheksdatei für die Eingabeaufforderung aus LLM Optimizer herunter, indem Sie zum Dashboard **Kundenkonfiguration** navigieren.
-2. Überprüfen Sie die **Themen** und **Aufforderungen** für die Branche Ihrer Marke auf der entsprechenden Registerkarte und wählen Sie die relevantesten Optionen aus.
-3. Lesen Sie **Spalte „Kunden-Journey-**&quot;, um die Eingabeaufforderungsoptionen im gesamten Kundenlebenszyklus anzuzeigen (z. B. Erkennung zur Konvertierung in die Aufbewahrung). Frühzeitige funnel-Eingabeaufforderungen haben hohe Priorität, erwägen aber auch Optionen für das spätere Stadium, um die Kundenbindung zu fördern, den Kunden-Support zu aktivieren usw.
-4. Ändern Sie Themen oder Eingabeaufforderungen nach Bedarf, um Ihre Produktziele bestmöglich zu unterstützen, bevor Sie sie auf Adobe LLM Optimizer hochladen (fügen Sie beispielsweise Ihren Marken-/Produktnamen hinzu oder verwenden Sie markeninterne Terminologie). Eingabeaufforderungen können manuell zu LLMO hinzugefügt oder mithilfe der bereitgestellten *.csv*-Vorlage stapelweise hochgeladen werden.
+1. Navigieren Sie zum Dashboard **Kundenkonfiguration**.
+1. Wählen Sie **Bibliothek für Eingabeaufforderungen herunterladen** aus, um die Bibliotheksdatei von LLM Optimizer herunterzuladen.
+   ![Industry Prompt Library Download](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Überprüfen Sie die **Themen** und **Eingabeaufforderungen** für die Branche Ihrer Marke auf der entsprechenden Registerkarte und wählen Sie die Optionen aus, die am relevantesten sind.
+1. Lesen Sie **Spalte „Kunden-Journey-**&quot;, um die Eingabeaufforderungsoptionen im gesamten Kundenlebenszyklus anzuzeigen (z. B. Erkennung zur Konvertierung in die Aufbewahrung). Frühzeitige funnel-Eingabeaufforderungen haben hohe Priorität, erwägen aber auch Optionen für das spätere Stadium, um die Kundenbindung zu fördern, den Kunden-Support zu aktivieren usw.
+1. Ändern Sie Themen oder Eingabeaufforderungen nach Bedarf, um Ihre Produktziele bestmöglich zu unterstützen, bevor Sie Ihre Themen und Eingabeaufforderungen in Adobe LLM Optimizer hochladen (fügen Sie beispielsweise Ihren Marken-/Produktnamen hinzu oder verwenden Sie markeninterne Terminologie). Eingabeaufforderungen können manuell oder über einen Massen-Upload unter Verwendung der bereitgestellten Vorlage *.csv* zu LLM Optimizer hinzugefügt werden.
 
 >[!TIP]
 >
 > Verwenden Sie eine Kombination aus Domain-spezifischen Eingabeaufforderungen, die von LLM Optimizer während der Ersteinrichtung empfohlen werden, und der Industry Prompt Library, um Ihre Eingabeaufforderungsstrategie zu kuratieren.
 
-### In: Prompt Library Research Foundation
+### Prompt Library Research Foundation
 
 Die Industry Prompt Library wurde im Rahmen einer umfassenden Forschungsinitiative entwickelt, die Folgendes kombiniert:
 
