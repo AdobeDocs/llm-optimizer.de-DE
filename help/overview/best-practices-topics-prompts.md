@@ -2,9 +2,9 @@
 title: Best Practices für Kategorien, Themen, Eingabeaufforderungen und andere
 description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Eingabeaufforderungen und andere Marken konfigurieren, einschließlich Mitbewerbern für ein maßgeschneidertes Markenmonitoring und eine strategische Inhaltsanalyse.
 feature: Best Practices, Customer Configuration
-source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
+source-git-commit: a4dd9b1aece2936fb95a2e831ec8b41946bc5f46
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen zu verfolgenden Themen
 
-In diesem Abschnitt werden Best Practices beschrieben, mit deren Hilfe Sie entscheiden können, wie Sie Ihre Kategorien, Themen, Eingabeaufforderungen und andere Nachverfolgungsoptionen einrichten möchten.
+In diesem Abschnitt werden Best Practices beschrieben, mit deren Hilfe Sie entscheiden können, wie Sie Ihre Kategorien, Themen, Eingabeaufforderungen und andere Nachverfolgungsoptionen einrichten möchten. Darüber hinaus enthält es Informationen zur Industry Prompt Library, die Adobe mit umfangreichen Recherchen von Branchenexperten entwickelt hat.
 
 Dies ist ein entscheidender erster Schritt. Was Sie jetzt entscheiden, bestimmt, wie Informationen auf Ihren Geschäftskontext zugeschnitten werden. Alle Änderungen an Kategorien in der Zukunft setzen historische Daten zurück.
 
@@ -21,6 +21,43 @@ Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-config
 ![Fenster „Kundenkonfiguration“](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Markenbezeichnungsaliase hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+
+## Bibliothek mit Eingabeaufforderungen für die Branche
+
+Um Ihnen den Einstieg in Eingabeaufforderungen und Themen zu erleichtern, hat Adobe eine Industry Prompt Library erstellt, die durch umfangreiche Forschungsarbeiten mit Branchenexperten und Analysen des KI-Suchverhaltens von über 6.000 Kunden entwickelt wurde. Diese Bibliothek identifiziert die relevantesten Themen und Eingabeaufforderungen basierend auf branchenspezifischen Trends, validierten Geschäftszielen und realen Kundensuchmustern.
+
+So verwenden Sie die Bibliothek mit Eingabeaufforderungen für die Branche:
+
+1. Laden Sie die Bibliotheksdatei für die Eingabeaufforderung aus LLM Optimizer herunter, indem Sie zum Dashboard **Kundenkonfiguration** navigieren.
+2. Überprüfen Sie die **Themen** und **Aufforderungen** für die Branche Ihrer Marke auf der entsprechenden Registerkarte und wählen Sie die relevantesten Optionen aus.
+3. Lesen Sie **Spalte „Kunden-Journey-**&quot;, um die Eingabeaufforderungsoptionen im gesamten Kundenlebenszyklus anzuzeigen (z. B. Erkennung zur Konvertierung in die Aufbewahrung). Frühzeitige funnel-Eingabeaufforderungen haben hohe Priorität, erwägen aber auch Optionen für das spätere Stadium, um die Kundenbindung zu fördern, den Kunden-Support zu aktivieren usw.
+4. Ändern Sie Themen oder Eingabeaufforderungen nach Bedarf, um Ihre Produktziele bestmöglich zu unterstützen, bevor Sie sie auf Adobe LLM Optimizer hochladen (fügen Sie beispielsweise Ihren Marken-/Produktnamen hinzu oder verwenden Sie markeninterne Terminologie). Eingabeaufforderungen können manuell zu LLMO hinzugefügt oder mithilfe der bereitgestellten *.csv*-Vorlage stapelweise hochgeladen werden.
+
+>[!TIP]
+>
+> Verwenden Sie eine Kombination aus Domain-spezifischen Eingabeaufforderungen, die von LLM Optimizer während der Ersteinrichtung empfohlen werden, und der Industry Prompt Library, um Ihre Eingabeaufforderungsstrategie zu kuratieren.
+
+### In: Prompt Library Research Foundation
+
+Die Industry Prompt Library wurde im Rahmen einer umfassenden Forschungsinitiative entwickelt, die Folgendes kombiniert:
+
+* **Customer Intelligence:** Analyse des Suchverhaltens und der Voreinstellungen von KI bei über 6.000 Kunden
+* **Branchenkompetenz:** Perspektiven von Experten aus den Bereichen Auto, Finanzdienstleistungen, Gesundheitswesen, Telekommunikation und Reisen.
+* **Datengesteuerte Einblicke:** Identifizierung von wirkungsvollen Themen und Abfragemustern, die die Kundeninteraktion und Konversion fördern.
+
+Top-Themen, die von Kunden aus verschiedenen Branchen gesucht werden:
+
+* **Auto:** Fehlerbehebung bei Autoproblemen, Vergleich von Fahrzeugen und Finanzierung/Leasing
+* **Finanzdienstleistungen:** Erforschung von Finanzprodukten
+* **Gesundheitswesen:** Nachschlagen von Symptomen oder Gesundheitsproblemen, Vergleichen von Behandlungsoptionen, Verstehen von Laborergebnissen oder medizinischen Begriffen
+* **Telekommunikation:** Vergleichen von Plänen, Vertragsbedingungen und Werbeaktionen, Überprüfen von Dienstleistungen in der Umgebung
+* **Reisen:** Vorbereitung auf eine Reise, Recherche und Buchung von Reisen
+
+Kundentrends bei KI-Suche und Promptverhalten in LLM-Tools:
+
+* Kunden stellen bei der Verwendung von LLM-Suchwerkzeugen lieber Fragen als verwenden Keywords.
+* Sie nutzen hauptsächlich LLM-Suchwerkzeuge für die Forschung und Entdeckung in der Frühphase.
+* Kunden neigen dazu, in ihren Eingabeaufforderungen einen bestimmten Marken- oder Produktnamen anzugeben.
 
 ## Best Practices für Kategorien
 
@@ -52,7 +89,7 @@ Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss auf den Ber
 >
 > * Wählen Sie einen Ansatz und halten Sie sich daran.
 > * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Mischen Sie **SBU** und **URL_DIR** nicht gleichzeitig.
->   <!--Can you mix Product/Service with these?-->
+<!--Can you mix Product/Service with these?-->
 
 Zum Beispiel:
 
