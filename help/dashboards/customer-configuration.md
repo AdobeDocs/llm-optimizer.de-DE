@@ -2,9 +2,9 @@
 title: Kundenkonfiguration
 description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
 feature: Customer Configuration
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
+source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '832'
 ht-degree: 2%
 
 ---
@@ -18,15 +18,43 @@ Das Dashboard für Kundenkonfigurationen ist ein leistungsstarkes Tool, das Einb
 
 Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz auf verschiedenen Märkten und in verschiedenen Wettbewerbslandschaften überwacht und analysiert, haben Sie Zugriff auf die folgenden Registerkarten:
 
+* [Eingabeaufforderungen](#prompts-brand)
 * [Kategorien](#categories)
-* [Andere Tracking-Optionen](#others-tracking)
+* [Andere Marken](#other-brands)
 * [Markenalias](#brand-aliases)
-* [Data Insights](#data-insights)
 * [CDN-Konfiguration](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und &#x200B;](/help/overview/best-practices-topics-prompts.md)&quot;.
+> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und ](/help/overview/best-practices-topics-prompts.md)&quot;.
+
+## Eingabeaufforderungen {#prompts-brand}
+
+Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Markenpräsenzanalyse](/help/dashboards/brand-presence.md) hochladen. Die Liste wird dann mit Eingabeaufforderungen und Themen aus dieser Analyse gefüllt oder die von Adobe erstellte [Eingabeaufforderungsbibliothek ](/help/overview/best-practices-topics-prompts.md). Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
+
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+
+1. Klicken Sie im Dashboard auf **CSV hochladen**.
+2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.
+3. Klicken Sie **Daten hochladen**.
+
+Sie können auch eine neue CSV-Datei erstellen, indem Sie die Vorlage aus dem Fenster **Dateneinblicke importieren** herunterladen. Sobald Sie die Vorlage haben, öffnen Sie sie und geben Sie Ihre Themen zusammen mit den zugehörigen Eingabeaufforderungen, Kategorien und Regionen in einer neuen Zeile ein.
+
+Informationen zum Herunterladen und Verwenden der von Adobe erstellten Industry Prompt Library finden Sie im Abschnitt zur Industry Prompt Library auf [dieser Seite](/help/overview/best-practices-topics-prompts.md)
+
+Darüber hinaus können Sie der Liste auch Themen/Eingabeaufforderungen hinzufügen, unabhängig von einer CSV-Datei oder Eingabeaufforderungsbibliothek. Gehen Sie dazu im Dashboard wie folgt vor:
+
+1. Klicken Sie auf **Schaltfläche „Thema**&quot;.
+2. Wählen Sie im Fenster für die neue Konfiguration die Option **Kategorie** aus. Zuvor erstellte Kategorien werden hier angezeigt.
+3. Geben Sie den Themennamen ein.
+4. Fügen Sie den Eingabeaufforderungstext hinzu.
+5. Auswählen der Region.
+6. Klicken Sie **Eingabeaufforderung hinzufügen** und das Thema mit der Eingabeaufforderung wird in der Liste angezeigt.
+
+>[!NOTE]
+>Neu hinzugefügte Eingabeaufforderungen werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist.
+
+In der Liste können Sie auf jedes Thema klicken, und die zugehörigen Eingabeaufforderungen werden angezeigt. Um das Thema und die zugehörigen Eingabeaufforderungen zu löschen, klicken Sie auf das Löschsymbol in der Liste.
 
 ## Kategorien {#categories}
 
@@ -41,7 +69,7 @@ Durch das Hinzufügen neuer Kategorien werden nicht automatisch Themen und Einga
 
 Um eine Kategorie zu löschen, klicken Sie in der Kategorieliste auf das Löschsymbol. Vorsicht ist geboten, da **Löschen einer Kategorie auch die zugehörigen Elemente**, z. B. Markenaliase, die mit dieser bestimmten Kategorie verknüpft sind.
 
-## Andere Tracking-Optionen {#others-tracking}
+## Andere Marken {#others-tracking}
 
 Mithilfe dieser Registerkarte können Sie verfolgen, wie Ihre anderen in Bezug auf Ihre Marke in verschiedenen Kategorien und Regionen erwähnt werden. Überwachen Sie deren Präsenz und Leistung in Ihren Marktsegmenten. Anpassen des Trackings:
 
@@ -64,32 +92,6 @@ Mithilfe von Markenaliasen können Sie alternative Namen und Varianten Ihrer Mar
 5. Klicken Sie **Speichern** und der Markenalias wird in der Liste angezeigt.
 
 Um einen Markenalias zu löschen, klicken Sie in der Alias-Liste auf das Symbol Löschen .
-
-## Data Insights {#data-insights}
-
-Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Dateneinblicke zur Markenpräsenz](/help/dashboards/brand-presence.md#data-insights) hochladen und die Liste mit Eingabeaufforderungen und Themen aus dieser Analyse füllen. Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
-
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
-
-1. Klicken Sie im Dashboard auf **CSV hochladen**.
-2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.
-3. Klicken Sie **Daten hochladen**.
-
-Sie können auch eine neue CSV-Datei erstellen, indem Sie die Vorlage aus dem Fenster **Dateneinblicke importieren** herunterladen. Sobald Sie die Vorlage haben, öffnen Sie sie und geben Sie Ihre Themen zusammen mit den zugehörigen Eingabeaufforderungen, Kategorien und Regionen in einer neuen Zeile ein.
-
-Darüber hinaus können Sie der Liste auch Themen/Eingabeaufforderungen unabhängig von einer CSV-Datei hinzufügen. Gehen Sie dazu im Dashboard wie folgt vor:
-
-1. Klicken Sie auf **Schaltfläche „Thema**&quot;.
-2. Wählen Sie im Fenster für die neue Konfiguration die Option **Kategorie** aus. Zuvor erstellte Kategorien werden hier angezeigt.
-3. Geben Sie den Themennamen ein.
-4. Fügen Sie den Eingabeaufforderungstext hinzu.
-5. Auswählen der Region.
-6. Klicken Sie **Eingabeaufforderung hinzufügen** und das Thema mit der Eingabeaufforderung wird in der Liste angezeigt.
-
->[!NOTE]
->Neu hinzugefügte Eingabeaufforderungen werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist.
-
-In der Liste können Sie auf jedes Thema klicken, und die zugehörigen Eingabeaufforderungen werden angezeigt. Um das Thema und die zugehörigen Eingabeaufforderungen zu löschen, klicken Sie auf das Löschsymbol in der Liste.
 
 ## CDN-Konfiguration {#cdn-configuration}
 
