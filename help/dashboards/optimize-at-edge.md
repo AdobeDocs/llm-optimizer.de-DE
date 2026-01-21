@@ -2,9 +2,9 @@
 title: Optimieren bei Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer am CDN-Edge Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 2311bd2990c6ff7ecee22ca82b25987df10e7e1c
+source-git-commit: 09fa235f39d61daa343a8c9cc043574a6ea2a1cc
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2149'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am CDN-Edge ohne Authoring-Änderungen bereitgestellt werden können. Es behandelt den Onboarding-Prozess, die verfügbaren Optimierungsmöglichkeiten und die automatische Optimierung am Edge.
 
 >[!NOTE]
->Auf diese Funktion wird derzeit frühzeitig zugegriffen. Weitere Informationen zu Early Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Auf diese Funktion wird derzeit frühzeitig zugegriffen. Weitere Informationen zu Early Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Was ist Optimieren bei Edge?
 
@@ -35,7 +35,7 @@ Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, C
 
 ### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [&#x200B; Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
@@ -57,24 +57,21 @@ Anforderungen an Ihr IT-/CDN-Team:
 
 Als Anleitung für den Einrichtungsprozess dienen im Folgenden Beispielkonfigurationen für eine Reihe von CDN-Setups. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden sollten. Es wird empfohlen, Änderungen zuerst in den unteren Umgebungen anzuwenden.
 
->[!NOTE]
->In den folgenden Code-Beispielen werden möglicherweise Verweise auf „tokowaka“ angezeigt, den funktionierenden Projektnamen für „Optimieren“ bei Edge. Diese Kennungen bleiben aus Kompatibilitätsgründen im Code und beziehen sich auf dieselben Funktionen, die in dieser Dokumentation beschrieben werden.
-
 >[!BEGINTABS]
 
 >[!TAB Adobe Managed CDN]
 
 **Adobe Managed CDN**
 
-Der Zweck dieser Konfiguration besteht darin, Anfragen mit agenten Benutzeragenten zu konfigurieren, die an den Optimizer-Service (`edge.tokowaka.now`-Backend) weitergeleitet werden. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-tokowaka-request-id`.
+Der Zweck dieser Konfiguration besteht darin, Anfragen mit agenten Benutzeragenten zu konfigurieren, die an den Optimizer-Service (`live.edgeoptimize.net`-Backend) weitergeleitet werden. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edge-optimize-request-id`.
 
 ```
 curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
+Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
 
 * Festlegen der zu rotierenden Domain
 * Festlegen der zu verlegenden Pfade
@@ -82,7 +79,7 @@ Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](http
 
 Um die Regel bereitzustellen, ist Folgendes erforderlich:
 
-* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * Übertragen Sie die `cdn.yaml` Konfigurationsdatei in das Repository
 * Ausführen der Konfigurations-Pipeline
 
@@ -91,16 +88,16 @@ Um die Regel bereitzustellen, ist Folgendes erforderlich:
 kind: "CDN"
 version: "1"
 data:
-  # Origin selectors to route to Tokowaka backend
+  # Origin selectors to route to Edge Optimize backend
   originSelectors:
     rules:
-      - name: route-to-tokowaka-backend
+      - name: route-to-edge-optimize-backend
         when:
           allOf:
-            - reqHeader: x-tokowaka-request
-              exists: false # avoid loops when requests comes from Tokowaka
+            - reqHeader: x-edge-optimize-request
+              exists: false # avoid loops when requests comes from Edge Optimize
             - reqHeader: user-agent
-              matches: "(?i)(Tokowaka-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
+              matches: "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)" # routed user agents
             - reqProperty: domain
               equals: "example.com" # routed domain
             - reqProperty: originalPath
@@ -110,10 +107,10 @@ data:
               - { reqProperty: originalPath, like: "/dir/*" } # routed pages, wildcard path matching
         action:
           type: selectOrigin
-          originName: tokowaka-backend
+          originName: edge-optimize-backend
     origins:
-      - name: tokowaka-backend
-        domain: "edge.tokowaka.now"
+      - name: edge-optimize-backend
+        domain: "live.edgeoptimize.net"
 ```
 
 Führen Sie zum Testen des Setups eine cURL aus und erwarten Sie Folgendes:
@@ -121,7 +118,7 @@ Führen Sie zum Testen des Setups eine cURL aus und erwarten Sie Folgendes:
 ```
 curl -svo page.html https://www.example.com/page.html --header "user-agent: chatgpt-user"
 < HTTP/2 200
-< x-tokowaka-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+< x-edge-optimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
 <!-- >>[!TAB Akamai (BYOCDN)]
@@ -402,7 +399,7 @@ Important considerations:
 
 >[!TAB Fastly (BYOCDN)]
 
-**Tokowaka BYOCDN - Fastly - VCL**
+**Edge Optimize BYOCDN - Fastly - VCL**
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -411,40 +408,40 @@ Important considerations:
 **VCL_RECV Snippet**
 
 ```
-unset req.http.x-tokowaka-url;
-unset req.http.x-tokowaka-config;
-unset req.http.x-tokowaka-api-key;
+unset req.http.x-edge-optimize-url;
+unset req.http.x-edge-optimize-config;
+unset req.http.x-edge-optimize-api-key;
 
-if (!req.http.x-tokowaka-request
-    && req.http.user-agent ~ "(?i)(Tokowaka-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
+if (!req.http.x-edge-optimize-request
+    && req.http.user-agent ~ "(?i)(AdobeEdgeOptimize-AI|ChatGPT-User|GPTBot|OAI-SearchBot|PerplexityBot|Perplexity-User)") {
   set req.http.x-fowarded-host = req.http.host; # required for identifying the original host
-  set req.http.x-tokowaka-url = req.url; # required for identifying the original url
-  set req.http.x-tokowaka-config = "LLMCLIENT=true"; # required for cache key
-  set req.http.x-tokowaka-api-key = "<YOUR API KEY>"; # required for identifying the client
-  set req.backend = F_Tokowaka;
+  set req.http.x-edge-optimize-url = req.url; # required for identifying the original url
+  set req.http.x-edge-optimize-config = "LLMCLIENT=true"; # required for cache key
+  set req.http.x-edge-optimize-api-key = "<YOUR API KEY>"; # required for identifying the client
+  set req.backend = F_EDGE_OPTIMIZE;
 }
 ```
 
 **VCL_HASH Snippet**
 
 ```
-if (req.http.x-tokowaka-config) {
-  set req.hash += "tokowaka";
-  set req.hash += req.http.x-tokowaka-config;
+if (req.http.x-edge-optimize-config) {
+  set req.hash += "edge-optimize";
+  set req.hash += req.http.x-edge-optimize-config;
 }
 ```
 
 **VCL_DELIVER Snippet**
 
 ```
-if (req.http.x-tokowaka-config && resp.status >= 400) {
-  set req.http.x-tokowaka-request = "failover";
+if (req.http.x-edge-optimize-config && resp.status >= 400) {
+  set req.http.x-edge-optimize-request = "failover";
   set req.backend = F_Default_Origin;
   restart;
 }
 
-if (!req.http.x-tokowaka-config && req.http.x-tokowaka-request == "failover") {
-  set resp.http.x-tokowaka-fo = "1";
+if (!req.http.x-edge-optimize-config && req.http.x-edge-optimize-request == "failover") {
+  set resp.http.x-edge-optimize-fo = "1";
 }
 ```
 
@@ -469,7 +466,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web
 
 Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung zeigt an, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
 
 ## Opportunities detailliert
 
