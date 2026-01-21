@@ -2,9 +2,9 @@
 title: Agenturverkehr
 description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: 2993f840c7451adeccf4f11a0132b91a9bc81803
+source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
 workflow-type: tm+mt
-source-wordcount: '1302'
+source-wordcount: '1308'
 ht-degree: 0%
 
 ---
@@ -47,15 +47,17 @@ Wenn Sie **Sonstige** auswählen, müssen Sie sich an llmo-now@adobe.com wenden,
 
 Nach der Aktivierung werden Protokolle aufgenommen und im Dashboard Metriken wie Gesamtanzahl der Agenteninteraktionen, Erfolgsrate, Treffer nach Markt, Analyse der Benutzeragenten und Leistung auf URL-Ebene angezeigt.
 
-LLM Optimizer nimmt nur eine Teilmenge von Feldern aus den CDN-Protokollen auf und verarbeitet diese. Obwohl die Namen der Rohprotokoll-Felder je nach CDN-Provider variieren, werden sie normalisiert und wie folgt dargestellt:
+LLM Optimizer verarbeitet eine Teilmenge von Feldern aus den CDN-Protokollen. Obwohl die Namen der Rohprotokoll-Felder je nach CDN-Provider variieren, werden sie normalisiert und wie folgt dargestellt:
 
 * URL (nur Pfad)
-* user_agent
-* status
-* Referer
-* host
-* Tfb (Zeit bis zum ersten Byte)
-* CDN_PROVIDER
+* Benutzeragent
+* Status-Code
+* Referrer-Kopfzeile
+* Host-Kopfzeile
+* Zeit bis zum ersten Byte (TTFB)
+* Anforderungsmethode
+* Zeitstempel
+* Inhaltstyp
 
 Diese normalisierten Felder werden über die agentische Ansicht verfügbar gemacht. Im Dashboard [Verweisdatenverkehr](/help/dashboards/referral-traffic.md) werden CDN-Protokolle zur Anzeige von Seitentreffermetriken verwendet. In keiner Phase der CDN-Protokollaufnahme oder der nachfolgenden Datenverarbeitung werden personenbezogene Daten (PII) verarbeitet oder gespeichert.
 
