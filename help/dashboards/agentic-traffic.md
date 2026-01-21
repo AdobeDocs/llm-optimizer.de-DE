@@ -2,9 +2,9 @@
 title: Agenturverkehr
 description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: a75ce71dc0ab9ffe7956a3dbd09dca23ea5f7096
+source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Verwenden Sie das Diagramm Agentenmäßige Traffic-Trends , um die wöchentliche
 
 ## Top- und Bottom-Mover {#top-bottom-movers}
 
-Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. **Top Movers** zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während **Bottom Movers** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert, und wo sich KI-gesteuerte Erkennungsmuster verschieben.
+Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. **Top Movers** zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während **Bottom Movers** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
 ![Top und Bottom Mover](/help/dashboards/assets/movers.png)
 
@@ -140,4 +140,4 @@ Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistun
 
 >[!ENDTABS]
 
-In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabellen in das Reporting für Führungskräfte aufzunehmen.
+In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die `.csv` herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabellen in das Reporting für Führungskräfte aufzunehmen.
