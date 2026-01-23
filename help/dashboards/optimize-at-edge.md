@@ -35,7 +35,7 @@ Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, C
 
 ### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [&#x200B; Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
