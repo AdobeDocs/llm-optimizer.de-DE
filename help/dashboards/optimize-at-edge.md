@@ -2,9 +2,9 @@
 title: Optimieren bei Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer am CDN-Edge Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 0e48118b823686d3b86fb3bb83a091340ca577b8
+source-git-commit: eb8bdf9144aebb85171a529a3cc25034be5b076e
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2291'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am CDN-Edge ohne Authoring-Änderungen bereitgestellt werden können. Es behandelt den Onboarding-Prozess, die verfügbaren Optimierungsmöglichkeiten und die automatische Optimierung am Edge.
 
 >[!NOTE]
->Auf diese Funktion wird derzeit frühzeitig zugegriffen. Weitere Informationen zu Early Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
+>Auf diese Funktion wird derzeit frühzeitig zugegriffen. Weitere Informationen zu Early Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Was ist Optimieren bei Edge?
 
@@ -35,7 +35,7 @@ Optimize at Edge wurde für Business-Anwender in den Bereichen Marketing, SEO, C
 
 ### Welche Chancen werden bei Edge mit Optimize unterstützt?
 
-Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [&#x200B; Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
+Chancen zur Verbesserung des agenten Web-Erlebnisses werden von Optimize bei Edge unterstützt. Weitere Informationen zu den einzelnen Opportunitys finden Sie sowohl auf [ Seite „Opportunitys-Dashboard](/help/dashboards/opportunities.md) als auch im Abschnitt „Opportunitys“ auf der aktuellen Seite.
 
 ## Onboarding
 
@@ -71,7 +71,7 @@ curl -svo page.html https://frescopa.coffee/about-us --header "user-agent: chatg
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
 
-Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
+Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn-configuring-traffic#origin-selectors). Die Voraussetzungen lauten wie folgt:
 
 * Festlegen der zu rotierenden Domain
 * Festlegen der zu verlegenden Pfade
@@ -79,7 +79,7 @@ Die Routing-Konfiguration erfolgt mithilfe einer [OriginSelector-CDN-Regel](http
 
 Um die Regel bereitzustellen, ist Folgendes erforderlich:
 
-* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/operations/config-pipeline)
+* Erstellen einer [Konfigurations-Pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/config-pipeline)
 * Übertragen Sie die `cdn.yaml` Konfigurationsdatei in das Repository
 * Ausführen der Konfigurations-Pipeline
 
@@ -120,282 +120,6 @@ curl -svo page.html https://www.example.com/page.html --header "user-agent: chat
 < HTTP/2 200
 < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
 ```
-
-<!-- >>[!TAB Akamai (BYOCDN)]
-
-**Tokowaka BYOCDN - Akamai**
-
-```
-{
-    "name": "Project Tokowaka CDN Rule",
-    "children": [
-        {
-            "name": "Connection settings",
-            "children": [],
-            "behaviors": [
-                {
-                    "name": "advanced",
-                    "options": {
-                        "description": "",
-                        "xml": "<forward:availability.health-detect.status>off</forward:availability.health-detect.status>\n<forward:availability>\n<max-reforwards>1</max-reforwards>\n<max-reconnects>1</max-reconnects>\n</forward:availability>\n<match:forward.server-type value=\"CUSTOMER_ORIGIN\">\n<network:http.read>%(PMUSER_HTTP_READ)</network:http.read>\n<network:http.first-byte-timeout>%(PMUSER_FIRST_BYTE_TIMEOUT)</network:http.first-byte-timeout>\n<network:http.connect-timeout>%(PMUSER_HTTP_CONNECT_TIMEOUT)</network:http.connect-timeout> \n</match:forward.server-type>"
-                    },
-                    "uuid": "4a8c027b-1b23-44a7-8e12-f8d07e453679",
-                    "templateUuid": "41c77091-419f-43f2-9a84-0b406b050cc8"
-                }
-            ],
-            "uuid": "4759571b-8036-4c16-9b60-d3aeb84958f1",
-            "criteria": [],
-            "criteriaMustSatisfy": "all"
-        },
-        {
-            "name": "Site Failover Behavior",
-            "children": [],
-            "behaviors": [
-                {
-                    "name": "failAction",
-                    "options": {
-                        "actionType": "RECREATED_CO",
-                        "contentCustomPath": false,
-                        "contentHostname": "www.adobe.com",
-                        "enabled": true
-                    }
-                },
-                {
-                    "name": "advanced",
-                    "options": {
-                        "description": "",
-                        "xml": "<forward:availability.fail-action2>\n<add-header>\n<status>on</status>\n<name>x-tokowaka-request</name>\n<value>fo</value>\n</add-header>\n</forward:availability.fail-action2>"
-                    }
-                }
-            ],
-            "uuid": "b3000c12-1ab8-49b1-a5d0-75e58bb18c9c",
-            "criteria": [
-                {
-                    "name": "matchResponseCode",
-                    "options": {
-                        "lowerBound": 400,
-                        "matchOperator": "IS_BETWEEN",
-                        "upperBound": 599
-                    }
-                },
-                {
-                    "name": "originTimeout",
-                    "options": {
-                        "matchOperator": "ORIGIN_TIMED_OUT"
-                    }
-                }
-            ],
-            "criteriaMustSatisfy": "any",
-            "comments": "If Tokowaka origin returns a 4xx or 5xx error (or times out), failover condition is to send the request back to Akamai and set the x-tokowaka-request header so we don't re-send the request to Tokowaka"
-        }
-    ],
-    "behaviors": [
-        {
-            "name": "origin",
-            "options": {
-                "cacheKeyHostname": "ORIGIN_HOSTNAME",
-                "compress": true,
-                "customValidCnValues": [
-                    "{{Origin Hostname}}",
-                    "{{Forward Host Header}}",
-                    "*.tokowaka.now"
-                ],
-                "enableTrueClientIp": true,
-                "forwardHostHeader": "ORIGIN_HOSTNAME",
-                "hostname": "edge.tokowaka.now",
-                "httpPort": 80,
-                "httpsPort": 443,
-                "ipVersion": "IPV4",
-                "minTlsVersion": "DYNAMIC",
-                "originCertificate": "",
-                "originCertsToHonor": "STANDARD_CERTIFICATE_AUTHORITIES",
-                "originSni": true,
-                "originType": "CUSTOMER",
-                "ports": "",
-                "standardCertificateAuthorities": [
-                    "akamai-permissive",
-                    "THIRD_PARTY_AMAZON"
-                ],
-                "tlsVersionTitle": "",
-                "trueClientIpClientSetting": true,
-                "trueClientIpHeader": "True-Client-IP",
-                "verificationMode": "CUSTOM"
-            }
-        },
-        {
-            "name": "setVariable",
-            "options": {
-                "transform": "NONE",
-                "valueSource": "EXPRESSION",
-                "variableName": "PMUSER_LLMCLIENT",
-                "variableValue": "TRUE"
-            }
-        },
-        {
-            "name": "setVariable",
-            "options": {
-                "caseSensitive": false,
-                "extractLocation": "CLIENT_REQUEST_HEADER",
-                "globalSubstitution": false,
-                "headerName": "Accept-Language ",
-                "regex": "^([a-zA-Z]{2}).*",
-                "replacement": "$1",
-                "transform": "SUBSTITUTE",
-                "valueSource": "EXTRACT",
-                "variableName": "PMUSER_LANG"
-            }
-        },
-        {
-            "name": "setVariable",
-            "options": {
-                "transform": "NONE",
-                "valueSource": "EXPRESSION",
-                "variableName": "PMUSER_X_FORWARDED_HOST",
-                "variableValue": "{{builtin.AK_HOST}}"
-            }
-        },
-        {
-            "name": "setVariable",
-            "options": {
-                "transform": "NONE",
-                "valueSource": "EXPRESSION",
-                "variableName": "PMUSER_TOKOWAKA_CACHE_KEY",
-                "variableValue": "LLMCLIENT={{user.PMUSER_LLMCLIENT}};LANG={{user.PMUSER_LANG}};X_FORWARDED_HOST={{user.PMUSER_X_FORWARDED_HOST}}"
-            }
-        },
-        {
-            "name": "caching",
-            "options": {
-                "behavior": "CACHE_CONTROL_AND_EXPIRES",
-                "cacheControlDirectives": "",
-                "defaultTtl": "1d",
-                "enhancedRfcSupport": false,
-                "honorMustRevalidate": false,
-                "honorPrivate": false,
-                "mustRevalidate": false
-            }
-        },
-        {
-            "name": "modifyIncomingRequestHeader",
-            "options": {
-                "action": "MODIFY",
-                "avoidDuplicateHeaders": true,
-                "customHeaderName": "X-tokowaka-api-key",
-                "newHeaderValue": "<your api-key here>",
-                "standardModifyHeaderName": "OTHER"
-            }
-        },
-        {
-            "name": "modifyIncomingRequestHeader",
-            "options": {
-                "action": "MODIFY",
-                "avoidDuplicateHeaders": true,
-                "customHeaderName": "x-tokowaka-config",
-                "newHeaderValue": "LLMCLIENT={{user.PMUSER_LLMCLIENT}};LANG={{user.PMUSER_LANG}}",
-                "standardModifyHeaderName": "OTHER"
-            }
-        },
-        {
-            "name": "modifyIncomingRequestHeader",
-            "options": {
-                "action": "MODIFY",
-                "avoidDuplicateHeaders": true,
-                "customHeaderName": "x-tokowaka-url",
-                "newHeaderValue": "{{builtin.AK_URL}}",
-                "standardModifyHeaderName": "OTHER"
-            }
-        },
-        {
-            "name": "cacheId",
-            "options": {
-                "rule": "INCLUDE_VARIABLE",
-                "variableName": "PMUSER_TOKOWAKA_CACHE_KEY"
-            }
-        },
-        {
-            "name": "modifyIncomingResponseHeader",
-            "options": {
-                "action": "DELETE",
-                "customHeaderName": "Age",
-                "standardDeleteHeaderName": "OTHER"
-            }
-        },
-        {
-            "name": "prefreshCache",
-            "options": {
-                "enabled": true,
-                "prefreshval": 90
-            }
-        },
-        {
-            "name": "modifyOutgoingRequestHeader",
-            "options": {
-                "action": "MODIFY",
-                "avoidDuplicateHeaders": true,
-                "customHeaderName": "X-Forwarded-Host",
-                "newHeaderValue": "{{builtin.AK_HOST}}",
-                "standardModifyHeaderName": "OTHER"
-            }
-        }
-    ],
-    "criteria": [
-        {
-            "name": "userAgent",
-            "options": {
-                "matchCaseSensitive": false,
-                "matchOperator": "IS_ONE_OF",
-                "matchWildcard": true,
-                "values": [
-                    "*Tokowaka-AI*",
-                    "*ChatGPT-User*",
-                    "*GPTBot*",
-                    "*OAI-SearchBot*"
-                ]
-            }
-        },
-        {
-            "name": "path",
-            "options": {
-                "matchCaseSensitive": false,
-                "matchOperator": "MATCHES_ONE_OF",
-                "normalize": false,
-                "values": [
-                ]
-            }
-        },
-        {
-            "name": "requestHeader",
-            "options": {
-                "headerName": "x-tokowaka-request",
-                "matchOperator": "DOES_NOT_EXIST",
-                "matchWildcardName": false
-            }
-        },
-        {
-            "name": "matchVariable",
-            "options": {
-                "matchCaseSensitive": true,
-                "matchOperator": "IS",
-                "matchWildcard": false,
-                "variableExpression": "FALSE",
-                "variableName": "PMUSER_TOKOWAKA_DISABLE"
-            }
-        }
-    ],
-    "criteriaMustSatisfy": "all"
-}
-```
-
-Important considerations:
-
-* Tokowaka Rule will be ON based on User-Agent + Path + x-tokowaka-request (if not present) + TOKOWAKA_DISABLE variable (to allow switch off using a single variable toggle)
-* Set up rules to **Modify Incoming Request Headers** rule to set custom headers
-* Set cache-key in Akamai using user defined variable through Cache-ID modification mechanism. Only a single user defined variable is allowed, so create a separate variable for cache_key and set it accordingly.
-* Lang: extracted from Accept-Language header using "regex": "^([a-zA-Z]{2}).*"
-* With Cache ID Modification within a match on User Agent, the content can't be purged by URL (just FYI)
-* Site failover mechanism: With the match on User-Agent rule, Akamai does not allows to failover based on health check, but only only basis of origin response/connectivity per request. Set **x-tokowaka-fo:true**  resp header in case of failover response.
-* SWR is not supported by Akamai. So, only TTL based caching is there. So, configure a rule in Akamai to strip Age header from origin response else TTL based caching would not work.
-* Ensure that the Tokowaka rule is the bottom most rule in the rule hierarchy (so that it overrides all other rules).-->
 
 >[!TAB Fastly (BYOCDN)]
 
@@ -445,6 +169,63 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 }
 ```
 
+>[!TAB Akamai (BYOCDN)]
+
+**Edge Optimize BYOCDN - Akamai**
+
+Diese Konfiguration dient der Weiterleitung von Anfragen von Agenten-Benutzeragenten an den Edge Optimizer-Service (`live.edgeoptimize.net`-Backend). Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
+
+
+**Die folgende Akamai Property Manager-JSON-Regel leitet LLM-Benutzeragenten an Edge Optimize weiter:**
+
+Die Konfiguration umfasst die folgenden Schritte:
+
+**1. Festlegen von Routing-Kriterien (Zuordnung von Benutzeragenten)**
+
+![Routing-Kriterien festlegen](/help/assets/optimize-at-edge/akamai-step1-routing.png)
+
+**2. Festlegen des Ursprungs- und SSL-Verhaltens**
+
+![Festlegen des Ursprungs- und SSL-Verhaltens](/help/assets/optimize-at-edge/akamai-step2-origin.png)
+
+**3. Cache-Schlüsselvariable festlegen**
+
+![Cache-Schlüsselvariable festlegen](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
+
+**4. Caching-Regeln**
+
+![Zwischenspeicherungsregeln](/help/assets/optimize-at-edge/akamai-step4-rules.png)
+
+**5. Eingehende Anfragekopfzeilen ändern**
+
+![Eingehende Anfragekopfzeilen ändern](/help/assets/optimize-at-edge/akamai-step5-request.png)
+
+**6. Eingehende Antwortkopfzeilen ändern**
+
+![Eingehende Antwortkopfzeilen ändern](/help/assets/optimize-at-edge/akamai-step6-response.png)
+
+**7. Cache-ID-Änderung**
+
+![Cache-ID-Änderung](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
+
+**8. Standort-Failover**
+
+![Standort-Failover](/help/assets/optimize-at-edge/akamai-step8-failover.png)
+
+![Failover-Verhalten](/help/assets/optimize-at-edge/akamai-step8-failover-behaviors.png)
+
+![Failover-Regeln](/help/assets/optimize-at-edge/akamai-step8-failover-rules.png)
+
+![Verhaltensantwort](/help/assets/optimize-at-edge/akamai-step8-behaviors-response.png)
+
+Führen Sie zum Testen des Setups eine cURL aus und erwarten Sie Folgendes:
+
+```
+curl -svo page.html https://www.example.com/page.html --header "user-agent: chatgpt-user"
+< HTTP/2 200
+< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
+```
+
 >[!ENDTABS]
 
 >[!NOTE]
@@ -456,7 +237,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web
 
 | Möglichkeit | Typ | Automatisch identifizieren | Automatische Vorschläge | Automatische Optimierung |
 |---------|----------|----------|----------|----------|
-| Content-Sichtbarkeit wiederherstellen | Technische GEO | Erkennt Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Hebt Inhalte hervor, die für KI-Agenten verfügbar gemacht werden können, und empfiehlt, das Pre-Rendering für diese Seiten zu aktivieren. | Stellt einen vollständig gerenderten, KI-freundlichen HTML-Schnappschuss für den Agent-Traffic bereit, der den zuvor ausgeblendeten Inhalt wiederherstellt. |
+| Inhaltssichtbarkeit wiederherstellen | Technisches GEO | Erkennt Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Hebt Inhalte hervor, die für KI-Agenten verfügbar gemacht werden können, und empfiehlt, das Pre-Rendering für diese Seiten zu aktivieren. | Stellt einen vollständig gerenderten, KI-freundlichen HTML-Schnappschuss für den Agent-Traffic bereit, der den zuvor ausgeblendeten Inhalt wiederherstellt. |
 | Optimieren von Überschriften für LLMs | Inhaltsoptimierung | Scannt Überschriften, um leere, doppelte, fehlende oder mehrdeutige Überschriften zu erkennen, die die Maschinenlesbarkeit beeinträchtigen können. | Schlägt eine sauberere Überschriftenhierarchie und verbesserte Beschriftungen vor und zeigt eine Vorschau der aktualisierten Struktur für jede Seite an. | Fügt die verbesserte Überschriftenstruktur für KI-Agenten ein, behält Ihr visuelles Design bei und macht die Seite für LLMs besser lesbar. |
 | Hinzufügen von LLM-freundlichen Zusammenfassungen | Inhaltsoptimierung | kennzeichnet lange oder komplexe Seiten, denen kurze Zusammenfassungen auf Seiten- oder Abschnittsebene fehlen, was es KI erschwert, diese schnell zu durchsuchen und zu verstehen. | empfiehlt kurze, KI-generierte Zusammenfassungen auf Seiten- und Abschnittsebene, die wichtige Inhalte erfassen. | Fügt die Zusammenfassungen in die entsprechenden HTML-Abschnitte ein, wodurch die Interpretation und Beschreibung des Seiteninhalts durch Modelle verbessert wird. |
 | Relevante FAQs hinzufügen | Inhaltsoptimierung | Erkennt Absichtslücken im vorhandenen Seiteninhalt, die von den häufig gestellten Fragen profitieren könnten. | Schreibt KI-generierte FAQ-Inhalte vor, die auf die Benutzerabsicht und vorhandene Themen abgestimmt sind. | Bringt FAQ-Inhalte in die HTML ein, sodass Seiten in KI-gestützten Antworten leichter auffindbar und relevanter werden. |
@@ -466,13 +247,13 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das agentische Web
 
 Die [Adobe LLM Optimizer: Ist Ihre Webseite zitierbar?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) Chrome-Erweiterung zeigt an, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können einen direkten Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen und schätzen, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte. Siehe die [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) Seite für weitere Informationen.
 
 ## Opportunities detailliert
 
 In den folgenden Abschnitten können Sie zusätzliche Details zu jeder Opportunity anzeigen, die von Optimieren bei Edge unterstützt wird.
 
-### Content-Sichtbarkeit wiederherstellen
+### Inhaltssichtbarkeit wiederherstellen
 
 Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund des Client-seitigen Renderings ausgeblendet sind. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agent-Ansicht fehlen, Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die ausgeblendeten Inhalte wiederherzustellen. Wenn Sie diese Opportunity mit Optimieren in Edge bereitstellen, wird eine vorgerenderte, KI-optimierte Version der Seite LLM-Benutzeragenten bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne JavaScript auszuführen.
 Dadurch wird sichergestellt, dass die Seite zunächst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.

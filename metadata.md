@@ -11,13 +11,13 @@ recommendations: noDisplay
 source-git-commit: 43372ded8691adbbbbcfd859b4d2176c17115ba8
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 92%
+ht-degree: 0%
 
 ---
 
 
 # Metadaten für die interne Verwendung
 
-Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Dateien des Benutzerhandbuchs zu Repo weitergegeben werden. Wenn Sie den Inhalt von metadata.md für ein beliebiges Benutzerhandbuch ändern möchten, tun Sie dies in einer TOC.md-Datei.
+Die Datei „metadata.md“ enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Inhaltsverzeichnisdatei (.md).
 
-Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html?lang=de) finden Sie eine Liste der gültigen Werte für **Lösung**, **Produkt** und **Typ**.
+Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finden Sie eine Liste gültiger Werte für **Lösung**, **** und **Typ**.

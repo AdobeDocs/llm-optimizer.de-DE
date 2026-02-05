@@ -1,16 +1,16 @@
 ---
-title: URL-Inspektor
+title: URL-Überwachung
 description: Erfahren Sie, wie Sie mit dem URL-Inspektor analysieren können, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren.
 feature: URL Inspector
 source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# URL-Inspektor
+# URL-Überwachung
 
 Mit dem URL-Inspektor können Sie analysieren, wie bestimmte Seiten in Ihrer Domain bei der KI-Suche funktionieren. Es kombiniert Sichtbarkeit, Agentendatenverkehr und Verweisdaten auf URL-Ebene, um Ihnen einen granularen Überblick darüber zu geben, welche URLs zitiert werden und wie oft sie in Antworten angezeigt werden.
 
@@ -32,7 +32,7 @@ Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter 
 
 Der URL-Inspektor bietet mehrere Übersichtsmetriken, mit denen Sie schnell beurteilen können, wie Ihre Seiten in KI-Suchen abschneiden. Die folgenden Metriken werden bereitgestellt:
 
-* **Eindeutige Eingabeaufforderungen mit eigenen Zitaten** - Die Gesamtzahl der eindeutigen AI-Eingabeaufforderungen mit eigenen Zitaten.
+* **Eindeutige Eingabeaufforderungen mit Eigene Zitierungen** - Die Gesamtzahl der eindeutigen KI-Eingabeaufforderungen mit Eigene Zitierungen.
 * **Eindeutige Eingabeaufforderungen insgesamt** - Die Gesamtzahl der eindeutigen AI-Eingabeaufforderungen.
 * **Eindeutig zitierte URLs** - Die Anzahl der eindeutigen eigenen URLs, die zitiert wurden.
 * **Gesamtzahl der angegebenen**: Gesamtzahl der Fälle, in denen eine eigene URL in KI-generierten Antworten zitiert wurde.
@@ -57,7 +57,7 @@ Die folgenden Metriken werden bereitgestellt:
 * **Agententreffer** - Die Gesamtzahl der Treffer von KI-Agenten auf den URLs.
 * **Verweistreffer** - Die Anzahl der Treffer, die von KI-generierten Antworten an die URLs weitergeleitet werden.
 
-## Trend-URLs im Wettbewerb um Zitate
+## Um Zitierungen konkurrierende Trend-URLs
 
 Die Ansicht der Trend-URLs, die um Zitate konkurrieren, zeigt externe URLs an, die derzeit in markenrelevanten Antworten zitiert werden, um zu messen, wer in Ihrem Raum die Zitate gewinnt. Die Datentabelle verfügt über ein Suchfeld für den schnellen Zugriff auf bestimmte URLs. Außerdem können Sie die Option **Exportieren** verwenden, um die CSV-Tabelle herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabelle in das Reporting für Führungskräfte einzuschließen.
 
@@ -74,6 +74,6 @@ Die folgenden Metriken werden bereitgestellt:
 
 ### Fenster „Details“
 
-Sowohl für die Zitat- als auch für die Trendansicht verfügen die URLs über **Schaltfläche** Details“ am Ende jeder Zeile. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt. Das Detailfenster zeigt an, wie oft die URL zitiert wird, <!--the sentiment of AI responses where it is mentioned,--> Themen und Eingabeaufforderungen, in denen sie angezeigt wird, sowie Trends beim Agent- und Verweisdatenverkehr im Zeitverlauf (für eigene URLs).
+Sowohl für die Zitat- als auch für die Trendansicht verfügen die URLs über **Schaltfläche** Details“ am Ende jeder Zeile. Durch Klicken auf die Schaltfläche wird ein separates Fenster mit weiteren Details angezeigt. Das Detailfenster zeigt an, wie oft die URL zitiert wird, <!--the sentiment of AI responses where it is mentioned,--> Themen und Eingabeaufforderungen, in denen sie angezeigt wird, sowie Trends beim Agent und Referral Traffic im Zeitverlauf (für eigene URLs).
 
 ![Detailfenster](/help/dashboards/assets/details-url.png)

@@ -5,7 +5,7 @@ feature: Best Practices, Customer Configuration
 source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -20,11 +20,11 @@ Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-config
 
 ![Fenster „Kundenkonfiguration“](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Markenbezeichnungsaliase hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Markenerwähnung-Aliase hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
 
-## Bibliothek mit Eingabeaufforderungen für die Branche
+## Branchen-Prompt-Bibliothek
 
-Um Ihnen den Einstieg in Eingabeaufforderungen und Themen zu erleichtern, hat Adobe eine Industry Prompt Library erstellt, die durch umfangreiche Forschungsarbeiten mit Branchenexperten und Analysen des KI-Suchverhaltens von über 6.000 Kunden entwickelt wurde. Diese Bibliothek identifiziert die relevantesten Themen und Eingabeaufforderungen basierend auf branchenspezifischen Trends, validierten Geschäftszielen und realen Kundensuchmustern.
+Um Ihnen den Einstieg in Eingabeaufforderungen und Themen zu erleichtern, hat Adobe eine Industry Prompt Library erstellt, die durch umfangreiche KI-Suchen mit Branchenexperten und Analysen des Datenverhaltens von über 6.000 Kunden entwickelt wurde. Diese Bibliothek identifiziert die relevantesten Themen und Prompts basierend auf branchenspezifischen Trends, validierten Geschäftszielen und echten Kundensuchmustern.
 
 So verwenden Sie die Bibliothek mit Eingabeaufforderungen für die Branche:
 
@@ -43,7 +43,7 @@ So verwenden Sie die Bibliothek mit Eingabeaufforderungen für die Branche:
 
 Die Industry Prompt Library wurde im Rahmen einer umfassenden Forschungsinitiative entwickelt, die Folgendes kombiniert:
 
-* **Customer Intelligence:** Analyse des Suchverhaltens und der Voreinstellungen von KI bei über 6.000 Kunden
+* **Kundenanalyse:** Analyse des Verhaltens und der Präferenzen von KI-Suchen über 6.000 Kunden
 * **Branchenkompetenz:** Perspektiven von Experten aus den Bereichen Auto, Finanzdienstleistungen, Gesundheitswesen, Telekommunikation und Reisen.
 * **Datengesteuerte Einblicke:** Identifizierung von wirkungsvollen Themen und Abfragemustern, die die Kundeninteraktion und Konversion fördern.
 
@@ -55,7 +55,7 @@ Top-Themen, die von Kunden aus verschiedenen Branchen gesucht werden:
 * **Telekommunikation:** Vergleichen von Plänen, Vertragsbedingungen und Werbeaktionen, Überprüfen von Dienstleistungen in der Umgebung
 * **Reisen:** Vorbereitung auf eine Reise, Recherche und Buchung von Reisen
 
-Kundentrends bei KI-Suche und Promptverhalten in LLM-Tools:
+Kundentrends in Bezug auf KI-Suchen und promptes Verhalten in LLM-Tools:
 
 * Kunden stellen bei der Verwendung von LLM-Suchwerkzeugen lieber Fragen als verwenden Keywords.
 * Sie nutzen hauptsächlich LLM-Suchwerkzeuge für die Forschung und Entdeckung in der Frühphase.
@@ -109,7 +109,7 @@ Themen helfen Ihnen, die Benutzerinteressen zu verstehen, denn sie zeigen Ihnen,
 >
 >Themen sind in allen Kategorien **alle**, d. h. sie bleiben unabhängig von der Kategorie, der sie zugewiesen sind, konsistent. Sie stellen Gruppen von Fragen oder Eingabeaufforderungen dar, die einen gemeinsamen Zweck verfolgen.
 
-Bei der Entscheidung über Themen sollten Sie eine kurze, flache Liste erstellen (maximal 6-12). Beispiel:
+Bei der Entscheidung über Themen sollten Sie eine kurze, flache Liste erstellen (maximal 6-12). Zum Beispiel:
 
 * Produkte/Services
 * Anleitung (Einrichtung/Verwendung)

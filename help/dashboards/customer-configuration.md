@@ -5,7 +5,7 @@ feature: Customer Configuration
 source-git-commit: 5d8b59ea4281c88bb42dc48096c07a3faaeb2e88
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 2%
+ht-degree: 5%
 
 ---
 
@@ -16,23 +16,23 @@ Das Dashboard für Kundenkonfigurationen ist ein leistungsstarkes Tool, das Einb
 
 ![Kundenkonfigurations-Dashboard](/help/dashboards/assets/customer-config.png)
 
-Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz auf verschiedenen Märkten und in verschiedenen Wettbewerbslandschaften überwacht und analysiert, haben Sie Zugriff auf die folgenden Registerkarten:
+Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz in verschiedenen Märkten und Wettbewerbslandschaften überwacht und analysiert, haben Sie Zugriff auf die folgenden Registerkarten:
 
-* [Eingabeaufforderungen](#prompts-brand)
+* [Prompts](#prompts-brand)
 * [Kategorien](#categories)
 * [Andere Marken](#other-brands)
-* [Markenalias](#brand-aliases)
+* [Markenaliasse](#brand-aliases)
 * [CDN-Konfiguration](#agentic-cdn)
 
 >[!IMPORTANT]
 >
-> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und &#x200B;](/help/overview/best-practices-topics-prompts.md)&quot;.
+> Weitere Informationen zum Einrichten von Kategorien, Themen und Eingabeaufforderungen finden Sie auf der Seite [Best Practices zum Konfigurieren von Kategorien, Themen und ](/help/overview/best-practices-topics-prompts.md)&quot;.
 
-## Eingabeaufforderungen {#prompts-brand}
+## Prompts {#prompts-brand}
 
-Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei [Markenpräsenzanalyse](/help/dashboards/brand-presence.md) hochladen. Die Liste wird dann mit Eingabeaufforderungen und Themen aus dieser Analyse gefüllt oder die von Adobe erstellte [Eingabeaufforderungsbibliothek &#x200B;](/help/overview/best-practices-topics-prompts.md). Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
+Auf dieser Registerkarte können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine [Markenpräsenz-Analyse](/help/dashboards/brand-presence.md) .csv hochladen. Die Liste wird dann mit Eingabeaufforderungen und Themen aus dieser Analyse gefüllt oder [Von Adobe erstellte Eingabeaufforderungsbibliothek herunterladen](/help/overview/best-practices-topics-prompts.md). Bei Bedarf können Sie auch Themen und die zugehörigen Aufforderungen löschen, ändern und hinzufügen.
 
-Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Weitere Informationen dazu finden [&#x200B; im &#x200B;](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
+Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Markenpräsenz-Dashboard exportieren. Weitere Informationen dazu finden [ im ](/help/dashboards/brand-presence.md#data-insights) „Dateneinblicke“. Sobald Sie die Datei haben:
 
 1. Klicken Sie im Dashboard auf **CSV hochladen**.
 2. Ziehen Sie im Fenster Dateneinblicke importieren per Drag-and-Drop oder wählen Sie die Datei manuell aus.
@@ -52,7 +52,7 @@ Darüber hinaus können Sie der Liste auch Themen/Eingabeaufforderungen hinzufü
 6. Klicken Sie **Eingabeaufforderung hinzufügen** und das Thema mit der Eingabeaufforderung wird in der Liste angezeigt.
 
 >[!NOTE]
->Neu hinzugefügte Eingabeaufforderungen werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist.
+>Neu hinzugefügte Prompts werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist.
 
 In der Liste können Sie auf jedes Thema klicken, und die zugehörigen Eingabeaufforderungen werden angezeigt. Um das Thema und die zugehörigen Eingabeaufforderungen zu löschen, klicken Sie auf das Löschsymbol in der Liste.
 
@@ -81,9 +81,9 @@ Mithilfe dieser Registerkarte können Sie verfolgen, wie Ihre anderen in Bezug a
 
 Um einen Eintrag auf der Liste zu löschen, klicken Sie auf das Löschsymbol.
 
-## Markenalias {#brand-aliases}
+## Markenaliasse {#brand-aliases}
 
-Mithilfe von Markenaliasen können Sie alternative Namen und Varianten Ihrer Marke konfigurieren, die über verschiedene Kategorien und Regionen hinweg verfolgt werden sollen. Dadurch wird eine umfassende Überwachung aller Markenbezeichnungen gewährleistet. So fügen Sie einen Markenalias hinzu:
+Mithilfe von Markenaliasen können Sie alternative Namen und Varianten Ihrer Marke konfigurieren, die über verschiedene Kategorien und Regionen hinweg verfolgt werden sollen. Dies gewährleistet eine lückenlose Überwachung aller Markenerwähnung. So fügen Sie einen Markenalias hinzu:
 
 1. Klicken Sie auf die Schaltfläche **Hinzufügen**.
 2. Wählen Sie im Fenster für die neue Konfiguration die Option **Kategorie** aus. Zuvor erstellte Kategorien werden hier angezeigt.

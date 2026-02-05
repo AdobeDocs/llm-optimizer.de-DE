@@ -12,9 +12,9 @@ ht-degree: 5%
 
 # Dashboards - Übersicht
 
-Willkommen bei der Übersicht zu Dashboards . Die Dashboards in LLM-Optimizer helfen Marketing-Experten, die Markensichtbarkeit und -stimmung über KI-Suchplattformen hinweg zu verfolgen, Optimierungsmöglichkeiten zu identifizieren und präskriptive Änderungen zu implementieren, um Zitate und Leistung zu verbessern.
+Willkommen bei der Übersicht zu Dashboards . Die Dashboards in LLM-Optimizer helfen Marketing-Experten, Markensichtbarkeit und Sentiment plattformübergreifend zu verfolgen, Optimierungsmöglichkeiten zu identifizieren und präskriptive KI-Suchen zur Verbesserung von Zitaten und Performance zu implementieren.
 
-Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehlungs-Traffic, der URL-Inspektor, die Ermittlung von Opportunities, Collaboration und die Kundenkonfiguration.
+Zu den wichtigsten Ansichten gehören Markenpräsenz, Agent und Referral Traffic, URL-Inspektor, Opportunity-Identifizierung, Collaboration und Kundenkonfiguration.
 
 <!-- CARDS
 
@@ -68,8 +68,8 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./brand-presence.md" title="Dashboard für Markenpräsenz" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboard für Markenpräsenz"
+                    <a href="./brand-presence.md" title="Markenpräsenz-Dashboard" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Markenpräsenz-Dashboard"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -77,12 +77,12 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Dashboard für Markenpräsenz">Dashboard für Markenpräsenz</a>
+                        <a href="./brand-presence.md" target="_blank" rel="referrer" title="Markenpräsenz-Dashboard">Markenpräsenz-Dashboard</a>
                     </p>
-                    <p class="is-size-6">Verfolgt, wie Ihre Marke über LLM-Suchplattformen hinweg aussieht, einschließlich Stimmungsanalyse und Benchmarking anderer Marken.</p>
+                    <p class="is-size-6">Verfolgt, wie Ihre Marke über LLM-Suchplattformen hinweg aussieht, einschließlich Sentiment-Analyse und Benchmarking anderer Marken.</p>
                 </div>
                 <a href="./brand-presence.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>
@@ -105,7 +105,7 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
                     <p class="is-size-6">Zeigt Traffic von LLMs, den herkömmliche Analytics verpassen, und hilft Ihnen, KI-gestützte Erkennung mit Interaktion und Umsatz zu verbinden.</p>
                 </div>
                 <a href="./agentic-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>
@@ -114,8 +114,8 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./referral-traffic.md" title="Dashboard für Empfehlungs-Traffic" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Dashboard für Empfehlungs-Traffic"
+                    <a href="./referral-traffic.md" title="Referral Traffic-Dashboard" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/referral-traffic-card.png" alt="Referral Traffic-Dashboard"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -123,12 +123,12 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Dashboard für Empfehlungs-Traffic">Dashboard für Empfehlungs-Traffic</a>
+                        <a href="./referral-traffic.md" target="_blank" rel="referrer" title="Referral Traffic-Dashboard">Referral Traffic-Dashboard</a>
                     </p>
                     <p class="is-size-6">Misst menschliche Besuche, die aus KI-generierten Zitaten stammen, mit denen Sie die tatsächliche KI-Benutzerinteraktion ermitteln können</p>
                 </div>
                 <a href="./referral-traffic.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>
@@ -151,7 +151,7 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
                     <p class="is-size-6">Ermöglicht die Aktivierung funktionsübergreifender Teamarbeit, indem Sie Kollegen zu einem freigegebenen Arbeitsbereich einladen können.</p>
                 </div>
                 <a href="./collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>
@@ -171,10 +171,10 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./opportunities.md" target="_blank" rel="referrer" title="Opportunities-Dashboard">Opportunities-Dashboard</a>
                     </p>
-                    <p class="is-size-6">Er zeigt auf und priorisiert umsetzbare Einblicke, die die Sichtbarkeit der Marke und die Zitationsleistung auf allen KI-gestützten Suchplattformen verbessern.</p>
+                    <p class="is-size-6">Zeigt praktische Erkenntnisse, die die Markensichtbarkeit- und Zitierleistung auf KI-gestützten Suchplattformen verbessern, und priorisiert diese.</p>
                 </div>
                 <a href="./opportunities.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>
@@ -197,7 +197,7 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
                     <p class="is-size-6">Ermöglicht einen Einblick in die Leistung Ihrer eigenen URLs in KI-gesteuerten Suchumgebungen.</p>
                 </div>
                 <a href="./url-inspector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>
@@ -220,7 +220,7 @@ Zu den wichtigsten Ansichten gehören die Markenpräsenz, der Agent- und Empfehl
                     <p class="is-size-6">Ermöglicht es Unternehmen, die Funktionsweise von Adobe LLM Optimizer für ihre spezifischen Anforderungen zu steuern.</p>
                 </div>
                 <a href="./customer-configuration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
                 </a>
             </div>
         </div>

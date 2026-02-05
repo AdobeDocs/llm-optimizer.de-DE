@@ -1,6 +1,6 @@
 ---
 title: Grundlagen zu LLM Optimizer
-description: Erfahren Sie, wie Adobe LLM Optimizer die Sichtbarkeit der Marke in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
+description: Erfahren Sie, wie Adobe LLM Optimizer das Markensichtbarkeit in der KI-gestützten Suche steigert. Erwähnungen, Zitate und Einblicke verfolgen. Beginnen Sie noch heute mit der Optimierung für mehr Interaktion und Einfluss.
 source-git-commit: 06c09c4690488d9b29d0626521fb53bf7d70d3a8
 workflow-type: tm+mt
 source-wordcount: '498'
@@ -21,16 +21,16 @@ Auf dieser Seite wird Folgendes beschrieben:
 
 ## Was ist Adobe LLM Optimizer?
 
-Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung generativer Suchmaschinen (auch als Antwortmaschinenoptimierung bezeichnet), mit der Marken ihre Sichtbarkeit, Genauigkeit und ihren Einfluss in KI-gestützten Suchumgebungen verbessern können. Es bietet Einblicke in die Markenpräsenz in KI-generierten Antworten, bietet präskriptive Inhaltsempfehlungen und automatisiert Optimierungskorrekturen.
+Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung generativer Suchmaschinen (auch als Antwortmaschinenoptimierung bezeichnet), mit der Marken ihre Sichtbarkeit, Genauigkeit und ihren Einfluss in KI-gestützten Suchumgebungen verbessern können. Es bietet Einblicke in das Markenpräsenz in KI-generierte Antworten, bietet präskriptive Inhaltsempfehlungen und automatisiert Optimierungskorrekturen.
 
 ## Was sind LLM Optimizer-Funktionen?
 
 Adobe LLM Optimizer bietet eine Reihe von Tools zur Optimierung der generativen Engine:
 
-* Sichtbarkeit von Marken messen: Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen angezeigt wird, mit einem klaren Sichtbarkeitswert für das Benchmarking.
-* Benchmark Others: Vergleichen Sie den Stimmanteil und die Präsenz Ihrer Marke mit Wettbewerbern und anderen in generativen Engines.
-* Entdecken Sie umsetzbare Möglichkeiten: Identifizieren Sie Inhalte und technische Verbesserungen (wie häufig gestellte Fragen, Abstracts, Schema, Crawlability), um Erwähnungen und Zitate zu optimieren.
-* Traffic-Auswirkungen verfolgen: Überwachen Sie sowohl den Agenten (KI-Assistent) als auch den Verweisverkehr zu Ihren eigenen Eigenschaften und verknüpfen Sie Sichtbarkeit mit Interaktion.
+* Markensichtbarkeit messen: Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen angezeigt wird, mit einer eindeutigen Sichtbarkeitsbewertung für das Benchmarking.
+* Benchmark Others: Vergleichen Sie die Share of Voice und Präsenz Ihrer Marke mit Wettbewerbern und anderen in generativen Engines.
+* Entdecken Sie umsetzbare Möglichkeiten: Identifizieren Sie Inhalte und technische Verbesserungen (wie FAQs, Abstracts, Schemas, Crawlability), um Erwähnungen und Zitate zu optimieren.
+* Traffic-Auswirkungen verfolgen: Überwachen Sie sowohl den Agenten (KI-Assistenten) als auch das Referral Traffic in Ihren eigenen Eigenschaften und verknüpfen Sie Sichtbarkeit mit Interaktion.
 * Team Collaboration aktivieren: Dashboards freigeben, Eigentümer zuweisen und Ziele über Marketing-, SEO- und Kommunikations-Teams hinweg abstimmen.
 
 ## Warum die LLM-Optimierung für Ihre Marke wichtig ist
@@ -44,18 +44,18 @@ Adobe LLM Optimizer bietet eine Reihe von Tools zur Optimierung der generativen 
 
 Generative Engine Optimization ist von Natur aus funktionsübergreifend. LLM Optimizer wurde mit diesem Objektiv für die verschiedenen unten aufgeführten Rollen entwickelt:
 
-* **Marketing-Manager** messen die Sichtbarkeit der Marke und die Effektivität von Kampagnen bei der KI-Suche.
-* **SEO-Analysten** verfolgen Markenbezeichnungen, Zitate und andere Einblicke, um die Inhaltsstrategie zu beeinflussen.
-* **PR- und Kommunikations-**: Verfolgen Sie die Markenwahrnehmung in LLMs durch Drittanbieterplattformen und beheben Sie Fehlinformationen, verwalten Sie Stimmungen und schützen Sie das Markenvertrauen.
+* **Marketing-Manager** messen die Effektivität von Markensichtbarkeit und Kampagnen in der KI-Suche.
+* **SEO-Analysten** verfolgen Markenerwähnung, Zitate und andere Einblicke, um die Inhaltsstrategie zu beeinflussen.
+* **PR- und Kommunikations-**: Verfolgen Sie die Markenwahrnehmung in LLMs durch Drittanbieterplattformen und beheben Sie Fehlinformationen, verwalten Sie Sentiment und schützen Sie das Markenvertrauen.
 
 ## Was kann ich mit Adobe LLM Optimizer tun?
 
 Mit Adobe LLM Optimizer können Sie:
 
-**Messen der Markensichtbarkeit** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einem klaren Sichtbarkeitswert, den Sie im Laufe der Zeit vergleichen können, können Sie über reine Spekulationen hinausgehen.
-**Benchmark Others** - Sehen Sie, wie Ihre Marke in generativen Engines im Vergleich zu anderen abschneidet. Identifizieren Sie den Anteil von Sprachlücken und entdecken Sie Wettbewerbsvorteile.
-**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemas) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt erhöhen.
-**Traffic-Auswirkungen von KI verfolgen** - Überwachen Sie den Agent-Traffic (von KI-Assistenten) und den Verweisverkehr (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion.
+**Markensichtbarkeit messen** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einer klaren Sichtbarkeitsbewertung, die Sie im Laufe der Zeit bewerten können, können Sie über Rätselraten hinausgehen.
+**Benchmark Others** - Sehen Sie, wie Ihre Marke in generativen Engines im Vergleich zu anderen abschneidet. Share of Voice-Lücken identifizieren und Wettbewerbsvorteile entdecken.
+**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemata) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt steigern.
+**Traffic-Auswirkungen von KI verfolgen** - Überwachen von Agentenverkehr (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion.
 **Team Collaboration aktivieren** - Dashboards freigeben, Besitzer für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, SEO- und Kommunikationsfunktionen verfolgt werden.
 
 

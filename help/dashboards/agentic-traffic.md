@@ -1,18 +1,18 @@
 ---
-title: Agenturverkehr
+title: Agent-basierter Traffic
 description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
 feature: Agentic Traffic
 source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# Agenturverkehr {#agentic-traffic}
+# Agent-basierter Traffic {#agentic-traffic}
 
-Das Dashboard für den Agent-Traffic zeigt an, wie KI-Agenten (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agenten anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie **CDN-Protokollweiterleitung“**, um Metriken anzuzeigen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Das Agententraffic-Dashboard zeigt an, wie KI-Agenten (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agenten anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie **CDN-Protokollweiterleitung“**, um Metriken anzuzeigen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 ![Traffic-Verteilung](/help/dashboards/assets/ag-main.png)
 
@@ -21,7 +21,7 @@ Auf dieser Seite wird Folgendes beschrieben:
 * [Filter](#filters)
 * [CDN-Setup](#cdn-setup)
 * [Verkehrsverteilung](#traffic-distribution)
-* [Trends beim Agentenverkehr](#agentic-trends)
+* [Trends bei Agent-basiertem Traffic](#agentic-trends)
 * [Top- und Bottom-Mover](#top-bottom-movers)
 * [Benutzeragent- und URL-Leistungsanalyse](#user-url-performance)
 
@@ -59,7 +59,7 @@ LLM Optimizer verarbeitet eine Teilmenge von Feldern aus den CDN-Protokollen. Ob
 * Zeitstempel
 * Inhaltstyp
 
-Diese normalisierten Felder werden über die agentische Ansicht verfügbar gemacht. Im Dashboard [Verweisdatenverkehr](/help/dashboards/referral-traffic.md) werden CDN-Protokolle zur Anzeige von Seitentreffermetriken verwendet. In keiner Phase der CDN-Protokollaufnahme oder der nachfolgenden Datenverarbeitung werden personenbezogene Daten (PII) verarbeitet oder gespeichert.
+Diese normalisierten Felder werden über die agentische Ansicht verfügbar gemacht. Im Dashboard [Referral Traffic](/help/dashboards/referral-traffic.md) werden CDN-Protokolle verwendet, um Seitentreffermetriken anzuzeigen. In keiner Phase der CDN-Protokollaufnahme oder der nachfolgenden Datenverarbeitung werden personenbezogene Daten (PII) verarbeitet oder gespeichert.
 
 ## Filter {#filters}
 
@@ -68,7 +68,7 @@ Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. D
 * **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
 * **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
 * **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
-* **Agent-Typ** - Filtern Sie nach dem Typ des KI-Agenten, der mit Ihrer Site interagiert hat. Sie können nach Crawlern, Chatbots oder allen Agenten filtern.
+* **Agent-Typ** - Filtern Sie nach dem Typ des KI-Agenten, der mit Ihrer Site interagiert hat. Sie können nach Crawler, Chatbots oder allen Agenten filtern.
 * **Erfolgsrate** - Filtern nach der Interaktionsqualität (hoch, mittel oder niedrig). Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich sowohl direkter erfolgreicher Antworten (2xx Status-Codes) als auch Umleitungen (3xx Status-Codes).
 * **Content-**: Anzeigen der agenten Interaktion für verschiedene Inhaltstypen wie HTML, PDF usw.
 
@@ -88,7 +88,7 @@ Oben auf der Seite gibt es drei Schlüsselmetriken, die Sie beachten müssen:
 
 Trendindikatoren für jede Schlüsselmetrik zeigen, wie sich diese Werte im Laufe der Zeit im Vergleich zum vorherigen Zeitraum ändern.
 
-## Trends beim Agentenverkehr {#agentic-trends}
+## Trends bei Agent-basiertem Traffic {#agentic-trends}
 
 Verwenden Sie das Diagramm Agentenmäßige Traffic-Trends , um die wöchentlichen Gesamtwerte von erfolgreichen, fehlgeschlagenen und allgemeinen Treffern zu verfolgen. Auf diese Weise können Sie Veränderungen der Agentenaktivität und -leistung im Zeitverlauf überwachen. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
 
@@ -102,7 +102,7 @@ Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten
 
 ## Benutzeragent- und URL-Leistungsanalyse {#user-url-performance}
 
-Die Ansichten Benutzeragent und URL-Leistungsanalyse bieten weitere Datenaufschlüsselungen zur Interaktion von Crawlern und Chatbots mit Ihrer Site. Klicken Sie auf die Registerkarten unten, um detaillierte Beschreibungen anzuzeigen.
+Die Ansichten Benutzeragent und URL-Leistungsanalyse bieten weitere Datenaufschlüsselungen zur Interaktion von Crawler und Chatbots mit Ihrer Site. Klicken Sie auf die Registerkarten unten, um detaillierte Beschreibungen anzuzeigen.
 
 ![Benutzeragent- und URL-Leistungsanalyse](/help/dashboards/assets/user-agent.png)
 
@@ -110,17 +110,17 @@ Die Ansichten Benutzeragent und URL-Leistungsanalyse bieten weitere Datenaufschl
 
 >[!TAB Benutzeragenten-Analyse]
 
-Die Tabelle Benutzeragentenanalyse enthält eine Aufschlüsselung des Traffics nach Seitentyp und Agententyp (z. B. Crawler im Vergleich zu Chatbots). Auf diese Weise ist es einfach zu verstehen, welche KI-Agenten welche Teile Ihrer Site durchsuchen. Es umfasst die folgenden Kategorien:
+Die Tabelle Benutzeragentenanalyse enthält eine Aufschlüsselung des Traffics nach Seitentyp und Agententyp (z. B. Crawler oder Chatbots). Auf diese Weise ist es einfach zu verstehen, welche KI-Agenten welche Teile Ihrer Site crawlen haben. Es umfasst die folgenden Kategorien:
 
 * **Seitentyp** - Der Seitentyp.
-* **Agent Type** - Der KI-Agent, der die Seite durchsucht, entweder ein Crawler oder ein Chatbot.
+* **Agent Type** - Der die Seite crawlen KI-Agent, entweder eine Crawler oder ein Chatbot.
 * **Treffer** - Die Gesamtzahl der Anfragen, die von KI-Agenten für diesen bestimmten Seitentyp gestellt wurden.
 
 Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken.
 
 >[!TAB URL-Leistungsanalyse]
 
-Die Tabelle URL-Leistungsanalyse zeigt eine detaillierte Ansicht der einzelnen URLs. Dazu gehören Treffer, eindeutige Agenten, Top-Agenten, Erfolgsraten und Kategorien. Auf diese Weise können Sie hochwertige Seiten identifizieren, Durchforstungslücken erkennen und Inhalte für KI-Engines optimieren. Die URLs werden nach Traffic-Volumen sortiert. Die Tabelle enthält die folgenden Kategorien:
+Die Tabelle URL-Leistungsanalyse zeigt eine detaillierte Ansicht der einzelnen URLs. Dazu gehören Treffer, eindeutige Agenten, Top-Agenten, Erfolgsraten und Kategorien. Crawlen Auf diese Weise können Sie hochwertige Seiten identifizieren, Lücken erkennen und Inhalte für KI-Engines optimieren. Die URLs werden nach Traffic-Volumen sortiert. Die Tabelle enthält die folgenden Kategorien:
 
 * **URL** - Die untersuchte URL.
 * **Treffer insgesamt** - Gesamtzahl der Anfragen, die von KI-Agenten an die URL gesendet wurden.
@@ -136,7 +136,7 @@ Die URL-Leistungstabelle enthält ein Suchfeld für den schnellen Zugriff auf UR
 
 ![URL-Details](/help/dashboards/assets/details.png)
 
-Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistung einer Seite, das zeigt, wie oft sie zitiert wird, die Stimmung bei KI-Antworten, wo sie erwähnt wird, die Themen und Eingabeaufforderungen, in denen sie angezeigt wird, und die Trends beim Agent- und Verweisdatenverkehr im Laufe der Zeit.
+Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistung einer Seite, das zeigt, wie oft sie zitiert wird, das Sentiment von KI-Antworten, wo sie erwähnt werden, die Themen und Eingabeaufforderungen, in denen sie angezeigt werden, und Trends bei Magneten und Referral Traffic im Laufe der Zeit.
 
 >[!ENDTABS]
 

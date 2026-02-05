@@ -1,20 +1,20 @@
 ---
 title: Optimierungsmöglichkeiten
-description: Erfahren Sie, wie Sie mit dem Opportunities-Dashboard automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Sichtbarkeit Ihrer Marke zu erhöhen.
+description: Erfahren Sie, wie Sie mit dem Opportunities-Dashboard automatisch erkennen können, wie Ihre Site verbessert werden kann, um das Markensichtbarkeit zu steigern.
 feature: Opportunities
 source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
 workflow-type: tm+mt
 source-wordcount: '624'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # Optimierungsmöglichkeiten
 
-Optimierungsmöglichkeiten werden automatisch erkannt und zeigen, wo Ihre Website und externe Präsenz verbessert werden kann, um die Sichtbarkeit der Marke bei der KI-Suche zu erhöhen.
+Optimierungsmöglichkeiten werden automatisch erkannt und zeigen, wo Ihre Website und Ihre Präsenz im Außenbereich verbessert werden kann, um das Markensichtbarkeit in der KI-Suche zu steigern.
 
-Diese Optimierungen umfassen Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawlern oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autorisierenden Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten ansprechen, wird Ihre Marke genau dargestellt und wird eher in generativen Antworten zitiert.
+Zu diesen Optimierungen gehören Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawler oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autorisierenden Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten ansprechen, wird Ihre Marke genau dargestellt und wird eher in generativen Antworten zitiert.
 
 ![Optimierungsmöglichkeiten](/help/dashboards/assets/oport.png)
 
@@ -28,7 +28,7 @@ Wenn Sie **Details** klicken, wird ein separates Fenster geöffnet, in dem weite
 
 Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
 
-| Opportunity | Typ | Identifizierte Probleme | Vorschläge korrigieren |
+| Möglichkeit | Typ | Identifizierte Probleme | Vorschläge korrigieren |
 |---------|----------|----------|----------|
 | Zusammenfassen langer Absätze | Inhalt (OnSite) | Erkennt Absätze, die empfohlene Längenschwellen überschreiten. Zeigt betroffene URLs und übergroße Textbausteine an. | Erstellen Sie Abstracts oder teilen Sie langen Text in kürzere, überschaubare Abschnitte auf. |
 | Empfohlene strukturierte Inhalte (FAQs) | Inhalt (OnSite) | Erkennt Eingabeaufforderungen mit hoher Popularität ohne übereinstimmende FAQ-Einträge. Zeigt verwandte Eingabeaufforderungen, Kategorien und betroffene URLs an. | Fügen Sie häufig gestellte Fragen (FAQ) zu Schemablöcken mit knappen Antworten hinzu, um gängige Abfragen abzugleichen. |
@@ -36,9 +36,9 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
 | Fehlende Kanonikale erkennen | Inhalt (OnSite) | Sucht nach Seiten ohne kanonische Tags oder mit widersprüchlichen Tags. Listet die betroffenen URLs und Duplikate auf. | Fügen Sie kanonische Tags hinzu, die auf die bevorzugte Version jeder Seite verweisen. Sicherstellung einer konsistenten Nutzung über Varianten hinweg. |
 | Leere Überschriften erkennen | Inhalt (OnSite) | Kennzeichnet Seiten, bei denen Überschriften-Tags vorhanden sind, aber keinen Text enthalten. Zeigt URL und Speicherort leerer Tags an. | Fügen Sie Überschriften, die den darunter liegenden Inhalt widerspiegeln, beschreibenden Text hinzu. |
 | Doppelte Überschriften erkennen | Inhalt (OnSite) | Scannt HTML-Überschriften-Tags und kennzeichnet wiederholte Überschriften. Zeigt betroffene URLs und duplizierte Textausschnitte an. | Überschriften ändern, um eindeutig zu sein und die Hierarchie beizubehalten (H1 → H2 → H3). Doppelte Abschnitte zusammenführen oder umbenennen. |
-| Erkennen von blockiertem Agentenverkehr | Technische GEO | Analysiert CDN-Protokolle auf blockierte Anfragen bekannter KI-Agenten (z. B. GPTBot, PerplexBot). meldet betroffene URLs und Agenten. | Aktualisieren Sie die robots.txt- oder Server-Konfigurationen, um ggf. Zugriff für unterstützte KI-Crawler zu ermöglichen. |
-| 404s/403s/5xx Probleme erkennen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. meldet Häufigkeit, betroffene URLs und geschätzte verlorene Treffer. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200 Antworten zurückgeben. |
-| Content-Sichtbarkeit wiederherstellen (Early Access) | Technische GEO | Markiert Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für KI-Agenten ohne JavaScript-Ausführung verfügbar ist. |
+| Erkennen von blockiertem Agentenverkehr | Technisches GEO | Analysiert CDN-Protokolle auf blockierte Anfragen bekannter KI-Agenten (z. B. GPTBot, PerplexBot). meldet betroffene URLs und Agenten. | Aktualisieren Sie robots.txt oder die Server-Konfigurationen, um ggf. den Zugriff für unterstützte KI-Crawler zuzulassen. |
+| 404s/403s/5xx Probleme erkennen | Technisches GEO | Überwacht CDN-Protokolle auf Fehlerantworten. meldet Häufigkeit, betroffene URLs und geschätzte verlorene Treffer. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200 Antworten zurückgeben. |
+| Content-Sichtbarkeit wiederherstellen (Early Access) | Technisches GEO | Markiert Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für KI-Agenten ohne JavaScript-Ausführung verfügbar ist. |
 
 ## Automatische Optimierung {#auto-optimization}
 

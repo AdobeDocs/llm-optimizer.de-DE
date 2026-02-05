@@ -12,7 +12,7 @@ ht-degree: 1%
 
 # Zusammenarbeit
 
-Mit Collaboration können Sie Teammitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen, damit jeder von einem Ort aus auf Einblicke und Analysen zugreifen kann. Durch das Hinzufügen von Kollegen stellen Sie sicher, dass Marketing-, SEO-, PR- und technische Teams nahtlos an Verbesserungen der Markenwahrnehmung zusammenarbeiten, Erkenntnisse austauschen und koordinierte Maßnahmen im Hinblick auf Opportunities ergreifen können.
+Mit Collaboration können Sie Teammitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen, damit jeder von einem Ort aus auf Einblicke und Analysen zugreifen kann. Durch das Hinzufügen von Kollegen stellen Sie sicher, dass Marketing-, SEO-, PR- und technische Teams nahtlos bei Markensichtbarkeit-Verbesserungen zusammenarbeiten, Ergebnisse austauschen und koordinierte Maßnahmen zu Opportunities ergreifen können.
 
 ## Einladen von Team-Mitgliedern
 
