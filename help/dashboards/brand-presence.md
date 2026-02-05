@@ -70,7 +70,7 @@ Die anderen Marken werden aus der Dropdown-Liste ausgewählt und die Diagramme w
 
 Im Abschnitt Sentiment-Trend-Analyse können Sie verfolgen, wie Ihre Marke in den beprobten KI-Antworten wahrgenommen wird. Die Sentiment-Trend-Metrik kann entweder positiv, neutral oder negativ sein. Beispielsweise kann es positiv sein, wenn Antworten die Produktqualität hervorheben, oder negativ, wenn sie schlechten Service erwähnen. Das Trenddiagramm zeigt die Veränderungen der Markenwahrnehmung von Woche zu Woche. Dieser Abschnitt wird erst ausgefüllt, nachdem Ihre Marke erwähnt wurde.
 
-![Sentiment-Trend ](/help/dashboards/assets/sentiment-trend.png)
+![Sentiment-Trend &#x200B;](/help/dashboards/assets/sentiment-trend.png)
 
 ## Data Insights und Share of Voice {#data-insights}
 

@@ -11,13 +11,13 @@ Wir freuen uns über Beiträge von unserer Community sowie von Adobe-Mitarbeiter
 
 ## Adobe Open Source-Verhaltenskodex
 
-Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe ](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex ](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
+Dieses Projekt hat den [Open Source-Verhaltenskodex für Adobe &#x200B;](code-of-conduct.md) den [.NET Foundation-Verhaltenskodex &#x200B;](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie im Artikel [Beitragende](contributing.md) .
 
 ## Beiträge zu Adobe-Inhalten
 
 **Wenn Sie kein Adobe-Mitarbeiter sind** können Sie einen externen Community-Beitrag einreichen. Community-Beiträge werden in unsere internen Systeme importiert und im öffentlichen Repository bearbeitet und zusammengeführt. Das öffentliche Repository wird dann mit den neuesten Änderungen synchronisiert und im privaten Repository zusammengeführt.
 
-**Wenn Sie Adobe-Mitarbeiter sind** können Sie direkt zum privaten [Adobe GitHub-Repository ](https://git.corp.adobe.com/AdobeDocs/). Weitere Informationen finden Sie im Adobe Experience League Authoring-Handbuch für Adobe-Mitarbeiter.
+**Wenn Sie Adobe-Mitarbeiter sind** können Sie direkt zum privaten [Adobe GitHub-Repository &#x200B;](https://git.corp.adobe.com/AdobeDocs/). Weitere Informationen finden Sie im Adobe Experience League Authoring-Handbuch für Adobe-Mitarbeiter.
 
 ## Externe Mitwirkende
 
@@ -43,7 +43,7 @@ Wenn Sie Teil der Adobe-Community sind und ein neues Thema erstellen oder größ
 
 Community-Mitwirkende können für eine einfache Bearbeitung die GitHub-Benutzeroberfläche oder für wichtige Beiträge das Repository nutzen.
 
-Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [ Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
+Weitere Informationen finden Sie im Adobe-Handbuch für Mitwirkende [&#x200B; Dokumenten .](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)
 
 ## Interne Mitwirkende
 
