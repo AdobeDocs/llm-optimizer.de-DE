@@ -118,4 +118,4 @@ Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich auße
 
 ## Zurück zur Übersicht {#return-to-overview}
 
-Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[ bei Edge - Überblick](/help/dashboards/optimize-at-edge.md).
+Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[&#x200B; bei Edge - Überblick](/help/dashboards/optimize-at-edge.md).
