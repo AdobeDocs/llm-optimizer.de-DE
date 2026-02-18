@@ -1,177 +1,177 @@
 ---
-title: Best Practices für Kategorien, Themen, Eingabeaufforderungen und andere
-description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Eingabeaufforderungen und andere Marken konfigurieren, einschließlich Mitbewerbern für ein maßgeschneidertes Markenmonitoring und eine strategische Inhaltsanalyse.
+title: Best Practices für Kategorien, Themen, Prompts und andere Marken
+description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Prompts und andere Marken einschließlich der Wettbewerber konfigurieren, um eine maßgeschneiderte Markenüberwachung und eine strategische Inhaltsanalyse zu realisieren.
 feature: Best Practices, Customer Configuration
 source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
-workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 2%
+workflow-type: ht
+source-wordcount: '1435'
+ht-degree: 100%
 
 ---
 
 
-# Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen zu verfolgenden Themen
+# Best Practices bei der Konfiguration nachzuverfolgender Kategorien, Themen, Prompts und anderer Marken
 
-In diesem Abschnitt werden Best Practices beschrieben, mit deren Hilfe Sie entscheiden können, wie Sie Ihre Kategorien, Themen, Eingabeaufforderungen und andere Nachverfolgungsoptionen einrichten möchten. Darüber hinaus enthält es Informationen zur Industry Prompt Library, die Adobe mit umfangreichen Recherchen von Branchenexperten entwickelt hat.
+In diesem Abschnitt finden Sie Best Practices bei der Entscheidung, wie Sie Ihre Kategorien, Themen, Prompts und anderen Marken zur Nachverfolgung einrichten. Darüber hinaus enthält er Informationen zur Brachen-Prompt-Bibliothek, die Adobe mit umfangreichen Recherchen gemeinsam mit Branchenfachleuten entwickelt hat.
 
-Dies ist ein entscheidender erster Schritt. Was Sie jetzt entscheiden, bestimmt, wie Informationen auf Ihren Geschäftskontext zugeschnitten werden. Alle Änderungen an Kategorien in der Zukunft setzen historische Daten zurück.
+Dies ist ein entscheidender erster Schritt. Ihre Entscheidungen zu diesem Zeitpunkt bestimmen, wie Informationen für Ihren Unternehmenskontext zugeschnitten werden. Alle späteren Änderungen an Kategorien führen zum Zurücksetzen historischer Daten.
 
-Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-configuration.md) legen Sie fest, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird. Siehe [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-configuration.md) für Informationen zur Verwendung des Dashboards.
+Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-configuration.md) legen Sie fest, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird. Weitere Informationen zur Verwendung des Dashboards finden Sie unter [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-configuration.md).
 
 ![Fenster „Kundenkonfiguration“](/help/assets/best-practices/customer-configuration-best-practices.png)
 
-Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Markenerwähnung-Aliase hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Einblicke auf Ihren Geschäftskontext zuschneidet, was eine genaue Sichtbarkeit, Traffic und Opportunity-Analyse ermöglicht.
+Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Aliasse für Markenerwähnungen hinzufügen, um alle Varianten Ihrer Marke über alle Prompts hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Erkenntnisse auf Ihren Unternehmenskontext zuschneidet, sodass Sichtbarkeit, Traffic und Möglichkeiten genau analysiert werden können.
 
 ## Branchen-Prompt-Bibliothek
 
-Um Ihnen den Einstieg in Eingabeaufforderungen und Themen zu erleichtern, hat Adobe eine Industry Prompt Library erstellt, die durch umfangreiche KI-Suchen mit Branchenexperten und Analysen des Datenverhaltens von über 6.000 Kunden entwickelt wurde. Diese Bibliothek identifiziert die relevantesten Themen und Prompts basierend auf branchenspezifischen Trends, validierten Geschäftszielen und echten Kundensuchmustern.
+Um Ihnen den Einstieg in Prompts und Themen zu erleichtern, hat Adobe eine Branchen-Prompt-Bibliothek erstellt, die durch umfangreiche Recherchen mit Branchenfachleuten und Analysen des Verhaltens von über 6.000 Kundinnen und Kunden bei der KI-Suche entwickelt wurde. Diese Bibliothek identifiziert die relevantesten Themen und Prompts basierend auf branchenspezifischen Trends, validierten Geschäftszielen und echten Kundensuchmustern.
 
-So verwenden Sie die Bibliothek mit Eingabeaufforderungen für die Branche:
+So verwenden Sie die Branchen-Prompt-Bibliothek:
 
 1. Navigieren Sie zum Dashboard **Kundenkonfiguration**.
-1. Wählen Sie **Bibliothek für Eingabeaufforderungen herunterladen** aus, um die Bibliotheksdatei von LLM Optimizer herunterzuladen.
-   ![Industry Prompt Library Download](/help/assets/best-practices/customer-configuration-prompts-library.png)
-1. Überprüfen Sie die **Themen** und **Eingabeaufforderungen** für die Branche Ihrer Marke auf der entsprechenden Registerkarte und wählen Sie die Optionen aus, die am relevantesten sind.
-1. Lesen Sie **Spalte „Kunden-Journey-**&quot;, um die Eingabeaufforderungsoptionen im gesamten Kundenlebenszyklus anzuzeigen (z. B. Erkennung zur Konvertierung in die Aufbewahrung). Frühzeitige funnel-Eingabeaufforderungen haben hohe Priorität, erwägen aber auch Optionen für das spätere Stadium, um die Kundenbindung zu fördern, den Kunden-Support zu aktivieren usw.
-1. Ändern Sie Themen oder Eingabeaufforderungen nach Bedarf, um Ihre Produktziele bestmöglich zu unterstützen, bevor Sie Ihre Themen und Eingabeaufforderungen in Adobe LLM Optimizer hochladen (fügen Sie beispielsweise Ihren Marken-/Produktnamen hinzu oder verwenden Sie markeninterne Terminologie). Eingabeaufforderungen können manuell oder über einen Massen-Upload unter Verwendung der bereitgestellten Vorlage *.csv* zu LLM Optimizer hinzugefügt werden.
+1. Wählen Sie **Prompt-Bibliothek herunterladen** aus, um die Bibliotheksdatei von LLM Optimizer herunterzuladen.
+   ![Download der Branchen-Prompt-Bibliothek](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Prüfen Sie auf der entsprechenden Registerkarte die vorgeschlagenen **Themen** und **Prompts** für die Branche Ihrer Marke und wählen Sie die für Sie relevantesten Optionen aus.
+1. Prüfen Sie die Spalte **Phase der Customer Journey**, um die Prompt-Optionen im gesamten Kundenzyklus anzuzeigen (z. B. von der Entdeckung über die Konversion bis zur Bindung). Prompts in frühen Phasen bzw. im oberen Teil des Trichters haben hohe Priorität. Erwägen Sie aber auch Optionen für spätere Phasen, um die Kundenbindung zu fördern, Kunden-Support zu ermöglichen usw.
+1. Passen Sie Themen oder Prompts bestmöglich für Ihre Produktziele an, bevor Sie sie in Adobe LLM Optimizer hochladen (fügen Sie beispielsweise Ihren Marken-/Produktnamen hinzu oder verwenden Sie markenkonforme Terminologie). Prompts können manuell oder per Massen-Upload unter Verwendung der bereitgestellten *CSV*-Vorlage zu LLM Optimizer hinzugefügt werden.
 
 >[!TIP]
 >
-> Verwenden Sie eine Kombination aus Domain-spezifischen Eingabeaufforderungen, die von LLM Optimizer während der Ersteinrichtung empfohlen werden, und der Industry Prompt Library, um Ihre Eingabeaufforderungsstrategie zu kuratieren.
+> Verwenden Sie eine Kombination aus Domain-spezifischen Prompts, die von LLM Optimizer während der Ersteinrichtung empfohlen werden, und Prompts aus der Branchen-Prompt-Bibliothek, um Ihre Prompt-Strategie zu erstellen.
 
-### Prompt Library Research Foundation
+### Recherchefundament der Prompt-Bibliothek
 
-Die Industry Prompt Library wurde im Rahmen einer umfassenden Forschungsinitiative entwickelt, die Folgendes kombiniert:
+Die Branchen-Prompt-Bibliothek wurde im Rahmen einer umfassenden Recherche-Initiative entwickelt, in der Folgendes kombiniert wurde:
 
-* **Kundenanalyse:** Analyse des Verhaltens und der Präferenzen von KI-Suchen über 6.000 Kunden
-* **Branchenkompetenz:** Perspektiven von Experten aus den Bereichen Auto, Finanzdienstleistungen, Gesundheitswesen, Telekommunikation und Reisen.
-* **Datengesteuerte Einblicke:** Identifizierung von wirkungsvollen Themen und Abfragemustern, die die Kundeninteraktion und Konversion fördern.
+* **Customer Intelligence:** Analyse des Verhaltens und der Präferenzen von über 6.000 Kundinnen und Kunden in KI-Suchen.
+* **Branchenkompetenz:** Perspektiven von Fachleuten aus den Bereichen Automobil, Finanzdienstleistungen, Gesundheitswesen, Telekommunikation und Reisen.
+* **Datengestützte Erkenntnisse:** Identifizierung von wirkungsvollen Themen und Abfragemustern, die die Kundeninteraktion und Konversion fördern.
 
-Top-Themen, die von Kunden aus verschiedenen Branchen gesucht werden:
+Top-Themen, die von Kundschaft aus verschiedenen Branchen gesucht werden:
 
-* **Auto:** Fehlerbehebung bei Autoproblemen, Vergleich von Fahrzeugen und Finanzierung/Leasing
-* **Finanzdienstleistungen:** Erforschung von Finanzprodukten
-* **Gesundheitswesen:** Nachschlagen von Symptomen oder Gesundheitsproblemen, Vergleichen von Behandlungsoptionen, Verstehen von Laborergebnissen oder medizinischen Begriffen
-* **Telekommunikation:** Vergleichen von Plänen, Vertragsbedingungen und Werbeaktionen, Überprüfen von Dienstleistungen in der Umgebung
+* **Automobil:** Fehlerbehebung bei Fahrzeugproblemen, Fahrzeugvergleiche und Finanzierung/Leasing.
+* **Finanzdienstleistungen:** Recherchen zu Finanzprodukten.
+* **Gesundheitswesen:** Recherchieren von Symptomen oder Gesundheitsproblemen, Vergleichen von Behandlungsoptionen, Verständnis von Laborergebnissen oder medizinischen Begriffen.
+* **Telekommunikation:** Vergleichen von Tarifen, Vertragsbedingungen und Werbeaktionen, Prüfen von Service-Optionen in der Umgebung
 * **Reisen:** Vorbereitung auf eine Reise, Recherche und Buchung von Reisen
 
-Kundentrends in Bezug auf KI-Suchen und promptes Verhalten in LLM-Tools:
+Kunden-Trends in Bezug auf das Verhalten bei KI-Suchen und Prompts in LLM-Tools:
 
-* Kunden stellen bei der Verwendung von LLM-Suchwerkzeugen lieber Fragen als verwenden Keywords.
-* Sie nutzen hauptsächlich LLM-Suchwerkzeuge für die Forschung und Entdeckung in der Frühphase.
-* Kunden neigen dazu, in ihren Eingabeaufforderungen einen bestimmten Marken- oder Produktnamen anzugeben.
+* Kundinnen und Kunden stellen bei der Verwendung von Tools für LLM-Suchen lieber Fragen, statt Keywords zu verwenden.
+* Sie nutzen LLM-Such-Tools hauptsächlich für die Recherche und Entdeckung in der Frühphase der Customer Journey.
+* Kundinnen und Kunden neigen dazu, in ihren Prompts einen bestimmten Marken- oder Produktnamen anzugeben.
 
 ## Best Practices für Kategorien
 
-Mit Kategorien können Sie Ihre Inhalte in strategischen Geschäftseinheiten oder logischen Gruppierungen organisieren. Sie sind der Bucket „Wohin er gehört“ und die oberste Organisationsebene für Ihre Inhalte.
+Mit Kategorien können Sie Ihre Inhalte in strategischen Geschäftseinheiten oder logischen Gruppierungen organisieren. Sie sind die „Schublade“, in die Ihre Inhalte gehören, und bilden die oberste Organisationsebene.
 
-Wenn Sie entscheiden, wie Kategorien eingerichtet werden, müssen Sie Ihre Ziele berücksichtigen und festlegen, wer Ihre Berichte bearbeiten muss.
+Bei der Entscheidung, wie Sie die Kategorien einrichten, müssen Sie berücksichtigen, was Ihre Ziele sind und wer mit Ihrem Reporting arbeiten muss.
 
 >[!IMPORTANT]
 >
-> Stellen Sie sicher, dass Kategorien von Anfang an korrekt eingerichtet sind, da Änderungen an Kategorien historische Daten zurücksetzen. Das bedeutet, dass Sie bei einer Änderung dieser Daten historische Daten aus der Zeit vor der Änderung verlieren.
+> Stellen Sie sicher, dass Kategorien von Anfang an korrekt eingerichtet sind, da Änderungen an Kategorien historische Daten zurücksetzen. Das bedeutet, dass Sie bei jeder Änderung einer Kategorie alle historischen Daten aus der Zeit vor der Änderung verlieren.
 
-Im Folgenden finden Sie eine Übersicht über die möglichen Ansätze und den Zeitpunkt, zu dem Sie einen bestimmten Ansatz wählen:
+Im Folgenden finden Sie einen Überblick über die möglichen Ansätze und in welchen Fällen Sie einen bestimmten Ansatz wählen sollten:
 
 | Ansatz | Beschreibung | Vorteil |
 |---------|----------|---------|
-| Strategische Geschäftseinheit (SGE) | Verwenden Sie diesen Ansatz, wenn Ihr Unternehmen nach Gewinn- und Verlustrechnung (z. B. Verbraucher, Unternehmen, Services) aufgeteilt ist. | Sie erhalten sauberes Reporting nach Geschäftsbereich und eine einfachere Rechenschaftspflicht. |
-| Website-Verzeichnis der obersten Ebene (URL_DIR) | Verwenden Sie , wenn Ihre Website-Informationsarchitektur den Besitz (/products/, /support/, /docs/, /news/) widerspiegelt. | Sie können festlegen, wie Teams Inhalte veröffentlichen und verwalten. |
-| Kategorie des Produkts (oder der Dienstleistung) | Verwenden Sie diese Option, wenn Sie einen Katalog verkaufen (SKUs/Services). | Sie erhalten Sortimentansichten, Lückenanalyse und Antworten dazu, welche Kategorie Inhalte benötigt. |
+| Strategische Geschäftseinheit (SBU) | Verwenden Sie diesen Ansatz, wenn Ihr Unternehmen nach Gewinn- und Verlustrechnung (z. B. Verbrauchende, Unternehmen, Services) unterteilt ist. | Sie erhalten sauberes Reporting nach Geschäftsbereich und eine einfachere Aufteilung von Verantwortlichkeiten. |
+| Website-Verzeichnis der obersten Ebene (URL_DIR) | Verwenden Sie diesen Ansatz, wenn die Datenarchitektur Ihrer Website die Eigentümerschaft widerspiegelt (/products/, /support/, /docs/, /news/). | Sie können stets nachvollziehen, wie Teams Inhalte veröffentlichen und verwalten. |
+| Produkt-Kategorie (oder Service-Kategorie) | Verwenden Sie diese Option, wenn Sie aus einem Katalog verkaufen (SKUs/Services). | Sie erhalten Sortimentansichten, Lückenanalysen und Antworten auf die Frage, welche Kategorie Inhalte benötigt. |
 
-Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss auf den Bericht reagieren?**
+Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss mit dem Bericht arbeiten?**
 
-* Wenn Sie ein *Business Leader* sind, wählen Sie den **SBU**-Ansatz.
-* Wenn Sie „Web */Inhalts-Inhaber“ sind* wählen Sie den **URL_DIR**-Ansatz.
-* Wenn Sie ein *Merchandising-/Angebotsmanager* sind, wählen Sie den Ansatz **Produkt-/**).
+* Wenn Sie in der *Geschäftsführung* arbeiten, wählen Sie den **SBU**-Ansatz.
+* Wenn Sie *Web-/Inhalts-Eigentümerin/-Eigentümer* sind, wählen Sie den **URL_DIR**-Ansatz.
+* Wenn Sie im *Merchandising-/Angebots-Management* arbeiten, wählen Sie den Ansatz **Produkt-/Service-Kategorie**.
 
 ![Hinzufügen von Kategorien in LLM Optimizer](/help/assets/best-practices/add-category.png)
 
 >[!IMPORTANT]
 >
 > * Wählen Sie einen Ansatz und halten Sie sich daran.
-> * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Mischen Sie **SBU** und **URL_DIR** nicht gleichzeitig.
+> * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Verwenden Sie **SBU** und **URL_DIR** nicht gleichzeitig.
 <!--Can you mix Product/Service with these?-->
 
 Zum Beispiel:
 
-| Site-Typ | Kategorie | Beispiele für Topic Taxonomy |
+| Site-Typ | Kategorie | Beispiele für Thementaxonomien |
 |---------|----------|---------|
-| Unternehmen mit mehreren Unternehmen | SBU | Kleine Absichten (Anleitung, Fehlerbehebung, Vergleich, Preise, Richtlinie) |
-| Dokumentation/Support vor Ort | URL_DIR | Anleitung, Fehlerbehebung, Referenz, Versionshinweise |
-| E-Commerce/Services-Katalog | Produkt/Service | Vergleich, Bewertungen, Preise/Verfügbarkeit, Anleitungen, Fehlerbehebung |
+| Großunternehmen mit mehreren Unternehmensbereichen | SBU | Kleine Anzahl von Absichten (Anleitungen, Fehlerbehebung, Vergleiche, Preisgestaltung, Richtlinien) |
+| Site mit hohem Dokumentations-/Support-Bedarf | URL_DIR | Anleitungen, Fehlerbehebung, Referenz, Versionshinweise |
+| E-Commerce-/Services-Katalog | Produkt/Service | Vergleiche, Bewertungen, Preisgestaltung/Verfügbarkeit, Anleitungen, Fehlerbehebung |
 
 ## Best Practices für Themen
 
-Themen helfen Ihnen, die Benutzerinteressen zu verstehen, denn sie zeigen Ihnen, was die Benutzerinnen und Benutzer wollen. Sie ermöglichen es Ihnen, Eingabeaufforderungen mit ähnlicher Benutzerabsicht zu gruppieren. Stellen Sie es sich so vor, dass relevante Eingabeaufforderungen gebündelt werden.
+Themen helfen Ihnen, die Benutzerabsichten zu verstehen, denn sie zeigen Ihnen, was die Benutzerinnen und Benutzer wollen. Sie ermöglichen es Ihnen, Prompts mit ähnlicher Benutzerabsicht zu gruppieren. Stellen Sie es sich so vor, dass relevante Prompts gebündelt werden.
 
 >[!IMPORTANT]
 >
->Themen sind in allen Kategorien **alle**, d. h. sie bleiben unabhängig von der Kategorie, der sie zugewiesen sind, konsistent. Sie stellen Gruppen von Fragen oder Eingabeaufforderungen dar, die einen gemeinsamen Zweck verfolgen.
+>Themen sind in **allen** Kategorien universell, d. h. sie bleiben unabhängig von der Kategorie konsistent, der sie zugewiesen sind. Sie stellen Gruppen von Fragen oder Prompts dar, die eine gemeinsame Absicht verfolgen.
 
-Bei der Entscheidung über Themen sollten Sie eine kurze, flache Liste erstellen (maximal 6-12). Zum Beispiel:
+Bei der Entscheidung über Themen sollten Sie eine kurze, eindimensionale Liste erstellen (maximal 6–12 Themen). Beispiel:
 
 * Produkte/Services
-* Anleitung (Einrichtung/Verwendung)
+* Anleitungen (Einrichtung/Verwendung)
 * Fehlerbehebung (Fehler/Probleme)
-* Vergleich (X vs. Y; „am besten … für …„)
-* Bewertungen
-* Preise und Verfügbarkeit
-* Richtlinie und Gewährleistung
+* Vergleiche (X vs. Y; „bestes … für …“)
+* Rezensionen und Bewertungen
+* Preisgestaltung und Verfügbarkeit
+* Richtlinien und Gewährleistung
 * Support-Kontakt
-* Firmen/Nachrichten (wenn Sie dies wirklich benötigen)
+* Unternehmen/Neuigkeiten (wenn Sie dies wirklich benötigen)
 
 ![Hinzufügen von Themen in LLM Optimizer](/help/assets/best-practices/add-topic.png)
 
 Beachten Sie beim Erstellen der Liste Folgendes:
 
-* Kann ein Editor das Thema in 5 Sekunden nach der Eingabeaufforderung verstehen? Falls nicht, benennen/vereinfachen Sie um.
-* Wird die Fehlerbehebung für verschiedene Themen einem anderen Team gehören? Wenn ja, haben Sie nützliche Themen ausgewählt.
+* Können Bearbeitende das Thema anhand des Prompts innerhalb von 5 Sekunden verstehen? Falls nicht, benennen Sie ihn um/vereinfachen Sie ihn.
+* Sind für die Fehlerbehebung für verschiedene Themen unterschiedliche Teams zuständig? Falls ja, haben Sie nützliche Themen ausgewählt.
   <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
-Einige zusätzliche hilfreiche Hinweise:
+Zusätzliche hilfreiche Hinweise:
 
-* Nutzen Sie Ihre geschäftlichen oder Site-Kenntnisse, um Themen zu definieren, die den strategischen Zielen Ihrer Marke entsprechen
-* Beachten Sie, wie Ihre Marke im Vergleich zu anderen Marken innerhalb bestimmter Themen abschneidet.
+* Nutzen Sie Ihre Kenntnisse über das Unternehmen oder die Site, um Themen zu definieren, die auf die strategischen Ziele Ihrer Marke abgestimmt sind.
+* Bedenken Sie, wie Ihre Marke bei bestimmten Themen im Vergleich zu anderen Marken abschneidet.
 
 >[!IMPORTANT]
 >
-> * Behalten Sie Themen bei, die absichtsbasiert, nicht organisatorisch sind.
+> * Gestalten Sie die Themen absichtsbasiert, nicht organisatorisch.
 > * Fügen Sie keine Kategorien/Filter für Marke/Nicht-Marke/Geografie hinzu, da Sie auf der Registerkarte **[!UICONTROL Marken]** gezielt danach filtern können.
-> * Die Themen sind über mehrere Kategorien verteilt. Es **nicht möglich** eindeutige Themen für jede Kategorie zu definieren.
-> * Eine einzelne Eingabeaufforderung **kann** in mehreren Themen oder Kategorien vorhanden sein.
+> * Themen gelten über mehrere Kategorien hinweg. Es ist **nicht möglich**, für jede Kategorie individuelle Themen zu definieren.
+> * Ein einzelner Prompt **kann** in mehreren Themen oder Kategorien vorhanden sein.
 
-## Best Practices für Eingabeaufforderungen
+## Best Practices für Prompts
 
-Anhand von Eingabeaufforderungen werden die spezifischen Fragen oder Abfragen identifiziert, die Kunden stellen und die sich auf Ihr Unternehmen auswirken können. Dabei handelt es sich um die eigentlichen Fragen oder Abfragen, die Benutzende in LLMs eingeben.
+Anhand von Prompts werden die spezifischen Fragen oder Abfragen identifiziert, die von Kundinnen und Kunden gestellt werden. Dies kann Auswirkungen auf Ihre Geschäfte haben. Sie sind die eigentlichen Fragen oder Abfragen, die Benutzende in LLMs eingeben.
 
-Stellen Sie sicher, dass Eingabeaufforderungen regelmäßig überprüft und aktualisiert werden, um sicherzustellen, dass sie mit den Kundenanforderungen und Geschäftszielen übereinstimmen.
+Prüfen und aktualisieren Sie Prompts regelmäßig, damit sichergestellt ist, dass sie mit den Kundenanforderungen und Geschäftszielen übereinstimmen.
 
-Best Practices für Eingabeaufforderungen:
+Best Practices für Prompts:
 
-* Gruppieren Sie ähnliche Eingabeaufforderungen basierend auf den Fragen der Benutzer.
-* Konzentrieren Sie sich auf die Eingabeaufforderungen, die für Ihre Kunden am wichtigsten sind.
-* Überprüfen Sie, ob Ihre Marke gute Chancen hat, bei bestimmten Eingabeaufforderungen erwähnt zu werden.
-
->[!TIP]
->
->* Sie können Tools wie die Adobe LLM Optimizer- und die Google-Suchkonsole mit Regex-Filtern verwenden, um gängige Fragestrukturen zu identifizieren (z. B. „wie“, „was“, „wann“, „wo„) und herauszufinden, welche Aufforderungen die Personen für den Besuch Ihrer Site verwenden.
->* Um herauszufinden, welche Eingabeaufforderungen für Ihre Site/Marke relevant sind, können Sie Suchdaten auf der Site verwenden, FAQs auf Suchmaschinenergebnisseiten verwenden oder sogar LLM-Chatbots direkt fragen, welche Fragen Kunden zu Ihrer Marke stellen könnten.
-
-## Best Practices für die Verfolgung anderer Marken
-
-Mit „Andere nachverfolgen“ können Sie die Sichtbarkeit und Erwähnungen in LLM-Antworten auf für Ihr Unternehmen wichtige Eingabeaufforderungen und Themen überwachen.
-
-Auf der Registerkarte [!UICONTROL **Andere Tracking**] können Sie weitere hinzufügen, einschließlich Wettbewerbern, um ihre Sichtbarkeit für bestimmte Eingabeaufforderungen und Themen zu verfolgen.
-
-Bei der Nachverfolgung durch andere Benutzer können Sie sehen, wie oft andere Marken neben Ihrer Marke in verschiedenen Regionen und Kategorien erwähnt werden, und ihre Sichtbarkeit mit der Ihrer eigenen vergleichen.
+* Gruppieren Sie ähnliche Prompts basierend auf den Fragen der Benutzenden.
+* Konzentrieren Sie sich auf die Prompts, die für Ihre Kundinnen und Kunden am wichtigsten sind.
+* Prüfen Sie, ob Ihre Marke gute Chancen hat, bei bestimmten Prompts erwähnt zu werden.
 
 >[!TIP]
 >
->Überprüfen Sie regelmäßig die Erwähnungen und Zitate von Mitbewerbern oder anderen Anbietern, um Bereiche zu identifizieren, in denen sich Ihre Marke verbessern kann.
+>* Sie können Tools wie Adobe LLM Optimizer und Google Search Console mit Regex-Filtern verwenden, um gängige Fragemuster zu identifizieren (z. B. „wie“, „was“, „wann“, „wo“) und herauszufinden, welche Prompts die Personen für den Besuch Ihrer Site verwenden.
+>* Um herauszufinden, welche Prompts für Ihre Site/Marke relevant sind, können Sie Site-Suchdaten oder häufig gestellte Fragen in Ergebnisseiten von Suchmaschinen verwenden oder sogar LLM-Chatbots direkt fragen, welche Fragen Kundinnen und Kunden zu Ihrer Marke stellen könnten.
+
+## Best Practices für die Nachverfolgung anderer Marken
+
+Wenn Sie andere Marken nachverfolgen, können Sie die Sichtbarkeit und Erwähnungen in LLM-Antworten für Prompts und Themen überwachen, die für Ihr Unternehmen wichtig sind.
+
+Auf der Registerkarte [!UICONTROL **Tracking von anderen**] können Sie andere Marken einschließlich Wettbewerbern hinzufügen, um deren Sichtbarkeit für bestimmte Prompts und Themen nachzuverfolgen.
+
+Beim Tracking von anderen können Sie sehen, wie oft andere Marken neben Ihrer Marke in verschiedenen Regionen und Kategorien erwähnt werden, und deren Sichtbarkeit mit der Ihrer eigenen vergleichen.
+
+>[!TIP]
+>
+>Überprüfen Sie regelmäßig die Erwähnungen und Zitierungen von Wettbewerbern oder anderen Marken, um Bereiche zu identifizieren, in denen sich Ihre Marke verbessern kann.
 
 ## Weitere Informationen
 
-* [Dashboard für Kundenkonfiguration](/help/dashboards/customer-configuration.md) konfigurieren Sie Kategorien, Themen, Eingabeaufforderungen und anderes Tracking.
-* [Best Practices für LLM Optimizer](/help/tutorials/best-practices.md) beschreibt Best Practices für die LLM-Optimierung
+* Im [Dashboard „Kundenkonfiguration“](/help/dashboards/customer-configuration.md) konfigurieren Sie Kategorien, Themen, Prompts und Tracking von anderen.
+* [Best Practices für LLM Optimizer](/help/tutorials/best-practices.md) beschreibt die Best Practices für die LLM-Optimierung.
 
