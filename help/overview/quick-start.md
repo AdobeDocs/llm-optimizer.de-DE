@@ -38,7 +38,7 @@ Kunden von AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) ha
 Einige Produktfunktionen sind in der kostenlosen Version nicht verfügbar:
 
 * Die Testversion ist auf eine Domain beschränkt. Sie können die angegebene Domain nach Abschluss der Einrichtung nicht mehr ändern.
-* Die Möglichkeit, Optimierungen bereitzustellen, ist im Early Access-Modus verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte &#x200B;](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions).
+* Die Möglichkeit, Optimierungen bereitzustellen, ist im Early Access-Modus verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte ](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge#frequently-asked-questions).
 
 Im folgenden Abschnitt finden Sie Details zum Aktivieren der kostenlosen Testversion und zum Onboarding Ihrer Domain.
 
