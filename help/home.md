@@ -1,17 +1,17 @@
 ---
 title: Adobe LLM Optimizer
-description: Stärken Sie Ihre Marke mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen, gewinnen Sie Erkenntnisse und meistern Sie die KI-gestützte Suche. Übernehmen Sie die Kontrolle über die Sichtbarkeit und beginnen Sie jetzt mit der Optimierung.
+description: Steigern Sie die Leistung Ihrer Marke mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen nach, gewinnen Sie Erkenntnisse und dominieren Sie bei der KI-gestützten Suche. Übernehmen Sie die Kontrolle über Ihre Sichtbarkeit. Beginnen Sie jetzt mit der Optimierung.
 source-git-commit: 0714b6c83e384ff21ddceafa941e3fe8c7305467
-workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 12%
+workflow-type: ht
+source-wordcount: '374'
+ht-degree: 100%
 
 ---
 
 
 # Adobe LLM Optimizer
 
-Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung generativer Suchmaschinen, mit der Marken ihre Sichtbarkeit, Genauigkeit und ihren Einfluss in KI-gestützten Suchumgebungen verbessern können. Es bietet Einblicke in das Markenpräsenz in KI-generierte Antworten, bietet präskriptive Inhaltsempfehlungen und automatisiert Optimierungskorrekturen.
+Adobe LLM Optimizer ist eine auf generativer KI basierende Anwendung für Generative Engine Optimization, mit der Marken ihre Sichtbarkeit, Genauigkeit und ihren Einfluss in KI-gestützten Suchumgebungen verbessern können. Das Programm stellt Erkenntnisse zur Markenpräsenz in KI-generierte Antworten bereit, bietet präskriptive Inhaltsempfehlungen und automatisiert Optimierungskorrekturen.
 
 ## Erste Schritte mit LLM Optimizer
 
@@ -42,8 +42,8 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/overview.md" title="Übersicht über LLM Optimizer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="Übersicht über LLM Optimizer"
+                    <a href="./overview/overview.md" title="LLM Optimizer – Überblick" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="LLM Optimizer – Überblick"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -51,12 +51,12 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="Übersicht über LLM Optimizer">Übersicht über LLM Optimizer</a>
+                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer – Überblick">LLM Optimizer – Überblick</a>
                     </p>
-                    <p class="is-size-6">Erfahren Sie, wie Adobe LLM Optimizer das Markensichtbarkeit in der KI-gestützten Suche steigert.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Adobe LLM Optimizer die Markensichtbarkeit in KI-gestützten Suchvorgängen erhöht.</p>
                 </div>
                 <a href="./overview/overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>
@@ -76,10 +76,10 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./overview/quick-start.md" target="_blank" rel="referrer" title="Schnellstartanleitung">Schnellstartanleitung</a>
                     </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie mit der LLM Optimizer schnell loslegen können.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie schnell mit LLM Optimizer loslegen können.</p>
                 </div>
                 <a href="./overview/quick-start.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>
@@ -88,8 +88,8 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/dashboards-overview.md" title="Dashboards - Übersicht" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboards - Übersicht"
+                    <a href="./dashboards/dashboards-overview.md" title="Dashboards – Überblick" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboards – Überblick"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,12 +97,12 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Dashboards - Übersicht">Dashboards - Übersicht</a>
+                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Dashboards – Überblick">Dashboards – Überblick</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Sie mit Dashboards Erkenntnisse und Empfehlungen für Ihre Site erhalten.</p>
                 </div>
                 <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>
@@ -126,7 +126,7 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/de/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -139,8 +139,8 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="Best Practices zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und zum Nachverfolgen anderer" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best Practices zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und zum Nachverfolgen anderer"
+                    <a href="./overview/best-practices-topics-prompts.md" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -148,12 +148,12 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best Practices zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und zum Nachverfolgen anderer">Best Practices zum Einrichten von Kategorien, Themen, Eingabeaufforderungen und zum Nachverfolgen anderer</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken">Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Sie LLM Optimizer für maßgeschneiderte Markenüberwachung und strategische Inhaltsanalyse konfigurieren.</p>
                 </div>
                 <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>
@@ -173,10 +173,10 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" title="Best Practices für die LLM-Optimierung mit Adobe LLM Optimizer">Best Practices für die LLM-Optimierung mit Adobe LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Erfahren Sie, wie LLM Optimizer Ihnen dabei helfen kann, die Markenautorisierung in KI-Suche und Discovery voranzutreiben.</p>
+                    <p class="is-size-6">Erfahren Sie, wie LLM Optimizer Sie dabei unterstützen kann, die Markenautorität bei der KI-gestützten Suche und Entdeckung zu optimieren.</p>
                 </div>
                 <a href="./tutorials/best-practices.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>
@@ -194,12 +194,12 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://business.adobe.com/de/products/llm-optimizer.html" target="_blank" rel="referrer" title="Erkunden der Funktionen von Adobe LLM Optimizer">Erkunden Sie die Funktionen von Adobe LLM Optimizer</a>
+                        <a href="https://business.adobe.com/de/products/llm-optimizer.html" target="_blank" rel="referrer" title="Erkunden der Funktionen von Adobe LLM Optimizer">Erkunden der Funktionen von Adobe LLM Optimizer</a>
                     </p>
-                    <p class="is-size-6">Gestalten Sie mit Adobe LLM Optimizer die Präsenz Ihrer Marke in den KI-Suchen. Gewinnen Sie GEO-Einblicke, verbessern Sie die Sichtbarkeit aller LLMs und steigern Sie das messbare Traffic-Wachstum.</p>
+                    <p class="is-size-6">Steuern Sie mit Adobe LLM Optimizer die Präsenz Ihrer Marke in KI-generierten Suchergebnissen. Gewinnen Sie GEO-Erkenntnisse, verbessern Sie die Sichtbarkeit über alle LLMs hinweg und erzielen Sie messbare Traffic-Zunahme.</p>
                 </div>
                 <a href="https://business.adobe.com/de/products/llm-optimizer.html" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>
@@ -207,7 +207,7 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## Optimieren bei Edge
+## Optimize at Edge
 
 <!-- CARDS
 
@@ -225,8 +225,8 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/optimize-at-edge.md" title="Optimieren bei Edge" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/optimize-on-edge-card.png" alt="Optimieren bei Edge"
+                    <a href="./dashboards/optimize-at-edge.md" title="Optimize at Edge" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/optimize-on-edge-card.png" alt="Optimize at Edge"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,12 +234,12 @@ Adobe LLM Optimizer ist eine generative KI-First-Anwendung für die Optimierung 
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" title="Optimieren bei Edge">Optimieren Sie bei Edge</a>
+                        <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" title="Optimize at Edge">Optimize at Edge</a>
                     </p>
-                    <p class="is-size-6">Erfahren Sie, wie Sie in LLM Optimizer Optimierungen bereitstellen können, ohne dass Änderungen an der Bearbeitung erforderlich sind.</p>
+                    <p class="is-size-6">Erfahren Sie, wie Sie in LLM Optimizer Optimierungen bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.</p>
                 </div>
                 <a href="./dashboards/optimize-at-edge.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Mehr erfahren</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Weitere Informationen</span>
                 </a>
             </div>
         </div>

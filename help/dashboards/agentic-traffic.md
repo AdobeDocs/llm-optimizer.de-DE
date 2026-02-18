@@ -1,143 +1,143 @@
 ---
 title: Agent-basierter Traffic
-description: Erfahren Sie, wie Sie das Dashboard für den Agentenverkehr verwenden, um zu sehen, wie KI-Agenten mit Ihrer Site interagieren.
+description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic“ sehen können, wie AI Agents mit Ihrer Site interagieren.
 feature: Agentic Traffic
 source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
-workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '1316'
+ht-degree: 100%
 
 ---
 
 
 # Agent-basierter Traffic {#agentic-traffic}
 
-Das Agententraffic-Dashboard zeigt an, wie KI-Agenten (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agenten anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie **CDN-Protokollweiterleitung“**, um Metriken anzuzeigen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Das Dashboard „Agent-basierter Traffic“ zeigt, wie AI Agents (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agents anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie die **CDN-Protokollweiterleitung** konfigurieren, um Metriken anzeigen zu können. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 ![Traffic-Verteilung](/help/dashboards/assets/ag-main.png)
 
-Auf dieser Seite wird Folgendes beschrieben:
+Diese Seite beschreibt Folgendes:
 
 * [Filter](#filters)
-* [CDN-Setup](#cdn-setup)
-* [Verkehrsverteilung](#traffic-distribution)
+* [CDN-Einrichtung](#cdn-setup)
+* [Traffic-Verteilung](#traffic-distribution)
 * [Trends bei Agent-basiertem Traffic](#agentic-trends)
-* [Top- und Bottom-Mover](#top-bottom-movers)
-* [Benutzeragent- und URL-Leistungsanalyse](#user-url-performance)
+* [Elemente mit Zunahme und Abnahme](#top-bottom-movers)
+* [Benutzer-Agent- und URL-Leistungsanalyse](#user-url-performance)
 
 ## CDN-Protokollweiterleitung {#cdn-setup}
 
-Ohne **CDN-Protokollweiterleitung** ist das Agent-Traffic-Dashboard leer. Um agentische Interaktionen anzuzeigen, müssen Sie die **CDN-Protokollweiterleitung“**.  Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
+Ohne **CDN-Protokollweiterleitung** bleibt das Dashboard „Agent-basierter Traffic“ leer. Damit Agent-basierte Interaktionen angezeigt werden können, müssen Sie die **CDN-Protokollweiterleitung** konfigurieren.  Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
 
-![CDN-Setup](/help/dashboards/assets/ag-log-forward1.png)
+![CDN-Einrichtung](/help/dashboards/assets/ag-log-forward1.png)
 
-Wählen Sie **Wechseln zur Konfiguration** aus und Sie navigieren automatisch zur Registerkarte **CDN-Konfiguration** des Dashboards [Kundenkonfiguration](/help/dashboards/customer-configuration.md).
+Wählen Sie **Zur Konfiguration wechseln** aus. Sie navigieren dann automatisch zur Registerkarte **CDN-Konfiguration** im [Dashboard „Kundenkonfiguration“](/help/dashboards/customer-configuration.md).
 
-![Integriertes CDN-Setup](/help/dashboards/assets/ag-log-forward2.png)
+![CDN-Einrichtung: Integrieren](/help/dashboards/assets/ag-log-forward2.png)
 
-Wählen Sie auf dieser Registerkarte die Option **Integriertes CDN** aus. Daraufhin wird das Fenster CDN-Anbieter angezeigt.
+Wählen Sie auf dieser Registerkarte die Option **CDN integrieren** aus. Daraufhin wird das Fenster mit CDN-Anbietern angezeigt.
 
 <!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-Im Fenster **Onboarding CDN Provider**:
+Im Fenster **CDN-Anbieter integrieren**:
 
-1. Wählen Sie Ihren CDN-Provider aus (z. B. Akamai, Adobe-Managed Fastly, Fastly, AWS Cloudfront, Azure CDN, Cloudflare oder andere).
-2. Klicken Sie **Onboard**, um die Protokollweiterleitung zu aktivieren.
+1. Wählen Sie Ihren CDN-Anbieter aus (z. B. „Akamai“, „Von Adobe verwaltetes Fastly“, „Fastly“, „AWS Cloudfront“, „Azure CDN“, „Cloudflare“ oder „Sonstige“).
+2. Klicken Sie auf **Integrieren**, um die Protokollweiterleitung zu aktivieren.
 
 Wenn Sie **Sonstige** auswählen, müssen Sie sich an llmo-now@adobe.com wenden, um Hilfe zu erhalten.
 
-Nach der Aktivierung werden Protokolle aufgenommen und im Dashboard Metriken wie Gesamtanzahl der Agenteninteraktionen, Erfolgsrate, Treffer nach Markt, Analyse der Benutzeragenten und Leistung auf URL-Ebene angezeigt.
+Nach der Aktivierung werden Protokolle aufgenommen und Metriken wie Gesamtanzahl der Agent-basierten Interaktionen, Erfolgsrate, Treffer nach Markt, Benutzer-Agent-Analysen und Leistung auf URL-Ebene im Dashboard angezeigt.
 
-LLM Optimizer verarbeitet eine Teilmenge von Feldern aus den CDN-Protokollen. Obwohl die Namen der Rohprotokoll-Felder je nach CDN-Provider variieren, werden sie normalisiert und wie folgt dargestellt:
+LLM Optimizer verarbeitet eine Teilmenge der Felder aus den CDN-Protokollen. Auch wenn die Rohnamen der Protokollfelder je nach CDN-Anbieter variieren, werden sie normalisiert und wie folgt dargestellt:
 
 * URL (nur Pfad)
-* Benutzeragent
+* Benutzer-Agent
 * Status-Code
-* Referrer-Kopfzeile
-* Host-Kopfzeile
+* Referrer-Header
+* Host-Header
 * Zeit bis zum ersten Byte (TTFB)
-* Anforderungsmethode
+* Anfragemethode
 * Zeitstempel
 * Inhaltstyp
 
-Diese normalisierten Felder werden über die agentische Ansicht verfügbar gemacht. Im Dashboard [Referral Traffic](/help/dashboards/referral-traffic.md) werden CDN-Protokolle verwendet, um Seitentreffermetriken anzuzeigen. In keiner Phase der CDN-Protokollaufnahme oder der nachfolgenden Datenverarbeitung werden personenbezogene Daten (PII) verarbeitet oder gespeichert.
+Diese normalisierten Felder werden in der Agent-basierten Ansicht angezeigt. Im Dashboard [Referral Traffic](/help/dashboards/referral-traffic.md) werden CDN-Protokolle verwendet, um Seitentreffermetriken anzuzeigen. In keiner Phase der CDN-Protokollaufnahme oder der nachfolgenden Datenverarbeitung werden personenbezogene Daten (PII) verarbeitet oder gespeichert.
 
 ## Filter {#filters}
 
 Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. Die ausgewählten Filter wirken sich auf **alle** Abschnitte im Dashboard aus. Sie können Folgendes anpassen:
 
-* **Datumsbereich** - Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel in den letzten 4 Wochen. Sie haben auch die Möglichkeit, den Zeitraum anzupassen, indem Sie die Option **Benutzerdefinierte Wochen** auswählen.
-* **Kategorie** - Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
-* **Platform** - Wählen Sie die zu analysierende KI-Engine aus.
-* **Agent-Typ** - Filtern Sie nach dem Typ des KI-Agenten, der mit Ihrer Site interagiert hat. Sie können nach Crawler, Chatbots oder allen Agenten filtern.
-* **Erfolgsrate** - Filtern nach der Interaktionsqualität (hoch, mittel oder niedrig). Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich sowohl direkter erfolgreicher Antworten (2xx Status-Codes) als auch Umleitungen (3xx Status-Codes).
-* **Content-**: Anzeigen der agenten Interaktion für verschiedene Inhaltstypen wie HTML, PDF usw.
+* **Datumsbereich** – Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel die letzten 4 Wochen. Sie können den Zeitraum auch mit der Option **Benutzerdefinierte Wochen** anpassen.
+* **Kategorie** – Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
+* **Plattform** – Wählen Sie die zu analysierende KI-Engine aus.
+* **Agent-Typ** – Filtern Sie nach dem Typ des AI Agents, der mit Ihrer Site interagiert hat. Sie können nach Crawlern, Chatbots oder allen Agents filtern.
+* **Erfolgsrate** – Filtern Sie nach Interaktionsqualität (hoch, mittel oder niedrig). Diese Metrik steht für den Prozentsatz erfolgreicher HTTP-Anfragen, einschließlich direkter erfolgreicher Antworten (Status-Codes „2xx“) und Umleitungen (Status-Codes „3xx“).
+* **Inhaltstyp** – Zeigen Sie Agent-basierte Interaktionen für verschiedene Inhaltstypen wie HTML, PDF usw. an.
 
-Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter anwenden** um die Auswahl auf das Dashboard anzuwenden.
+Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter anwenden**, um Ihre Auswahl auf das Dashboard anzuwenden.
 
-## Verkehrsverteilung {#traffic-distribution}
+## Traffic-Verteilung {#traffic-distribution}
 
-Die Ansicht Traffic-Verteilung zeigt, wie der Agent-Traffic auf Märkte, Kategorien und Seitentypen verteilt wird. So können Sie mithilfe dieser Ansicht ermitteln, auf welche Regionen, Produktbereiche oder Inhaltsformate KI-Agenten bei der Interaktion mit Ihrer Site am häufigsten zugreifen.
+Die Ansicht „Traffic-Verteilung“ zeigt, wie der Agent-Traffic auf Märkte, Kategorien und Seitentypen verteilt wird. So können Sie mit dieser Ansicht ermitteln, auf welche Regionen, Produktbereiche oder Inhaltsformate AI Agents bei der Interaktion mit Ihrer Site am häufigsten zugreifen.
 
 ![Traffic-Verteilung](/help/dashboards/assets/ag-main.png)
 
 Oben auf der Seite gibt es drei Schlüsselmetriken, die Sie beachten müssen:
 
-* **Agenteninteraktionen** - Diese Metrik stellt die Gesamtzahl der Anfragen dar, die von KI-Agenten an Ihre Website gesendet wurden. Dies umfasst den gesamten Traffic von Suchmaschinen, Chatbots und anderem nicht-menschlichen Traffic.
-* **Erfolgsrate** - Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
-* **Durchschnittliche TTFB** - Zeit bis zum ersten Byte (Time To First Byte, TTFB) misst die Zeit, die für das erste Byte der Daten benötigt wird, die vom Server empfangen werden. Der Durchschnittswert wird auf der Grundlage der Anzahl der Anfragen gewichtet, die jeden Code zurückgeben, und schließt Anfragen aus, die zu Antworten von 5xx geführt haben. Niedrigere Werte bedeuten kürzere Serverreaktionszeiten.
+* **Agent-Interaktionen** – Diese Metrik stellt die Gesamtzahl der Anfragen dar, die von AI Agents an Ihre Website gesendet wurden. Hierzu zählt der gesamte Traffic von Suchmaschinen und Chatbots und anderer nicht-menschlicher Traffic.
+* **Erfolgsrate** – Diese Metrik stellt den Prozentsatz erfolgreicher HTTP-Anfragen dar, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
+* **Durchschnittlicher TTFB** – Die durchschnittliche Zeit bis zum ersten Byte (TTFB) gibt an, wie lange es dauert, bis das erste Daten-Byte vom Server empfangen wird. Der Durchschnittswert wird auf der Grundlage der Anzahl der Anfragen gewichtet, die jeden Code zurückgeben, und schließt Anfragen aus, die zu Antworten des Typs „5xx“ geführt haben. Niedrigere Werte bedeuten kürzere Server-Antwortzeiten.
 
-Trendindikatoren für jede Schlüsselmetrik zeigen, wie sich diese Werte im Laufe der Zeit im Vergleich zum vorherigen Zeitraum ändern.
+Für jede Schlüsselmetrik zeigen Trend-Indikatoren an, wie sich die Werte im Zeitverlauf verglichen mit dem vorherigen Zeitraum ändern.
 
 ## Trends bei Agent-basiertem Traffic {#agentic-trends}
 
-Verwenden Sie das Diagramm Agentenmäßige Traffic-Trends , um die wöchentlichen Gesamtwerte von erfolgreichen, fehlgeschlagenen und allgemeinen Treffern zu verfolgen. Auf diese Weise können Sie Veränderungen der Agentenaktivität und -leistung im Zeitverlauf überwachen. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung über den wöchentlichen Zeitrahmen hinweg zu sehen.
+Verwenden Sie das Diagramm „Trends bei Agent-basiertem Traffic“, um die wöchentlichen Gesamtwerte von erfolgreichen und fehlgeschlagenen Treffern und von Treffern insgesamt zu verfolgen. Auf diese Weise können Sie Veränderungen der Agent-Aktivität und -Leistung im Zeitverlauf überwachen. Sie können auch den Mauszeiger über das Diagramm bewegen, um die Datenentwicklung im wöchentlichen Zeitrahmen zu sehen.
 
-![Agentische Traffic-Trends](/help/dashboards/assets/ag-trends.png)
+![Trends bei Agent-basiertem Traffic](/help/dashboards/assets/ag-trends.png)
 
-## Top- und Bottom-Mover {#top-bottom-movers}
+## Elemente mit Zunahme und Abnahme {#top-bottom-movers}
 
-Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. **Top Movers** zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während **Bottom Movers** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
+Die Ansicht der Elemente mit Zunahme und Abnahme zeigt URLs mit den größten wöchentlichen Änderungen beim Agent-basierten Traffic, also bei Besuchen oder Treffern von KI-Systemen, die auf Ihre Inhalte zugreifen. **Zunahme** zeigt Seiten, deren Sichtbarkeit oder Interaktionen zunehmen, während **Abnahme** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
-![Top und Bottom Mover](/help/dashboards/assets/movers.png)
+![Elemente mit Zunahme und Abnahme](/help/dashboards/assets/movers.png)
 
-## Benutzeragent- und URL-Leistungsanalyse {#user-url-performance}
+## Benutzer-Agent- und URL-Leistungsanalyse {#user-url-performance}
 
-Die Ansichten Benutzeragent und URL-Leistungsanalyse bieten weitere Datenaufschlüsselungen zur Interaktion von Crawler und Chatbots mit Ihrer Site. Klicken Sie auf die Registerkarten unten, um detaillierte Beschreibungen anzuzeigen.
+Die Ansichten „Benutzer-Agent-Analyse“ und „URL-Leistungsanalyse“ bietet weitere Datenaufschlüsselungen zu Interaktionen von Crawlern und Chatbots mit Ihrer Site. Klicken Sie auf die Registerkarten unten, um detaillierte Beschreibungen anzuzeigen.
 
-![Benutzeragent- und URL-Leistungsanalyse](/help/dashboards/assets/user-agent.png)
+![Benutzer-Agent- und URL-Leistungsanalyse](/help/dashboards/assets/user-agent.png)
 
 >[!BEGINTABS]
 
->[!TAB Benutzeragenten-Analyse]
+>[!TAB Benutzer-Agent-Analyse]
 
-Die Tabelle Benutzeragentenanalyse enthält eine Aufschlüsselung des Traffics nach Seitentyp und Agententyp (z. B. Crawler oder Chatbots). Auf diese Weise ist es einfach zu verstehen, welche KI-Agenten welche Teile Ihrer Site crawlen haben. Es umfasst die folgenden Kategorien:
+Die Tabelle „Benutzer-Agent-Analyse“ enthält eine Aufschlüsselung des Traffics nach Seitentyp und Agent-Typ (z. B. Crawler oder Chatbots). So können Sie einfach erkennen, welche AI Agents welche Teile Ihrer Site crawlen. Sie enthält die folgenden Kategorien:
 
-* **Seitentyp** - Der Seitentyp.
-* **Agent Type** - Der die Seite crawlen KI-Agent, entweder eine Crawler oder ein Chatbot.
-* **Treffer** - Die Gesamtzahl der Anfragen, die von KI-Agenten für diesen bestimmten Seitentyp gestellt wurden.
+* **Seitentyp** – Der Typ der Seite.
+* **Agent-Typ** – Der AI Agent, der die Seite crawlt, entweder ein Crawler oder ein Chatbot.
+* **Treffer** – Die Gesamtzahl der Anfragen, die von AI Agents für diesen bestimmten Seitentyp gestellt wurden.
 
 Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken.
 
 >[!TAB URL-Leistungsanalyse]
 
-Die Tabelle URL-Leistungsanalyse zeigt eine detaillierte Ansicht der einzelnen URLs. Dazu gehören Treffer, eindeutige Agenten, Top-Agenten, Erfolgsraten und Kategorien. Crawlen Auf diese Weise können Sie hochwertige Seiten identifizieren, Lücken erkennen und Inhalte für KI-Engines optimieren. Die URLs werden nach Traffic-Volumen sortiert. Die Tabelle enthält die folgenden Kategorien:
+Die Tabelle „URL-Leistungsanalyse“ zeigt eine detaillierte Ansicht der einzelnen URLs. Dazu gehören Treffer, eindeutige Agents, Top-Agents, Erfolgsraten und Kategorien. Dadurch können Sie hochwertige Seiten identifizieren, Lücken beim Crawling erkennen und Inhalte für KI-Engines optimieren. Die URLs werden nach Traffic-Volumen sortiert. Die Tabelle enthält die folgenden Kategorien:
 
-* **URL** - Die untersuchte URL.
-* **Treffer insgesamt** - Gesamtzahl der Anfragen, die von KI-Agenten an die URL gesendet wurden.
-* **Eindeutige Agenten** - Die Anzahl der verschiedenen KI-Agenten, die auf die URL zugegriffen haben.
-* **Top-Agent** - Der KI-Agent, der den meisten Traffic zur URL generiert hat.
-* **Top-Agent-**: Der Typ des KI-Agenten, der den meisten Traffic zu dieser URL generiert hat.
-* **Erfolgsrate** - Der Prozentsatz erfolgreicher HTTP-Anfragen, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
-* **Kategorie** - Die Kategorie, die dem Inhalt Ihrer Seite am ehesten entspricht.
-* **Durchschnittliche TTFB (ms)** - Die Zeit bis zum ersten Byte (TTFB) misst die Zeit, die für das erste Byte von Daten benötigt wird, die vom Server empfangen werden (in Millisekunden). Der Durchschnittswert wird auf der Grundlage der Anzahl der Anfragen gewichtet, die jeden Code zurückgeben, und schließt Anfragen aus, die zu Antworten von 5xx geführt haben. Niedrigere Werte bedeuten kürzere Serverreaktionszeiten.
-* **Antwort-Codes** - die HTTP-Status-Codes, die für die URL beobachtet werden.
+* **URL** – Die untersuchte URL.
+* **Treffer insgesamt** – Die Gesamtzahl der Anfragen von AI Agents an diese URL.
+* **Eindeutige Agents** – Die Anzahl der verschiedenen AI Agents, die auf diese URL zugegriffen haben.
+* **Top-Agent** – Der AI Agent, der den meisten Traffic für diese URL generiert hat.
+* **Top-Agent-Typ** – Typ des AI-Agents, der den meisten Traffic für diese URL generiert hat.
+* **Erfolgsrate** – Der Prozentsatz erfolgreicher HTTP-Anfragen, einschließlich direkter erfolgreicher Antworten und Weiterleitungen.
+* **Kategorie** – Die Kategorie, die dem Inhalt Ihrer Seite am ehesten entspricht.
+* **Durchschnittlicher TTFB** – Die Zeit bis zum ersten Byte gibt an, wie lange es dauert (in Millisekunden), bis das erste Daten-Byte vom Server empfangen wird. Der Durchschnittswert wird auf der Grundlage der Anzahl der Anfragen gewichtet, die jeden Code zurückgeben, und schließt Anfragen aus, die zu Antworten des Typs „5xx“ geführt haben. Niedrigere Werte bedeuten kürzere Server-Antwortzeiten.
+* **Antwort-Codes** – Die HTTP-Status-Codes, die für die URL beobachtet werden.
 
-Die URL-Leistungstabelle enthält ein Suchfeld für den schnellen Zugriff auf URLs. Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken. Sie können auch zusätzliche Details für jede URL anzeigen, indem Sie auf das **Details**-Symbol am Ende jeder Zeile klicken.
+Die Tabelle mit der URL-Leistung enthält ein Suchfeld für den schnellen Zugriff auf URLs. Sie können anpassen, welche Metriken angezeigt werden, indem Sie auf die Schaltfläche **Spalten konfigurieren** klicken. Sie können auch zusätzliche Details für jede URL anzeigen, indem Sie am Ende der gewünschten Zeile auf das Symbol **Details** klicken.
 
 ![URL-Details](/help/dashboards/assets/details.png)
 
-Die Ansicht „URL-Details“ bietet ein ganzheitliches Verständnis der Leistung einer Seite, das zeigt, wie oft sie zitiert wird, das Sentiment von KI-Antworten, wo sie erwähnt werden, die Themen und Eingabeaufforderungen, in denen sie angezeigt werden, und Trends bei Magneten und Referral Traffic im Laufe der Zeit.
+Die Ansicht „URL-Details“ bietet einen ganzheitlichen Blick auf die Leistung einer Seite. Sie können erkennen, wie oft die Seite zitiert wird, wie bei Erwähnungen das Sentiment von KI-Antworten ausfällt, in welchen Themen und Prompts die Seite auftaucht und wie die zeitlichen Trends bei Agent-basiertem und Referral Traffic aussehen.
 
 >[!ENDTABS]
 
-In beiden Tabellen können Sie die Option **Exportieren** verwenden, um die `.csv` herunterzuladen und die Einblicke mit Ihrem Team zu teilen oder die Tabellen in das Reporting für Führungskräfte aufzunehmen.
+In beiden Tabellen können Sie mit der Option **Exportieren** die `.csv`-Datei der Tabelle herunterladen und die Erkenntnisse mit Ihrem Team teilen oder die Tabellen in das Reporting für Führungskräfte aufnehmen.

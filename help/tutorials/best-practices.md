@@ -1,241 +1,241 @@
 ---
 title: Best Practices für LLM Optimizer
-description: Entdecken Sie Best Practices für die LLM-Optimierung zur Steigerung des Markensichtbarkeit in der KI-Suche. Insights für Benchmarking und Inhaltsoptimierung.
+description: Entdecken Sie Best Practices für die LLM-Optimierung zur Steigerung der Markensichtbarkeit bei der KI-Suche. Erkenntnisse für das Benchmarking und die Inhaltsoptimierung.
 feature: Best Practices, Agentic Traffic, Brand Presence
 source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
-workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1718'
+ht-degree: 100%
 
 ---
 
 
 # Best Practices für LLM Optimizer
 
-Mit LLM-Optimierung, auch Generative Engine Optimization (GEO) oder Answer Engine Optimization (AEO) oder AI Optimization (AIO) genannt, machen Sie Ihre Marke und Ihre Inhalte in von KI generierten Antworten sichtbar, vertrauenswürdig und abrufbar - in ChatGPT, Perplexity, Copilot, Gemini und anderen von LLM gesteuerten Assistenten.
+Mit LLM-Optimierung, auch Generative Engine Optimization (GEO), Answer Engine Optimization (AEO) oder AI Optimization (AIO) genannt, machen Sie Ihre Marke und Ihre Inhalte in KI-generierten Antworten sichtbar, vertrauenswürdig und abrufbar – ob in ChatGPT, Perplexity, Copilot, Gemini oder anderen LLM-gesteuerten Assistenten.
 
-Wenn Ihnen die herkömmliche SEO geholfen hat, seitenweise Ranglisten zu gewinnen, hilft Ihnen die LLM-Optimierung, KI-Zitate und Sichtbarkeit innerhalb der Antwort-Engines zu gewinnen. Mit der Adobe LLM Optimizer können Sie die Sichtbarkeit Ihrer Marke innerhalb von Antwort-Engines messen und verbessern.
+Während Ihnen die herkömmliche SEO geholfen hat, Top-Ränge auf der ersten Suchergebnisseite zu gewinnen, hilft Ihnen LLM-Optimierung, bei KI-Zitierungen und Sichtbarkeit innerhalb der Antwort-Engines gut abzuschneiden. Mit Adobe LLM Optimizer können Sie die Sichtbarkeit Ihrer Marke innerhalb von Antwort-Engines messen und verbessern.
 
 In diesem Artikel werden Best Practices für die Messung und Verbesserung Ihrer Sichtbarkeit und Ihres Einflusses in KI-gestützten Suchumgebungen mit Adobe LLM Optimizer beschrieben.
 
-* [LLM vs SEO: Die wichtigsten Unterschiede](#key-differences)
+* [LLM vs. SEO: Die wichtigsten Unterschiede](#key-differences)
 * [Strategische Kampagnenplanung](#strategic-campaign-planning)
 * [Onsite-Optimierung](#onsite-optimization---strengthening-your-owned-content)
 * [Offsite-Optimierung](#offsite-optimization---expanding-your-brand-footprint)
-* [Messung der LLM-Sichtbarkeit und Tracking von Änderungen](#measuring-llm-visibility-and-tracking-changes)
-* [Optimieren von für agenten Traffic](#how-to-optimize-for-agentic-traffic)
+* [Messen der LLM-Sichtbarkeit und Nachverfolgen von Änderungen](#measuring-llm-visibility-and-tracking-changes)
+* [So optimieren Sie für Agent-basierten Traffic](#how-to-optimize-for-agentic-traffic)
 
-## LLM vs SEO: Die wichtigsten Unterschiede {#key-differences}
+## LLM vs. SEO: Die wichtigsten Unterschiede {#key-differences}
 
-Eine starke SEO-Foundation unterstützt die LLM-Optimierung, aber es sind neue Taktiken erforderlich, um die Sichtbarkeit in KI-generierten Antworten sicherzustellen.
+Ein starkes SEO-Fundament unterstützt die LLM-Optimierung, aber es sind neue Taktiken erforderlich, um die Sichtbarkeit in KI-generierten Antworten sicherzustellen.
 
 >[!NOTE]
 >
->Derzeit ist SEO Traffic immer noch der größte Treiber von Traffic zu den meisten Web, was es sehr wichtig für die Sichtbarkeitsstrategie Ihrer Marke ist.
+>Derzeit ist SEO-Traffic für den Großteil des Webs immer noch der größte Traffic-Treiber und damit sehr wichtig für die Sichtbarkeitsstrategie Ihrer Marke.
 
 
 | SEO | LLM |
 |---------|----------|
-| Index-basiert | *Token-basiert (trainierte Daten) |
-| Bedeutung der Link-Autorität | **Markenerwähnung sind wichtiger |
+| Index-basiert | * Token-basiert (trainierte Daten) |
+| Link-Autorität ist wichtig | ** Markenerwähnungen sind wichtiger |
 | JS-Rendering unterstützt | Sehr eingeschränktes Client-seitiges JS-Rendering |
-| Echtzeit-Indizierung | ***Retrieval-Augmented Generation (RAG) für Frische |
+| Echtzeit-Indizierung | *** Retrieval-Augmented Generation (RAG) für Aktualität |
 
-* Obwohl LLM-Ergebnisse keine indizierten Seiten verwenden, verwenden LLMs Suchmaschinen, um schnelle Antworten über Retrievel-Augmented Generation (RAG) zu verbessern.
+* LLM-Ergebnisse verwenden zwar keine indizierten Seiten, nutzen aber Suchmaschinen, um Prompt-Antworten über Retrieval-Augmented Generation (RAG) zu verbessern.
 
-** LLMs priorisieren die Content-Relevanz und das Markenpräsenz vor Backlinks.
+** LLMs priorisieren Inhaltsrelevanz und Markenpräsenz vor Backlinks.
 
 *** RAG reduziert Halluzinationen
 
 Weitere Überlegungen zur LLM-Optimierung:
 
-* Die Aktualität der Inhalte ist wichtig: Bei LLMs haben kürzlich aktualisierte Inhalte Priorität. (Suchmaschinen priorisieren dies auch für zeitkritische Abfragen, setzen aber stärker auf andere Werte.)
-* Es ist sehr wichtig, sich in Form von Erwähnungen und Zitaten zu verdienen (Drittanbieter).
+* Die Aktualität der Inhalte ist wichtig: Bei LLMs haben vor Kurzem aktualisierte Inhalte Priorität. (Suchmaschinen priorisieren dies ebenfalls bei zeitkritischen Abfragen, setzen aber stärker auf andere Werte.)
+* Verdiente Inhalte (von Drittanbietern) in Form von Erwähnungen und Zitierungen sind sehr wichtig.
 
 ## Strategische Kampagnenplanung
 
 Die Erstellung einer erfolgreichen LLM-Optimierungskampagne umfasst Folgendes:
 
-* Identifizieren Sie hochwertige Themen, die auf die Kundenabsicht abgestimmt sind. Richten Sie die Eingabeaufforderung an den Geschäftszielen und den Kundenanforderungen aus.
-* Spot erwähnt andere, einschließlich Konkurrenten, um Lücken und Chancen zu finden. Konzentrieren Sie sich auf Eingabeaufforderungen, bei denen andere zitiert werden, und zeigen Sie die Möglichkeit für die Markeneinbindung an.
-* Eingabeaufforderungen nach Absicht mithilfe von Themen-Clustering gruppieren: Verwenden Sie Themen und Suchfelder, um ähnliche Benutzerziele für das Benchmarking der Sichtbarkeit zu gruppieren.
-* Beurteilen Sie die Glaubwürdigkeit Ihrer Marke anhand von EAT-Standards (Experience, Expertise, Authoritativity, Trustworthy) und YMYL-Standards (Your Money or Your Life).
+* Identifizieren Sie hochwertige Themen, die auf die Kundenabsicht abgestimmt sind. Richten Sie die Prompt-Absicht an den Unternehmenszielen und den Kundenanforderungen aus.
+* Identifizieren Sie Erwähnungen von anderen, einschließlich der Wettbewerber, um Lücken und Möglichkeiten zu finden. Konzentrieren Sie sich auf Prompts, in denen andere zitiert werden, da dies auf Möglichkeiten für die Einbindung Ihrer Marke hinweist.
+* Gruppieren Sie Prompts nach Absicht mithilfe von Themen-Clustering: Verwenden Sie Themen und Suchfelder, um ähnliche Benutzerziele für das Benchmarking der Sichtbarkeit zu bündeln.
+* Bewerten Sie die Glaubwürdigkeit Ihrer Marke anhand der Standards EAT (Experience, Expertise, Authoritativeness, Trustworthiness) und YMYL (Your Money or Your Life).
 
 Dieser strategische Ansatz gewährleistet gezielte, datengestützte Verbesserungen der LLM-Sichtbarkeit.
 
-### Entsperren von LLM Markensichtbarkeit
+### Optimieren der LLM-Markensichtbarkeit
 
 Bei der LLM-Sichtbarkeit geht es darum, wie oft und wie deutlich Ihre Marke in KI-generierten Antworten zu sehen ist.
 
-Folgen Sie diesem Zyklus, um Ihre Sichtbarkeit zu verbessern:
+Verbessern Sie Ihre Sichtbarkeit mit folgendem Zyklus:
 
-Analysieren > Plan > Handeln > Anpassen
+Analysieren > Planen > Handeln > Anpassen
 
-* **Analysieren:** Überprüfen Sie in allen LLMs, wie Ihre Marke in den wichtigsten Kundenaufforderungen erscheint.
-* **Plan** Targeting von Eingabeaufforderungen-Clustern mit ähnlichem Zweck für fokussierte Kampagnen.
-* **Act** Implementieren Sie Änderungen und überwachen Sie Veränderungen der LLM-Sichtbarkeit im Laufe der Zeit.
-* **Anpassen** Verfeinern von Strategien auf der Grundlage umsetzbarer Einblicke aus dem Optimizer.
+* **Analysieren:** Prüfen Sie in allen LLMs, wie Ihre Marke in den wichtigsten Kunden-Prompts erscheint.
+* **Planen:** Streben Sie nach Gruppen von Prompts mit ähnlichem Zweck für fokussierte Kampagnen.
+* **Handeln:** Implementieren Sie Änderungen und überwachen Sie Veränderungen der LLM-Sichtbarkeit im Zeitverlauf.
+* **Anpassen** Verfeinern Sie Strategien basierend auf den umsetzbaren Optimizer-Erkenntnissen.
 
 <!--insert image-->
 
-Wenn Sie diese Schritte verstehen und nutzen, kann Ihre Marke relevant bleiben, da KI für die Informationsfindung von zentraler Bedeutung ist.
+Wenn Sie diese Schritte verstehen und nutzen, kann Ihre Marke relevant bleiben, da KI bei der Entdeckung von Informationen eine immer zentralere Rolle spielt.
 
-## Onsite-Optimierung - Stärkung Ihrer eigenen Inhalte
+## Onsite-Optimierung – Stärkung Ihrer eigenen Inhalte
 
-Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für eine bessere Sichtbarkeit von LLM. Dies sind Aktionen, die Sie auf Ihrer eigenen Website und in Ihren digitalen Eigenschaften durchführen, um die Wahrnehmung, den Zugriff und die Zitat Ihrer Marke durch LLMs zu verbessern.
-
->[!TIP]
->
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können mithilfe von LLM Optimizer direkt auf Ihrer Site bereitgestellt werden.
-
-Im Folgenden finden Sie einige Best Practices zur Optimierung:
-
-1. Gewährleistung der technischen Barrierefreiheit
-
-   * Überprüfen Sie die robots.txt- und CDN-Einstellungen, damit KI-Agenten Ihre Site crawlen können.
-   * Identifizieren Sie mit dem URL-Inspektor blockierte oder nicht zugängliche Seiten. Siehe [URL-](/help/dashboards/url-inspector.md).
-
-2. Inhalt aktualisieren und strukturieren
-
-   * Aktualisieren Sie 10-15 % des Seiteninhalts regelmäßig. LLMs priorisieren neue Inhalte.
-   * Hinzufügen von Zitaten und Verweisen auf autoritative Quellen.
-   * Verwenden Sie strukturierte Kopfzeilen (H1, H2, H3) für ein besseres Parsen.
-
-3. Häufig gestellte Fragen zur Integration
-
-   * Fügen Sie FAQs in natürlicher Sprache hinzu, die auf einer sofortigen Analyse basieren.
-   * Beantworten gängiger Benutzerfragen in Dialogformaten.
-
-4. Überwachen und iterieren
-
-   * Verwenden Sie das [Opportunities-Dashboard](/help/dashboards/opportunities.md) um Recommendations zu identifizieren und zu bearbeiten.
-   * Tracking von Sichtbarkeitsbewertung-, Sentiment- und Zitierfrequenzen.
-   * Passen Sie sich je nach Aktivität des anderen (einschließlich der Konkurrenz) und den zeitnahen Trends an.
-
-## Offsite-Optimierung - Erweiterung des Markenaufkommens
-
-Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit Ihrer Marke in KI-generierten Antworten durch die Beeinflussung von Drittanbieter-Inhaltsquellen, die von LLMs häufig zitiert werden. Dies sind Aktionen, die außerhalb Ihrer eigenen Eigenschaften durchgeführt werden, um zu beeinflussen, wie LLMs Ihre Marke finden und zitieren.
+Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für bessere LLM-Sichtbarkeit. Dies sind Aktionen, die Sie auf Ihrer eigenen Website und in Ihren digitalen Präsenzen durchführen, um die Wahrnehmung, den Zugriff und die Zitierungen Ihrer Marke durch LLMs zu verbessern.
 
 >[!TIP]
 >
->Die LLM Optimizer schlägt Optimierungsmöglichkeiten vor Ort und außerhalb des [&#x200B; im Dashboard &#x200B;](/help/dashboards/opportunities.md)Opportunities“ vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können mithilfe von LLM Optimizer direkt auf Ihrer Site bereitgestellt werden.
+>LLM Optimizer schlägt im Dashboard [Möglichkeiten](/help/dashboards/opportunities.md) Onsite- und Offsite-Optimierungsmöglichkeiten vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können Sie mithilfe von LLM Optimizer direkt auf Ihrer Site bereitstellen.
+
+Hier sind einige Best Practices zur Optimierung:
+
+1. Gewährleisten Sie die technische Zugänglichkeit
+
+   * Prüfen Sie die Datei robots.txt und die CDN-Einstellungen, damit AI Agents Ihre Site crawlen können.
+   * Identifizieren Sie mit der URL-Überwachung blockierte oder nicht zugängliche Seiten. Siehe [URL-Überwachung](/help/dashboards/url-inspector.md).
+
+2. Aktualisieren und strukturieren Sie die Inhalte
+
+   * Aktualisieren Sie regelmäßig 10–15 % der Seiteninhalte. LLMs priorisieren aktuelle Inhalte.
+   * Fügen Sie Zitierungen und Referenzen auf autoritative Quellen hinzu.
+   * Verwenden Sie strukturierte Überschriften (H1, H2, H3) für besseres Parsing.
+
+3. Integrieren Sie häufig gestellte Fragen
+
+   * Fügen Sie basierend auf Prompt-Analysen häufig gestellte Fragen in natürlicher Sprache hinzu.
+   * Beantworten Sie häufige Benutzerfragen in Dialogformaten.
+
+4. Überwachen und iterieren Sie
+
+   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md), um Empfehlungen zu identifizieren und zu implementieren.
+   * Verfolgen Sie Sichtbarkeitsbewertung, Sentiment und Häufigkeit von Zitierungen nach.
+   * Nehmen Sie Anpassungen je nach Aktivität anderer (einschließlich der Wettbewerber) und Prompt-Trends vor.
+
+## Offsite-Optimierung – Erweitern Ihrer Markenpräsenz
+
+Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit Ihrer Marke in KI-generierten Antworten durch die Beeinflussung von Drittanbieter-Inhaltsquellen, die von LLMs häufig zitiert werden. Dies sind Aktionen, die außerhalb Ihrer eigenen Präsenz durchgeführt werden, um zu beeinflussen, wie LLMs Ihre Marke finden und zitieren.
+
+>[!TIP]
+>
+>LLM Optimizer schlägt im Dashboard [Möglichkeiten](/help/dashboards/opportunities.md) Onsite- und Offsite-Optimierungsmöglichkeiten vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können Sie mithilfe von LLM Optimizer direkt auf Ihrer Site bereitstellen.
 
 
-Wichtige externe Kanäle:
+Wichtige Offsite-Kanäle:
 
-* Wikipedia: Stellen Sie sicher, dass Seiten aktuell, gut belegt und neutral geschrieben sind.
-* Reddit und Quora: Nehmen Sie an Diskussionen mit authentischen, hilfreichen Beiträgen und Markenerwähnung teil.
-* Affiliate-Artikel und Rezensionen: Zusammenarbeit mit Herausgebern für hochwertige Inhalte.
-* YouTube und Social Media: Erstellen Sie Videos und Posts, die häufig gestellte Fragen beantworten.
-* News und PR: Sichere Berichterstattung in seriösen Outlets.
+* Wikipedia: Stellen Sie sicher, dass Seiten aktuell, fundiert und neutral geschrieben sind.
+* Reddit und Quora: Beteiligen Sie sich mit authentischen, hilfreichen Beiträgen und Markenerwähnungen an Diskussionen.
+* Affiliate-Artikel und Rezensionen: Arbeiten Sie gemeinsam mit den Verfassenden an hochwertigen Inhalten.
+* YouTube und Social Media: Erstellen Sie Videos und Beiträge, die häufig gestellte Fragen beantworten.
+* Nachrichten und PR: Sorgen Sie für Berichterstattung auf seriösen Kanälen.
 
 Best Practices:
 
-* Diversifizieren Sie Ihren Offsite-Platzbedarf.
-* Überwachen von Zitaten mit Adobe LLM Optimizer. Siehe [Markenpräsenz-Dashboard](/help/dashboards/brand-presence.md).
-* Veraltete Inhalte aktualisieren und neue Einbeziehungsmöglichkeiten suchen.
-* Koordinieren Sie sich mit PR- und Social-Teams.
+* Diversifizieren Sie Ihre Offsite-Präsenz.
+* Überwachen Sie Zitierungen mit Adobe LLM Optimizer. Siehe [Dashboard „Markenpräsenz“](/help/dashboards/brand-presence.md).
+* Aktualisieren Sie veraltete Inhalte und suchen Sie nach Möglichkeiten zur Einbeziehung neuer Inhalte.
+* Koordinieren Sie sich mit PR- und Social-Media-Teams.
 * Stellen Sie sicher, dass die Beiträge unvoreingenommen und informativ sind.
 
-Eine konsistente Ausführung dieser Schritte kann die Präsenz Ihrer Marke in KI-gestützten Suchergebnissen erheblich verbessern.
+Wenn Sie diese Schritte konsequent befolgen, können Sie die Präsenz Ihrer Marke in Ergebnissen von KI-gestützter Suche erheblich verbessern.
 
-## Messung der LLM-Sichtbarkeit und Tracking von Änderungen
+## Messen der LLM-Sichtbarkeit und Nachverfolgen von Änderungen
 
-Um LLMs optimieren zu können, ist es wichtig zu verstehen, wie Ihre Marke in KI-generierten Antworten angezeigt wird. Adobe LLM Optimizer bietet eine strukturierte Möglichkeit, die Sichtbarkeit zu messen, die Leistung zu vergleichen und Verbesserungen im Zeitverlauf zu verfolgen
+Um für LLMs optimieren zu können, müssen Sie unbedingt verstehen, wie Ihre Marke in KI-generierten Antworten dargestellt wird. Adobe LLM Optimizer bietet eine strukturierte Methode, die Sichtbarkeit zu messen, die Leistung zu benchmarken und Verbesserungen im Zeitverlauf nachzuverfolgen
 
-Verfolgen Sie diese Schlüsselmetriken:
+Verfolgen Sie diese Schlüsselmetriken nach:
 
-* **Erwähnungen:** wie oft Ihre Marke in Antworten erwähnt wird.
-* **Zitate:** Wie oft LLMs Ihre Inhalte oder Quellen zur Beantwortung von Fragen verwenden.
-* **Sentiment:** Gibt an, ob die Erwähnung Ihrer Marke positiv, neutral oder negativ ist.
-* **Position:** Wo Ihre Marke in der Antwort erwähnt wird (z. B. zuerst, mittel oder zuletzt).
+* **Erwähnungen:** Gibt an, wie oft Ihre Marke in Antworten erwähnt wird.
+* **Zitierungen:** Gibt an, wie oft LLMs Ihre Inhalte oder Quellen zur Beantwortung von Fragen verwenden.
+* **Sentiment:** Gibt an, ob die Erwähnungen Ihrer Marke positiv, neutral oder negativ sind.
+* **Position:** Gibt an, wo Ihre Marke in der Antwort erwähnt wird (z. B. als Erstes, in der Mitte oder als Letztes).
 
-Diese Metriken werden zu einem **Sichtbarkeitswert** der Ihnen mitteilt, wie stark die Präsenz Ihrer Marke in LLM-Antworten ist. Siehe die [Markenpräsenz](/help/dashboards/brand-presence.md)-Karte.
+Diese Metriken ergeben gemeinsam einen Wert für die **Sichtbarkeit**, an dem Sie ablesen können, wie stark die Präsenz Ihrer Marke in LLM-Antworten ist. Siehe das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md).
 
 ### Tracking-Strategie
 
-Im Folgenden finden Sie Schritte, mit denen Sie den Fortschritt überwachen können:
+Mit folgenden Schritten können Sie den Fortschritt überwachen:
 
-1. Vergleichen Sie Ihre aktuelle Sichtbarkeit.
-   * Ermitteln Sie, wie oft und wo Ihre Marke erwähnt und zitiert wird und was die Sentiment in Adobe LLM Optimizer ist. Siehe das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md).
-   * Analysieren Sie Eingabeaufforderungen, wo Ihre Marke erscheint und wo nicht.
-   * Sichtbarkeit mit anderen, einschließlich Mitbewerbern, vergleichen (in **Andere-Tracking** im [Kundenkonfigurations-Dashboard](/help/dashboards/customer-configuration.md)).
-   * Überprüfen Sie die Sichtbarkeit auf benutzergenerierten Plattformen wie Reddit, Quora und Wikipedia. Segment für Plattform (ChatGPT, Google-KI-Modus usw.)
-   * Überwachen Sie den Agent-Traffic, um zu verstehen, welche Seiten LLMs besuchen. Agent-Traffic **oft nicht** die Startseite, sondern auf andere Seiten weiter unten in der Hierarchie. Siehe das Dashboard [Agent Traffic](/help/assets/overview/agentic-traffic-card.png).
-1. Änderungen im Zeitverlauf überwachen.
-   * Verwenden Sie Zeitfilter, um Wochen- und Monatsschichten zu verfolgen.
-   * Achten Sie auf Spikes oder Tropfen im Sichtbarkeitsbewertung.
-   * Analysieren Sie Sentiment-Trend, um die Markenwahrnehmung zu verstehen.
+1. Benchmarken Sie Ihre aktuelle Sichtbarkeit.
+   * Ermitteln Sie in Adobe LLM Optimizer, wie oft und wo Ihre Marke erwähnt und zitiert wird und wie das Sentiment ausfällt. Siehe das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md).
+   * Analysieren Sie, in welchen Prompts Ihre Marke erscheint und in welchen nicht.
+   * Vergleichen Sie Ihre Sichtbarkeit mit der von anderen, einschließlich Wettbewerbern (unter **Tracking von anderen** im [Dashboard „Kundenkonfiguration“](/help/dashboards/customer-configuration.md)).
+   * Prüfen Sie die Sichtbarkeit auf benutzergenerierten Plattformen wie Reddit, Quora und Wikipedia. Segmentieren Sie nach Plattform (ChatGPT, Google AI Mode usw.)
+   * Überwachen Sie den Agent-basierten Traffic, um zu verstehen, welche Seiten von LLMs besucht werden. Agent-basierter Traffic betrifft häufig **nicht** die Startseite, sondern andere Seiten weiter unten in der Hierarchie. Siehe das Dashboard [Agent-basierter Traffic](/help/assets/overview/agentic-traffic-card.png).
+1. Überwachen Sie Änderungen im Zeitverlauf.
+   * Verwenden Sie Zeitfilter, um Verschiebungen im Wochen- und Monatsverlauf zu verfolgen.
+   * Achten Sie auf Spitzen oder Dellen in der Sichtbarkeitsbewertung.
+   * Analysieren Sie Sentiment-Trends, um die Markenwahrnehmung zu verstehen.
 1. Korrelieren Sie Sichtbarkeit mit Traffic, Interaktion und Konversionen.
-   * Verwenden Sie Attributionsfunktionen, um Verbesserungen der Sichtbarkeit mit Traffic, Interaktion und Konversionen zu verbinden. Mit Attributionsfunktionen in Adobe LLM Optimizer können Sie Verbesserungen bei Sichtbarkeitsmetriken (Erwähnungen, Zitate, Sentiment) mit echten Geschäftsergebnissen wie Site-Traffic, Benutzerinteraktion und Konversionen verbinden. Dies belegt den ROI Ihrer Optimierungsbemühungen.
-   * Verfolgen Sie Änderungen in Agent und Referral Traffic, um den Optimierungs-ROI zu validieren.
-1. Verbessern von Inhalten
-   * Verwenden Sie das LLM Optimizer[Opportunities-Dashboard](/help/dashboards/opportunities.md) um speziell empfohlene sofortige Änderungen an Ihrer Site zu identifizieren und vorzunehmen. Siehe [Opportunities](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Überprüfen Sie regelmäßig den Abschnitt Opportunitys und ergreifen Sie Maßnahmen entsprechend den bereitgestellten Empfehlungen.
+   * Verwenden Sie Attributionsfunktionen, um Verbesserungen der Sichtbarkeit mit Traffic, Interaktion und Konversionen zu verknüpfen. Mit Attributionsfunktionen in Adobe LLM Optimizer können Sie Verbesserungen bei Sichtbarkeitsmetriken (Erwähnungen, Zitierungen, Sentiment) mit echten Geschäftsergebnissen wie Site-Traffic, Benutzerinteraktionen und Konversionen verbinden. Dies belegt den ROI Ihrer Optimierungsmaßnahmen.
+   * Verfolgen Sie Änderungen in Agent-basiertem und Referral Traffic, um den ROI der Optimierungen zu validieren.
+1. Verbessern Sie Ihre Inhalte.
+   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md) in LLM Optimizer, um spezifisch empfohlene unmittelbare Änderungen an Ihrer Site zu identifizieren und zu implementierenSiehe [Möglichkeiten](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Prüfen Sie regelmäßig den Abschnitt „Möglichkeiten“ und ergreifen Sie Maßnahmen anhand der bereitgestellten Empfehlungen.
    * Priorisieren Sie Seiten mit abnehmender Sichtbarkeit.
-   * Aktualisieren Sie Ihre Website und andere Inhalte, um sie für die Eingabeaufforderungen, die Sie ansprechen möchten, relevanter zu machen.
-   * Fügen Sie Ihren Seiten FAQs hinzu, die häufig gestellte Fragen beantworten.
-   * Stellen Sie sicher, dass Ihre Inhalte für LLMs leicht zu finden und zu lesen sind. Beheben von Problemen wie blockierten Seiten oder Problemen mit dem Code Ihrer Website.
-   * Stellen Sie sicher, dass Beiträge zu Plattformen wie Wikipedia und Reddit unvoreingenommen und nicht kommerziell sind und einen Mehrwert bieten.
-   * Verwenden Sie Adobe LLM Optimizer, um zu verfolgen, wie sich Ihre Sichtbarkeit im Laufe der Zeit ändert.
-   * Wenn Sie bemerken, dass andere, darunter auch Wettbewerber, häufiger erwähnt werden, passen Sie Ihre Strategie an, um einen Vorsprung zu haben.
-   * Aktualisieren Sie Ihre Inhalte immer wieder, damit sie mit dem übereinstimmen, wonach gesucht und gefragt wird.
-1. Anpassen von [Offsite](#offsite-optimization---expanding-your-brand-footprint) und [Onsite](#onsite-optimization---strengthening-your-owned-content)-Strategien basierend auf Erkenntnissen.
+   * Aktualisieren Sie Ihre Website und andere Inhalte, um sie relevanter für die Prompts zu machen, die Sie ansprechen möchten.
+   * Fügen Sie Ihren Seiten häufig gestellte Fragen hinzu, um Antworten auf gängige Fragen zu geben.
+   * Stellen Sie sicher, dass Ihre Inhalte für LLMs leicht zu finden und zu lesen sind. Beheben Sie Fehler wie blockierte Seiten oder Probleme mit dem Code Ihrer Website.
+   * Stellen Sie sicher, dass Beiträge auf Plattformen wie Wikipedia und Reddit unvoreingenommen und nicht kommerziell sind und einen Mehrwert bieten.
+   * Verwenden Sie Adobe LLM Optimizer, um nachzuverfolgen, wie sich Ihre Sichtbarkeit im Zeitverlauf ändert.
+   * Wenn Sie bemerken, dass andere, einschließlich Wettbewerbern, häufiger erwähnt werden, passen Sie Ihre Strategie an, um Ihre Position zu sichern.
+   * Aktualisieren Sie Ihre Inhalte immer wieder, damit sie auf die Suchvorgänge und Fragen der Benutzenden abgestimmt bleiben.
+1. Passen Sie [Offsite-](#offsite-optimization---expanding-your-brand-footprint) und [Onsite](#onsite-optimization---strengthening-your-owned-content)-Strategien basierend auf den Erkenntnissen an.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Ihre Inhalte für LLMs sichtbar und zugänglich sind. Sie können das Chrome-Plug-in verwenden, um zu sehen, was KI-Agenten sehen können.
+>Stellen Sie sicher, dass Ihre Inhalte für LLMs sichtbar und zugänglich sind. Mit dem Chrome-Plug-in können Sie nachvollziehen, was AI Agents angezeigt wird.
 
-## Verstehen des Agentenverkehrs
+## Analysieren des Agent-basierten Traffics
 
-Agentenverkehr bezieht sich auf Besuche von KI-Agenten wie ChatGPT, Googles KI-Modus/Übersichten, Copilot oder Ratlosigkeit. Diese Agenten crawlen Ihre Website, um Informationen zum Generieren von Antworten zu sammeln.
+Agent-basierter Traffic bezeichnet Besuche von AI Agents wie ChatGPT, Google AI Mode/Overviews, Copilot oder Perplexity. Diese Agents crawlen Ihre Website, um Informationen zum Generieren von Antworten zu erfassen.
 
-Agentenverkehr wird auf zwei Arten angezeigt: Erlebnisse mit null Klicks und Sichtbarkeit ohne Klicks.
+Agent-basierter Traffic tritt in zwei Formen auf: Null-Klick-Erlebnisse und Sichtbarkeit ohne Klicks.
 
-### Zero-Click-Erlebnisse
+### Null-Klick-Erlebnisse
 
-Bei der herkömmlichen Suche klicken Benutzer auf Websites, um Inhalte zu nutzen. Bei LLMs erhalten Benutzer jedoch häufig vollständige Antworten direkt in der Chat-Oberfläche oder auf der Suchmaschinenergebnisseite, ohne jemals Ihre Website zu besuchen. Dies wird als Zero-Click-Erlebnis bezeichnet.
+Bei der herkömmlichen Suche klicken Benutzende auf Websites, um Inhalte zu nutzen. Bei LLMs erhalten Benutzende jedoch häufig vollständige Antworten direkt in der Chat-Oberfläche oder in den Ergebnissen der Suchmaschine, ohne dass sie jemals Ihre Website besuchen. Dies wird als Null-Klick-Erlebnis bezeichnet.
 
-Was dies für Ihre Marke bedeutet:
+Bedeutung für Ihre Marke:
 
 1. Ihr Inhalt kann von einem KI-Assistenten zusammengefasst oder zitiert werden.
-2. Der Benutzer erhält die benötigten Informationen, ohne auf Ihren Link zu klicken.
+2. Die Benutzenden erhalten die benötigten Informationen, ohne auf Ihren Link zu klicken.
 3. Die Sichtbarkeit und der Einfluss Ihrer Site sind vom Traffic entkoppelt.
 
 Selbst wenn Ihre Analysen also weniger Besuche zeigen, könnte Ihre Marke bei KI-generierten Antworten immer noch sehr sichtbar und einflussreich sein.
 
 ### Sichtbarkeit ohne Klicks
 
-Agent-Traffic bezieht sich auf KI-Bots, die Ihre Site besuchen, um Informationen für Schulungs- oder Antwortaufforderungen zu sammeln.
+Agent-basierter Traffic bezieht sich auf KI-Bots, die Ihre Site besuchen, um Informationen für Trainings-Zwecke oder für Antworten auf Prompts zu erfassen.
 
-Diese Bots führen die folgenden Schritte durch:
+Diese Bots führen Folgendes aus:
 
-1. Crawlen Seiten, um Fakten, Struktur und Kontext zu extrahieren.
-2. Verwenden Sie diese Daten, um Antworten für Benutzer zu generieren.
-3. Darf Ihre Marke oder Ihre Inhalte zitieren - auch wenn kein Mensch je durch klickt.
+1. Sie crawlen Ihre Seiten, um Fakten, Struktur und Kontext zu extrahieren.
+2. Sie verwenden diese Daten, um Antworten für Benutzende zu generieren.
+3. Sie zitieren möglicherweise Ihre Marke oder Ihre Inhalte, selbst ohne Clickthrough durch Personen.
 
 Warum dies wichtig ist:
 
-* Ihre Inhalte können Benutzerentscheidungen indirekt beeinflussen.
-* Sie beeinflussen möglicherweise das Kaufverhalten, die Markenwahrnehmung oder das Vertrauen ohne herkömmliche Interaktionsmetriken.
+* Ihre Inhalte können Entscheidungen von Benutzenden indirekt beeinflussen.
+* Möglicherweise beeinflussen Sie das Kaufverhalten, die Markenwahrnehmung oder das Vertrauen ohne herkömmliche Interaktionsmetriken.
 
-Das Tracking des Agent-Traffics hilft Ihnen zu verstehen, wie KI Ihre Inhalte sieht und verwendet.
+Durch das Tracking des Agent-basierten Traffics können Sie verstehen, wie KI Ihre Inhalte sieht und verwendet.
 
-### Optimieren von für agenten Traffic
+### So optimieren Sie für Agent-basierten Traffic
 
-So optimieren Sie den Agent-Traffic:
+Optimieren für Agent-basierten Traffic:
 
-* Stellen Sie das Crawlability sicher, indem Sie die Einstellungen robots.txt und CDN überprüfen.
-* Verwenden Sie den [URL Inspector](/help/dashboards/url-inspector.md) um die URL-Leistung zu analysieren.
-* Verfolgen Sie das Bot-Verhalten, indem Sie auf Ihre CDN-Protokolle im [Agent-Traffic-Dashboard](/help/dashboards/agentic-traffic.md) zugreifen.
-* Segmentieren Sie Traffic, um Geschäftsergebnisse zu verstehen. Siehe [Best Practices für Kategorien, Themen und Eingabeaufforderungen](/help/overview/best-practices-topics-prompts.md).
+* Stellen Sie die Crawlability sicher, indem Sie die Datei robots.txt und die CDN-Einstellungen prüfen.
+* Verwenden Sie die [URL-Überwachung](/help/dashboards/url-inspector.md), um die URL-Leistung zu analysieren.
+* Verfolgen Sie das Bot-Verhalten nach, indem Sie im [Dashboard „Agent-basierter Traffic“](/help/dashboards/agentic-traffic.md) Ihre CDN-Protokolle aufrufen.
+* Segmentieren Sie Traffic, um Geschäftsergebnisse zu verstehen. Siehe [Best Practices für Kategorien, Themen und Prompts](/help/overview/best-practices-topics-prompts.md).
 
-Im Folgenden finden Sie die zu überwachenden Metriken:
+Folgende Metriken sollten Sie überwachen:
 
 * Agent-Treffer pro URL
 * Erfolgsrate der Bot-Anfragen
-* Zitationshäufigkeit pro Seite
-* Sentiment und Platzierung von Markenerwähnung
-* Sichtbarkeitsbewertung-Trends im Zeitverlauf
+* Zitierungshäufigkeit pro Seite
+* Sentiment und Platzierung von Markenerwähnungen
+* Zeitliche Trends der Sichtbarkeitsbewertung
 
 <!-- Add screenshot when available in demo environment>
 

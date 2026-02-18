@@ -1,21 +1,21 @@
 ---
 title: Zusammenarbeit
-description: Erfahren Sie, wie Sie mit dem Collaboration-Dashboard Team-Mitglieder zum LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen können.
+description: Erfahren Sie, wie Sie im Dashboard „Zusammenarbeit“ Team-Mitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen können.
 feature: Collaboration
 source-git-commit: c6e37395362262eb5fe8366473e76086e36d77e9
-workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 1%
+workflow-type: ht
+source-wordcount: '108'
+ht-degree: 100%
 
 ---
 
 
 # Zusammenarbeit
 
-Mit Collaboration können Sie Teammitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen, damit jeder von einem Ort aus auf Einblicke und Analysen zugreifen kann. Durch das Hinzufügen von Kollegen stellen Sie sicher, dass Marketing-, SEO-, PR- und technische Teams nahtlos bei Markensichtbarkeit-Verbesserungen zusammenarbeiten, Ergebnisse austauschen und koordinierte Maßnahmen zu Opportunities ergreifen können.
+Mit „Zusammenarbeit“ können Sie Team-Mitglieder in den LLM Optimizer-Arbeitsbereich Ihres Unternehmens einladen, damit alle von einem zentralen Ort aus auf Erkenntnisse und Analysen zugreifen können. Durch das Hinzufügen von Kolleginnen und Kollegen stellen Sie sicher, dass Marketing-, SEO-, PR- und Technik-Teams nahtlos gemeinsam an Verbesserungen der Markensichtbarkeit arbeiten, Ergebnisse austauschen und koordinierte Maßnahmen zu Möglichkeiten ergreifen können.
 
-## Einladen von Team-Mitgliedern
+## So laden Sie Team-Mitglieder ein
 
-Sie können Mitglieder des Teams einladen, indem Sie ihre E-Mail-Adresse in das Feld **E-Mail** einfügen und auf **Einladung senden** klicken. Wenn sie zustimmen, werden sie dem LLM Optimizer-Arbeitsbereich Ihres Unternehmens beitreten.
+Sie können Team-Mitglieder einladen, indem Sie ihre E-Mail-Adresse in das Feld **E-Mail-Adresse** einfügen und auf **Einladung senden** klicken. Wenn sie zustimmen, treten sie dem LLM Optimizer-Arbeitsbereich Ihres Unternehmens bei.
 
-![Collaboration-Einladung](/help/dashboards/assets/collaboration.png)
+![Einladung zur Zusammenarbeit](/help/dashboards/assets/collaboration.png)
