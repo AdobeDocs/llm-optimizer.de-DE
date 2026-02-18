@@ -3,7 +3,7 @@ title: Optimierungsmöglichkeiten
 description: Erfahren Sie, wie Sie mit dem Dashboard „Möglichkeiten“ automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Markensichtbarkeit zu erhöhen.
 feature: Opportunities
 source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
 ht-degree: 100%
 

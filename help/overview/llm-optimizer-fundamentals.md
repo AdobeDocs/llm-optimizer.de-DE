@@ -2,7 +2,7 @@
 title: LLM Optimizer – Grundlagen
 description: Erfahren Sie, wie Adobe LLM Optimizer die Markensichtbarkeit in KI-gestützten Suchvorgängen erhöht. Verfolgen Sie Erwähnungen, Zitierungen und Erkenntnisse nach. Beginnen Sie noch heute mit der Optimierung für mehr Interaktionen und Einfluss.
 source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '508'
 ht-degree: 100%
 
