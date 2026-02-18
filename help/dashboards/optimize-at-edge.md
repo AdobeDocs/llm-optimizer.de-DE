@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: ae37ef578f279eae6ea51fd8aed5c6b91c8e1088
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '4843'
-ht-degree: 45%
+source-wordcount: '4708'
+ht-degree: 44%
 
 ---
 
@@ -800,7 +800,6 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 | Möglichkeit | Typ | Automatische Identifikation | Automatische Vorschläge | Automatische Optimierung |
 |---------|----------|----------|----------|----------|
 | Inhaltssichtbarkeit wiederherstellen | Technische GEO | Erkennt Seiten, auf denen kritische Inhalte vor AI Agents verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die sichtbar gemacht werden können. | Hebt Inhalte hervor, die für AI Agents verfügbar gemacht werden können, und empfiehlt die Aktivierung von Vorab-Rendering für diese Seiten. | Stellt eine vollständig gerenderte, KI-freundliche HTML-Momentaufnahme für den Agent-basierten Traffic bereit, der den zuvor ausgeblendeten Inhalt sichtbar macht. |
-| Überschriften für LLMs optimieren | Inhaltsoptimierung | Scannt Überschriften, um leere, doppelte, fehlende oder mehrdeutige Überschriften zu erkennen, die die Maschinenlesbarkeit beeinträchtigen können. | Schlägt eine sauberere Überschriftenhierarchie und verbesserte Labels vor und zeigt eine Vorschau der aktualisierten Struktur für jede Seite an. | Fügt die verbesserte Überschriftenstruktur für AI Agents ein, behält Ihr visuelles Design bei und macht die Seite für LLMs besser lesbar. |
 | LLM-freundliche Zusammenfassungen hinzufügen | Inhaltsoptimierung | Identifiziert lange oder komplexe Seiten, denen kurze Zusammenfassungen auf Seiten- oder Abschnittsebene fehlen, was es der KI erschwert, die Seiten schnell zu durchsuchen und zu analysieren. | Empfiehlt kurze, KI-generierte Zusammenfassungen auf Seiten- und Abschnittsebene, die wichtige Inhalte erfassen. | Fügt die Zusammenfassungen in die entsprechenden HTML-Abschnitte ein, wodurch die Interpretation und Beschreibung des Seiteninhalts durch Modelle verbessert wird. |
 | Relevante häufig gestellte Fragen hinzufügen | Inhaltsoptimierung | Erkennt Absichtslücken im vorhandenen Seiteninhalt, die durch häufig gestellte Fragen geschlossen werden könnten. | Schlägt KI-generierte Inhalte für häufig gestellte Fragen vor, die auf die Benutzerabsicht und vorhandene Themen abgestimmt sind. | Fügt Inhalte häufig gestellter Fragen in das HTML ein, sodass Seiten in KI-gestützten Antworten leichter auffindbar und relevanter werden. |
 | Komplexe Inhalte vereinfachen | Inhaltsoptimierung | Kennzeichnet Seiten mit komplexem Text, der das Verständnis durch KI behindern kann. | Stellt KI-generierte vereinfachte Versionen von komplexem Text bereit, wobei die ursprüngliche Bedeutung erhalten bleibt. | Schreibt komplexe Abschnitte auf der Seite um, wodurch die Lesbarkeit für KI verbessert wird. |
@@ -809,7 +808,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die Chrome-Erweiterung [Adobe LLM Optimizer: Ist Ihre Web-Seite zitierbar?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) zeigt an, auf wie viele Inhalte Ihrer Web-Seite LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
@@ -822,10 +821,6 @@ Dadurch wird sichergestellt, dass die Seite zunächst für AI Agents vollständi
 
 >[!IMPORTANT]
 >Diese Vorab-Rendering-Funktion wird auf alle unten dargestellten Möglichkeiten bei der Bereitstellung mit „Optimize at Edge“ angewendet, um sicherzustellen, dass die Seite für AI Agents vollständig sichtbar ist.
-
-### Überschriften für LLMs optimieren
-
-Diese Möglichkeit erkennt Seiten, bei denen die Verständlichkeit für AI Agents durch die Überschriftenstruktur der Seite erschwert wird, da sie leere, doppelte, fehlende oder mehrdeutige Überschriften aufweist. Für jede betroffene Seite zeigt die Möglichkeit die suboptimalen Überschriften und empfiehlt eine klarere Hierarchie. Bei der Bereitstellung mit „Optimize at Edge“ werden die verbesserten Überschriften im HTML angewendet, das dem Agent-basierten Traffic bereitgestellt wird. Dies erleichtert die Maschinenlesbarkeit, während das Layout für Menschen unverändert bleibt.
 
 ### LLM-freundliche Zusammenfassungen hinzufügen
 

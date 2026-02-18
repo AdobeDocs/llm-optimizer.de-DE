@@ -1,48 +1,46 @@
 ---
 title: Optimierungsmöglichkeiten
-description: Erfahren Sie, wie Sie mit dem Opportunities-Dashboard automatisch erkennen können, wie Ihre Site verbessert werden kann, um das Markensichtbarkeit zu steigern.
+description: Erfahren Sie, wie Sie mit dem Dashboard „Möglichkeiten“ automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Markensichtbarkeit zu erhöhen.
 feature: Opportunities
-source-git-commit: 39658a057fd4d67f74dc286e1687e384133ac653
+source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 1%
+source-wordcount: '575'
+ht-degree: 100%
 
 ---
 
 
 # Optimierungsmöglichkeiten
 
-Optimierungsmöglichkeiten werden automatisch erkannt und zeigen, wo Ihre Website und Ihre Präsenz im Außenbereich verbessert werden kann, um das Markensichtbarkeit in der KI-Suche zu steigern.
+Optimierungsmöglichkeiten sind automatisch ermittelte Erkenntnisse und geben an, wo Ihre Website und Ihre externe Präsenz verbessert werden können, um die Markensichtbarkeit in der KI-Suche zu erhöhen.
 
-Zu diesen Optimierungen gehören Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawler oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autorisierenden Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten ansprechen, wird Ihre Marke genau dargestellt und wird eher in generativen Antworten zitiert.
+Zu diesen Optimierungen gehören Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawlern oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autoritativen Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten berücksichtigen, wird Ihre Marke genau repräsentiert und mit höherer Wahrscheinlichkeit in generativen Antworten zitiert.
 
 ![Optimierungsmöglichkeiten](/help/dashboards/assets/oport.png)
 
-## Opportunities-Dashboard
+## Dashboard „Möglichkeiten“
 
-Die im Dashboard dargestellten Optimierungsmöglichkeiten werden basierend auf Player-Lücken, Trend-Themen und Leistungsdaten priorisiert und als Liste dargestellt. Sie können über das Suchfeld nach einer bestimmten Opportunity suchen. Außerdem werden Opportunitys nach Tags gruppiert, und Sie können direkt auf ein Tag klicken, um alle unter diesem Tag gruppierten Opportunitys anzuzeigen.
+Die im Dashboard dargestellten Optimierungsmöglichkeiten werden basierend auf Player-Lücken, Trend-Themen und Leistungsdaten priorisiert und als Liste dargestellt. Sie können über das Suchfeld nach einer bestimmten Möglichkeit suchen. Außerdem werden Möglichkeiten nach Tags gruppiert und Sie können direkt auf ein Tag klicken, um alle unter diesem Tag gruppierten Möglichkeiten anzuzeigen.
 
-Wenn Sie **Details** klicken, wird ein separates Fenster geöffnet, in dem weitere Informationen und zusätzliche Anleitungen bereitgestellt werden.
+Wenn Sie auf **Details** klicken, wird ein separates Fenster geöffnet, in dem weitere Informationen und zusätzliche Anleitungen bereitgestellt werden.
 
-## Unterstützte Opportunities
+## Unterstützte Möglichkeiten
 
-Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Opportunitys:
+Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Möglichkeiten:
 
-| Möglichkeit | Typ | Identifizierte Probleme | Vorschläge korrigieren |
+| Möglichkeit | Typ | Identifizierte Probleme | Korrekturvorschläge |
 |---------|----------|----------|----------|
-| Zusammenfassen langer Absätze | Inhalt (OnSite) | Erkennt Absätze, die empfohlene Längenschwellen überschreiten. Zeigt betroffene URLs und übergroße Textbausteine an. | Erstellen Sie Abstracts oder teilen Sie langen Text in kürzere, überschaubare Abschnitte auf. |
-| Empfohlene strukturierte Inhalte (FAQs) | Inhalt (OnSite) | Erkennt Eingabeaufforderungen mit hoher Popularität ohne übereinstimmende FAQ-Einträge. Zeigt verwandte Eingabeaufforderungen, Kategorien und betroffene URLs an. | Fügen Sie häufig gestellte Fragen (FAQ) zu Schemablöcken mit knappen Antworten hinzu, um gängige Abfragen abzugleichen. |
-| Fehlenden Hrefang erkennen | Inhalt (OnSite) | Markiert Seiten ohne Heflang-Attribute. Betroffene URLs und erwartete Abdeckung nach Sprache/Region. | Implementieren Sie Heflang-Tags, um die richtigen lokalisierten Versionen anzugeben. |
-| Fehlende Kanonikale erkennen | Inhalt (OnSite) | Sucht nach Seiten ohne kanonische Tags oder mit widersprüchlichen Tags. Listet die betroffenen URLs und Duplikate auf. | Fügen Sie kanonische Tags hinzu, die auf die bevorzugte Version jeder Seite verweisen. Sicherstellung einer konsistenten Nutzung über Varianten hinweg. |
-| Leere Überschriften erkennen | Inhalt (OnSite) | Kennzeichnet Seiten, bei denen Überschriften-Tags vorhanden sind, aber keinen Text enthalten. Zeigt URL und Speicherort leerer Tags an. | Fügen Sie Überschriften, die den darunter liegenden Inhalt widerspiegeln, beschreibenden Text hinzu. |
-| Doppelte Überschriften erkennen | Inhalt (OnSite) | Scannt HTML-Überschriften-Tags und kennzeichnet wiederholte Überschriften. Zeigt betroffene URLs und duplizierte Textausschnitte an. | Überschriften ändern, um eindeutig zu sein und die Hierarchie beizubehalten (H1 → H2 → H3). Doppelte Abschnitte zusammenführen oder umbenennen. |
-| Erkennen von blockiertem Agentenverkehr | Technisches GEO | Analysiert CDN-Protokolle auf blockierte Anfragen bekannter KI-Agenten (z. B. GPTBot, PerplexBot). meldet betroffene URLs und Agenten. | Aktualisieren Sie robots.txt oder die Server-Konfigurationen, um ggf. den Zugriff für unterstützte KI-Crawler zuzulassen. |
-| 404s/403s/5xx Probleme erkennen | Technisches GEO | Überwacht CDN-Protokolle auf Fehlerantworten. meldet Häufigkeit, betroffene URLs und geschätzte verlorene Treffer. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200 Antworten zurückgeben. |
-| Content-Sichtbarkeit wiederherstellen (Early Access) | Technisches GEO | Markiert Seiten, auf denen kritische Inhalte vor KI-Agenten verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die wiederhergestellt werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für KI-Agenten ohne JavaScript-Ausführung verfügbar ist. |
+| Zusammenfassen langer Absätze | Inhalt (Onsite) | Erkennt Absätze, die empfohlene Längenschwellen überschreiten. Zeigt betroffene URLs und übergroße Textbausteine an. | Erstellen Sie Kurzfassungen oder teilen Sie langen Text in kürzere, überschaubare Abschnitte auf. |
+| Empfehlung strukturierter Inhalte (häufig gestellte Fragen) | Inhalt (Onsite) | Erkennt Prompts mit hoher Popularität ohne übereinstimmende Einträge in häufig gestellten Fragen. Zeigt ähnliche Prompts, Kategorien und betroffene URLs an. | Fügen Sie Schemablöcke mit häufig gestellten Fragen und knappen Antworten hinzu, die zu gängigen Abfragen passen. |
+| Erkennung fehlender hreflang-Attribute | Inhalt (Onsite) | Kennzeichnet Seiten ohne hreflang-Attribute. Stellt betroffene URLs und erwartete Abdeckung nach Sprache/Region bereit. | Implementieren Sie hreflang-Tags, um die korrekten lokalisierten Versionen anzugeben. |
+| Erkennung fehlender Kanoniken | Inhalt (Onsite) | Sucht nach Seiten ohne Kanonik-Tags oder mit widersprüchlichen Tags. Listet die betroffenen URLs und Duplikate auf. | Fügen Sie Kanonik-Tags hinzu, die auf die bevorzugte Version jeder Seite verweisen. Stellen Sie die konsistente Verwendung in allen Varianten sicher. |
+| Erkennung von blockiertem Agent-basierten Traffic | Technische GEO | Analysiert CDN-Protokolle hinsichtlich blockierter Anfragen bekannter AI Agents (z. B. GPTBot, PerplexityBot). Gibt die betroffenen URLs und Agents an. | Aktualisieren Sie robots.txt oder die Server-Konfigurationen, um den Zugriff für unterstützte KI-Crawler bei Bedarf zuzulassen. |
+| Erkennung von 404s-/403s-/5xx-Problemen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. Gibt Häufigkeit, betroffene URLs und geschätzte verlorene Treffer an. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200-Antworten zurückgeben. |
+| Wiederherstellung der Inhaltssichtbarkeit (Early Access) | Technische GEO | Kennzeichnet Seiten, auf denen kritische Inhalte vor AI Agents verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die sichtbar gemacht werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für AI Agents ohne JavaScript-Ausführung verfügbar ist. |
 
 ## Automatische Optimierung {#auto-optimization}
 
-Die automatische Optimierung ermöglicht die Bereitstellung empfohlener Optimierungen mit einem Klick und reduziert so den manuellen Aufwand und die Wertschöpfungszeit. Optimierungen können entweder an der Inhaltsquelle oder am CDN-Edge angewendet werden. Die Edge-basierte automatische Optimierung ist derzeit für ausgewählte Opportunitys im Early Access-Modus verfügbar. Weitere Informationen finden Sie auf der Seite [Optimieren bei Edge](/help/dashboards/optimize-at-edge.md).
+Die automatische Optimierung ermöglicht die Bereitstellung empfohlener Optimierungen mit einem Klick und reduziert so den manuellen Aufwand und die Time-to-Value. Optimierungen können entweder an der Inhaltsquelle oder am CDN-Edge angewendet werden. Die Edge-basierte automatische Optimierung ist derzeit für ausgewählte Möglichkeiten als Early Access verfügbar. Weitere Informationen finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge.md).
 
 <!--### Recover Content Visibility Opportunity {#recover-contet}
 
@@ -50,4 +48,4 @@ As stated above, the content visibility opportunity, flags pages where key conte
 
 ### Weitere Tools
 
-Der [LLM-Sichtbarkeitsprüfer](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) ist eine Chrome-Erweiterung, mit der Sie genau sehen können, auf wie viel Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Es wurde als kostenloses, eigenständiges Diagnosewerkzeug entwickelt und erfordert keine Produktlizenz oder Einrichtung. Mit einem einzigen Klick können Benutzer die maschinelle Lesbarkeit jeder Site bewerten und einen Vergleich zwischen dem, was KI-Agenten sehen, und dem, was menschliche Benutzer sehen, anzeigen. Außerdem schätzt, wie viel Inhalt mithilfe von LLM Optimizer wiederhergestellt werden könnte.
+Die [LLM-Sichtbarkeitsprüfung](https://chromewebstore.google.com/detail/is-your-webpage-citable/jbjngahjjdgonbeinjlepfamjdmdcbcc) ist eine Chrome-Erweiterung, mit der Sie genau sehen können, auf welche Teile Ihrer Web-Seiteninhalte LLMs zugreifen können und was ihnen verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung. Mit einem einzigen Klick können Benutzende die Maschinenlesbarkeit jeder Site bewerten und vergleichen, was AI Agents angezeigt wird und was menschlichen Benutzenden angezeigt wird. Außerdem bietet das Tool eine Schätzung, in welchem Umfang Inhalte mithilfe von LLM Optimizer sichtbar gemacht werden könnten.
