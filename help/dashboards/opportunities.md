@@ -2,8 +2,8 @@
 title: Optimierungsmöglichkeiten
 description: Erfahren Sie, wie Sie mit dem Dashboard „Möglichkeiten“ automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Markensichtbarkeit zu erhöhen.
 feature: Opportunities
-source-git-commit: 1f665bd14349c15d92f8274742606abcf9b02000
-workflow-type: ht
+source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Möglichkeiten:
 
 ## Automatische Optimierung {#auto-optimization}
 
-Die automatische Optimierung ermöglicht die Bereitstellung empfohlener Optimierungen mit einem Klick und reduziert so den manuellen Aufwand und die Time-to-Value. Optimierungen können entweder an der Inhaltsquelle oder am CDN-Edge angewendet werden. Die Edge-basierte automatische Optimierung ist derzeit für ausgewählte Möglichkeiten als Early Access verfügbar. Weitere Informationen finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge.md).
+Die automatische Optimierung ermöglicht die Bereitstellung empfohlener Optimierungen mit einem Klick und reduziert so den manuellen Aufwand und die Time-to-Value. Optimierungen können entweder an der Inhaltsquelle oder am CDN-Edge angewendet werden. Die Edge-basierte automatische Optimierung ist derzeit für ausgewählte Möglichkeiten als Early Access verfügbar. Weitere Informationen finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 <!--### Recover Content Visibility Opportunity {#recover-contet}
 

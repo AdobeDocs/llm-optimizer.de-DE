@@ -1,99 +1,11 @@
 ---
-source-git-commit: beae935e7a34f5bccbe21578fa9a928912958710
+source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 2%
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 # Snippets
-
-## Überprüfen des Setups - Adobe Managed CDN {#verify-setup-adobe-aem-cs-cdn}
-
-**Überprüfen Sie das Setup**
-
-Stellen Sie nach Abschluss des Setups sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
-
-**1. Bot-Traffic testen (sollte optimiert werden)**
-
-Simulieren einer KI-Bot-Anfrage mithilfe eines agenten Benutzeragenten:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-Eine erfolgreiche Antwort enthält den `x-edgeoptimize-request-id`-Header, der bestätigt, dass die Anfrage über Edge Optimize weitergeleitet wurde:
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. Testen des menschlichen Traffics (sollte NICHT betroffen sein)**
-
-Simulieren Sie eine normale menschliche Browser-Anfrage:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Seiteninhalt und Antwortzeit sollten vor der Aktivierung von Optimieren bei Edge identisch mit bleiben.
-
-**3. Wie lassen sich die beiden Szenarien voneinander unterscheiden**
-
-| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Verkehr (nicht betroffen) |
-|---|---|---|
-| `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
-| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
-
-Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläche überprüft werden. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
-
-![KI-Traffic-Routing-Status mit aktiviertem Routing](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
-
-## Überprüfen des Setups - BYOCDN {#verify-setup-byocdn}
-
-**Überprüfen Sie das Setup**
-
-Stellen Sie nach Abschluss des Setups sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
-
-**1. Bot-Traffic testen (sollte optimiert werden)**
-
-Simulieren einer KI-Bot-Anfrage mithilfe eines agenten Benutzeragenten:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
-
-Eine erfolgreiche Antwort enthält den `x-edgeoptimize-request-id`-Header, der bestätigt, dass die Anfrage über Edge Optimize weitergeleitet wurde:
-
-```
-< HTTP/2 200
-< x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
-```
-
-**2. Testen des menschlichen Traffics (sollte NICHT betroffen sein)**
-
-Simulieren Sie eine normale menschliche Browser-Anfrage:
-
-```
-curl -svo /dev/null https://www.example.com/page.html \
-  --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
-```
-
-Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Seiteninhalt und Antwortzeit sollten vor der Aktivierung von Optimieren bei Edge identisch mit bleiben.
-
-**3. Wie lassen sich die beiden Szenarien voneinander unterscheiden**
-
-| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Verkehr (nicht betroffen) |
-|---|---|---|
-| `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
-| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
-
-Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläche überprüft werden. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
-
-![KI-Traffic-Routing-Status mit aktiviertem Routing](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 ## Schritte zum Abrufen von API-Schlüsseln {#retrieve-byocdn-api-key}
 
@@ -118,4 +30,4 @@ Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich auße
 
 ## Zurück zur Übersicht {#return-to-overview}
 
-Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[&#x200B; bei Edge - Überblick](/help/dashboards/optimize-at-edge.md).
+Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[ bei Edge - Überblick](/help/dashboards/optimize-at-edge/overview.md).
