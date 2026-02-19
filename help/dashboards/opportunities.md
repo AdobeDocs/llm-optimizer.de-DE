@@ -2,10 +2,10 @@
 title: Optimierungsmöglichkeiten
 description: Erfahren Sie, wie Sie mit dem Dashboard „Möglichkeiten“ automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Markensichtbarkeit zu erhöhen.
 feature: Opportunities
-source-git-commit: 33196139fef1cebd47b15aa964df2bac366ea12a
+source-git-commit: 3204d46106b4ae1645df19138cabd55bf153eb42
 workflow-type: tm+mt
-source-wordcount: '512'
-ht-degree: 100%
+source-wordcount: '544'
+ht-degree: 97%
 
 ---
 
@@ -34,6 +34,7 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Möglichkeiten:
 | Empfehlung strukturierter Inhalte (häufig gestellte Fragen) | Inhalt (Onsite) | Erkennt Prompts mit hoher Popularität ohne übereinstimmende Einträge in häufig gestellten Fragen. Zeigt ähnliche Prompts, Kategorien und betroffene URLs an. | Fügen Sie Schemablöcke mit häufig gestellten Fragen und knappen Antworten hinzu, die zu gängigen Abfragen passen. |
 | Erkennung von blockiertem Agent-basierten Traffic | Technische GEO | Analysiert CDN-Protokolle hinsichtlich blockierter Anfragen bekannter AI Agents (z. B. GPTBot, PerplexityBot). Gibt die betroffenen URLs und Agents an. | Aktualisieren Sie robots.txt oder die Server-Konfigurationen, um den Zugriff für unterstützte KI-Crawler bei Bedarf zuzulassen. |
 | Erkennung von 404s-/403s-/5xx-Problemen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. Gibt Häufigkeit, betroffene URLs und geschätzte verlorene Treffer an. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200-Antworten zurückgeben. |
+| Komplexe Inhalte vereinfachen | Inhalt (Onsite) | kennzeichnet lange, komplexe Absätze, die Lesbarkeitsschwellen überschreiten und das KI-Verständnis verringern können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für AI Agents ohne JavaScript-Ausführung verfügbar ist. |
 | Wiederherstellung der Inhaltssichtbarkeit (Early Access) | Technische GEO | Kennzeichnet Seiten, auf denen kritische Inhalte vor AI Agents verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die sichtbar gemacht werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für AI Agents ohne JavaScript-Ausführung verfügbar ist. |
 
 ## Automatische Optimierung {#auto-optimization}
