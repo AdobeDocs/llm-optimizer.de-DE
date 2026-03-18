@@ -44,11 +44,11 @@ Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
 
 ## Schritt 2: Erstellen eines Streams in Akamai {#step-2}
 
-Befolgen Sie im Akamai-Control Panel [https://control.akamai.com/ ](https://control.akamai.com/) Schritte in der offiziellen Akamai-Dokumentation, um [Stream zu erstellen](https://techdocs.akamai.com/datastream2/docs/create-stream).
+Befolgen Sie im Akamai-Control Panel [https://control.akamai.com/ &#x200B;](https://control.akamai.com/) Schritte in der offiziellen Akamai-Dokumentation, um [Stream zu erstellen](https://techdocs.akamai.com/datastream2/docs/create-stream).
 
 ## Schritt 3: Auswählen der Datenparameter {#step-3}
 
-Klicken Sie nach der Erstellung des Streams im Akamai-Control Panel auf Weiter , um zur Registerkarte **Datensätze** zu gelangen. Folgen Sie den Schritten in der offiziellen Akamai-Dokumentation, um die [Datenparameter“ ](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Die folgenden Felder aus der LLM Optimizer-Konfiguration werden benötigt:
+Klicken Sie nach der Erstellung des Streams im Akamai-Control Panel auf Weiter , um zur Registerkarte **Datensätze** zu gelangen. Folgen Sie den Schritten in der offiziellen Akamai-Dokumentation, um die [Datenparameter“ &#x200B;](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Die folgenden Felder aus der LLM Optimizer-Konfiguration werden benötigt:
 
 ![LLMO-Konfigurationsfelder](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
