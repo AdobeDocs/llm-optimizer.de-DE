@@ -2,10 +2,10 @@
 user-guide-title: LLM Optimizer
 breadcrumb-title: LLM Optimizer
 user-guide-description: Steigern Sie die Leistung Ihrer Marke mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen nach, gewinnen Sie Erkenntnisse und dominieren Sie bei der KI-gestützten Suche. Übernehmen Sie die Kontrolle über Ihre Sichtbarkeit. Beginnen Sie jetzt mit der Optimierung.
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
+source-git-commit: b590cd14ba7d64e56a6c972fd6090e2df9de58f6
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 83%
+source-wordcount: '98'
+ht-degree: 77%
 
 ---
 
@@ -27,6 +27,14 @@ ht-degree: 83%
    + [Möglichkeiten](/help/dashboards/opportunities.md)
    + [Kundenkonfiguration](/help/dashboards/customer-configuration.md)
    + [Zusammenarbeit](/help/dashboards/collaboration.md)
++ BYOCDN-Protokollweiterleitung{#log-forwarding}
+   + [Übersicht](/help/overview/log-forwarding/log-forwarding-overview.md)
+   + [Akamai](/help/overview/log-forwarding/akamai.md)
+   + [Cloudflare](/help/overview/log-forwarding/cloudflare.md)
+   + [CloudFront](/help/overview/log-forwarding/cloudfront.md)
+   + [Fastly](/help/overview/log-forwarding/fastly.md)
+   + [Imperva](/help/overview/log-forwarding/imperva.md)
+   + [Sonstiges (manueller Upload)](/help/overview/log-forwarding/other.md)
 + Zusätzliche Ressourcen{#resources}
    + Optimize at Edge{#optimize-at-edge}
       + [Übersicht](/help/dashboards/optimize-at-edge/overview.md)

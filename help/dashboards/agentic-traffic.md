@@ -2,10 +2,10 @@
 title: Agent-basierter Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic“ sehen können, wie AI Agents mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: 26926f3ed4df3a408b74b0208f0d1eb064b97d28
-workflow-type: ht
-source-wordcount: '1316'
-ht-degree: 100%
+source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+workflow-type: tm+mt
+source-wordcount: '1333'
+ht-degree: 98%
 
 ---
 
@@ -44,6 +44,9 @@ Im Fenster **CDN-Anbieter integrieren**:
 2. Klicken Sie auf **Integrieren**, um die Protokollweiterleitung zu aktivieren.
 
 Wenn Sie **Sonstige** auswählen, müssen Sie sich an llmo-now@adobe.com wenden, um Hilfe zu erhalten.
+
+>[!NOTE]
+>Weitere Informationen zur Protokollweiterleitung bei Verwendung eines vom Kunden verwalteten CDN (BYOCDN) finden Sie unter [Übersicht über die Protokollweiterleitung von BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Nach der Aktivierung werden Protokolle aufgenommen und Metriken wie Gesamtanzahl der Agent-basierten Interaktionen, Erfolgsrate, Treffer nach Markt, Benutzer-Agent-Analysen und Leistung auf URL-Ebene im Dashboard angezeigt.
 

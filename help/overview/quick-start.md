@@ -2,10 +2,10 @@
 title: Schnellstart
 description: 'Starten Sie mit Adobe LLM Optimizer: Integrieren Sie Ihre Marke, gewinnen Sie KI-Erkenntnisse zur Sichtbarkeit und erkunden Sie Dashboards zur Verbesserung der Suchleistung.'
 feature: Quickstart, Onboarding
-source-git-commit: 82830e66d43ddd9741617cdf6daab63cd259554b
+source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 93%
+source-wordcount: '1169'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Kunden von AEM Cloud (Cloud Service, Managed Services, Edge Delivery Service) ha
 Einige Produktfunktionen sind in der kostenlosen Version nicht verfügbar:
 
 * Die Testversion ist auf eine Domain beschränkt. Sie können die angegebene Domain nach Abschluss der Einrichtung nicht mehr ändern.
-* Die Möglichkeit, Optimierungen bereitzustellen, ist im Early Access-Modus verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte &#x200B;](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+* Die Möglichkeit, Optimierungen bereitzustellen, ist im Early Access-Modus verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte ](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Im folgenden Abschnitt finden Sie Details zum Aktivieren der kostenlosen Testversion und zum Onboarding Ihrer Domain.
 
@@ -103,6 +103,9 @@ Wenn zuvor kein CDN-Anbieter hinzugefügt wurde (wie oben beschrieben), werden S
 
 * [Agent-basierter Traffic](/help/dashboards/agentic-traffic.md#cdn-setup)
 * [Referral Traffic](/help/dashboards/referral-traffic.md#setup#setup)
+
+>[!NOTE]
+>Weitere Informationen zur Protokollweiterleitung bei Verwendung eines vom Kunden verwalteten CDN (BYOCDN) finden Sie unter [Übersicht über die Protokollweiterleitung von BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 ## Schritt 5: Erkunden der Dashboards und Einleiten von Maßnahmen
 
