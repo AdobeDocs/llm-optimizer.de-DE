@@ -5,12 +5,12 @@ type: Documentation
 description: Dokumentation zu LLM Optimizer.
 mini-toc-levels: 2
 feature-set: LLM Optimizer
-git-repo: https://github.com/AdobeDocs/llm-optimizer.de-DE
-index: y
+git-repo: https://github.com/AdobeDocs/llm-optimizer.en
+index: true
 recommendations: noDisplay
-source-git-commit: 43372ded8691adbbbbcfd859b4d2176c17115ba8
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Die Datei „metadata.md“ enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Inhaltsverzeichnisdatei (.md).
 
-Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finden Sie eine Liste gültiger Werte für **Lösung**, **&#x200B;**&#x200B;und **Typ**.
+Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finden Sie eine Liste gültiger Werte für **Lösung**, **** und **Typ**.

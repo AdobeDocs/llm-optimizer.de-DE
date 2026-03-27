@@ -2,8 +2,8 @@
 title: Best Practices für LLM Optimizer
 description: Entdecken Sie Best Practices für die LLM-Optimierung zur Steigerung der Markensichtbarkeit bei der KI-Suche. Erkenntnisse für das Benchmarking und die Inhaltsoptimierung.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: 31c36f9959993171de4bec384a361d38e6e01dad
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
 
@@ -170,7 +170,7 @@ Mit folgenden Schritten können Sie den Fortschritt überwachen:
    * Verwenden Sie Attributionsfunktionen, um Verbesserungen der Sichtbarkeit mit Traffic, Interaktion und Konversionen zu verknüpfen. Mit Attributionsfunktionen in Adobe LLM Optimizer können Sie Verbesserungen bei Sichtbarkeitsmetriken (Erwähnungen, Zitierungen, Sentiment) mit echten Geschäftsergebnissen wie Site-Traffic, Benutzerinteraktionen und Konversionen verbinden. Dies belegt den ROI Ihrer Optimierungsmaßnahmen.
    * Verfolgen Sie Änderungen in Agent-basiertem und Referral Traffic, um den ROI der Optimierungen zu validieren.
 1. Verbessern Sie Ihre Inhalte.
-   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md) in LLM Optimizer, um spezifisch empfohlene unmittelbare Änderungen an Ihrer Site zu identifizieren und zu implementierenSiehe [Möglichkeiten](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Prüfen Sie regelmäßig den Abschnitt „Möglichkeiten“ und ergreifen Sie Maßnahmen anhand der bereitgestellten Empfehlungen.
+   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md) in LLM Optimizer, um spezifisch empfohlene unmittelbare Änderungen an Ihrer Site zu identifizieren und zu implementieren Siehe [Möglichkeiten](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Prüfen Sie regelmäßig den Abschnitt „Möglichkeiten“ und ergreifen Sie Maßnahmen anhand der bereitgestellten Empfehlungen.
    * Priorisieren Sie Seiten mit abnehmender Sichtbarkeit.
    * Aktualisieren Sie Ihre Website und andere Inhalte, um sie relevanter für die Prompts zu machen, die Sie ansprechen möchten.
    * Fügen Sie Ihren Seiten häufig gestellte Fragen hinzu, um Antworten auf gängige Fragen zu geben.
@@ -237,12 +237,14 @@ Folgende Metriken sollten Sie überwachen:
 * Sentiment und Platzierung von Markenerwähnungen
 * Zeitliche Trends der Sichtbarkeitsbewertung
 
-<!-- Add screenshot when available in demo environment>
-
+<!--
+Add screenshot when available in demo environment>
+-->
 
 <!-- Use the "Share of Voice" feature to see which competitors are dominating specific topics and adjust your strategy accordingly.-->
 
-<!-- Purpose: Measure how much of the conversation your brand owns compared to competitors.
+<!--
+Purpose: Measure how much of the conversation your brand owns compared to competitors.
 Insight:
 
 This feature shows the percentage of visibility your brand has for specific topics compared to competitors.
@@ -250,9 +252,11 @@ This feature shows the percentage of visibility your brand has for specific topi
 
 Best Practice:
 
-Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.-->
+Use this insight to identify gaps in your visibility and focus on improving your presence in under-performing topics.
+-->
 
-<!--6. Content Visibility
+<!--
+6. Content Visibility
 
 Purpose: Ensure LLMs can access and render your content.
 Insight:
@@ -264,7 +268,5 @@ It provides a percentage of content visibility, highlighting areas where LLMs ma
 Best Practice:
 
 Use nametbd feature to render static HTML versions of your pages for LLM bots, ensuring full content visibility.
-Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.-->
-
-
-
+Address issues like blocked pages, robots.txt restrictions, and client-side rendering problems.
+-->

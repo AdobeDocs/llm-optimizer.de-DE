@@ -2,8 +2,8 @@
 title: Referral Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Referral Traffic“ anzeigen können, wie Besuchende über externe Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen.
 feature: Referral Traffic
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: ht
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # Referral Traffic
 
-Unter „Referral Traffic“ sehen Sie, wie Besucherinnen und Besucher aus externen Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen. Hier werden Traffic-Quellen, Referenzmuster und Konversionsmetriken von externen Websites und Plattformen nachverfolgt und analysiert. So erkennen Sie, welche Quellen, Regionen und Seiten den Traffic mit den meisten Interaktionen fördern. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.-->Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Unter „Referral Traffic“ sehen Sie, wie Besucherinnen und Besucher aus externen Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen. Hier werden Traffic-Quellen, Referenzmuster und Konversionsmetriken von externen Websites und Plattformen nachverfolgt und analysiert. So erkennen Sie, welche Quellen, Regionen und Seiten den Traffic mit den meisten Interaktionen fördern. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 ![Seite „Referral Traffic“](/help/dashboards/assets/referral-traffic.png)
 
@@ -30,9 +30,11 @@ Bei der ersten Anmeldung kann das Dashboard „Referral Traffic“ leer angezeig
 
 ![Einrichtung von Referral Traffic](/help/dashboards/assets/referral-setup1.png)
 
-<!--- 1. Select your Source (either CDN logs or AEM Operational Telemetry).
+<!--
+1. Select your Source (either CDN logs or AEM Operational Telemetry).
 2. Enter a primary contact email.
-3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM-->
+3. Click **Request activation** to enable data ingestion. Hiding this until confirmation from PM
+-->
 
 Nach der Aktivierung wird das Dashboard mit Referral-Traffic-Metriken gefüllt.
 
@@ -62,11 +64,13 @@ Das Dashboard zeigt die Gesamtleistung der Referenzen anhand von Schlüsselmetri
 
 Neben den oben vorgestellten allgemeinen Leistungsmetriken gibt es drei zusätzliche Panels, die die Traffic-Verteilung auf verschiedene Märkte, Referenzquellen und Seitenabsichtskategorien anzeigen <!-- the **Top Regions** panel breaks down traffic by geography. Meanwhile, the **Top Referral Sources** panel shows the platforms driving the most visits. Trend indicators for the metrics show how these values are changing over time compared to the previous period.-->
 
-<!--## Top Referral URLs {#top-referrals}
+<!--
+## Top Referral URLs {#top-referrals}
 
 The Top Referral URLs list surfaces your site's most visited pages from referrals.
 
-![Top Referral URLs](/help/dashboards/assets/top-url.png)-->
+![Top Referral URLs](/help/dashboards/assets/top-url.png)
+-->
 
 ## Details zu Referenzquellen und URL-Leistungsanalyse {#traffic-details}
 
@@ -91,4 +95,4 @@ Die Ansicht „URL-Leistungsanalyse“ listet die leistungsstärksten Seiten auf
 
 >[!ENDTABS]
 
-In beiden Tabellen können Sie mit der Option **Exportieren** die CSV-Datei der Tabelle herunterladen und die Erkenntnisse mit Ihrem Team teilen oder die Tabellen in das Reporting für Führungskräfte aufnehmen.Darüber hinaus können Sie in beiden Tabellen mit der Schaltfläche **Spalten konfigurieren** anpassen, welche Metriken angezeigt werden.
+In beiden Tabellen können Sie mit der Option **Exportieren** die CSV-Datei der Tabelle herunterladen und die Erkenntnisse mit Ihrem Team teilen oder die Tabellen in das Reporting für Führungskräfte aufnehmen. Darüber hinaus können Sie in beiden Tabellen mit der Schaltfläche **Spalten konfigurieren** anpassen, welche Metriken angezeigt werden.

@@ -1,7 +1,7 @@
 ---
 title: Adobe LLM Optimizer
 description: Steigern Sie die Leistung Ihrer Marke mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen nach, gewinnen Sie Erkenntnisse und dominieren Sie bei der KI-gestützten Suche. Übernehmen Sie die Kontrolle über Ihre Sichtbarkeit. Beginnen Sie jetzt mit der Optimierung.
-source-git-commit: 5af79711014a44e34a43babd60a5a7e18e333b92
+source-git-commit: 945537c3139e5a2038858e6121172e1a1a10ddf4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
@@ -15,7 +15,8 @@ Adobe LLM Optimizer ist eine auf generativer KI basierende Anwendung für Genera
 
 ## Erste Schritte mit LLM Optimizer
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./overview/overview.md
   {title= LLM Optimizer overview}
@@ -112,7 +113,8 @@ Adobe LLM Optimizer ist eine auf generativer KI basierende Anwendung für Genera
 
 ## Weitere Informationen zu LLM Optimizer
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./overview/best-practices-topics-prompts.md
   {title= Best practices for setting up categories, topics, prompts, and tracking others}
@@ -126,7 +128,7 @@ Adobe LLM Optimizer ist eine auf generativer KI basierende Anwendung für Genera
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/de/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -209,7 +211,8 @@ Adobe LLM Optimizer ist eine auf generativer KI basierende Anwendung für Genera
 
 ## Optimize at Edge
 
-<!-- CARDS
+<!--
+CARDS
 
 * ./dashboards/optimize-at-edge/overview.md
   {title= Optimize at Edge}

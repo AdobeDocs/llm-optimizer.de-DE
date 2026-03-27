@@ -2,7 +2,7 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 547c38986da609a6cd42cb94402c811d6eb1f939
+source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
 workflow-type: tm+mt
 source-wordcount: '2181'
 ht-degree: 84%
@@ -15,6 +15,7 @@ ht-degree: 84%
 Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am CDN-Edge ohne Authoring-Änderungen bereitgestellt werden können. Sie behandelt den Onboarding-Prozess, die verfügbaren Optimierungsmöglichkeiten und die automatische Optimierung am Edge.
 
 >[!NOTE]
+>
 >Diese Funktion befindet sich derzeit im Early Access. Weitere Informationen zu Early-Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Was ist „Optimize at Edge“?
@@ -47,7 +48,8 @@ Voraussetzungen für das Onboarding von „Optimize at Edge“:
 * Schließen Sie das Protokollweiterleitungsverfahren für Ihre CDN-Protokolle ab.
 
 Voraussetzungen für Ihr IT-/CDN-Team:
-* Auf die Zulassungsliste setzen Fügen Sie `*AdobeEdgeOptimize/1.0*` user-agent zur Datei „robots.txt“ Ihrer Site hinzu oder verwalten Sie Bot-Traffic-Regeln.
+
+* Fügen Sie `*AdobeEdgeOptimize/1.0*` user-agent zur Datei „robots.txt“ Ihrer Site hinzu oder verwalten Sie Bot-Traffic-Regeln.
 * Stellen Sie sicher, dass Seiten nicht auf Domain- oder CDN-Ebene blockiert werden.
 * Fügen Sie Routing-Regeln für „Optimize at Edge“ im CDN hinzu.
 * Prüfen Sie das Routing für „Optimize at Edge“ in der Benutzeroberfläche von LLM Optimizer.
@@ -65,6 +67,7 @@ Um den Einrichtungsprozess zu leiten, wählen Sie unten Ihren CDN-Provider aus u
 | CloudFront (BYOCDN) | Eigenes CDN einbringen | [Einrichtungshandbuch anzeigen](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
+>
 >Wenn Ihr CDN-Anbieter oben nicht aufgeführt ist oder Sie Ihre Domain oder E-Mail in der LLM Optimizer-Benutzeroberfläche nicht finden, wenden Sie sich bitte an `llmo-at-edge@adobe.com`, um Unterstützung beim Onboarding zu erhalten. Sobald die Einrichtungskonfigurationen abgeschlossen sind, können Sie Empfehlungen für Möglichkeiten von „Optimize at Edge“ in LLM Optimizer bereitstellen.
 
 Jedes der oben genannten CDN-Setup-Handbücher enthält detaillierte Überprüfungsschritte am Ende, um zu bestätigen, dass der Agent-Traffic korrekt weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
@@ -84,7 +87,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die Chrome-Erweiterung [Adobe LLM Optimizer: Ist Ihre Web-Seite zitierbar?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) zeigt an, auf wie viele Inhalte Ihrer Web-Seite LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
@@ -152,13 +155,15 @@ F. Welche Arten von LLMs werden mit „Optimize at Edge“ angesprochen?
 
 Die Liste der anzusprechenden Benutzer-Agents definieren Sie im Rahmen des Onboardings.
 
-<!--Q. What does "Edge" in Optimize at Edge mean?
+<!--
+Q. What does "Edge" in Optimize at Edge mean?
 
 In our context, "Edge" means that the optimization is applied at the CDN layer and not inside your CMS.
 
 Q. Why does this optimization require a CDN?
 
-The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.-->
+The CDN is where the optimized version of the page is assembled and delivered to AI agents. We leverage the CDN to ensure your origin CMS remains unchanged. This separation lets you improve LLM visibility without altering your existing publishing workflows.
+-->
 
 F. Was passiert, wenn mein Onboarding für „Optimize at Edge“ noch nicht erfolgt ist?
 
