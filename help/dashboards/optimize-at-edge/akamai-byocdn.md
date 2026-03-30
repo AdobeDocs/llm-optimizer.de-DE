@@ -2,10 +2,10 @@
 title: Optimieren bei Edge - Akamai (BYOCDN)
 description: Erfahren Sie, wie Sie Akamai BYOCDN für „Optimieren“ bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
 workflow-type: tm+mt
-source-wordcount: '587'
-ht-degree: 14%
+source-wordcount: '745'
+ht-degree: 11%
 
 ---
 
@@ -47,6 +47,10 @@ Legen Sie Routing für die folgenden user-agents.:image fest
 **2. Festlegen der Herkunft und des SSL-Verhaltens**
 
 Herkunft als `live.edgeoptimize.net` festlegen und SAN an `*.edgeoptimize.net` anpassen
+
+>[!NOTE]
+>
+>Wenn die Eigenschaftenaktivierung nach dem Hinzufügen der Regel „Optimieren bei Edge&quot; fehlschlägt, überprüfen Sie, ob die Regel einen anderen SSL-Verifizierungsmodus für den Ursprungs-Server verwendet als die Standardregel. Wenn dies der Fall ist, aktualisieren Sie die Regel „Optimieren unter Edge&quot;, um sie an die Standardregel anzupassen. Wenn die Standardregel beispielsweise &quot;**&quot; verwendet** verwenden Sie auch **Plattformeinstellungen** hier. Wenn Sie die erforderliche Einstellung nicht verwenden können, wenden Sie sich an den Akamai-Support.
 
 ![Festlegen der Herkunft und des SSL-Verhaltens](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -91,6 +95,10 @@ Die Site-Failover-Konfiguration besteht aus zwei Teilen: dem Failover-Verhalten 
 
 Konfigurieren Sie innerhalb der Haupt-Routing-Regel das Verhalten bei Site-Failover und das erweiterte XML-Snippet wie folgt:
 
+>[!IMPORTANT]
+>
+>Das XML-Fragment in diesem Schritt erfordert das **Erweitert**-Verhalten. In einigen Akamai-Umgebungen ist dieses Verhalten nicht für die Self-Service-Bearbeitung verfügbar. Wenn die Option **Erweitert** nicht angezeigt wird, wenden Sie sich an Ihr Akamai-Account-Team oder den Akamai-Support, um die erforderliche Konfiguration zu aktivieren.
+
 ![Site-Failover](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
 Fügen Sie die Anfrage-Header-`x-edgeoptimize-request` mit dem Wert hinzu, der über Erweiterte XML `fo` wird:
@@ -120,6 +128,8 @@ Fügen Sie die Anfrage-Header-`x-edgeoptimize-request` mit dem Wert hinzu, der �
 >```
 >
 >Dadurch wird sichergestellt, dass die Header-Regel des Failovertests für **alle** Routingregeln und nicht nur für eine bewertet wird.
+>
+>Stellen Sie außerdem sicher **dass die Regel „Optimieren bei Edge-Routing** nicht durch eine spätere Übereinstimmungsregel überschrieben wird, die den Ursprung, das Caching-Verhalten oder die Cache-ID für dieselben Anfragen ändert. Wenn diese Verhaltensweisen durch eine andere übereinstimmende Regel zurückgesetzt werden, funktioniert das Routing oder Caching von Optimieren bei Edge möglicherweise nicht wie erwartet.
 
 Wenn der `x-edgeoptimize-request` für die Anfrage `fo` ist, setzen Sie die `x-edgeoptimize-fo` für die ausgehende Antwort auf `true`.
 
