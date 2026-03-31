@@ -89,7 +89,7 @@ Integrieren Sie Ihren Markennamen und Ihre Domain, um mit der Verwendung von LLM
 
 Während der Onboarding-Phase wird eine kleine Gruppe von Kategorien, Themen und Prompts generiert. Markenpräsenz-Analysen zu diesen Prompts stehen kurz nach dem Onboarding Ihrer Site zur Verfügung.
 
-Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Konfigurieren Sie außerdem [CDN-Protokollweiterleitung](#step-4) für die Traffic-Analyse. LLM Optimizer erfordert Markenpräsenz-Daten und Erkenntnisse von Agent und Referral Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zur Steigerung der KI-Sichtbarkeit zu geben.
 
