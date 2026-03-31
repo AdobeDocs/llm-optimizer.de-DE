@@ -41,7 +41,7 @@ Der Aktivierungsfluss unterscheidet sich je nach Adobe-Produkt.
 
 Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Möglichkeiten:
 
-* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
+* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
 * Oder gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
@@ -124,7 +124,7 @@ Nachdem Ihre Domain integriert wurde, erhalten Sie in der Ansicht „Markenpräs
 
 ## Schritt 4: Bereitstellen von Informationen für die CDN-Protokollweiterleitung {#step-4}
 
-Um Agenten-Traffic und Referral Traffic-Einblicke zu entsperren, fügen Sie CDN-Protokollweiterleitungsinformationen vom [Kundenkonfigurations-Dashboard) ](/help/dashboards/customer-configuration.md#cdn-configuration). Öffnen Sie die **CDN-Konfiguration** und wählen Sie **Integriertes CDN** aus.
+Um Agenten-Traffic und Referral Traffic-Einblicke zu entsperren, fügen Sie CDN-Protokollweiterleitungsinformationen vom [Kundenkonfigurations-Dashboard) &#x200B;](/help/dashboards/customer-configuration.md#cdn-configuration). Öffnen Sie die **CDN-Konfiguration** und wählen Sie **Integriertes CDN** aus.
 
 ![CDN-Kundenkonfiguration](/help/overview/assets/cc-cdn.png)
 
