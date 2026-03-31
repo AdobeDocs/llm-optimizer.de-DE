@@ -2,10 +2,10 @@
 title: Referral Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Referral Traffic“ anzeigen können, wie Besuchende über externe Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen.
 feature: Referral Traffic
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 90%
 
 ---
 
@@ -13,6 +13,9 @@ ht-degree: 100%
 # Referral Traffic
 
 Unter „Referral Traffic“ sehen Sie, wie Besucherinnen und Besucher aus externen Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen. Hier werden Traffic-Quellen, Referenzmuster und Konversionsmetriken von externen Websites und Plattformen nachverfolgt und analysiert. So erkennen Sie, welche Quellen, Regionen und Seiten den Traffic mit den meisten Interaktionen fördern. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+
+>[!NOTE]
+>Standardmäßig erstellt dieses Dashboard Traffic-Insights aus **CDN-Protokollen**. Wenn Ihr Unternehmen ein kostenpflichtiges Angebot verwendet, können Sie **Adobe Analytics** verbinden, um Daten hinzuzufügen, die die KI-gesteuerte Erkennung und Website-Interaktion messen. Diese Daten sind auf der Registerkarte **Geschäftsauswirkungen** verfügbar. Ohne Integration in Adobe Analytics wird die Registerkarte nicht ausgefüllt. Siehe [Adobe Analytics-Integration](/help/dashboards/adobe-analytics-integration.md) für weitere Details.
 
 ![Seite „Referral Traffic“](/help/dashboards/assets/referral-traffic.png)
 
@@ -47,7 +50,7 @@ Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. D
 * **Seitenabsicht** – Filtern Sie den Referral Traffic nach Benutzerabsicht.
 * **Kanalquelle** – Filtern Sie nach der Kanalquelle. Zu den Optionen gehören LLMs, verdiente, bezahlte oder gemischte Referenzkanäle.
 * **Gerätetyp** – Analysieren Sie den Traffic anhand des Gerätetyps der Besuchenden, entweder Desktop, Mobilgerät oder alle Geräte.
-  **Region** – Zeigen Sie Referenzmuster über verschiedene Regionen hinweg an.
+* **Region** – Zeigen Sie Referenzmuster über verschiedene Regionen hinweg an.
 
 Nachdem Sie den gewünschten Filter ausgewählt haben, klicken Sie auf **Filter anwenden**, um Ihre Auswahl auf das Dashboard anzuwenden.
 
