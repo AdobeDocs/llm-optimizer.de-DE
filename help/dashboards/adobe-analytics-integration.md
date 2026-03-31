@@ -86,7 +86,7 @@ Während des Setups definieren Sie, welche Report Suite- und Seitendimension LLM
 
 ### So wird LLM-Traffic identifiziert
 
-Der von LLM stammende Traffic wird mithilfe von Adobe Analytics [Referrer-Typ - Conversational AI-Tools](https://experienceleague.adobe.com/en/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools) identifiziert.
+Der von LLM stammende Traffic wird mithilfe von Adobe Analytics [Referrer-Typ - Conversational AI-Tools](https://experienceleague.adobe.com/de/docs/analytics/components/dimensions/referrer-type#conversational-ai-tools) identifiziert.
 
 ### Aufgenommene Daten {#data-ingested}
 
