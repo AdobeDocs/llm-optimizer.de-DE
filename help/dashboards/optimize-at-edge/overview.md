@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
 workflow-type: tm+mt
-source-wordcount: '2181'
-ht-degree: 84%
+source-wordcount: '2240'
+ht-degree: 77%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 84%
 # Optimize at Edge
 
 Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am CDN-Edge ohne Authoring-Änderungen bereitgestellt werden können. Sie behandelt den Onboarding-Prozess, die verfügbaren Optimierungsmöglichkeiten und die automatische Optimierung am Edge.
-
->[!NOTE]
->
->Diese Funktion befindet sich derzeit im Early Access. Weitere Informationen zu Early-Access-Programmen finden Sie [hier](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/release-notes/release-notes/release-notes-current#aem-beta-programs).
 
 ## Was ist „Optimize at Edge“?
 
@@ -40,7 +36,17 @@ Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am
 
 ## Onboarding
 
-Wenden Sie sich entweder an Ihr Adobe-Accountteam oder an das FDE-Team, um das Onboarding-Verfahren zu starten. Ihr IT- oder CDN-Team muss außerdem die Voraussetzungen erfüllen und das Einrichtungsverfahren abschließen. Darüber hinaus können Sie sich auch an `llmo-at-edge@adobe.com` wenden, um weitere Unterstützung beim Onboarding zu erhalten.
+<!--You should reach out to either your Adobe account team or the FDE team to start the onboarding process. Your IT or CDN team is also required to complete the pre-requisites and setup process. Additionally, you can also contact `llmo-at-edge@adobe.com` for further onboarding assistance.-->
+
+Starten Sie den Onboarding-Prozess in Ihrem LLM Optimizer-Konto:
+
+1. Wählen Sie im Dashboard **Kundenkonfiguration** die Registerkarte **CDN-Konfiguration** aus.
+1. Klicken Sie **Onboarding CDN**.
+   ![Registerkarte CDN-Konfiguration](/help/overview/assets/cc-cdn.png)
+1. Für AEM Fastly-Kunden kann Adobe beim Abschluss des Onboarding-Prozesses helfen. Kunden, die andere CDN-Anbieter verwenden, müssen von Ihrem IT-/CDN-Team die erforderlichen Einrichtungs- und Voraussetzungen erfüllen. Weitere Anleitungen finden Sie in den Beispiel-CDN-Handbüchern unten.
+
+>[!NOTE]
+>Bitte beachten Sie die unten stehenden schrittweisen Anleitungen, die den gesamten Onboarding-Ablauf abdecken. Bei Problemen, die nicht durch die Handbücher gelöst werden, können Sie sich an `llmo-at-edge@adobe.com` wenden.
 
 Voraussetzungen für das Onboarding von „Optimize at Edge“:
 
@@ -85,9 +91,9 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 ### Weitere Tools
 
-Die Chrome-Erweiterung [Adobe LLM Optimizer: Ist Ihre Web-Seite zitierbar?](https://chromewebstore.google.com/detail/adobe-llm-optimizer-is-yo/jbjngahjjdgonbeinjlepfamjdmdcbcc) zeigt an, auf wie viele Inhalte Ihrer Web-Seite LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
+Die [AI Content-Sichtbarkeit Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) Browser-Erweiterung zeigt an, auf wie viele Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
@@ -150,6 +156,10 @@ Mit **Live anzeigen** können Sie überprüfen, ob die Optimierung live ist und 
 ![Rollback](/help/assets/optimize-at-edge/rollback.png)
 
 ## Häufig gestellte Fragen
+
+F.: Können Testkunden Optimize bei Edge ausprobieren?
+
+Ja, Testkunden können auf eine Optimierungsmöglichkeit zugreifen und diese für bis zu 10 Seiten bereitstellen. Standardmäßig besteht die Möglichkeit in der Wiederherstellungs-Content-Sichtbarkeit , die es KI-Agenten ermöglicht, auf die vollständige Version Ihres Seiteninhalts zuzugreifen.
 
 F. Welche Arten von LLMs werden mit „Optimize at Edge“ angesprochen?
 
