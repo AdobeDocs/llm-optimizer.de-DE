@@ -2,10 +2,10 @@
 title: Optimieren bei Edge - Akamai (BYOCDN)
 description: Erfahren Sie, wie Sie Akamai BYOCDN für „Optimieren“ bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 16a1142cb70d9bcd70406a3779a43fc8568c77d0
+source-git-commit: f2a652761acbea7ca5b8e8740c1dbd0132e42f7f
 workflow-type: tm+mt
-source-wordcount: '745'
-ht-degree: 11%
+source-wordcount: '849'
+ht-degree: 9%
 
 ---
 
@@ -22,25 +22,32 @@ Bevor Sie die Regeln für den Akamai Property Manager einrichten, stellen Sie si
 * Onboarding-Prozess für LLM Optimizer abgeschlossen.
 * CDN-Protokollweiterleitung an LLM Optimizer abgeschlossen.
 * Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde.
+* (Optional) Ein Staging-API-Schlüssel für Edge Optimize , wenn Sie das Routing zuerst für einen Staging-Host-Namen testen.
 
 {{retrieve-byocdn-api-key}}
 
+{{retrieve-staging-edge-optimize-api-key}}
+
 **Konfiguration**
 
-Die folgende Akamai-Property-Manager-Regel leitet LLM-Benutzeragenten an Edge Optimizer weiter. Die Konfiguration umfasst die folgenden Schritte:
+Die folgende Akamai Property Manager-Regel leitet den Seitendatenverkehr von Agent HTML an Edge Optimize weiter. Die Konfiguration umfasst die folgenden Schritte:
 
-**1. Festlegen von Routing-Kriterien (Zuordnung von Benutzer-Agents)**
+**1. Routing-Kriterien festlegen (Traffic-Übereinstimmung zwischen Benutzeragent und HTML)**
 
-Legen Sie Routing für die folgenden user-agents.:image fest
+Legen Sie das Routing für die folgenden Benutzeragenten fest:
 
 ```
- *AdobeEdgeOptimize-AI*,
- *ChatGPT-User*,
- *GPTBot*,
- *OAI-SearchBot*,
- *PerplexityBot*,
+ *AdobeEdgeOptimize-AI*
+ *ChatGPT-User*
+ *GPTBot*
+ *OAI-SearchBot*
+ *PerplexityBot*
  *Perplexity-User*
 ```
+
+>[!NOTE]
+>
+>Wenden Sie die Routingregel „Optimieren bei Edge&quot; nur auf den agenten HTML-Seiten-Traffic an. Bei einer gängigen Einrichtung werden anforderungsseitige Kriterien wie &quot;**&quot; verwendet** um `html` und `EMPTY_STRING` für Seiten-URLs ohne Erweiterung abzugleichen. Wenn Ihre Site HTML über andere URL-Muster bereitstellt oder erweiterungslose Nicht-Seiten-Routen wie API-Endpunkte enthält, verfeinern Sie die Regel mit zusätzlichen pfadbasierten Kriterien.
 
 ![Festlegen von Routing-Kriterien](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -68,7 +75,7 @@ Legen Sie die Cache-Schlüsselvariable `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` auf `LLM
 
 Legen Sie die folgenden Header für eingehende Anfragen fest:
 `x-edgeoptimize-api-key` zum von LLMO abgerufenen API-Schlüssel
-`x-edgeoptimize-config` zu `LLMCLIENT=TRUE;`
+`x-edgeoptimize-config` in `LLMCLIENT=TRUE;`
 `x-edgeoptimize-url` zu `{{builtin.AK_URL}}`
 
 ![Ändern der eingehenden Anfrage-Header](/help/assets/optimize-at-edge/akamai-step5-request.png)
@@ -180,8 +187,17 @@ Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. S
 | `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
 | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
 
-Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläche überprüft werden. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+**4. Staging-Domain (optional)**
 
-![KI-Traffic-Routing-Status mit aktiviertem Routing](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Wenn Sie einen Staging-Hostnamen und einen Staging-API-Schlüssel aus LLM Optimizer verwenden, stellen Sie dasselbe Routing-Muster für Ihre **Staging** Akamai-Eigenschaft bereit, indem Sie den **Staging**-Schlüssel in Ihren Regeln verwenden. Überprüfen Sie dann den Bot-Traffic auf dem Staging-Host:
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Ersetzen Sie `https://staging.example.com/page.html` durch Ihre echte Staging-URL und Ihren Pfad. Eine erfolgreiche Antwort enthält die `x-edgeoptimize-request-id`-Kopfzeile.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

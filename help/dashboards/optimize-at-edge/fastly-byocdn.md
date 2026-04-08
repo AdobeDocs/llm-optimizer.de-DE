@@ -2,9 +2,9 @@
 title: Optimieren bei Edge - Fastly (BYOCDN)
 description: Erfahren Sie, wie Sie Fastly BYOCDN für Optimize bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '407'
 ht-degree: 5%
 
 ---
@@ -22,8 +22,11 @@ Bevor Sie die Fastly-VCL-Regeln einrichten, stellen Sie sicher, dass Sie Folgend
 * Onboarding-Prozess für LLM Optimizer abgeschlossen.
 * CDN-Protokollweiterleitung an LLM Optimizer abgeschlossen.
 * Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde.
+* (Optional) Ein Staging-API-Schlüssel für Edge Optimize , wenn Sie das Routing zuerst für einen Staging-Host-Namen testen.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Konfiguration**
 
@@ -121,8 +124,17 @@ Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. S
 | `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
 | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
 
-Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläche überprüft werden. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+**4. Staging-Domain (optional)**
 
-![KI-Traffic-Routing-Status mit aktiviertem Routing](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Wenn Sie einen Staging-Hostnamen und einen Staging-API-Schlüssel aus LLM Optimizer verwenden, fügen Sie dieselben VCL-Ausschnitte mithilfe des API-Schlüssels **staging** zu Ihrem **stagingFastly**-Service hinzu. Überprüfen Sie dann den Bot-Traffic auf dem Staging-Host:
+
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Ersetzen Sie `https://staging.example.com/page.html` durch Ihre echte Staging-URL und Ihren Pfad. Eine erfolgreiche Antwort enthält die `x-edgeoptimize-request-id`-Kopfzeile.
+
+{{verify-routing-status-in-ui}}
 
 {{return-to-overview}}

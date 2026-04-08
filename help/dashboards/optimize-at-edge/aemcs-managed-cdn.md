@@ -2,7 +2,7 @@
 title: Optimieren bei Edge - AEM Cloud Service Managed CDN (Fastly)
 description: Erfahren Sie, wie Sie das von AEM Cloud Service verwaltete CDN (Fastly) für „Optimize“ bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 9230e525340bb951fcd9f2ae1f88bad557d5b7d7
+source-git-commit: 0c7ccadbb40c8c119cb2a57cf8118708c33c4236
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 12%
@@ -18,19 +18,21 @@ Diese Konfiguration leitet den Agentenverkehr (Anfragen von KI-Bots und LLM-Benu
 
 So leiten Sie zunächst agenten Traffic an Edge weiter:
 
-1. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
 
    ![Navigieren Sie zur Kundenkonfiguration](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. Aktivieren **unter „KI-Traffic-Routing zur**&quot; das Kontrollkästchen **Optimierungen für KI-Agenten**. Das Adobe-Team übernimmt die Routing-Konfiguration in Ihrem Namen.
+2. Suchen Sie den Abschnitt **Optimierungen für KI-Agenten bereitstellen**. Markieren Sie das **Optimierungs-Engine aktivieren**.
 
-   ![Aktivieren Sie die Option Optimierungen für KI-Agenten bereitstellen](/help/assets/optimize-at-edge/prereq-deploy-checkbox.png)
+   ![Optimierungen für KI-Agenten bereitstellen - Ausstehend](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
-3. Nach dem Aktivieren des Kontrollkästchens zeigt der Status an, dass die Einrichtung ausgeführt wird. Das Adobe-Team wird die Routing-Konfiguration für Sie abschließen.
+3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus. Das Adobe-Team übernimmt die Routing-Konfiguration in Ihrem Namen.
 
-   ![Einrichtung von KI-Traffic-Routing läuft](/help/assets/optimize-at-edge/prereq-traffic-routing-progress.png)
+   ![Bestätigungsdialogfeld für Optimierungsmodul aktivieren](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
-   Sobald das Routing konfiguriert und aktiv ist, wird der Status aktualisiert und ein grünes Häkchen angezeigt, das angibt, dass das Routing erfolgreich aktiviert wurde. Auf Ihrer Seite sind keine weiteren Maßnahmen erforderlich.
+   Sobald das Routing konfiguriert und aktiv ist, wird der Status auf **Abgeschlossen** mit einem grünen Häkchen aktualisiert, das bestätigt, dass das Routing aktiviert ist. Auf Ihrer Seite sind keine weiteren Maßnahmen erforderlich.
+
+   ![Optimierung für KI-Agenten bereitstellen - abgeschlossen](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich außerdem an Ihr Adobe-Account-Team oder an Ihren `llmo-at-edge@adobe.com`.
 
@@ -115,8 +117,10 @@ Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. S
 | `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
 | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
 
-Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläche überprüft werden. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+**4. Routing-Status in LLM Optimizer überprüfen**
 
-![KI-Traffic-Routing-Status mit aktiviertem Routing](/help/assets/optimize-at-edge/adobe-CDN-traffic-routed-tick.png)
+Sie können das Routing auch in der Benutzeroberfläche von LLM Optimizer bestätigen. Öffnen Sie **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus. Wenn das Routing aktiv ist, wird im Abschnitt **Optimierungen für KI-** bereitstellen“ **Abgeschlossen** angezeigt.
+
+![Optimierung für KI-Agenten bereitstellen - abgeschlossen](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
 {{return-to-overview}}

@@ -2,9 +2,9 @@
 title: Optimieren bei Edge - CloudFront (BYOCDN)
 description: Erfahren Sie, wie Sie CloudFront BYOCDN für „Optimieren“ bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 1253d0f0a58f6523699c52fbfab23028dc469c82
+source-git-commit: da789100d814004687de2f46e18a295671dec4b8
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2265'
 ht-degree: 1%
 
 ---
@@ -23,8 +23,11 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 * Onboarding-Prozess für LLM Optimizer abgeschlossen.
 * CDN-Protokollweiterleitung an LLM Optimizer abgeschlossen.
 * Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde.
+* (Optional) Ein Staging-API-Schlüssel für Edge Optimize , wenn Sie das Routing zuerst für einen Staging-Host-Namen testen.
 
 {{retrieve-byocdn-api-key}}
+
+{{retrieve-staging-edge-optimize-api-key}}
 
 **Schritt 1: Edge Optimize Origin erstellen**
 
@@ -296,11 +299,20 @@ Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. S
 | `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
 | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
 
-Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläche überprüft werden. Navigieren Sie zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+**4. Staging-Domain (optional)**
 
-![KI-Traffic-Routing-Status mit aktiviertem Routing](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
+Wenn Sie einen Staging-Hostnamen und einen Staging-API-Schlüssel aus LLM Optimizer verwenden, stellen Sie dieselbe CloudFront-Konfiguration auf Ihrer **Staging**-Verteilung mithilfe des **Staging**-API-Schlüssels bereit. Überprüfen Sie dann den Bot-Traffic auf dem Staging-Host:
 
-**4. Überprüfen Sie, ob die Protokolle ordnungsgemäß fließen**
+```
+curl -svo /dev/null https://staging.example.com/page.html \
+  --header "user-agent: chatgpt-user"
+```
+
+Ersetzen Sie `https://staging.example.com/page.html` durch Ihre echte Staging-URL und Ihren Pfad. Eine erfolgreiche Antwort enthält die `x-edgeoptimize-request-id`-Kopfzeile.
+
+{{verify-routing-status-in-ui}}
+
+**5. Überprüfen Sie, ob die Protokolle ordnungsgemäß fließen**
 
 Stellen Sie nach dem Ausführen der oben genannten Testanfragen sicher, dass Protokolle sowohl für die CloudFront- als auch für die Lambda@Edge-Funktion geschrieben werden.
 
