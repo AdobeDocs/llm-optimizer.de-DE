@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 23a4b06e2492d9692d37eb0e52208bdc49328b2a
+source-git-commit: b56c2a355c794c8461dda15bf7c733983fd95740
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 77%
+source-wordcount: '2348'
+ht-degree: 73%
 
 ---
 
@@ -60,7 +60,14 @@ Voraussetzungen für Ihr IT-/CDN-Team:
 * Fügen Sie Routing-Regeln für „Optimize at Edge“ im CDN hinzu.
 * Prüfen Sie das Routing für „Optimize at Edge“ in der Benutzeroberfläche von LLM Optimizer.
 
+>[!IMPORTANT]
+>Routing muss am äußeren CDN (dem CDN, das dem Client am nächsten ist) konfiguriert werden. Wenn Sie über mehrere CDNs verfügen, kann das Routing nur im äußeren CDN erfolgen.
+
 Um den Einrichtungsprozess zu leiten, wählen Sie unten Ihren CDN-Provider aus und folgen Sie dem entsprechenden Konfigurationshandbuch. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden müssen. Wir empfehlen, Änderungen zuerst in den niedrigeren Umgebungen anzuwenden.
+
+### Staging-Domain-API-Schlüssel (optional)
+
+Wenn Sie vor der Produktion einen Staging-Host-Namen testen, verwenden Sie LLM Optimizer, um **eine** Staging-Domain zu registrieren und ihren **Staging** Edge Optimize-API-Schlüssel aus **Kundenkonfiguration** → → → **CDN-Konfiguration** **Optimierungen für KI-Agenten bereitstellen** **Staging-Domain hinzufügen** (**Staging-Domain**) zu kopieren. Der Staging-Hostname muss dieselbe registrierbare Domain wie Ihre Produktions-Site haben. **Bring Your Own CDN**-Handbücher enthalten die vollständigen Schritte zum Abrufen des Staging-Schlüssels und zum Überprüfen des Routing auf Ihrer Staging-URL.
 
 ### CDN-Konfigurationshandbücher
 
@@ -93,7 +100,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die [AI Content-Sichtbarkeit Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) Browser-Erweiterung zeigt an, auf wie viele Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
