@@ -65,4 +65,4 @@ Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläc
 
 ## Zurück zur Übersicht {#return-to-overview}
 
-Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[ bei Edge - Überblick](/help/dashboards/optimize-at-edge/overview.md).
+Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[&#x200B; bei Edge - Überblick](/help/dashboards/optimize-at-edge/overview.md).
