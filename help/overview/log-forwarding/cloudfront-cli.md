@@ -2,9 +2,9 @@
 title: Protokollweiterleitung - CloudFront (AWS CLI)
 description: Weiterleiten von CloudFront CDN-Protokollen an den S3-Bucket von Adobe mithilfe der AWS-CLI für die Einrichtung und den Betrieb von Sendungen.
 feature: Agentic Traffic
-source-git-commit: 0d51bbde954c399dc6595522fa70b576461f458a
+source-git-commit: 3277e7f7f2e0c5e4693e40473d595b12d9e5f2e8
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
 
 1. Geben Sie Ihre **AWS-Konto** ID ein.
 
-   ![AWS-Konto-ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
+<!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
 1. Wählen Sie **CloudFront (BYOCDN)**.
 
@@ -48,7 +48,7 @@ Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
 
 1. Klicken Sie **Onboard**.
 
-   ![Onboard-Schaltfläche](/help/overview/assets/log-forwarding/common/onboard-button.png)
+<!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
 ## Schritt 2: Einrichten der CDN-Protokollweiterleitung mit AWS CLI {#step-2-cli}
 
