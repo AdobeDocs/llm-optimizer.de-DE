@@ -2,9 +2,9 @@
 title: Optimieren bei Edge - Cloudflare (BYOCDN)
 description: Erfahren Sie, wie Sie Cloudflare BYOCDN for Optimize bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: 14dbee36f39b0d993d448edccb63fb8a519704a1
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,53 @@ Bei Anfragen an das Backend von Edge Optimize müssen die folgenden Kopfzeilen f
 | `x-edgeoptimize-url` | Der ursprüngliche URL-Pfad und die Abfragezeichenfolge der Anfrage. | `/page.html` oder `/products?id=123` |
 | `x-edgeoptimize-api-key` | Der von Adobe für Ihre Domain bereitgestellte API-Schlüssel. | `your-api-key-here` |
 | `x-edgeoptimize-config` | Konfigurations-String zur Cache-Schlüsseldifferenzierung. | `LLMCLIENT=TRUE;` |
+
+## Setup-Optionen
+
+Es gibt zwei Möglichkeiten, Cloudflare Worker für Edge Optimize einzurichten:
+
+* [**Option 1: Für Cloudflare bereitstellen (empfohlen)**](#option-1-deploy-to-cloudflare) - Erstellt automatisch einen neuen Worker und fordert Sie zur Eingabe der erforderlichen Umgebungsvariablen und Geheimnisse auf. Verwenden Sie diese Option, wenn kein Cloudflare-Worker für diese Domain vorhanden ist.
+* [**Option 2: Manuelles Setup**](#option-2-manual-setup) — Schrittweise Anleitungen zum Erstellen und Konfigurieren des Sekundärs selbst. Verwenden Sie diese Option, wenn Sie bereits über einen vorhandenen Cloudflare-Worker verfügen, den Sie erweitern möchten, oder wenn Sie die vollständige Kontrolle über die Bereitstellung bevorzugen.
+
+Unabhängig davon, welche Option Sie auswählen, müssen Sie den Worker manuell mit Ihrer Domain verknüpfen - siehe [Schritt: Hinzufügen einer Route zu Ihrer Domain](#add-a-route-to-your-domain).
+
+## Option 1: Für Cloudflare bereitstellen
+
+Diese Option verwendet die Schaltfläche **In Cloudflare bereitstellen**, um den Worker automatisch zu erstellen und die erforderlichen Umgebungsvariablen und Geheimnisse in Ihrem Cloudflare-Konto zu konfigurieren. Dies ist der schnellste Einstieg, wenn Sie einen neuen Worker einrichten.
+
+>[!IMPORTANT]
+>
+>Verwenden Sie diese Option nur, **Sie** vorhandenen Cloudflare-Worker in Ihrer Domain haben. Wenn Sie bereits einen Worker haben, verwenden Sie [Option 2: Manuelle Einrichtung](#option-2-manual-setup), um die Routing-Logik für Edge Optimize zu Ihrem bestehenden Worker hinzuzufügen.
+
+**Schritt 1: Bereitstellen des Sekundärs**
+
+Klicken Sie auf die Schaltfläche unten, um den Edge Optimize-Worker für Ihr Cloudflare-Konto bereitzustellen:
+
+[![Bereitstellung für Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/adobe/llmo-code-samples/tree/main/optimize-at-edge/cloudflare/automation)
+
+**Schritt 2: Füllen Sie das Bereitstellungsformular aus**
+
+Durch Klicken auf die Schaltfläche wird die Seite „Workers-Einrichtung“ geöffnet. Füllen Sie das Formular wie folgt aus:
+
+![Cloudflare-Sekundäre - Einrichtungsseite](/help/assets/optimize-at-edge/cloudflare-deploy-form.png)
+
+1. **Git-Konto** - Wählen Sie Ihr GitHub- oder GitLab-Konto aus der Dropdown-Liste aus. Cloudflare wandelt den Code des Sekundärs in ein Repository in Ihrem Konto um. Wenn kein Konto aufgeführt ist, können Sie eine neue Verbindung direkt aus der Dropdown-Liste hinzufügen, indem Sie **+ Neue GitHub-Verbindung**. **+ Neue GitLab-Verbindung**. Weitere Informationen finden Sie im [Handbuch zur Cloudflare-Git-Integration](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/).
+
+   ![Dropdown-Menü des Git-Kontos mit den Optionen Neue GitHub-Verbindung und Neue GitLab-Verbindung](/help/assets/optimize-at-edge/cloudflare-git-connection.png)
+2. **Privates Git-Repository erstellen** — Lassen Sie diese Option aktiviert (Standard).
+3. **Projektname** — Belassen Sie die `edge-optimize-router` oder geben Sie einen Namen Ihrer Wahl ein.
+4. **EDGE_OPTIMIZE_API_KEY** — Fügen Sie den von Adobe bereitgestellten API-Schlüssel für Edge Optimize ein. Dieser Wert wird als verschlüsseltes Geheimnis gespeichert.
+5. **EDGE_OPTIMIZE_TARGET_HOST** — Geben Sie die Domain Ihrer Site ohne das Protokoll ein (z. B. `www.example.com`).
+6. **Befehl erstellen** - Leer lassen.
+7. **Befehl bereitstellen** — Als `npm run deploy` beibehalten (vorausgefüllt).
+8. **Builds für produktionsfremde Verzweigungen** — Deaktivieren Sie diese Option. Dies ist eine Workflow-Funktion für Entwickler und wird für diese Bereitstellung nicht benötigt.
+9. Klicken Sie **Erstellen und bereitstellen**.
+
+Nachdem der Worker bereitgestellt wurde, fahren Sie mit [Route zu Ihrer Domain hinzufügen](#add-a-route-to-your-domain) fort, um den Worker mit Ihrer Domain zu verknüpfen. Das Routing wird nicht automatisch konfiguriert und muss manuell abgeschlossen werden.
+
+## Option 2: Manuelle Einrichtung
+
+Führen Sie diese Schritte aus, um den Worker manuell zu erstellen und zu konfigurieren.
 
 **Schritt 1: Erstellen des Cloudflare-Sekundärs**
 
@@ -239,7 +286,7 @@ Klicken Sie **Speichern und Bereitstellen**, um den Worker zu veröffentlichen.
 
 ![Cloudflare-Worker-Code-Editor](/help/assets/optimize-at-edge/cloudflare-worker-editor.png)
 
-**Schritt 3: Konfigurieren von Umgebungsvariablen**
+**Schritt 3: Konfigurieren von Umgebungsvariablen und Geheimnissen**
 
 Umgebungsvariablen speichern vertrauliche Konfigurationen wie Ihren API-Schlüssel sicher.
 
@@ -257,9 +304,9 @@ Umgebungsvariablen speichern vertrauliche Konfigurationen wie Ihren API-Schlüss
 
 ![Cloudflare-Umgebungsvariablen](/help/assets/optimize-at-edge/cloudflare-env-variables.png)
 
-**Schritt 4: Hinzufügen einer Route zu Ihrer Domain**
+## Hinzufügen einer Route zu Ihrer Domain {#add-a-route-to-your-domain}
 
-So aktivieren Sie den Worker in Ihrer Domain:
+Unabhängig davon, welche Setup-Option Sie verwendet haben, müssen Sie den Worker manuell mit Ihrer Domain verknüpfen. Dieser Schritt aktiviert den Worker in Ihrem Traffic.
 
 1. Navigieren Sie zu den **Einstellungen** > **Trigger**.
 2. Klicken **unter „Routen** auf **Route hinzufügen**.
@@ -377,7 +424,7 @@ const FAILOVER_ON_5XX = false;
 | Problem | Mögliche Ursache | Lösung |
 |-------|----------------|----------|
 | Keine `x-edgeoptimize-request-id`-Kopfzeile in Antwort | Arbeitsroute nicht zugeordnet oder Benutzeragent nicht in der Agentenbots-Liste. | Stellen Sie sicher, dass Ihr Routenmuster mit der Anfrage-URL übereinstimmt. Prüfen Sie, ob sich der Benutzeragent im `AGENTIC_BOTS`-Array befindet. |
-| 401- oder 403-Fehler von Edge Optimize | Ungültiger oder fehlender API-Schlüssel. | Stellen Sie sicher, dass `EDGE_OPTIMIZE_API_KEY` in Umgebungsvariablen korrekt festgelegt ist. Adobe kontaktieren, um zu bestätigen, dass Ihr API-Schlüssel aktiv ist. |
+| 401- oder 403-Fehler von Edge Optimize | Ungültiger oder fehlender API-Schlüssel. | Stellen Sie sicher, dass `EDGE_OPTIMIZE_API_KEY` in Umgebungsvariablen und Geheimnissen korrekt festgelegt ist. Adobe kontaktieren, um zu bestätigen, dass Ihr API-Schlüssel aktiv ist. |
 | Unendliche Weiterleitungen oder Schleifen | Schleifenschutz-Kopfzeile wird nicht richtig eingestellt oder überprüft. | Stellen Sie sicher, dass die `x-edgeoptimize-request` Kopfzeilenprüfung vorhanden ist. |
 | Betroffener Menschenhandel | Routing-Logik für Worker ist zu breit angelegt. | Stellen Sie sicher, dass die Zuordnungslogik des Benutzeragenten korrekt ist und nicht zwischen Groß- und Kleinschreibung unterschieden wird. Überprüfen Sie, ob `TARGETED_PATHS` richtig konfiguriert ist. |
 | Langsame Reaktionszeiten | Netzwerklatenz zum Edge Optimize-Backend. | Dies ist für die erste Anfrage zu erwarten. Nachfolgende Anfragen werden bei Edge Optimize zwischengespeichert. |
