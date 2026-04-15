@@ -2,9 +2,9 @@
 title: Optimieren bei Edge - Cloudflare (BYOCDN)
 description: Erfahren Sie, wie Sie Cloudflare BYOCDN for Optimize bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 66b058734597c378040e77a23a4023bed9273427
+source-git-commit: 38ea32e27b1c5c129b019155cb7b717c7ca4f179
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1922'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Bei Anfragen an das Backend von Edge Optimize müssen die folgenden Kopfzeilen f
 Es gibt zwei Möglichkeiten, Cloudflare Worker für Edge Optimize einzurichten:
 
 * [**Option 1: Für Cloudflare bereitstellen (empfohlen)**](#option-1-deploy-to-cloudflare) - Erstellt automatisch einen neuen Worker und fordert Sie zur Eingabe der erforderlichen Umgebungsvariablen und Geheimnisse auf. Verwenden Sie diese Option, wenn kein Cloudflare-Worker für diese Domain vorhanden ist.
-* [**Option 2: Manuelles Setup**](#option-2-manual-setup) — Schrittweise Anleitungen zum Erstellen und Konfigurieren des Sekundärs selbst. Verwenden Sie diese Option, wenn Sie bereits über einen vorhandenen Cloudflare-Worker verfügen, den Sie erweitern möchten, oder wenn Sie die vollständige Kontrolle über die Bereitstellung bevorzugen.
+* [**Option 2: Manuelles Setup**](#option-2-manual-setup) — Schrittweise Anleitungen zum Erstellen und Konfigurieren des Sekundärs selbst. Verwenden Sie diese Option, wenn Sie bereits einen Cloudflare-Worker in Ihrer Domain konfiguriert haben - Sie müssen den Edge Optimize-Code mit Ihrem bestehenden Worker zusammenführen (siehe [Schritt 2: Hinzufügen des Worker-Codes](#option-2-manual-setup)) oder wenn Sie die vollständige Kontrolle über die Bereitstellung bevorzugen.
 
 Unabhängig davon, welche Option Sie auswählen, müssen Sie den Worker manuell mit Ihrer Domain verknüpfen - siehe [Schritt: Hinzufügen einer Route zu Ihrer Domain](#add-a-route-to-your-domain).
 
@@ -113,7 +113,7 @@ Führen Sie diese Schritte aus, um den Worker manuell zu erstellen und zu konfig
 
 **Schritt 2: Fügen Sie den Worker-Code hinzu**
 
-Klicken Sie nach dem Erstellen des Workers auf **Code bearbeiten** und ersetzen Sie den Standard-Code durch Folgendes:
+Klicken Sie nach dem Erstellen des Workers **Code bearbeiten** und ersetzen Sie den Standard-Code durch Folgendes. Wenn Sie bereits über einen Cloudflare-Worker verfügen, führen Sie den unten stehenden Code mit Ihrem vorhandenen Worker-Code zusammen, anstatt ihn vollständig zu ersetzen.
 
 ```javascript
 /**
