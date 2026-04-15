@@ -1,7 +1,7 @@
 ---
-source-git-commit: da789100d814004687de2f46e18a295671dec4b8
+source-git-commit: e9309dc8f8d1d81b953483f17dcb424e46d5cd3b
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -32,28 +32,31 @@ ht-degree: 0%
 
 Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich außerdem an Ihr Adobe-Account-Team oder an Ihren `llmo-at-edge@adobe.com`.
 
-## Staging-Domain-API-Schlüssel (optional) {#retrieve-staging-edge-optimize-api-key}
+## Optional: Testen des Routings für einen Staging-Host-Namen {#retrieve-staging-edge-optimize-api-key}
 
-Verwenden Sie einen Staging-Host-Namen, wenn Sie die Option Optimieren in Edge in einer niedrigeren Umgebung testen möchten, bevor der Produktions-Traffic die Routing-Regeln verwendet.
+**Optional: Testrouting für einen Staging-Host-Namen**
 
-**Voraussetzungen**
+Wenn Sie das Routing in einer niedrigeren Umgebung vor der Aktivierung des Produktions-Routing überprüfen möchten, können Sie einen Staging-Host-Namen konfigurieren.
 
-* Der Staging-Hostname muss zur **gleichen registrierbaren Domain** wie Ihre Produktions-Site gehören (z. B. `https://staging.example.com` wenn die Produktion `https://www.example.com` wird).
-* Für **Website kann nur** eine) Staging-Domain konfiguriert werden. Nachdem er gespeichert wurde, kann er ohne Hilfe nicht mehr geändert werden.
+**Anforderungen**
 
-**Schritte**
+* Der Staging-Hostname muss sich auf derselben **registrierbaren Domain** wie die Produktion befinden (z. B. `https://staging.example.com`, wenn die Produktion `https://www.example.com` wird).
+* Nur **eine** Staging-Domain pro Site. Nachdem er gespeichert wurde, kann er nicht mehr geändert werden, ohne Adobe zu kontaktieren.
 
-1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+**Rufen Sie Ihren Staging-API-Schlüssel ab**
 
-2. Wählen Sie **Abschnitt „Optimierungen für KI** Agenten bereitstellen“ die Option **Staging-Domain hinzufügen** (oder **Staging-Domain**, wenn bereits eine Staging-Domain konfiguriert ist).
+1. Öffnen Sie **Kundenkonfiguration** und wählen Sie **CDN-Konfiguration** aus.
+2. Wählen **unter „Optimierungen für KI** Agenten bereitstellen“ die Option **Staging-Domain hinzufügen** (oder **Staging-Domain**, wenn bereits eine Staging-Domain konfiguriert ist).
+3. Geben Sie die vollständige Staging-URL einschließlich `https://` ein und wählen Sie **Domain festlegen**.
+4. Kopieren Sie den **Staging** API-Schlüssel aus dem Bestätigungsdialogfeld.
 
-3. Geben Sie im Dialogfeld **Staging** die vollständige Staging-URL einschließlich `https://` ein und wählen Sie **Domain festlegen**.
+![Staging-Domain-API-Schlüssel](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-   ![Dialogfeld „Domain-Eingabe bereitstellen“](/help/assets/optimize-at-edge/byocdn-staging-domain-input.png)
+Stellen Sie dieselben Routing-Regeln mithilfe des Staging-API-Schlüssels in Ihrer Staging-Umgebung bereit.
 
-4. Bestätigen Sie die Domain in der nächsten Eingabeaufforderung. Wenn der Workflow abgeschlossen ist, zeigt **Dialogfeld „Staging-**&quot; die konfigurierte Domain und ihren **API-Schlüssel** an. Wählen Sie **Kopieren** aus, um den Schlüssel der Staging-API zu kopieren.
+**Staging-Bot-Traffic testen**
 
-   ![Staging-Domain-API-Schlüssel](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
+Ersetzen Sie `https://staging.example.com/page.html` durch Ihre echte Staging-URL und Ihren Pfad. **Erfolg:** Die Antwort enthält die `x-edgeoptimize-request-id`.
 
 Wenn Sie Hilfe benötigen, wenden Sie sich an `llmo-at-edge@adobe.com`.
 
@@ -63,6 +66,16 @@ Der Status des Traffic-Routings kann auch in der LLM Optimizer-Benutzeroberfläc
 
 ![Optimierung für KI-Agenten bereitstellen - abgeschlossen](/help/assets/optimize-at-edge/byocdn-CDN-traffic-routed-tick.png)
 
+## Zulassen der Optimierung bei Edge durch Firewall-Regeln (optional) {#waf-allowlist-setup}
+
+Wenn Ihr CDN einen WAF oder Bot Manager verwendet:
+
+* Zulassungsliste des `*AdobeEdgeOptimize/1.0*`-Benutzeragenten in WAF oder Bot-Manager, damit der Service „Optimieren unter Edge&quot; Ihre Ursprungs-Inhalte abrufen kann.
+* Wenn Ihre Firewall eine zusätzliche Überprüfung über den Benutzeragenten hinaus erfordert, generieren Sie ein Geheimnis (z. B. `openssl rand -hex 32`) und:
+   * Fügen Sie `x-edgeoptimize-fetcher-key` mit dem Geheimnis in Ihren Routing-Regeln zusammen mit den anderen `x-edgeoptimize-*` Kopfzeilen hinzu.
+   * Fügen Sie eine WAF- oder Bot-Manager-Regel hinzu, um Anfragen zuzulassen, bei denen `x-edgeoptimize-fetcher-key` mit demselben Geheimnis übereinstimmt.
+* Bei Edge optimieren leitet diese Kopfzeile unverändert weiter - Sie besitzen den gesamten Schlüssellebenszyklus.
+
 ## Zurück zur Übersicht {#return-to-overview}
 
-Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[&#x200B; bei Edge - Überblick](/help/dashboards/optimize-at-edge/overview.md).
+Weitere Informationen zu „Optimieren bei Edge&quot;, einschließlich verfügbarer Opportunitys, Workflows für die automatische Optimierung und häufig gestellte Fragen, finden Sie unter &quot;[ bei Edge - Überblick](/help/dashboards/optimize-at-edge/overview.md).
