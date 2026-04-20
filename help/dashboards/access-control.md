@@ -106,7 +106,7 @@ Ein **Systemadministrator** für Ihr Unternehmen kann die [Adobe Admin Console](
 1. Melden Sie sich bei der [Adobe Admin Console](https://adminconsole.adobe.com/) mit einem Konto an, das über Administratorrechte für Ihr Unternehmen verfügt.
 1. Weisen Sie das Adobe LLM Optimizer-Produktprofil (oder die entsprechende Produktberechtigung Ihres Unternehmens) dem Benutzer oder der Gruppe zu, der bzw. die produktzugewiesene Funktionen erhalten soll.
 
-Ausführliche Anweisungen finden Sie unter [Verwalten von Produkten in der &#x200B;](https://helpx.adobe.com/enterprise/using/manage-products.html) und [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
+Ausführliche Anweisungen finden Sie unter [Verwalten von Produkten in der &#x200B;](https://helpx.adobe.com/de/enterprise/using/manage-products.html) und [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
 
 >[!NOTE]
 >
