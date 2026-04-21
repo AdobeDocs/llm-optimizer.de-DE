@@ -2,10 +2,10 @@
 title: Agent-basierter Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic“ sehen können, wie AI Agents mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: a1ba7684ccef9baf3452cc158fc0d6a12aa7adb8
+source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 98%
+source-wordcount: '1335'
+ht-degree: 94%
 
 ---
 
@@ -52,7 +52,7 @@ Nach der Aktivierung werden Protokolle aufgenommen und Metriken wie Gesamtanzahl
 
 LLM Optimizer verarbeitet eine Teilmenge der Felder aus den CDN-Protokollen. Auch wenn die Rohnamen der Protokollfelder je nach CDN-Anbieter variieren, werden sie normalisiert und wie folgt dargestellt:
 
-* URL (nur Pfad)
+* URL (Pfad- und Abfrageparameter)
 * Benutzer-Agent
 * Status-Code
 * Referrer-Header
@@ -99,7 +99,7 @@ Verwenden Sie das Diagramm „Trends bei Agent-basiertem Traffic“, um die wöc
 
 ## Elemente mit Zunahme und Abnahme {#top-bottom-movers}
 
-Die Ansicht der Elemente mit Zunahme und Abnahme zeigt URLs mit den größten wöchentlichen Änderungen beim Agent-basierten Traffic, also bei Besuchen oder Treffern von KI-Systemen, die auf Ihre Inhalte zugreifen. **Zunahme** zeigt Seiten, deren Sichtbarkeit oder Interaktionen zunehmen, während **Abnahme** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
+Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. **Top Movers** zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während **Bottom Movers** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
 ![Elemente mit Zunahme und Abnahme](/help/dashboards/assets/movers.png)
 
