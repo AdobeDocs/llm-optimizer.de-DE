@@ -2,9 +2,9 @@
 title: Optimieren bei Edge - CloudFront (BYOCDN)
 description: Erfahren Sie, wie Sie CloudFront BYOCDN für „Optimieren“ bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 001ed59e25975c718367f543b2e35fedbce686f5
+source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2207'
 ht-degree: 1%
 
 ---
@@ -20,12 +20,8 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 
 * Eine vorhandene CloudFront-Distribution, die Ihre Website bedient.
 * AWS IAM-Berechtigungen zum Erstellen von Lambda-Funktionen, IAM-Rollen, CloudFront-Distributionen und Cache-Richtlinien.
-* Onboarding-Prozess für LLM Optimizer abgeschlossen.
-* CDN-Protokollweiterleitung an LLM Optimizer abgeschlossen.
-* Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde.
-* (Optional) Informationen zum Testen des Staging-Routings finden Sie **Optional: Test-Routing auf einem Staging** Hostnamen am Ende dieser Seite.
-
-{{retrieve-byocdn-api-key}}
+* Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Optional) Informationen zum Testen des Staging-Routings finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Schritt 1: Edge Optimize Origin erstellen**
 
@@ -403,12 +399,5 @@ Nach der Bereitstellung werden alle Traffic-Routen direkt zu Ihrem standardmäß
 4. Klicken Sie **Änderungen speichern**.
 
 5. Warten Sie, bis die Bereitstellung der Verteilung abgeschlossen ist, und überprüfen Sie dann, ob die Agentenanfragen die `x-edgeoptimize-request-id`-Kopfzeile zurückgeben, wie in Schritt 6 beschrieben.
-
-{{retrieve-staging-edge-optimize-api-key}}
-
-```
-curl -svo /dev/null https://staging.example.com/page.html \
-  --header "user-agent: chatgpt-user"
-```
 
 {{return-to-overview}}

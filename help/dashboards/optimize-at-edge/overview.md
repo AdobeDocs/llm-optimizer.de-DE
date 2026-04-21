@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 050a4eaa510df7195c5208978ba56d4413916808
+source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 74%
+source-wordcount: '2283'
+ht-degree: 75%
 
 ---
 
@@ -48,11 +48,6 @@ Starten Sie den Onboarding-Prozess in Ihrem LLM Optimizer-Konto:
 >[!NOTE]
 >Bitte beachten Sie die unten stehenden schrittweisen Anleitungen, die den gesamten Onboarding-Ablauf abdecken. Bei Problemen, die nicht durch die Handbücher gelöst werden, können Sie sich an `llmo-at-edge@adobe.com` wenden.
 
-Voraussetzungen für das Onboarding von „Optimize at Edge“:
-
-* Schließen Sie das Onboarding-Verfahren für LLM Optimizer ab.
-* Schließen Sie das Protokollweiterleitungsverfahren für Ihre CDN-Protokolle ab.
-
 Voraussetzungen für Ihr IT-/CDN-Team:
 
 * Fügen Sie `*AdobeEdgeOptimize/1.0*` user-agent zur Datei „robots.txt“ Ihrer Site hinzu oder verwalten Sie Bot-Traffic-Regeln.
@@ -64,7 +59,7 @@ Voraussetzungen für Ihr IT-/CDN-Team:
 >[!IMPORTANT]
 >Routing muss am äußeren CDN (dem CDN, das dem Client am nächsten ist) konfiguriert werden. Wenn Sie über mehrere CDNs verfügen, kann das Routing nur im äußeren CDN erfolgen.
 
-Um den Einrichtungsprozess zu leiten, wählen Sie unten Ihren CDN-Provider aus und folgen Sie dem entsprechenden Konfigurationshandbuch. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden müssen. Wir empfehlen, Änderungen zuerst in den niedrigeren Umgebungen anzuwenden. **Bring Your Own CDN**-Handbücher enthalten am Ende jeder Seite optionale Tests von Staging-Host-Namen.
+Um den Einrichtungsprozess zu leiten, wählen Sie unten Ihren CDN-Provider aus und folgen Sie dem entsprechenden Konfigurationshandbuch. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden müssen. Wir empfehlen, Änderungen zuerst in den niedrigeren Umgebungen anzuwenden.
 
 ### CDN-Konfigurationshandbücher
 
@@ -97,7 +92,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die [AI Content-Sichtbarkeit Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) Browser-Erweiterung zeigt an, auf wie viele Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
