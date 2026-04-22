@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: e9eab92835e555f7267f58eea7faa0302c2f1cd0
+source-git-commit: 6395ea8bdaae419d931ecd67f719a524caa66d0f
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 75%
+source-wordcount: '2301'
+ht-degree: 74%
 
 ---
 
@@ -55,6 +55,10 @@ Voraussetzungen für Ihr IT-/CDN-Team:
 * Fügen Sie Routing-Regeln für „Optimize at Edge“ im CDN hinzu.
 * Wenn Ihr CDN über WAF- oder Bot-Manager-Regeln verfügt, überprüfen Sie den `*AdobeEdgeOptimize/1.0*`-Benutzeragenten. Wenn eine zusätzliche Überprüfung erforderlich ist, konfigurieren Sie die `x-edgeoptimize-fetcher-key`. Jede BYOCDN-Anleitung enthält die folgenden Schritte.
 * Prüfen Sie das Routing für „Optimize at Edge“ in der Benutzeroberfläche von LLM Optimizer.
+
+Das folgende Diagramm zeigt, wie Anfragen ein BYOCDN-Setup mit Optimize bei Edge durchlaufen:
+
+![BYOCDN-Anfragefluss](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
 >Routing muss am äußeren CDN (dem CDN, das dem Client am nächsten ist) konfiguriert werden. Wenn Sie über mehrere CDNs verfügen, kann das Routing nur im äußeren CDN erfolgen.
