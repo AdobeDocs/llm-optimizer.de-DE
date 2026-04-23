@@ -2,7 +2,7 @@
 title: Kundenkonfiguration
 description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
 feature: Customer Configuration
-source-git-commit: ef6b4ec9dcb3b5234add6e82cbc54ab29d363509
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '2249'
 ht-degree: 37%
@@ -27,7 +27,7 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz in verschiedenen Mär
 * [CDN-Konfiguration](#agentic-cdn)
 * [Google Search Console](#google-console)
 
-Wenn Sie das markenzentrierte Erlebnis verwenden, navigieren Sie zu **Markenverwaltung**, um Marken und Markenaliase einzurichten und zu konfigurieren und Mitbewerber zu definieren, mit denen Sie nachverfolgen können. **Brands Management** wird auch verwendet, um Integrationen wie die Google-Suchkonsole, Adobe Analytics und CDN-Protokollweiterleitung zu konfigurieren, die sich auf mit Marken verknüpfte URLs beziehen. Klicken Sie dazu auf die entsprechenden Registerkarten: GSC, CDN usw.
+Wenn Sie das [markenorientierte Erlebnis](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenverwaltung**, um Marken, Markenaliase und Mitbewerber einzurichten und zu konfigurieren, gegen die Sie tracken können. **Brands Management** wird auch verwendet, um Integrationen wie die Google-Suchkonsole, Adobe Analytics und CDN-Protokollweiterleitung zu konfigurieren, die sich auf mit Marken verknüpfte URLs beziehen. Klicken Sie dazu auf die entsprechenden Registerkarten: GSC, CDN usw.
 
 ![Brands Management — App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
@@ -60,7 +60,7 @@ Darüber hinaus können Sie der Liste auch unabhängig von einer CSV-Datei oder 
 5. Wählen Sie die Region aus.
 6. Klicken Sie auf **Prompt hinzufügen**. Das Thema wird nun mit dem Prompt in der Liste angezeigt.
 
-Um Kunden, die ein markenzentriertes Erlebnis bieten, Themen und Eingabeaufforderungen hinzuzufügen, navigieren Sie zu **Eingabeaufforderungsverwaltung**.
+Kunden, die am [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) teilnehmen, können Themen und Eingabeaufforderungen hinzufügen, indem sie zu **Eingabeaufforderungen-Verwaltung** navigieren.
 
 ![Fordert zur Verwaltung auf (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -212,7 +212,7 @@ Nachdem Sie das Google Search Console-Konto in LLM Optimizer integriert haben, k
 
 #### Anzeigen hinzugefügter Abfragen in der Liste „Eingabeaufforderungen“ {#prompts-list}
 
-Nachdem eine Abfrage hinzugefügt wurde, wird sie auf der Registerkarte [Eingabeaufforderungen](#prompts-brand) im Dashboard für die Kundenkonfiguration (klassisches Erlebnis) oder in der **Eingabeaufforderungen-Verwaltung** (markenorientiertes Erlebnis) angezeigt. Eingabeaufforderungen aus der Google-Suchkonsole werden mit einem Google-Suchkonsolensymbol in der Spalte **Herkunft** gekennzeichnet. Mit dem Symbol können Sie zwischen Eingabeaufforderungen, die auf dem tatsächlichen Suchverhalten der Benutzenden basieren, und Eingabeaufforderungen unterscheiden, die manuell oder aus anderen Quellen hinzugefügt wurden.
+Nachdem eine Abfrage hinzugefügt wurde, wird sie auf der Registerkarte [Eingabeaufforderungen](#prompts-brand) im Dashboard für die Kundenkonfiguration (klassische Navigation) oder in der **Eingabeaufforderungsverwaltung** (markenorientiertes Erlebnis) angezeigt. Eingabeaufforderungen aus der Google-Suchkonsole werden mit einem Google-Suchkonsolensymbol in der Spalte **Herkunft** gekennzeichnet. Mit dem Symbol können Sie zwischen Eingabeaufforderungen, die auf dem tatsächlichen Suchverhalten der Benutzenden basieren, und Eingabeaufforderungen unterscheiden, die manuell oder aus anderen Quellen hinzugefügt wurden.
 
 ### Häufig gestellte Fragen {#gsc-faq}
 

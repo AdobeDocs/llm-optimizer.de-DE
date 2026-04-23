@@ -2,9 +2,9 @@
 title: Schnellstart
 description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
 feature: Quickstart, Onboarding
-source-git-commit: d38cf066ca1e3785032b7beca1c257e3a42f532b
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1459'
 ht-degree: 37%
 
 ---
@@ -12,11 +12,13 @@ ht-degree: 37%
 
 # Schnellstart
 
-Um mit LLM Optimizer zu beginnen, schließen Sie das Onboarding ab. Passen Sie dann Kategorien, Themen und Eingabeaufforderungen an, konfigurieren Sie die CDN-Protokollweiterleitung und öffnen Sie die [Dashboards](/help/dashboards/dashboards-overview.md) um umfassendere Einblicke zu erhalten.
-
-**Markenzentriertes Erlebnis:** beginnen neue Kunden standardmäßig in einer fokussierten, markenorientierten Benutzeroberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen Sie wählen können. Bestehende LLM Optimizer-Kunden werden schrittweise auf dieses markenorientierte Erlebnis umsteigen.
+Um mit LLM Optimizer zu beginnen, schließen Sie den Onboarding-Prozess ab. Passen Sie dann Kategorien, Themen und Eingabeaufforderungen an, konfigurieren Sie die CDN-Protokollweiterleitung und öffnen Sie die [Dashboards](/help/dashboards/dashboards-overview.md) um umfassendere Einblicke zu erhalten.
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
+
+## Markenorientiertes Erlebnis {#brand-centric-experience}
+
+Standardmäßig beginnen neue Kundinnen und Kunden in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen Sie wählen können. Bestehende LLM Optimizer-Kunden werden schrittweise auf dieses markenorientierte Erlebnis umsteigen.
 
 ## Onboarding – Überblick
 
@@ -45,7 +47,7 @@ Der Aktivierungsfluss unterscheidet sich je nach Adobe-Produkt.
 
 Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Möglichkeiten:
 
-* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
+* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
 * Oder gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
@@ -93,7 +95,7 @@ Integrieren Sie Ihren Markennamen und Ihre Domain, um mit der Verwendung von LLM
 
 Während der Onboarding-Phase wird eine kleine Gruppe von Kategorien, Themen und Prompts generiert. Markenpräsenz-Analysen zu diesen Prompts stehen kurz nach dem Onboarding Ihrer Site zur Verfügung.
 
-Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Konfigurieren Sie außerdem [CDN-Protokollweiterleitung](#step-4) für die Traffic-Analyse. LLM Optimizer erfordert Markenpräsenz-Daten und Erkenntnisse von Agent und Referral Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zur Steigerung der KI-Sichtbarkeit zu geben.
 
@@ -107,7 +109,7 @@ Nach dem Onboarding der Site können Sie die Markenpräsenz-Analyse auf Basis de
 
 ### Kundenkonfiguration (klassische Navigation)
 
-Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
 
 ![Dashboard „Kundenkonfiguration“](/help/overview/assets/prompt-creation.png)
 
@@ -128,7 +130,7 @@ Im Dashboard für Kundenkonfigurationen haben Sie folgende Möglichkeiten:
 
 ### Markenorientiertes Erlebnis
 
-Kunden, die an dem markenorientierten Erlebnis teilnehmen, können Kategorien, Themen und Eingabeaufforderungen wie folgt hinzufügen:
+Für Kunden, die am markenorientierten Erlebnis teilnehmen, können Sie Kategorien, Themen und Eingabeaufforderungen wie folgt hinzufügen:
 
 * **Kategorien** - Navigieren Sie zu **Markenverwaltung** und klicken Sie auf **Kategorien**. Kategorien werden auf globaler Ebene definiert und gelten für alle Marken unter Brands Management.
 
@@ -144,7 +146,7 @@ Nachdem Ihre Domain integriert wurde, erhalten Sie in der Ansicht „Markenpräs
 
 >[!NOTE]
 >
-> Navigieren Sie für Kundinnen und Kunden, die sich am markenorientierten Erlebnis beteiligen, zu **Markenpräsenz** und wählen Sie im Dropdown-Menü „Marke“ eine Marke aus, für die Sie Markenpräsenz anzeigen möchten. Mit diesem Erlebnis können Sie die Markensichtbarkeit auch auf der Ebene **Alle Marken** anzeigen.
+> Navigieren Sie für Kunden, die sich am markenorientierten Erlebnis befinden, zu **Markenpräsenz** und wählen Sie im Dropdown-Menü „Marke“ eine Marke aus, für die Sie Markenpräsenz anzeigen möchten. Mit diesem Erlebnis können Sie die Markensichtbarkeit auch auf der Ebene **Alle Marken** anzeigen.
 
 ## Schritt 4: Bereitstellen von Informationen für die CDN-Protokollweiterleitung {#step-4}
 
@@ -164,9 +166,9 @@ Wenn zuvor kein CDN-Anbieter hinzugefügt wurde (wie oben beschrieben), werden S
 >[!NOTE]
 >Weitere Informationen zur Protokollweiterleitung bei Verwendung eines vom Kunden verwalteten CDN (BYOCDN) finden Sie unter [Übersicht über die Protokollweiterleitung von BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### Markenorientiertes Erlebnis
+### Markenzentrierte CDN-Erlebnisweiterleitung
 
-Kunden, die sich für ein markenorientiertes Erlebnis entscheiden, können CDN-Protokollweiterleitungsinformationen aus **Brands Management** wie folgt hinzufügen: Öffnen Sie **Brands Management** und klicken Sie auf die **CDN**-Beschriftung.
+Für Kunden, die sich am markenorientierten Erlebnis beteiligen, können Sie CDN-Protokollweiterleitungsinformationen von **Brands Management** wie folgt hinzufügen: Öffnen Sie **Brands Management** und klicken Sie auf die **CDN**-Beschriftung.
 
 ![Markenverwaltung - CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
 

@@ -2,7 +2,7 @@
 title: Best Practices für Kategorien, Themen, Prompts und andere Marken
 description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Prompts und andere Marken einschließlich der Wettbewerber konfigurieren, um eine maßgeschneiderte Markenüberwachung und eine strategische Inhaltsanalyse zu realisieren.
 feature: Best Practices, Customer Configuration
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 93%
@@ -26,7 +26,7 @@ Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z
 
 Standardmäßig beginnen neue Kundinnen und Kunden in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen Sie wählen können. Bestehende LLM Optimizer-Kunden werden schrittweise auf dieses markenorientierte Erlebnis umsteigen.
 
-Wenn Sie das markenorientierte Erlebnis verwenden, definieren Sie **Markenverwaltung** hier, wie Ihre Marke überwacht und analysiert wird.
+Wenn Sie das markenzentrierte Erlebnis verwenden, definieren Sie **Markenverwaltung** hier, wie Ihre Marke überwacht und analysiert wird.
 
 ![Brands Management — App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
