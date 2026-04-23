@@ -2,10 +2,10 @@
 title: Markenpräsenz
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ analysieren können, wie Ihre Marke in KI-generierten Antworten wahrgenommen wird.
 feature: Brand Presence
-source-git-commit: 24183fbe2577bb9402f8b6aaaf1e46c75403383d
-workflow-type: ht
-source-wordcount: '1299'
-ht-degree: 100%
+source-git-commit: be88e6a5fbabbc9c1ceb75b49b883cde92ab98b2
+workflow-type: tm+mt
+source-wordcount: '1346'
+ht-degree: 96%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke in KI-generierten Antworten wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitierungen zu verfolgen und Sentiment-Trends zu erkunden. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Erkenntnisse bereitstellen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
-![Markenpräsenz](/help/dashboards/assets/brand-main.png)
+![Markenpräsenz - Übersicht](/help/dashboards/assets/brand-main.png)
 
 Diese Seite beschreibt Folgendes:
 
@@ -24,6 +24,10 @@ Diese Seite beschreibt Folgendes:
 * [Sentiment-Trend](#sentiment-trend)
 * [Datenerkenntnisse](#data-insights)
 
+Wenn Sie das markenorientierte Erlebnis verwenden, navigieren Sie zu **Markenpräsenz**. Wählen Sie in der Dropdown-Liste Marke entweder die Marke aus, die Sie analysieren möchten, oder wählen Sie **Alle Marken**, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
+
+![Markenpräsenz mit Markenselektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
 ## Filter {#filters}
 
 Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. Die ausgewählten Filter wirken sich auf **alle** Abschnitte im Dashboard aus. Sie können Folgendes anpassen:
@@ -31,7 +35,7 @@ Oben auf der Seite können Sie Filter anwenden, um Ihre Ansicht zu verfeinern. D
 * **Datumsbereich** – Wählen Sie den Zeitrahmen für die angezeigten Daten aus. Zum Beispiel die letzten 4 Wochen. Sie können den Zeitraum auch mit der Option **Benutzerdefinierte Wochen** anpassen.
 * **Kategorie** – Filtert die angezeigten Ergebnisse nach vordefinierten Kategorien oder benutzerdefinierten Kategorien.
 * **Thema** – Filtern Sie nach Thema, um Inhaltsthemen und Themenbereiche zu analysieren, in denen Ihre Marke in KI-Antworten erscheint.
-* **Plattform** – Wählen Sie die zu analysierende KI-Engine aus.LLM Optimizer unterstützt derzeit ChatGPT, Google AI Overviews, den Google AI Mode, Microsoft Copilot, Google Gemini und Perplexity.
+* **Plattform** – Wählen Sie die zu analysierende KI-Engine aus. LLM Optimizer unterstützt derzeit ChatGPT, Google AI Overviews, den Google AI Mode, Microsoft Copilot, Google Gemini und Perplexity.
 * **Herkunft der Prompts** – Wählen Sie die Herkunft der Prompts. Die Herkunft kann entweder von den Benutzenden eingegeben oder per KI generiert werden.
 * **Prompt-Branding** – Filtern Sie die Ergebnisse nach Prompts mit oder ohne Branding.
 * **Region** – Filtern Sie die Ergebnisse nach Geografie. Bei Veröffentlichung werden noch nicht alle Regionen verfügbar sein.

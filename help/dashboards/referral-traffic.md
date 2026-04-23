@@ -2,10 +2,10 @@
 title: Referral Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Referral Traffic“ anzeigen können, wie Besuchende über externe Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen.
 feature: Referral Traffic
-source-git-commit: c0ef7710411a01410fddf87b0c4344eb782c264f
+source-git-commit: ea4cf80dc5f789f7938c800354bc8d8d3246704c
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 90%
+source-wordcount: '741'
+ht-degree: 79%
 
 ---
 
@@ -27,9 +27,17 @@ Diese Seite beschreibt Folgendes:
 * [Top-Referenz-URLs](#top-referrals)
 * [Details zum Referral Traffic](#traffic-details)
 
+Wenn Sie sich auf dem markenorientierten Erlebnis befinden, navigieren Sie zu **Referral Traffic** und wählen Sie die Website aus, für die Sie die LLM-Referral Traffic-Einblicke anzeigen möchten.
+
+![Referral Traffic - Website-Selektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+
 ## Einrichtung {#setup}
 
-Bei der ersten Anmeldung kann das Dashboard „Referral Traffic“ leer angezeigt werden. Damit Daten angezeigt werden, müssen Sie die [CDN-Protokollweiterleitung](/help/dashboards/customer-configuration.md#cdn-configuration) konfigurieren, indem Sie **Zur Konfiguration wechseln** auswählen.
+Bei der ersten Anmeldung kann das Dashboard „Referral Traffic“ leer angezeigt werden. Um Ihre Daten anzuzeigen, müssen Sie die CDN-Protokollweiterleitung konfigurieren.
+
+So können Sie Kunden, die sich am markenorientierten Erlebnis beteiligen, CDN-Protokollweiterleitungsinformationen hinzufügen. Navigieren Sie zu **Markenverwaltung** und klicken Sie auf die **CDN**-Kennzeichnung. Siehe auch [Agent-Traffic - CDN-Einrichtung](/help/dashboards/agentic-traffic.md#cdn-setup).
+
+**Kundenkonfiguration (klassisches Erlebnis):** Konfigurieren Sie [CDN-](/help/dashboards/customer-configuration.md#cdn-configuration)), indem Sie **Zur Konfiguration wechseln** auswählen.
 
 ![Einrichtung von Referral Traffic](/help/dashboards/assets/referral-setup1.png)
 

@@ -2,10 +2,10 @@
 title: Best Practices für Kategorien, Themen, Prompts und andere Marken
 description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, Prompts und andere Marken einschließlich der Wettbewerber konfigurieren, um eine maßgeschneiderte Markenüberwachung und eine strategische Inhaltsanalyse zu realisieren.
 feature: Best Practices, Customer Configuration
-source-git-commit: f6d33387337ca097747407099891cbc6b586b9bb
-workflow-type: ht
-source-wordcount: '1435'
-ht-degree: 100%
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -21,6 +21,20 @@ Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-config
 ![Fenster „Kundenkonfiguration“](/help/assets/best-practices/customer-configuration-best-practices.png)
 
 Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Aliasse für Markenerwähnungen hinzufügen, um alle Varianten Ihrer Marke über alle Prompts hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Erkenntnisse auf Ihren Unternehmenskontext zuschneidet, sodass Sichtbarkeit, Traffic und Möglichkeiten genau analysiert werden können.
+
+## Markenorientiertes Erlebnis
+
+Standardmäßig beginnen neue Kundinnen und Kunden in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen Sie wählen können. Bestehende LLM Optimizer-Kunden werden schrittweise auf dieses markenorientierte Erlebnis umsteigen.
+
+Wenn Sie das markenorientierte Erlebnis verwenden, definieren Sie **Markenverwaltung** hier, wie Ihre Marke überwacht und analysiert wird.
+
+![Brands Management — App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Markenverwaltung - Konfigurationsübersicht](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
+Um Themen und Eingabeaufforderungen für eine bestimmte Marke einzurichten, verwenden Sie **Eingabeaufforderungsverwaltung**.
+
+![Fordert zur Verwaltung auf](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Branchen-Prompt-Bibliothek
 
@@ -90,7 +104,7 @@ Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss mit dem Ber
 >[!IMPORTANT]
 >
 > * Wählen Sie einen Ansatz und halten Sie sich daran.
-> * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Verwenden Sie **SBU** und **URL_DIR** nicht gleichzeitig.
+> * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Mischen Sie **SBU** und **URL_DIR** nicht gleichzeitig.
 <!--Can you mix Product/Service with these?-->
 
 Zum Beispiel:

@@ -2,10 +2,10 @@
 title: Agent-basierter Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic“ sehen können, wie AI Agents mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: 21c14895ea9c1978332af3d742baacbe53079e88
+source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
 workflow-type: tm+mt
-source-wordcount: '1335'
-ht-degree: 94%
+source-wordcount: '1404'
+ht-degree: 89%
 
 ---
 
@@ -25,9 +25,19 @@ Diese Seite beschreibt Folgendes:
 * [Elemente mit Zunahme und Abnahme](#top-bottom-movers)
 * [Benutzer-Agent- und URL-Leistungsanalyse](#user-url-performance)
 
+Wenn Sie sich im markenzentrierten Erlebnis befinden, navigieren Sie zu **Agentenverkehr** und wählen Sie die Website aus, für die Sie die Agentenverkehrseinblicke anzeigen möchten.
+
+![Agentenverkehr - Website-Selektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
 ## CDN-Protokollweiterleitung {#cdn-setup}
 
-Ohne **CDN-Protokollweiterleitung** bleibt das Dashboard „Agent-basierter Traffic“ leer. Damit Agent-basierte Interaktionen angezeigt werden können, müssen Sie die **CDN-Protokollweiterleitung** konfigurieren.  Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
+Ohne **CDN-Protokollweiterleitung** bleibt das Dashboard „Agent-basierter Traffic“ leer. Damit Agent-basierte Interaktionen angezeigt werden können, müssen Sie die **CDN-Protokollweiterleitung** konfigurieren.
+
+Wenn Sie sich im markenorientierten Erlebnis befinden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem Sie zu **Brands Management** navigieren und auf die **CDN**-Kennzeichnung klicken.
+
+![Markenverwaltung - CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+**Kundenkonfiguration (klassische Navigation):** Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
 
 ![CDN-Einrichtung](/help/dashboards/assets/ag-log-forward1.png)
 
