@@ -2,7 +2,7 @@
 title: Markenpräsenz
 description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ analysieren können, wie Ihre Marke in KI-generierten Antworten wahrgenommen wird.
 feature: Brand Presence
-source-git-commit: be88e6a5fbabbc9c1ceb75b49b883cde92ab98b2
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 96%
@@ -24,7 +24,7 @@ Diese Seite beschreibt Folgendes:
 * [Sentiment-Trend](#sentiment-trend)
 * [Datenerkenntnisse](#data-insights)
 
-Wenn Sie das markenorientierte Erlebnis verwenden, navigieren Sie zu **Markenpräsenz**. Wählen Sie in der Dropdown-Liste Marke entweder die Marke aus, die Sie analysieren möchten, oder wählen Sie **Alle Marken**, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
+Wenn Sie das [markenorientierte Erlebnis](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenpräsenz**. Wählen Sie in der Dropdown-Liste Marke entweder die Marke aus, die Sie analysieren möchten, oder wählen Sie **Alle Marken**, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
 
 ![Markenpräsenz mit Markenselektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 

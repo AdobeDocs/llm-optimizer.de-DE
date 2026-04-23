@@ -2,10 +2,10 @@
 title: Agent-basierter Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic“ sehen können, wie AI Agents mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: a09824e35dd5a0b91fe07ca423f633f9253a6d74
+source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
 workflow-type: tm+mt
-source-wordcount: '1404'
-ht-degree: 89%
+source-wordcount: '1407'
+ht-degree: 90%
 
 ---
 
@@ -25,7 +25,7 @@ Diese Seite beschreibt Folgendes:
 * [Elemente mit Zunahme und Abnahme](#top-bottom-movers)
 * [Benutzer-Agent- und URL-Leistungsanalyse](#user-url-performance)
 
-Wenn Sie sich im markenzentrierten Erlebnis befinden, navigieren Sie zu **Agentenverkehr** und wählen Sie die Website aus, für die Sie die Agentenverkehrseinblicke anzeigen möchten.
+Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) befinden, navigieren Sie zu **Agentenverkehr** und wählen Sie die Website aus, für die Sie die Agentenverkehrseinblicke anzeigen möchten.
 
 ![Agentenverkehr - Website-Selektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
@@ -33,11 +33,9 @@ Wenn Sie sich im markenzentrierten Erlebnis befinden, navigieren Sie zu **Agente
 
 Ohne **CDN-Protokollweiterleitung** bleibt das Dashboard „Agent-basierter Traffic“ leer. Damit Agent-basierte Interaktionen angezeigt werden können, müssen Sie die **CDN-Protokollweiterleitung** konfigurieren.
 
-Wenn Sie sich im markenorientierten Erlebnis befinden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem Sie zu **Brands Management** navigieren und auf die **CDN**-Kennzeichnung klicken.
+### Kundenkonfiguration (klassische Navigation):
 
-![Markenverwaltung - CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
-
-**Kundenkonfiguration (klassische Navigation):** Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
+Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
 
 ![CDN-Einrichtung](/help/dashboards/assets/ag-log-forward1.png)
 
@@ -59,6 +57,12 @@ Wenn Sie **Sonstige** auswählen, müssen Sie sich an llmo-now@adobe.com wenden,
 >Weitere Informationen zur Protokollweiterleitung bei Verwendung eines vom Kunden verwalteten CDN (BYOCDN) finden Sie unter [Übersicht über die Protokollweiterleitung von BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Nach der Aktivierung werden Protokolle aufgenommen und Metriken wie Gesamtanzahl der Agent-basierten Interaktionen, Erfolgsrate, Treffer nach Markt, Benutzer-Agent-Analysen und Leistung auf URL-Ebene im Dashboard angezeigt.
+
+### Markenorientiertes Erlebnis
+
+Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) befinden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem Sie zu **Markenverwaltung** navigieren und auf die **CDN**-Beschriftung klicken.
+
+![Markenverwaltung - CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer verarbeitet eine Teilmenge der Felder aus den CDN-Protokollen. Auch wenn die Rohnamen der Protokollfelder je nach CDN-Anbieter variieren, werden sie normalisiert und wie folgt dargestellt:
 
