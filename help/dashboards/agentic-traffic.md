@@ -2,7 +2,7 @@
 title: Agent-basierter Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic“ sehen können, wie AI Agents mit Ihrer Site interagieren.
 feature: Agentic Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 90%
@@ -33,7 +33,7 @@ Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#bra
 
 Ohne **CDN-Protokollweiterleitung** bleibt das Dashboard „Agent-basierter Traffic“ leer. Damit Agent-basierte Interaktionen angezeigt werden können, müssen Sie die **CDN-Protokollweiterleitung** konfigurieren.
 
-### Kundenkonfiguration (klassische Navigation):
+### Kundenkonfiguration (klassische Navigation)
 
 Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
 

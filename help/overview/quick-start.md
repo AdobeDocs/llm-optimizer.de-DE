@@ -2,9 +2,9 @@
 title: Schnellstart
 description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -128,7 +128,7 @@ Im Dashboard für Kundenkonfigurationen haben Sie folgende Möglichkeiten:
 >
 > Weitere Informationen zum Einrichten von Kategorien, Themen und Prompts finden Sie auf der Seite [Best Practices bei der Konfiguration von Kategorien, Themen und Prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Markenorientiertes Erlebnis
+### Markenzentrierte Erlebniskategorien, Themen und Eingabeaufforderungen
 
 Für Kunden, die am markenorientierten Erlebnis teilnehmen, können Sie Kategorien, Themen und Eingabeaufforderungen wie folgt hinzufügen:
 
