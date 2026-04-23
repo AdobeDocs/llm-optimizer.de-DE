@@ -2,10 +2,10 @@
 title: Referral Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Referral Traffic“ anzeigen können, wie Besuchende über externe Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen.
 feature: Referral Traffic
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 79%
+source-wordcount: '734'
+ht-degree: 80%
 
 ---
 
@@ -35,7 +35,7 @@ Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#bra
 
 Bei der ersten Anmeldung kann das Dashboard „Referral Traffic“ leer angezeigt werden. Um Ihre Daten anzuzeigen, müssen Sie die CDN-Protokollweiterleitung konfigurieren.
 
-Kunden, die am [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) teilnehmen, können Informationen zur CDN-Protokollweiterleitung hinzufügen, indem sie zu **Markenverwaltung** navigieren und auf die **CDN**-Beschriftung klicken. Siehe auch [Agent-Traffic - CDN-Einrichtung](/help/dashboards/agentic-traffic.md#cdn-setup).
+Kunden, die am [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) teilnehmen, können Informationen zur CDN-Protokollweiterleitung hinzufügen, indem sie zu **Markenverwaltung** navigieren und auf die **CDN**-Beschriftung klicken.
 
 **Kundenkonfiguration (klassisches Erlebnis):** Konfigurieren Sie [CDN-](/help/dashboards/customer-configuration.md#cdn-configuration)), indem Sie **Zur Konfiguration wechseln** auswählen.
 

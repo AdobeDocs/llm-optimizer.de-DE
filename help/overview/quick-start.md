@@ -2,9 +2,9 @@
 title: Schnellstart
 description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
 feature: Quickstart, Onboarding
-source-git-commit: 625807b8905f741aa89d551483d89cca2ef91873
+source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1463'
 ht-degree: 37%
 
 ---
@@ -47,7 +47,7 @@ Der Aktivierungsfluss unterscheidet sich je nach Adobe-Produkt.
 
 Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Möglichkeiten:
 
-* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
+* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
 * Oder gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
@@ -95,7 +95,7 @@ Integrieren Sie Ihren Markennamen und Ihre Domain, um mit der Verwendung von LLM
 
 Während der Onboarding-Phase wird eine kleine Gruppe von Kategorien, Themen und Prompts generiert. Markenpräsenz-Analysen zu diesen Prompts stehen kurz nach dem Onboarding Ihrer Site zur Verfügung.
 
-Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
 Konfigurieren Sie außerdem [CDN-Protokollweiterleitung](#step-4) für die Traffic-Analyse. LLM Optimizer erfordert Markenpräsenz-Daten und Erkenntnisse von Agent und Referral Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zur Steigerung der KI-Sichtbarkeit zu geben.
 
@@ -109,7 +109,7 @@ Nach dem Onboarding der Site können Sie die Markenpräsenz-Analyse auf Basis de
 
 ### Kundenkonfiguration (klassische Navigation)
 
-Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
 
 ![Dashboard „Kundenkonfiguration“](/help/overview/assets/prompt-creation.png)
 
@@ -128,7 +128,7 @@ Im Dashboard für Kundenkonfigurationen haben Sie folgende Möglichkeiten:
 >
 > Weitere Informationen zum Einrichten von Kategorien, Themen und Prompts finden Sie auf der Seite [Best Practices bei der Konfiguration von Kategorien, Themen und Prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Markenorientiertes Erlebnis
+### Markenzentrierte Erlebniskategorien, Themen und Eingabeaufforderungen
 
 Für Kunden, die am markenorientierten Erlebnis teilnehmen, können Sie Kategorien, Themen und Eingabeaufforderungen wie folgt hinzufügen:
 
