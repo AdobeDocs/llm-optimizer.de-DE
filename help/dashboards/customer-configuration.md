@@ -2,10 +2,10 @@
 title: Kundenkonfiguration
 description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
 feature: Customer Configuration
-source-git-commit: 3fab5f21311a741e51e7a31cd3a26de79fcbff95
+source-git-commit: ef6b4ec9dcb3b5234add6e82cbc54ab29d363509
 workflow-type: tm+mt
-source-wordcount: '2100'
-ht-degree: 40%
+source-wordcount: '2249'
+ht-degree: 37%
 
 ---
 
@@ -13,6 +13,8 @@ ht-degree: 40%
 # Kundenkonfiguration {#customer-configuration}
 
 Das Dashboard „Kundenkonfiguration“ ist ein leistungsstarkes Tool, das Erkenntnisse zur Sichtbarkeit Ihrer Marke in LLMs bietet. Durch das korrekte Einrichten von Kategorien, Themen und Prompts können Sie sicherstellen, dass Ihre Marke gut positioniert ist, um in LLM-generierten Antworten angezeigt zu werden. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Erkenntnisse auf Ihren Unternehmenskontext zuschneidet, sodass Sichtbarkeit, Traffic und Möglichkeiten genau analysiert werden können.
+
+Das Kundenkonfigurations-Dashboard (siehe unten) gilt, wenn Ihr Unternehmen diese Navigation weiterhin verwendet.
 
 ![Dashboard „Kundenkonfiguration“](/help/dashboards/assets/customer-config.png)
 
@@ -25,13 +27,19 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz in verschiedenen Mär
 * [CDN-Konfiguration](#agentic-cdn)
 * [Google Search Console](#google-console)
 
+Wenn Sie das markenzentrierte Erlebnis verwenden, navigieren Sie zu **Markenverwaltung**, um Marken und Markenaliase einzurichten und zu konfigurieren und Mitbewerber zu definieren, mit denen Sie nachverfolgen können. **Brands Management** wird auch verwendet, um Integrationen wie die Google-Suchkonsole, Adobe Analytics und CDN-Protokollweiterleitung zu konfigurieren, die sich auf mit Marken verknüpfte URLs beziehen. Klicken Sie dazu auf die entsprechenden Registerkarten: GSC, CDN usw.
+
+![Brands Management — App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+
+![Markenverwaltung - Konfigurationsübersicht (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+
 >[!IMPORTANT]
 >
 > Weitere Informationen zum Einrichten von Kategorien, Themen und Prompts finden Sie auf der Seite [Best Practices bei der Konfiguration von Kategorien, Themen und Prompts](/help/overview/best-practices-topics-prompts.md).
 
 ## Prompts {#prompts-brand}
 
-In dieser Registerkarte können Sie Prompts prüfen, verwalten und anpassen. Sie können eine CSV-Datei mit einer [Markenpräsenz-Analyse](/help/dashboards/brand-presence.md) hochladen, dann wird die Liste mit Prompts und Themen aus dieser Analyse gefüllt, oder eine von Adobe erstellte [Prompts-Bibliothek herunterladen](/help/overview/best-practices-topics-prompts.md). Je nach Bedarf können Sie Themen und die zugehörigen Prompts auch löschen, ändern und hinzufügen.
+Auf der Registerkarte **Eingabeaufforderungen** können Sie Eingabeaufforderungen überprüfen, verwalten und anpassen. Sie können eine CSV-Datei mit einer [Markenpräsenz-Analyse](/help/dashboards/brand-presence.md) hochladen, dann wird die Liste mit Prompts und Themen aus dieser Analyse gefüllt, oder eine von Adobe erstellte [Prompts-Bibliothek herunterladen](/help/overview/best-practices-topics-prompts.md). Je nach Bedarf können Sie Themen und die zugehörigen Prompts auch löschen, ändern und hinzufügen.
 
 Um eine CSV-Datei mit Datenerkenntnissen zu importieren, müssen Sie zunächst eine Datei aus dem Dashboard „Markenpräsenz“ exportieren. Im Abschnitt [Datenerkenntnisse](/help/dashboards/brand-presence.md#data-insights) erfahren Sie, wie Sie dies tun. Wenn die Datei vorliegt:
 
@@ -51,6 +59,10 @@ Darüber hinaus können Sie der Liste auch unabhängig von einer CSV-Datei oder 
 4. Fügen Sie den Prompt-Text hinzu.
 5. Wählen Sie die Region aus.
 6. Klicken Sie auf **Prompt hinzufügen**. Das Thema wird nun mit dem Prompt in der Liste angezeigt.
+
+Um Kunden, die ein markenzentriertes Erlebnis bieten, Themen und Eingabeaufforderungen hinzuzufügen, navigieren Sie zu **Eingabeaufforderungsverwaltung**.
+
+![Fordert zur Verwaltung auf (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/prompts-management.png)
 
 >[!NOTE]
 >Neu hinzugefügte Prompts werden erst dann in der Markenpräsenz angezeigt, wenn die Verarbeitung abgeschlossen ist.
@@ -177,7 +189,7 @@ Gehen Sie wie folgt vor, um die Abfragen der Google-Suchkonsole in LLM Optimizer
 
 Bevor Sie diese Funktion verwenden können, müssen Sie Ihr Google Search Console-Konto mit LLM Optimizer integrieren.
 
-1. Öffnen Sie das Dashboard Kundenkonfiguration .
+1. Öffnen Sie das Dashboard **Kundenkonfiguration** (klassische Navigation) oder **Markenverwaltung** (markenzentriertes Erlebnis) und navigieren Sie dann zur Google Search Console-Integration (GSC-Tag im markenzentrierten Erlebnis).
 1. Navigieren Sie zur Registerkarte Google-Suchkonsole und klicken Sie auf **Konto verbinden**.
    ![Google-Suchkonsole](/help/dashboards/assets/google-console.png)
 1. Melden Sie sich mit einem Google-Konto an, das Zugriff auf die gewünschte Search Console-Eigenschaft hat.
@@ -200,7 +212,7 @@ Nachdem Sie das Google Search Console-Konto in LLM Optimizer integriert haben, k
 
 #### Anzeigen hinzugefügter Abfragen in der Liste „Eingabeaufforderungen“ {#prompts-list}
 
-Nachdem eine Abfrage hinzugefügt wurde, wird sie auf der Registerkarte [Eingabeaufforderungen](#prompts-brand) im Dashboard Kundenkonfiguration angezeigt. Eingabeaufforderungen aus der Google-Suchkonsole werden mit einem Google-Suchkonsolensymbol in der Spalte **Herkunft** gekennzeichnet. Mit dem Symbol können Sie zwischen Eingabeaufforderungen, die auf dem tatsächlichen Suchverhalten der Benutzenden basieren, und Eingabeaufforderungen unterscheiden, die manuell oder aus anderen Quellen hinzugefügt wurden.
+Nachdem eine Abfrage hinzugefügt wurde, wird sie auf der Registerkarte [Eingabeaufforderungen](#prompts-brand) im Dashboard für die Kundenkonfiguration (klassisches Erlebnis) oder in der **Eingabeaufforderungen-Verwaltung** (markenorientiertes Erlebnis) angezeigt. Eingabeaufforderungen aus der Google-Suchkonsole werden mit einem Google-Suchkonsolensymbol in der Spalte **Herkunft** gekennzeichnet. Mit dem Symbol können Sie zwischen Eingabeaufforderungen, die auf dem tatsächlichen Suchverhalten der Benutzenden basieren, und Eingabeaufforderungen unterscheiden, die manuell oder aus anderen Quellen hinzugefügt wurden.
 
 ### Häufig gestellte Fragen {#gsc-faq}
 

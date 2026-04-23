@@ -2,10 +2,10 @@
 title: URL-Überwachung
 description: Erfahren Sie, wie Sie mit der URL-Überwachung die Leistung bestimmter Seiten Ihrer Domain bei der KI-Suche analysieren können.
 feature: URL Inspector
-source-git-commit: e50c87e8e5a669526f3c10855c1629ce82b67aef
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: 7ba417a568d21c1e56de218e023df243b73f6357
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 95%
 
 ---
 
@@ -15,6 +15,10 @@ ht-degree: 100%
 Mit der URL-Überwachung können Sie die Leistung bestimmter Seiten Ihrer Domain bei der KI-Suche analysieren. Sie kombiniert Sichtbarkeit, Agent-basierten Traffic und Referenzdaten auf URL-Ebene, um Ihnen einen granularen Überblick darüber zu geben, welche URLs zitiert werden und wie oft sie in Antworten enthalten sind.
 
 ![URL-Überwachung](/help/dashboards/assets/url-insp.png)
+
+Wenn Sie sich im markenorientierten Erlebnis befinden, navigieren Sie zu **URL Inspector** und wählen Sie die Site aus, für die Sie die Einblicke anzeigen möchten.
+
+![URL-Inspektor - Website-Selektor (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
 ## Filter
 
