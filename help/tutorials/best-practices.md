@@ -2,7 +2,7 @@
 title: Best Practices für LLM Optimizer
 description: Entdecken Sie Best Practices für die LLM-Optimierung zur Steigerung der Markensichtbarkeit bei der KI-Suche. Erkenntnisse für das Benchmarking und die Inhaltsoptimierung.
 feature: Best Practices, Agentic Traffic, Brand Presence
-source-git-commit: d0134d1b7f8e1e50c7edf75e427d759389a0d18b
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 100%
@@ -86,7 +86,7 @@ Die Onsite-Optimierung verbessert Ihre eigenen Inhalte für bessere LLM-Sichtbar
 
 >[!TIP]
 >
->LLM Optimizer schlägt im Dashboard [Möglichkeiten](/help/dashboards/opportunities.md) Onsite- und Offsite-Optimierungsmöglichkeiten vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können Sie mithilfe von LLM Optimizer direkt auf Ihrer Site bereitstellen.
+>LLM Optimizer schlägt im Dashboard [Möglichkeiten](/help/dashboards/opportunities-overview.md) Onsite- und Offsite-Optimierungsmöglichkeiten vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können Sie mithilfe von LLM Optimizer direkt auf Ihrer Site bereitstellen.
 
 Hier sind einige Best Practices zur Optimierung:
 
@@ -108,7 +108,7 @@ Hier sind einige Best Practices zur Optimierung:
 
 4. Überwachen und iterieren Sie
 
-   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md), um Empfehlungen zu identifizieren und zu implementieren.
+   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities-overview.md), um Empfehlungen zu identifizieren und zu implementieren.
    * Verfolgen Sie Sichtbarkeitsbewertung, Sentiment und Häufigkeit von Zitierungen nach.
    * Nehmen Sie Anpassungen je nach Aktivität anderer (einschließlich der Wettbewerber) und Prompt-Trends vor.
 
@@ -118,7 +118,7 @@ Die Offsite-Optimierung konzentriert sich auf die Verbesserung der Sichtbarkeit 
 
 >[!TIP]
 >
->LLM Optimizer schlägt im Dashboard [Möglichkeiten](/help/dashboards/opportunities.md) Onsite- und Offsite-Optimierungsmöglichkeiten vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können Sie mithilfe von LLM Optimizer direkt auf Ihrer Site bereitstellen.
+>LLM Optimizer schlägt im Dashboard [Möglichkeiten](/help/dashboards/opportunities-overview.md) Onsite- und Offsite-Optimierungsmöglichkeiten vor. Diese Möglichkeiten sind spezifisch für Ihre Site. Viele dieser Vorschläge können Sie mithilfe von LLM Optimizer direkt auf Ihrer Site bereitstellen.
 
 
 Wichtige Offsite-Kanäle:
@@ -170,7 +170,7 @@ Mit folgenden Schritten können Sie den Fortschritt überwachen:
    * Verwenden Sie Attributionsfunktionen, um Verbesserungen der Sichtbarkeit mit Traffic, Interaktion und Konversionen zu verknüpfen. Mit Attributionsfunktionen in Adobe LLM Optimizer können Sie Verbesserungen bei Sichtbarkeitsmetriken (Erwähnungen, Zitierungen, Sentiment) mit echten Geschäftsergebnissen wie Site-Traffic, Benutzerinteraktionen und Konversionen verbinden. Dies belegt den ROI Ihrer Optimierungsmaßnahmen.
    * Verfolgen Sie Änderungen in Agent-basiertem und Referral Traffic, um den ROI der Optimierungen zu validieren.
 1. Verbessern Sie Ihre Inhalte.
-   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md) in LLM Optimizer, um spezifisch empfohlene unmittelbare Änderungen an Ihrer Site zu identifizieren und zu implementieren Siehe [Möglichkeiten](/help/dashboards/opportunities.md) (messen Sie dann die Ergebnisse). Prüfen Sie regelmäßig den Abschnitt „Möglichkeiten“ und ergreifen Sie Maßnahmen anhand der bereitgestellten Empfehlungen.
+   * Verwenden Sie das [Dashboard „Möglichkeiten“](/help/dashboards/opportunities-overview.md) in LLM Optimizer, um spezifisch empfohlene unmittelbare Änderungen an Ihrer Site zu identifizieren und zu implementieren Siehe [Möglichkeiten](/help/dashboards/opportunities-overview.md) (messen Sie dann die Ergebnisse). Prüfen Sie regelmäßig den Abschnitt „Möglichkeiten“ und ergreifen Sie Maßnahmen anhand der bereitgestellten Empfehlungen.
    * Priorisieren Sie Seiten mit abnehmender Sichtbarkeit.
    * Aktualisieren Sie Ihre Website und andere Inhalte, um sie relevanter für die Prompts zu machen, die Sie ansprechen möchten.
    * Fügen Sie Ihren Seiten häufig gestellte Fragen hinzu, um Antworten auf gängige Fragen zu geben.

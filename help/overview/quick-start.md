@@ -2,7 +2,7 @@
 title: Schnellstart
 description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
 feature: Quickstart, Onboarding
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 37%
@@ -178,7 +178,7 @@ Nachdem Sie Informationen für die CDN-Protokollweiterleitung angegeben haben, k
 
 * Das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) anzeigen, Ihre Sichtbarkeitsbewertung anzeigen und Ihre Leistung im Vergleich mit anderen Marken nachverfolgen.
 * Erkunden Sie die [Agent](/help/dashboards/agentic-traffic.md)- und [Referral Traffic](/help/dashboards/referral-traffic.md)-Dashboards, wenn die CDN-Protokollweiterleitung konfiguriert wurde.
-* [Möglichkeiten](/help/dashboards/opportunities.md) nutzen, um Verbesserungen für Inhalte und technische Aspekte zu identifizieren.
+* [Möglichkeiten](/help/dashboards/opportunities-overview.md) nutzen, um Verbesserungen für Inhalte und technische Aspekte zu identifizieren.
 * Daten exportieren und mit Ihrem Team zusammenarbeiten oder Ihre Kolleginnen und Kollegen zur Verwendung des Produkts einladen.
 
 >[!NOTE]
