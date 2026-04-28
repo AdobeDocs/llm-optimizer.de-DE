@@ -26,7 +26,7 @@ Es zeigt drei Schlüsselmetriken auf einen Blick:
 
 Eine Videoübersicht zu dieser Opportunity finden Sie unter [Content-Sichtbarkeit wiederherstellen](https://www.youtube.com/watch?v=BigPyJssFCw).
 
-Diese Opportunity kann mithilfe von „Optimieren [ Edge&quot; optimiert ](/help/dashboards/optimize-at-edge/overview.md). Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, ohne dass dies Auswirkungen auf menschliche Besucher hat (Bot-only-Bereitstellung). Optimierungen werden dann auf der CDN-Ebene angewendet, ohne dass CMS-Änderungen erforderlich sind, und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden, was eine schnelle Bereitstellung mit geringem Risiko ermöglicht.
+Diese Opportunity kann mithilfe von „Optimieren [&#x200B; Edge&quot; optimiert &#x200B;](/help/dashboards/optimize-at-edge/overview.md). Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, ohne dass dies Auswirkungen auf menschliche Besucher hat (Bot-only-Bereitstellung). Optimierungen werden dann auf der CDN-Ebene angewendet, ohne dass CMS-Änderungen erforderlich sind, und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden, was eine schnelle Bereitstellung mit geringem Risiko ermöglicht.
 
 ## Funktionsweise
 

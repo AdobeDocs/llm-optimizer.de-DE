@@ -119,7 +119,7 @@ Eine Tabelle mit wiederkehrenden Themen, die in analysierten Inhalten identifizi
 - **Markenerwähnung** — Anzahl der mit dem Thema verknüpften Markenerwähnung.
 - **Sentiment** - Das gesamte mit dem Thema verknüpfte Sentiment.
 
-Die **Themen**-Tabelle wird in derselben Leistungsansicht wie die Videotabelle angezeigt. Weitere Informationen finden Sie in der Abbildung [ Abschnitt ](#videos)Videos“ weiter oben.
+Die **Themen**-Tabelle wird in derselben Leistungsansicht wie die Videotabelle angezeigt. Weitere Informationen finden Sie in der Abbildung [&#x200B; Abschnitt &#x200B;](#videos)Videos“ weiter oben.
 
 ## In der Demo ausprobieren
 
