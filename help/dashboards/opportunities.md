@@ -2,10 +2,10 @@
 title: Optimierungsmöglichkeiten
 description: Erfahren Sie, wie Sie mit dem Dashboard „Möglichkeiten“ automatisch erkennen können, wie Ihre Site verbessert werden kann, um die Markensichtbarkeit zu erhöhen.
 feature: Opportunities
-source-git-commit: f62148a9073e79d63e6ae19f0585aa87c16bcd3e
+source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '780'
+ht-degree: 58%
 
 ---
 
@@ -31,11 +31,15 @@ Nachfolgend finden Sie eine Tabelle der derzeit unterstützten Möglichkeiten:
 | Möglichkeit | Typ | Identifizierte Probleme | Korrekturvorschläge |
 |---------|----------|----------|----------|
 | Zusammenfassen langer Absätze | Inhalt (Onsite) | Erkennt Absätze, die empfohlene Längenschwellen überschreiten. Zeigt betroffene URLs und übergroße Textbausteine an. | Erstellen Sie Kurzfassungen oder teilen Sie langen Text in kürzere, überschaubare Abschnitte auf. |
-| Empfehlung strukturierter Inhalte (häufig gestellte Fragen) | Inhalt (Onsite) | Erkennt Prompts mit hoher Popularität ohne übereinstimmende Einträge in häufig gestellten Fragen. Zeigt ähnliche Prompts, Kategorien und betroffene URLs an. | Fügen Sie Schemablöcke mit häufig gestellten Fragen und knappen Antworten hinzu, die zu gängigen Abfragen passen. |
-| Erkennung von blockiertem Agent-basierten Traffic | Technische GEO | Analysiert CDN-Protokolle hinsichtlich blockierter Anfragen bekannter AI Agents (z. B. GPTBot, PerplexityBot). Gibt die betroffenen URLs und Agents an. | Aktualisieren Sie robots.txt oder die Server-Konfigurationen, um den Zugriff für unterstützte KI-Crawler bei Bedarf zuzulassen. |
-| Erkennung von 404s-/403s-/5xx-Problemen | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten. Gibt Häufigkeit, betroffene URLs und geschätzte verlorene Treffer an. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200-Antworten zurückgeben. |
+| Empfohlene strukturierte Inhalte | Inhalt (Onsite) | Erkennt Prompts mit hoher Popularität ohne übereinstimmende Einträge in häufig gestellten Fragen. Zeigt ähnliche Prompts, Kategorien und betroffene URLs an. | Fügen Sie Schemablöcke mit häufig gestellten Fragen und knappen Antworten hinzu, die zu gängigen Abfragen passen. |
+| [Traffic durch robots.txt blockiert](/help/dashboards/opportunities/traffic-blocked-by-robots.md) | Technische GEO | Analysiert die Datei „robots.txt“ auf Regeln, die KI-Agenten selektiv von Inhalten ausschließen, die ansonsten öffentlich zugänglich wären. meldet betroffene URLs und blockierte Agenten. | Aktualisieren Sie Ihre Datei „robots.txt“, um ggf. Zugriff auf unterstützte KI-Crawler zuzulassen. |
+| [Agent-Traffic-Fehler](/help/dashboards/opportunities/agentic-traffic-errors.md) | Technische GEO | Überwacht CDN-Protokolle auf Fehlerantworten von 404, 403 und 5xx, die an KI-Agenten zurückgegeben werden. meldet betroffene URLs und Treffer insgesamt als verloren. | Korrigieren Sie fehlerhafte Links, aktualisieren Sie Berechtigungen und beheben Sie Server-seitige Probleme, sodass wichtige Inhalte 200-Antworten zurückgeben. |
 | Komplexe Inhalte vereinfachen | Inhalt (Onsite) | kennzeichnet lange, komplexe Absätze, die Lesbarkeitsschwellen überschreiten und das KI-Verständnis verringern können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für AI Agents ohne JavaScript-Ausführung verfügbar ist. |
-| Wiederherstellung der Inhaltssichtbarkeit (Early Access) | Technische GEO | Kennzeichnet Seiten, auf denen kritische Inhalte vor AI Agents verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die sichtbar gemacht werden können. | Rendern Sie die Seiten vorab, damit mehr Inhalt für AI Agents ohne JavaScript-Ausführung verfügbar ist. |
+| [Content-Sichtbarkeit wiederherstellen](/help/dashboards/opportunities/recover-content-visibility.md) | Technische GEO | Kennzeichnet Seiten, auf denen kritische Inhalte vor AI Agents verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die sichtbar gemacht werden können. | Geben Sie die Seiten auf CDN-Ebene mit der Option Optimieren auf Edge vorab wieder, sodass mehr Inhalte für KI-Agenten ohne JavaScript-Ausführung verfügbar sind. |
+| [Wikipedia-Analyse](/help/dashboards/opportunities/wikipedia-analysis.md) | extern | Analysiert die Wikipedia-Seite Ihres Unternehmens im Vergleich zur Konkurrenz der Branche hinsichtlich Verweisen, Abschnitten, Inhaltslänge, Bildern und Vollständigkeit der Postfächer. kennzeichnet spezifische Lücken, bei denen Ihre Seite unter branchenübliche Benchmarks fällt. | Lesen Sie die KI-generierten strategischen Empfehlungen, um Ihre Wikipedia-Präsenz zu verbessern, einschließlich des Hinzufügens von Verweisen, der Anreicherung Ihres Posteingangs, der Erweiterung von Abschnitten und der Verbesserung der Artikelqualität. |
+| [YouTube Sentiment Analysis (Beta)](/help/dashboards/opportunities/youtube-sentiment-analysis.md) | Offsite, Social und Community | Analysiert YouTube-Videos, die für die Markenpräsenz-Eingabeaufforderung für Markenerwähnung, Sentiment, Share of Voice und wiederkehrende Themen zitiert wurden. Wird nur angezeigt, wenn YouTube-Videos als Zitate für die Eingabeaufforderung erkannt werden. | Überprüfen Sie priorisierte Empfehlungen zur Verbesserung der Markenwahrnehmung im gesamten YouTube-Content, einschließlich empfohlener Maßnahmen und der für deren Implementierung zuständigen Teams. |
+| [Reddit Sentiment Analysis (Beta)](/help/dashboards/opportunities/reddit-sentiment-analysis.md) | Offsite, Social und Community | Analysiert Reddit-Threads, die für Ihre Markenpräsenz-Eingabeaufforderung für Markenerwähnung, Sentiment, Share of Voice und wiederkehrende Themen genannt werden. Wird nur angezeigt, wenn Reddit-Threads als Zitate für die Eingabeaufforderung erkannt werden. | Überprüfen Sie priorisierte Empfehlungen zur Verbesserung der Markenwahrnehmung in allen Reddit-Inhalten, einschließlich empfohlener Maßnahmen und der für deren Implementierung zuständigen Teams. |
+| [zitierte Sentiment-Analyse (Beta)](/help/dashboards/opportunities/cited-sentiment-analysis.md) | Offsite, Social und Community | Analysiert die am häufigsten zitierten URLs, die für die Markenpräsenz-Eingabeaufforderung für Markenerwähnung, Sentiment, Share of Voice und wiederkehrende Themen erkannt wurden. | Lesen Sie priorisierte Empfehlungen, um die Wahrnehmung der Marke auf den Seiten zu verbessern, die KI-Systeme am häufigsten zitieren, wenn sie auf Eingabeaufforderungen zu Ihrer Marke reagieren. |
 
 ## Automatische Optimierung {#auto-optimization}
 
