@@ -2,9 +2,9 @@
 title: YouTube Sentiment Analysis
 description: Erfahren Sie, wie LLM Optimizer YouTube-Videos und -Kommentare analysiert, um Empfehlungen zu präsentieren, die die Wahrnehmung und Sichtbarkeit Ihrer Marke in den KI-Suchen verbessern.
 feature: Opportunities
-source-git-commit: 101a0582a5112c7fdf1871a938b773b7159a9d4c
+source-git-commit: 91fcd44f97e996fa7eb712928aba5dda250ea55b
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ Die Ergebnisse werden auf zwei Registerkarten angezeigt: **Vorschläge** und **L
 
 ## Vorschläge
 
-Auf dieser Registerkarte finden Sie Empfehlungen zur Verbesserung der Wahrnehmung Ihrer Marke in YouTube. Die Vorschläge sind in drei Unterregisterkarten unterteilt: **Aktuelle Vorschläge**, **Feste** und **Ignorierte Vorschläge**.
+Auf dieser Registerkarte finden Sie Empfehlungen zur Verbesserung der Wahrnehmung Ihrer Marke in YouTube. Vorschläge sind in drei Unterregisterkarten unterteilt: **Aktuelle Vorschläge**, **Feste** und **Ignorierte Vorschläge**.
 
 ![Registerkarte „Vorschläge“](/help/dashboards/opportunities/assets/youtube-sentiment-suggestions.png)
 
@@ -123,7 +123,7 @@ Die **Themen**-Tabelle wird in derselben Leistungsansicht wie die Videotabelle a
 
 ## In der Demo ausprobieren
 
-Sehen Sie sich die YouTube Sentiment Analysis Opportunity mithilfe der Frescopa-Demoumgebung in Aktion an.
+Sehen Sie sich die YouTube Sentiment Analysis Opportunity in Aktion an, indem Sie die Demo-Umgebung von Frescopa verwenden.
 
 [YouTube Sentiment Analysis in der Frescopa-Demo anzeigen](https://play.llmo.now/org/demo-org/opportunities/youtube-analysis/971280f5-6a07-4506-85bf-d7419dca9803?siteId=frescopa-demo)
 
