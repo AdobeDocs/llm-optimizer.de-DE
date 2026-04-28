@@ -2,7 +2,7 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 96bb7d73c8cdd2151df12030bbf28723857c78e1
+source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
 workflow-type: tm+mt
 source-wordcount: '2315'
 ht-degree: 73%
@@ -32,7 +32,7 @@ Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am
 
 ### Welche Möglichkeiten werden durch „Optimize at Edge“ unterstützt?
 
-„Optimize at Edge“ unterstützt Möglichkeiten zur Verbesserung des Agent-basierten Web-Erlebnisses. Weitere Informationen zu den einzelnen Möglichkeiten finden Sie sowohl auf der Seite [Dashboard „Möglichkeiten“](/help/dashboards/opportunities.md) als auch im Abschnitt „Möglichkeiten“ auf dieser Seite.
+„Optimize at Edge“ unterstützt Möglichkeiten zur Verbesserung des Agent-basierten Web-Erlebnisses. Weitere Informationen zu den einzelnen Möglichkeiten finden Sie sowohl auf der Seite [Dashboard „Möglichkeiten“](/help/dashboards/opportunities-overview.md) als auch im Abschnitt „Möglichkeiten“ auf dieser Seite.
 
 ## Onboarding
 
@@ -96,7 +96,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die [AI Content-Sichtbarkeit Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) Browser-Erweiterung zeigt an, auf wie viele Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
