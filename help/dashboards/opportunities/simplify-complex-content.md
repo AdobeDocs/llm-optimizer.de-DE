@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Die Opportunity zur Vereinfachung komplexer Inhalte identifiziert Seiten mit hohem Traffic-Aufkommen, auf denen dichter oder komplexer Text vorhanden ist, was die Interpretation wichtiger Informationen durch KI-Agenten erschwert. Es führt klarere, leichter zu scannende Versionen der vorhandenen Kopie ein, während die ursprüngliche Bedeutung erhalten bleibt. Auf diese Weise können Agenten wichtige Informationen zuverlässiger analysieren, zusammenfassen und extrahieren.
 
-Für jede betroffene URL können Sie Vorschläge für **Verbesserter Text** überprüfen, mit **Vorschau** vergleichen und dann mit [Optimieren in Edge) bereitstellen, ](/help/dashboards/optimize-at-edge/overview.md) der Agent-Traffic klarere HTML-Informationen erhält, ohne dass Änderungen am Content Management System (CMS) erforderlich sind.
+Für jede betroffene URL können Sie Vorschläge für **Verbesserter Text** überprüfen, mit **Vorschau** vergleichen und dann mit [Optimieren in Edge) bereitstellen, &#x200B;](/help/dashboards/optimize-at-edge/overview.md) der Agent-Traffic klarere HTML-Informationen erhält, ohne dass Änderungen am Content Management System (CMS) erforderlich sind.
 
 ## So wird das Problem behoben
 

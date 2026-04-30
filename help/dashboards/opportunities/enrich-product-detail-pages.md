@@ -23,7 +23,7 @@ Sie zeigt die folgenden Schlüsselmetriken auf einen Blick:
 
 ![Dashboard „Produktdetailseiten anreichern“](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Diese Opportunity kann mithilfe von „Optimieren [ Edge&quot; optimiert ](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, haben keine Auswirkungen auf Besucherinnen und Besucher (Bot-only-Bereitstellung), werden auf der CDN-Ebene ohne erforderliche CMS- oder Katalogänderungen angewendet und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden. Dies macht sie zu einem schnellen Bereitstellungspfad mit geringem Risiko für große Produktkataloge.
+Diese Opportunity kann mithilfe von „Optimieren [&#x200B; Edge&quot; optimiert &#x200B;](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge). Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, haben keine Auswirkungen auf Besucherinnen und Besucher (Bot-only-Bereitstellung), werden auf der CDN-Ebene ohne erforderliche CMS- oder Katalogänderungen angewendet und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden. Dies macht sie zu einem schnellen Bereitstellungspfad mit geringem Risiko für große Produktkataloge.
 
 ## Funktionsweise
 
