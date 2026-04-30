@@ -2,9 +2,14 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
+autotag-review: '2026-04-30T18:15:36.189Z'
+source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
 workflow-type: tm+mt
-source-wordcount: '3108'
+source-wordcount: 3108
 ht-degree: 57%
 
 ---
@@ -99,7 +104,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die [AI Content-Sichtbarkeit Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) Browser-Erweiterung zeigt an, auf wie viele Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
@@ -125,7 +130,7 @@ Unter [Produktdetailseiten anreichern](/help/dashboards/opportunities/enrich-pro
 
 Diese Opportunity identifiziert Seiten mit hohem Traffic, die von knappen Zusammenfassungen und strukturierten Schlüsselpunkten profitieren können, sodass LLMs Ansprüche auf der Seite schnell verstehen können. Für jede Seite wird erkannt, wo eine Zusammenfassung am meisten benötigt wird, und es werden KI-generierte Zusammenfassungen (und ggf. Schlüsselpunkte) auf Seiten- oder Abschnittsebene vorgeschlagen, die auf vorhandenen Inhalten basieren. Bei der Bereitstellung von mit Optimieren auf Edge wird dieser Inhalt in die HTML eingefügt, die KI-Agenten abrufen, wodurch sich die Genauigkeit der Darstellung Ihrer Marke in KI-Antworten verbessert.
 
-Weitere [&#x200B; zu dieser Opportunity finden Sie &#x200B;](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
+Weitere [ zu dieser Opportunity finden Sie ](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
 
 ### Relevante häufig gestellte Fragen hinzufügen
 
