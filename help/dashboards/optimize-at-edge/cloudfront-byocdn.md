@@ -2,17 +2,17 @@
 title: Optimieren bei Edge - CloudFront (BYOCDN)
 description: Erfahren Sie, wie Sie CloudFront BYOCDN für „Optimieren“ bei Edge in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
+source-git-commit: 6cf66563c0ea043ab7f67e44be29b1e8d29d83d9
 workflow-type: tm+mt
-source-wordcount: '2207'
-ht-degree: 1%
+source-wordcount: '2217'
+ht-degree: 8%
 
 ---
 
 
 # CloudFront (BYOCDN)
 
-Diese Konfiguration leitet den Agentenverkehr (Anfragen von KI-Bots und LLM-Benutzeragenten) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besucher und SEO-Bots werden weiterhin von Ihrem Ursprung aus bedient. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
+Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und LLM-Benutzer-Agents) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besuchende und SEO-Bots werden weiterhin wie gewohnt von Ihrem Ursprung aus unterstützt. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem `x-edgeoptimize-request-id`-Header.
 
 **Voraussetzungen**
 
@@ -20,7 +20,7 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 
 * Eine vorhandene CloudFront-Distribution, die Ihre Website bedient.
 * AWS IAM-Berechtigungen zum Erstellen von Lambda-Funktionen, IAM-Rollen, CloudFront-Distributionen und Cache-Richtlinien.
-* Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Optional) Informationen zum Testen des Staging-Routings finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Schritt 1: Edge Optimize Origin erstellen**
@@ -41,6 +41,7 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
    |--------|-------|
    | `x-edgeoptimize-api-key` | Ihr API-Schlüssel |
    | `x-forwarded-host` | `www.example.com` |
+   | `x-edgeoptimize-fetcher-key` | Ihr Abrufschlüssel (nur bei WAFS erforderlich) |
 
    Ersetzen Sie `www.example.com` durch Ihre eigentliche Website-Domain und `Your API key` durch den von Ihrem Adobe-Support-Mitarbeiter bereitgestellten API-Schlüssel für die Edge-Optimierung.
 
@@ -261,11 +262,11 @@ Die automatisch erstellte Rolle enthält eine für den regulären Lambda konfigu
 
 **Schritt 6: Testen Sie die Konfiguration**
 
-**1. Bot-Traffic testen (sollte optimiert werden)**
+**1. Testen des Bot-Traffics (sollte optimiert werden)**
 
 Senden Sie eine Anfrage mit einem Agent-Bot-Benutzeragenten. Bei der **ersten Anfrage** gibt Edge Optimize möglicherweise eine Proxy-Antwort (nicht optimiert) zurück, während die Seite verarbeitet und zwischengespeichert wird. Sie können dies anhand der `x-edgeoptimize-proxy: 1` in der Antwort identifizieren.
 
-Simulieren einer KI-Bot-Anfrage mithilfe eines agenten Benutzeragenten:
+Simulieren Sie eine KI-Bot-Anfrage mithilfe eines Agent-basierten Benutzer-Agents:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -288,14 +289,14 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Seiteninhalt und Antwortzeit sollten vor der Aktivierung von Optimieren bei Edge identisch mit bleiben.
+Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Der Seiteninhalt und die Antwortzeit sollten nach der Aktivierung von „Optimize at Edge“ unverändert bleiben.
 
-**3. Wie lassen sich die beiden Szenarien voneinander unterscheiden**
+**3. So lassen sich die beiden Szenarien voneinander unterscheiden**
 
-| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Verkehr (nicht betroffen) |
+| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Traffic (nicht betroffen) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
-| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
+| `x-edgeoptimize-request-id` | Vorhanden – enthält eine eindeutige Anfrage-ID | Abwesend |
+| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `1`) | Abwesend |
 
 {{verify-routing-status-in-ui}}
 
