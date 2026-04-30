@@ -2,10 +2,10 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-source-git-commit: 34e90bc95aa1d2ffabe8fd06c2c548491dd5c5b7
+source-git-commit: b9e18081cd364b35a5375975cad949b7037bfaaf
 workflow-type: tm+mt
-source-wordcount: '2315'
-ht-degree: 73%
+source-wordcount: '3108'
+ht-degree: 57%
 
 ---
 
@@ -50,7 +50,7 @@ Starten Sie den Onboarding-Prozess in Ihrem LLM Optimizer-Konto:
 
 Voraussetzungen für Ihr IT-/CDN-Team:
 
-* Fügen Sie `*AdobeEdgeOptimize/1.0*` user-agent zur Datei „robots.txt“ Ihrer Site hinzu oder verwalten Sie Bot-Traffic-Regeln.
+* Fügen Sie den Benutzer-Agent `*AdobeEdgeOptimize/1.0*` zur Zulassungsliste in der Datei robots.txt Ihrer Site oder zu den Regeln für die Verwaltung des Bot-Traffics hinzu.
 * Stellen Sie sicher, dass Seiten nicht auf Domain- oder CDN-Ebene blockiert werden.
 * Fügen Sie Routing-Regeln für „Optimize at Edge“ im CDN hinzu.
 * Wenn Ihr CDN über WAF- oder Bot-Manager-Regeln verfügt, überprüfen Sie den `*AdobeEdgeOptimize/1.0*`-Benutzeragenten. Wenn eine zusätzliche Überprüfung erforderlich ist, konfigurieren Sie die `x-edgeoptimize-fetcher-key`. Jede BYOCDN-Anleitung enthält die folgenden Schritte.
@@ -63,23 +63,23 @@ Das folgende Diagramm zeigt, wie Anfragen ein BYOCDN-Setup mit Optimize bei Edge
 >[!IMPORTANT]
 >Routing muss am äußeren CDN (dem CDN, das dem Client am nächsten ist) konfiguriert werden. Wenn Sie über mehrere CDNs verfügen, kann das Routing nur im äußeren CDN erfolgen.
 
-Um den Einrichtungsprozess zu leiten, wählen Sie unten Ihren CDN-Provider aus und folgen Sie dem entsprechenden Konfigurationshandbuch. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden müssen. Wir empfehlen, Änderungen zuerst in den niedrigeren Umgebungen anzuwenden.
+Um den Einrichtungsprozess zu durchlaufen, wählen Sie unten Ihren CDN-Anbieter aus und befolgen Sie die entsprechenden Konfigurationsanleitungen. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden müssen. Wir empfehlen, Änderungen zuerst in den niedrigeren Umgebungen anzuwenden.
 
-### CDN-Konfigurationshandbücher
+### CDN-Konfigurationsanleitungen
 
 | CDN-Anbieter | Typ | Handbuch |
 |---|---|---|
-| AEM Cloud Service Managed CDN (Fastly) | Von Adobe verwaltet | [Einrichtungshandbuch anzeigen](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
-| Fastly (BYOCDN) | Eigenes CDN einbringen | [Einrichtungshandbuch anzeigen](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
-| Akamai (BYOCDN) | Eigenes CDN einbringen | [Einrichtungshandbuch anzeigen](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
-| Cloudflare (BYOCDN) | Eigenes CDN einbringen | [Einrichtungshandbuch anzeigen](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
-| CloudFront (BYOCDN) | Eigenes CDN einbringen | [Einrichtungshandbuch anzeigen](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| Von AEM Cloud Service verwaltetes CDN (Fastly) | Von Adobe verwaltet | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/aemcs-managed-cdn.md) |
+| Fastly (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/fastly-byocdn.md) |
+| Akamai (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
+| Cloudflare (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
+| CloudFront (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
 
 >[!NOTE]
 >
->Wenn Ihr CDN-Anbieter oben nicht aufgeführt ist oder Sie Ihre Domain oder E-Mail in der LLM Optimizer-Benutzeroberfläche nicht finden, wenden Sie sich bitte an `llmo-at-edge@adobe.com`, um Unterstützung beim Onboarding zu erhalten. Sobald die Einrichtungskonfigurationen abgeschlossen sind, können Sie Empfehlungen für Möglichkeiten von „Optimize at Edge“ in LLM Optimizer bereitstellen.
+>Wenn Ihr CDN-Anbieter oben nicht aufgeführt ist oder wenn Sie Ihre Domain oder Ihre E-Mail-Adresse auf der Benutzeroberfläche von LLM Optimizer nicht finden, wenden Sie sich bitte an `llmo-at-edge@adobe.com`, um Unterstützung beim Onboarding zu erhalten. Sobald die Einrichtungskonfigurationen abgeschlossen sind, können Sie Empfehlungen für Möglichkeiten von „Optimize at Edge“ in LLM Optimizer bereitstellen.
 
-Jedes der oben genannten CDN-Setup-Handbücher enthält detaillierte Überprüfungsschritte am Ende, um zu bestätigen, dass der Agent-Traffic korrekt weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
+Jede der oben genannten CDN-Setup-Anleitungen enthält am Ende detaillierte Überprüfungsschritte, mit denen Sie sicherstellen können, dass der Agent-basierter Traffic korrekt weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
 
 ## Möglichkeiten
 
@@ -88,9 +88,12 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 | Möglichkeit | Typ | Automatische Identifikation | Automatische Vorschläge | Automatische Optimierung |
 |---------|----------|----------|----------|----------|
 | [Content-Sichtbarkeit wiederherstellen](/help/dashboards/opportunities/recover-content-visibility.md) | Technische GEO | Erkennt Seiten, auf denen kritische Inhalte vor AI Agents verborgen sind. Zeigt betroffene URLs und erwartete Inhalte an, die sichtbar gemacht werden können. | Hebt Inhalte hervor, die für AI Agents verfügbar gemacht werden können, und empfiehlt die Aktivierung von Vorab-Rendering für diese Seiten. | Stellt eine vollständig gerenderte, KI-freundliche HTML-Momentaufnahme für den Agent-basierten Traffic bereit, der den zuvor ausgeblendeten Inhalt sichtbar macht. |
-| LLM-freundliche Zusammenfassungen hinzufügen | Inhaltsoptimierung | Identifiziert lange oder komplexe Seiten, denen kurze Zusammenfassungen auf Seiten- oder Abschnittsebene fehlen, was es der KI erschwert, die Seiten schnell zu durchsuchen und zu analysieren. | Empfiehlt kurze, KI-generierte Zusammenfassungen auf Seiten- und Abschnittsebene, die wichtige Inhalte erfassen. | Fügt die Zusammenfassungen in die entsprechenden HTML-Abschnitte ein, wodurch die Interpretation und Beschreibung des Seiteninhalts durch Modelle verbessert wird. |
-| Relevante häufig gestellte Fragen hinzufügen | Inhaltsoptimierung | Erkennt Absichtslücken im vorhandenen Seiteninhalt, die durch häufig gestellte Fragen geschlossen werden könnten. | Schlägt KI-generierte Inhalte für häufig gestellte Fragen vor, die auf die Benutzerabsicht und vorhandene Themen abgestimmt sind. | Fügt Inhalte häufig gestellter Fragen in das HTML ein, sodass Seiten in KI-gestützten Antworten leichter auffindbar und relevanter werden. |
-| Komplexe Inhalte vereinfachen | Inhaltsoptimierung | Kennzeichnet Seiten mit komplexem Text, der das Verständnis durch KI behindern kann. | Stellt KI-generierte vereinfachte Versionen von komplexem Text bereit, wobei die ursprüngliche Bedeutung erhalten bleibt. | Schreibt komplexe Abschnitte auf der Seite um, wodurch die Lesbarkeit für KI verbessert wird. |
+| [Anreichern von Produktdetailseiten](/help/dashboards/opportunities/enrich-product-detail-pages.md) | Technische GEO | Vergleicht für Adobe Commerce-Storefronts vollständige Katalogdaten mit dem, auf was KI-Agenten auf jeder Produktdetailseite zugreifen können; zeigt PDPs an, auf denen Varianten, Spezifikationen, Attribute und zugehörige Katalogfelder im für Agenten sichtbaren HTML fehlen, priorisiert nach Agententraffic. | Zeigt, dass in der Agentenansicht wiederherstellbare Kataloginformationen fehlen und warum dies für die LLM-gesteuerte Produkterkennung wichtig ist. | Stellt einen vollständig vorgerenderten, KI-freundlichen HTML-Schnappschuss für den Agent-Traffic am CDN-Edge bereit, sodass Agenten umfangreichen Produktkontext aus Ihrem Katalog erhalten, ohne dass CMS- oder Katalogänderungen erforderlich sind. |
+| [LLM-freundliche Zusammenfassungen hinzufügen](/help/dashboards/opportunities/add-llm-friendly-summaries.md) | Inhaltsoptimierung | kennzeichnet Seiten mit hohem Traffic, denen es an prägnanten Zusammenfassungen und strukturierten Schlüsselpunkten auf Seiten- oder Abschnittsebene mangelt, wodurch das Scannen und Interpretieren für KI-Agenten erschwert wird. | empfiehlt kurze, KI-generierte Zusammenfassungen und wichtige Punkte, die auf vorhandenen Inhalten basieren. | Fügt Zusammenfassungen und wichtige Punkte in die entsprechenden HTML-Abschnitte ein, um zu verbessern, wie Modelle den Seiteninhalt interpretieren und beschreiben. |
+| [Relevante FAQs hinzufügen](/help/dashboards/opportunities/add-relevant-faqs.md) | Inhaltsoptimierung | kennzeichnet Seiten mit hohem Traffic, denen strukturierte Fragen und Antworten fehlen, die auf Ihr Eingabeaufforderungsset abgestimmt sind, wodurch es für KI-Agenten schwieriger wird, Benutzerfragen mit Ihrer Seite abzugleichen. | Empfiehlt KI-generierte FAQ-Inhalte, die auf die Benutzerabsicht und vorhandene Seitenthemen abgestimmt sind. | Fügt Inhalte häufig gestellter Fragen in das HTML ein, sodass Seiten in KI-gestützten Antworten leichter auffindbar und relevanter werden. |
+| [Vereinfachung komplexer Inhalte](/help/dashboards/opportunities/simplify-complex-content.md) | Inhaltsoptimierung | Kennzeichnet Seiten mit komplexem Text, der das Verständnis durch KI behindern kann. | Stellt KI-generierte vereinfachte Versionen von komplexem Text bereit, wobei die ursprüngliche Bedeutung erhalten bleibt. | Schreibt komplexe Abschnitte auf der Seite um, wodurch die Lesbarkeit für KI verbessert wird. |
+| [Inhaltsverzeichnis hinzufügen](/help/dashboards/opportunities/add-table-of-contents.md) | Technische GEO | Erkennt Seiten ohne klare strukturelle Organisation oder Navigationsüberschriften, was es für KI-Agenten schwierig macht, Inhalte zu analysieren und Benutzerabfragen zuzuordnen. | Schlägt ein strukturiertes Inhaltsverzeichnis mit verankerten Überschriften vor, die die Hauptabschnitte der Seite widerspiegeln. | Fügt ein Inhaltsverzeichnis in HTML ein, wodurch die Seitenstruktur verbessert wird, sodass KI-Modelle relevante Abschnitte leichter extrahieren, zuordnen und zitieren können. |
+| [Hinzufügen von Zusammenfassungen von Multimedia-Transkripten](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) | Inhaltsoptimierung | kennzeichnet Seiten, auf denen wichtige Informationen ohne maschinenlesbare Transkripte oder Zusammenfassungen in Videos oder andere Medien eingebettet sind, sodass diese Inhalte für KI-Agenten schwer zu verwenden sind. Zeigt betroffene URLs und empfohlenen Text an. | empfiehlt KI-generierte Transkriptzusammenfassungen, die auf den Medien und der Seite basieren. | Fügt Transkriptzusammenfassungen in die HTML ein, damit der Agent-Traffic maschinenlesbaren Text erhält (z. B. in der Nähe des entsprechenden Videos). |
 
 ### Weitere Tools
 
@@ -112,17 +115,41 @@ Dadurch wird sichergestellt, dass die Seite zunächst für AI Agents vollständi
 
 Unter [Content-Sichtbarkeit wiederherstellen](/help/dashboards/opportunities/recover-content-visibility.md) finden Sie eine Anleitung zum Dashboard, Bereitstellungsschritte und häufig gestellte Fragen.
 
+### Anreichern von Produktdetailseiten
+
+Diese Opportunity zielt auf Adobe Commerce-Produktdetailseiten ab, auf denen Käufer den vollständigen Produktkontext durch interaktive Storefront-Erlebnisse sehen, KI-Agenten jedoch nur einen oberflächlichen HTML-Schnappschuss erhalten. Der Katalogagent vergleicht Ihren maßgeblichen Commerce-Katalog mit dem für den Agenten sichtbaren PDP, listet alle bedeutsamen Lücken auf (z. B. Varianten oder Spezifikationen, die in statischen HTML nie vorkommen) und ermöglicht Ihnen die Bereitstellung einer Bot-only-Edge-Antwort, die die Parität für LLM-Crawlers wiederherstellt, ohne Katalogdatensätze oder die menschliche Benutzeroberfläche zu ändern.
+
+Unter [Produktdetailseiten anreichern](/help/dashboards/opportunities/enrich-product-detail-pages.md) finden Sie eine Anleitung zum Dashboard, Bereitstellungsschritte und häufig gestellte Fragen.
+
 ### LLM-freundliche Zusammenfassungen hinzufügen
 
-Diese Möglichkeit identifiziert Seiten, die von knappen Zusammenfassungen profitieren können, damit LLMs schnell verstehen können, worum es bei dem Seiteninhalt geht. Für jede Seite erkennt die Möglichkeit, wo eine Zusammenfassung am meisten benötigt wird, und erstellt KI-generierte Zusammenfassungen entweder auf Seitenebene oder auf Abschnittsebene. Wenn Sie mit „Optimize at Edge“ bereitstellen, werden diese Zusammenfassungen in das von AI Agents abgerufene HTML eingefügt, wodurch sich die Chancen erhöhen, dass Ihre Inhalte genauer beschrieben werden.
+Diese Opportunity identifiziert Seiten mit hohem Traffic, die von knappen Zusammenfassungen und strukturierten Schlüsselpunkten profitieren können, sodass LLMs Ansprüche auf der Seite schnell verstehen können. Für jede Seite wird erkannt, wo eine Zusammenfassung am meisten benötigt wird, und es werden KI-generierte Zusammenfassungen (und ggf. Schlüsselpunkte) auf Seiten- oder Abschnittsebene vorgeschlagen, die auf vorhandenen Inhalten basieren. Bei der Bereitstellung von mit Optimieren auf Edge wird dieser Inhalt in die HTML eingefügt, die KI-Agenten abrufen, wodurch sich die Genauigkeit der Darstellung Ihrer Marke in KI-Antworten verbessert.
+
+Weitere [&#x200B; zu dieser Opportunity finden Sie &#x200B;](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
 
 ### Relevante häufig gestellte Fragen hinzufügen
 
-Diese Möglichkeit kennzeichnet Seiten, die mit zusätzlichen Inhalten aus Fragen und Antworten besser auf die Benutzerabsicht und Prompts in der KI-gestützten Entdeckung abgestimmt werden könnten. Für jede Seite werden KI-generierte Blöcke mit häufig gestellten Fragen vorgeschlagen, die mit der Benutzerabsicht und dem Inhalt auf der Seite verknüpft sind. Mit „Optimize at Edge“ werden diese häufig gestellten Fragen in das HTML eingefügt, sodass Ihre Seite KI-freundlicher wird und die Wahrscheinlichkeit wächst, dass KI-Antworten direkt Ihren Anleitungen folgen.
+Bei dieser Gelegenheit werden Seiten mit hohem Traffic gekennzeichnet, auf denen zusätzliche Q&amp;A-Inhalte besser mit der Benutzerabsicht und den Eingabeaufforderungen bei der KI-gestützten Erkennung übereinstimmen könnten. Für jede Seite werden von KI generierte FAQ-Blöcke vorgeschlagen, die mit der Eingabeaufforderung und dem Inhalt auf der Seite verknüpft sind. Mit Optimize bei Edge werden diese FAQs in die HTML eingefügt, was Ihre Seite KI-freundlicher macht und die Wahrscheinlichkeit erhöht, dass KI-Antworten direkt Ihre Anleitung widerspiegeln.
+
+Unter [Relevante FAQs hinzufügen](/help/dashboards/opportunities/add-relevant-faqs.md) finden Sie eine Anleitung zum Dashboard, Bereitstellungsschritte und häufig gestellte Fragen.
 
 ### Komplexe Inhalte vereinfachen
 
 Bei dieser Möglichkeit werden Seiten mit langen, komplexen Absätzen ermittelt, die das Verständnis von KI reduzieren können. Für jede Seite, die die Lesbarkeitsschwellen überschreitet, wird KI-generierter Inhalt erstellt, der verständlicher und einfacher zu erfassen ist, während die ursprüngliche Bedeutung erhalten bleibt. Bei der Bereitstellung am Edge führen diese dem Agent-basierten Traffic bereitgestellten vereinfachten Inhalte dazu, dass LLMs Ihre Inhalte besser interpretieren und zusammenfassen können.
+
+Unter [Vereinfachen komplexer Inhalte](/help/dashboards/opportunities/simplify-complex-content.md) finden Sie eine Anleitung zum Dashboard, Bereitstellungsschritte und häufig gestellte Fragen.
+
+### Inhaltsverzeichnis hinzufügen
+
+Diese Opportunity erkennt Seiten, die für KI-Agenten schwer zu navigieren sind, da Überschriften und Abschnittsstruktur unklar sind oder fehlen. Für jede betroffene Seite wird ein strukturiertes Inhaltsverzeichnis mit verankerten Einträgen vorgeschlagen, die auf die Hauptabschnitte ausgerichtet sind. Wenn Sie bei Edge mit Optimieren bereitstellen, wird dieses Inhaltsverzeichnis in die HTML eingefügt, damit -Modelle Benutzerabfragen zuverlässiger den rechten Teilen der Seite zuordnen und sie zitieren können.
+
+Unter [Inhaltsverzeichnis hinzufügen](/help/dashboards/opportunities/add-table-of-contents.md) finden Sie eine exemplarische Vorgehensweise für Dashboards, Bereitstellungsschritte und Anleitungen für den frühzeitigen Zugriff.
+
+### Hinzufügen von Multimedia-Transkriptzusammenfassungen
+
+Diese Opportunity zielt auf Seiten ab, auf denen wichtige Informationen nur in der Videowiedergabe enthalten sind, ohne Transkripte oder Textzusammenfassungen, die KI-Agenten lesen können. Für jede Seite werden KI-generierte Transkripte und kurze Zusammenfassungen der wichtigsten Punkte aus den Medien empfohlen. Bei „Optimieren“ in Edge werden diese Zusammenfassungen als maschinenlesbarer Text zur HTML hinzugefügt, sodass Agenten dieselbe Substanz verwenden können, die Besuchende durch das Ansehen des Videos erhalten.
+
+Unter [Zusammenfassungen von Multimedia-](/help/dashboards/opportunities/add-multimedia-transcript-summaries.md) hinzufügen“ finden Sie eine exemplarische Vorgehensweise im Dashboard, Bereitstellungsschritte und häufig gestellte Fragen.
 
 ## Automatische Optimierung am Edge
 
@@ -160,6 +187,10 @@ Mit **Live anzeigen** können Sie überprüfen, ob die Optimierung live ist und 
 
 ![Rollback](/help/assets/optimize-at-edge/rollback.png)
 
+## Zusätzliche Ressourcen
+
+Weitere Informationen zur Funktion „Optimieren in Edge&quot; finden Sie in der folgenden Wiedergabeliste [LLM Optimizer - Optimieren in Edge](https://www.youtube.com/playlist?list=PLzbVcr6JHocVSMWBCaCw4xxjQ_VFVvFh0).
+
 ## Häufig gestellte Fragen
 
 F.: Können Testkunden Optimize bei Edge ausprobieren?
@@ -186,7 +217,7 @@ Wenn Sie auf **Optimierungen bereitstellen** klicken, bevor Sie die erforderlich
 
 F: Was passiert, wenn der Inhalt an der Quelle aktualisiert wird?
 
-Wir bedienen die optimierte Version Ihrer Seite aus dem Cache, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle jedoch für **Content-Sichtbarkeit wiederherstellen** ändert, wird unser System automatisch aktualisiert, sodass KI-Agenten immer die aktuellsten Inhalte erhalten. Dies liegt daran, dass wir niedrige TTL-Einstellungen (Cache Time To Live) verwenden (in der Reihenfolge von Minuten), sodass jedes Inhaltsupdate auf Ihrer Site eine neue Optimierung innerhalb dieses Triggers ermöglicht. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, pausieren wir die Optimierung und markieren sie für eine menschliche Überprüfung, um zu verhindern, dass der Inhalt zwischen der für den Agenten sichtbaren Seite und der für den Menschen sichtbaren Seite verschoben wird.
+Wir stellen die optimierte Version Ihrer Seite aus dem Cache bereit, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle für **Content-Sichtbarkeit wiederherstellen** jedoch ändert, führt unser System automatisch eine Aktualisierung durch, sodass AI Agents stets den aktuellen Inhalt erhalten. Dies liegt daran, dass wir niedrige Werte für die Cache-TTL (Time To Live) verwenden (in der Größenordnung von Minuten) und innerhalb dieses Zeitfensters jede Inhaltsaktualisierung auf Ihrer Site eine neue Optimierung auslöst. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, pausieren wir die Optimierung und markieren sie für eine menschliche Überprüfung, um zu verhindern, dass der Inhalt zwischen der für den Agenten sichtbaren Seite und der für den Menschen sichtbaren Seite verschoben wird.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 F. Ist „Optimize at Edge“ nur für Sites gedacht, die Adobe Edge Delivery Service (EDS) verwenden?
@@ -197,6 +228,14 @@ F. Wie unterscheidet sich das Vorab-Rendering bei „Optimize at Edge“ vom her
 
 Beide lösen unterschiedliche Probleme und können zusammenarbeiten. Herkömmliches SSR rendert Server-seitige Inhalte, schließt jedoch keine Inhalte ein, die später im Browser geladen werden. Das Vorab-Rendering von „Optimize at Edge“ erfasst die Seite nach dem Laden von JavaScript- und Client-seitigen Daten und erzeugt die vollständig aufgebaute Version am CDN-Edge. SSR konzentriert sich auf die Verbesserung des menschlichen Erlebnisses, „Optimize at Edge“ verbessert das Web-Erlebnis für LLMs.
 
-F. Was passiert, wenn ich Optimierungen für einige, aber nicht alle URLs in meiner Domain bereitstelle?
+F. Ist Recover Content-Sichtbarkeit (d. h. Pre-Rendering) Cloaking? Es klingt so, als würde eine andere Version der Seite KI-Agenten bereitgestellt.
 
-Nur die URLs, die Sie explizit optimieren, werden geändert. Für URLs mit bereitgestellten Opportunitys erhalten KI-Agenten die optimierte Version. Für URLs ohne bereitgestellte Opportunitys leitet unser Service die Originalseite einfach wie vorliegend weiter, ohne Änderungen anzuwenden oder sie in unserer Optimierungs-Cache-Ebene zu speichern. Dadurch wird sichergestellt, dass Sie Optimierungen selektiv bereitstellen können, ohne den Rest Ihrer Site zu beeinträchtigen.
+Nein. Pre-Rendering stellt sicher, dass KI-Agenten denselben Inhalt sehen können, den menschliche Besucher und SEO-Bots bereits sehen. Viele Websites laden aussagekräftige Inhalte mit JavaScript, die von typischen KI-Agenten nicht ausgeführt werden, sodass Agenten große Teile der Seite übersehen können. Beim Pre-Rendering wird ein statischer Snapshot erstellt, der den Volltext erfasst, sodass Agenten dieselben Informationen wie Menschen und Suchmaschinen erhalten. Es **die** von Inhalten für LLMs wieder her. Faktische Inhalte werden nicht hinzugefügt oder geändert.
+
+F. Was ist mit anderen Inhaltsmöglichkeiten, wie z. B. „LLM-freundliche Zusammenfassungen hinzufügen“, bei denen eine neue Kopie auf der den Agenten bereitgestellten Seite erscheint? Ist das Tarnung?
+
+Nein. Optimize at Edge führt keine Informationen ein, auf die menschliche Benutzende und SEO-Crawler nicht zugreifen können. Der Service organisiert oder fasst Inhalte, die bereits auf der Seite vorhanden sind, neu zusammen, damit KI-Agenten sie leichter interpretieren können. Wenn jemand einem Link von einer KI-Antwort auf Ihre Website folgt, kann er immer noch die gleichen zugrunde liegenden Informationen auf der Live-Seite finden.
+
+F. Was passiert, wenn ich Optimierungen für einige, aber nicht für alle URLs in meiner Domain bereitstelle?
+
+Nur die URLs, die Sie explizit optimieren, werden geändert. Für URLs mit bereitgestellten Möglichkeiten erhalten AI Agents die optimierte Version. Für URLs ohne bereitgestellte Möglichkeiten leitet unser Service die Originalseite einfach unverändert weiter, ohne Änderungen anzuwenden oder sie auf unserer Optimierungs-Cache-Ebene zu speichern. Dadurch wird sichergestellt, dass Sie Optimierungen selektiv bereitstellen können, ohne dass sich dies auf den Rest Ihrer Site auswirkt.
