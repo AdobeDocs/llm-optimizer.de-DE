@@ -18,7 +18,7 @@ Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und
 
 Zugriff auf diese Funktion:
 
-- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
+- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**&#x200B;Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
   ![Benutzer zu einem Produktprofil hinzufügen](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
 - Testkunden müssen zur IMS-Gruppe **LLMO**) gehören. Wenn die Gruppe nicht vorhanden ist, kann der Administrator Ihres Unternehmens sie erstellen und Sie hinzufügen.
   ![Erstellen der LLMO-Admin-IMS-Gruppe](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
@@ -38,7 +38,7 @@ Weiterleiten von Agent-basiertem Traffic an Edge Optimize:
 
    ![Optimierungen für KI-Agenten bereitstellen - Ausstehend](/help/assets/optimize-at-edge/cs-fastly-enable-button.png)
 
-3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [ Fehlers ](#troubleshooting) Abschnitt „Fehlerbehebung“.
+3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [&#x200B; Fehlers &#x200B;](#troubleshooting) Abschnitt „Fehlerbehebung“.
 
    ![Bestätigungsdialogfeld für Optimierungsmodul aktivieren](/help/assets/optimize-at-edge/cs-fastly-enable-dialog.png)
 
