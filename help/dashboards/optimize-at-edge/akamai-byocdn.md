@@ -1,25 +1,25 @@
 ---
-title: Optimieren bei Edge - Akamai (BYOCDN)
-description: Erfahren Sie, wie Sie Akamai BYOCDN für „Optimieren“ bei Edge in LLM Optimizer konfigurieren.
+title: Optimize at Edge – Akamai (BYOCDN)
+description: Erfahren Sie, wie Sie Akamai BYOCDN für „Optimize at Edge“ in LLM Optimizer konfigurieren.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 10%
+ht-degree: 62%
 
 ---
 
 
 # Akamai (BYOCDN)
 
-Diese Konfiguration leitet den Agentenverkehr (Anfragen von KI-Bots und LLM-Benutzeragenten) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besucher und SEO-Bots werden weiterhin von Ihrem Ursprung aus bedient. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
+Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und LLM-Benutzer-Agents) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besuchende und SEO-Bots werden weiterhin wie gewohnt von Ihrem Ursprung aus unterstützt. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem `x-edgeoptimize-request-id`-Header.
 
 **Voraussetzungen**
 
 Bevor Sie die Regeln für den Akamai Property Manager einrichten, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 * Zugriff auf den Akamai Property Manager für Ihre Domain.
-* Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Optional) Informationen zum Testen des Staging-Routings finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Konfiguration**
@@ -47,7 +47,7 @@ Legen Sie das Routing für die folgenden Benutzeragenten fest:
 
 **2. Festlegen der Herkunft und des SSL-Verhaltens**
 
-Herkunft als `live.edgeoptimize.net` festlegen und SAN an `*.edgeoptimize.net` anpassen
+Festlegen der Herkunft als `live.edgeoptimize.net` und von „SAN zuordnen“ auf `*.edgeoptimize.net`
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Herkunft als `live.edgeoptimize.net` festlegen und SAN an `*.edgeoptimize.net` a
 
 **3. Festlegen der Cache-Schlüsselvariablen**
 
-Legen Sie die Cache-Schlüsselvariable `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` auf `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}` fest.
+Festlegen der Cache-Schlüsselvariablen `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` auf `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Festlegen der Cache-Schlüsselvariablen](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
@@ -92,17 +92,17 @@ Legen Sie die folgenden Header für eingehende Anfragen fest:
 
 ![Cache-ID-Änderung](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Ausgehende Anfragekopfzeilen ändern**
+**8. Ändern der ausgehenden Anfrage-Header**
 
-`x-forwarded-host`-Header auf `{{builtin.AK_HOST}}` setzen
+Festlegen des `x-forwarded-host`-Headers auf `{{builtin.AK_HOST}}`
 
-![Ausgehende Anfragekopfzeilen ändern](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
+![Ändern der ausgehenden Anfrage-Header](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
 **9. Site-Failover**
 
-Die Site-Failover-Konfiguration besteht aus zwei Teilen: dem Failover-Verhalten (konfiguriert innerhalb der Haupt-Routingregel „Optimize-at-Edge„) und einer separaten Header-Regel für den Failover-Test.
+Die Site-Failover-Konfiguration besteht aus zwei Teilen: dem Failover-Verhalten (konfiguriert innerhalb der Haupt-Routing-Regel von „optimize-at-edge“) und einer separaten Header-Regel für den Failover-Test.
 
-**9a. Site-Failover-Verhalten (innerhalb der Haupt-Routingregel „optimize-at-edge„)**
+**9a. Verhalten bei Site-Failover (innerhalb der Haupt-Routing-Regel von „optimize-at-edge“)**
 
 Konfigurieren Sie innerhalb der Haupt-Routing-Regel das Verhalten bei Site-Failover und das erweiterte XML-Snippet wie folgt:
 
@@ -112,7 +112,7 @@ Konfigurieren Sie innerhalb der Haupt-Routing-Regel das Verhalten bei Site-Failo
 
 ![Site-Failover](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Fügen Sie die Anfrage-Header-`x-edgeoptimize-request` mit dem Wert hinzu, der über Erweiterte XML `fo` wird:
+Fügen Sie den Anfrage-Header `x-edgeoptimize-request` mit dem Wert `fo` über Advanced XML hinzu:
 
 ```
 <forward:availability.fail-action2>
@@ -126,11 +126,11 @@ Fügen Sie die Anfrage-Header-`x-edgeoptimize-request` mit dem Wert hinzu, der �
 
 ![Failover-Verhalten](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
 
-**9b. Failovertest-Header-Regel (gleichrangige Regel)**
+**9b. Header-Regel für Failover-Test (gleichrangige Regel)**
 
 >[!IMPORTANT]
 >
->Erstellen Sie die **EdgeOptimize-Failover** Test-Header **Regel als gleichrangiges** (auf derselben Ebene) der Routing-Regeln - **nicht** in ihnen verschachtelt. In der Regelstruktur des Akamai Property Managers sollte die Hierarchie wie folgt aussehen:
+>Erstellen Sie die Regel **EdgeOptimize Failover – Test-Header** als **gleichrangige Regel** (auf derselben Ebene) der Routing-Regeln – **nicht** in diese verschachtelt. In der Regelstruktur des Akamai Property Manager sollte die Hierarchie wie folgt aussehen:
 >
 >```
 >▼ Parent Rule
@@ -138,28 +138,28 @@ Fügen Sie die Anfrage-Header-`x-edgeoptimize-request` mit dem Wert hinzu, der �
 >       EdgeOptimize Failover - Test Header       ← sibling, same level
 >```
 >
->Dadurch wird sichergestellt, dass die Header-Regel des Failovertests für **alle** Routingregeln und nicht nur für eine bewertet wird.
+>Dadurch wird sichergestellt, dass die Header-Regel des Failover-Tests für **alle** Routing-Regeln und nicht nur für eine bewertet wird.
 >
 >Stellen Sie außerdem sicher **dass die Regel „Optimieren bei Edge-Routing** nicht durch eine spätere Übereinstimmungsregel überschrieben wird, die den Ursprung, das Caching-Verhalten oder die Cache-ID für dieselben Anfragen ändert. Wenn diese Verhaltensweisen durch eine andere übereinstimmende Regel zurückgesetzt werden, funktioniert das Routing oder Caching von Optimieren bei Edge möglicherweise nicht wie erwartet.
 
-Wenn der `x-edgeoptimize-request` für die Anfrage `fo` ist, setzen Sie die `x-edgeoptimize-fo` für die ausgehende Antwort auf `true`.
+Wenn der Wert des Anfrage-Headers `x-edgeoptimize-request` gleich `fo` ist, legen Sie den ausgehenden Antwort-Header `x-edgeoptimize-fo` auf `true` fest.
 
 ![Failover-Regeln](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
 
-Site Failover stellt sicher, dass die Anfrage automatisch an Ihren Standardursprung zurückgeleitet wird, wenn Edge Optimize einen `4XX`- oder `5XX` zurückgibt, sodass der Endbenutzer weiterhin eine Antwort erhält.
+Site-Failover stellt sicher, dass die Anfrage automatisch an Ihren Standardursprung zurückgeleitet wird, wenn Edge Optimize einen `4XX`- oder `5XX`-Fehler zurückgibt, sodass der bzw. die Endbenutzende weiterhin eine Antwort erhält.
 
 | Szenario | Verhalten |
 | --- | --- |
 | Edge Optimize gibt `2XX` zurück | Der Client erhält eine optimierte Antwort. |
 | Edge Optimize gibt `4XX` oder `5XX` zurück | Die Anfrage wird an den Standardursprung zurückgeleitet. |
 
-**Überprüfen Sie das Setup**
+**Überprüfen des Setups**
 
 Stellen Sie nach Abschluss des Setups sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
 
-**1. Bot-Traffic testen (sollte optimiert werden)**
+**1. Testen des Bot-Traffics (sollte optimiert werden)**
 
-Simulieren einer KI-Bot-Anfrage mithilfe eines agenten Benutzeragenten:
+Simulieren Sie eine KI-Bot-Anfrage mithilfe eines Agent-basierten Benutzer-Agents:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -182,14 +182,14 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Seiteninhalt und Antwortzeit sollten vor der Aktivierung von Optimieren bei Edge identisch mit bleiben.
+Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Der Seiteninhalt und die Antwortzeit sollten nach der Aktivierung von „Optimize at Edge“ unverändert bleiben.
 
-**3. Wie lassen sich die beiden Szenarien voneinander unterscheiden**
+**3. So lassen sich die beiden Szenarien voneinander unterscheiden**
 
-| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Verkehr (nicht betroffen) |
+| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Traffic (nicht betroffen) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
-| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
+| `x-edgeoptimize-request-id` | Vorhanden – enthält eine eindeutige Anfrage-ID | Abwesend |
+| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `1`) | Abwesend |
 
 {{verify-routing-status-in-ui}}
 
