@@ -1,30 +1,30 @@
 ---
-title: Optimieren bei Edge - Fastly (BYOCDN)
-description: Erfahren Sie, wie Sie Fastly BYOCDN für Optimize bei Edge in LLM Optimizer konfigurieren.
+title: Optimize at Edge – Fastly (BYOCDN)
+description: Erfahren Sie, wie Sie Fastly BYOCDN für „Optimize at Edge“ in LLM Optimizer konfigurieren.
 feature: Opportunities
 source-git-commit: 13d2f4bbd1f9d3886f89f80df0e76093f2afdf13
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 6%
+ht-degree: 93%
 
 ---
 
 
 # Fastly (BYOCDN)
 
-Diese Konfiguration leitet den Agentenverkehr (Anfragen von KI-Bots und LLM-Benutzeragenten) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besucher und SEO-Bots werden weiterhin von Ihrem Ursprung aus bedient. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
+Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und LLM-Benutzer-Agents) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besuchende und SEO-Bots werden weiterhin wie gewohnt von Ihrem Ursprung aus unterstützt. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem `x-edgeoptimize-request-id`-Header.
 
 **Voraussetzungen**
 
-Bevor Sie die Fastly-VCL-Regeln einrichten, stellen Sie sicher, dass Sie Folgendes haben:
+Bevor Sie die Fastly VCL-Regeln einrichten, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 * Zugriff auf Fastly für Ihre Domain.
-* Einen Edge Optimize-API-Schlüssel, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Optional) Informationen zum Testen des Staging-Routings finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Konfiguration**
 
-Fügen Sie die folgenden drei VCL-Snippets zu Ihrem Fastly-Service hinzu. Diese Snippets behandeln Routing-Agent-Anfragen an Edge Optimizer, die Cache-Schlüsseltrennung und das Failover zu Ihrem standardmäßigen Ursprung.
+Fügen Sie die folgenden drei VCL-Snippets zu Ihrem Fastly-Service hinzu. Diese Snippets verarbeiten Agent-basierte Routing-Anfragen an Edge Optimizer, die Cache-Schlüsseltrennung und das Failover zu Ihrem standardmäßigen Ursprung.
 
 ![Fastly VCL](/help/assets/optimize-at-edge/fastly-vcl.png)
 
@@ -74,25 +74,25 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 
 **Failover**
 
-Das `vcl_deliver`-Snippet verarbeitet Failover automatisch. Wenn Edge Optimize einen `4XX`- oder `5XX` zurückgibt, wird die Anfrage neu gestartet und an Ihren Standardursprung zurückgeleitet, sodass der Endbenutzer weiterhin eine Antwort erhält. Die Failover-Antworten enthalten die `x-edgeoptimize-fo: 1`.
+Das Snippet `vcl_deliver` wickelt ein Failover automatisch ab. Wenn Edge Optimize einen `4XX`- oder `5XX`-Fehler zurückgibt, wird die Anfrage neu gestartet und an Ihren Standardursprung zurückgeleitet, sodass der bzw. die Endbenutzende weiterhin eine Antwort erhält. Die Failover-Antworten enthalten den `x-edgeoptimize-fo: 1`-Header.
 
 | Szenario | Verhalten |
 | --- | --- |
 | Edge Optimize gibt `2XX` zurück | Der Client erhält eine optimierte Antwort. |
-| Edge Optimize gibt `4XX` oder `5XX` zurück | Anfrage wird neu gestartet und von der Standardquelle bereitgestellt. |
-| Failover-Antwort | Enthält die `x-edgeoptimize-fo: 1`. |
+| Edge Optimize gibt `4XX` oder `5XX` zurück | Anfrage wird neu gestartet und vom Standardursprung bereitgestellt. |
+| Failover-Antwort | Enthält den `x-edgeoptimize-fo: 1`-Header. |
 
 **Zulassen, dass in Edge durch Firewall-Regeln optimiert wird (optional)**
 
 {{waf-allowlist-setup}}
 
-**Überprüfen Sie das Setup**
+**Überprüfen des Setups**
 
 Stellen Sie nach Abschluss des Setups sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
 
-**1. Bot-Traffic testen (sollte optimiert werden)**
+**1. Testen des Bot-Traffics (sollte optimiert werden)**
 
-Simulieren einer KI-Bot-Anfrage mithilfe eines agenten Benutzeragenten:
+Simulieren Sie eine KI-Bot-Anfrage mithilfe eines Agent-basierten Benutzer-Agents:
 
 ```
 curl -svo /dev/null https://www.example.com/page.html \
@@ -115,14 +115,14 @@ curl -svo /dev/null https://www.example.com/page.html \
   --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 ```
 
-Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Seiteninhalt und Antwortzeit sollten vor der Aktivierung von Optimieren bei Edge identisch mit bleiben.
+Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. Der Seiteninhalt und die Antwortzeit sollten nach der Aktivierung von „Optimize at Edge“ unverändert bleiben.
 
-**3. Wie lassen sich die beiden Szenarien voneinander unterscheiden**
+**3. So lassen sich die beiden Szenarien voneinander unterscheiden**
 
-| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Verkehr (nicht betroffen) |
+| Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Traffic (nicht betroffen) |
 |---|---|---|
-| `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
-| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
+| `x-edgeoptimize-request-id` | Vorhanden – enthält eine eindeutige Anfrage-ID | Abwesend |
+| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `1`) | Abwesend |
 
 {{verify-routing-status-in-ui}}
 

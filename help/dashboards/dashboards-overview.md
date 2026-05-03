@@ -5,7 +5,7 @@ feature: Onboarding
 source-git-commit: c449e2eb728648285413390ce7dce973380597cc
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 87%
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 87%
 
 Willkommen beim Überblick über die Dashboards. Die Dashboards in LLM-Optimizer unterstützen Marketing-Fachleute dabei, Markensichtbarkeit und Sentiment über KI-gestützte Suchplattformen hinweg nachzuverfolgen, Optimierungsmöglichkeiten zu identifizieren und präskriptive Änderungen für mehr Zitierungen und höhere Leistung zu implementieren.
 
-Zu den wichtigsten Ansichten gehören Überblick, Markenpräsenz, Agent und Referral Traffic, URL-Inspektor, Opportunities, Collaboration und Kundenkonfiguration.
+Zu den wichtigsten Ansichten gehören Überblick, Markenpräsenz, Agent-basierter und Referral Traffic, URL-Überwachung, Möglichkeiten, Zusammenarbeit und Kundenkonfiguration.
 
 <!--
 CARDS

@@ -1,24 +1,24 @@
 ---
-title: Optimieren bei Edge - AEM Cloud Service Managed CDN (Fastly)
-description: Erfahren Sie, wie Sie das von AEM Cloud Service verwaltete CDN (Fastly) für „Optimize“ bei Edge in LLM Optimizer konfigurieren.
+title: Optimize at Edge – Von AEM Cloud Service verwaltetes CDN (Fastly)
+description: Erfahren Sie, wie Sie das von AEM Cloud Service verwaltete CDN (Fastly) für „Optimize at Edge“ in LLM Optimizer konfigurieren.
 feature: Opportunities
 source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
 workflow-type: tm+mt
 source-wordcount: '836'
-ht-degree: 0%
+ht-degree: 20%
 
 ---
 
 
-# AEM Cloud Service Managed CDN (Fastly)
+# Von AEM Cloud Service verwaltetes CDN (Fastly)
 
-Diese Konfiguration leitet den Agentenverkehr (Anfragen von KI-Bots und LLM-Benutzeragenten) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besucher und SEO-Bots werden weiterhin von Ihrem Ursprung aus bedient. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
+Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und LLM-Benutzer-Agents) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besuchende und SEO-Bots werden weiterhin wie gewohnt von Ihrem Ursprung aus unterstützt. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
 
 ## Voraussetzungen
 
 Zugriff auf diese Funktion:
 
-- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**&#x200B;Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
+- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
   ![Benutzer zu einem Produktprofil hinzufügen](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
 - Testkunden müssen zur IMS-Gruppe **LLMO**) gehören. Wenn die Gruppe nicht vorhanden ist, kann der Administrator Ihres Unternehmens sie erstellen und Sie hinzufügen.
   ![Erstellen der LLMO-Admin-IMS-Gruppe](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
@@ -28,17 +28,17 @@ Zugriff auf diese Funktion:
 
 ## Schritte zum Aktivieren des Routings
 
-So leiten Sie zunächst agenten Traffic an Edge weiter:
+Weiterleiten von Agent-basiertem Traffic an Edge Optimize:
 
 1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
 
-   ![Navigieren Sie zur Kundenkonfiguration](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
+   ![Navigieren zu „Kundenkonfiguration“](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
 
 2. Suchen Sie den Abschnitt **Optimierungen für KI-Agenten bereitstellen**. Klicken Sie auf die **Aktivieren**.
 
    ![Optimierungen für KI-Agenten bereitstellen - Ausstehend](/help/assets/optimize-at-edge/cs-fastly-enable-button.png)
 
-3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [&#x200B; Fehlers &#x200B;](#troubleshooting) Abschnitt „Fehlerbehebung“.
+3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [ Fehlers ](#troubleshooting) Abschnitt „Fehlerbehebung“.
 
    ![Bestätigungsdialogfeld für Optimierungsmodul aktivieren](/help/assets/optimize-at-edge/cs-fastly-enable-dialog.png)
 
@@ -46,13 +46,13 @@ So leiten Sie zunächst agenten Traffic an Edge weiter:
 
    ![Routing läuft](/help/assets/optimize-at-edge/cs-fastly-enable-button-clicked-routing-in-progress.png)
 
-   Laden Sie die Seite nach 5 Minuten neu, um zu überprüfen, ob das Routing abgeschlossen ist. Sobald das Routing konfiguriert und aktiv ist, wird der Status auf **Abgeschlossen** mit einem grünen Häkchen aktualisiert, das bestätigt, dass das Routing aktiviert ist. Auf Ihrer Seite sind keine weiteren Maßnahmen erforderlich.
+   Laden Sie die Seite nach 5 Minuten neu, um zu überprüfen, ob das Routing abgeschlossen ist. Sobald das Routing konfiguriert und aktiv ist, wird der Status auf **Abgeschlossen** mit einem grünen Häkchen aktualisiert, das bestätigt, dass das Routing aktiviert ist. Ihrerseits sind keine weiteren Maßnahmen erforderlich.
 
    ![Optimierung für KI-Agenten bereitstellen - abgeschlossen](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
 
    Um das Routing jederzeit zu deaktivieren, kehren Sie zum Abschnitt **Bereitstellen von Optimierungen für KI** Agenten“ auf der Registerkarte **CDN-Konfiguration** zurück und klicken Sie auf **Deaktivieren**.
 
-Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich außerdem an Ihr Adobe-Account-Team oder an Ihren `llmo-at-edge@adobe.com`.
+Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich an Ihr Adobe-Accountteam oder an `llmo-at-edge@adobe.com`.
 
 ## Fehlerbehebung
 
@@ -106,7 +106,7 @@ Nachdem die Routing-Konfiguration abgeschlossen ist, können Sie optional überp
 
 1. **Bot-Traffic testen (sollte optimiert werden)**
 
-   Simulieren einer KI-Bot-Anfrage mithilfe eines agenten Benutzeragenten:
+   Simulieren Sie eine KI-Bot-Anfrage mithilfe eines Agent-basierten Benutzer-Agents:
 
    ```
    curl -svo /dev/null https://www.example.com/page.html \
@@ -129,14 +129,14 @@ Nachdem die Routing-Konfiguration abgeschlossen ist, können Sie optional überp
      --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
    ```
 
-   Die Antwort sollte die `x-edgeoptimize-request-id`-Kopfzeile nicht enthalten. Seiteninhalt und Antwortzeit sollten vor der Aktivierung von Optimieren bei Edge identisch mit bleiben.
+   Die Antwort sollte die `x-edgeoptimize-request-id`-Kopfzeile nicht enthalten. Der Seiteninhalt und die Antwortzeit sollten nach der Aktivierung von „Optimize at Edge“ unverändert bleiben.
 
 3. **Wie kann zwischen den beiden Szenarien unterschieden werden**
 
-   | Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Verkehr (nicht betroffen) |
+   | Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Traffic (nicht betroffen) |
    |---|---|---|
-   | `x-edgeoptimize-request-id` | Präsenz - enthält eine eindeutige Anfrage-ID | Abwesend |
-   | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover aufgetreten ist (Wert: `1`) | Abwesend |
+   | `x-edgeoptimize-request-id` | Vorhanden – enthält eine eindeutige Anfrage-ID | Abwesend |
+   | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `1`) | Abwesend |
 
 4. **Routing-Status in LLM Optimizer überprüfen**
 
