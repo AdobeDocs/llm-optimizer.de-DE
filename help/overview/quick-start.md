@@ -12,9 +12,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: b286358b901575290ace70b0eb47dcb82061559f
+source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
 workflow-type: tm+mt
-source-wordcount: 1463
+source-wordcount: 1472
 ht-degree: 38%
 
 ---
@@ -62,9 +62,9 @@ Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Mögli
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
-#### Adobe Analytics-Kunden
+#### Adobe Analytics und Adobe Customer Journey Analytics
 
-Wenn Sie Adobe Analytics-Kunde sind, wird auf der Experience Cloud-Startseite ein Banner angezeigt.
+Kunden von Adobe Analytics und Adobe Customer Journey Analytics sehen ein Banner auf der Startseite von Experience Cloud.
 
 ![Experience Cloud-Startseite mit dem Banner &quot;Adobe LLM Optimizer-Testversion starten“](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
@@ -77,7 +77,7 @@ Sobald die Testversion aktiv ist, fahren Sie mit dem Onboarding Ihres Markenname
 
 >[!NOTE]
 >
-> * **Kostenlose Testversion:** Kunden von AEM Cloud und Adobe Analytics können die kostenlose Testversion von LLM Optimizer verwenden.
+> * **Kostenlose Testversion:** Kunden von AEM Cloud und Adobe Analytics/Customer Journey Analytics können die kostenlose Testversion von LLM Optimizer verwenden.
 > * **Kunden, die die Testversion am oder nach dem 1. April 2026 aktivieren** können bis zu 100 Eingabeaufforderungen und eine Domain verwenden und Optimierungen für bis zu 10 URLs für einen einzelnen Opportunity-Typ bereitstellen.
 > * **Kunden, die die Testversion vor dem 1. April 2026 aktiviert**, haben unter ihren bestehenden Bedingungen weiterhin Zugriff auf bis zu 200 Eingabeaufforderungen.
 >
