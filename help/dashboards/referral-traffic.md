@@ -2,10 +2,10 @@
 title: Referral Traffic
 description: Erfahren Sie, wie Sie mit dem Dashboard „Referral Traffic“ anzeigen können, wie Besuchende über externe Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen.
 feature: Referral Traffic
-source-git-commit: 82bfbea9375fe7f3cd7f27dfdf0adcab6489731d
+source-git-commit: ef3ef2c8f353047925c4fc99c73d9cf0399f24ca
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 80%
+source-wordcount: '750'
+ht-degree: 78%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 80%
 Unter „Referral Traffic“ sehen Sie, wie Besucherinnen und Besucher aus externen Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen. Hier werden Traffic-Quellen, Referenzmuster und Konversionsmetriken von externen Websites und Plattformen nachverfolgt und analysiert. So erkennen Sie, welche Quellen, Regionen und Seiten den Traffic mit den meisten Interaktionen fördern. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 >[!NOTE]
->Standardmäßig erstellt dieses Dashboard Traffic-Insights aus **CDN-Protokollen**. Wenn Ihr Unternehmen ein kostenpflichtiges Angebot verwendet, können Sie **Adobe Analytics** verbinden, um Daten hinzuzufügen, die die KI-gesteuerte Erkennung und Website-Interaktion messen. Diese Daten sind auf der Registerkarte **Geschäftsauswirkungen** verfügbar. Ohne Integration in Adobe Analytics wird die Registerkarte nicht ausgefüllt. Siehe [Adobe Analytics-Integration](/help/dashboards/adobe-analytics-integration.md) für weitere Details.
+>Standardmäßig erstellt dieses Dashboard Traffic-Insights aus **CDN-Protokollen**. Wenn Ihr Unternehmen ein kostenpflichtiges Angebot nutzt, können Sie **Adobe Analytics** oder **Google Analytics 4**(GA4) verbinden, um Daten hinzuzufügen, die die KI-gesteuerte Erkennung und Website-Interaktion messen. Diese Daten sind auf der Registerkarte **Geschäftsauswirkungen** verfügbar. Beachten Sie, dass die Registerkarte ohne Integration in Adobe Analytics oder GA4 nicht ausgefüllt ist. Daher finden Sie unter [Adobe Analytics-Integration](/help/dashboards/adobe-analytics-integration.md) oder [Google Analytics-Integration](/help/dashboards/google-analytics-integration.md) weitere Details.
 
 ![Seite „Referral Traffic“](/help/dashboards/assets/referral-traffic.png)
 
