@@ -2,9 +2,9 @@
 title: Google Analytics-Integration
 description: Erfahren Sie, wie Sie Google Analytics 4 mit LLM Optimizer verbinden, um KI-gesteuerte Erkennung, Site-Interaktion und Geschäftsergebnisse im Referral Traffic-Dashboard zu messen.
 feature: Referral Traffic
-source-git-commit: abf88fc3e141e12d6b5c826e35d4590ae6407c9b
+source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1169'
 ht-degree: 1%
 
 ---
@@ -13,8 +13,6 @@ ht-degree: 1%
 # Google Analytics-Integration
 
 Die Google Analytics 4 (GA4)-Integration verbindet LLM Optimizer mit den GA4-Daten Ihres Unternehmens, sodass Sie messen können, wie sich die KI-gesteuerte Erkennung auf Plattformen wie ChatGPT, Gemini, Copilot, Claude und Perplexity in echte Website-Interaktion und Geschäftsergebnisse niederschlägt. Nachdem Sie eine GA4-Eigenschaft verbunden haben, ruft LLM Optimizer die Referral Traffic-, Interaktions- und Konversionsmetriken ab, die GA4 diesen Quellen zuordnet, und zeigt sie im Dashboard **Referral Traffic** auf der Registerkarte **Geschäftsauswirkungen** an.
-
-## Verfügbarkeit {#availability}
 
 >[!IMPORTANT]
 >
@@ -40,11 +38,11 @@ Der Verbindungsfluss beginnt wie folgt vom [Referral Traffic](/help/dashboards/r
 
    ![Referral Traffic-Dashboard, Registerkarte „Geschäftsauswirkungen“](/help/dashboards/assets/ga4-integration-01-business-impact-tab.png)
 
-1. Wählen Sie **Mit Analytics verbinden** aus. LLM Optimizer leitet Sie zu **Kundenkonfiguration > Analytics** weiter. Wählen Sie in der Auswahl des Analytics-Anbieters **Google Analytics 4** aus.
+1. Wählen Sie **Mit Analytics verbinden** aus. LLM Optimizer leitet Sie zu **Kundenkonfiguration > Analytics** weiter. Wählen Sie in der Auswahl des Analytics-Anbieters die Option **Google Analytics 4 verbinden** aus.
 
    ![Kundenkonfiguration, Registerkarte „Analytics“ mit ausgewählter GA4](/help/dashboards/assets/ga4-integration-02-analytics-ga4-picker.png)
 
-1. Wählen Sie **Verbinden** aus. Eine neue Browser-Registerkarte wird geöffnet, auf der der Google-Anmeldebildschirm angezeigt wird.
+1. Wählen Sie **Konto verbinden** aus. Eine neue Browser-Registerkarte wird geöffnet, auf der der Google-Anmeldebildschirm angezeigt wird.
 
    ![Google-Anmeldung für GA4-Verbindung](/help/dashboards/assets/ga4-integration-03-google-sign-in.png)
 
