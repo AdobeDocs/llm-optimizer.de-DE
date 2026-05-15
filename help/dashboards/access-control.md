@@ -4,10 +4,14 @@ description: Erfahren Sie, wie sich produktzugewiesene und organisatorische Benu
 feature: Customer Configuration
 autotag-review: '2026-05-15T17:26:43.837Z'
 TQID: 'https://experienceleague.adobe.com/hJpQQpuHBRMdKT5oKA9z0Y8H3d3p6To-n2hWKrXgZsQ'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: b704f6a0-b2fb-4df0-9177-9753751004f5
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: b704f6a0-b2fb-4df0-9177-9753751004f5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 618
@@ -112,7 +116,7 @@ Ein **Systemadministrator** für Ihr Unternehmen kann die [Adobe Admin Console](
 1. Melden Sie sich bei der [Adobe Admin Console](https://adminconsole.adobe.com/) mit einem Konto an, das über Administratorrechte für Ihr Unternehmen verfügt.
 1. Weisen Sie das Adobe LLM Optimizer-Produktprofil (oder die entsprechende Produktberechtigung Ihres Unternehmens) dem Benutzer oder der Gruppe zu, der bzw. die produktzugewiesene Funktionen erhalten soll.
 
-Ausführliche Anweisungen finden Sie unter [Verwalten von Produkten in der ](https://helpx.adobe.com/enterprise/using/manage-products.html) und [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
+Ausführliche Anweisungen finden Sie unter [Verwalten von Produkten in der &#x200B;](https://helpx.adobe.com/enterprise/using/manage-products.html) und [Verwalten von Benutzergruppen](https://helpx.adobe.com/de/enterprise/using/user-groups.html).
 
 >[!NOTE]
 >

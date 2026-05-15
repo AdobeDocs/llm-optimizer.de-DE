@@ -4,9 +4,12 @@ description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren
 feature: Quickstart, Onboarding
 autotag-review: '2026-05-15T17:56:15.005Z'
 TQID: 'https://experienceleague.adobe.com/ShjpvskyOoHqz88gorfhqbIdP5SWT9FJ9SfmjBgEm8E'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2:
+  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1472
@@ -52,7 +55,7 @@ Der Aktivierungsfluss unterscheidet sich je nach Adobe-Produkt.
 
 Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Möglichkeiten:
 
-* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
+* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
 * Oder gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
@@ -114,7 +117,7 @@ Nach dem Onboarding der Site können Sie die Markenpräsenz-Analyse auf Basis de
 
 ### Kundenkonfiguration (klassische Navigation)
 
-Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
+Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
 
 ![Dashboard „Kundenkonfiguration“](/help/overview/assets/prompt-creation.png)
 

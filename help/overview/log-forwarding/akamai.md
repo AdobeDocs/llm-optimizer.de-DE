@@ -4,10 +4,14 @@ description: Erfahren Sie, wie Sie CDN-Protokolle von Akamai an den S3-Bucket vo
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 595
@@ -50,11 +54,11 @@ Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
 
 ## Schritt 2: Erstellen eines Streams in Akamai {#step-2}
 
-Befolgen Sie im Akamai-Control Panel [https://control.akamai.com/ ](https://control.akamai.com/) Schritte in der offiziellen Akamai-Dokumentation, um [Stream zu erstellen](https://techdocs.akamai.com/datastream2/docs/create-stream).
+Befolgen Sie im Akamai-Control Panel [https://control.akamai.com/ &#x200B;](https://control.akamai.com/) Schritte in der offiziellen Akamai-Dokumentation, um [Stream zu erstellen](https://techdocs.akamai.com/datastream2/docs/create-stream).
 
 ## Schritt 3: Auswählen der Datenparameter {#step-3}
 
-Klicken Sie nach der Erstellung des Streams im Akamai-Control Panel auf Weiter , um zur Registerkarte **Datensätze** zu gelangen. Folgen Sie den Schritten in der offiziellen Akamai-Dokumentation, um die [Datenparameter“ ](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Die folgenden Felder aus der LLM Optimizer-Konfiguration werden benötigt:
+Klicken Sie nach der Erstellung des Streams im Akamai-Control Panel auf Weiter , um zur Registerkarte **Datensätze** zu gelangen. Folgen Sie den Schritten in der offiziellen Akamai-Dokumentation, um die [Datenparameter“ &#x200B;](https://techdocs.akamai.com/datastream2/docs/choose-data-parameters). Die folgenden Felder aus der LLM Optimizer-Konfiguration werden benötigt:
 
 ![LLMO-Konfigurationsfelder](/help/overview/assets/log-forwarding/akamai/akamai-llmo-config-fields.png)
 
