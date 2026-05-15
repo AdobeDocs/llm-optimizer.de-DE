@@ -2,9 +2,15 @@
 title: Protokollweiterleitung - Fastly
 description: Erfahren Sie, wie Sie CDN-Protokolle zur Erfassung von agenten Traffic-Daten in LLM Optimizer von Fastly an den S3-Bucket von Adobe weiterleiten.
 feature: Agentic Traffic
-source-git-commit: d1f98770b39f550c36d93ece9b89933c0e90f189
+autotag-review: '2026-05-15T17:51:51.808Z'
+TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: 381
 ht-degree: 4%
 
 ---
@@ -49,7 +55,7 @@ So erstellen Sie einen S3-Endpunkt im **Fastly Control Panel**:
 | **Platzierung** | Standard |
 | **Protokollformat** | Verwenden Sie die Zeichenfolge für das Protokollformat, die im Abschnitt **Zeichenfolge für das Protokollformat** unten angezeigt wird. |
 | **Zeitstempelformat** | `%Y-%m-%dT%H:%M:%S.000` |
-| **Behältername** | Kopieren Sie den **Behälternamen** aus der LLM Optimizer-Konfigurationsseite. ![Bucket-Name](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **Behältername** | Kopieren Sie den **Behälternamen** aus der LLM Optimizer-Konfigurationsseite. ![Behältername](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
 | **Domain** | Kopieren Sie **Domain-**) von der Seite LLM Optimizer-Konfiguration . ![Domain-Name](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
 | **Zugriffsmethode** | **Benutzeranmeldeinformationen** |
 | **Benutzeranmeldeinformationen** | Kopieren Sie den **Zugriffsschlüssel** und den **Geheimschlüssel** von der LLM Optimizer-Konfigurationsseite. ![Zugriffsschlüssel](/help/overview/assets/log-forwarding/common/access-keys.png) |

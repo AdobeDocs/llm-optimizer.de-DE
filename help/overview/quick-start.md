@@ -2,17 +2,12 @@
 title: Schnellstart
 description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
 feature: Quickstart, Onboarding
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-autotag-review: '2026-04-30T18:12:24.085Z'
-source-git-commit: 9c8e5750410f0746d1777d2637d84561d15a7a64
+autotag-review: '2026-05-15T17:56:15.005Z'
+TQID: 'https://experienceleague.adobe.com/ShjpvskyOoHqz88gorfhqbIdP5SWT9FJ9SfmjBgEm8E'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1472
 ht-degree: 38%
@@ -57,7 +52,7 @@ Der Aktivierungsfluss unterscheidet sich je nach Adobe-Produkt.
 
 Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Möglichkeiten:
 
-* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
+* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now} ](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
 * Oder gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
@@ -119,7 +114,7 @@ Nach dem Onboarding der Site können Sie die Markenpräsenz-Analyse auf Basis de
 
 ### Kundenkonfiguration (klassische Navigation)
 
-Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ ](/help/dashboards/customer-configuration.md).
 
 ![Dashboard „Kundenkonfiguration“](/help/overview/assets/prompt-creation.png)
 

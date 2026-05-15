@@ -2,9 +2,15 @@
 title: Optimize at Edge – Von AEM Cloud Service verwaltetes CDN (Fastly)
 description: Erfahren Sie, wie Sie das von AEM Cloud Service verwaltete CDN (Fastly) für „Optimize at Edge“ in LLM Optimizer konfigurieren.
 feature: Opportunities
-source-git-commit: 184d6008c2579014c6ff453e8bfff4bb898f4b82
+autotag-review: '2026-05-15T17:31:38.650Z'
+TQID: 'https://experienceleague.adobe.com/qrCODY3Qg6dDd9QRcaYGdN4YVCgKAsl56UTAVZpsIwE'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: 836
 ht-degree: 20%
 
 ---
@@ -18,7 +24,7 @@ Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und
 
 Zugriff auf diese Funktion:
 
-- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**&#x200B;Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
+- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
   ![Benutzer zu einem Produktprofil hinzufügen](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
 - Testkunden müssen zur IMS-Gruppe **LLMO**) gehören. Wenn die Gruppe nicht vorhanden ist, kann der Administrator Ihres Unternehmens sie erstellen und Sie hinzufügen.
   ![Erstellen der LLMO-Admin-IMS-Gruppe](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
@@ -38,7 +44,7 @@ Weiterleiten von Agent-basiertem Traffic an Edge Optimize:
 
    ![Optimierungen für KI-Agenten bereitstellen - Ausstehend](/help/assets/optimize-at-edge/cs-fastly-enable-button.png)
 
-3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [&#x200B; Fehlers &#x200B;](#troubleshooting) Abschnitt „Fehlerbehebung“.
+3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [ Fehlers ](#troubleshooting) Abschnitt „Fehlerbehebung“.
 
    ![Bestätigungsdialogfeld für Optimierungsmodul aktivieren](/help/assets/optimize-at-edge/cs-fastly-enable-dialog.png)
 
