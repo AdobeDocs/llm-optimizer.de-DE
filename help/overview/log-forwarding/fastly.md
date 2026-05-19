@@ -1,72 +1,67 @@
 ---
-title: Protokollweiterleitung - Fastly
-description: Erfahren Sie, wie Sie CDN-Protokolle zur Erfassung von agenten Traffic-Daten in LLM Optimizer von Fastly an den S3-Bucket von Adobe weiterleiten.
+title: Protokollweiterleitung – Fastly
+description: Erfahren Sie, wie Sie CDN-Protokolle von Fastly an den S3-Bucket von Adobe für die Erfassung von Daten zu Agent-basiertem Traffic in LLM Optimizer weiterleiten.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:51:51.808Z'
 TQID: 'https://experienceleague.adobe.com/9SH1I6ajHKLFeEWXy-NpvPm-Ylk2xBKhQro3qobVEX8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 381
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
 # Protokollweiterleitung: Fastly {#log-forwarding-fastly}
 
-Auf dieser Seite wird erläutert, wie Sie CDN-Protokolle zur Erfassung von Traffic-Daten von Fastly an den S3-Bucket von Adobe weiterleiten. Sie verwenden die LLM Optimizer CDN-Konfigurationsseite, um sich bei LLM Optimizer einzuarbeiten. Nachdem der Onboarding-Prozess abgeschlossen ist, führen Sie die auf dieser Seite angegebenen Schritte aus, um die Protokollweiterleitung in der Fastly-Web-Konsole zu konfigurieren.
+Auf dieser Seite wird erläutert, wie Sie CDN-Protokolle zur Erfassung von Daten zu Agent-basiertem Traffic von Fastly an den S3-Bucket von Adobe weiterleiten. Verwenden Sie die CDN-Konfigurationsseite in LLM Optimizer für das Onboarding bei LLM Optimizer. Nachdem der Onboarding-Prozess abgeschlossen ist, führen Sie die auf dieser Seite aufgeführten Schritte aus, um die Protokollweiterleitung in der Fastly-Web-Konsole zu konfigurieren.
 
-## Schritt 1: Onboarding in LLM Optimizer {#step-1}
+## Schritt 1: Durchführen des Onboardings in LLM Optimizer {#step-1}
 
-Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
+Führen Sie auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/) folgende Schritte aus:
 
 1. Navigieren Sie zu **Konfiguration**.
 
    ![Schaltfläche „Konfiguration“](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Klicken Sie auf die **CDN-Konfiguration**.
+1. Klicken Sie auf die Registerkarte **CDN-Konfiguration**.
 
-   ![Registerkarte CDN-Konfiguration](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Registerkarte „CDN-Konfiguration“](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Klicken Sie **Erste Schritte**.
-1. Klicken Sie neben **KI-Traffic-Einblicke aktivieren** auf **Konfigurieren**.
+1. Klicken Sie auf **Erste Schritte**.
+1. Klicken Sie neben **KI-Traffic-Erkenntnisse aktivieren** auf **Konfigurieren**.
 
    ![Konfigurieren](/help/overview/assets/log-forwarding/common/configure.png)
-1. Wählen Sie **Fastly (BYOCDN)**.
+1. Wählen Sie **Fastly (BYOCDN)** aus.
 
-   ![Fastly auswählen](/help/overview/assets/log-forwarding/fastly/fastly-select.png)
-1. Klicken Sie **Onboard**.
+   ![Auswählen von Fastly](/help/overview/assets/log-forwarding/fastly/fastly-select.png)
+1. Klicken Sie auf **Integrieren**.
 
-## Schritt 2: Erstellen eines S3-Endpunkts in Fastly {#step-2}
+## Schritt 2: Erstellen eines S3-Endpunkts in Fastly {#step-2}
 
 So erstellen Sie einen S3-Endpunkt im **Fastly Control Panel**:
 
-1. Gehen Sie im Fastly-Dashboard zu **CDN-Services** (nicht zu Compute-Services).
+1. Navigieren Sie im Fastly-Dashboard zu **CDN-Services** (nicht zu Compute-Services).
 1. Klicken Sie im Bereich **Amazon Web Services S3** auf **Endpunkt erstellen**.
-1. Füllen Sie die Felder **Erstellen eines Amazon S3** Endpunkts aus:
+1. Füllen Sie die Felder zum **Erstellen eines Amazon S3-Endpunkts** aus:
 
 | Feld | Beschreibung |
 | --- | --- |
 | **Name** | Vom Menschen lesbarer Name für den Endpunkt. |
 | **Platzierung** | Standard |
-| **Protokollformat** | Verwenden Sie die Zeichenfolge für das Protokollformat, die im Abschnitt **Zeichenfolge für das Protokollformat** unten angezeigt wird. |
+| **Protokollformat** | Verwenden Sie die Protokollformatzeichenfolge im Abschnitt **Protokollformatzeichenfolge** unten. |
 | **Zeitstempelformat** | `%Y-%m-%dT%H:%M:%S.000` |
-| **Behältername** | Kopieren Sie den **Behälternamen** aus der LLM Optimizer-Konfigurationsseite. ![Behältername](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
-| **Domain** | Kopieren Sie **Domain-**) von der Seite LLM Optimizer-Konfiguration . ![Domain-Name](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
-| **Zugriffsmethode** | **Benutzeranmeldeinformationen** |
-| **Benutzeranmeldeinformationen** | Kopieren Sie den **Zugriffsschlüssel** und den **Geheimschlüssel** von der LLM Optimizer-Konfigurationsseite. ![Zugriffsschlüssel](/help/overview/assets/log-forwarding/common/access-keys.png) |
+| **Bucket-Name** | Kopieren Sie den **Bucket-Namen** von der LLM Optimizer-Konfigurationsseite. ![Bucket-Name](/help/overview/assets/log-forwarding/fastly/fastly-bucket-name.png) |
+| **Domain** | Kopieren Sie den **Domain-Namen** von der LLM Optimizer-Konfigurationseite. ![Domain-Name](/help/overview/assets/log-forwarding/fastly/fastly-domain-name.png) |
+| **Zugriffsmethode** | **Benutzeranmeldedaten** |
+| **Benutzeranmeldedaten** | Kopieren Sie den **Zugriffsschlüssel** und den **Geheimschlüssel** von der LLM Optimizer-Konfigurationsseite. ![Zugriffsschlüssel](/help/overview/assets/log-forwarding/common/access-keys.png) |
 | **Zeitraum** | `300` |
 
-**Protokollformat-Zeichenfolge:**
+**Protokollformatzeichenfolge:**
 
 ```json
 { "timestamp": "%{strftime(\{"%Y-%m-%dT%H:%M:%S%z"\}, time.start)}V", "host": "%{if(req.http.Fastly-Orig-Host, req.http.Fastly-Orig-Host, req.http.Host)}V", "url": "%{json.escape(req.url)}V", "request_method": "%{json.escape(req.method)}V", "request_referer": "%{json.escape(req.http.referer)}V", "request_user_agent": "%{json.escape(req.http.User-Agent)}V", "response_status": %{resp.status}V, "response_content_type": "%{json.escape(resp.http.Content-Type)}V", "client_country_code": "%{client.geo.country_name}V", "time_to_first_byte": "%{time.to_first_byte}V" }
@@ -81,25 +76,25 @@ Klicken Sie nach Abschluss der oben genannten Schritte auf **Erweiterte Optionen
 | Feld | Beschreibung |
 | --- | --- |
 | **Pfad** | Kopieren Sie **Pfad** von der LLM Optimizer-Konfigurationsseite. ![Pfad](/help/overview/assets/log-forwarding/fastly/fastly-path.png) |
-| **Protokollzeilenformat auswählen** | Leer |
+| **Auswählen eines Protokollzeilenformats** | Leer |
 | **Komprimierung** | Gzip |
 | **Redundanzstufe** | Standard |
 | **ACL** | Keine |
 | **Server-seitige Verschlüsselung** | Keine |
 | **Maximale Bytes** | 0 |
 
-Nach dem Festlegen der erweiterten Optionen:
+Nach Festlegen der erweiterten Optionen:
 
-1. Klicken Sie **Erstellen**, um den Endpunkt zu erstellen.
-1. Wählen Sie im Menü **Aktivieren** die Option **Bei Produktion aktivieren** aus, um die Bereitstellung durchzuführen.
+1. Klicken Sie auf **Erstellen**, um den Endpunkt zu erstellen.
+1. Wählen Sie im Menü **Aktivieren** die Option **Für Produktion aktivieren** aus, um die Bereitstellung durchzuführen.
 
 >[!NOTE]
 >
->Fastly streamt Protokolle kontinuierlich auf S3, die S3-Website und die API stellt Dateien erst nach Abschluss des Uploads zur Verfügung.
+>Fastly streamt Protokolle kontinuierlich an S3, die S3-Website und die API stellt Dateien erst nach Abschluss des Uploads zur Verfügung.
 
-### Beispiel für einen Protokolleintrag {#example}
+### Beispiel für Protokolleintrag {#example}
 
-Nachfolgend finden Sie eine Beispiel-Formatzeichenfolge für das Senden von Daten an Amazon S3:
+Nachfolgend finden Sie eine Beispiel-Formatzeichenfolge für das Senden von Daten an Amazon S3:
 
 ```json
 {

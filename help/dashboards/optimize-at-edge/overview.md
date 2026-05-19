@@ -4,21 +4,14 @@ description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge be
 feature: Opportunities
 autotag-review: '2026-05-15T17:55:41.072Z'
 TQID: 'https://experienceleague.adobe.com/kMxoKtrfyzxIpLJP9nt-rq6GP37ICCNe4XienUKqDZE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: d1956731-2adb-4bb7-8301-2b239254ac72id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e9001ce2-5245-4a8e-8601-dd958009072f
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 3108
-ht-degree: 57%
+ht-degree: 67%
 
 ---
 
@@ -54,27 +47,27 @@ Diese Seite bietet einen detaillierten Überblick darüber, wie Optimierungen am
 Starten Sie den Onboarding-Prozess in Ihrem LLM Optimizer-Konto:
 
 1. Wählen Sie im Dashboard **Kundenkonfiguration** die Registerkarte **CDN-Konfiguration** aus.
-1. Klicken Sie **Onboarding CDN**.
-   ![Registerkarte CDN-Konfiguration](/help/overview/assets/cc-cdn.png)
-1. Für Kunden von AEM Cloud Service Managed Fastly ist die Routing-Einrichtung selbstständig und kann direkt in der LLM Optimizer-Benutzeroberfläche abgeschlossen werden. Kunden, die andere CDN-Anbieter verwenden, müssen von Ihrem IT-/CDN-Team die erforderlichen Einrichtungs- und Voraussetzungen erfüllen. Weitere Anleitungen finden Sie in den Beispiel-CDN-Handbüchern unten.
+1. Klicken Sie auf **CDN integrieren**.
+   ![Registerkarte „CDN-Konfiguration“](/help/overview/assets/cc-cdn.png)
+1. Kundschaften von AEM Cloud Service Managed Fastly können die Routing-Einrichtung selbstständig durchführen und direkt in der LLM Optimizer-Benutzeroberfläche abschließen. Für Kundschaften, die andere CDN-Anbieter verwenden, muss Ihr IT-/CDN-Team die erforderlichen Einrichtungs- und Voraussetzungsschritte durchführen. Weitere Anleitungen finden Sie in den Handbüchern mit Beispiel-CDNs unten.
 
 >[!NOTE]
->Bitte beachten Sie die unten stehenden schrittweisen Anleitungen, die den gesamten Onboarding-Ablauf abdecken. Bei Problemen, die nicht durch die Handbücher gelöst werden, können Sie sich an `llmo-at-edge@adobe.com` wenden.
+>Bitte beachten Sie die folgenden detaillierten Anleitungen, die den gesamten Onboarding-Fluss abdecken. Bei Problemen, die nicht in diesen Handbücher behandelt werden, können Sie sich an `llmo-at-edge@adobe.com` wenden.
 
 Voraussetzungen für Ihr IT-/CDN-Team:
 
 * Fügen Sie den Benutzer-Agent `*AdobeEdgeOptimize/1.0*` zur Zulassungsliste in der Datei robots.txt Ihrer Site oder zu den Regeln für die Verwaltung des Bot-Traffics hinzu.
 * Stellen Sie sicher, dass Seiten nicht auf Domain- oder CDN-Ebene blockiert werden.
 * Fügen Sie Routing-Regeln für „Optimize at Edge“ im CDN hinzu.
-* Wenn Ihr CDN über WAF- oder Bot-Manager-Regeln verfügt, überprüfen Sie den `*AdobeEdgeOptimize/1.0*`-Benutzeragenten. Wenn eine zusätzliche Überprüfung erforderlich ist, konfigurieren Sie die `x-edgeoptimize-fetcher-key`. Jede BYOCDN-Anleitung enthält die folgenden Schritte.
+* Wenn Ihr CDN über WAF- oder Bot-Manager-Regeln verfügt, setzen Sie den `*AdobeEdgeOptimize/1.0*`-Benutzer-Agent auf die Zulassungsliste. Wenn eine zusätzliche Überprüfung erforderlich ist, konfigurieren Sie den Header `x-edgeoptimize-fetcher-key`. Jedes BYOCDN-Handbuch enthält die folgenden Schritte.
 * Prüfen Sie das Routing für „Optimize at Edge“ in der Benutzeroberfläche von LLM Optimizer.
 
-Das folgende Diagramm zeigt, wie Anfragen ein BYOCDN-Setup mit Optimize bei Edge durchlaufen:
+Das folgende Diagramm zeigt, wie Anfragen eine BYOCDN-Einrichtung mit „Optimize at Edge“ durchlaufen:
 
 ![BYOCDN-Anfragefluss](/help/assets/optimize-at-edge/byocdn-request-flow.png)
 
 >[!IMPORTANT]
->Routing muss am äußeren CDN (dem CDN, das dem Client am nächsten ist) konfiguriert werden. Wenn Sie über mehrere CDNs verfügen, kann das Routing nur im äußeren CDN erfolgen.
+>Routing muss im äußeren CDN (dem CDN, das dem Client am nächsten ist) konfiguriert werden. Wenn Sie über mehrere CDNs verfügen, kann das Routing nur im äußeren CDN erfolgen.
 
 Um den Einrichtungsprozess zu durchlaufen, wählen Sie unten Ihren CDN-Anbieter aus und befolgen Sie die entsprechenden Konfigurationsanleitungen. Beachten Sie, dass diese Beispiele an Ihre tatsächliche Live-Konfiguration angepasst werden müssen. Wir empfehlen, Änderungen zuerst in den niedrigeren Umgebungen anzuwenden.
 
@@ -110,9 +103,9 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 ### Weitere Tools
 
-Die [AI Content-Sichtbarkeit Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) Browser-Erweiterung zeigt an, auf wie viele Ihrer Webseiteninhalte LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
+Die Browser-Erweiterung [Content Visibility Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) zeigt, auf wie viele Inhalte Ihrer Web-Seiten LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
@@ -126,7 +119,7 @@ Dadurch wird sichergestellt, dass die Seite zunächst für AI Agents vollständi
 >[!IMPORTANT]
 >Diese Vorab-Rendering-Funktion wird auf alle unten dargestellten Möglichkeiten bei der Bereitstellung mit „Optimize at Edge“ angewendet, um sicherzustellen, dass die Seite für AI Agents vollständig sichtbar ist.
 
-Unter [Content-Sichtbarkeit wiederherstellen](/help/dashboards/opportunities/recover-content-visibility.md) finden Sie eine Anleitung zum Dashboard, Bereitstellungsschritte und häufig gestellte Fragen.
+Unter [Wiederherstellen der Content-Sichtbarkeit](/help/dashboards/opportunities/recover-content-visibility.md) finden Sie einen Überblick über Dashboards, Bereitstellungsschritte und häufig gestellte Fragen.
 
 ### Anreichern von Produktdetailseiten
 
@@ -138,7 +131,7 @@ Unter [Produktdetailseiten anreichern](/help/dashboards/opportunities/enrich-pro
 
 Diese Opportunity identifiziert Seiten mit hohem Traffic, die von knappen Zusammenfassungen und strukturierten Schlüsselpunkten profitieren können, sodass LLMs Ansprüche auf der Seite schnell verstehen können. Für jede Seite wird erkannt, wo eine Zusammenfassung am meisten benötigt wird, und es werden KI-generierte Zusammenfassungen (und ggf. Schlüsselpunkte) auf Seiten- oder Abschnittsebene vorgeschlagen, die auf vorhandenen Inhalten basieren. Bei der Bereitstellung von mit Optimieren auf Edge wird dieser Inhalt in die HTML eingefügt, die KI-Agenten abrufen, wodurch sich die Genauigkeit der Darstellung Ihrer Marke in KI-Antworten verbessert.
 
-Weitere [&#x200B; zu dieser Opportunity finden Sie &#x200B;](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
+Weitere [ zu dieser Opportunity finden Sie ](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
 
 ### Relevante häufig gestellte Fragen hinzufügen
 
@@ -206,9 +199,9 @@ Weitere Informationen zur Funktion „Optimieren in Edge&quot; finden Sie in der
 
 ## Häufig gestellte Fragen
 
-F.: Können Testkunden Optimize bei Edge ausprobieren?
+F: Können Kundschaften der Testversion „Optimize at Edge“ ausprobieren?
 
-Ja, Testkunden können auf eine Optimierungsmöglichkeit zugreifen und diese für bis zu 10 Seiten bereitstellen. Standardmäßig besteht die Möglichkeit in der Wiederherstellungs-Content-Sichtbarkeit , die es KI-Agenten ermöglicht, auf die vollständige Version Ihres Seiteninhalts zuzugreifen.
+Ja, Kundschaften der Testversion können auf eine Optimierungsmöglichkeit zugreifen und diese für bis zu 10 Seiten bereitstellen. Standardmäßig handelt es sich um die Möglichkeit „Content-Sichtbarkeit wiederherstellen“, die AI Agents den Zugriff auf die Komplettversion Ihrer Seiteninhalte ermöglicht.
 
 F. Welche Arten von LLMs werden mit „Optimize at Edge“ angesprochen?
 
@@ -230,7 +223,7 @@ Wenn Sie auf **Optimierungen bereitstellen** klicken, bevor Sie die erforderlich
 
 F: Was passiert, wenn der Inhalt an der Quelle aktualisiert wird?
 
-Wir stellen die optimierte Version Ihrer Seite aus dem Cache bereit, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle für **Content-Sichtbarkeit wiederherstellen** jedoch ändert, führt unser System automatisch eine Aktualisierung durch, sodass AI Agents stets den aktuellen Inhalt erhalten. Dies liegt daran, dass wir niedrige Werte für die Cache-TTL (Time To Live) verwenden (in der Größenordnung von Minuten) und innerhalb dieses Zeitfensters jede Inhaltsaktualisierung auf Ihrer Site eine neue Optimierung auslöst. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, pausieren wir die Optimierung und markieren sie für eine menschliche Überprüfung, um zu verhindern, dass der Inhalt zwischen der für den Agenten sichtbaren Seite und der für den Menschen sichtbaren Seite verschoben wird.
+Wir stellen die optimierte Version Ihrer Seite aus dem Cache bereit, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle für **Content-Sichtbarkeit wiederherstellen** jedoch ändert, führt unser System automatisch eine Aktualisierung durch, sodass AI Agents stets den aktuellen Inhalt erhalten. Dies liegt daran, dass wir niedrige Werte für die Cache-TTL (Time To Live) verwenden (in der Größenordnung von Minuten) und innerhalb dieses Zeitfensters jede Inhaltsaktualisierung auf Ihrer Site eine neue Optimierung auslöst. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, unterbrechen wir die Optimierung und kennzeichnen sie für eine menschliche Überprüfung, um Abweichungen beim Inhalt zwischen der für den Agent sichtbaren Seite und der für Menschen sichtbaren Seite zu verhindern.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 F. Ist „Optimize at Edge“ nur für Sites gedacht, die Adobe Edge Delivery Service (EDS) verwenden?

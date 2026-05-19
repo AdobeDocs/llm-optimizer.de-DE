@@ -2,24 +2,15 @@
 title: Adobe LLM Optimizer
 description: Steigern Sie die Leistung Ihrer Marke mit Adobe LLM Optimizer. Verfolgen Sie Erwähnungen nach, gewinnen Sie Erkenntnisse und dominieren Sie bei der KI-gestützten Suche. Übernehmen Sie die Kontrolle über Ihre Sichtbarkeit. Beginnen Sie jetzt mit der Optimierung.
 TQID: https://experienceleague.adobe.com/ACuRLzs9s5fVE0HdY0ZPUIavO5-sqi-yLiBc64Cb8wc
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcdaid: c898dfb2-0885-42fb-b2af-b2d756752646
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 autotag-review: '2026-04-30T18:10:07.393Z'
 source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
 source-wordcount: 374
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,8 +48,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/overview.md" title="LLM Optimizer – Überblick" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="LLM Optimizer – Überblick"
+                    <a href="./overview/overview.md" title="LLM Optimizer – Überblick" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="LLM Optimizer – Überblick"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,7 +57,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer – Überblick">LLM Optimizer – Überblick</a>
+                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer – Überblick">LLM Optimizer – Überblick</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Adobe LLM Optimizer die Markensichtbarkeit in KI-gestützten Suchvorgängen erhöht.</p>
                 </div>
@@ -103,8 +94,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/dashboards-overview.md" title="Dashboards – Überblick" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboards – Überblick"
+                    <a href="./dashboards/dashboards-overview.md" title="Dashboards – Überblick" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboards – Überblick"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +103,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Dashboards – Überblick">Dashboards – Überblick</a>
+                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Dashboards – Überblick">Dashboards – Überblick</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Sie mit Dashboards Erkenntnisse und Empfehlungen für Ihre Site erhalten.</p>
                 </div>
@@ -142,7 +133,7 @@ CARDS
   {description= Learn how LLM Optimizer can help you drive brand authority in AI search and discovery.}
   {target=_blank}
   {cta=Learn more}
-* https://business.adobe.com/de/products/llm-optimizer.html
+* https://business.adobe.com/products/llm-optimizer.html
   {title = Explore the capabilities of the Adobe LLM Optimizer}
   {image = /help/assets/overview/business-adobe.png}
   {target=_blank}
@@ -155,8 +146,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken"
+                    <a href="./overview/best-practices-topics-prompts.md" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und Tracking anderer Marken" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best Practices zum Einrichten von Kategorien, Themen, Prompts und Tracking anderer Marken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,7 +155,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken">Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und Tracking anderer Marken">Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Sie LLM Optimizer für maßgeschneiderte Markenüberwachung und strategische Inhaltsanalyse konfigurieren.</p>
                 </div>

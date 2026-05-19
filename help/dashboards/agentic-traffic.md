@@ -4,21 +4,14 @@ description: Erfahren Sie, wie Sie mit dem Dashboard „Agent-basierter Traffic�
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:33:15.711Z'
 TQID: 'https://experienceleague.adobe.com/3dWNUxcquDVip4Gg1WMYfwv8MUSbZYWqJYnkQ3aZkmc'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: e06fae5f-830b-4222-a469-b5e148d36465
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1407
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -38,9 +31,9 @@ Diese Seite beschreibt Folgendes:
 * [Elemente mit Zunahme und Abnahme](#top-bottom-movers)
 * [Benutzer-Agent- und URL-Leistungsanalyse](#user-url-performance)
 
-Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) befinden, navigieren Sie zu **Agentenverkehr** und wählen Sie die Website aus, für die Sie die Agentenverkehrseinblicke anzeigen möchten.
+Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Agent-basierter Traffic** und wählen Sie die Site aus, für die Sie die Erkenntnisse zu Agent-basiertem Traffic anzeigen möchten.
 
-![Agentenverkehr - Website-Selektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+![Agent-basierter Traffic – Site-Auswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
 
 ## CDN-Protokollweiterleitung {#cdn-setup}
 
@@ -67,15 +60,15 @@ Im Fenster **CDN-Anbieter integrieren**:
 Wenn Sie **Sonstige** auswählen, müssen Sie sich an llmo-now@adobe.com wenden, um Hilfe zu erhalten.
 
 >[!NOTE]
->Weitere Informationen zur Protokollweiterleitung bei Verwendung eines vom Kunden verwalteten CDN (BYOCDN) finden Sie unter [Übersicht über die Protokollweiterleitung von BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
+>Einzelheiten zur Protokollweiterleitung bei Verwendung eines kundenseitig verwalteten CDN (BYOCDN) finden Sie unter [BYOCDN-Protokollweiterleitung – Überblick](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 Nach der Aktivierung werden Protokolle aufgenommen und Metriken wie Gesamtanzahl der Agent-basierten Interaktionen, Erfolgsrate, Treffer nach Markt, Benutzer-Agent-Analysen und Leistung auf URL-Ebene im Dashboard angezeigt.
 
-### Markenorientiertes Erlebnis
+### Markenorientierte Oberfläche
 
-Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) befinden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem Sie zu **Markenverwaltung** navigieren und auf die **CDN**-Beschriftung klicken.
+Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem sie zu **Markenverwaltung** navigieren und auf das Label **CDN** klicken.
 
-![Markenverwaltung - CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![Markenverwaltung – CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 LLM Optimizer verarbeitet eine Teilmenge der Felder aus den CDN-Protokollen. Auch wenn die Rohnamen der Protokollfelder je nach CDN-Anbieter variieren, werden sie normalisiert und wie folgt dargestellt:
 
@@ -126,7 +119,7 @@ Verwenden Sie das Diagramm „Trends bei Agent-basiertem Traffic“, um die wöc
 
 ## Elemente mit Zunahme und Abnahme {#top-bottom-movers}
 
-Die Ansicht „Top-Mover“ und „Bottom Mover“ zeigen URLs mit den größten wöchentlichen Änderungen im agenten Traffic - Besuche oder Treffer von KI-Systemen, die auf Ihre Inhalte zugreifen. **Top Movers** zeigt Seiten, die an Sichtbarkeit oder Interaktion gewinnen, während **Bottom Movers** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
+Die Ansicht der Elemente mit Zunahme und Abnahme zeigt URLs mit den größten wöchentlichen Änderungen beim Agent-basierten Traffic, also bei Besuchen oder Treffern von KI-Systemen, die auf Ihre Inhalte zugreifen. **Zunahme** zeigt Seiten an, deren Sichtbarkeit oder Interaktionen zunehmen, während **Abnahme** die URLs mit den stärksten Rückgängen anzeigt. Auf diese Weise können Sie schnell erkennen, welche Inhalte nach oben tendieren, was möglicherweise Aufmerksamkeit erfordert und wo sich KI-gesteuerte Erkennungsmuster verschieben.
 
 ![Elemente mit Zunahme und Abnahme](/help/dashboards/assets/movers.png)
 

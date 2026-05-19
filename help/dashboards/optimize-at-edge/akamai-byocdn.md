@@ -4,16 +4,13 @@ description: Erfahren Sie, wie Sie Akamai BYOCDN für „Optimize at Edge“ in 
 feature: Opportunities
 autotag-review: '2026-05-15T17:34:47.891Z'
 TQID: 'https://experienceleague.adobe.com/oGtqsnvHYn0BSNLl40-KpVl0TjCZHESRgH1LcVmjOiY'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 809
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -27,16 +24,16 @@ Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und
 Bevor Sie die Regeln für den Akamai Property Manager einrichten, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 * Zugriff auf den Akamai Property Manager für Ihre Domain.
-* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Optional) Informationen zum Testen des Staging-Routings finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Die einzelnen Schritte finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Optional) Weitere Informationen zum Staging-Routing finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Konfiguration**
 
-Die folgende Akamai Property Manager-Regel leitet den Seitendatenverkehr von Agent HTML an Edge Optimize weiter. Die Konfiguration umfasst die folgenden Schritte:
+Die folgende Regel von Akamai Property Manager leitet Agent-basierten HTML-Seiten-Traffic an Edge Optimize weiter. Die Konfiguration umfasst die folgenden Schritte:
 
-**1. Routing-Kriterien festlegen (Traffic-Übereinstimmung zwischen Benutzeragent und HTML)**
+**1. Festlegen von Routing-Kriterien (Zuordnung von Benutzer-Agent und HTML-Traffic)**
 
-Legen Sie das Routing für die folgenden Benutzeragenten fest:
+Festlegen von Routing für die folgenden Benutzer-Agents:
 
 ```
  *AdobeEdgeOptimize-AI*
@@ -49,7 +46,7 @@ Legen Sie das Routing für die folgenden Benutzeragenten fest:
 
 >[!NOTE]
 >
->Wenden Sie die Routingregel „Optimieren bei Edge&quot; nur auf den agenten HTML-Seiten-Traffic an. Bei einer gängigen Einrichtung werden anforderungsseitige Kriterien wie &quot;**&quot; verwendet** um `html` und `EMPTY_STRING` für Seiten-URLs ohne Erweiterung abzugleichen. Wenn Ihre Site HTML über andere URL-Muster bereitstellt oder erweiterungslose Nicht-Seiten-Routen wie API-Endpunkte enthält, verfeinern Sie die Regel mit zusätzlichen pfadbasierten Kriterien.
+>Wenden Sie die Routing-Regel „Optimize at Edge“ nur auf Agent-basierten HTML-Seiten-Traffic an. Eine gängige Vorgehensweise ist die Verwendung von anfrageseitigen Kriterien wie **Dateierweiterung**, um `html` und `EMPTY_STRING` für Seiten-URLs ohne Erweiterung abzugleichen. Wenn Ihre Site HTML von anderen URL-Mustern bereitstellt oder nicht seitenbezogene Routen ohne Erweiterung wie API-Endpunkte enthält, verfeinern Sie die Regel mit zusätzlichen pfadbasierten Kriterien.
 
 ![Festlegen von Routing-Kriterien](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
@@ -59,7 +56,7 @@ Festlegen der Herkunft als `live.edgeoptimize.net` und von „SAN zuordnen“ au
 
 >[!NOTE]
 >
->Wenn die Eigenschaftenaktivierung nach dem Hinzufügen der Regel „Optimieren bei Edge&quot; fehlschlägt, überprüfen Sie, ob die Regel einen anderen SSL-Verifizierungsmodus für den Ursprungs-Server verwendet als die Standardregel. Wenn dies der Fall ist, aktualisieren Sie die Regel „Optimieren unter Edge&quot;, um sie an die Standardregel anzupassen. Wenn die Standardregel beispielsweise &quot;**&quot; verwendet** verwenden Sie auch **Plattformeinstellungen** hier. Wenn Sie die erforderliche Einstellung nicht verwenden können, wenden Sie sich an den Akamai-Support.
+>Falls die Eigenschaftenaktivierung nach dem Hinzufügen der Regel „Optimize at Edge“ fehlschlägt, überprüfen Sie, ob die Regel einen anderen SSL-Verifizierungsmodus für den Ursprungsserver verwendet als die Standardregel. Falls dies der Fall ist, aktualisieren Sie die Regel „Optimize at Edge“, sodass sie der Standardregel entspricht. Wenn die Standardregel beispielsweise **Plattformeinstellungen** verwendet, verwenden Sie hier auch **Plattformeinstellungen**. Falls Sie die erforderliche Einstellung nicht verwenden können, wenden Sie sich bitte an den Akamai-Support.
 
 ![Festlegen der Herkunft und des SSL-Verhaltens](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
@@ -75,22 +72,22 @@ Festlegen der Cache-Schlüsselvariablen `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` auf `LL
 
 **5. Ändern der eingehenden Anfrage-Header**
 
-Legen Sie die folgenden Header für eingehende Anfragen fest:
-`x-edgeoptimize-api-key` zum von LLMO abgerufenen API-Schlüssel
+Legen Sie folgende eingehende Anfrage-Header fest:
+`x-edgeoptimize-api-key` auf den von LLMO abgerufenen API-Schlüssel
 `x-edgeoptimize-config` in `LLMCLIENT=TRUE;`
-`x-edgeoptimize-url` zu `{{builtin.AK_URL}}`
+`x-edgeoptimize-url` auf `{{builtin.AK_URL}}`
 
 ![Ändern der eingehenden Anfrage-Header](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Zulassen, dass in Edge durch Firewall-Regeln optimiert wird (optional)**
+**Zulassen von „Optimize at Edge“ durch Firewall-Regeln (optional)**
 
 {{waf-allowlist-setup}}
 
-![Legen Sie die Kopfzeile „x-edgeOptimize-fetcher-key“ im Eigenschaften-Manager fest](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
+![Festlegen des x-edgeoptimize-fetcher-key-Headers im Property Manager](/help/assets/optimize-at-edge/akamai-step10-fetcher-key.png)
 
 >[!NOTE]
 >
->Zulassungsliste des `*AdobeEdgeOptimize/1.0*`-Benutzeragenten und der `x-edgeoptimize-fetcher-key`-Kopfzeile in Akamai Bot Manager.
+>Setzen Sie außerdem denBenutzer-Agent `*AdobeEdgeOptimize/1.0*` und den Header `x-edgeoptimize-fetcher-key` im Akamai Bot Manager auf die Zulassungsliste.
 
 **6. Ändern der eingehenden Antwort-Header**
 
@@ -116,7 +113,7 @@ Konfigurieren Sie innerhalb der Haupt-Routing-Regel das Verhalten bei Site-Failo
 
 >[!IMPORTANT]
 >
->Das XML-Fragment in diesem Schritt erfordert das **Erweitert**-Verhalten. In einigen Akamai-Umgebungen ist dieses Verhalten nicht für die Self-Service-Bearbeitung verfügbar. Wenn die Option **Erweitert** nicht angezeigt wird, wenden Sie sich an Ihr Akamai-Account-Team oder den Akamai-Support, um die erforderliche Konfiguration zu aktivieren.
+>Der XML-Ausschnitt in diesem Schritt erfordert das **erweiterte** Verhalten. In einigen Akamai-Umgebungen ist dieses Verhalten bei der Selbstbearbeitung nicht verfügbar. Falls die Option **Erweitert** nicht angezeigt wird, wenden Sie sich bitte an Ihr Akamai-Konto-Team oder den Akamai-Support, um die erforderliche Konfiguration zu aktivieren.
 
 ![Site-Failover](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
@@ -148,7 +145,7 @@ Fügen Sie den Anfrage-Header `x-edgeoptimize-request` mit dem Wert `fo` über A
 >
 >Dadurch wird sichergestellt, dass die Header-Regel des Failover-Tests für **alle** Routing-Regeln und nicht nur für eine bewertet wird.
 >
->Stellen Sie außerdem sicher **dass die Regel „Optimieren bei Edge-Routing** nicht durch eine spätere Übereinstimmungsregel überschrieben wird, die den Ursprung, das Caching-Verhalten oder die Cache-ID für dieselben Anfragen ändert. Wenn diese Verhaltensweisen durch eine andere übereinstimmende Regel zurückgesetzt werden, funktioniert das Routing oder Caching von Optimieren bei Edge möglicherweise nicht wie erwartet.
+>Stellen Sie außerdem sicher, dass die Regel **Optimize at Edge Routing** nicht durch eine spätere übereinstimmende Regel überschrieben wird, die den Ursprung, das Caching-Verhalten oder die Cache-ID für dieselben Anfragen ändert. Wenn eine andere übereinstimmende Regel diese Verhaltensweisen zurücksetzt, funktionieren Routing oder Caching der Art „Optimize at Edge“ möglicherweise nicht wie erwartet.
 
 Wenn der Wert des Anfrage-Headers `x-edgeoptimize-request` gleich `fo` ist, legen Sie den ausgehenden Antwort-Header `x-edgeoptimize-fo` auf `true` fest.
 

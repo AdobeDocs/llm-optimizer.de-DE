@@ -4,24 +4,14 @@ description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, 
 feature: Best Practices, Customer Configuration
 autotag-review: '2026-05-15T17:36:13.598Z'
 TQID: 'https://experienceleague.adobe.com/aZCxLQbfeDDtqD3hBGuD-JuCZoMuGiqQrs0gaqxt4-4'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468id: d1956731-2adb-4bb7-8301-2b239254ac72id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: e69d5a42-0217-4ca5-9396-a9a826a170da
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1530
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,19 +27,19 @@ Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-config
 
 Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Aliasse für Markenerwähnungen hinzufügen, um alle Varianten Ihrer Marke über alle Prompts hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Erkenntnisse auf Ihren Unternehmenskontext zuschneidet, sodass Sichtbarkeit, Traffic und Möglichkeiten genau analysiert werden können.
 
-## Markenorientiertes Erlebnis
+## Markenorientierte Oberfläche
 
-Standardmäßig beginnen neue Kundinnen und Kunden in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen Sie wählen können. Bestehende LLM Optimizer-Kunden werden schrittweise auf dieses markenorientierte Erlebnis umsteigen.
+Standardmäßig beginnen neue Nutzende in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen ausgewählt werden kann. Bestehende LLM Optimizer-Nutzende steigen schrittweise auf diese markenorientierte Oberfläche um.
 
-Wenn Sie das markenzentrierte Erlebnis verwenden, definieren Sie **Markenverwaltung** hier, wie Ihre Marke überwacht und analysiert wird.
+Wenn Sie die markenorientierte Oberfläche nutzen, definieren Sie unter **Markenverwaltung**, wie Ihre Marke überwacht und analysiert wird.
 
-![Brands Management — App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Markenverwaltung – App-Navigation (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Markenverwaltung - Konfigurationsübersicht](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Markenverwaltung – Konfigurationsüberblick](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Um Themen und Eingabeaufforderungen für eine bestimmte Marke einzurichten, verwenden Sie **Eingabeaufforderungsverwaltung**.
+Um Themen und Prompts für eine bestimmte Marke einzurichten, verwenden Sie **Prompt-Verwaltung**.
 
-![Fordert zur Verwaltung auf](/help/assets/brand-centric-experience/prompts-management.png)
+![Prompt-Verwaltung](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Branchen-Prompt-Bibliothek
 
@@ -119,7 +109,7 @@ Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss mit dem Ber
 >[!IMPORTANT]
 >
 > * Wählen Sie einen Ansatz und halten Sie sich daran.
-> * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Mischen Sie **SBU** und **URL_DIR** nicht gleichzeitig.
+> * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Verwenden Sie **SBU** und **URL_DIR** nicht gleichzeitig.
 <!--Can you mix Product/Service with these?-->
 
 Zum Beispiel:

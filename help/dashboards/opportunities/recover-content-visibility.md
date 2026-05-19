@@ -1,106 +1,101 @@
 ---
 title: Inhaltssichtbarkeit wiederherstellen
-description: Erfahren Sie, wie LLM Optimizer Seiten identifiziert, auf denen kritische Inhalte von KI-Agenten ausgeblendet werden, und wie Sie diese Sichtbarkeit mithilfe der Edge-basierten Optimierung wiederherstellen können.
+description: Erfahren Sie, wie LLM Optimizer Seiten identifiziert, auf denen kritische Inhalte vor AI Agents verborgen bleiben, und wie Sie mithilfe der Edge-basierten Optimierung Sichtbarkeit wiederherstellen können.
 feature: Opportunities
 autotag-review: '2026-05-15T17:56:37.098Z'
 TQID: 'https://experienceleague.adobe.com/rHqJL4RrJr1ghsy4fhXe-JLDrWruNSZgVhXQeRN-iyA'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 928
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Inhaltssichtbarkeit wiederherstellen
 
-KI-Agenten können nur Inhalte zitieren, auf die sie zugreifen können. Wenn wichtige Inhalte auf Ihren Seiten hinter Client-seitigem Rendering und dynamischen Lasten (wie Produktbeschreibungen, Benutzerbewertungen, Rezepte und Kommentare) verborgen sind, verpassen KI-Agenten diese vollständig, sodass wertvolle Inhalte für die Systeme, die sie zitieren könnten, unsichtbar bleiben.
+AI Agents können nur Inhalte zitieren, auf die sie zugreifen können. Wenn wichtige Inhalte auf Ihren Seiten hinter Client-seitigem Rendering und dynamischen Ladevorgängen (wie Produktbeschreibungen, Benutzerbewertungen, Rezepte und Kommentare) verborgen sind, übersehen AI Agents diese vollständig, sodass wertvolle Inhalte für die Systeme unsichtbar bleiben, die sie zitieren könnten.
 
-Die Content-Sichtbarkeit zum Wiederherstellen identifiziert Seiten auf Ihrer Site, auf denen diese Sichtbarkeitslücke besteht. Für jede betroffene Seite wird genau angezeigt, welche Inhalte in der KI-Agentenansicht fehlen, die Lücke wird hervorgehoben und Sie können Korrekturen ohne CMS-Änderungen oder ohne Beteiligung von Entwicklern vornehmen.
+Die Möglichkeit „Content-Sichtbarkeit wiederherstellen“ identifiziert Seiten Ihrer Site, auf denen diese Sichtbarkeitslücke auftritt. Für jede betroffene Seite wird genau angezeigt, welche Inhalte in der Ansicht des AI Agents fehlen. Lücken werden hervorgehoben und Sie können Änderungen ohne CMS-Änderungen oder Beteiligung von Entwickelnden anwenden.
 
-Es zeigt drei Schlüsselmetriken auf einen Blick:
+Es werden vier Schlüsselmetriken auf einen Blick angezeigt:
 
-- **URLs** - Anzahl der Content-Sichtbarkeiten, die mit einer Seitenlücke identifiziert wurden.
-- **Geschätzter Inhaltsgewinn** - Der geschätzte Multiplikator des Inhalts, der durch Anwendung der Optimierung wiederhergestellt werden könnte.
-- **Durchschn. Content-Sichtbarkeit** - Der durchschnittliche Prozentsatz der Inhalte, die derzeit für KI-Agenten auf den betroffenen Seiten sichtbar sind.
+- **URLs**: Anzahl der Seiten, für die eine Content-Sichtbarkeitslücke identifiziert wurde.
+- **Geschätzter Inhaltsgewinn**: Der geschätzte Multiplikator des Inhalts, der durch Anwendung der Optimierung wiederhergestellt werden könnte.
+- **Durchschnittliche Content-Sichtbarkeit**: Der durchschnittliche Prozentsatz der Inhalte, die derzeit für AI Agents auf den betroffenen Seiten sichtbar sind.
 
-![Content-Sichtbarkeit-Dashboard wiederherstellen](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
+![Dashboard „Content-Sichtbarkeit wiederherstellen“](/help/dashboards/opportunities/assets/recover-content-visibility-overview.png)
 
-Eine Videoübersicht zu dieser Opportunity finden Sie unter [Content-Sichtbarkeit wiederherstellen](https://www.youtube.com/watch?v=BigPyJssFCw).
+Unter [Wiederherstellen der Content-Sichtbarkeit](https://www.youtube.com/watch?v=BigPyJssFCw) können Sie ein Überblickvideo zu dieser Möglichkeit ansehen.
 
-Diese Opportunity kann mithilfe von „Optimieren [&#x200B; Edge&quot; optimiert &#x200B;](/help/dashboards/optimize-at-edge/overview.md). Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, ohne dass dies Auswirkungen auf menschliche Besucher hat (Bot-only-Bereitstellung). Optimierungen werden dann auf der CDN-Ebene angewendet, ohne dass CMS-Änderungen erforderlich sind, und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden, was eine schnelle Bereitstellung mit geringem Risiko ermöglicht.
+Diese Möglichkeit kann mithilfe von [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md) optimiert werden. Optimierungen werden ausschließlich an AI Agents bereitgestellt, ohne dass dies Auswirkungen auf menschliche Besuchende hat (Bot-only-Bereitstellung). Optimierungen werden dann auf der CDN-Ebene angewendet, ohne dass CMS-Änderungen erforderlich sind, und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden, was eine schnelle Bereitstellung mit geringem Risiko ermöglicht.
 
 ## Funktionsweise
 
-LLM Optimizer analysiert Ihre Seiten, indem es vergleicht, auf was KI-Agenten zugreifen können, und was tatsächlich auf der Seite vorhanden ist. Seiten, die einen hohen Agent-Traffic erhalten, aber eine niedrige Content-Sichtbarkeit haben, werden in der **URLs mit** angezeigt, die nach dem Agent-Traffic-Volumen priorisiert sind.
+LLM Optimizer analysiert Ihre Seiten und vergleicht die Inhalte, auf die AI Agents zugreifen können, mit dem tatsächlichen Inhalt der Seite. Seiten, die einen hohen Agent-basierten Traffic erhalten, aber eine niedrige Content-Sichtbarkeit haben, werden in der Tabelle **URLs mit Vorschlägen** priorisiert nach Volumen des Agent-basierten Traffics angezeigt.
 
 Für jede betroffene URL bietet LLM Optimizer Folgendes:
 
-- **KI-Analyse** - Eine Beschreibung dessen, welche Inhalte fehlen und warum sie für die LLM-Kompatibilität wichtig sind, zusammen mit einer Liste der Inhaltsreferenzen, die wiederhergestellt werden können
-- **Content-Sichtbarkeit** - Der Prozentsatz des Inhalts, der derzeit für KI-Agenten auf dieser Seite sichtbar ist
-- **Content Gain Ratio** - Der geschätzte Multiplikator des wiederherstellbaren Inhalts, wenn die Optimierung angewendet wird
-- **Vorschau** - Ein direkter Vergleich von HTML, der zeigt, wie die Seite jetzt im Vergleich zur Nachoptimierung aussieht, sodass Sie die Änderung vor der Bereitstellung überprüfen können
+- **KI-Analyse**: Eine Beschreibung davon, welche Inhalte fehlen und warum sie für die LLM-Kompatibilität wichtig sind, zusammen mit einer Liste der Inhaltsreferenzen, die wiederhergestellt werden können
+- **Content-Sichtbarkeit**: Der Prozentsatz des Inhalts, der derzeit für AI Agents auf dieser Seite sichtbar ist
+- **Verhältnis des Inhaltsgewinns**: Der geschätzte Multiplikator des durch Anwendung der Optimierung wiederherstellbaren Inhalts
+- **Vorschau**: Ein direkter HTML-Vergleich, die einen Vergleich der derzeitigen mit der nachbearbeiteten Seite anzeigt, sodass Sie die Änderung vor der Bereitstellung überprüfen können
 
-Die Fehlerbehebung erfolgt mit [Optimieren bei Edge](/help/dashboards/optimize-at-edge/overview.md) - der Edge-basierten Bereitstellungsfunktion von Adobe, die einen vollständig vorgerenderten, KI-freundlichen HTML-Schnappschuss für LLM-Benutzeragenten auf CDN-Ebene bereitstellt und zuvor ausgeblendete Inhalte wiederherstellt, ohne Ihre CMS zu berühren.
+Die Korrektur erfolgt mit [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md), der Edge-basierten Bereitstellungsfunktion von Adobe, die eine vollständig vorgerenderte, KI-freundliche HTML-Momentaufnahme für LLM-Benutzer-Agents auf CDN-Ebene bereitstellt und zuvor ausgeblendete Inhalte wiederherstellt, ohne Änderungen an ihrem CMS vorzunehmen.
 
 <!-- [URLs with suggestions](/help/dashboards/opportunities/assets/recover-content-visibility-urls.png)-->
 
 ## URLs mit Vorschlägen
 
-Die Tabelle **URLs mit**&quot; listet alle betroffenen Seiten auf und kann nach Klassifizierung gefiltert werden. Für jede URL haben Sie folgende Möglichkeiten:
+Die Tabelle **URLs mit Vorschlägen** listet alle betroffenen Seiten auf und kann nach Klassifizierung gefiltert werden. Für jede URL haben Sie folgende Möglichkeiten:
 
 - **Erweitern Sie die Zeile**, um die KI-Analyse anzuzeigen, einschließlich der fehlenden Inhalte und der Gründe, warum sie wichtig sind.
-- **Vorschau** der parallele HTML-Vergleich der aktuellen Seite mit der Post-Optimierungsversion.
-- **Als behoben markieren** sobald das Problem behoben wurde.
-- **Ignorieren** nicht relevante Vorschläge.
+- **Zeigen Sie eine Vorschau** des direkten HTML-Vergleichs der aktuellen Seite mit der nachbearbeiteten Version an.
+- **Markieren Sie das Problem als korrigiert**, sobald es behoben ist.
+- **Ignorieren** Sie nicht relevante Vorschläge.
 
-Die Vorschläge sind in drei Ansichten unterteilt: **Aktuelle Vorschläge**, **Feste** und **Ignorierte Vorschläge**. Sobald ein Vorschlag bereitgestellt wurde, wechselt er zu Feste Vorschläge mit dem Status **Optimiert** und zu einer **Live anzeigen**-Aktion, um zu überprüfen, ob die Optimierung für agenten Traffic live ist. Feste Vorschläge können auch jederzeit zurückgesetzt werden.
+Die Vorschläge sind in drei Ansichten unterteilt: **Aktuelle Vorschläge**, **Korrigierte Vorschläge** und **Ignorierte Vorschläge**. Sobald ein Vorschlag implementiert ist, wird er in den Bereich „Korrigierte Vorschläge“ verschoben und erhält den Status **Optimiert**. Zusätzlich kann mit der Aktion **Live anzeigen** überprüft werden, ob die Optimierung für den Agent-basierten Traffic live ist. Korrigierte Vorschläge können jederzeit rückgängig gemacht werden.
 
-![Behobene Vorschläge mit dem Status Optimiert](/help/dashboards/opportunities/assets/recover-content-visibility-fixed.png)
+![Korrigierte Vorschläge mit dem Status „Optimiert“](/help/dashboards/opportunities/assets/recover-content-visibility-fixed.png)
 
 ## Bereitstellen der Optimierung
 
-Nachdem Sie die Vorschläge geprüft und die zu optimierenden URLs ausgewählt haben, klicken Sie auf **Optimierungen bereitstellen**, um die Fehlerbehebung am CDN-Edge zu veröffentlichen. In **Bestätigungsdialogfeld „Für Edge bereitstellen** werden die ausgewählten URLs, ihr Typ (PreRender) und der angewendete Vorschlag angezeigt. Nach der Bereitstellung wird in einem Bestätigungsbildschirm bestätigt, welche URLs erfolgreich optimiert wurden.
+Nachdem Sie die Vorschläge überprüft und die zu optimierenden URLs ausgewählt haben, klicken Sie auf **Optimierungen bereitstellen**, um die Korrektur auf CDN-Edge zu veröffentlichen. Ein Bestätigungsdialogfeld **In Edge bereitstellen** zeigt die ausgewählten URLs an, deren Typ (Prerender) und den angewendeten Vorschlag an. Nach der Bereitstellung wird auf einem Bestätigungsbildschirm angezeigt, welche URLs erfolgreich optimiert wurden.
 
 >[!NOTE]
 >
->Für die Bereitstellung der Optimierungen muss der Onboarding-Prozess „Optimieren bei Edge&quot; abgeschlossen werden. Wenn Sie noch nicht eingestiegen sind, werden Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess weitergeleitet. Ausführliche Informationen zur Funktionsweise von „Optimieren bei Edge&quot;, zu unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimieren bei Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Das Bereitstellen von Optimierungen erfordert den Abschluss des Onboarding-Prozesses „Optimize at Edge“. Falls Sie das Onboarding noch nicht abgeschlossen haben, gelangen Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess. Ausführliche Informationen zur Funktionsweise von „Optimize at Edge“, zu den unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
-![Dialogfeld „Für Edge bereitstellen“](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
+![Dialogfeld „In Edge bereitstellen“](/help/dashboards/opportunities/assets/recover-content-visibility-deploy.png)
 
-## In der Demo ausprobieren
+## Ausprobieren in der Demo
 
-Erleben Sie die Möglichkeit, die Content-Sichtbarkeit mithilfe der Frescopa-Demoumgebung in Aktion wiederherzustellen.
+Probieren Sie die Möglichkeit „Content-Sichtbarkeit wiederherstellen“ in der Frescopa-Demoumgebung aus.
 
-[View Recover Content-Sichtbarkeit in der Frescopa Demo](https://play.llmo.now/org/demo-org/opportunities/prerender/75729489-756a-4c2b-9905-155b1715da5c)
+[„Content-Sichtbarkeit wiederherstellen“ in der Frescopa-Demo ansehen](https://play.llmo.now/org/demo-org/opportunities/prerender/75729489-756a-4c2b-9905-155b1715da5c)
 
 ## Häufig gestellte Fragen
 
-**Warum ist mein Seiteninhalt vor KI-Agenten verborgen?**
+**Warum ist der Inhalt meiner Seite für AI Agents verborgen?**
 
-Die meisten modernen Websites verlassen sich darauf, dass JavaScript Inhalte nach der ersten Seitenanforderung dynamisch lädt. KI-Agenten führen JavaScript normalerweise nicht aus, sodass Client-seitig gerenderte Inhalte - Produktlisten, Benutzerbewertungen, Blog-Artikel-Links und ähnliche Elemente - vom KI-Agenten nie gesehen werden, selbst wenn sie für menschliche Besucher vollständig sichtbar sind.
+Die meisten modernen Websites nutzen JavaScript, um Inhalte nach der ersten Seitenanforderung dynamisch zu laden. AI Agents führen in der Regel kein JavaScript aus, daher werden Client-seitig gerenderte Inhalte – Produktlisten, Benutzerbewertungen, Links zu Blogartikeln und ähnliche Elemente – vom AI Agent nie gesehen, selbst wenn sie für menschliche Besuchende vollständig sichtbar sind.
 
-**Wirkt sich diese Optimierung auf meine menschlichen Besucher oder SEO-Bots aus?**
+**Hat diese Optimierung Auswirkungen auf meine menschlichen Besuchenden oder SEO-Bots?**
 
-Nein. Bei Edge optimieren werden nur KI-Benutzeragenten berücksichtigt. Besuchende und SEO-Bots erhalten die Originalseite genau wie zuvor, ohne Änderungen an ihrem Erlebnis oder ihrer Leistung.
+Nein. „Optimize at Edge“ zielt ausschließlich auf KI-Benutzer-Agents ab. Menschliche Besuchende und SEO-Bots wird die Originalseite genau wie zuvor angezeigt, ohne dass sich ihr Erlebnis oder die Leistung ändert.
 
-**Muss ich meine CMS ändern oder Entwickler einbeziehen?**
+**Muss ich mein CMS ändern oder Entwickelnde einbeziehen?**
 
-Nein. Die Optimierung wird am CDN-Edge angewendet und erfordert keine Änderungen am Authoring, Code-Bereitstellungen oder Entwicklerinteraktionen. Nach dem Onboarding von Optimizer bei Edge können Sie Änderungen in Minutenschnelle direkt über die LLM Optimizer-Benutzeroberfläche bereitstellen und zurücksetzen.
+Nein. Die Optimierung wird auf CDN-Edge angewendet und erfordert keine Authoring-Änderungen, Code-Bereitstellungen oder Entwicklerbeteiligung. Nach dem Onboarding von „Optimize at Edge“ können Sie Änderungen innerhalb von Minuten direkt über die LLM Optimizer-Oberfläche bereitstellen und rückgängig machen.
 
-**Was passiert, wenn sich mein Seiteninhalt nach der Bereitstellung ändert?**
+**Was passiert, wenn sich der Inhalt meiner Seite nach der Bereitstellung ändert?**
 
-Für die Wiederherstellungs-Content-Sichtbarkeit verwendet LLM Optimizer TTL-Einstellungen mit geringem Cache, damit alle Inhaltsaktualisierungen auf Ihrer Site innerhalb von Minuten aktualisiert werden können. KI-Agenten erhalten immer die aktuellste Version Ihres Inhalts.
+Für die Wiederherstellung der Content-Sichtbarkeit verwendet LLM Optimizer niedrige Cache-TTL-Einstellungen, sodass jede Inhaltsaktualisierung auf Ihrer Site innerhalb weniger Minuten eine Aktualisierung auslöst. AI Agents wird stets die aktuellste Version Ihrer Inhalte zur Verfügung gestellt.
 
-**Wie komme ich bei Edge zu Optimize?**
+**Was sind die ersten Schritte mit „Optimize at Edge“?**
 
-Auf der [Optimieren bei Edge](/help/dashboards/optimize-at-edge/overview.md) Seite finden Sie den vollständigen Onboarding-Prozess, die CDN-Konfigurationshandbücher und die Voraussetzungen.
+Den vollständigen Onboarding-Prozess, CDN-Konfigurationsanleitungen und Voraussetzungen finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).

@@ -1,36 +1,33 @@
 ---
 title: Schnellstart
-description: Erfahren Sie, wie Sie Ihren Markennamen und Ihre Domain integrieren, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
+description: Erfahren Sie, wie Sie das Onboarding für Ihren Markennamen und Ihre Domain durchführen, Ihre Testversion von Experience Hub oder Experience Cloud aktivieren und die Einrichtung für Adobe LLM Optimizer abschließen.
 feature: Quickstart, Onboarding
 autotag-review: '2026-05-15T17:56:15.005Z'
 TQID: 'https://experienceleague.adobe.com/ShjpvskyOoHqz88gorfhqbIdP5SWT9FJ9SfmjBgEm8E'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c0713b97-4af8-4c41-b742-5afcc6ced468
+subfeature_v2: id: b70f186a-2ef9-43ce-b452-25fa1d91bcda
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 1472
-ht-degree: 38%
+ht-degree: 96%
 
 ---
 
 
 # Schnellstart
 
-Um mit LLM Optimizer zu beginnen, schließen Sie den Onboarding-Prozess ab. Passen Sie dann Kategorien, Themen und Eingabeaufforderungen an, konfigurieren Sie die CDN-Protokollweiterleitung und öffnen Sie die [Dashboards](/help/dashboards/dashboards-overview.md) um umfassendere Einblicke zu erhalten.
+Um mit LLM Optimizer zu beginnen, schließen Sie den Onboarding-Prozess ab. Passen Sie dann Kategorien, Themen und Prompts an, konfigurieren Sie die CDN-Protokollweiterleitung und öffnen Sie die [Dashboards](/help/dashboards/dashboards-overview.md), um umfassendere Erkenntnisse zu erhalten.
 
 <!--Where steps differ by layout, use **Customer Configuration (classic experience)** or **Brands Management** / **Prompts Management**, whichever matches your current interface.-->
 
-## Markenorientiertes Erlebnis {#brand-centric-experience}
+## Markenorientierte Oberfläche {#brand-centric-experience}
 
-Standardmäßig beginnen neue Kundinnen und Kunden in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen Sie wählen können. Bestehende LLM Optimizer-Kunden werden schrittweise auf dieses markenorientierte Erlebnis umsteigen.
+Standardmäßig beginnen neue Nutzende in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen ausgewählt werden kann. Bestehende LLM Optimizer-Nutzende steigen schrittweise auf diese markenorientierte Oberfläche um.
 
 ## Onboarding – Überblick
 
-Der Onboarding-Prozess beginnt mit dem Onboarding Ihrer Domain und Ihres Markennamens. Jeder Teil der Onboarding-Journey wird unten beschrieben, zusammen mit hilfreichen Tipps, wie Sie so bald wie möglich mit LLM Optimizer beginnen können.
+Der Onboarding-Prozess beginnt mit dem Onboarding Ihrer Domain und Ihres Markennamens. Im Folgenden werden die einzelnen Schritte des Onboarding-Prozesses beschrieben zusammen mit hilfreichen Tipps dazu, wie Sie so schnell wie möglich mit der Arbeit mit LLM Optimizer beginnen können.
 
 ### Erlauben des Zugriffs auf öffentliche Seiten durch Adobe LLM Optimizer
 
@@ -38,25 +35,25 @@ Um präzise Inhalte und technische Empfehlungen bereitstellen zu können, benöt
 
 Konfigurationsanforderungen:
 
-* Fügen Sie den Spacecat/1.0-Benutzeragenten zur Datei &quot;&quot; in der Datei „robots.txt“ Ihrer Site oder zu den Regeln für die Verwaltung von Bot-Traffic hinzu.
-* Stellen Sie sicher, dass Seiten weder auf Domain- noch auf CDN-Ebene blockiert werden. Blockierte Seiten können nicht indiziert werden. Daher können keine Optimierungsaufgaben und -erkenntnisse für sie generiert werden.
+* Fügen Sie der Zulassungsliste in der Datei „robots.txt“ Ihrer Site oder den Regeln für die Verwaltung von Bot-Traffic den Benutzer-Agent „Spacecat/1.0“ hinzu.
+* Stellen Sie sicher, dass Seiten nicht auf Domain- oder CDN-Ebene blockiert werden. Blockierte Seiten können nicht indiziert werden. Daher können keine Optimierungsaufgaben und -erkenntnisse für sie generiert werden.
 
 Wenn im Dashboard eine geringe Inhaltssichtbarkeit angezeigt wird, stellen Sie sicher, dass der Crawler Zugriff auf Ihre Domains hat. Eingeschränkter Zugriff ist eine häufige Ursache für eine unvollständige Indizierung.
 
-## Schritt 1: Integrieren Sie Ihren Markennamen und Ihre Domain {#step-1-onboard-your-domain}
+## Schritt 1: Durchführen des Onboardings für Ihren Markennamen und Ihre Domain {#step-1-onboard-your-domain}
 
-Um mit LLM Optimizer zu beginnen, aktivieren Sie zunächst Ihre Testversion (falls zutreffend) und integrieren Sie Ihren Markennamen und Ihre Domain.
+Um mit LLM Optimizer zu beginnen, aktivieren Sie zunächst Ihre Testversion (falls zutreffend) und führen Sie das Onboarding für Ihren Markennamen und Ihre Domain durch.
 
-### Testversion aktivieren
+### Aktivieren der Testversion
 
 Der Aktivierungsfluss unterscheidet sich je nach Adobe-Produkt.
 
-#### AEM Cloud-Kunden
+#### AEM Cloud-Kundschaften
 
-Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Möglichkeiten:
+Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kundschaft folgende Möglichkeiten:
 
-* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie &quot;**LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now&rbrace; &#x200B;](https://llmo.now). Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
-* Oder gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
+* Navigieren Sie zu [Experience Hub](https://experienceleague.adobe.com/de/docs/experience-manager-cloud-service/content/experience-hub/experience-hub) und aktivieren Sie LLM Optimizer mithilfe der Karte „Produktankündigung“. Nachdem Sie **LLM Optimizer ausprobieren** ausgewählt haben, werden Sie zu [https://llmo.now](https://llmo.now) weitergeleitet. Melden Sie sich über IMS an und geben Sie dann eine Domain und einen Markennamen ein, um den Onboarding-Prozess zu starten.
+* Oder navigieren Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 ![LLM Optimizer-Testversion](/help/overview/assets/llm-trial.png)
 
@@ -64,34 +61,34 @@ Um Ihre Testversion zu aktivieren, haben Sie als AEM Cloud-Kunde folgende Mögli
 
 Kunden von Adobe Analytics und Adobe Customer Journey Analytics sehen ein Banner auf der Startseite von Experience Cloud.
 
-![Experience Cloud-Startseite mit dem Banner &quot;Adobe LLM Optimizer-Testversion starten“](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
+![Experience Cloud-Startseite mit dem Banner „Adobe LLM Optimizer-Testversion starten“](/help/overview/assets/experience-cloud-llmo-trial-banner.png)
 
 Sie können Ihre Testversion auf eine der folgenden Arten aktivieren:
 
-* Wählen **im Banner die Option** Adobe LLM Optimizer-Testversion starten“ aus.
-* Gehen Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
+* Wählen Sie im Banner **Adobe LLM Optimizer-Testversion starten** aus.
+* Navigieren Sie direkt zu [https://llmo.now](https://llmo.now) und melden Sie sich an.
 
 Sobald die Testversion aktiv ist, fahren Sie mit dem Onboarding Ihres Markennamens und Ihrer Domain fort.
 
 >[!NOTE]
 >
 > * **Kostenlose Testversion:** Kunden von AEM Cloud und Adobe Analytics/Customer Journey Analytics können die kostenlose Testversion von LLM Optimizer verwenden.
-> * **Kunden, die die Testversion am oder nach dem 1. April 2026 aktivieren** können bis zu 100 Eingabeaufforderungen und eine Domain verwenden und Optimierungen für bis zu 10 URLs für einen einzelnen Opportunity-Typ bereitstellen.
-> * **Kunden, die die Testversion vor dem 1. April 2026 aktiviert**, haben unter ihren bestehenden Bedingungen weiterhin Zugriff auf bis zu 200 Eingabeaufforderungen.
+> * **Kundschaften, die die Testversion am oder nach dem 1. April 2026 aktivieren**, können bis zu 100 Prompts und eine Domain verwenden und Optimierungen für bis zu 10 URLs für einen einzelnen Möglichkeitstyp bereitstellen.
+> * **Kundschaften, die die Testversion vor dem 1. April 2026 aktivierten**, haben gemäß der bestehenden Bedingungen weiterhin Zugriff auf bis zu 200 Prompts.
 >
->Die Verwendung über die enthaltenen Beschränkungen hinaus erfordert eine separate Lizenzvereinbarung. Der Zugriff erfolgt „wie besehen“ und „wie verfügbar“ und kann jederzeit geändert, eingeschränkt oder entfernt werden. Weitere Informationen erhalten Sie von Ihrem Kundenbetreuer.
+>Die Verwendung über die enthaltenen Limits hinaus erfordert eine separate Lizenzvereinbarung. Der Zugriff wird „wie besehen“ und „wie verfügbar“ bereitgestellt und kann von Adobe jederzeit geändert, eingeschränkt oder entfernt werden. Weitere Informationen erhalten Sie von Ihrem Konto-Support.
 
-#### Integrieren Sie Ihren Markennamen und Ihre Domain
+#### Durchführen des Onboardings für Ihren Markennamen und Ihre Domain
 
-Integrieren Sie Ihren Markennamen und Ihre Domain, um mit der Verwendung von LLM Optimizer zu beginnen.
+Führen Sie das Onboarding für Ihren Markennamen und Ihre Domain durch, um mit der Verwendung von LLM Optimizer zu beginnen.
 
 1. Geben Sie Ihren Markennamen und die zugehörige Domain ein.
 
-   * Dies sollte die Hauptdomäne sein, in der Sie Inhalte analysieren und optimieren möchten.
+   * Dies sollte die Haupt-Domain sein, in der Sie Inhalte analysieren und optimieren möchten.
 
-1. Vollständiges Onboarding.
+1. Schließen Sie das Onboarding ab.
 
-   * Nach der Übermittlung beginnt LLM Optimizer mit der Analyse Ihrer Domain und der Erstellung von Einblicken.
+   * Nach der Übermittlung beginnt LLM Optimizer mit der Analyse Ihrer Domain und der Generierung von Erkenntnissen.
 
 ![LLM Optimizer-Domain](/help/overview/assets/domain.png)
 
@@ -103,25 +100,25 @@ Integrieren Sie Ihren Markennamen und Ihre Domain, um mit der Verwendung von LLM
 
 Während der Onboarding-Phase wird eine kleine Gruppe von Kategorien, Themen und Prompts generiert. Markenpräsenz-Analysen zu diesen Prompts stehen kurz nach dem Onboarding Ihrer Site zur Verfügung.
 
-Die Möglichkeit, Optimierungen im Randbereich bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren bei Edge - Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
+Die Möglichkeit, Optimierungen auf Edge-Architektur bereitzustellen, ist ebenfalls verfügbar. Weitere Informationen finden Sie unter [Optimieren auf Edge-Architektur – Häufig gestellte Fragen](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#frequently-asked-questions).
 
-Konfigurieren Sie außerdem [CDN-Protokollweiterleitung](#step-4) für die Traffic-Analyse. LLM Optimizer erfordert Markenpräsenz-Daten und Erkenntnisse von Agent und Referral Traffic, um Chancen zu identifizieren und präskriptive Empfehlungen zur Steigerung der KI-Sichtbarkeit zu geben.
+Konfigurieren Sie außerdem die [CDN-Protokollweiterleitung](#step-4) für die Traffic-Analyse. LLM Optimizer benötigt Markenpräsenzdaten und Erkenntnisse von Agent-basiertem und Referral Traffic, um Möglichkeiten zu identifizieren und präskriptive Empfehlungen zur Verbesserung der KI-Sichtbarkeit zu geben.
 
-### Nicht-AEM Cloud-Kunden
+### Nicht-AEM Cloud-Kundschaften
 
-Nachdem Ihr Unternehmen den Geschäftsvertrag abgeschlossen hat, werden Sie mit der von Ihrem Unternehmen ausgewählten Domain in LLM Optimizer aufgenommen. Wenn das Onboarding abgeschlossen ist, melden Sie sich unter [https://llmo.now](https://llmo.now) an.
+Nachdem Ihr Unternehmen der Geschäftsvereinbarung zugestimmt hat, wird das Onboarding in LLM Optimizer mit der von Ihrer Organisation ausgewählten Domain durchgeführt. Wenn das Onboarding abgeschlossen ist, melden Sie sich unter [https://llmo.now](https://llmo.now) an.
 
 ## Schritt 2: Anpassen der Kategorien, Themen und Prompts {#step-2-customize-categories-topics-and-prompts}
 
-Nach dem Onboarding der Site können Sie die Markenpräsenz-Analyse auf Basis der kleinen Gruppe von Prompts anzeigen, die während der Onboarding-Phase automatisch generiert wurden. Ab nun können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke anpassen.
+Nach dem Onboarding der Site können Sie die Markenpräsenz-Analyse auf Basis der kleinen Gruppe von Prompts anzeigen, die während der Onboarding-Phase automatisch generiert wurden. Ab diesem Zeitpunkt können Sie Kategorien, Themen und Prompts für Ihre Marke anpassen.
 
 ### Kundenkonfiguration (klassische Navigation)
 
-Wenn Sie die klassische Navigation (nicht das markenzentrierte Erlebnis) verwenden, können Sie Kategorien, Themen und Eingabeaufforderungen für Ihre Marke über das Dashboard [Kundenkonfiguration“ &#x200B;](/help/dashboards/customer-configuration.md).
+Wenn Sie die klassische Navigation (nicht die markenorientierte Oberfläche) verwenden, können Sie Kategorien, Themen und Prompts für Ihre Marke über das Dashboard [Kundenkonfiguration](/help/dashboards/customer-configuration.md) anpassen.
 
 ![Dashboard „Kundenkonfiguration“](/help/overview/assets/prompt-creation.png)
 
-Im Dashboard für Kundenkonfigurationen haben Sie folgende Möglichkeiten:
+Im Dashboard „Kundenkonfiguration“ haben Sie folgende Möglichkeiten:
 
 * Hinzufügen **neuer Kategorien**, die zu Ihren geschäftlichen Prioritäten passen. Kategorien können breite Inhaltsbereiche sein, die für Ihre Domain relevant sind.
 * Eingeben **benutzerdefinierter Themen** oder Unterthemen, die nachverfolgt werden sollen. Bei Themen kann es sich um spezifische Bereiche mit Bezug zu umfangreichen, nicht markenspezifischen Keywords handeln, die mit Ihrer Domain verknüpft sind.
@@ -136,17 +133,17 @@ Im Dashboard für Kundenkonfigurationen haben Sie folgende Möglichkeiten:
 >
 > Weitere Informationen zum Einrichten von Kategorien, Themen und Prompts finden Sie auf der Seite [Best Practices bei der Konfiguration von Kategorien, Themen und Prompts](/help/overview/best-practices-topics-prompts.md).
 
-### Markenzentrierte Erlebniskategorien, Themen und Eingabeaufforderungen
+### Kategorien, Themen und Prompts der markenorientierten Oberfläche
 
-Für Kunden, die am markenorientierten Erlebnis teilnehmen, können Sie Kategorien, Themen und Eingabeaufforderungen wie folgt hinzufügen:
+Für Kundschaften, die die markenorientierten Oberfläche verwenden, können Sie Kategorien, Themen und Prompts wie folgt hinzufügen:
 
-* **Kategorien** - Navigieren Sie zu **Markenverwaltung** und klicken Sie auf **Kategorien**. Kategorien werden auf globaler Ebene definiert und gelten für alle Marken unter Brands Management.
+* **Kategorien**: Navigieren Sie zu **Markenverwaltung** und klicken Sie auf **Kategorien**. Kategorien werden auf globaler Ebene definiert und gelten für alle Marken in der Markenverwaltung.
 
   ![Markenverwaltung mit Kategorien in der Navigation](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-* **Themen und Eingabeaufforderungen** - Navigieren Sie zu **Eingabeaufforderungen-**, um Themen und Eingabeaufforderungen, einschließlich Eingabeaufforderungen für eine bestimmte Marke, zu erstellen.
+* **Themen und Prompts**: Navigieren Sie zu **Prompt-Verwaltung**, um Themen und Prompts zu erstellen, einschließlich Prompts für eine bestimmte Marke.
 
-  ![Fordert zur Verwaltung auf](/help/assets/brand-centric-experience/prompts-management.png)
+  ![Prompt-Verwaltung](/help/assets/brand-centric-experience/prompts-management.png)
 
 ## Schritt 3: Markenpräsenz-Erkenntnisse
 
@@ -154,15 +151,15 @@ Nachdem Ihre Domain integriert wurde, erhalten Sie in der Ansicht „Markenpräs
 
 >[!NOTE]
 >
-> Navigieren Sie für Kunden, die sich am markenorientierten Erlebnis befinden, zu **Markenpräsenz** und wählen Sie im Dropdown-Menü „Marke“ eine Marke aus, für die Sie Markenpräsenz anzeigen möchten. Mit diesem Erlebnis können Sie die Markensichtbarkeit auch auf der Ebene **Alle Marken** anzeigen.
+> Für Kundschaften, die die markenorientierten Oberfläche verwenden, können Sie zu **Markenpräsenz** navigieren und mithilfe des Dropdown-Menüs „Marke“ eine Marke auswählen, für die die Markenpräsenz angezeigt werden soll. Mit diesem Erlebnis können Sie auch die Markensichtbarkeit auf einer Ebene für **alle Marken** anzeigen.
 
 ## Schritt 4: Bereitstellen von Informationen für die CDN-Protokollweiterleitung {#step-4}
 
-Um Agent Traffic und Referral Traffic-Einblicke zu entsperren, registrieren Sie die CDN-Protokollweiterleitung, damit LLM Optimizer Ihre Zugriffsprotokolle lesen kann.
+Um Erkenntnisse zu Agent-basiertem Traffic und Referral Traffic zu erhalten, registrieren Sie die CDN-Protokollweiterleitung, damit LLM Optimizer Ihre Zugriffsprotokolle lesen kann.
 
 ### Kundenkonfiguration (klassische Navigation)
 
-Wenn Sie die klassische Navigation verwenden, können Sie Informationen zur CDN-Protokollweiterleitung über das [Kundenkonfigurations-Dashboard](/help/dashboards/customer-configuration.md#cdn-configuration) hinzufügen. Öffnen Sie die **CDN-Konfiguration** und wählen Sie **Integriertes CDN** aus.
+Wenn Sie die klassische Navigation verwenden, können Sie Informationen zur CDN-Protokollweiterleitung über das Dashboard [Kundenkonfiguration](/help/dashboards/customer-configuration.md#cdn-configuration) hinzufügen. Öffnen Sie die Registerkarte **CDN-Konfiguration** und wählen Sie **CDN integrieren** aus.
 
 ![CDN-Kundenkonfiguration](/help/overview/assets/cc-cdn.png)
 
@@ -172,24 +169,24 @@ Wenn zuvor kein CDN-Anbieter hinzugefügt wurde (wie oben beschrieben), werden S
 * [Referral Traffic](/help/dashboards/referral-traffic.md#setup)
 
 >[!NOTE]
->Weitere Informationen zur Protokollweiterleitung bei Verwendung eines vom Kunden verwalteten CDN (BYOCDN) finden Sie unter [Übersicht über die Protokollweiterleitung von BYOCDN](/help/overview/log-forwarding/log-forwarding-overview.md)
+>Einzelheiten zur Protokollweiterleitung bei Verwendung eines kundenseitig verwalteten CDN (BYOCDN) finden Sie unter [BYOCDN-Protokollweiterleitung – Überblick](/help/overview/log-forwarding/log-forwarding-overview.md)
 
-### Markenzentrierte CDN-Erlebnisweiterleitung
+### CDN-Protokollweiterleitung für markenorientierte Oberfläche
 
-Für Kunden, die sich am markenorientierten Erlebnis beteiligen, können Sie CDN-Protokollweiterleitungsinformationen von **Brands Management** wie folgt hinzufügen: Öffnen Sie **Brands Management** und klicken Sie auf die **CDN**-Beschriftung.
+Für Kundschaften, die die markenorientierten Oberfläche verwenden, können Sie Informationen zur CDN-Protokollweiterleitung von **Markenverwaltung** wie folgt hinzufügen: Öffnen Sie **Markenverwaltung** und klicken Sie auf das Label **CDN**.
 
-![Markenverwaltung - CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
+![Markenverwaltung – CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
 
 ## Schritt 5: Erkunden der Dashboards und Einleiten von Maßnahmen
 
 Nachdem Sie Informationen für die CDN-Protokollweiterleitung angegeben haben, können Sie:
 
 * Das Dashboard [Markenpräsenz](/help/dashboards/brand-presence.md) anzeigen, Ihre Sichtbarkeitsbewertung anzeigen und Ihre Leistung im Vergleich mit anderen Marken nachverfolgen.
-* Erkunden Sie die [Agent](/help/dashboards/agentic-traffic.md)- und [Referral Traffic](/help/dashboards/referral-traffic.md)-Dashboards, wenn die CDN-Protokollweiterleitung konfiguriert wurde.
+* Zeigen Sie die Dashboards [Agent-basierter Traffic](/help/dashboards/agentic-traffic.md) und [Referral Traffic](/help/dashboards/referral-traffic.md) an, nachdem die CDN-Protokollweiterleitung konfiguriert wurde.
 * [Möglichkeiten](/help/dashboards/opportunities-overview.md) nutzen, um Verbesserungen für Inhalte und technische Aspekte zu identifizieren.
 * Daten exportieren und mit Ihrem Team zusammenarbeiten oder Ihre Kolleginnen und Kollegen zur Verwendung des Produkts einladen.
 
 >[!NOTE]
-> Rufen Sie in der markenorientierten Benutzeroberfläche über den Navigationsbereich auf der linken Seite die gewünschte Ansicht auf.
+> Rufen Sie in der markenorientierten Oberfläche die gewünschte Ansicht über den Navigationsbereich auf der linken Seite auf.
 
 Um die Funktionen von LLM Optimizer vollständig zu verstehen, sollten Sie sich alle verfügbaren [Dashboards](/help/dashboards/dashboards-overview.md) genau ansehen.
