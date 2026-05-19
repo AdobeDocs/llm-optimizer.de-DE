@@ -13,7 +13,7 @@ subfeature_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 349
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und
 Bevor Sie die Fastly VCL-Regeln einrichten, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 * Zugriff auf Fastly für Ihre Domain.
-* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Anweisungen hierzu finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
-* (Optional) Informationen zum Testen des Staging-Routings finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
+* Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Die einzelnen Schritte finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
+* (Optional) Weitere Informationen zum Staging-Routing finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
 **Konfiguration**
 
@@ -94,7 +94,7 @@ Das Snippet `vcl_deliver` wickelt ein Failover automatisch ab. Wenn Edge Optimiz
 | Edge Optimize gibt `4XX` oder `5XX` zurück | Anfrage wird neu gestartet und vom Standardursprung bereitgestellt. |
 | Failover-Antwort | Enthält den `x-edgeoptimize-fo: 1`-Header. |
 
-**Zulassen, dass in Edge durch Firewall-Regeln optimiert wird (optional)**
+**Zulassen von „Optimize at Edge“ durch Firewall-Regeln (optional)**
 
 {{waf-allowlist-setup}}
 

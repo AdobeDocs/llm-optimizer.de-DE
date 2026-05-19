@@ -17,23 +17,23 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 836
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 
 # Von AEM Cloud Service verwaltetes CDN (Fastly)
 
-Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und LLM-Benutzer-Agents) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besuchende und SEO-Bots werden weiterhin wie gewohnt von Ihrem Ursprung aus unterstützt. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header-`x-edgeoptimize-request-id`.
+Diese Konfiguration leitet den Agent-basierten Traffic (Anfragen von KI-Bots und LLM-Benutzer-Agents) an den Backend-Service von Edge Optimize (`live.edgeoptimize.net`) weiter. Menschliche Besuchende und SEO-Bots werden weiterhin wie gewohnt von Ihrem Ursprung aus unterstützt. Um die Konfiguration zu testen, suchen Sie nach Abschluss der Einrichtung in der Antwort nach dem Header `x-edgeoptimize-request-id`.
 
 ## Voraussetzungen
 
-Zugriff auf diese Funktion:
+Zugreifen auf diese Funktion:
 
-- Bezahlte Kundinnen und Kunden müssen Zugriff auf das **IMS**&#x200B;Produktprofil von Adobe LLM Optimizer-Benutzenden haben. Wenden Sie sich an den Administrator Ihres Unternehmens, um Zugriff anzufordern.
-  ![Benutzer zu einem Produktprofil hinzufügen](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
-- Testkunden müssen zur IMS-Gruppe **LLMO**) gehören. Wenn die Gruppe nicht vorhanden ist, kann der Administrator Ihres Unternehmens sie erstellen und Sie hinzufügen.
-  ![Erstellen der LLMO-Admin-IMS-Gruppe](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
+- Zahlende Kundschaften müssen Zugriff auf das IMS-Produktprofil **Adobe LLM Optimizer-Benutzende** haben. Wenden Sie sich an die bzw. den Admin Ihrer Organisation, um Zugriff anzufordern.
+  ![Hinzufügen von Benutzenden zu einem Produktprofil](/help/assets/optimize-at-edge/cs-fastly-user-product-profiles.png)
+- Kundschaften mit der Testversion müssen Teil der IMS-Gruppe **LLMO-Admin** sein. Wenn die Gruppe nicht vorhanden ist, kann die bzw. der Admin Ihres Unternehmens sie erstellen und Sie hinzufügen.
+  ![Erstellen der IMS-Gruppe „LLMO-Admin“](/help/assets/optimize-at-edge/cs-fastly-create-ims-group.png)
 
 >[!NOTE]
 > Diese Funktion wird in Safari oder im Inkognito-/privaten Browser-Modus nicht unterstützt.
@@ -42,67 +42,67 @@ Zugriff auf diese Funktion:
 
 Weiterleiten von Agent-basiertem Traffic an Edge Optimize:
 
-1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration**.
 
    ![Navigieren zu „Kundenkonfiguration“](/help/assets/optimize-at-edge/cs-fastly-prereq-customer-config-nav.png)
 
-2. Suchen Sie den Abschnitt **Optimierungen für KI-Agenten bereitstellen**. Klicken Sie auf die **Aktivieren**.
+2. Suchen Sie den Abschnitt **Optimierungen für AI Agents bereitstellen**. Klicken Sie auf die Schaltfläche **Aktivieren**.
 
-   ![Optimierungen für KI-Agenten bereitstellen - Ausstehend](/help/assets/optimize-at-edge/cs-fastly-enable-button.png)
+   ![Optimierungen für AI Agents bereitstellen – ausstehend](/help/assets/optimize-at-edge/cs-fastly-enable-button.png)
 
-3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie weitere Informationen zur Behebung [&#x200B; Fehlers &#x200B;](#troubleshooting) Abschnitt „Fehlerbehebung“.
+3. Wählen Sie im Bestätigungsdialogfeld die Option **Aktivieren** aus, um zu bestätigen, dass Sie das Routing aktivieren möchten. Wenn ein Fehler auftritt, finden Sie im Abschnitt [Fehlerbehebung](#troubleshooting) Informationen zum Lösen dieses Fehlers.
 
-   ![Bestätigungsdialogfeld für Optimierungsmodul aktivieren](/help/assets/optimize-at-edge/cs-fastly-enable-dialog.png)
+   ![Bestätigungsdialog „Optimierungs-Engine aktivieren“](/help/assets/optimize-at-edge/cs-fastly-enable-dialog.png)
 
-4. Nach der Bestätigung dauert das Routing einige Minuten.
+4. Das Abschließen des Routings kann nach der Bestätigung einige Minuten dauern.
 
-   ![Routing läuft](/help/assets/optimize-at-edge/cs-fastly-enable-button-clicked-routing-in-progress.png)
+   ![Routing im Gange](/help/assets/optimize-at-edge/cs-fastly-enable-button-clicked-routing-in-progress.png)
 
-   Laden Sie die Seite nach 5 Minuten neu, um zu überprüfen, ob das Routing abgeschlossen ist. Sobald das Routing konfiguriert und aktiv ist, wird der Status auf **Abgeschlossen** mit einem grünen Häkchen aktualisiert, das bestätigt, dass das Routing aktiviert ist. Ihrerseits sind keine weiteren Maßnahmen erforderlich.
+   Laden Sie die Seite nach 5 Minuten neu, um zu überprüfen, ob das Routing abgeschlossen ist. Sobald das Routing konfiguriert und aktiv ist, wird der Status auf **Abgeschlossen** aktualisiert und es wird ein grünes Häkchen angezeigt, das bestätigt, dass das Routing erfolgreich aktiviert wurde. Ihrerseits sind keine weiteren Maßnahmen erforderlich.
 
-   ![Optimierung für KI-Agenten bereitstellen - abgeschlossen](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
+   ![Optimierungen für AI Agents bereitstellen – abgeschlossen](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
 
-   Um das Routing jederzeit zu deaktivieren, kehren Sie zum Abschnitt **Bereitstellen von Optimierungen für KI** Agenten“ auf der Registerkarte **CDN-Konfiguration** zurück und klicken Sie auf **Deaktivieren**.
+   Um das Routing jederzeit zu deaktivieren, kehren Sie zum Abschnitt **Optimierungen für AI Agents bereitstellen** in der Registerkarte **CDN-Konfiguration** zurück und klicken Sie auf **Deaktivieren**.
 
 Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich an Ihr Adobe-Accountteam oder an `llmo-at-edge@adobe.com`.
 
 ## Fehlerbehebung
 
-Wenn beim Aktivieren oder Deaktivieren des Routings ein Fehler auftritt, sieht dies in etwa wie folgt aus:
+Wenn beim Aktivieren oder Deaktivieren des Routings ein Fehler auftritt, wird dies etwa wie folgt angezeigt:
 
-![Fehler beim Bestätigungsdialogfeld](/help/assets/optimize-at-edge/cs-fastly-confirmation-dialog-error.png)
+![Bestätigungsdialogfeld bei Fehler](/help/assets/optimize-at-edge/cs-fastly-confirmation-dialog-error.png)
 
-Verwenden Sie die folgende Liste, um den Fehler zu identifizieren, und befolgen Sie die Anweisungen.
+Verwenden Sie die folgende Liste zum Identifizieren des Fehlers und befolgen Sie die Anweisungen.
 
-1. **Benutzer hat keinen LLMO-Produktzugriff**
+1. **Person hat keinen LLMO-Produktzugriff**
 
-   **Ursache:** Das Benutzerkonto hat den LLM Optimizer-Produktkontext nicht in Ihrem Adobe IMS-Profil. Dies ist für gebührenpflichtige Kunden erforderlich, um CDN-Routing zu konfigurieren.
+   **Ursache:** Das Benutzerkonto verfügt nicht über den LLM Optimizer-Produktkontext in Ihrem Adobe IMS-Profil. Dies ist für zahlende Kundschaften erforderlich, um CDN-Routing zu konfigurieren.
 
-   **Empfehlung:** Überprüfen Sie, ob Ihnen das Produktprofil **Adobe LLM Optimizer-Benutzer** in Adobe Admin Console von Ihrem Organisationsadministrator zugewiesen wurde.
+   **Empfehlung:** Stellen Sie sicher, dass Ihnen das Produktprofil **Adobe LLM Optimizer-Benutzende** in Adobe Admin Console von Ihrer bzw. Ihrem Organisationsadmin zugewiesen wurde.
 
-2. **Nur Mitglieder der LLMO-Administratorgruppe können CDN-Routing konfigurieren**
+2. **Nur Mitglieder der Gruppe „LLMO-Admin“ können CDN-Routing konfigurieren**
 
-   **Ursache:** Ihr Konto ist kein Mitglied der IMS-Gruppe **LLMO Admin**. Dies ist für Testkunden erforderlich, um das CDN-Routing zu konfigurieren.
+   **Ursache:** Ihr Konto ist kein Mitglied der IMS-Gruppe **LLMO-Admin**. Dies ist für Nutzende der Testversion erforderlich, um CDN-Routing zu konfigurieren.
 
-   **Empfehlung:** Vergewissern Sie sich, dass Sie der IMS-Gruppe **LLMO Admin** in Adobe Admin Console von Ihrem Organisationsadministrator hinzugefügt wurden.
+   **Empfehlung:** Stellen Sie sicher, dass Sie der IMS-Gruppe **LLMO-Admins** in Adobe Admin Console hinzugefügt wurden.
 
-3. **Der angeforderte CDN-Typ aem-cs-fastly stimmt nicht mit dem für diese Domain erkannten CDN überein**
+3. **Der angeforderte CDN-Typ „aem-cs-fastly“ stimmt nicht mit dem für diese Domain erkannten CDN überein**
 
-   **Ursache:** Dies zeigt an, dass der für Ihre Site erkannte CDN-Typ nicht *AEM Cloud Service Managed CDN (Fastly)* ist.
+   **Ursache:** Dies bedeutet dass der für Ihre Site erkannte CDN-Typ nicht *AEM Cloud Service Managed CDN (Fastly)* ist.
 
    **Empfehlung:** Stellen Sie sicher, dass Ihre Site über AEM Cloud Service Managed CDN (Fastly) bereitgestellt wird.
 
-4. **Fehlersuchort**
+4. **Fehler beim Testen der Site**
 
-   **Ursache:** LLM Optimizer konnte Ihre Site während der Routing-Einrichtung nicht erreichen. Dies kann vorkommen, wenn die Site ausgefallen ist, nicht erreichbar ist oder die Anfrage eine Zeitüberschreitung aufweist.
+   **Ursache:** LLM Optimizer konnte Ihre Site während der Routing-Einrichtung nicht erreichen. Dies kann vorkommen, wenn die Site ausgefallen, unerreichbar oder ein Timeout der Anfrage aufgetreten ist.
 
-   **Empfehlung:** Stellen Sie sicher, dass Ihre Site öffentlich zugänglich ist, und geben Sie eine gültige Antwort zurück, und versuchen Sie es dann erneut.
+   **Empfehlung:** Stellen Sie sicher, dass Ihre Site öffentlich zugänglich ist und eine gültige Antwort zurückgibt, und versuchen Sie es dann erneut.
 
 5. **Site hat keine gültige Antwort für den Routing-Test zurückgegeben**
 
-   **Ursache:** Die Site hat beim Testen während des Setups einen unerwarteten HTTP-Status (nicht 2xx oder 301) zurückgegeben.
+   **Ursache:** Die Site hat beim Testen während der Einrichtung einen unerwarteten HTTP-Status (nicht 2xx oder 301) zurückgegeben.
 
-   **Empfehlung:** Überprüfen Sie, ob Ihre Site eine erfolgreiche Antwort (2xx) für die in LLM Optimizer registrierte Basis-URL zurückgibt, und versuchen Sie es dann erneut.
+   **Empfehlung:** Stellen Sie sicher, dass Ihre Site eine erfolgreiche Antwort (2xx) für die in LLM Optimizer registrierte Basis-URL zurückgibt, und versuchen Sie es dann erneut.
 
 6. **Die Authentifizierung beim Upstream-IMS-Service ist fehlgeschlagen**
 
@@ -110,13 +110,13 @@ Verwenden Sie die folgende Liste, um den Fehler zu identifizieren, und befolgen 
 
    **Empfehlung:** Melden Sie sich von LLM Optimizer ab, melden Sie sich wieder an und versuchen Sie dann erneut, das Routing zu aktivieren.
 
-Wenn das Problem weiterhin besteht, wenden Sie sich an Ihr Adobe-Account-Team oder Ihren `llmo-at-edge@adobe.com`.
+Wenn das Problem weiterhin besteht, wenden Sie sich an Ihr Adobe-Accountteam oder an `llmo-at-edge@adobe.com`.
 
-## (Optional) Überprüfen Sie die Einrichtung
+## (Optional) Überprüfen der Einrichtung
 
-Nachdem die Routing-Konfiguration abgeschlossen ist, können Sie optional überprüfen, ob der AI-Bot-Traffic an Edge Optimize weitergeleitet wird und ob der menschliche Traffic nicht betroffen ist.
+Stellen Sie nach Abschluss der Einrichtung sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
 
-1. **Bot-Traffic testen (sollte optimiert werden)**
+1. **Testen von Bot-Traffic (sollte optimiert werden)**
 
    Simulieren Sie eine KI-Bot-Anfrage mithilfe eines Agent-basierten Benutzer-Agents:
 
@@ -132,7 +132,7 @@ Nachdem die Routing-Konfiguration abgeschlossen ist, können Sie optional überp
    < x-edgeoptimize-request-id: 50fce12d-0519-4fc6-af78-d928785c1b85
    ```
 
-2. **Testen Sie den menschlichen Traffic (sollte NICHT betroffen sein)**
+2. **Testen von menschlichem Traffic (sollte NICHT betroffen sein)**
 
    Simulieren Sie eine normale menschliche Browser-Anfrage:
 
@@ -141,19 +141,19 @@ Nachdem die Routing-Konfiguration abgeschlossen ist, können Sie optional überp
      --header "user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
    ```
 
-   Die Antwort sollte die `x-edgeoptimize-request-id`-Kopfzeile nicht enthalten. Der Seiteninhalt und die Antwortzeit sollten nach der Aktivierung von „Optimize at Edge“ unverändert bleiben.
+   Die Antwort sollte nicht den Header `x-edgeoptimize-request-id` enthalten. Der Seiteninhalt und die Antwortzeit sollten nach der Aktivierung von „Optimize at Edge“ unverändert bleiben.
 
-3. **Wie kann zwischen den beiden Szenarien unterschieden werden**
+3. **Unterscheiden zwischen den zwei Szenarien**
 
    | Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Traffic (nicht betroffen) |
    |---|---|---|
    | `x-edgeoptimize-request-id` | Vorhanden – enthält eine eindeutige Anfrage-ID | Abwesend |
    | `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `1`) | Abwesend |
 
-4. **Routing-Status in LLM Optimizer überprüfen**
+4. **Überprüfen des Routing-Status in LLM Optimizer**
 
-   Sie können das Routing auch in der Benutzeroberfläche von LLM Optimizer bestätigen. Öffnen Sie **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus. Wenn das Routing aktiv ist, wird im Abschnitt **Optimierungen für KI-** bereitstellen“ **Abgeschlossen** angezeigt.
+   Sie können das Routing auch in der Benutzeroberfläche von LLM Optimizer bestätigen. Öffnen Sie **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus. Wenn das Routing aktiv ist, wird im Abschnitt **Optimierungen für AI Agents bereitstellen** **Abgeschlossen** angezeigt.
 
-   ![Optimierung für KI-Agenten bereitstellen - abgeschlossen](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
+   ![Optimierungen für AI Agents bereitstellen – abgeschlossen](/help/assets/optimize-at-edge/cs-fastly-disable-button.png)
 
 {{return-to-overview}}

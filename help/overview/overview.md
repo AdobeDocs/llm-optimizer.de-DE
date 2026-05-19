@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 618
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -69,10 +69,10 @@ Generative Engine Optimization ist von Natur aus funktionsübergreifend. LLM Opt
 Mit Adobe LLM Optimizer können Sie:
 
 **Markensichtbarkeit messen** – Verfolgen Sie nach, wann, wo und wie oft Ihre Marke in Ergebnissen von KI-gestützten Suchvorgängen erwähnt wird. Mit einer klaren Sichtbarkeitsbewertung und deren Benchmark im Zeitverlauf müssen Sie nicht mehr spekulieren. Siehe [Dashboard „Markenpräsenz“](/help/dashboards/brand-presence.md).
-**Benchmark Others** - Erfahren Sie, wie Ihre Marke im Vergleich zu anderen, einschließlich Wettbewerbern in Generative Engines, abschneidet. Identifizieren Sie Lücken beim Share of Voice und entdecken Sie Wettbewerbsvorteile. Siehe [Dashboard „Markenpräsenz“](/help/dashboards/brand-presence.md).
-**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemata) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt steigern. Siehe [Opportunities-Dashboard](/help/dashboards/opportunities-overview.md).
-**Traffic-Auswirkungen von KI verfolgen** - Überwachen von Agentenverkehr (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion. Siehe [Dashboard für Agentenverkehr](/help/dashboards/agentic-traffic.md) und [Dashboard für Referral Traffic](/help/dashboards/referral-traffic.md).
-**Team Collaboration aktivieren** - Dashboards freigeben, Verantwortliche für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, Suchmaschinenoptimierung (SEO)- und Kommunikationsfunktionen verfolgt werden. Siehe [Dashboard „Zusammenarbeit“](/help/dashboards/collaboration.md).
+**Mit anderen vergleichen** – Erfahren Sie, wie Ihre Marke im Gegensatz zu anderen, einschließlich der Konkurrenz, in generativen Engines abschneidet. Identifizieren Sie Lücken beim Share of Voice und entdecken Sie Wettbewerbsvorteile. Siehe [Dashboard „Markenpräsenz“](/help/dashboards/brand-presence.md).
+**Umsetzbare Möglichkeiten entdecken** – Ermitteln Sie Möglichkeiten zur Verbesserung von Inhalten (z. B. häufig gestellte Fragen, Kurzfassungen, Schemata) und technischen Aspekten (Crawlability, Indizierungsprobleme), mit denen Sie Erwähnungen und Zitierungen direkt erhöhen. Siehe [Dashboard „Möglichkeiten“](/help/dashboards/opportunities-overview.md).
+**Traffic-Auswirkungen von KI nachverfolgen** – Überwachen Sie Agent-basierten Traffic (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitierungen) auf Ihren eigenen Anwendungen. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion. Siehe [Dashboard „Agent-basierter Traffic“](/help/dashboards/agentic-traffic.md) und [Dashboard „Referral Traffic“](/help/dashboards/referral-traffic.md).
+**Zusammenarbeit im Team ermöglichen** – Geben Sie Dashboards frei, weisen Sie Prompts oder Kategorien Verantwortliche zu und stellen Sie sicher, dass die Sichtbarkeitsziele von Teams für Marketing, Suchmaschinenoptimierung (SEO) und Kommunikation nachverfolgt werden. Siehe [Dashboard „Zusammenarbeit“](/help/dashboards/collaboration.md).
 
 ## Weitere Informationen
 

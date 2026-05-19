@@ -19,7 +19,7 @@ autotag-review: '2026-04-30T18:10:07.393Z'
 source-git-commit: 733c693f35c5b023681962cc5089492b95645b28
 workflow-type: tm+mt
 source-wordcount: 374
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -57,8 +57,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/overview.md" title="LLM Optimizer – Überblick" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="LLM Optimizer – Überblick"
+                    <a href="./overview/overview.md" title="LLM Optimizer – Überblick" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/llm-overview-card.png" alt="LLM Optimizer – Überblick"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -66,7 +66,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer – Überblick">LLM Optimizer – Überblick</a>
+                        <a href="./overview/overview.md" target="_blank" rel="referrer" title="LLM Optimizer – Überblick">LLM Optimizer – Überblick</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Adobe LLM Optimizer die Markensichtbarkeit in KI-gestützten Suchvorgängen erhöht.</p>
                 </div>
@@ -103,8 +103,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./dashboards/dashboards-overview.md" title="Dashboards – Überblick" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboards – Überblick"
+                    <a href="./dashboards/dashboards-overview.md" title="Dashboards – Überblick" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/brand-presence-card.png" alt="Dashboards – Überblick"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Dashboards – Überblick">Dashboards – Überblick</a>
+                        <a href="./dashboards/dashboards-overview.md" target="_blank" rel="referrer" title="Dashboards – Überblick">Dashboards – Überblick</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Sie mit Dashboards Erkenntnisse und Empfehlungen für Ihre Site erhalten.</p>
                 </div>
@@ -155,8 +155,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="./overview/best-practices-topics-prompts.md" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken"
+                    <a href="./overview/best-practices-topics-prompts.md" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und Tracking anderer Marken" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="/help/assets/overview/customer-configuration-card.png" alt="Best Practices zum Einrichten von Kategorien, Themen, Prompts und Tracking anderer Marken"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,7 +164,7 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken">Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken</a>
+                        <a href="./overview/best-practices-topics-prompts.md" target="_blank" rel="referrer" title="Best Practices zum Einrichten von Kategorien, Themen, Prompts und Tracking anderer Marken">Best Practices zum Einrichten von Kategorien, Themen, Prompts und zum Nachverfolgen anderer Marken</a>
                     </p>
                     <p class="is-size-6">Erfahren Sie, wie Sie LLM Optimizer für maßgeschneiderte Markenüberwachung und strategische Inhaltsanalyse konfigurieren.</p>
                 </div>

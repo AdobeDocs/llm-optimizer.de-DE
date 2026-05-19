@@ -1,6 +1,6 @@
 ---
-title: Cited Sentiment Analysis
-description: Erfahren Sie, wie LLM Optimizer die am häufigsten zitierten URLs analysiert, um Empfehlungen zu präsentieren, die die Wahrnehmung und Sichtbarkeit Ihrer Marke in den KI-Suchen verbessern.
+title: Sentiment-Analyse von Zitierungen
+description: Erfahren Sie, wie LLM Optimizer die am häufigsten zitierten URLs analysiert, um Empfehlungen zu generieren, die die Wahrnehmung und Sichtbarkeit Ihrer Marke in KI-Suchergebnissen verbessern.
 feature: Opportunities
 autotag-review: '2026-05-15T17:39:50.086Z'
 TQID: 'https://experienceleague.adobe.com/ZqgWup29QoQ-j0fDM6DqhGpzRqscg1f-fdXHTMN9fIk'
@@ -14,73 +14,73 @@ subfeature_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1030
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
-# Cited Sentiment Analysis
+# Sentiment-Analyse von Zitierungen
 
-Wenn KI-Systeme Fragen zu Ihrer Marke beantworten, nutzen sie eine Reihe häufig zitierter URLs - Web-Seiten von Drittanbietern, auf die in KI-generierten Antworten häufig verwiesen wird. Wie Ihre Marke auf diesen Seiten dargestellt wird, bestimmt direkt, wie KI-Systeme sie den Benutzern darstellen.
+Wenn KI-Systeme Fragen zu Ihrer Marke beantworten, greifen sie auf eine Reihe von häufig zitierten URLs zurück – Web-Seiten von Drittanbietern, auf die in KI-generierten Antworten häufig verwiesen wird. Wie Ihre Marke auf diesen Seiten dargestellt wird, beeinflusst direkt, wie KI-Systeme sie den Benutzenden präsentieren.
 
-Die Sentiment-Analyse-Opportunity analysiert die am häufigsten zitierten URLs, die für Eingabeaufforderungen in Ihrem Markenpräsenz-Dashboard-Eingabeaufforderungssatz erkannt wurden. Es bewertet Markenerwähnung, Sentiment, Share of Voice und wiederkehrende Themen auf diesen Seiten. Anschließend werden priorisierte Empfehlungen angezeigt, um die Wahrnehmung Ihrer Marke in Bezug auf die Content-KI-Systeme zu verbessern, auf die sich die meisten verlassen.
+Die Möglichkeit „Sentiment-Analyse von Zitierungen“ analysiert die am häufigsten zitierten URLs, die für die Prompts in Ihrem Prompt-Set im Dashboard „Markenpräsenz“ ermittelt wurden. Es wertet Markenerwähnungen, Sentiment, Share of Voice und wiederkehrende Themen auf diesen Seiten aus. Anschließend werden priorisierte Empfehlungen angezeigt, um die Wahrnehmung Ihrer Marke in den Inhalten zu verbessern, auf die KI-Systeme am meisten zurückgreifen.
 
-Es zeigt vier Schlüsselmetriken:
+Es werden vier Schlüsselmetriken angezeigt:
 
-- **Analysierte Seiten** — Anzahl der zitierten Webseiten, die auf Markenerwähnung und Sentiment untersucht wurden.
-- **Übersprungene Seiten** - Anzahl der Seiten, die nicht analysiert werden konnten (z. B. aufgrund von Zugriffsbeschränkungen).
-- **Markenerwähnung (Seiten)** - Wie oft Ihre Marke auf analysierten Seiten erwähnt wird.
-- **Gesamt-Sentiment (Seiten)** - Zusammengefasstes Sentiment für Ihre Marke über analysierte Seiten hinweg.
+- **Analysierte Seiten**: Anzahl der zitierten Web-Seiten, die auf Markenerwähnungen und Sentiment untersucht wurden.
+- **Übersprungene Seiten**: Anzahl der Seiten, die nicht analysiert werden konnten (z. B. aufgrund von Zugriffsbeschränkungen).
+- **Markenerwähnungen (Seiten)**: Wie häufig Ihre Marke auf den analysierten Seiten erwähnt wird.
+- **Gesamt-Sentiment (Seiten)**: Das allgemeine Sentiment zu Ihrer Marke auf den analysierten Seiten.
 
 >[!NOTE]
->Die zitierte Sentiment-Analyse befindet sich derzeit in der Betaphase. Funktionen und Verfügbarkeit können sich im Zuge der Weiterentwicklung der Funktionen ändern.
+>Die Sentiment-Analyse von Zitierungen befindet sich derzeit in der Beta-Phase. Funktionen und Verfügbarkeit können sich im Zuge der Weiterentwicklung der Funktionalität ändern.
 
-![Cited Sentiment Analysis Dashboard](/help/dashboards/opportunities/assets/cited-sentiment-overview.png)
+![Dashboard der Sentiment-Analyse von Zitierungen](/help/dashboards/opportunities/assets/cited-sentiment-overview.png)
 
 ## Funktionsweise
 
-LLM Optimizer identifiziert die am häufigsten zitierten URLs, die in KI-generierten Antworten für Eingabeaufforderungen in Ihrem Markenpräsenz-Dashboard-Eingabeaufforderungssatz angezeigt werden. Es analysiert diese Seiten für Markenerwähnung, Sentiment, Share of Voice und KI-Zitate. Es vergleicht die Leistung Ihrer Marke mit der der Konkurrenz auf dem Markt, identifiziert wiederkehrende Themen und generiert Empfehlungen, um Wahrnehmungslücken auf den Seiten zu schließen, die für KI-Systeme am wichtigsten sind.
+LLM Optimizer identifiziert die am häufigsten zitierten URLs, die in KI-generierten Antworten auf Prompts in Ihrem Prompt-Set im Dashboard „Markenpräsenz“ erwähnt werden. Diese Seiten werden hinsichtlich Markenerwähnungen, Sentiment, Share of Voice und KI-Zitierungen analysiert. Die Leistung Ihrer Marke wird mit der der Konkurrenz am Markt verglichen, wiederkehrende Themen werden ermittelt und Empfehlungen zum Schließen von Wahrnehmungslücken auf den für KI-Systeme wichtigsten Seiten werden generiert.
 
-Wenn für die Eingabeaufforderungen in Ihrem Eingabeaufforderungssatz keine angegebenen URLs erkannt werden, wird diese Opportunity nicht in Ihrem Dashboard angezeigt.
+Wenn für die Prompts in Ihrem Prompt-Set keine zitierten URLs gefunden werden, wird diese Möglichkeit nicht auf Ihrem Dashboard angezeigt.
 
 Die Ergebnisse werden auf zwei Registerkarten angezeigt: **Vorschläge** und **Leistung**.
 
 ## Vorschläge
 
-Auf dieser Registerkarte finden Sie Empfehlungen, wie Sie die Wahrnehmung Ihrer Marke in Bezug auf die am häufigsten zitierten URLs verbessern können. Die Vorschläge sind in drei Unterregisterkarten unterteilt: **Aktuelle Vorschläge**, **Feste** und **Ignorierte Vorschläge**.
+Diese Registerkarte enthält Empfehlungen zur Verbesserung der Markenwahrnehmung der am häufigsten zitierten URLs. Die Vorschläge sind in drei Unterregisterkarten unterteilt: **Aktuelle Vorschläge**, **Korrigierte Vorschläge** und **Ignorierte Vorschläge**.
 
 ![Registerkarte „Vorschläge“](/help/dashboards/opportunities/assets/cited-sentiment-suggestions.png)
 
-Die Tabelle Vorschläge enthält die folgenden Spalten:
+Die Tabelle mit Vorschlägen enthält die folgenden Spalten:
 
-- **Vorschlag** - Die empfohlene Verbesserung, um eine Wahrnehmungslücke zu schließen.
-- **Priorität** — Dringlichkeitsstufe (kritisch, hoch, Medium, niedrig).
-- **Aktionselemente** - Öffnet ein Bedienfeld mit spezifischen Schritten zur Implementierung der Empfehlung, einschließlich der verantwortlichen Teams.
+- **Vorschlag**: Die empfohlene Verbesserung zur Schließung einer Wahrnehmungslücke.
+- **Priorität**: Dringlichkeitsgrad (Kritisch, Hoch, Mittel, Niedrig).
+- **Aktionselemente**: Öffnet ein Panel mit konkreten Schritten zur Umsetzung der Empfehlung, einschließlich der verantwortlichen Teams.
 
-Wenn Sie einen Vorschlag erweitern, wird ein Abschnitt **KI-Analyse** mit folgenden Inhalten angezeigt:
+Wenn Sie einen Vorschlag erweitern, wird der Abschnitt **KI-Analyse** mit folgenden Informationen angezeigt:
 
-- **Warum dies verbessert werden muss** - Eine Erklärung der festgestellten Wahrnehmungslücke, einschließlich der zitierten URLs, die Ihre Marke und den Wettbewerbskontext unterrepräsentieren.
-- **Verbessern** - Spezifische Leitlinien für Öffentlichkeitsarbeit, Inhaltserstellung oder Partnerschaftsaktionen, um die Lücke zu schließen.
-- **Erwartetes Ergebnis** — Das erwartete Ergebnis der Umsetzung der Empfehlung.
+- **Warum dies verbessert werden muss**: Eine Erklärung der festgestellten Wahrnehmungslücke, einschließlich der zitierten URLs, die Ihre Marke und den Wettbewerbskontext unterrepräsentieren.
+- **Verbesserungsmöglichkeiten**: Konkrete Anleitungen für Kontaktaufnahme, Inhaltserstellung oder Partnerschaftsaktionen zum Schließen der Lücke.
+- **Erwartetes Ergebnis**: Das erwartete Ergebnis der Umsetzung der Empfehlung.
 
 ## Leistung
 
-Die **Performance** bietet eine detaillierte Aufschlüsselung der Leistung Ihrer Marke auf den am häufigsten zitierten Seiten. Es ist in vier Abschnitte unterteilt.
+Die Registerkarte **Leistung** bietet eine detaillierte Aufschlüsselung der Leistung Ihrer Marke auf den am häufigsten zitierten Seiten. Sie ist in vier Abschnitte unterteilt.
 
 ### Marktsituation
 
-Vergleicht die Leistung Ihrer Marke mit zugehörigen Marken und Mitbewerbern auf der Grundlage von Erwähnungen auf allen zitierten Seiten.
+Vergleicht die Leistung Ihrer Marke mit zugehörigen Marken und der Konkurrenz am Markt auf der Grundlage von Erwähnungen auf allen zitierten Seiten.
 
-![Marktlandschaft](/help/dashboards/opportunities/assets/cited-sentiment-landscape.png)
+![Marktsituation](/help/dashboards/opportunities/assets/cited-sentiment-landscape.png)
 
-Es zeigt:
+Folgendes wird angezeigt:
 
-- **Markenerwähnung in Pages** - Ihr Share of Voice im Vergleich zu zugehörigen Marken und Wettbewerbern.
-- **Market Tracking** - Ein filterbares Diagramm, in dem Sie bis zu fünf Marken von Mitbewerbern auswählen können, um Share of Voice über analysierte Seiten hinweg zu vergleichen.
+- **Markenerwähnungen auf Seiten**: Ihr Share of Voice im Vergleich zu zugehörigen Marken und der Konkurrenz am Markt.
+- **Markt-Tracking**: Ein filterbares Diagramm, in dem Sie bis zu fünf Marken der Konkurrenz auswählen können, um Share of Voice über analysierte Seiten hinweg zu vergleichen.
 
 ### Sentiment-Analyse
 
-Verfolgt die Markenwahrnehmung auf allen analysierten Seiten mit einem **Sentiment-Verteilungsdiagramm** das die prozentuale Aufschlüsselung des günstigen, neutralen und ungünstigen Sentiment auf allen Seiten anzeigt.
+Verfolgt die Markenwahrnehmung auf allen analysierten Seiten mit einem Diagramm der **Sentiment-Verteilung**, das die prozentuale Aufschlüsselung des günstigen, neutralen und ungünstigen Sentiments auf allen Seiten anzeigt.
 
 ![Sentiment-Analyse](/help/dashboards/opportunities/assets/cited-sentiment-distribution.png)
 
@@ -88,53 +88,53 @@ Verfolgt die Markenwahrnehmung auf allen analysierten Seiten mit einem **Sentime
 
 Eine detaillierte Tabelle der analysierten zitierten Web-Seiten mit den folgenden Spalten:
 
-- **Seite** - URL der analysierten Seite.
-- **Markenerwähnung** — Anzahl der Markenerwähnung im Vergleich zur Gesamtzahl der Erwähnungen auf der Seite.
-- **Share of Voice** - Der Anteil der Erwähnungen Ihrer Marke in Bezug auf alle genannten Marken.
-- **Top 5 Marken** - Die am häufigsten genannten Marken auf der Seite.
-- **Sentiment** - Sentiment in Richtung Ihrer Marke auf der Seite.
-- **AI-Zitate** - Anzahl der AI-Antworten, die auf diese Seite verwiesen wurden.
+- **Seite**: URL der analysierten Seite.
+- **Markenerwähnungen**: Anzahl der Erwähnungen Ihrer Marke im Vergleich zur Gesamtanzahl der Erwähnungen auf der Seite.
+- **Share of Voice**: Der Anteil der Erwähnungen Ihrer Marke in Bezug auf alle erwähnten Marken.
+- **Die fünf besten Marken**: Die am häufigsten erwähnten Marken auf der Seite.
+- **Sentiment**: Gesamt-Sentiment zu Ihrer Marke auf der Seite.
+- **KI-Zitierungen**: Anzahl der KI-Antworten, die diese Seite zitierten.
 
 ### Themen
 
-Eine Tabelle mit wiederkehrenden Themen, die auf analysierten Seiten identifiziert wurden und Folgendes zeigen:
+Eine Tabelle mit wiederkehrenden, auf analysierten Seiten identifizierten Themen, die Folgendes zeigt:
 
-- **Thema** - Das wiederkehrende Design oder Thema identifiziert.
-- **Markenerwähnung** — Anzahl der mit dem Thema verknüpften Markenerwähnung.
-- **Sentiment** - Das gesamte mit dem Thema verknüpfte Sentiment.
+- **Thema**: Das wiederkehrende oder identifizierte Thema.
+- **Markenerwähnungen**: Anzahl der mit dem Thema verknüpften Markenerwähnungen.
+- **Sentiment**: Gesamt-Sentiment zu dem Thema.
 
-Wenn Sie **Details** auf ein beliebiges Thema klicken, wird eine Drilldown-Liste mit einer Zusammenfassung der Analyse und den beitragenden Quellseiten geöffnet.
+Durch Klicken auf **Details** auf einem beliebigen Thema wird ein detaillierter Überblick mit einer Zusammenfassung der Analyse und den beitragenden Quellseiten geöffnet.
 
-## In der Demo ausprobieren
+## Ausprobieren in der Demo
 
-Sehen Sie die zitierte Sentiment-Analyse-Opportunity in Aktion, indem Sie die Frescopa-Demoumgebung verwenden - [Anzeigen der zitierten Sentiment-Analyse in der Frescopa-](https://play.llmo.now/org/demo-org/opportunities/cited-analysis/d3a8b217-9f4c-4e88-a612-6b7f91e5c044?siteId=frescopa-demo).
+Probieren Sie die Möglichkeit „Sentiment-Analyse von Zitierungen“ in der Frescopa-Demoumgebung aus. [„Sentiment-Analyse von Zitierungen“ in der Frescopa-Demo ansehen](https://play.llmo.now/org/demo-org/opportunities/cited-analysis/d3a8b217-9f4c-4e88-a612-6b7f91e5c044?siteId=frescopa-demo).
 
 ## Häufig gestellte Fragen
 
 **Warum sind die am häufigsten zitierten URLs für die KI-Suche wichtig?**
 
-Die am häufigsten zitierten URLs sind die KI-Systeme von Drittanbieterseiten, die am häufigsten beim Generieren von Antworten über Ihre Marke referenziert werden. Die Sentiment und das Framing auf diesen Seiten haben einen direkten und übergroßen Einfluss darauf, wie KI Ihre Marke repräsentiert, mehr als Seiten, die selten zitiert werden. Die Verbesserung der Darstellung Ihrer Marke auf diesen spezifischen Seiten ist eine der Aktionen mit der höchsten Hebelwirkung, die Sie für die KI-Sichtbarkeit ausführen können.
+Die am häufigsten zitierten URLS sind die Drittanbieterseiten, auf die KI-Systeme beim Generieren von Antworten zur Ihrer Marke am häufigsten verweisen. Das Sentiment und Framing auf diesen Seiten haben einen direkten und übermäßig großen Einfluss darauf, wie KI Ihre Marke darstellt, und zwar mehr als Seiten, die selten zitiert werden. Das Verbessern der Darstellung Ihrer Marke auf diesen konkreten Seiten ist eine der Aktionen mit den größten Auswirkungen, die Sie für die KI-Sichtbarkeit ausführen können.
 
-**Warum wird diese Opportunity nicht in meinem Dashboard angezeigt?**
+**Warum wird diese Möglichkeit nicht in meinem Dashboard angezeigt?**
 
-Diese Opportunity wird nur angezeigt, wenn zitierte URLs für Eingabeaufforderungen in der Eingabeaufforderung im Markenpräsenz-Dashboard erkannt werden. Wenn für diese Eingabeaufforderungen keine angegebenen URLs identifiziert wurden, wird die Opportunity nicht angezeigt.
+Diese Möglichkeit wird nur angezeigt, wenn zitierte URLs für Prompts in Ihrem Prompt-Set im Dashboard „Markenpräsenz“ ermittelt werden. Wenn für diese Prompts keine zitierten URLs identifiziert wurden, wird die Möglichkeit nicht angezeigt.
 
-**Was bedeutet das Überspringen von Seiten?**
+**Was bedeutet „Übersprungene Seiten“?**
 
-Übersprungene Seiten sind zitierte URLs, die nicht analysiert werden konnten. In der Regel ist dies der Fall, weil sich die Seite hinter einer Paywall befindet, eine Authentifizierung erfordert oder den automatischen Zugriff blockiert. Diese Seiten werden gezählt, aber von der Sentiment- und Markenerwähnung-Analyse ausgeschlossen.
+Übersprungene Seiten sind zitierte URLs, die nicht analysiert werden konnten. In der Regel ist dies der Fall, weil sich die Seite hinter einer Paywall befindet, eine Authentifizierung erfordert oder den automatischen Zugriff blockiert. Diese Seiten werden gezählt, aber von der Sentiment- und Markenerwähnungs-Analyse ausgeschlossen.
 
 **Was ist Share of Voice?**
 
-Share of Voice ist der prozentuale Anteil der Marke an den Markenerwähnung-Gesamtwerten einer bestimmten Seite oder aller analysierten Seiten im Verhältnis zu allen anderen erwähnten Marken.
+Share of Voice ist der prozentuale Anteil der Marke an der Gesamtanzahl der Markenerwähnungen auf einer bestimmten Seite oder auf allen analysierten Seiten im Verhältnis zu allen anderen erwähnten Marken.
 
-**Was sind KI-Zitate?**
+**Was sind KI-Zitierungen?**
 
-KI-Zitate zeigen, wie viele KI-Antworten auf einer bestimmten Seite zitiert wurden. Höhere KI-Zitationszahlen zeigen an, dass die Seite von KI-Systemen aktiv verwendet wird, wenn Antworten zu verwandten Themen generiert werden, wodurch der Sentiment auf diesen Seiten für die KI-Darstellung Ihrer Marke besonders wichtig ist.
+KI-Zitierungen zeigen, wie viele KI-Antworten eine bestimmte Seite zitierten. Höhere KI-Zitierungszahlen zeigen an, dass die Seite von KI-Systemen aktiv verwendet wird, wenn Antworten zu verwandten Themen generiert werden. Das bedeutet, dass das Sentiment auf diesen Seiten für die KI-Darstellung Ihrer Marke besonders wichtig ist.
 
-**Wie werden die Wettbewerber auf dem Markt identifiziert?**
+**Wie wird die Konkurrenz am Markt identifiziert?**
 
-Wettbewerber werden automatisch anhand der Branche Ihrer Marke und der auf den analysierten Seiten am häufigsten genannten Marken identifiziert. Sie können auch manuell bis zu fünf Marken auswählen, um sie im Marktverfolgungsdiagramm zu vergleichen.
+Die Konkurrenz wird automatisch anhand der Branche Ihrer Marke und der auf den analysierten Seiten am häufigsten erwähnten Marken identifiziert. Sie können auch manuell bis zu fünf Marken auswählen, um sie im Markt-Tracking-Diagramm zu vergleichen.
 
 **Wie oft wird die Analyse aktualisiert?**
 
-Die Analyse spiegelt die zitierten URLs wider, die bis zu dem in der Dashboard-Kopfzeile angezeigten Datum erkannt wurden. Sehen Sie sich die Opportunity erneut an, nachdem Sie Empfehlungen zur Nachverfolgung von Änderungen beim Sentiment und Share of Voice implementiert haben.
+Die Analyse berücksichtigt die zitierten URLs, die bis zu dem in der Dashboard-Kopfzeile angezeigten Datum ermittelt wurden. Kehren Sie nach Umsetzung der Empfehlungen zur Möglichkeit zurück, um Änderungen beim Sentiment und Share of Voice nachzuverfolgen.

@@ -16,7 +16,7 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 718
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ Mit der URL-Überwachung können Sie die Leistung bestimmter Seiten Ihrer Domain
 
 ![URL-Überwachung](/help/dashboards/assets/url-insp.png)
 
-Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) befinden, navigieren Sie zu **URL Inspector** und wählen Sie die Site aus, für die Sie die Einblicke anzeigen möchten.
+Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **URL-Überwachung** und wählen Sie die Site aus, für die Sie die Erkenntnisse anzeigen möchten.
 
-![URL-Inspektor - Website-Selektor (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
+![URL-Überwachung – Site-Auswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/url-inspector-dashboard.png)
 
 ## Filter
 

@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 09e228275cf84316ee2e8990636bb3b8865ac263
 workflow-type: tm+mt
 source-wordcount: 750
-ht-degree: 78%
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 78%
 Unter „Referral Traffic“ sehen Sie, wie Besucherinnen und Besucher aus externen Plattformen, KI-Zitierungen und Referenz-Links auf Ihre Site gelangen. Hier werden Traffic-Quellen, Referenzmuster und Konversionsmetriken von externen Websites und Plattformen nachverfolgt und analysiert. So erkennen Sie, welche Quellen, Regionen und Seiten den Traffic mit den meisten Interaktionen fördern. <!--Data is sourced from the CDN logs, a privacy-preserving source that does not capture personal user data.--> Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
 >[!NOTE]
->Standardmäßig erstellt dieses Dashboard Traffic-Insights aus **CDN-Protokollen**. Wenn Ihr Unternehmen ein kostenpflichtiges Angebot nutzt, können Sie **Adobe Analytics** oder **Google Analytics 4**(GA4) verbinden, um Daten hinzuzufügen, die die KI-gesteuerte Erkennung und Website-Interaktion messen. Diese Daten sind auf der Registerkarte **Geschäftsauswirkungen** verfügbar. Beachten Sie, dass die Registerkarte ohne Integration in Adobe Analytics oder GA4 nicht ausgefüllt ist. Daher finden Sie unter [Adobe Analytics-Integration](/help/dashboards/adobe-analytics-integration.md) oder [Google Analytics-Integration](/help/dashboards/google-analytics-integration.md) weitere Details.
+>Standardmäßig erstellt dieses Dashboard Traffic-Erkenntnisse aus **CDN-Protokollen**. Wenn Ihr Unternehmen ein kostenpflichtiges Angebot nutzt, können Sie **Adobe Analytics** oder **Google Analytics 4**(GA4) verbinden, um Daten hinzuzufügen, die die KI-gesteuerte Erkennung und Website-Interaktion messen. Diese Daten sind auf der Registerkarte **Geschäftliche Auswirkungen** verfügbar. Beachten Sie, dass die Registerkarte ohne Integration in Adobe Analytics oder GA4 nicht ausgefüllt ist. Daher finden Sie unter [Adobe Analytics-Integration](/help/dashboards/adobe-analytics-integration.md) oder [Google Analytics-Integration](/help/dashboards/google-analytics-integration.md) weitere Details.
 
 ![Seite „Referral Traffic“](/help/dashboards/assets/referral-traffic.png)
 
@@ -39,17 +39,17 @@ Diese Seite beschreibt Folgendes:
 * [Top-Referenz-URLs](#top-referrals)
 * [Details zum Referral Traffic](#traffic-details)
 
-Wenn Sie sich im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) befinden, navigieren Sie zu **Referral Traffic** und wählen Sie die Website aus, für die Sie die LLM-Referral Traffic-Einblicke anzeigen möchten.
+Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Referral Traffic** und wählen Sie die Site aus, für die Sie die LLM-Erkenntnisse zu Referral Traffic anzeigen möchten.
 
-![Referral Traffic - Website-Selektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
+![Referral Traffic – Site-Auswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/referral-traffic-dashboard.png)
 
 ## Einrichtung {#setup}
 
-Bei der ersten Anmeldung kann das Dashboard „Referral Traffic“ leer angezeigt werden. Um Ihre Daten anzuzeigen, müssen Sie die CDN-Protokollweiterleitung konfigurieren.
+Bei der ersten Anmeldung kann das Dashboard „Referral Traffic“ leer angezeigt werden. Damit Daten angezeigt werden, müssen Sie die CDN-Protokollweiterleitung konfigurieren.
 
-Kunden, die am [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) teilnehmen, können Informationen zur CDN-Protokollweiterleitung hinzufügen, indem sie zu **Markenverwaltung** navigieren und auf die **CDN**-Beschriftung klicken.
+Für Kundschaften, die die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem sie zu **Markenverwaltung** navigieren und auf das Label **CDN** klicken.
 
-**Kundenkonfiguration (klassisches Erlebnis):** Konfigurieren Sie [CDN-](/help/dashboards/customer-configuration.md#cdn-configuration)), indem Sie **Zur Konfiguration wechseln** auswählen.
+**Kundenkonfiguration (klassische Oberfläche):** Konfigurieren Sie die [CDN-Protokollweiterleitung](/help/dashboards/customer-configuration.md#cdn-configuration), indem Sie **Zur Konfiguration wechseln** auswählen.
 
 ![Einrichtung von Referral Traffic](/help/dashboards/assets/referral-setup1.png)
 

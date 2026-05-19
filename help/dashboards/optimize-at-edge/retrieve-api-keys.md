@@ -1,6 +1,6 @@
 ---
 title: Abrufen Ihrer API-Schlüssel
-description: Abrufen der Produktions- und Staging-API-Schlüssel von Edge Optimize aus LLM Optimizer.
+description: So rufen Sie Ihre Edge Optimize-API-Schlüssel für Produktion und Staging von LLM Optimizer ab.
 feature: Opportunities
 autotag-review: '2026-05-15T17:58:10.897Z'
 TQID: 'https://experienceleague.adobe.com/4R-cx6wv75Oowj9ZvEPGCzQbQBSoppgDuI5Ut1IbObA'
@@ -15,60 +15,60 @@ topic_v2:
 source-git-commit: 564171851fdccee43afd233da143d66182464889
 workflow-type: tm+mt
 source-wordcount: 337
-ht-degree: 1%
+ht-degree: 100%
 
 ---
 
 
 # Abrufen Ihrer API-Schlüssel
 
-Rufen Sie vor dem Konfigurieren Ihres CDN Ihre Edge Optimize-API-Schlüssel von der LLM Optimizer-Benutzeroberfläche ab. Sie benötigen einen **Produktions** API-Schlüssel für Live-Traffic. Optional können Sie auch einen API-Schlüssel **Staging** abrufen, um das Routing zuerst auf einem Staging-Host-Namen zu testen.
+Bevor Sie Ihr CDN konfigurieren, rufen Sie Ihre Edge Optimize-API-Schlüssel über die LLM Optimizer-Benutzeroberfläche ab. Für den Live-Traffic benötigen Sie einen **Produktions**-API-Schlüssel. Optional können Sie auch einen **Staging**-API-Schlüssel abrufen, um das Routing zunächst auf einem Staging-Hostnamen zu testen.
 
 ## Produktions-API-Schlüssel
 
-1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration**.
 
    ![Navigieren zu „Kundenkonfiguration“](/help/assets/optimize-at-edge/prereq-customer-config-nav.png)
 
-2. Suchen Sie den Abschnitt **Optimierungen für KI-Agenten bereitstellen**. Markieren Sie das **Optimierungs-Engine aktivieren**.
+2. Suchen Sie den Abschnitt **Optimierungen für AI Agents bereitstellen**. Aktivieren Sie das Kontrollkästchen **Optimierungs-Engine aktivieren**.
 
-   ![Optimierungen für KI-Agenten bereitstellen - Ausstehend](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
+   ![Optimierungen für AI Agents bereitstellen – ausstehend](/help/assets/optimize-at-edge/byocdn-deploy-optimizations-pending.png)
 
-3. Wählen Sie im Bestätigungsdialog die Option **Aktivieren** aus.
+3. Wählen Sie im Bestätigungsdialogfeld **Aktivieren** aus.
 
-   ![Bestätigungsdialogfeld für Optimierungsmodul aktivieren](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
+   ![Bestätigungsdialog „Optimierungs-Engine aktivieren“](/help/assets/optimize-at-edge/byocdn-enable-optimization-engine-dialog.png)
 
 4. Wählen Sie **Details anzeigen** aus. Kopieren Sie im Dialogfeld **Optimierungsdetails bereitstellen** den **Produktions-API-Schlüssel** (verwenden Sie **Kopieren** neben dem Feld).
 
-   ![Produktions-API-Schlüssel in den Details zur Bereitstellungsoptimierung](/help/assets/optimize-at-edge/byocdn-production-api-key-details.png)
+   ![Produktions-API-Schlüssel in „Optimierungsdetails bereitstellen“](/help/assets/optimize-at-edge/byocdn-production-api-key-details.png)
 
    >[!NOTE]
-   >Das Dialogfeld zeigt möglicherweise an, dass die Einrichtung nicht abgeschlossen ist. Dies wird erwartet, bis das Routing überprüft wird - Sie können weiterhin den API-Schlüssel kopieren, damit Ihr IT- oder CDN-Team die Konfiguration abschließen kann.
+   >Im Dialogfeld wird möglicherweise angezeigt, dass die Einrichtung nicht abgeschlossen ist. Dies ist normal, solange das Routing noch nicht verifiziert ist. Sie können den API-Schlüssel aber trotzdem kopieren, damit Ihr IT- oder CDN-Team die Konfiguration abschließen kann.
 
-Wenn Sie Hilfe bei den oben genannten Schritten benötigen, wenden Sie sich an Ihr Adobe-Account-Team oder `llmo-at-edge@adobe.com`.
+Wenn Sie Hilfe zu den oben genannten Schritten benötigen, wenden Sie sich an Ihr Adobe-Accountteam oder an `llmo-at-edge@adobe.com`.
 
 ## Staging-API-Schlüssel (optional)
 
-Um das Routing in einer niedrigeren Umgebung zu validieren, bevor Sie das Produktions-Routing aktivieren, können Sie einen Staging-Host-Namen konfigurieren.
+Um das Routing in einer Testumgebung zu validieren, bevor das Produktions-Routing aktiviert wird, können Sie einen Staging-Hostnamen konfigurieren.
 
-**Anforderungen**
+**Voraussetzungen**
 
-* Der Staging-Hostname muss sich auf derselben **registrierbaren Domain** wie die Produktion befinden (z. B. `https://staging.example.com`, wenn die Produktion `https://www.example.com` wird).
-* Nur **eine** Staging-Domain pro Site. Nachdem er gespeichert wurde, kann er nicht mehr geändert werden, ohne Adobe zu kontaktieren.
+* Der Staging-Hostname muss sich auf **derselben registrierbaren Domain** befinden wie der Produktions-Hostname (z. B.`https://staging.example.com`, wenn der Produktions-Hostname `https://www.example.com` lautet).
+* Nur **eine** Staging-Domain pro Site. Nach dem Speichern kann die Datei nur noch durch Kontaktaufnahme mit Adobe geändert werden.
 
 **Schritte**
 
-1. Öffnen Sie in LLM Optimizer **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
-2. Wählen **unter „Optimierungen für KI** Agenten bereitstellen“ die Option **Staging-Domain hinzufügen** (oder **Staging-Domain**, wenn bereits eine Staging-Domain konfiguriert ist).
+1. Navigieren Sie in LLM Optimizer zu **Kundenkonfiguration** und wählen Sie die Registerkarte **CDN-Konfiguration** aus.
+2. Wählen Sie unter **Optimierungen für AI Agents bereitstellen** **Staging-Domain hinzufügen** (oder **Staging-Domain**, falls bereits eine Staging-Domain konfiguriert ist).
 3. Geben Sie die vollständige Staging-URL einschließlich `https://` ein und wählen Sie **Domain festlegen**.
-4. Kopieren Sie den **Staging** API-Schlüssel aus dem Bestätigungsdialogfeld.
+4. Kopieren Sie den **Staging**-API-Schlüssel aus dem Bestätigungsdialogfeld.
 
    ![Staging-Domain-API-Schlüssel](/help/assets/optimize-at-edge/byocdn-staging-domain-api-key.png)
 
-Stellen Sie dieselben Routing-Regeln mithilfe des Staging-API-Schlüssels in Ihrer Staging-Umgebung bereit.
+Stellen Sie dieselben Routing-Regeln in Ihrer Staging-Umgebung mithilfe des Staging-API-Schlüssels bereit.
 
 Wenn Sie Hilfe benötigen, wenden Sie sich an `llmo-at-edge@adobe.com`.
 
 ## Nächste Schritte
 
-Nachdem Sie Ihre API-Schlüssel abgerufen haben, kehren Sie zu Ihrem [CDN-Setup-Handbuch](/help/dashboards/optimize-at-edge/overview.md#cdn-configuration-guides) zurück, um das Routing zu konfigurieren.
+Nachdem Sie Ihre API-Schlüssel abgerufen haben, kehren Sie zu Ihrem [CDN-Einrichtungshandbuch](/help/dashboards/optimize-at-edge/overview.md#cdn-configuration-guides) zurück, um das Routing zu konfigurieren.

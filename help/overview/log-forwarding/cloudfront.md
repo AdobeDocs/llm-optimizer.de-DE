@@ -1,6 +1,6 @@
 ---
-title: Protokollweiterleitung - CloudFront
-description: Erfahren Sie, wie Sie CDN-Protokolle zur Erfassung von agenten Traffic-Daten in LLM Optimizer von CloudFront an den S3-Bucket von Adobe weiterleiten.
+title: Protokollweiterleitung – CloudFront
+description: Erfahren Sie, wie Sie CDN-Protokolle von CloudFront an den S3-Bucket von Adobe für die Erfassung von Daten zu Agent-basiertem Traffic in LLM Optimizer weiterleiten.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:43:07.178Z'
 TQID: 'https://experienceleague.adobe.com/TXnY-eK1SUuKrlVoGWd2hZO5bjUqEspvyFmcyOuei3Q'
@@ -17,96 +17,96 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 466
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
 # Protokollweiterleitung: CloudFront {#log-forwarding-cloudfront}
 
-Auf dieser Seite wird erläutert, wie Sie CDN-Protokolle zur Erfassung von Traffic-Daten von CloudFront an den S3-Bucket von Adobe weiterleiten. Sie verwenden die LLM Optimizer CDN-Konfigurationsseite, um sich bei LLM Optimizer einzuarbeiten. Nachdem der Onboarding-Prozess abgeschlossen ist, führen Sie die auf dieser Seite bereitgestellten Schritte aus, um die Protokollweiterleitung in der CloudFront-Dashboard-Konsole zu konfigurieren.
+Auf dieser Seite wird erläutert, wie Sie CDN-Protokolle zur Erfassung von Daten zu Agent-basiertem Traffic von CloudFront an den S3-Bucket von Adobe weiterleiten. Verwenden Sie die CDN-Konfigurationsseite in LLM Optimizer für das Onboarding bei LLM Optimizer. Nachdem der Onboarding-Prozess abgeschlossen ist, führen Sie die auf dieser Seite aufgeführten Schritte aus, um die Protokollweiterleitung in der CloudFront-Dashboard-Konsole zu konfigurieren.
 
-## Schritt 1: Onboarding in LLM Optimizer {#step-1}
+## Schritt 1: Durchführen des Onboardings in LLM Optimizer {#step-1}
 
-Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
+Führen Sie auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/) folgende Schritte aus:
 
-1. Navigieren Sie zum **Dashboard Kundenkonfiguration**.
+1. Navigieren Sie zum Dashboard **Kundenkonfiguration**.
 
    ![Schaltfläche „Konfiguration“](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Klicken Sie auf die **CDN-Konfiguration**.
+1. Klicken Sie auf die Registerkarte **CDN-Konfiguration**.
 
-   ![Registerkarte CDN-Konfiguration](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Registerkarte „CDN-Konfiguration“](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Klicken Sie **Erste Schritte**.
+1. Klicken Sie auf **Erste Schritte**.
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
-1. Klicken Sie neben **KI-Traffic-Einblicke aktivieren** auf **Konfigurieren**.
+1. Klicken Sie neben **KI-Traffic-Erkenntnisse aktivieren** auf **Konfigurieren**.
 
    ![Konfigurieren](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Geben Sie Ihre **AWS-Konto** ID ein.
+1. Geben sie Ihre **AWS-Konto**-ID ein.
 
    ![AWS-Konto-ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)
 
-1. Wählen Sie **CloudFront (BYOCDN)**.
+1. Wählen Sie **CloudFront (BYOCDN)** aus.
 
-   ![CloudFront auswählen](/help/overview/assets/log-forwarding/cloudfront/cloudfront-select.png)
+   ![Auswählen von CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-select.png)
 
-1. Klicken Sie **Onboard**.
+1. Klicken Sie auf **Integrieren**.
 
-   ![Onboard-Schaltfläche](/help/overview/assets/log-forwarding/common/onboard-button.png)
+   ![Schaltfläche „Integrieren“](/help/overview/assets/log-forwarding/common/onboard-button.png)
 
-## Schritt 2: Standardprotokollierung aktivieren (CloudFront-Konsole) {#step-2}
+## Schritt 2: Aktivieren der Standardprotokollierung (CloudFront-Konsole) {#step-2}
 
-Um die Standardprotokollierung zu aktivieren, verwenden Sie die [AWS-Verwaltungskonsole](https://aws.amazon.com/console/):
+Um die Standardprotokollierung zu aktivieren, führen Sie folgende Schritte in der [AWS Management Console](https://aws.amazon.com/console/) aus:
 
 1. Rufen Sie die [CloudFront-Konsole](https://console.aws.amazon.com/cloudfront/v4/home) auf und [aktualisieren Sie eine vorhandene Verteilung](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToUpdateDistribution.html#HowToUpdateDistributionProcedure).
 
-1. Öffnen Sie die **Protokollierung**.
+1. Öffnen Sie die Registerkarte **Protokollierung**.
 
-1. Wählen Sie **Hinzufügen** aus und wählen Sie dann den Service aus, der Protokolle empfangen soll, in diesem Fall **Amazon S3**.
+1. Wählen Sie **Hinzufügen** und dann den Service aus, der Protokolle empfangen soll, in diesem Fall **Amazon S3**.
 
-1. Wählen **/Ziel** Ressource aus oder erstellen Sie sie. Geben Sie den **Behälternamen** ein. Sie können den Wert von der LLM Optimizer CDN-Konfigurationsseite kopieren.
+1. Wählen Sie als **Ziel** eine Ressource aus oder erstellen Sie sie. Geben Sie den **Bucket-Namen** ein. Sie können den Wert von der CDN-Konfigurationsseite in LLM Optimizer kopieren.
 
-   ![CloudFront-Behältername](/help/overview/assets/log-forwarding/cloudfront/cloudfront-bucket-name.png)
+   ![CloudFront-Bucket-Name](/help/overview/assets/log-forwarding/cloudfront/cloudfront-bucket-name.png)
 
-1. Konfigurieren Sie **Zusätzliche Einstellungen**:
+1. Konfigurieren Sie **zusätzliche Einstellungen**:
 
-   - **Feldauswahl** — Wählen Sie die Protokolldateifelder aus. Die erforderlichen Felder finden Sie auf der Seite LLM Optimizer CDN-Konfiguration .
+   - **Feldauswahl**: Wählen Sie die Protokolldateifelder aus. Die erforderlichen Felder finden Sie auf der CDN-Konfigurationsseite in LLM Optimizer.
 
      ![CloudFront-Feldauswahl](/help/overview/assets/log-forwarding/cloudfront/cloudfront-field-selection.png)
 
-   - **Partitionierung** - Kopieren Sie das **Pfad-Suffix** von der LLM Optimizer-Konfigurationsseite.
+   - **Partitionierung**: Kopieren Sie das **Pfadsuffix** von der LLM Optimizer-Konfigurationsseite.
 
      ![CloudFront-Partitionierung](/help/overview/assets/log-forwarding/cloudfront/cloudfront-partitioning.png)
 
-   - **Ausgabeformat** - Das Format sollte JSON sein.
+   - **Ausgabeformat**: Das Format sollte JSON sein.
 
      ![CloudFront-Ausgabeformat](/help/overview/assets/log-forwarding/cloudfront/cloudfront-output-format.png)
 
-1. Führen Sie die Schritte zum Aktualisieren oder Erstellen der Verteilung aus.
+1. Führen Sie die folgenden Schritte aus, um die Verteilung zu aktualisieren oder zu erstellen.
 
-1. Bestätigen Sie auf **Seite** Protokolle“, dass **Aktiviert** neben der Verteilung angezeigt wird.
+1. Überprüfen Sie auf der Seite **Protokolle**, ob neben der Verteilung **Aktiviert** angezeigt wird.
 
-## Standardprotokollierung für kontoübergreifenden Versand aktivieren {#cross-account}
+## Aktivieren der Standardprotokollierung für kontoübergreifende Bereitstellung {#cross-account}
 
-Das **Quellkonto** (mit der CloudFront-Verteilung) sendet Zugriffsprotokolle an das **Zielkonto** (der S3-Bucket, der auf der LLM Optimizer CDN-Konfigurationsseite angezeigt wird). Beide Konten müssen über die richtigen Berechtigungen verfügen.
+Das **Quellkonto** (mit der CloudFront-Verteilung) sendet Zugriffsprotokolle an das **Zielkonto** (den S3-Bucket, der auf der CDN-Konfigurationsseite in LLM Optimizer angezeigt wird). Beide Konten müssen über die entsprechenden Berechtigungen verfügen.
 
-Beispiel: Das Quellkonto `111111111111` sendet Protokolle an einen S3-Bucket im Zielkonto `222222222222`. Sie können die Befehlszeilenschnittstelle von [AWS verwenden](https://aws.amazon.com/cli/).
+Beispiel: Das Quellkonto `111111111111` sendet Protokolle an einen S3-Bucket im Zielkonto `222222222222`. Sie können die [AWS-Befehlszeilenschnittstelle](https://aws.amazon.com/cli/) verwenden.
 
 >[!NOTE]
 >
->Ersetzen Sie in den folgenden Befehlen den ARN-Wert (`arn:aws:logs:us-east-1:222222222222:delivery-destination:cloudfront-delivery-destination`) des Versandziels durch den Wert **ARN des Versandziels** auf der LLM Optimizer-Konfigurationsseite.
+>Ersetzen Sie in den folgenden Befehlen den Wert des Bereitstellungsziel-ARN (`arn:aws:logs:us-east-1:222222222222:delivery-destination:cloudfront-delivery-destination`) durch den Wert des **Bereitstellungsziel-ARN** auf der LLM Optimizer-Konfigurationsseite.
 
-![Versandziel-ARN](/help/overview/assets/log-forwarding/cloudfront/cloudfront-delivery-destination-arn.png)
+![Bereitstellungsziel-ARN](/help/overview/assets/log-forwarding/cloudfront/cloudfront-delivery-destination-arn.png)
 
-### Quellkonto konfigurieren {#source-account}
+### Konfigurieren des Quellkontos {#source-account}
 
 Als Nächstes müssen Sie das Quellkonto konfigurieren:
 
-1. **Erstellen einer Versandquelle** - Ersetzen Sie den Namen und das Verteilungs-ARN:
+1. **Erstellen einer Bereitstellungsquelle** – Ersetzen Sie Namen und Verteilungs-ARN:
 
    ```bash
    aws logs put-delivery-source --name s3-cf-delivery \
@@ -114,14 +114,14 @@ Als Nächstes müssen Sie das Quellkonto konfigurieren:
      --log-type ACCESS_LOGS
    ```
 
-1. **Versand erstellen** - Quelle mit Ziel verknüpfen; Verwenden Sie das Ziel-ARN aus dem Schritt „Zielkonto konfigurieren“:
+1. **Erstellen der Bereitstellung** – Verknüpfen Sie Quelle mit Ziel und verwenden Sie den Ziel-ARN aus dem Schritt „Erstellen des Zielkontos“:
 
    ```bash
    aws logs create-delivery --delivery-source-name s3-cf-delivery \
      --delivery-destination-arn arn:aws:logs:us-east-1:222222222222:delivery-destination:cloudfront-delivery-destination
    ```
 
-1. **Verify:**
+1. **Überprüfen Sie Folgendes:**
 
-   - Im **source**-Konto: CloudFront-Konsole > Ihre Verteilung > **Protokollierung** Registerkarte. Unter **Typ** sollte der kontenübergreifende S3-Protokollversand angezeigt werden.
-   - Im **Ziel**-Konto: S3-Konsole > -Bucket. Sie sollten das Präfix (z. B. `MyLogPrefix`) und die Protokolle in diesem Ordner sehen.
+   - Im **Quellkonto**: CloudFront-Konsole > Ihre Verteilung > Registerkarte **Protokollierung**. Unter **Typ** sollte die kontoübergreifende S3-Protokollbereitstellung angezeigt werden.
+   - Im **Zielkonto**: S3-Konsole > Bucket. In diesem Ordner sollten das Präfix (z. B. `MyLogPrefix`) und die Protokolle angezeigt werden.

@@ -1,6 +1,6 @@
 ---
-title: Protokollweiterleitung - CloudFront (AWS CLI)
-description: Weiterleiten von CloudFront CDN-Protokollen an den S3-Bucket von Adobe mithilfe der AWS-CLI für die Einrichtung und den Betrieb von Sendungen.
+title: Protokollweiterleitung – CloudFront (AWS-CLI)
+description: Leiten Sie CloudFront-CDN-Protokolle mithilfe der AWS-CLI an den S3-Bucket von Adobe weiter, um die Bereitstellung einzurichten und zu betreiben.
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:42:44.992Z'
 TQID: 'https://experienceleague.adobe.com/NoVv3qv1RbtqAWGMPYC1Rz4wO-5Au1yL2e8tRKd9Hao'
@@ -17,58 +17,58 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 379
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 
-# Protokollweiterleitung: CloudFront (AWS CLI) {#log-forwarding-cloudfront-cli}
+# Protokollweiterleitung: CloudFront (AWS-CLI) {#log-forwarding-cloudfront-cli}
 
-Auf dieser Seite wird beschrieben, wie Sie CDN-Protokolle zur Erfassung von Traffic-Daten von CloudFront an den S3-Bucket von Adobe weiterleiten. Sie verwenden die LLM Optimizer CDN-Konfigurationsseite, um sich bei LLM Optimizer einzuarbeiten. Führen Sie nach Abschluss des Onboarding-Prozesses die auf dieser Seite beschriebenen Schritte aus, um die Protokollweiterleitung mithilfe der [AWS-Befehlszeilenschnittstelle](https://aws.amazon.com/cli/) in [Schritt 2](#step-2-cli) zu konfigurieren.
+Auf dieser Seite wird erläutert, wie Sie CDN-Protokolle zur Erfassung von Daten zu Agent-basiertem Traffic von CloudFront an den S3-Bucket von Adobe weiterleiten. Verwenden Sie die CDN-Konfigurationsseite in LLM Optimizer für das Onboarding bei LLM Optimizer. Nachdem der Onboarding-Prozess abgeschlossen ist, führen Sie die auf dieser Seite aufgeführten Schritte mit der [AWS-Befehlszeilenschnittstelle](https://aws.amazon.com/cli/) in [Schritt 2](#step-2-cli) aus.
 
 >[!NOTE]
 >
-> In diesem Handbuch wird erläutert, wie die Protokollweiterleitung mithilfe der [AWS-Befehlszeilenschnittstelle](https://aws.amazon.com/cli/) konfiguriert wird. Wenn Sie die Protokollweiterleitung mithilfe der **CloudFront-Benutzeroberfläche) konfigurieren möchten** finden Sie weitere Informationen unter [Protokollweiterleitung: CloudFront](/help/overview/log-forwarding/cloudfront.md).
+> In diesem Handbuch wird die Konfiguration der Protokollweiterleitung über die [AWS-Befehlszeilenschnittstelle](https://aws.amazon.com/cli/) erläutert. Weitere Informationen zur Konfiguration der Protokollweiterleitung mithilfe der **CloudFront-Benutzeroberfläche** finden Sie unter [Protokollweiterleitung: CloudFront](/help/overview/log-forwarding/cloudfront.md).
 
-## Schritt 1: Onboarding in LLM Optimizer {#step-1}
+## Schritt 1: Durchführen des Onboardings in LLM Optimizer {#step-1}
 
-Auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/):
+Führen Sie auf der LLM Optimizer-Seite [https://llmo.now/](https://llmo.now/) folgende Schritte aus:
 
-1. Navigieren Sie zum **Dashboard Kundenkonfiguration**.
+1. Navigieren Sie zum Dashboard **Kundenkonfiguration**.
 
    ![Schaltfläche „Konfiguration“](/help/overview/assets/log-forwarding/common/config-button.png)
 
-1. Klicken Sie auf die **CDN-Konfiguration**.
+1. Klicken Sie auf die Registerkarte **CDN-Konfiguration**.
 
-   ![Registerkarte CDN-Konfiguration](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
+   ![Registerkarte „CDN-Konfiguration“](/help/overview/assets/log-forwarding/common/cdn-config-tab.png)
 
-1. Klicken Sie **Erste Schritte**.
+1. Klicken Sie auf **Erste Schritte**.
 
    <!-- ![Onboard CDN button](/help/overview/assets/log-forwarding/common/onboard-cdn-button.png)-->
 
-1. Klicken Sie neben **KI-Traffic-Einblicke aktivieren** auf **Konfigurieren**.
+1. Klicken Sie neben **KI-Traffic-Erkenntnisse aktivieren** auf **Konfigurieren**.
 
    ![Konfigurieren](/help/overview/assets/log-forwarding/common/configure.png)
 
-1. Geben Sie Ihre **AWS-Konto** ID ein.
+1. Geben sie Ihre **AWS-Konto**-ID ein.
 
 <!--  ![AWS Account ID](/help/overview/assets/log-forwarding/cloudfront/cloudfront-aws-account.png)-->
 
-1. Wählen Sie **CloudFront (BYOCDN)**.
+1. Wählen Sie **CloudFront (BYOCDN)** aus.
 
-   ![CloudFront auswählen](/help/overview/assets/log-forwarding/cloudfront/cloudfront-select.png)
+   ![Auswählen von CloudFront](/help/overview/assets/log-forwarding/cloudfront/cloudfront-select.png)
 
-1. Klicken Sie **Onboard**.
+1. Klicken Sie auf **Integrieren**.
 
 <!-- ![Onboard button](/help/overview/assets/log-forwarding/common/onboard-button.png)-->
 
-## Schritt 2: Einrichten der CDN-Protokollweiterleitung mit AWS CLI {#step-2-cli}
+## Schritt 2: Einrichten der CDN-Protokollweiterleitung mit AWS-CLI {#step-2-cli}
 
-Richten Sie die CDN-Protokollweiterleitung mit AWS CLI wie folgt ein:
+Richten Sie die CDN-Protokollweiterleitung mit AWS-CLI wie folgt ein:
 
-### Konfigurieren von AWS CLI-Anmeldeinformationen
+### Konfigurieren Sie die AWS-CLI-Anmeldedaten.
 
-Einrichten der AWS CLI-Anmeldedaten für MAC. Öffnen Sie ~/.aws/credentials und geben Sie die Werte für die folgenden Variablen ein:
+Richten Sie AWS-CLI-Anmeldedaten-MAC ein. Öffnen Sie ~/.aws/credentials und geben Sie die Werte für die folgenden Variablen ein:
 
 ```text
 [LLMO]
@@ -117,9 +117,9 @@ export DELIVERY_DEST_ARN=arn:aws:logs:us-east-1:640168421876:delivery-destinatio
 
 <!--Use the **Delivery destination ARN** and org values from the LLM Optimizer CDN configuration page if they differ from the pattern above.-->
 
-### Versandquelle erstellen
+### Erstellen der Bereitstellungsquelle
 
-Führen Sie auf dem Terminal, auf dem Schritt 3 ausgeführt wurde, den folgenden Befehl aus:
+Führen Sie den folgenden Befehl auf dem Terminal aus, auf dem Schritt 3 ausgeführt wurde:
 
 ```bash
 aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
@@ -130,18 +130,18 @@ aws logs put-delivery-source --name llmo-cf-${CUSTOMER}-${CDN_ID} \
 
 >[!IMPORTANT]
 >
->Wenn Sie den folgenden Fehler erhalten, suchen Sie nach der vorhandenen Versandquelle: *Beim Aufrufen des Vorgangs PutDeliverySource ist ein Fehler aufgetreten (ConflictException): Diese Ressourcen-ID wurde bereits in einer anderen Versand-Source in diesem Konto verwendet.*
+>Wenn Sie den folgenden Fehler erhalten, suchen Sie nach der vorhandenen Bereitstellungsquelle: *Beim Aufrufen des PutDeliverySource-Vorgangs ist ein Fehler aufgetreten (ConflictException): Diese Ressourcen-ID wurde bereits in einer anderen Bereitstellungsquelle in diesem Konto verwendet.*
 >
->Führen Sie diesen Befehl aus, um nach der vorhandenen Versandquelle zu suchen:
+>Führen Sie diesen Befehl aus, um nach der vorhandenen Bereitstellungsquelle zu suchen:
 >
 >```bash
 >aws logs describe-delivery-sources --region us-east-1 \
 >--query "deliverySources[?contains(resourceArns[0], '<CDN DistributionID>')]"
 >```
 >
->Verwenden Sie im nächsten Befehl den Namen der Versandquelle aus den Ergebnissen des obigen Befehls.
+>Verwenden Sie im nächsten Befehl den Namen der Bereitstellungsquelle aus den Ergebnissen des obigen Befehls.
 
-### Erstellen der Versandkonfiguration
+### Erstellen der Bereitstellungskonfiguration
 
 ```bash
 aws logs create-delivery \
@@ -152,4 +152,4 @@ aws logs create-delivery \
   --record-fields 'date' 'time' 'x-edge-location' 'cs-method' 'cs(Host)' 'cs-uri-stem' 'sc-status' 'cs(Referer)' 'cs(User-Agent)' 'time-to-first-byte' 'sc-content-type' 'x-host-header'
 ```
 
-&lt;!—Richten Sie `--record-fields` und `--s3-delivery-configuration` an der Feldliste und dem Pfadsuffix aus, die auf Ihrer LLM Optimizer CDN-Konfigurationsseite angezeigt werden, wenn sich die Dokumentation oder die Produktwerte ändern.—>
+&lt;!--Richten Sie `--record-fields` und `--s3-delivery-configuration` an der Feldliste und dem Pfadsuffix aus, die auf der CDN-Konfigurationsseite in LLM Optimizer angezeigt werden, wenn sich die Dokumentation oder die Produktwerte ändern.-->

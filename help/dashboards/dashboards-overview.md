@@ -19,7 +19,7 @@ ht-degree: 100%
 ---
 
 
-# Dashboards – Überblick
+# Dashboards – Überblick
 
 Willkommen beim Überblick über die Dashboards. Die Dashboards in LLM-Optimizer unterstützen Marketing-Fachleute dabei, Markensichtbarkeit und Sentiment über KI-gestützte Suchplattformen hinweg nachzuverfolgen, Optimierungsmöglichkeiten zu identifizieren und präskriptive Änderungen für mehr Zitierungen und höhere Leistung zu implementieren.
 

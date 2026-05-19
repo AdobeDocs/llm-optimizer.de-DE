@@ -17,7 +17,7 @@ topic_v2:
 source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
 workflow-type: tm+mt
 source-wordcount: 1346
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 96%
 
 Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke in KI-generierten Antworten wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitierungen zu verfolgen und Sentiment-Trends zu erkunden. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Erkenntnisse bereitstellen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
-![Markenpräsenz - Übersicht](/help/dashboards/assets/brand-main.png)
+![Markenpräsenz – Überblick](/help/dashboards/assets/brand-main.png)
 
 Diese Seite beschreibt Folgendes:
 
@@ -36,9 +36,9 @@ Diese Seite beschreibt Folgendes:
 * [Sentiment-Trend](#sentiment-trend)
 * [Datenerkenntnisse](#data-insights)
 
-Wenn Sie das [markenorientierte Erlebnis](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenpräsenz**. Wählen Sie in der Dropdown-Liste Marke entweder die Marke aus, die Sie analysieren möchten, oder wählen Sie **Alle Marken**, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
+Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenpräsenz**. Wählen Sie im Dropdown-Menü „Marke“ entweder die zu analysierende Marke aus oder wählen Sie **Alle Marken** aus, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
 
-![Markenpräsenz mit Markenselektor (markenorientiertes Erlebnis)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+![Markenpräsenz mit Markenauswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filter {#filters}
 
