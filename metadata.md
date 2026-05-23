@@ -1,7 +1,8 @@
 ---
 cloud: Experience Cloud
 solution: LLM Optimizer
-product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 usetq: true
 type: Documentation
 description: Dokumentation zu LLM Optimizer.
@@ -22,4 +23,4 @@ ht-degree: 0%
 
 Die Datei „metadata.md“ enthält Metadaten auf Repo-Ebene, die an die im Repository enthaltenen TOC.md-Dateien des Benutzerhandbuchs weitergegeben werden. Wenn Sie den Inhalt von „metadata.md“ für ein Benutzerhandbuch ändern möchten, verwenden Sie dazu eine beliebige Inhaltsverzeichnisdatei (.md).
 
-Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finden Sie eine Liste gültiger Werte für **Lösung**, **** und **Typ**.
+Unter [Metadaten](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/editing/user-guide-setup/metadata.html) finden Sie eine Liste gültiger Werte für **Lösung**, **&#x200B;**&#x200B;und **Typ**.
