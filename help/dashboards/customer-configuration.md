@@ -13,10 +13,10 @@ subfeature_v2:
   - id: e69d5a42-0217-4ca5-9396-a9a826a170da
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: f16c1bda1c9919a62077811653f92d5fc2c74045
 workflow-type: tm+mt
-source-wordcount: 2249
-ht-degree: 100%
+source-wordcount: 3935
+ht-degree: 57%
 
 ---
 
@@ -37,6 +37,7 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz in verschiedenen Mär
 * [Markenaliasse](#brand-aliases)
 * [CDN-Konfiguration](#agentic-cdn)
 * [Google Search Console](#google-console)
+* [Eingabeaufforderungen basierend auf Zitatversuchen und Referral Traffic](#prompt-suggestions)
 
 Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenverwaltung**, um Marken, Markenaliasse und Konkurrenz einzurichten und zu konfigurieren, um anhand des Trackings mit diesen Vergleiche zu ziehen. Die **Markenverwaltung** wird auch verwendet, um Integrationen wie Google Search Console, Adobe Analytics und CDN-Protokollweiterleitung zu konfigurieren, die sich auf mit Marken verknüpfte URLs beziehen. Klicken Sie dazu auf die entsprechenden Registerkarten: GSC, CDN usw.
 
@@ -258,3 +259,122 @@ Ja, Sie können jeden Prompt löschen, den Sie nicht überwachen möchten. Gelö
 F: Wie schnell nach Hinzufügen von Prompts aus Google Search Console zu meiner Prompts-Liste werden Markenpräsenzdaten für diese Prompts angezeigt?
 
 Markenpräsenzdaten für neu hinzugefügte Prompts werden bei der nächsten geplanten Datenaktualisierung angezeigt, die normalerweise zu Beginn jeder Woche ausgeführt wird. Je nachdem, wann Sie die Prompts hinzufügen, werden Ihnen innerhalb weniger Tage Ergebnisse angezeigt.
+
+## Eingabeaufforderungen basierend auf Zitatversuchen und Referral Traffic {#prompt-suggestions}
+
+Anstatt zu erraten, welche Eingabeaufforderungen wichtig sind **beginnen Sie** mit dem, auf was KI-Agenten und -Benutzer bereits auf Ihrer Site zugreifen oder auf was sie verwiesen werden.
+
+Adobe LLM Optimizer analysiert Ihre CDN-Daten, um festzustellen, auf welche Seiten KI-Agenten bereits konsistent zugreifen (Zitierversuche) und Benutzer darauf verweisen (LLM-Referral Traffic). Danach werden automatisch Eingabeaufforderungsvorschläge basierend auf Lücken in der aktuellen Eingabeaufforderungsabdeckung generiert. Anstatt zu erraten, welche URLs priorisiert werden sollten und welche Aufforderungen zur Erstellung angezeigt werden, beginnt der Workflow mit echten Traffic-Signalen: Seiten, die Agenten bereits erreichen, und dann die Art der Benutzeraufforderungen definieren, die diese Seiten beantworten sollten.
+
+Wenn eine Seite bereits konsistent von KI-Agenten aufgerufen wird, lautet die Frage nicht, wie Agenten über die Seite informiert werden, sondern welche Fragen der Seiteninhalt beantworten könnte. Ohne Eingabeaufforderungen, die für diese Seiten konfiguriert sind, haben Sie keine Einsicht in die Darstellung Ihrer Marke in KI-Antworten zu Themen, die am wichtigsten sind. Eingabeaufforderungsvorschläge von Agent Traffic schließen diese Lücke, damit Sie das Markensichtbarkeit für die Seiten verfolgen und verbessern können, auf denen Agenten bereits am aktivsten sind.
+
+>[!NOTE]
+>
+> Im [markenorientierten Erlebnis](/help/overview/quick-start.md#brand-centric-experience) werden im Abschnitt **Eingabeaufforderungsverwaltung** Eingabeaufforderungsvorschläge angezeigt.
+
+### Funktionsweise {#prompt-suggestions-how-it-works}
+
+Der Workflow Vorschläge auffordern wird in vier Schritten ausgeführt, wodurch CDN-Traffic-Signale in konfigurationsbereite Eingabeaufforderungsvorschläge umgewandelt werden. Jeder Schritt baut auf dem vorherigen auf: von Seiten aus, auf denen die KI-Agentenaktivität bereits erwiesen ist, um zu verstehen, worum es bei diesen Seiten geht, zu überprüfen, was bereits abgedeckt ist, und um Eingabeaufforderungen zu generieren, die spezifisch, fundiert und zur Veröffentlichung bereit sind.
+
+![Eingabeaufforderungen aus dem Agenten-Traffic-Workflow](/help/dashboards/assets/prompt-suggestions-workflow.png)
+
+#### Schritt 1: Identifizieren von Seiten mit hohem Signalaufkommen im Agent-Traffic {#prompt-suggestions-step-1}
+
+Die Pipeline beginnt damit, Seiten auf Ihrer Site zu identifizieren, mit denen KI-Systeme bereits aktiv interagieren, und zwar mithilfe von zwei Signalen aus Ihren CDN-Daten: Wie häufig greifen KI-Systeme auf Ihre Seiten als Quelle zu, während sie echte Benutzerfragen beantworten, und ob diese Seiten bereits reale Benutzer von KI-generierten Antworten auf Ihre Site bringen.
+
+* **Zitierungsversuche** - Wie KI-Systeme beim Beantworten von Benutzerfragen auf eine Seite als potenzielle Quelle zugegriffen haben. Die Pipeline sucht nach Seiten, die Woche für Woche eine konsistente Aktivität des Zitatversuchs zeigen, was ein ganzheitlicheres Bild des Interesses als einen einzigen Zeitpunkt liefert.
+* **LLM Referral Traffic** - Instanzen, in denen ein Benutzer von einer KI-generierten Antwort angeklickt hat, um zur URL zu gelangen. Die Pipeline konzentriert sich auf die neuesten Verweisdaten und priorisiert Seiten mit dem höchsten Volumen an KI-gesteuerten Besuchen, um sicherzustellen, dass Vorschläge auf aktuellen und bewährten KI-Empfehlungsmustern basieren.
+
+| Signal | Was es bedeutet |
+|--------|---------------|
+| Nur Zitatversuche | Agenten greifen durchgängig als potenzielle Quelle auf diese Seite zu |
+| Nur LLM-Referral Traffic | Agenten senden Benutzer aktiv zu dieser Seite |
+| Beide | Agenten greifen darauf zu und Benutzer klicken durch - das Ziel mit der höchsten Konfidenz |
+
+Eine Seite kann sich durch ein Signal oder beide qualifizieren. Seiten mit beiden Signalen stellen die Ziele mit der höchsten Konfidenz für die sofortige Generierung dar.
+
+#### Schritt 2: Analysieren des Seiteninhalts und des Seiteninhalts {#prompt-suggestions-step-2}
+
+Für jede qualifizierte Seite liest die Pipeline den Seiteninhalt und:
+
+* **Fasst** in einer knappen, faktengestützten Beschreibung zusammen, die die Grundlage für alles wird, was folgt.
+* **Klassifiziert** den Seitentyp, egal ob es sich um ein Produkt, eine Ressource, einen Support oder einen Hub handelt.
+* Identifiziert den **primären Journey-Intent** - die Art von Frage, die die Seite am besten beantworten kann, z. B. informativ, anweisend, vergleichend oder transaktionale Fragen.
+
+Die beiden Klassifizierungen arbeiten zusammen. Beispielsweise sind Eingabeaufforderungen, die von einer Support-Seite wie einem Einrichtungshandbuch oder Tutorial generiert werden, wahrscheinlich eher für eine vorhandene Benutzerrolle relevant als für eine neue Zielgruppe.
+
+#### Schritt 3: Überprüfen der bestehenden Eingabeaufforderungsabdeckung {#prompt-suggestions-step-3}
+
+Bevor Sie neue Elemente generieren, prüft die Pipeline, ob jede qualifizierte Seite bereits von Eingabeaufforderungen abgedeckt ist, die in Ihrem LLM Optimizer-Konto konfiguriert sind. Sie wird in zwei Durchgängen ausgeführt:
+
+1. Ein semantischer Ähnlichkeitstest, der schnell mögliche Eingabeaufforderungen aus Ihrer vorhandenen Eingabeaufforderungsbibliothek identifiziert, die möglicherweise mit der Seite in Verbindung stehen.
+2. Eine LLM-gestützte Überprüfung, die bewertet, wie gut jede Eingabeaufforderung mit dem Seiteninhalt übereinstimmt - nicht nur, ob es sich um einen thematischen Zusammenhang handelt, sondern auch, ob er abdeckt, worum es auf der Seite geht.
+
+Eine Seite gilt als abgedeckt, wenn mindestens eine vorhandene Eingabeaufforderung diesen Schwellenwert erreicht. Seiten ohne angemessene Übereinstimmung werden als Lücken identifiziert und mit Schritt 4 fortgefahren.
+
+#### Schritt 4: Generieren, Qualitätsprüfung und Sortierung der Eingabeaufforderungen nach URL {#prompt-suggestions-step-4}
+
+![Schnelle Generierung und Qualitätsprüfung](/help/dashboards/assets/prompt-suggestions-generation.png)
+
+Für jede Lückenseite generiert die Pipeline natürliche Eingabeaufforderungen, die darauf basieren, worum es bei dem Seiteninhalt geht. Es beginnt mit der Identifizierung relevanter Personen - jemand, der realistischerweise Fragen stellen würde, die auf dieser Seite beantwortet werden, und der ein realistisches Szenario um diese Rolle herum aufbaut, bevor er Eingabeaufforderungen für Kandidaten generiert.
+
+Jede Eingabeaufforderung durchläuft eine automatisierte Qualitätsüberprüfung in drei Dimensionen:
+
+* Ob sie **spezifisch** für diese Seite ist und nicht eine generische Frage, die für jede Seite in der Kategorie gelten könnte.
+* Ob sie **im** Inhalt der Seite begründet ist.
+* Ob es nach etwas klingt, **ein „echter Benutzer** in ein KI-Tool wie ChatGPT eingeben würde.
+
+Eingabeaufforderungen, die diese Überprüfung nicht bestehen, werden mit spezifischem Feedback neu geschrieben und erneut überprüft. Wenn sie immer noch nicht bestehen, werden sie verworfen.
+
+Der letzte Schritt ist eine Diversitätsprüfung, bei der Eingabeaufforderungen für URLs, die einander zu ähnlich sind, aus der endgültigen Liste entfernt werden. Jede Eingabeaufforderung ist mit Ihrem vorkonfigurierten Thema und Ihrer vorkonfigurierten Kategorie versehen und enthält ein Feld zur Begründung, in dem erläutert wird, warum die Quell-URL aufgrund ihres Zitatversuchs und der Referral Traffic-Signale als Ziel ausgewählt wurde. Eingabeaufforderungen wird ebenfalls eine Prioritätsreihenfolge zugewiesen, sodass Sie wissen, bei welchen Vorschlägen Sie zuerst handeln müssen. Eine höhere Priorität bedeutet ein stärkeres kombiniertes KI-Signal von der Quell-URL. Eingabeaufforderungen können dann auf der Registerkarte **Eingabeaufforderungen** im Dashboard für die Kundenkonfiguration überprüft werden.
+
+### Informationen zur Verwendung {#prompt-suggestions-how-to-use}
+
+1. Öffnen Sie das Dashboard **Kundenkonfiguration** und navigieren Sie zur Registerkarte **Vorschläge auffordern**.
+1. Verwenden Sie den **Source**-Filter, um **Zitierungsversuch** auszuwählen, um Vorschläge anzuzeigen, die aus Agentendatenverkehr generiert wurden.
+1. Überprüfen Sie die Spalten **Argumentation** und **Priorität**, um jeden Vorschlag auszuwerten.
+1. Wählen Sie die Eingabeaufforderungen aus, die Sie hinzufügen möchten, und klicken Sie auf **Auswahl hinzufügen**, um sie zu Ihren konfigurierten Eingabeaufforderungen hinzuzufügen.
+
+![Registerkarte „Vorschläge auffordern“ mit dem Quellfilter für Zitationsversuche](/help/dashboards/assets/prompt-suggestions-citation-attempt.png)
+
+![Ausgewählte Eingabeaufforderungsvorschläge hinzufügen](/help/dashboards/assets/prompt-suggestions-add-selection.png)
+
+### Häufig gestellte Fragen {#prompt-suggestions-faq}
+
+F.: Benötigt mein Unternehmen eine zusätzliche Konfiguration, um diese Funktion verwenden zu können?
+
+Diese Funktion beruht auf CDN-Protokolldaten. Wenn Sie „CDN[Protokollweiterleitung“ bereits aktiviert &#x200B;](#cdn-configuration), ist keine zusätzliche Einrichtung erforderlich. Ohne CDN-Protokolle sind keine Daten zu Zitierversuchen oder Referral Traffic für die Analyse verfügbar.
+
+F: Warum wird in den Vorschlägen keine bestimmte URL angezeigt?
+
+Es gibt einige gemeinsame Gründe. Die Seite weist möglicherweise noch keine konsistente KI-Abrufaktivität oder aussagekräftiges Referral Traffic auf. Ohne eines dieser Signale gelangt sie nicht in die Pipeline. Möglicherweise wird sie bereits von einer vorhandenen konfigurierten Eingabeaufforderung abgedeckt, da die Pipeline nur Vorschläge für echte Lücken generiert. Oder der Seitentyp ist möglicherweise nicht für die Eingabeaufforderungsgenerierung geeignet.
+
+F: Können sich die Vorschläge im Laufe der Zeit ändern?
+
+Ja. Die Pipeline wird regelmäßig ausgeführt, sobald neue CDN-Daten verfügbar werden. Im Zuge der Weiterentwicklung des Benutzer- und Agentenverhaltens (welche Seiten aufgerufen werden, wie oft und welche Referral Traffic verursachen) spiegeln die Vorschläge diese Änderungen wider. Seiten, die zuvor noch kein hohes Signal hatten, können sich in zukünftigen Läufen qualifizieren und bestehende Lücken, die behoben wurden, werden keine neuen Vorschläge mehr erzeugen.
+
+F: Warum sehe ich URLs, die ich nicht in den Vorschlägen erwartet hätte?
+
+Die angezeigten URLs basieren ausschließlich auf beobachtetem agentischem Verhalten - Seiten, auf die KI-Systeme konsistent zugegriffen haben oder auf die Benutzer verwiesen wurden, unabhängig davon, wie prominent sie in Ihrer Inhaltsstrategie angezeigt werden. In einigen Fällen kann es sich um Seiten handeln, die Sie nie für wichtig gehalten haben, die aber wiederholt von KI erreicht wurden. Wenn eine URL in den Vorschlägen angezeigt wird, liegt dies daran, dass sie von den Daten unterstützt wird. Es steht Ihnen immer frei, Vorschläge zu ignorieren, die nicht zu Ihrer Strategie passen, aber die Daten hinter jedem Vorschlag basieren auf echter KI-Aktivität.
+
+F: Was bedeutet das Feld der Argumentation?
+
+Jede Eingabeaufforderung enthält eine Erklärung, warum die Quell-URL als Vorschlag aufgeführt wurde. Bei Seiten, die sich durch Zitatversuche qualifizieren, wird gezeigt, wie die Seite basierend auf wöchentlichen Versuchen unter allen Seiten rangiert, auf die zugegriffen wird. Für Seiten, die sich durch Referral Traffic qualifizieren, wird dasselbe für Verweisseitenansichten angezeigt. Seiten mit beiden Signalen zeigen beides an. Auf diese Weise können Sie die Priorität verstehen und auswählen, welche Vorschläge zuerst veröffentlicht werden sollen.
+
+Für eine Seite mit beiden Signalen könnte die Begründung wie folgt aussehen: *Generiert für [Seiten-URL] — rangiert unter den besten 3 % nach dem Median der wöchentlichen Zitatversuche und unter den besten 1 % nach LLM-Referral Traffic.*
+
+F: Wie wird die Priorität bestimmt?
+
+Die Priorität basiert auf einem kombinierten Score aus zwei Signalen: Wie eine Seite nach Zitierungsversuchen und wie sie nach LLM-Verweisseitenansichten unter allen Seiten rangiert. Beide werden als Perzentile ausgedrückt und addiert, sodass Seiten, die bei beiden Signalen stark punkten, auf natürliche Weise an die Spitze aufsteigen. Eine Seite, auf die KI konsistent zugreift und zu der Benutzer aktiv sendet, rangiert immer höher als eine Seite mit nur einem Signal.
+
+F.: Wie entscheidet die Pipeline anhand von Zitatversuchen, welche Seiten qualifiziert sind?
+
+Die Pipeline sucht nach Seiten, die im Laufe der Zeit eine konsistente KI-Abrufaktivität aufweisen. Um qualifiziert zu sein, muss eine Seite zwei Bedingungen erfüllen: Sie muss in mindestens der Hälfte der Wochen eine aussagekräftige Aktivität in den verfügbaren Daten aufweisen, und ihre mediane Anzahl an agenten Treffern während dieser aktiven Wochen muss auf allen Seiten unter den besten 25 % rangieren. Beide Bedingungen müssen zutreffen - die Häufigkeit allein ist nicht ausreichend und das Treffervolumen allein ist ebenfalls nicht ausreichend.
+
+F.: Wie entscheidet die Pipeline, welche Seiten basierend auf Referral Traffic qualifiziert sind?
+
+Eine Seite qualifiziert sich, wenn sie in den letzten drei Monaten unter den besten 10 % aller Seiten nach Gesamtzahl der LLM-Empfehlungsbesuche erscheint. Dadurch wird sichergestellt, dass Vorschläge auf Seiten basieren, die bereits echte, messbare Clickthroughs aus KI-Antworten generieren, die auf aktuellem Verhalten basieren.
+
+F.: Sind Vorschläge in anderen Sprachen als Englisch verfügbar?
+
+Noch nicht. Die Pipeline generiert derzeit nur Eingabeaufforderungen in englischer Sprache. In einer zukünftigen Version wird Unterstützung für mehrere Sprachen hinzugefügt.
