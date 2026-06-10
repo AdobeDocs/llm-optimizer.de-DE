@@ -4,15 +4,12 @@ description: Erfahren Sie, wie Sie Cloudflare BYOCDN für „Optimize at Edge“
 feature: Opportunities
 autotag-review: '2026-05-15T17:40:49.847Z'
 TQID: 'https://experienceleague.adobe.com/HkaDwdHRGZJnip-1Bp-4Z-ovwcBPxFUSDqeLUVNu0zo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 3237a5fdff501eaee29b678c8c2698b95469a125
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
 workflow-type: tm+mt
-source-wordcount: 1916
+source-wordcount: 1919
 ht-degree: 96%
 
 ---
@@ -117,7 +114,7 @@ Führen Sie diese Schritte aus, um den Worker manuell zu erstellen und zu konfig
 
 **Schritt 2: Worker-Code hinzufügen**
 
-Klicken Sie nach dem Erstellen des Sekundärs auf **Code bearbeiten** und ersetzen Sie den Standardcode durch den Code aus [worker.js](https://github.com/adobe-rnd/llmo-edge-optimize-samples/blob/main/cloudflare/worker.js). Wenn Sie bereits über einen Cloudflare-Worker verfügen, führen Sie den Code mit Ihrem vorhandenen Worker-Code zusammen, anstatt ihn vollständig zu ersetzen.
+Klicken Sie nach dem Erstellen des Sekundärs auf **Code bearbeiten** und ersetzen Sie den Standardcode durch den Code aus [worker.js](https://github.com/adobe/llmo-code-samples/blob/main/optimize-at-edge/cloudflare/automation/src/worker.js). Wenn Sie bereits über einen Cloudflare-Worker verfügen, führen Sie den Code mit Ihrem vorhandenen Worker-Code zusammen, anstatt ihn vollständig zu ersetzen.
 
 Klicken Sie auf **Save and deploy** (Speichern und bereitstellen), um den Worker zu veröffentlichen.
 
