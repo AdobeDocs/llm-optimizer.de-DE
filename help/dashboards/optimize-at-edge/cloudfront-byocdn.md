@@ -10,10 +10,10 @@ feature_v2:
   - id: d1956731-2adb-4bb7-8301-2b239254ac72
 subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-source-git-commit: 5a903ec2b6976e7997c45848265d022ca67bed9d
+source-git-commit: 7097550211d1570d6ff65ab980f9a160f8d2a9e0
 workflow-type: tm+mt
-source-wordcount: 2204
-ht-degree: 96%
+source-wordcount: 2343
+ht-degree: 90%
 
 ---
 
@@ -232,6 +232,27 @@ Die automatisch erstellte Rolle verfügt über eine`AWSLambdaBasicExecutionRole`
 
 >[!WARNING]
 >Die Region im ARN muss `*` lauten. Lambda@Edge wird am nächstgelegenen Edge-Standort zum Viewer ausgeführt, daher werden die Protokolle in der Region des Edge-Standorts (z. B.`ap-south-1`, `eu-west-1`) in CloudWatch geschrieben und nicht unbedingt in `us-east-1`. Die Protokollgruppe verwendet einen Namen mit dem Präfix der Region: `/aws/lambda/us-east-1.FUNCTION_NAME`, wobei `us-east-1` immer die Heimatregion der Funktion ist.
+
+**Korrigieren Sie den Link CloudWatch-Protokolle**
+
+Standardmäßig verweist der **CloudWatch-Protokolle anzeigen** Tastaturbefehl in der Lambda-Konsole auf `/aws/lambda/FUNCTION_NAME` in `us-east-1` - die falsche Protokollgruppe für Lambda@Edge. Konfigurieren Sie eine benutzerdefinierte Protokollgruppe so, dass der Link auf den richtigen Pfad verweist.
+
+**Navigation:** AWS Console > Lambda > [Ihre Funktion] > Konfiguration > Überwachungs- und Betriebswerkzeuge
+
+1. Klicken Sie auf **Bearbeiten**.
+
+2. Wählen **unter „CloudWatch-Protokollgruppe** die Option **Benutzerdefiniert** aus.
+
+3. Legen Sie den benutzerdefinierten Protokollgruppennamen auf `/aws/lambda/us-east-1.edgeoptimize-origin` fest.
+
+4. Lassen **unter** das Kontrollkästchen **Erforderliche Berechtigungen hinzufügen** (**)**.
+
+   ![Lambda-Konfiguration für benutzerdefinierte Protokollgruppen](/help/assets/optimize-at-edge/cloudfront-lambda-custom-log-group.png)
+
+5. Klicken Sie auf **Speichern**.
+
+>[!NOTE]
+>Auch nach dieser Fehlerbehebung wird der Link **CloudWatch-** anzeigen) den richtigen Protokollgruppennamen öffnen, aber möglicherweise keine Daten anzeigen, wenn Sie sich in der falschen Region befinden. Lambda@Edge-Protokolle werden in der Edge-Region geschrieben, die die Anfrage verarbeitet hat (z. B. `eu-west-1`, `ap-south-1`), nicht `us-east-1`. Sie müssen weiterhin zur richtigen Region in CloudWatch wechseln, um die Protokolle anzuzeigen.
 
 **Veröffentlichen einer Version**
 
