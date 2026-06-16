@@ -4,18 +4,14 @@ description: Erfahren Sie, wie Sie CDN-Protokolle von Akamai an den S3-Bucket vo
 feature: Agentic Traffic
 autotag-review: '2026-05-15T17:35:22.816Z'
 TQID: 'https://experienceleague.adobe.com/cO-qqOveWFee1-QnVSlzmO-n383sptHl59Ni2qQcvAU'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 100%
+source-wordcount: 612
+ht-degree: 96%
 
 ---
 
@@ -71,7 +67,7 @@ country -> Land/Region
 * **Nachrichtenaustauschdaten**
 reqHost -> Anfrage-Host
 reqPath -> Anfragepfad
-queryStr -> Abfragezeichenfolge
+queryStr -> Abfragezeichenfolge (optional)
 reqMethod -> Anfragemethode
 ua -> Benutzer-Agent
 statusCode -> HTTP-Status-Code
@@ -81,13 +77,17 @@ referer -> Referrer
 * **Netzwerkleistungsdaten**
 timeToFirstByte -> Zeit bis zum ersten Byte
 
+>[!NOTE]
+>
+>Der `queryStr` ist optional. Sie können es weglassen, wenn die Abfragezeichenfolge personenbezogene Daten enthält.
+
 Die Akamai-Datensatzfelder (einschließlich IDs) lauten wie folgt:
 
 1100, # reqTimeSec -> Anfragezeit
 2012, # country -> Land/Region
 1011, # reqHost -> Anfrage-Host
 1013, # reqPath -> Anfragepfad
-2009, # queryStr -> Abfragezeichenfolge
+2009, # queryStr -> Abfragezeichenfolge (optional)
 1012, # reqMethod -> Anfragemethode
 1017, # ua -> Benutzer-Agent
 1008, # statusCode -> HTTP-Status-Code
