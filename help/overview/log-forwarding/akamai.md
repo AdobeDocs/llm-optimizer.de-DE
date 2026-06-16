@@ -12,10 +12,10 @@ subfeature_v2:
   - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: 57c429630874b7304472f16b8c23ba9c6cff44fc
 workflow-type: tm+mt
-source-wordcount: 595
-ht-degree: 100%
+source-wordcount: 612
+ht-degree: 96%
 
 ---
 
@@ -71,7 +71,7 @@ country -> Land/Region
 * **Nachrichtenaustauschdaten**
 reqHost -> Anfrage-Host
 reqPath -> Anfragepfad
-queryStr -> Abfragezeichenfolge
+queryStr -> Abfragezeichenfolge (optional)
 reqMethod -> Anfragemethode
 ua -> Benutzer-Agent
 statusCode -> HTTP-Status-Code
@@ -81,13 +81,17 @@ referer -> Referrer
 * **Netzwerkleistungsdaten**
 timeToFirstByte -> Zeit bis zum ersten Byte
 
+>[!NOTE]
+>
+>Der `queryStr` ist optional. Sie können es weglassen, wenn die Abfragezeichenfolge personenbezogene Daten enthält.
+
 Die Akamai-Datensatzfelder (einschließlich IDs) lauten wie folgt:
 
 1100, # reqTimeSec -> Anfragezeit
 2012, # country -> Land/Region
 1011, # reqHost -> Anfrage-Host
 1013, # reqPath -> Anfragepfad
-2009, # queryStr -> Abfragezeichenfolge
+2009, # queryStr -> Abfragezeichenfolge (optional)
 1012, # reqMethod -> Anfragemethode
 1017, # ua -> Benutzer-Agent
 1008, # statusCode -> HTTP-Status-Code
