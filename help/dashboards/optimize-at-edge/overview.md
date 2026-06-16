@@ -15,10 +15,10 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
 workflow-type: tm+mt
-source-wordcount: 3108
-ht-degree: 67%
+source-wordcount: 2931
+ht-degree: 63%
 
 ---
 
@@ -87,6 +87,7 @@ Um den Einrichtungsprozess zu durchlaufen, wählen Sie unten Ihren CDN-Anbieter 
 | Akamai (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/akamai-byocdn.md) |
 | Cloudflare (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/cloudflare-byocdn.md) |
 | CloudFront (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/cloudfront-byocdn.md) |
+| Azure-Haustür (BYOCDN) | Einbinden Ihres eigenen CDN | [Setup-Anleitungen anzeigen](/help/dashboards/optimize-at-edge/azure-front-door-byocdn.md) |
 
 >[!NOTE]
 >
@@ -120,8 +121,8 @@ In den folgenden Abschnitten finden Sie zusätzliche Details zu jeder von „Opt
 
 ### Inhaltssichtbarkeit wiederherstellen
 
-Diese Möglichkeit kennzeichnet Seiten, auf denen wichtige Inhalte aufgrund des Client-seitigen Renderings für AI Agents verborgen bleiben. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der Ansicht des AI Agents fehlen. Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die verborgenen Inhalte sichtbar zu machen. Wenn Sie diese Möglichkeit mit „Optimize at Edge“ bereitstellen, wird den LLM-Benutzer-Agents eine vorab gerenderte KI-optimierte Version der Seite bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne dass JavaScript ausgeführt werden muss.
-Dadurch wird sichergestellt, dass die Seite zunächst für AI Agents vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf dieses vorab gerenderte HTML angewendet.
+Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund des Client-seitigen Renderings ausgeblendet sind. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agent-Ansicht fehlen, Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die ausgeblendeten Inhalte wiederherzustellen. Wenn Sie diese Opportunity mit Optimieren in Edge bereitstellen, wird eine vorgerenderte, KI-optimierte Version der Seite LLM-Benutzeragenten bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne JavaScript auszuführen.
+Dadurch wird sichergestellt, dass die Seite zunächst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.
 
 >[!IMPORTANT]
 >Diese Vorab-Rendering-Funktion wird auf alle unten dargestellten Möglichkeiten bei der Bereitstellung mit „Optimize at Edge“ angewendet, um sicherzustellen, dass die Seite für AI Agents vollständig sichtbar ist.
@@ -230,7 +231,7 @@ Wenn Sie auf **Optimierungen bereitstellen** klicken, bevor Sie die erforderlich
 
 F: Was passiert, wenn der Inhalt an der Quelle aktualisiert wird?
 
-Wir stellen die optimierte Version Ihrer Seite aus dem Cache bereit, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle für **Content-Sichtbarkeit wiederherstellen** jedoch ändert, führt unser System automatisch eine Aktualisierung durch, sodass AI Agents stets den aktuellen Inhalt erhalten. Dies liegt daran, dass wir niedrige Werte für die Cache-TTL (Time To Live) verwenden (in der Größenordnung von Minuten) und innerhalb dieses Zeitfensters jede Inhaltsaktualisierung auf Ihrer Site eine neue Optimierung auslöst. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, unterbrechen wir die Optimierung und kennzeichnen sie für eine menschliche Überprüfung, um Abweichungen beim Inhalt zwischen der für den Agent sichtbaren Seite und der für Menschen sichtbaren Seite zu verhindern.
+Wir bedienen die optimierte Version Ihrer Seite aus dem Cache, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle jedoch für **Content-Sichtbarkeit wiederherstellen** ändert, wird unser System automatisch aktualisiert, sodass KI-Agenten immer die aktuellsten Inhalte erhalten. Dies liegt daran, dass wir niedrige TTL-Einstellungen (Cache Time To Live) verwenden (in der Reihenfolge von Minuten), sodass jedes Inhaltsupdate auf Ihrer Site eine neue Optimierung innerhalb dieses Triggers ermöglicht. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, pausieren wir die Optimierung und markieren sie für eine menschliche Überprüfung, um zu verhindern, dass der Inhalt zwischen der für den Agenten sichtbaren Seite und der für den Menschen sichtbaren Seite verschoben wird.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 F. Ist „Optimize at Edge“ nur für Sites gedacht, die Adobe Edge Delivery Service (EDS) verwenden?
