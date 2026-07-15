@@ -38,7 +38,7 @@ Sie zeigt die folgenden Schlüsselmetriken auf einen Blick:
 
 ![Dashboard „Produktdetailseiten anreichern“](/help/dashboards/opportunities/assets/enrich-product-detail-pages-overview.png)
 
-Diese Möglichkeit kann mithilfe von [Optimize at Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge) optimiert werden. Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, haben keine Auswirkungen auf Besucherinnen und Besucher (Bot-only-Bereitstellung), werden auf der CDN-Ebene ohne erforderliche CMS- oder Katalogänderungen angewendet und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden. Dies macht sie zu einem schnellen Bereitstellungspfad mit geringem Risiko für große Produktkataloge.
+Diese Möglichkeit kann mithilfe von [Optimize at Edge](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge) optimiert werden. Optimierungen werden ausschließlich an KI-Agenten bereitgestellt, haben keine Auswirkungen auf Besucherinnen und Besucher (Bot-only-Bereitstellung), werden auf der CDN-Ebene ohne erforderliche CMS- oder Katalogänderungen angewendet und können innerhalb von Minuten ohne Entwicklerinteraktion wirksam werden. Dies macht sie zu einem schnellen Bereitstellungspfad mit geringem Risiko für große Produktkataloge.
 
 ## Funktionsweise
 
@@ -48,7 +48,7 @@ Für jede betroffene Produktseite bietet LLM Optimizer Folgendes:
 
 - **KI-Analysevorschau** - Eine vollständige Liste der Kataloginformationen, die in der KI-Agentenansicht fehlen und warum sie für die LLM-gesteuerte Produkterkennung wichtig sind, einschließlich einer Liste wiederherstellbarer Datenpunkte wie Produktvarianten, Größenoptionen, Materialspezifikationen und Kompatibilitätsdetails.
 
-Die Fehlerbehebung erfolgt mit [Optimieren bei Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge) - der Edge-basierten Bereitstellungsfunktion von Adobe, die eine vollständig vorgerenderte, KI-freundliche HTML-Momentaufnahme für LLM-Benutzeragenten auf CDN-Ebene bereitstellt. Dadurch werden alle zuvor ausgeblendeten Katalogdaten (einschließlich Produktvarianten, technischen Spezifikationen und Funktionsdetails) wiederhergestellt, ohne den Commerce-Katalog oder die für Menschen sichtbare Storefront-Benutzeroberfläche zu berühren.
+Die Fehlerbehebung erfolgt mit [Optimieren bei Edge](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge) - der Edge-basierten Bereitstellungsfunktion von Adobe, die eine vollständig vorgerenderte, KI-freundliche HTML-Momentaufnahme für LLM-Benutzeragenten auf CDN-Ebene bereitstellt. Dadurch werden alle zuvor ausgeblendeten Katalogdaten (einschließlich Produktvarianten, technischen Spezifikationen und Funktionsdetails) wiederhergestellt, ohne den Commerce-Katalog oder die für Menschen sichtbare Storefront-Benutzeroberfläche zu berühren.
 
 ![URLs mit Vorschlagstabelle](/help/dashboards/opportunities/assets/enrich-product-detail-pages-suggestions.png)
 
@@ -74,7 +74,7 @@ Die Optimierung wird ausschließlich KI-Benutzeragenten über die CDN-Edge-Ebene
 
 Wenn Ihre Commerce-Instanz noch nicht mit LLM Optimizer verbunden ist, werden Sie zur Verbindungseinrichtung weitergeleitet, bevor Anreicherungen angewendet werden können.
 
-Falls Sie das Onboarding noch nicht abgeschlossen haben, gelangen Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess. Ausführliche Informationen zur Funktionsweise von „Optimize at Edge“, zu den unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimize at Edge](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
+Falls Sie das Onboarding noch nicht abgeschlossen haben, gelangen Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess. Ausführliche Informationen zur Funktionsweise von „Optimize at Edge“, zu den unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimize at Edge](https://experienceleague.adobe.com/de/docs/llm-optimizer/using/resources/optimize-at-edge/overview#what-is-optimize-at-edge).
 
 ![Dialogfeld „In Edge bereitstellen“](/help/dashboards/opportunities/assets/enrich-product-detail-pages-deploy.png)
 
