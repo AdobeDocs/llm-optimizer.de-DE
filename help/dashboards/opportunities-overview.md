@@ -14,9 +14,9 @@ subfeature_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1227
+source-wordcount: 1225
 ht-degree: 56%
 
 ---
@@ -28,7 +28,7 @@ Optimierungsmöglichkeiten sind automatisch ermittelte Erkenntnisse und geben an
 
 Zu diesen Optimierungen gehören Fehlerbehebungen auf der Seite (Hinzufügen strukturierter Inhalte, Kanoniken oder Zusammenfassungen), technische Anpassungen (Aufheben der Blockierung von KI-Crawlern oder Beheben von Fehlern) und die Beeinflussung von Inhalten auf autoritativen Websites von Drittanbietern. Wenn Sie diese Optimierungsmöglichkeiten berücksichtigen, wird Ihre Marke genau repräsentiert und mit höherer Wahrscheinlichkeit in generativen Antworten zitiert.
 
-![Optimierungsmöglichkeiten](/help/dashboards/assets/oport.png)
+<!--![Optimization opportunities](/help/dashboards/assets/oport.png)-->
 
 ## Dashboard „Möglichkeiten“
 

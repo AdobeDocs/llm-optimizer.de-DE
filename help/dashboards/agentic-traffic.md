@@ -15,19 +15,21 @@ subfeature_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+source-git-commit: a5bfae0a2fecc48f8deb80394817002cfb7c1a32
 workflow-type: tm+mt
-source-wordcount: 1407
-ht-degree: 100%
+source-wordcount: 1254
+ht-degree: 97%
 
 ---
 
 
 # Agent-basierter Traffic {#agentic-traffic}
 
-Das Dashboard „Agent-basierter Traffic“ zeigt, wie AI Agents (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agents anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie die **CDN-Protokollweiterleitung** konfigurieren, um Metriken anzeigen zu können. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
+Das Dashboard „Agent-basierter Traffic“ zeigt, wie AI Agents (Crawler und Chatbots) mit Ihrer Site interagieren. Mithilfe dieser Ansicht können Sie die Gesamtzahl der Anfragen und allgemeine leistungsbezogene Metriken verfolgen. Sie können auch die Verteilung des Traffics auf Märkte, Kategorien, Seiten und Agents anzeigen. Die von diesem Dashboard verwendeten Daten stammen aus den CDN-Protokollen. Daher müssen Sie die **CDN-Protokollweiterleitung** konfigurieren, um Metriken anzeigen zu können. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können. Navigieren Sie zu **Agent Traffic** und wählen Sie die Site aus, für die Sie die Agentenverkehrseinblicke anzeigen möchten.
 
-![Traffic-Verteilung](/help/dashboards/assets/ag-main.png)
+![Agent-basierter Traffic – Site-Auswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
+
+<!-- ![Traffic Distribution](/help/dashboards/assets/ag-main.png)-->
 
 Diese Seite beschreibt Folgendes:
 
@@ -38,44 +40,15 @@ Diese Seite beschreibt Folgendes:
 * [Elemente mit Zunahme und Abnahme](#top-bottom-movers)
 * [Benutzer-Agent- und URL-Leistungsanalyse](#user-url-performance)
 
-Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Agent-basierter Traffic** und wählen Sie die Site aus, für die Sie die Erkenntnisse zu Agent-basiertem Traffic anzeigen möchten.
-
-![Agent-basierter Traffic – Site-Auswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/agentic-traffic-dashboard.png)
-
 ## CDN-Protokollweiterleitung {#cdn-setup}
 
 Ohne **CDN-Protokollweiterleitung** bleibt das Dashboard „Agent-basierter Traffic“ leer. Damit Agent-basierte Interaktionen angezeigt werden können, müssen Sie die **CDN-Protokollweiterleitung** konfigurieren.
 
-### Kundenkonfiguration (klassische Navigation)
-
-Bei der ersten Anmeldung wird eine Meldung angezeigt, wie in der Abbildung unten dargestellt.
-
-![CDN-Einrichtung](/help/dashboards/assets/ag-log-forward1.png)
-
-Wählen Sie **Zur Konfiguration wechseln** aus. Sie navigieren dann automatisch zur Registerkarte **CDN-Konfiguration** im [Dashboard „Kundenkonfiguration“](/help/dashboards/customer-configuration.md).
-
-![CDN-Einrichtung: Integrieren](/help/dashboards/assets/ag-log-forward2.png)
-
-Wählen Sie auf dieser Registerkarte die Option **CDN integrieren** aus. Daraufhin wird das Fenster mit CDN-Anbietern angezeigt.
-
-<!-- [CDN Provider](/help/dashboards/assets/ag-log-forward3.png)-->
-Im Fenster **CDN-Anbieter integrieren**:
-
-1. Wählen Sie Ihren CDN-Anbieter aus (z. B. „Akamai“, „Von Adobe verwaltetes Fastly“, „Fastly“, „AWS Cloudfront“, „Azure CDN“, „Cloudflare“ oder „Sonstige“).
-2. Klicken Sie auf **Integrieren**, um die Protokollweiterleitung zu aktivieren.
-
-Wenn Sie **Sonstige** auswählen, müssen Sie sich an llmo-now@adobe.com wenden, um Hilfe zu erhalten.
-
->[!NOTE]
->Einzelheiten zur Protokollweiterleitung bei Verwendung eines kundenseitig verwalteten CDN (BYOCDN) finden Sie unter [BYOCDN-Protokollweiterleitung – Überblick](/help/overview/log-forwarding/log-forwarding-overview.md)
-
-Nach der Aktivierung werden Protokolle aufgenommen und Metriken wie Gesamtanzahl der Agent-basierten Interaktionen, Erfolgsrate, Treffer nach Markt, Benutzer-Agent-Analysen und Leistung auf URL-Ebene im Dashboard angezeigt.
-
-### Markenorientierte Oberfläche
-
-Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, können Sie Informationen zur CDN-Protokollweiterleitung hinzufügen, indem sie zu **Markenverwaltung** navigieren und auf das Label **CDN** klicken.
+Sie können Informationen zur CDN-Protokollweiterleitung hinzufügen, indem Sie zu **Brands Management** navigieren und auf die **CDN**-Beschriftung klicken.
 
 ![Markenverwaltung – CDN-Protokollweiterleitung](/help/assets/brand-centric-experience/brands-management-cdn.png)
+
+Einzelheiten zur Protokollweiterleitung bei Verwendung eines kundenseitig verwalteten CDN (BYOCDN) finden Sie unter [BYOCDN-Protokollweiterleitung – Überblick](/help/overview/log-forwarding/log-forwarding-overview.md)
 
 LLM Optimizer verarbeitet eine Teilmenge der Felder aus den CDN-Protokollen. Auch wenn die Rohnamen der Protokollfelder je nach CDN-Anbieter variieren, werden sie normalisiert und wie folgt dargestellt:
 
