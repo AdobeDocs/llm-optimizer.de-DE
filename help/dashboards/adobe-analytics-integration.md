@@ -99,7 +99,7 @@ Die Sichtbarkeit der KI ist nur ein Teil der Geschichte. Um zu verstehen, ob Ihr
 
 In diesem Video wird die Ansicht **Geschäftsauswirkungen** vorgestellt, die LLM Optimizer mit Adobe Analytics kombiniert, um zu zeigen, wie sich KI-bezogener Traffic in Interaktion, Konversionen und Umsatz niederschlägt. So können Sie den wahren Wert Ihrer KI-Präsenz messen.
 
->[!VIDEO](https://video.tv.adobe.com/v/3492503/?learn=on){transcript=true}
+>[!VIDEO](https://video.tv.adobe.com/v/3492512/?captions=ger&learn=on){transcript=true}
 
 ## Funktionsweise {#how-it-works}
 
