@@ -1,19 +1,16 @@
 ---
 title: LLM Optimizer – Überblick
 description: Erfahren Sie, wie Adobe LLM Optimizer die Markensichtbarkeit in KI-gestützten Suchvorgängen erhöht. Verfolgen Sie Erwähnungen, Zitierungen und Erkenntnisse nach. Beginnen Sie noch heute mit der Optimierung für mehr Interaktionen und Einfluss.
-autotag-review: '2026-05-15T18:10:16.637Z'
-TQID: 'https://experienceleague.adobe.com/Nyv7-xOn8QaQPa3AWYjt1ld2c36N5Cadv37TFKjYeG0'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-topic_v2:
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+autotag-review: '2026-07-15T18:01:55.084Z'
+TQID: 'https://experienceleague.adobe.com/CLacB5dkUfEGpogS6f79CflqoSXpUtJmYLHmj53M2bs'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a080bb92-ba2a-4e53-ba60-f5184d1a9e9a
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 499
-ht-degree: 83%
+source-wordcount: 506
+ht-degree: 97%
 
 ---
 
@@ -63,9 +60,9 @@ Mit Adobe LLM Optimizer können Sie:
 
 **Markensichtbarkeit messen** – Verfolgen Sie nach, wann, wo und wie oft Ihre Marke in Ergebnissen von KI-gestützten Suchvorgängen erwähnt wird. Mit einer klaren Sichtbarkeitsbewertung und deren Benchmark im Zeitverlauf müssen Sie nicht mehr spekulieren.
 **Benchmark-Wettbewerber** - Erfahren Sie, wie Ihre Marke im Vergleich zu Mitbewerbern bei Generativmotoren abschneidet. Identifizieren Sie Lücken beim Share of Voice und entdecken Sie Wettbewerbsvorteile.
-**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemata) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt steigern.
-**Traffic-Auswirkungen von KI verfolgen** - Überwachen von Agentenverkehr (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion.
-**Team Collaboration aktivieren** - Dashboards freigeben, Besitzer für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, SEO- und Kommunikationsfunktionen verfolgt werden.
+**Umsetzbare Möglichkeiten entdecken** – Ermitteln Sie Möglichkeiten zur Verbesserung von Inhalten (z. B. häufig gestellte Fragen, Kurzfassungen, Schemata) und technischen Aspekten (Crawlability, Indizierungsprobleme), mit denen Sie Erwähnungen und Zitierungen direkt erhöhen.
+**Traffic-Auswirkungen von KI nachverfolgen** – Überwachen Sie Agent-basierten Traffic (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitierungen) auf Ihren eigenen Anwendungen. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion.
+**Zusammenarbeit im Team ermöglichen** – Geben Sie Dashboards frei, weisen Sie Prompts oder Kategorien Verantwortliche zu und stellen Sie sicher, dass die Sichtbarkeitsziele von Teams für Marketing, SEO und Kommunikation nachverfolgt werden.
 
 
 

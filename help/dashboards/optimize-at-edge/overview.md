@@ -2,23 +2,17 @@
 title: Optimize at Edge
 description: Erfahren Sie, wie Sie in LLM Optimizer Optimierungen am CDN-Edge bereitstellen können, ohne dass Authoring-Änderungen erforderlich sind.
 feature: Opportunities
-autotag-review: '2026-05-15T17:55:41.072Z'
-TQID: 'https://experienceleague.adobe.com/kMxoKtrfyzxIpLJP9nt-rq6GP37ICCNe4XienUKqDZE'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: 559e77adedb1a93215090441c93c2aa6dc664e5f
+autotag-review: '2026-07-15T18:10:00.249Z'
+TQID: 'https://experienceleague.adobe.com/nRq5punuSnNb4XXIJzkO1NGF66tsyN1rdt-O9dd8tmU'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021id: a6256a78-8814-462c-9627-86699b39cee1id: e0ec491f-fe51-42b6-801c-1c0dfcc0e64fid: fe92ae96-fc87-4fea-96a0-adc06310d4f4
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: e9001ce2-5245-4a8e-8601-dd958009072fid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: 2931
-ht-degree: 63%
+source-wordcount: 3147
+ht-degree: 67%
 
 ---
 
@@ -113,7 +107,7 @@ In der folgenden Tabelle sind Möglichkeiten aufgeführt, die das Agent-basierte
 
 Die Browser-Erweiterung [Content Visibility Checker](https://chromewebstore.google.com/detail/ai-content-visibility-che/jbjngahjjdgonbeinjlepfamjdmdcbcc) zeigt, auf wie viele Inhalte Ihrer Web-Seiten LLMs zugreifen können und was verborgen bleibt. Dieses Tool wurde als kostenloses und eigenständiges Diagnose-Tool entwickelt und erfordert keine Produktlizenz oder Einrichtung.
 
-Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/de/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
+Mit einem einzigen Klick können Sie die Maschinenlesbarkeit jeder Site bewerten. Sie können direkt vergleichen, was AI Agents bzw. menschliche Benutzende sehen, und abschätzen, wie viel Inhalt mithilfe von LLM Optimizer sichtbar gemacht werden könnte. Auf der Seite [Kann KI Ihre Website lesen?](https://business.adobe.com/blog/introducing-the-llm-optimizer-chrome-extension) finden Sie für weitere Informationen.
 
 ## Details zu einzelnen Möglichkeiten
 
@@ -121,8 +115,8 @@ In den folgenden Abschnitten finden Sie zusätzliche Details zu jeder von „Opt
 
 ### Inhaltssichtbarkeit wiederherstellen
 
-Diese Gelegenheit kennzeichnet Seiten, auf denen wichtige Inhalte für KI-Agenten aufgrund des Client-seitigen Renderings ausgeblendet sind. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der KI-Agent-Ansicht fehlen, Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die ausgeblendeten Inhalte wiederherzustellen. Wenn Sie diese Opportunity mit Optimieren in Edge bereitstellen, wird eine vorgerenderte, KI-optimierte Version der Seite LLM-Benutzeragenten bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne JavaScript auszuführen.
-Dadurch wird sichergestellt, dass die Seite zunächst für KI-Agenten vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf diese vorab gerenderte HTML angewendet.
+Diese Möglichkeit kennzeichnet Seiten, auf denen wichtige Inhalte aufgrund des Client-seitigen Renderings für AI Agents verborgen bleiben. Für jede identifizierte Seite wird genau angezeigt, welche Inhalte in der Ansicht des AI Agents fehlen. Sichtbarkeitslücken werden hervorgehoben und Sie können Änderungen direkt anwenden, um die verborgenen Inhalte sichtbar zu machen. Wenn Sie diese Möglichkeit mit „Optimize at Edge“ bereitstellen, wird den LLM-Benutzer-Agents eine vorab gerenderte KI-optimierte Version der Seite bereitgestellt, damit sie auf den vollständigen Kontext zugreifen können, ohne dass JavaScript ausgeführt werden muss.
+Dadurch wird sichergestellt, dass die Seite zunächst für AI Agents vollständig sichtbar ist. Zusätzliche Verbesserungen werden auf dieses vorab gerenderte HTML angewendet.
 
 >[!IMPORTANT]
 >Diese Vorab-Rendering-Funktion wird auf alle unten dargestellten Möglichkeiten bei der Bereitstellung mit „Optimize at Edge“ angewendet, um sicherzustellen, dass die Seite für AI Agents vollständig sichtbar ist.
@@ -139,7 +133,7 @@ Unter [Produktdetailseiten anreichern](/help/dashboards/opportunities/enrich-pro
 
 Diese Opportunity identifiziert Seiten mit hohem Traffic, die von knappen Zusammenfassungen und strukturierten Schlüsselpunkten profitieren können, sodass LLMs Ansprüche auf der Seite schnell verstehen können. Für jede Seite wird erkannt, wo eine Zusammenfassung am meisten benötigt wird, und es werden KI-generierte Zusammenfassungen (und ggf. Schlüsselpunkte) auf Seiten- oder Abschnittsebene vorgeschlagen, die auf vorhandenen Inhalten basieren. Bei der Bereitstellung von mit Optimieren auf Edge wird dieser Inhalt in die HTML eingefügt, die KI-Agenten abrufen, wodurch sich die Genauigkeit der Darstellung Ihrer Marke in KI-Antworten verbessert.
 
-Weitere [&#x200B; zu dieser Opportunity finden Sie &#x200B;](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
+Weitere [ zu dieser Opportunity finden Sie ](/help/dashboards/opportunities/add-llm-friendly-summaries.md) „LLM-freundliche Zusammenfassungen hinzufügen .
 
 ### Relevante häufig gestellte Fragen hinzufügen
 
@@ -231,7 +225,7 @@ Wenn Sie auf **Optimierungen bereitstellen** klicken, bevor Sie die erforderlich
 
 F: Was passiert, wenn der Inhalt an der Quelle aktualisiert wird?
 
-Wir bedienen die optimierte Version Ihrer Seite aus dem Cache, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle jedoch für **Content-Sichtbarkeit wiederherstellen** ändert, wird unser System automatisch aktualisiert, sodass KI-Agenten immer die aktuellsten Inhalte erhalten. Dies liegt daran, dass wir niedrige TTL-Einstellungen (Cache Time To Live) verwenden (in der Reihenfolge von Minuten), sodass jedes Inhaltsupdate auf Ihrer Site eine neue Optimierung innerhalb dieses Triggers ermöglicht. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, pausieren wir die Optimierung und markieren sie für eine menschliche Überprüfung, um zu verhindern, dass der Inhalt zwischen der für den Agenten sichtbaren Seite und der für den Menschen sichtbaren Seite verschoben wird.
+Wir stellen die optimierte Version Ihrer Seite aus dem Cache bereit, solange sich die zugrunde liegende Quellseite nicht geändert hat. Wenn sich die Quelle für **Content-Sichtbarkeit wiederherstellen** jedoch ändert, führt unser System automatisch eine Aktualisierung durch, sodass AI Agents stets den aktuellen Inhalt erhalten. Dies liegt daran, dass wir niedrige Werte für die Cache-TTL (Time To Live) verwenden (in der Größenordnung von Minuten) und innerhalb dieses Zeitfensters jede Inhaltsaktualisierung auf Ihrer Site eine neue Optimierung auslöst. Bei Inhaltsmöglichkeiten wie **LLM-freundliche Zusammenfassungen hinzufügen** überwacht LLM Optimizer die Quellseite auf Änderungen. Wenn eine Änderung erkannt wird, unterbrechen wir die Optimierung und kennzeichnen sie für eine menschliche Überprüfung, um Abweichungen beim Inhalt zwischen der für den Agent sichtbaren Seite und der für Menschen sichtbaren Seite zu verhindern.
 <!--As there is no universal TTL that fits every site, we can configure this TTL based on your cache invalidation rules to ensure both systems stay in sync.-->
 
 F. Ist „Optimize at Edge“ nur für Sites gedacht, die Adobe Edge Delivery Service (EDS) verwenden?

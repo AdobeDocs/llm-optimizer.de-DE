@@ -2,20 +2,17 @@
 title: Komplexe Inhalte vereinfachen
 description: Erfahren Sie, wie LLM Optimizer Seiten mit hohem Traffic mit hoher Kopierdichte identifiziert, die für KI-Agenten schwer zu interpretieren sind, und wie Sie mit Optimize bei Edge vereinfachten Text überprüfen und bereitstellen können.
 feature: Opportunities
-autotag-review: '2026-05-15T17:58:39.879Z'
-TQID: 'https://experienceleague.adobe.com/wO3ZY-fEgOi7cD4dq0kCltk-YJSD431bkA6-9PW42Lo'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-topic_v2:
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 564171851fdccee43afd233da143d66182464889
+autotag-review: '2026-07-15T18:04:55.581Z'
+TQID: 'https://experienceleague.adobe.com/uMK9qeAGMNrtvR0TYbeg8SIOKlwKf4L5NIE9ZgsJaUw'
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2: id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 785
-ht-degree: 1%
+ht-degree: 10%
 
 ---
 
@@ -24,7 +21,7 @@ ht-degree: 1%
 
 Die Opportunity zur Vereinfachung komplexer Inhalte identifiziert Seiten mit hohem Traffic-Aufkommen, auf denen dichter oder komplexer Text vorhanden ist, was die Interpretation wichtiger Informationen durch KI-Agenten erschwert. Es führt klarere, leichter zu scannende Versionen der vorhandenen Kopie ein, während die ursprüngliche Bedeutung erhalten bleibt. Auf diese Weise können Agenten wichtige Informationen zuverlässiger analysieren, zusammenfassen und extrahieren.
 
-Für jede betroffene URL können Sie Vorschläge für **Verbesserter Text** überprüfen, mit **Vorschau** vergleichen und dann mit [Optimieren in Edge) bereitstellen, &#x200B;](/help/dashboards/optimize-at-edge/overview.md) der Agent-Traffic klarere HTML-Informationen erhält, ohne dass Änderungen am Content Management System (CMS) erforderlich sind.
+Für jede betroffene URL können Sie Vorschläge für **Verbesserter Text** überprüfen, mit **Vorschau** vergleichen und dann mit [Optimieren in Edge) bereitstellen, ](/help/dashboards/optimize-at-edge/overview.md) der Agent-Traffic klarere HTML-Informationen erhält, ohne dass Änderungen am Content Management System (CMS) erforderlich sind.
 
 ## So wird das Problem behoben
 
@@ -52,7 +49,7 @@ Die Tabelle **URLs mit Vorschlägen** listet Seiten auf, auf denen vereinfachte 
 - **Erweitern Sie die Zeile** um **Verbesserter Text** Vorschläge für diese Seite anzuzeigen.
 - **Vorschau** des Vorher-Nachher-Vergleichs für agenten Traffic.
 - **Als behoben markieren** wenn Sie die Opportunity außerhalb von LLM Optimizer angesprochen haben.
-- **Ignorieren** nicht relevante Vorschläge.
+- **Ignorieren** Sie nicht relevante Vorschläge.
 
 **Ansichten** umfassen **Aktuelle**), **Feste Vorschläge** (Status **Optimiert** bei Bereitstellung) und **Ignorierte Vorschläge**. Sie können die Live-Bereitstellung mit **Live anzeigen** unter **Feste Vorschläge** überprüfen und jederzeit ein Rollback durchführen.
 
@@ -64,7 +61,7 @@ Wählen Sie die URLs oder Zeileneinträge aus, für **Sie** Kontrollkästchen ve
 
 Wenn Sie bereit sind, am Edge zu veröffentlichen, klicken Sie auf **Optimierungen bereitstellen**. In **Dialogfeld „Für Edge bereitstellen** werden die ausgewählten URLs und Optimierungsdetails aufgelistet. Überprüfen Sie die Liste und wählen Sie **Bereitstellen** oder **Abbrechen**.
 
-![Dialogfeld „Für Edge bereitstellen“](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
+![Dialogfeld „In Edge bereitstellen“](/help/dashboards/opportunities/assets/simplify-complex-content-deploy-dialog.png)
 
 Nach erfolgreicher Bereitstellung bestätigt **Bereitstellung abgeschlossen** wie viele Optimierungen aktiviert wurden, und stellt fest, dass es möglicherweise einige Zeit dauern kann, bis KI-Agenten die Aktualisierung indizieren. Schließen Sie das Dialogfeld und öffnen Sie **Behobene Vorschläge**, um den Status zu überprüfen.
 
@@ -72,7 +69,7 @@ Nach erfolgreicher Bereitstellung bestätigt **Bereitstellung abgeschlossen** wi
 
 >[!NOTE]
 >
->Für die Bereitstellung der Optimierungen muss der Onboarding-Prozess „Optimieren bei Edge&quot; abgeschlossen werden. Wenn Sie noch nicht eingestiegen sind, werden Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess weitergeleitet. Ausführliche Informationen zur Funktionsweise von „Optimieren bei Edge&quot;, zu unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimieren bei Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Das Bereitstellen von Optimierungen erfordert den Abschluss des Onboarding-Prozesses „Optimize at Edge“. Falls Sie das Onboarding noch nicht abgeschlossen haben, gelangen Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess. Ausführliche Informationen zur Funktionsweise von „Optimize at Edge“, zu den unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Behobene Vorschläge und Live-Ansicht
 
@@ -100,6 +97,6 @@ Nach Abschluss des Vorgangs wird eine Zusammenfassung **Erfolgreich zurückgeset
 
 ![Rollback abgeschlossen - Rollback erfolgreich durchgeführt](/help/dashboards/opportunities/assets/simplify-complex-content-rollback-confirm.png)
 
-## In der Demo ausprobieren
+## Ausprobieren in der Demo
 
 Erfahren Sie mehr über den Workflow zur Vereinfachung komplexer Inhalte in der [Frescopa-](https://play.llmo.now/org/demo-org)&quot;.
