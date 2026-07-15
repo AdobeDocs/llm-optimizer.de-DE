@@ -4,20 +4,14 @@ description: Erfahren Sie, wie Sie mit dem Dashboard „Markenpräsenz“ analys
 feature: Brand Presence
 autotag-review: '2026-05-15T17:37:11.161Z'
 TQID: 'https://experienceleague.adobe.com/sDPtwR-uMfeIYp5K93gzYF27qYgLHBwhyajj9hGVB7Q'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: a0b5a505-2fd7-4c3d-b61c-b557fb6f0558id: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: ab7fdb62-bd53-4cfd-8c2c-169f7e47f20e
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d547cf05e232756afacbba7d942a27578839da98
 workflow-type: tm+mt
-source-wordcount: 1346
-ht-degree: 100%
+source-wordcount: 1335
+ht-degree: 99%
 
 ---
 
@@ -26,7 +20,11 @@ ht-degree: 100%
 
 Das Dashboard „Markenpräsenz“ bietet einen detaillierten Überblick darüber, wie Ihre Marke in KI-generierten Antworten wahrgenommen wird. Es zeigt an, wo, wie oft und in welchem Kontext Ihre Marke erwähnt wird. Sie können das Dashboard verwenden, um die Sichtbarkeit zu messen, Zitierungen zu verfolgen und Sentiment-Trends zu erkunden. Das Dashboard ist in mehrere Abschnitte unterteilt, die jeweils unterschiedliche Erkenntnisse bereitstellen. Es gibt auch anpassbare Filter, mit denen Sie die angezeigten Daten verfeinern können.
 
-![Markenpräsenz – Überblick](/help/dashboards/assets/brand-main.png)
+Navigieren Sie zu **Markenpräsenz**. Wählen Sie im Dropdown-Menü „Marke“ entweder die zu analysierende Marke aus oder wählen Sie **Alle Marken** aus, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
+
+![Markenpräsenz mit Markenauswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
+
+<!-- ![Brand Presence overview](/help/dashboards/assets/brand-main.png)-->
 
 Diese Seite beschreibt Folgendes:
 
@@ -35,10 +33,6 @@ Diese Seite beschreibt Folgendes:
 * [Vergleich mit anderen](##others-comparison)
 * [Sentiment-Trend](#sentiment-trend)
 * [Datenerkenntnisse](#data-insights)
-
-Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenpräsenz**. Wählen Sie im Dropdown-Menü „Marke“ entweder die zu analysierende Marke aus oder wählen Sie **Alle Marken** aus, um die Sichtbarkeit für Ihre gesamte Markenpalette zu überprüfen.
-
-![Markenpräsenz mit Markenauswahl (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/brand-presence-brand-centric.png)
 
 ## Filter {#filters}
 
