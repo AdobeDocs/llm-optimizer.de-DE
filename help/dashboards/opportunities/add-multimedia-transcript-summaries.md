@@ -2,20 +2,25 @@
 title: Hinzufügen von Multimedia-Transkriptzusammenfassungen
 description: Erfahren Sie, wie LLM Optimizer Seiten identifiziert, auf denen wichtige Informationen ohne maschinenlesbaren Text in Videos eingebettet sind, und wie Sie mit Optimize bei Edge KI-generierte Transkriptzusammenfassungen überprüfen und bereitstellen können.
 feature: Opportunities
-autotag-review: '2026-05-15T17:28:28.569Z'
-TQID: 'https://experienceleague.adobe.com/LiXMsMq6D08ciXR85aQBNDpmR5Csiv-5b9kv3lfTpDc'
+autotag-review: '2026-07-15T16:47:13.112Z'
+TQID: 'https://experienceleague.adobe.com/lsMTVS4cFaGnhZonULQE4MB31bMdkzxoKA62o4IBcz0'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2:
+  - id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 775
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -56,7 +61,7 @@ Die Tabelle **URLs mit Vorschlägen** listet Seiten auf, auf denen das Transkrip
 - **Erweitern Sie die Zeile** um den **Inhaltspatch**-Text, **Implementierungsdetails** (einschließlich des geplanten DOM-Vorgangs und der CSS-Auswahl) und **Begründung** für die Änderung anzuzeigen.
 - **Vorschau** des Vorher-Nachher-Vergleichs für agenten Traffic.
 - **Als behoben markieren** wenn Sie die Opportunity außerhalb von LLM Optimizer angesprochen haben.
-- **Ignorieren** nicht relevante Vorschläge.
+- **Ignorieren** Sie nicht relevante Vorschläge.
 
 Sie können den Patch-Text aus der Zeile bearbeiten, wenn er unterstützt wird (Bleistiftsymbol), und dann die Zeilen-Kontrollkästchen verwenden, um auszuwählen, was bereitgestellt werden soll. Die Fußzeile zeigt an, wie viele ausgewählt sind, und bietet **Als behoben markieren**, **Vorschläge ignorieren** und **Optimierungen bereitstellen**.
 
@@ -72,7 +77,7 @@ Nach erfolgreicher Bereitstellung wird mit **Bereitstellung abgeschlossen** best
 
 >[!NOTE]
 >
-> Für die Bereitstellung der Optimierungen muss der Onboarding-Prozess „Optimieren bei Edge&quot; abgeschlossen werden. Wenn Sie noch nicht eingestiegen sind, werden Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess weitergeleitet. Ausführliche Informationen zur Funktionsweise von „Optimieren bei Edge&quot;, zu unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimieren bei Edge](/help/dashboards/optimize-at-edge/overview.md).
+> Das Bereitstellen von Optimierungen erfordert den Abschluss des Onboarding-Prozesses „Optimize at Edge“. Falls Sie das Onboarding noch nicht abgeschlossen haben, gelangen Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess. Ausführliche Informationen zur Funktionsweise von „Optimize at Edge“, zu den unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Behobene Vorschläge und Live-Ansicht
 
@@ -96,6 +101,6 @@ Nach Abschluss des Vorgangs wird eine Zusammenfassung **Erfolgreich zurückgeset
 
 ![Rollback abgeschlossen - Rollback erfolgreich durchgeführt](/help/dashboards/opportunities/assets/add-multimedia-transcript-summaries-rollback-confirm.png)
 
-## In der Demo ausprobieren
+## Ausprobieren in der Demo
 
 Erkunden Sie den Workflow „Zusammenfassungen von Multimedia-Transkripten hinzufügen“ in der [Frescopa-Demo](https://play.llmo.now/org/demo-org).

@@ -2,10 +2,21 @@
 title: Google Analytics-Integration
 description: Erfahren Sie, wie Sie Google Analytics 4 mit LLM Optimizer verbinden, um KI-gesteuerte Erkennung, Site-Interaktion und Geschäftsergebnisse im Referral Traffic-Dashboard zu messen.
 feature: Referral Traffic
-source-git-commit: 368b3c1ee79660ede0c4bf9824f299d2e801c8b2
+autotag-review: '2026-07-15T17:51:53.586Z'
+TQID: 'https://experienceleague.adobe.com/SvWn3W6hpVsWNzfWdJFvPs94lwlKX4ufjjcXKM-6xIc'
+product_v2:
+  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2:
+  - id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2:
+  - id: f5a6cbd1-8a9a-4c79-a6db-ba46537f516e
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
-source-wordcount: '1169'
-ht-degree: 1%
+source-wordcount: 1169
+ht-degree: 17%
 
 ---
 
@@ -30,7 +41,7 @@ Sie **kein Google** Cloud-Projekt erstellen, ein Service-Konto generieren, einen
 
 ## Verbinden von GA4 mit dem Referral Traffic-Dashboard {#connect}
 
-Der Verbindungsfluss beginnt wie folgt vom [Referral Traffic](/help/dashboards/referral-traffic.md)-Dashboard:
+Der Verbindungsfluss beginnt im Dashboard [Referral Traffic](/help/dashboards/referral-traffic.md) wie folgt:
 
 1. Öffnen Sie **Referral Traffic** in LLM Optimizer.
 
@@ -52,12 +63,12 @@ Der Verbindungsfluss beginnt wie folgt vom [Referral Traffic](/help/dashboards/r
 
 1. Kehren Sie zur Registerkarte LLM Optimizer zurück. Die Registerkarte Analytics erkennt die abgeschlossene Verbindung automatisch und die GA4-Karte zeigt den Status **Verbunden** an.
 
-### Nach dem Verbinden {#after-connect}
+### Nach Herstellen der Verbindung {#after-connect}
 
 Nachdem GA4 mit LLM Optimizer verbunden ist, geschieht Folgendes:
 
-* LLM Optimizer füllt die **letzten vier vollen Kalenderwochen** und die **aktuelle Kalenderwoche bis heute** auf.
-* Nach der Aufstockung werden die Daten **täglich** mit einem Pull des **ganzen Vortags** aktualisiert.
+* LLM Optimizer stockt die **letzten vier vollen Kalenderwochen** und die **aktuelle Kalenderwoche bis heute** auf.
+* Nach der Aufstockung werden die Daten **täglich** über einen Abruf des **ganzen Vortags** aktualisiert.
 
 >[!NOTE]
 >
@@ -71,7 +82,7 @@ Wenn Sie die Verbindung wiederherstellen (z. B. um entweder das Google-Konto ode
 
 Die Integration verwendet den standardmäßigen, von Benutzenden delegierten OAuth 2.0-Fluss von Google. LLM Optimizer speichert ein Aktualisierungstoken, das sich auf Ihre ausgewählte GA4-Eigenschaft bezieht, und dieses Token ermöglicht LLM Optimizer, die GA4-Daten-API in Ihrem Namen aufzurufen (mit schreibgeschütztem Zugriff), bis Sie es von Ihrem Google-Konto widerrufen.
 
-### So wird LLM-Traffic identifiziert
+### Identifizierung von LLM-Traffic
 
 LLM Optimizer fragt GA4 nur für die Sitzungen an, die GA4 selbst einer LLM-Plattform zuordnet. Heute sind dies Sitzungen, deren `sessionSourceMedium` einem von `chatgpt`, `gemini.google.com`, `copilot.microsoft.com`, `claude` oder `perplexity` entspricht. Die Liste der unterstützten LLM-Quellen wird von Adobe verwaltet und kann im Laufe der Zeit erweitert werden.
 
@@ -113,7 +124,7 @@ Keine Benutzerkennungen (Google-Client-ID, IP-Adresse, Geräte-ID), keine Zeilen
 
 F.: Ist die GA4-Integration während der Testphase verfügbar?
 
-Nein. Die Integration ist nur für Kunden von Paid LLM Optimizer verfügbar.
+Nein. Die Integration ist nur für Kundschaften des kostenpflichtigen LLM Optimizer-Angebots verfügbar.
 
 F.: Muss ich ein Google Cloud-Projekt oder -Service-Konto erstellen?
 
@@ -129,13 +140,13 @@ Ihr Unternehmen autorisiert LLM Optimizer, die GA4-Daten-API für die ausgewähl
 
 F: Wie oft werden die Daten aktualisiert?
 
-Daten werden aktualisiert **täglich** (voller Vortag nach Abschluss der Aufstockung).
+Daten werden **täglich** aktualisiert (ganzer Vortag nach Abschluss der Aufstockung).
 
 F.: Werden in LLM Optimizer Rohdaten auf Ereignisebene gespeichert?
 
 Nein. Nur **aggregierte** Metriken werden zum Verständnis von Traffic-Mustern und -Trends verwendet.
 
-F.: Werden vollständige URLs, Abfragezeichenfolgen oder Seiteninhalte gespeichert?
+F: Werden vollständige URLs, Abfragezeichenfolgen oder Seiteninhalte gespeichert?
 
 Landingpage-Pfade werden als Teil des Standardberichts aufgenommen. Abfragezeichenfolgen und Seiteninhalte werden für diese Integration nicht aufgenommen.
 
@@ -145,15 +156,15 @@ Nein.
 
 F: Wie lange werden Daten aufbewahrt?
 
-Derzeit werden Daten unbegrenzt gespeichert.
+Derzeit werden Daten auf unbestimmte Zeit gespeichert.
 
-F.: Werden Daten während der Übertragung und im Ruhezustand verschlüsselt?
+F: Werden Daten während der Übertragung und im Ruhezustand verschlüsselt?
 
-Derzeit werden Daten während der Übertragung verschlüsselt, nicht im Ruhezustand. Dies kann sich in zukünftigen Updates ändern.
+Derzeit werden Daten während der Übertragung verschlüsselt, nicht im Ruhezustand. Dies kann sich im Rahmen zukünftiger Updates ändern.
 
-F.: Werden historische Daten aufgestockt?
+F: Werden historische Daten aufgestockt?
 
-Ja. Nach einer erfolgreichen Einrichtung werden die letzten vier vollen Kalenderwochen und die aktuelle Kalenderwoche aufgestockt. Siehe auch [Nach dem Verbinden](#after-connect).
+Ja. Nach einer erfolgreichen Einrichtung werden die letzten vier vollen Kalenderwochen und die aktuelle Kalenderwoche aufgestockt. Weitere Informationen finden Sie unter [Nach Herstellen der Verbindung](#after-connect).
 
 F.: Kann ich die Verbindung trennen oder den Zugriff widerrufen?
 

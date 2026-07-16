@@ -2,20 +2,24 @@
 title: Inhaltsverzeichnis hinzufügen
 description: Erfahren Sie, wie LLM Optimizer Seiten mit hohem Traffic identifiziert, denen eine klare Navigationsstruktur für KI-Agenten fehlt, und wie Sie mit Optimize ein Inhaltsverzeichnis unter Edge überprüfen und bereitstellen können.
 feature: Opportunities
-autotag-review: '2026-05-15T17:29:21.334Z'
-TQID: 'https://experienceleague.adobe.com/A-Oxmmn-Cb4l9-iVx1TAKxvBTEOxRIAnRe1w1PqF6OI'
+autotag-review: '2026-07-15T16:47:42.882Z'
+TQID: 'https://experienceleague.adobe.com/x-7FiZKCLMmEfm1x2lQNtfOd4su1MyGLrcAtLnjpaqw'
 product_v2:
   - id: d830747e-f8f3-4fce-8eff-d53b333b1639
 feature_v2:
-  - id: c0713b97-4af8-4c41-b742-5afcc6ced468
-subfeature_v2:
   - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
+subfeature_v2:
+  - id: bbfc1b77-44c5-4fe8-b65f-ec160fe0d021
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 7a92587197cf6a9eec6b01bd4eaeeaf1194d3088
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
 workflow-type: tm+mt
 source-wordcount: 655
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -51,7 +55,7 @@ Bei **Aktuelle**) haben Sie für jede URL folgende Möglichkeiten:
 - **Erweitern Sie die**, um das vorgeschlagene Inhaltsverzeichnis zu überprüfen (analysiert aus auf der Seite angezeigten Überschriften und als verankerte Einträge präsentiert).
 - **Vorschau** ein Vor- und Nachvergleich.
 - **Als behoben markieren** wenn Sie die Opportunity außerhalb von LLM Optimizer angesprochen haben.
-- **Ignorieren** nicht relevante Vorschläge.
+- **Ignorieren** Sie nicht relevante Vorschläge.
 
 Die Vorschläge sind in **Aktuelle Vorschläge**, **Feste Vorschläge** und **Ignorierte Vorschläge** unterteilt, was im Einklang mit anderen Opportunities von Edge optimieren steht.
 
@@ -65,7 +69,7 @@ Nach erfolgreicher Bereitstellung wird mit **Bereitstellung abgeschlossen** best
 
 >[!NOTE]
 >
->Für die Bereitstellung der Optimierungen muss der Onboarding-Prozess „Optimieren bei Edge&quot; abgeschlossen werden. Wenn Sie noch nicht eingestiegen sind, werden Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess weitergeleitet. Ausführliche Informationen zur Funktionsweise von „Optimieren bei Edge&quot;, zu unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimieren bei Edge](/help/dashboards/optimize-at-edge/overview.md).
+>Das Bereitstellen von Optimierungen erfordert den Abschluss des Onboarding-Prozesses „Optimize at Edge“. Falls Sie das Onboarding noch nicht abgeschlossen haben, gelangen Sie durch Klicken auf **Optimierungen bereitstellen** zum Onboarding-Prozess. Ausführliche Informationen zur Funktionsweise von „Optimize at Edge“, zu den unterstützten CDN-Anbietern und zum Onboarding-Prozess finden Sie auf der Seite [Optimize at Edge](/help/dashboards/optimize-at-edge/overview.md).
 
 ### Behobene Vorschläge und Live-Ansicht
 
