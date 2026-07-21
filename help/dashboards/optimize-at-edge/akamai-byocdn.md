@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
 workflow-type: tm+mt
-source-wordcount: 810
-ht-degree: 98%
+source-wordcount: 795
+ht-degree: 76%
 
 ---
 
@@ -119,58 +119,44 @@ Festlegen des `x-forwarded-host`-Headers auf `{{builtin.AK_HOST}}`
 
 **9. Site-Failover**
 
-Die Site-Failover-Konfiguration besteht aus zwei Teilen: dem Failover-Verhalten (konfiguriert innerhalb der Haupt-Routing-Regel von „optimize-at-edge“) und einer separaten Header-Regel für den Failover-Test.
+Die Site-Failover-Konfiguration besteht aus zwei Teilen: einem Failover-Verhalten innerhalb der Haupt-Routing-Regel von Optimize at Edge und einer gleichrangigen Regel, die eine Antwort-Kopfzeile hinzufügt, wenn ein Fallback erfolgt.
 
-**9a. Verhalten bei Site-Failover (innerhalb der Haupt-Routing-Regel von „optimize-at-edge“)**
+**9a. Konfigurieren des Site-Failover-Verhaltens**
 
-Konfigurieren Sie innerhalb der Haupt-Routing-Regel das Verhalten bei Site-Failover und das erweiterte XML-Snippet wie folgt:
+Erstellen Sie innerhalb der Routingregel „Optimieren bei Edge&quot; eine untergeordnete Regel mit dem Namen **Site-Failover-Verhalten**. Setzen Sie ihn auf **Übereinstimmung mit &quot;**&quot; und fügen Sie die folgenden Kriterien hinzu:
 
->[!IMPORTANT]
->
->Der XML-Ausschnitt in diesem Schritt erfordert das **erweiterte** Verhalten. In einigen Akamai-Umgebungen ist dieses Verhalten bei der Selbstbearbeitung nicht verfügbar. Falls die Option **Erweitert** nicht angezeigt wird, wenden Sie sich bitte an Ihr Akamai-Konto-Team oder den Akamai-Support, um die erforderliche Konfiguration zu aktivieren.
+* **Antwort-Status-**) liegt im Bereich `400` bis `599`.
+* **Ursprungs-Timeout** ist `Yes`.
 
 ![Site-Failover](/help/assets/optimize-at-edge/akamai-step9-failover.png)
 
-Fügen Sie den Anfrage-Header `x-edgeoptimize-request` mit dem Wert `fo` über Advanced XML hinzu:
+![Konfigurieren des Site-Failover-Verhaltens](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-```
-<forward:availability.fail-action2>
-<add-header>
-<status>on</status>
-<name>x-edgeoptimize-request</name>
-<value>fo</value>
-</add-header>
-</forward:availability.fail-action2>
-```
-
-![Failover-Verhalten](/help/assets/optimize-at-edge/akamai-step9-failover-behaviors.png)
-
-**9b. Header-Regel für Failover-Test (gleichrangige Regel)**
+**9b. Konfigurieren der Header-Regel für die Failover-Antwort**
 
 >[!IMPORTANT]
 >
 >Erstellen Sie die Regel **EdgeOptimize Failover – Test-Header** als **gleichrangige Regel** (auf derselben Ebene) der Routing-Regeln – **nicht** in diese verschachtelt. In der Regelstruktur des Akamai Property Manager sollte die Hierarchie wie folgt aussehen:
 >
 >```
->▼ Parent Rule
->   ▶ Optimize at Edge Routing     ← routing rule
->       EdgeOptimize Failover - Test Header       ← sibling, same level
+>▼ Optimize at Edge                         ← parent rule group
+>   ▼ Optimize at Edge Routing               ← routing child
+>       Site Failover Behavior                 ← nested child
+>   EdgeOptimize Failover - Test Header      ← sibling of routing child
 >```
 >
->Dadurch wird sichergestellt, dass die Header-Regel des Failover-Tests für **alle** Routing-Regeln und nicht nur für eine bewertet wird.
+>Die gleichrangige Regel wird ausgewertet, wenn Akamai die fehlgeschlagene Anfrage für den ursprünglichen Host-Namen neu erstellt. Das API-Schlüsselkriterium in der Routing-Regel verhindert, dass diese Anfrage erneut an Edge Optimize gesendet wird.
 >
 >Stellen Sie außerdem sicher, dass die Regel **Optimize at Edge Routing** nicht durch eine spätere übereinstimmende Regel überschrieben wird, die den Ursprung, das Caching-Verhalten oder die Cache-ID für dieselben Anfragen ändert. Wenn eine andere übereinstimmende Regel diese Verhaltensweisen zurücksetzt, funktionieren Routing oder Caching der Art „Optimize at Edge“ möglicherweise nicht wie erwartet.
 
-Wenn der Wert des Anfrage-Headers `x-edgeoptimize-request` gleich `fo` ist, legen Sie den ausgehenden Antwort-Header `x-edgeoptimize-fo` auf `true` fest.
+![Konfigurieren der Header-Regel für die Failover-Antwort](/help/assets/optimize-at-edge/akamai-step9-failover-header.png)
 
-![Failover-Regeln](/help/assets/optimize-at-edge/akamai-step9-failover-rules.png)
-
-Site-Failover stellt sicher, dass die Anfrage automatisch an Ihren Standardursprung zurückgeleitet wird, wenn Edge Optimize einen `4XX`- oder `5XX`-Fehler zurückgibt, sodass der bzw. die Endbenutzende weiterhin eine Antwort erhält.
+Site Failover stellt sicher, dass Akamai die Anfrage für Ihren ursprünglichen Hostnamen neu erstellt, wenn Edge Optimize einen Fehler zurückgibt oder eine Zeitüberschreitung auftritt, sodass der Besucher weiterhin die normale Antwort der Site erhält.
 
 | Szenario | Verhalten |
 | --- | --- |
-| Edge Optimize gibt `2XX` zurück | Der Client erhält eine optimierte Antwort. |
-| Edge Optimize gibt `4XX` oder `5XX` zurück | Die Anfrage wird an den Standardursprung zurückgeleitet. |
+| Edge Optimize gibt `2XX` oder `3XX` zurück | Die optimierte Antwort wird bereitgestellt. `x-edgeoptimize-request-id` ist vorhanden. |
+| Edge Optimize gibt `4XX`-`5XX` zurück oder die Herkunft überschreitet das Zeitlimit | Die Anfrage wird für den ursprünglichen Host-Namen neu erstellt. Die Antwort enthält `x-edgeoptimize-fo: true`. |
 
 **Überprüfen des Setups**
 
@@ -208,7 +194,7 @@ Die Antwort sollte **nicht** den `x-edgeoptimize-request-id`-Header enthalten. D
 | Kopfzeile | Bot-Traffic (optimiert) | Menschlicher Traffic (nicht betroffen) |
 |---|---|---|
 | `x-edgeoptimize-request-id` | Vorhanden – enthält eine eindeutige Anfrage-ID | Abwesend |
-| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `1`) | Abwesend |
+| `x-edgeoptimize-fo` | Nur vorhanden, wenn Failover stattgefunden hat (Wert: `true`) | Abwesend |
 
 {{verify-routing-status-in-ui}}
 
