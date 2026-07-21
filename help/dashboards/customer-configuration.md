@@ -4,26 +4,15 @@ description: Verwenden Sie die Kundenkonfiguration, um festzulegen, wie Ihre Mar
 feature: Customer Configuration
 autotag-review: '2026-07-15T17:48:20.742Z'
 TQID: 'https://experienceleague.adobe.com/BvaFF-pMzojy1TNZvCQQRbcT5c5AQ75OqjclmDi14Z0'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
+source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
 workflow-type: tm+mt
-source-wordcount: 3935
-ht-degree: 57%
+source-wordcount: 3923
+ht-degree: 56%
 
 ---
 
@@ -48,9 +37,9 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz in verschiedenen Mär
 
 Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenverwaltung**, um Marken, Markenaliasse und Konkurrenz einzurichten und zu konfigurieren, um anhand des Trackings mit diesen Vergleiche zu ziehen. Die **Markenverwaltung** wird auch verwendet, um Integrationen wie Google Search Console, Adobe Analytics und CDN-Protokollweiterleitung zu konfigurieren, die sich auf mit Marken verknüpfte URLs beziehen. Klicken Sie dazu auf die entsprechenden Registerkarten: GSC, CDN usw.
 
-![Markenverwaltung – App-Navigation (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Markenverwaltung - App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Markenverwaltung – Konfigurationsüberblick (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Markenverwaltung - Konfigurationsübersicht (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +214,7 @@ Nachdem Sie das Google Search Console-Konto in LLM Optimizer integriert haben, k
 1. Überprüfen Sie auf der Registerkarte „Google Search Console“ die Liste der Themen und Prompts aus der Suchkonsole.
    ![Prompts-Liste](/help/dashboards/assets/prompts-list.png)
 1. Klicken Sie auf das gewünschte Thema/die gewünschte Prompt-Kategorie, um die Liste zu erweitern.
-1. Verwenden Sie die Schaltfläche **Hinzufügen**, um Prompts von der Liste hinzuzufügen. Sie können Prompts und Kategorien auch gesammelt hinzufügen, indem Sie **Alle hinzufügen** verwenden.
+1. Verwenden Sie die **Hinzufügen**, um Eingabeaufforderungen aus der Liste hinzuzufügen. Sie können Aufforderungen und Kategorien auch stapelweise hinzufügen, indem Sie **Alle hinzufügen** verwenden.
    ![Hinzufügen von Prompts](/help/dashboards/assets/add-prompts.png)
 1. Wenn Sie mit der Auswahl zufrieden sind, klicken Sie in der Benachrichtigung auf **Speichern**.
 
@@ -350,7 +339,7 @@ Der letzte Schritt ist eine Diversitätsprüfung, bei der Eingabeaufforderungen 
 
 F.: Benötigt mein Unternehmen eine zusätzliche Konfiguration, um diese Funktion verwenden zu können?
 
-Diese Funktion beruht auf CDN-Protokolldaten. Wenn Sie „CDN[Protokollweiterleitung“ bereits aktiviert &#x200B;](#cdn-configuration), ist keine zusätzliche Einrichtung erforderlich. Ohne CDN-Protokolle sind keine Daten zu Zitierversuchen oder Referral Traffic für die Analyse verfügbar.
+Diese Funktion beruht auf CDN-Protokolldaten. Wenn Sie „CDN[Protokollweiterleitung“ bereits aktiviert ](#cdn-configuration), ist keine zusätzliche Einrichtung erforderlich. Ohne CDN-Protokolle sind keine Daten zu Zitierversuchen oder Referral Traffic für die Analyse verfügbar.
 
 F: Warum wird in den Vorschlägen keine bestimmte URL angezeigt?
 

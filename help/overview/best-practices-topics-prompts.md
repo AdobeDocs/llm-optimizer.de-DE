@@ -4,58 +4,37 @@ description: Optimieren Sie die LLM-Erkenntnisse, indem Sie Kategorien, Themen, 
 feature: Best Practices, Customer Configuration
 autotag-review: '2026-07-15T17:42:20.391Z'
 TQID: 'https://experienceleague.adobe.com/nnLohajbU-fogbmBfGE5PUzdsoTJ5fjwW-ruVTjOWtM'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: c898dfb2-0885-42fb-b2af-b2d756752646
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-subfeature_v2:
-  - id: e69d5a42-0217-4ca5-9396-a9a826a170da
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: addf009e-030a-4310-8534-776a3e62ed48
-  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: c898dfb2-0885-42fb-b2af-b2d756752646id: d1956731-2adb-4bb7-8301-2b239254ac72
+subfeature_v2: id: e69d5a42-0217-4ca5-9396-a9a826a170da
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: addf009e-030a-4310-8534-776a3e62ed48id: b5520579-b31f-4df7-9281-f0d9f91e2edcid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
+source-git-commit: 74484901cba1f054070673f2d706b26b6360aacb
 workflow-type: tm+mt
-source-wordcount: 1537
-ht-degree: 100%
+source-wordcount: 1482
+ht-degree: 77%
 
 ---
 
-# Best Practices bei der Konfiguration nachzuverfolgender Kategorien, Themen, Prompts und anderer Marken
+# Best Practices zum Konfigurieren von Kategorien, Themen, Eingabeaufforderungen und anderen Marken, die verfolgt werden sollen
 
-In diesem Abschnitt finden Sie Best Practices bei der Entscheidung, wie Sie Ihre Kategorien, Themen, Prompts und anderen Marken zur Nachverfolgung einrichten. Darüber hinaus enthält er Informationen zur Brachen-Prompt-Bibliothek, die Adobe mit umfangreichen Recherchen gemeinsam mit Branchenfachleuten entwickelt hat.
+In diesem Abschnitt werden Best Practices beschrieben, mit deren Hilfe Sie festlegen können, welche Kategorien, Themen, Eingabeaufforderungen und andere Marken verfolgt werden sollen. Darüber hinaus enthält er Informationen zur Brachen-Prompt-Bibliothek, die Adobe mit umfangreichen Recherchen gemeinsam mit Branchenfachleuten entwickelt hat.
 
-Dies ist ein entscheidender erster Schritt. Ihre Entscheidungen zu diesem Zeitpunkt bestimmen, wie Informationen für Ihren Unternehmenskontext zugeschnitten werden. Alle späteren Änderungen an Kategorien führen zum Zurücksetzen historischer Daten.
+Diese Konfiguration ist ein wichtiger erster Schritt. Ihre Entscheidungen zu diesem Zeitpunkt bestimmen, wie Informationen für Ihren Unternehmenskontext zugeschnitten werden. Alle späteren Änderungen an Kategorien führen zum Zurücksetzen historischer Daten.
 
-Im Dashboard [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-configuration.md) legen Sie fest, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird. Weitere Informationen zur Verwendung des Dashboards finden Sie unter [[!UICONTROL Kundenkonfiguration]](/help/dashboards/customer-configuration.md).
+Im [[!UICONTROL Brands Management]](/help/dashboards/customer-configuration.md)-Dashboard legen Sie fest, wie Ihre Marke innerhalb der LLM Optimizer-Plattform überwacht und analysiert wird.
 
-![Fenster „Kundenkonfiguration“](/help/assets/best-practices/customer-configuration-best-practices.png)
+Hier können Sie Kategorien anpassen (z. B. Geschäftsbereiche oder Produktlinien), andere Marken verfolgen und Markenerwähnung-Aliase hinzufügen, um alle Varianten Ihrer Marke über Eingabeaufforderungen hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Erkenntnisse auf Ihren Unternehmenskontext zuschneidet, sodass Sichtbarkeit, Traffic und Möglichkeiten genau analysiert werden können.
 
-Im Dashboard [!UICONTROL Kundenkonfiguration] können Sie Kategorien anpassen (z. B. Geschäftseinheiten oder Produktlinien), andere Marken verfolgen und Aliasse für Markenerwähnungen hinzufügen, um alle Varianten Ihrer Marke über alle Prompts hinweg zu erfassen. Durch diese Einrichtung wird sichergestellt, dass die Plattform die Erkenntnisse auf Ihren Unternehmenskontext zuschneidet, sodass Sichtbarkeit, Traffic und Möglichkeiten genau analysiert werden können.
+Standardmäßig beginnt jede Organisation mit einer aktiven Marke und weiteren vorgeschlagenen Marken zur Auswahl.
 
-## Markenorientierte Oberfläche
+![Markenverwaltung - App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-Standardmäßig beginnen neue Nutzende in einer fokussierten, markenorientierten Oberfläche mit einer Onboarding-gesteuerten Einrichtung. In dieser neuen Benutzeroberfläche beginnt jede Organisation mit einer aktiven Marke und zusätzlichen vorgeschlagenen Marken, aus denen ausgewählt werden kann. Bestehende LLM Optimizer-Nutzende steigen schrittweise auf diese markenorientierte Oberfläche um.
+![Markenverwaltung - Konfigurationsübersicht](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
-Wenn Sie die markenorientierte Oberfläche nutzen, definieren Sie unter **Markenverwaltung**, wie Ihre Marke überwacht und analysiert wird.
+Um Themen und Eingabeaufforderungen für eine bestimmte Marke einzurichten, verwenden Sie das Dashboard **Eingabeaufforderungsbibliothek**.
 
-![Markenverwaltung – App-Navigation (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/llmo-app-shell.png)
-
-![Markenverwaltung – Konfigurationsüberblick](/help/assets/brand-centric-experience/brands-management-configuration.png)
-
-Um Themen und Prompts für eine bestimmte Marke einzurichten, verwenden Sie **Prompt-Verwaltung**.
+<!-- Add link to Prompt Library page when available-->
 
 ![Prompt-Verwaltung](/help/assets/brand-centric-experience/prompts-management.png)
 
@@ -65,12 +44,13 @@ Um Ihnen den Einstieg in Prompts und Themen zu erleichtern, hat Adobe eine Branc
 
 So verwenden Sie die Branchen-Prompt-Bibliothek:
 
-1. Navigieren Sie zum Dashboard **Kundenkonfiguration**.
-1. Wählen Sie **Prompt-Bibliothek herunterladen** aus, um die Bibliotheksdatei von LLM Optimizer herunterzuladen.
-   ![Download der Branchen-Prompt-Bibliothek](/help/assets/best-practices/customer-configuration-prompts-library.png)
+1. Navigieren Sie zum Dashboard **Bibliothek** Eingabeaufforderung“.
+1. Wählen Sie **Eingabeaufforderungsbibliothek herunterladen** aus, um die Bibliotheksdatei von LLM Optimizer herunterzuladen.
 1. Prüfen Sie auf der entsprechenden Registerkarte die vorgeschlagenen **Themen** und **Prompts** für die Branche Ihrer Marke und wählen Sie die für Sie relevantesten Optionen aus.
 1. Prüfen Sie die Spalte **Phase der Customer Journey**, um die Prompt-Optionen im gesamten Kundenzyklus anzuzeigen (z. B. von der Entdeckung über die Konversion bis zur Bindung). Prompts in frühen Phasen bzw. im oberen Teil des Trichters haben hohe Priorität. Erwägen Sie aber auch Optionen für spätere Phasen, um die Kundenbindung zu fördern, Kunden-Support zu ermöglichen usw.
 1. Passen Sie Themen oder Prompts bestmöglich für Ihre Produktziele an, bevor Sie sie in Adobe LLM Optimizer hochladen (fügen Sie beispielsweise Ihren Marken-/Produktnamen hinzu oder verwenden Sie markenkonforme Terminologie). Prompts können manuell oder per Massen-Upload unter Verwendung der bereitgestellten *CSV*-Vorlage zu LLM Optimizer hinzugefügt werden.
+
+<!--![Industry prompt library download](/help/assets/best-practices/download-prompts.png) - add screenshot to steps-->
 
 >[!TIP]
 >
@@ -86,11 +66,11 @@ Die Branchen-Prompt-Bibliothek wurde im Rahmen einer umfassenden Recherche-Initi
 
 Top-Themen, die von Kundschaft aus verschiedenen Branchen gesucht werden:
 
-* **Automobil:** Fehlerbehebung bei Fahrzeugproblemen, Fahrzeugvergleiche und Finanzierung/Leasing.
+* **Auto:** Fehlerbehebung bei Autoproblemen, Vergleich von Fahrzeugen und Finanzierung/Leasing
 * **Finanzdienstleistungen:** Recherchen zu Finanzprodukten.
-* **Gesundheitswesen:** Recherchieren von Symptomen oder Gesundheitsproblemen, Vergleichen von Behandlungsoptionen, Verständnis von Laborergebnissen oder medizinischen Begriffen.
-* **Telekommunikation:** Vergleichen von Tarifen, Vertragsbedingungen und Werbeaktionen, Prüfen von Service-Optionen in der Umgebung
-* **Reisen:** Vorbereitung auf eine Reise, Recherche und Buchung von Reisen
+* **Gesundheitswesen:** Nachschlagen von Symptomen oder Gesundheitsproblemen, Vergleichen von Behandlungsoptionen und Verstehen von Laborergebnissen oder medizinischen Begriffen
+* **Telekommunikation:** Vergleichen von Plänen, Vertragsbedingungen und Werbeaktionen und Überprüfen von Dienstleistungen in der Region
+* **AirlineTravel:** Vorbereitung auf eine Reise und Recherche und Buchung von Reisen
 
 Kunden-Trends in Bezug auf das Verhalten bei KI-Suchen und Prompts in LLM-Tools:
 
@@ -122,12 +102,15 @@ Wie Sie Kategorien einrichten, hängt von einer Frage ab: **Wer muss mit dem Ber
 * Wenn Sie *Web-/Inhalts-Eigentümerin/-Eigentümer* sind, wählen Sie den **URL_DIR**-Ansatz.
 * Wenn Sie im *Merchandising-/Angebots-Management* arbeiten, wählen Sie den Ansatz **Produkt-/Service-Kategorie**.
 
-![Hinzufügen von Kategorien in LLM Optimizer](/help/assets/best-practices/add-category.png)
+<!--How do you pick a region? Or is that handled differently?-->
+
+![Hinzufügen von Kategorien in LLM Optimizer](/help/assets/best-practices/create-category1.png)
 
 >[!IMPORTANT]
 >
 > * Wählen Sie einen Ansatz und halten Sie sich daran.
 > * Pro Konto/Marke kann nur **ein** Kategoriemodell verwendet werden. Verwenden Sie **SBU** und **URL_DIR** nicht gleichzeitig.
+
 <!--Can you mix Product/Service with these?-->
 
 Zum Beispiel:
@@ -158,13 +141,14 @@ Bei der Entscheidung über Themen sollten Sie eine kurze, eindimensionale Liste 
 * Support-Kontakt
 * Unternehmen/Neuigkeiten (wenn Sie dies wirklich benötigen)
 
-![Hinzufügen von Themen in LLM Optimizer](/help/assets/best-practices/add-topic.png)
+![Hinzufügen von Themen in LLM Optimizer](/help/assets/best-practices/add-new-topic1.png)
 
 Beachten Sie beim Erstellen der Liste Folgendes:
 
-* Können Bearbeitende das Thema anhand des Prompts innerhalb von 5 Sekunden verstehen? Falls nicht, benennen Sie ihn um/vereinfachen Sie ihn.
+* Kann jemand das Thema in 5 Sekunden nach der Eingabeaufforderung verstehen? Falls nicht, benennen Sie ihn um/vereinfachen Sie ihn.
 * Sind für die Fehlerbehebung für verschiedene Themen unterschiedliche Teams zuständig? Falls ja, haben Sie nützliche Themen ausgewählt.
-  <!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
+
+<!-- Last bullet point does not make sense. Clarification needed. Also not sure what is meant by "editor"?-->
 
 Zusätzliche hilfreiche Hinweise:
 
@@ -174,7 +158,7 @@ Zusätzliche hilfreiche Hinweise:
 >[!IMPORTANT]
 >
 > * Gestalten Sie die Themen absichtsbasiert, nicht organisatorisch.
-> * Fügen Sie keine Kategorien/Filter für Marke/Nicht-Marke/Geografie hinzu, da Sie auf der Registerkarte **[!UICONTROL Marken]** gezielt danach filtern können.
+> * Fügen Sie keine Kategorien/Filter für Marke/Nicht-Marke/Geografie hinzu, da Sie im Dashboard **[!UICONTROL Markenpräsenz]** gezielt danach filtern können.
 > * Themen gelten über mehrere Kategorien hinweg. Es ist **nicht möglich**, für jede Kategorie individuelle Themen zu definieren.
 > * Ein einzelner Prompt **kann** in mehreren Themen oder Kategorien vorhanden sein.
 
@@ -197,11 +181,11 @@ Best Practices für Prompts:
 
 ## Best Practices für die Nachverfolgung anderer Marken
 
-Wenn Sie andere Marken nachverfolgen, können Sie die Sichtbarkeit und Erwähnungen in LLM-Antworten für Prompts und Themen überwachen, die für Ihr Unternehmen wichtig sind.
+Durch das Tracking anderer Marken können Sie die Sichtbarkeit und Erwähnungen in LLM-Antworten für Aufforderungen und Themen überwachen, die für Ihr Unternehmen wichtig sind.
 
-Auf der Registerkarte [!UICONTROL **Tracking von anderen**] können Sie andere Marken einschließlich Wettbewerbern hinzufügen, um deren Sichtbarkeit für bestimmte Prompts und Themen nachzuverfolgen.
+[!UICONTROL **Andere Marken zum Nachverfolgen**] ist unter **Markenverwaltung** > **Marktverfolgung** verfügbar und ermöglicht das Hinzufügen weiterer Marken, einschließlich Wettbewerbern, um ihre Sichtbarkeit für bestimmte Eingabeaufforderungen und Themen zu verfolgen.
 
-Beim Tracking von anderen können Sie sehen, wie oft andere Marken neben Ihrer Marke in verschiedenen Regionen und Kategorien erwähnt werden, und deren Sichtbarkeit mit der Ihrer eigenen vergleichen.
+Wenn Sie andere Marken nachverfolgen möchten, können Sie sehen, wie oft andere Marken neben Ihrer Marke in verschiedenen Regionen und Kategorien erwähnt werden, und ihre Sichtbarkeit mit der Ihrer eigenen vergleichen.
 
 >[!TIP]
 >
@@ -209,6 +193,7 @@ Beim Tracking von anderen können Sie sehen, wie oft andere Marken neben Ihrer M
 
 ## Weitere Informationen
 
-* Im [Dashboard „Kundenkonfiguration“](/help/dashboards/customer-configuration.md) konfigurieren Sie Kategorien, Themen, Prompts und Tracking von anderen.
+* [Markenverwaltung](/help/dashboards/customer-configuration.md) konfigurieren Sie Ihre Kategorien und andere Marken, die Sie verfolgen möchten.
+* [Eingabeaufforderungsbibliothek](/help/dashboards/customer-configuration.md) konfigurieren Sie die Themen und Eingabeaufforderungen.
 * [Best Practices für LLM Optimizer](/help/tutorials/best-practices.md) beschreibt die Best Practices für die LLM-Optimierung.
 
