@@ -14,10 +14,10 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 1a2549151ab0bfe16eee89dafe5710bf6edba6a0
+source-git-commit: 6b0e86f1373c3b1d85d67bd8222459acfc3620dc
 workflow-type: tm+mt
-source-wordcount: 623
-ht-degree: 97%
+source-wordcount: 485
+ht-degree: 88%
 
 ---
 
@@ -69,11 +69,11 @@ Generative Engine Optimization ist von Natur aus funktionsübergreifend. LLM Opt
 
 Mit Adobe LLM Optimizer können Sie:
 
-**Markensichtbarkeit messen** – Verfolgen Sie nach, wann, wo und wie oft Ihre Marke in Ergebnissen von KI-gestützten Suchvorgängen erwähnt wird. Mit einer klaren Sichtbarkeitsbewertung und deren Benchmark im Zeitverlauf müssen Sie nicht mehr spekulieren. Siehe [Dashboard „Markenpräsenz“](/help/dashboards/brand-presence.md).
-**Mit anderen vergleichen** – Erfahren Sie, wie Ihre Marke im Gegensatz zu anderen, einschließlich der Konkurrenz, in generativen Engines abschneidet. Identifizieren Sie Lücken beim Share of Voice und entdecken Sie Wettbewerbsvorteile. Siehe [Dashboard „Markenpräsenz“](/help/dashboards/brand-presence.md).
-**Umsetzbare Möglichkeiten entdecken** – Ermitteln Sie Möglichkeiten zur Verbesserung von Inhalten (z. B. häufig gestellte Fragen, Kurzfassungen, Schemata) und technischen Aspekten (Crawlability, Indizierungsprobleme), mit denen Sie Erwähnungen und Zitierungen direkt erhöhen. Siehe [Dashboard „Möglichkeiten“](/help/dashboards/opportunities-overview.md).
-**Traffic-Auswirkungen von KI nachverfolgen** – Überwachen Sie Agent-basierten Traffic (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitierungen) auf Ihren eigenen Anwendungen. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion. Siehe [Dashboard „Agent-basierter Traffic“](/help/dashboards/agentic-traffic.md) und [Dashboard „Referral Traffic“](/help/dashboards/referral-traffic.md).
-**Zusammenarbeit im Team ermöglichen** – Geben Sie Dashboards frei, weisen Sie Prompts oder Kategorien Verantwortliche zu und stellen Sie sicher, dass die Sichtbarkeitsziele von Teams für Marketing, Suchmaschinenoptimierung (SEO) und Kommunikation nachverfolgt werden. Siehe [Dashboard „Zusammenarbeit“](/help/dashboards/collaboration.md).
+**Markensichtbarkeit messen** - Verfolgen Sie, wann, wo und wie oft Ihre Marke in KI-gestützten Suchergebnissen erwähnt wird. Mit einer klaren Sichtbarkeitsbewertung, die Sie im Laufe der Zeit bewerten können, können Sie über Rätselraten hinausgehen. Siehe [Markenpräsenz-Dashboard](/help/dashboards/brand-presence.md).
+**Benchmark Others** - Erfahren Sie, wie Ihre Marke im Vergleich zu anderen, einschließlich Wettbewerbern in Generative Engines, abschneidet. Share of Voice-Lücken identifizieren und Wettbewerbsvorteile entdecken. Siehe [Markenpräsenz-Dashboard](/help/dashboards/brand-presence.md).
+**Discover Actionable Opportunities** - Identifizieren Sie Chancen auf Inhalte (z. B. FAQs, Abstracts, Schemata) und technische Möglichkeiten (Crawlability, Indizierungsprobleme), die die Erwähnungen und Zitate direkt steigern. Siehe [Opportunities-Dashboard](/help/dashboards/opportunities-overview.md).
+**Traffic-Auswirkungen von KI verfolgen** - Überwachen von Agentenverkehr (von KI-Assistenten) und Referral Traffic (Benutzerklicks aus Zitaten) zu Ihren eigenen Eigenschaften. Verbinden Sie GEO-Sichtbarkeit mit echter Interaktion. Siehe [Dashboard für Agentenverkehr](/help/dashboards/agentic-traffic.md) und [Referral Traffic-Dashboard](/help/dashboards/referral-traffic.md).
+**Team Collaboration aktivieren** - Dashboards freigeben, Verantwortliche für Eingabeaufforderungen oder Kategorien zuweisen und sicherstellen, dass Sichtbarkeitsziele in Marketing-, Suchmaschinenoptimierung (SEO)- und Kommunikationsfunktionen verfolgt werden. Siehe [Collaboration-Dashboard](/help/dashboards/collaboration.md).
 
 ## Weitere Informationen
 
@@ -81,7 +81,7 @@ Hier finden Sie Ressourcen, die Sie bei der optimalen Nutzung von LLM Optimizer 
 
 * [Schnellstart](/help/overview/quick-start.md) hilft Ihnen bei einem schnellen Einstieg.
 * [Dashboards – Überblick](/help/dashboards/dashboards-overview.md) beschreibt alle in LLM Optimizer verfügbaren Dashboards.
-* [Best Practices bei der Konfiguration von Kategorien, Themen, Prompts und anderen Marken](/help/overview/best-practices-topics-prompts.md) bietet wichtige Informationen zum Einrichten von LLM Optimizer.
+* [Best Practices für die Konfiguration von Kategorien, Themen, Eingabeaufforderungen und anderen Marken, die verfolgt werden sollen](/help/overview/best-practices-topics-prompts.md) enthalten wichtige Informationen zur Einrichtung von LLM Optimizer.
 * [Best Practices](/help/tutorials/best-practices.md) stellt Ihnen Best Practices bei der LLM-Optimierung vor, damit Sie die Sichtbarkeit Ihrer Marke in der KI-Suche verbessern können.
 
 

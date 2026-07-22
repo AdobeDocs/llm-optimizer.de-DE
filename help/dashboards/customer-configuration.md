@@ -20,10 +20,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: fc314d1d-7cb9-4a38-8dbd-8f9b6478f40d
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: 72cc645997dbd5ae0442fefad73fe6a4e7ffe050
 workflow-type: tm+mt
-source-wordcount: 3935
-ht-degree: 57%
+source-wordcount: 3923
+ht-degree: 56%
 
 ---
 
@@ -48,9 +48,9 @@ Um zu konfigurieren, wie LLM Optimizer Ihre Markenpräsenz in verschiedenen Mär
 
 Wenn Sie die [markenorientierte Oberfläche](/help/overview/quick-start.md#brand-centric-experience) verwenden, navigieren Sie zu **Markenverwaltung**, um Marken, Markenaliasse und Konkurrenz einzurichten und zu konfigurieren, um anhand des Trackings mit diesen Vergleiche zu ziehen. Die **Markenverwaltung** wird auch verwendet, um Integrationen wie Google Search Console, Adobe Analytics und CDN-Protokollweiterleitung zu konfigurieren, die sich auf mit Marken verknüpfte URLs beziehen. Klicken Sie dazu auf die entsprechenden Registerkarten: GSC, CDN usw.
 
-![Markenverwaltung – App-Navigation (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/llmo-app-shell.png)
+![Markenverwaltung - App-Navigation (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/llmo-app-shell.png)
 
-![Markenverwaltung – Konfigurationsüberblick (markenorientierte Oberfläche)](/help/assets/brand-centric-experience/brands-management-configuration.png)
+![Markenverwaltung - Konfigurationsübersicht (Markenzentriertes Erlebnis)](/help/assets/brand-centric-experience/brands-management-configuration.png)
 
 >[!IMPORTANT]
 >
@@ -225,7 +225,7 @@ Nachdem Sie das Google Search Console-Konto in LLM Optimizer integriert haben, k
 1. Überprüfen Sie auf der Registerkarte „Google Search Console“ die Liste der Themen und Prompts aus der Suchkonsole.
    ![Prompts-Liste](/help/dashboards/assets/prompts-list.png)
 1. Klicken Sie auf das gewünschte Thema/die gewünschte Prompt-Kategorie, um die Liste zu erweitern.
-1. Verwenden Sie die Schaltfläche **Hinzufügen**, um Prompts von der Liste hinzuzufügen. Sie können Prompts und Kategorien auch gesammelt hinzufügen, indem Sie **Alle hinzufügen** verwenden.
+1. Verwenden Sie die **Hinzufügen**, um Eingabeaufforderungen aus der Liste hinzuzufügen. Sie können Aufforderungen und Kategorien auch stapelweise hinzufügen, indem Sie **Alle hinzufügen** verwenden.
    ![Hinzufügen von Prompts](/help/dashboards/assets/add-prompts.png)
 1. Wenn Sie mit der Auswahl zufrieden sind, klicken Sie in der Benachrichtigung auf **Speichern**.
 
