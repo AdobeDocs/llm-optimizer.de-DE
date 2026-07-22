@@ -4,24 +4,15 @@ description: Erfahren Sie, wie Sie Akamai BYOCDN für „Optimize at Edge“ in 
 feature: Opportunities
 autotag-review: '2026-07-15T17:40:02.356Z'
 TQID: 'https://experienceleague.adobe.com/XlHpXbtxqPl-XQQKWeQc3rbsizCT7U0TF1bQkyv0iM8'
-product_v2:
-  - id: d830747e-f8f3-4fce-8eff-d53b333b1639
-feature_v2:
-  - id: d1956731-2adb-4bb7-8301-2b239254ac72
-  - id: e1b649f0-0a61-46e4-9082-64d5cb2576c6
-  - id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3a
-  - id: e0828736-236a-487b-a478-5a635455eadc
-subfeature_v2:
-  - id: d23587d6-14d6-4e3f-9ee1-cc18623832e1
-  - id: e06fae5f-830b-4222-a469-b5e148d36465
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 9d2324e23e07f01e16c4fc16c96213d03214918f
+product_v2: id: d830747e-f8f3-4fce-8eff-d53b333b1639
+feature_v2: id: d1956731-2adb-4bb7-8301-2b239254ac72id: e1b649f0-0a61-46e4-9082-64d5cb2576c6id: ef4e63f5-cb4d-462d-bf9a-1f617edf2a3aid: e0828736-236a-487b-a478-5a635455eadc
+subfeature_v2: id: d23587d6-14d6-4e3f-9ee1-cc18623832e1id: e06fae5f-830b-4222-a469-b5e148d36465
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 4f0c6d398e2aab337485b7e26cf6f2aba56375fd
 workflow-type: tm+mt
 source-wordcount: 795
-ht-degree: 76%
+ht-degree: 70%
 
 ---
 
@@ -42,7 +33,7 @@ Bevor Sie die Regeln für den Akamai Property Manager einrichten, stellen Sie si
 
 Die folgende Regel von Akamai Property Manager leitet Agent-basierten HTML-Seiten-Traffic an Edge Optimize weiter. Die Konfiguration umfasst die folgenden Schritte:
 
-**1. Festlegen von Routing-Kriterien (Zuordnung von Benutzer-Agent und HTML-Traffic)**
+## &#x200B;1. Routing-Kriterien festlegen (Traffic-Übereinstimmung zwischen Benutzeragent und HTML)
 
 Festlegen von Routing für die folgenden Benutzer-Agents:
 
@@ -64,7 +55,7 @@ Festlegen von Routing für die folgenden Benutzer-Agents:
 
 ![Festlegen von Routing-Kriterien](/help/assets/optimize-at-edge/akamai-step1-routing.png)
 
-**2. Festlegen der Herkunft und des SSL-Verhaltens**
+## &#x200B;2. Festlegen des Ursprungs- und SSL-Verhaltens
 
 Festlegen der Herkunft als `live.edgeoptimize.net` und von „SAN zuordnen“ auf `*.edgeoptimize.net`
 
@@ -74,17 +65,17 @@ Festlegen der Herkunft als `live.edgeoptimize.net` und von „SAN zuordnen“ au
 
 ![Festlegen der Herkunft und des SSL-Verhaltens](/help/assets/optimize-at-edge/akamai-step2-origin.png)
 
-**3. Festlegen der Cache-Schlüsselvariablen**
+## &#x200B;3. Cache-Schlüsselvariable festlegen
 
 Festlegen der Cache-Schlüsselvariablen `PMUSER_EDGE_OPTIMIZE_CACHE_KEY` auf `LLMCLIENT=TRUE;X_FORWARDED_HOST={{builtin.AK_HOST}}`
 
 ![Festlegen der Cache-Schlüsselvariablen](/help/assets/optimize-at-edge/akamai-step3-cachekey.png)
 
-**4. Caching-Regeln**
+## &#x200B;4. Zwischenspeicherungsregeln
 
 ![Caching-Regeln](/help/assets/optimize-at-edge/akamai-step4-rules.png)
 
-**5. Ändern der eingehenden Anfrage-Header**
+## &#x200B;5. Header eingehender Anfragen ändern
 
 Legen Sie folgende eingehende Anfrage-Header fest:
 `x-edgeoptimize-api-key` auf den von LLMO abgerufenen API-Schlüssel
@@ -93,7 +84,7 @@ Legen Sie folgende eingehende Anfrage-Header fest:
 
 ![Ändern der eingehenden Anfrage-Header](/help/assets/optimize-at-edge/akamai-step5-request.png)
 
-**Zulassen von „Optimize at Edge“ durch Firewall-Regeln (optional)**
+## Zulassen, dass bei Edge durch Firewall-Regeln optimiert wird (optional)
 
 {{waf-allowlist-setup}}
 
@@ -103,25 +94,25 @@ Legen Sie folgende eingehende Anfrage-Header fest:
 >
 >Setzen Sie außerdem denBenutzer-Agent `*AdobeEdgeOptimize/1.0*` und den Header `x-edgeoptimize-fetcher-key` im Akamai Bot Manager auf die Zulassungsliste.
 
-**6. Ändern der eingehenden Antwort-Header**
+## &#x200B;6. Eingehende Antwortkopfzeilen ändern
 
 ![Ändern der eingehenden Antwort-Header](/help/assets/optimize-at-edge/akamai-step6-response.png)
 
-**7. Cache-ID-Änderung**
+## &#x200B;7. Cache-ID-Änderung
 
 ![Cache-ID-Änderung](/help/assets/optimize-at-edge/akamai-step7-cacheid.png)
 
-**8. Ändern der ausgehenden Anfrage-Header**
+## &#x200B;8. Ausgehende Anfragekopfzeilen ändern
 
 Festlegen des `x-forwarded-host`-Headers auf `{{builtin.AK_HOST}}`
 
 ![Ändern der ausgehenden Anfrage-Header](/help/assets/optimize-at-edge/akamai-step8-outgoing-request.png)
 
-**9. Site-Failover**
+## &#x200B;9. Standort-Failover
 
 Die Site-Failover-Konfiguration besteht aus zwei Teilen: einem Failover-Verhalten innerhalb der Haupt-Routing-Regel von Optimize at Edge und einer gleichrangigen Regel, die eine Antwort-Kopfzeile hinzufügt, wenn ein Fallback erfolgt.
 
-**9a. Konfigurieren des Site-Failover-Verhaltens**
+### 9a. Konfigurieren des Site-Failover-Verhaltens
 
 Erstellen Sie innerhalb der Routingregel „Optimieren bei Edge&quot; eine untergeordnete Regel mit dem Namen **Site-Failover-Verhalten**. Setzen Sie ihn auf **Übereinstimmung mit &quot;**&quot; und fügen Sie die folgenden Kriterien hinzu:
 
@@ -132,7 +123,7 @@ Erstellen Sie innerhalb der Routingregel „Optimieren bei Edge&quot; eine unter
 
 ![Konfigurieren des Site-Failover-Verhaltens](/help/assets/optimize-at-edge/akamai-step9-failover-settings.png)
 
-**9b. Konfigurieren der Header-Regel für die Failover-Antwort**
+### 9b. Konfigurieren der Header-Regel für die Failover-Antwort
 
 >[!IMPORTANT]
 >
@@ -158,7 +149,7 @@ Site Failover stellt sicher, dass Akamai die Anfrage für Ihren ursprünglichen 
 | Edge Optimize gibt `2XX` oder `3XX` zurück | Die optimierte Antwort wird bereitgestellt. `x-edgeoptimize-request-id` ist vorhanden. |
 | Edge Optimize gibt `4XX`-`5XX` zurück oder die Herkunft überschreitet das Zeitlimit | Die Anfrage wird für den ursprünglichen Host-Namen neu erstellt. Die Antwort enthält `x-edgeoptimize-fo: true`. |
 
-**Überprüfen des Setups**
+## Überprüfen des Setups
 
 Stellen Sie nach Abschluss des Setups sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
 
