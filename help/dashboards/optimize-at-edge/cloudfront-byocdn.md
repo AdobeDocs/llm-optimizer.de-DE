@@ -19,10 +19,10 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
-source-wordcount: 2360
-ht-degree: 91%
+source-wordcount: 2343
+ht-degree: 85%
 
 ---
 
@@ -40,7 +40,7 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 * Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Die einzelnen Schritte finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Optional) Weitere Informationen zum Staging-Routing finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Schritt 1: Erstellen von Edge Optimize-Ursprung**
+## &#x200B;1. Schritt: Edge Optimize Origin erstellen
 
 **Navigation:** AWS Console > CloudFront > Verteilungen > [Ihre Verteilung] > Registerkarte „Ursprünge“
 
@@ -66,7 +66,7 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 
 ![Erstellung des CloudFront-Ursprungs](/help/assets/optimize-at-edge/cloudfront-origin-creation.png)
 
-**Schritt 2: Erstellen der Viewer-Anforderungsfunktion**
+## Schritt 2: Viewer-Anfragefunktion erstellen
 
 **Navigation:** AWS Console > CloudFront > Funktionen
 
@@ -88,7 +88,7 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 ![Erstellung einer CloudFront-Funktion](/help/assets/optimize-at-edge/cloudfront-function-creation.png)
 
 
-**Schritt 3: Konfigurieren der Cache-Richtlinie**
+## Schritt 3: Cache-Richtlinie konfigurieren
 
 **Navigation:** AWS Console > CloudFront > Verteilungen > [Ihre Verteilung] > Verhalten
 
@@ -98,7 +98,7 @@ Stellen Sie vor dem Einrichten der CloudFront-Konfiguration sicher, dass Sie üb
 * **Szenario B (benutzerdefinierte Richtlinie):** **Cache-Richtlinie** ist ausgewählt und ein von Ihnen oder Ihrem Team erstellter Richtlinienname wird angezeigt (keine von AWS bereitgestellte Richtlinie).
 * **Szenario C (verwaltete Richtlinie):** **Cache-Richtlinie** ist ausgewählt und ein von AWS bereitgestellter Name wie `CachingOptimized`, `CachingDisabled` oder `CachingOptimizedForUncompressedObjects` wird angezeigt (diese können nicht bearbeitet werden).
 
-**Szenario A: Veraltete Cache-Einstellungen**
+### Szenario A: Alte Cache-Einstellungen
 
 Wenn für Ihr Verhalten veraltete Cache-Einstellungen verwendet werden:
 
@@ -119,7 +119,7 @@ Wenn für Ihr Verhalten veraltete Cache-Einstellungen verwendet werden:
 
 4. Klicken Sie auf **Änderungen speichern**.
 
-**Szenario B: Nicht veraltet mit einer benutzerdefinierten Cache-Richtlinie**
+### Szenario B: Nicht veraltet mit einer benutzerdefinierten Cache-Richtlinie
 
 Wenn für Ihr Verhalten bereits eine benutzerdefinierte Cache-Richtlinie verwendet wird (eine von Ihnen erstellte und keine von AWS verwaltete Richtlinie):
 
@@ -129,7 +129,7 @@ Wenn für Ihr Verhalten bereits eine benutzerdefinierte Cache-Richtlinie verwend
 
 2. Klicken Sie auf **Bearbeiten**.
 
-3. Es wird empfohlen, die **Mindest-TTL** auf `0` festzulegen. Wenn Ihre aktuelle Mindest-TTL jedoch bereits sehr kurz ist, müssen Sie sie möglicherweise nicht ändern.
+3. Es wird empfohlen, &quot;**TTL“** &quot;`0`&quot; festzulegen. Wenn Ihre aktuelle Mindest-TTL jedoch bereits sehr kurz ist, müssen Sie sie möglicherweise nicht ändern.
    ![TTL-Einstellungen für Cache-Richtlinie](/help/assets/optimize-at-edge/cloudfront-cache-policy-ttl.png)
 
 4. Fügen Sie unter **Cache-Schlüsseleinstellungen** > **Header** zusammen mit Ihren bestehenden Einschlüssen `x-edgeoptimize-config` und `x-edgeoptimize-url` hinzu.
@@ -137,7 +137,7 @@ Wenn für Ihr Verhalten bereits eine benutzerdefinierte Cache-Richtlinie verwend
 
 5. Klicken Sie auf **Änderungen speichern**.
 
-**Szenario C: Nicht veraltet mit einer verwalteten Cache-Richtlinie (AWS)**
+### Szenario C: Nicht veraltete mit einer verwalteten Cache-Richtlinie (AWS)
 
 Wenn für Ihr Verhalten eine von AWS verwaltete Cache-Richtlinie verwendet wird (z. B. `CachingOptimized`), können Sie sie nicht bearbeiten. Sie müssen eine neue benutzerdefinierte Cache-Richtlinie erstellen, die die vorhandenen verwalteten Richtlinieneinstellungen repliziert und die Edge Optimize-Header oben hinzufügt.
 
@@ -185,12 +185,12 @@ Wenn für Ihr Verhalten eine von AWS verwaltete Cache-Richtlinie verwendet wird 
    3. Wählen Sie `edgeoptimize-cache` aus dem Dropdown-Menü aus.
    4. Klicken Sie auf **Änderungen speichern**.
 
-**Schritt 4: Erstellen der Lambda@Edge-Funktion (Ursprungsanfrage und -antwort)**
+## Schritt 4: Erstellen der Funktion Lambda@Edge (Ursprungsanfrage und -antwort)
 
 >[!IMPORTANT]
 >Lambda@Edge-Funktionen **müssen in der Region `us-east-1` (N. Virginia)** erstellt werden. Dies ist eine AWS-Anforderung. Obwohl die Funktion in `us-east-1` erstellt wurde, repliziert AWS sie automatisch an allen CloudFront-Edge-Speicherorten weltweit, sodass sie am nächsten Edge-Speicherort für den Viewer ausgeführt wird. Vergewissern Sie sich, dass Sie sich in der AWS-Konsole in der Region `us-east-1` befinden, bevor Sie fortfahren.
 
-**Erstellen der Lambda-Funktion**
+### Erstellen der Lambda-Funktion
 
 **Navigation:** AWS Console > Lambda
 
@@ -210,7 +210,7 @@ Wenn für Ihr Verhalten eine von AWS verwaltete Cache-Richtlinie verwendet wird 
 
 7. Notieren Sie den **Namen der Ausführungsrolle** der unter **Konfiguration** > **Berechtigungen** angezeigt wird (z. B. `edgeoptimize-origin-role-xxxxx`). Sie benötigen diese Information für die folgenden Schritte.
 
-**Aktualisieren der Vertrauensrichtlinie der Ausführungsrolle**
+### Aktualisieren der Vertrauensrichtlinie der Ausführungsrolle
 
 Die automatisch erstellte Rolle sieht nur `lambda.amazonaws.com` als vertrauenswürdig an. Für Lambda@Edge müssen Sie auch `edgelambda.amazonaws.com` hinzufügen.
 
@@ -225,7 +225,7 @@ Die automatisch erstellte Rolle sieht nur `lambda.amazonaws.com` als vertrauensw
 >[!WARNING]
 >Der `edgelambda.amazonaws.com`-Service-Prinzipal ist **erforderlich** für Lambda@Edge. Ohne ihn kann CloudFront Ihre Funktion nicht an Edge-Speicherorten aufrufen.
 
-**Korrigieren der Berechtigungsrichtlinie für CloudWatch-Protokolle**
+### Korrigieren der Berechtigungsrichtlinie für CloudWatch-Protokolle
 
 Die automatisch erstellte Rolle verfügt über eine`AWSLambdaBasicExecutionRole`-Richtlinie, die für reguläres Lambda konfiguriert ist und die falsche Region und den falschen Protokollgruppennamen für Lambda@Edge aufweist. Sie müssen sie aktualisieren.
 
@@ -242,7 +242,7 @@ Die automatisch erstellte Rolle verfügt über eine`AWSLambdaBasicExecutionRole`
 >[!WARNING]
 >Die Region im ARN muss `*` lauten. Lambda@Edge wird am nächstgelegenen Edge-Standort zum Viewer ausgeführt, daher werden die Protokolle in der Region des Edge-Standorts (z. B.`ap-south-1`, `eu-west-1`) in CloudWatch geschrieben und nicht unbedingt in `us-east-1`. Die Protokollgruppe verwendet einen Namen mit dem Präfix der Region: `/aws/lambda/us-east-1.FUNCTION_NAME`, wobei `us-east-1` immer die Heimatregion der Funktion ist.
 
-**Korrigieren Sie den Link CloudWatch-Protokolle**
+### Korrigieren des Links CloudWatch-Protokolle
 
 Standardmäßig verweist der **CloudWatch-Protokolle anzeigen** Tastaturbefehl in der Lambda-Konsole auf `/aws/lambda/FUNCTION_NAME` in `us-east-1` - die falsche Protokollgruppe für Lambda@Edge. Konfigurieren Sie eine benutzerdefinierte Protokollgruppe so, dass der Link auf den richtigen Pfad verweist.
 
@@ -263,7 +263,7 @@ Standardmäßig verweist der **CloudWatch-Protokolle anzeigen** Tastaturbefehl i
 >[!NOTE]
 >Auch nach dieser Fehlerbehebung wird der Link **CloudWatch-** anzeigen) den richtigen Protokollgruppennamen öffnen, aber möglicherweise keine Daten anzeigen, wenn Sie sich in der falschen Region befinden. Lambda@Edge-Protokolle werden in der Edge-Region geschrieben, die die Anfrage verarbeitet hat (z. B. `eu-west-1`, `ap-south-1`), nicht `us-east-1`. Sie müssen weiterhin zur richtigen Region in CloudWatch wechseln, um die Protokolle anzuzeigen.
 
-**Veröffentlichen einer Version**
+### Version veröffentlichen
 
 1. Klicken Sie auf der Funktionsseite auf **Aktionen** (oben rechts) > **Neue Version veröffentlichen**.
 
@@ -275,7 +275,7 @@ Standardmäßig verweist der **CloudWatch-Protokolle anzeigen** Tastaturbefehl i
 4. Notieren Sie sich den **Funktions-ARN**. Sie benötigen diesen im nächsten Schritt.
    ![Lambda-ARN](/help/assets/optimize-at-edge/cloudfront-lambda-arn.png)
 
-**Schritt 5: Verknüpfen von Funktionen und Cache-Richtlinie mit Verhalten**
+## Schritt 5: Verknüpfen Sie die Funktionen und die Cache-Richtlinie mit dem Verhalten
 
 **Navigation:** AWS Console > CloudFront > Verteilungen >[Ihre Verteilung] > Verhalten
 
@@ -294,11 +294,11 @@ Standardmäßig verweist der **CloudWatch-Protokolle anzeigen** Tastaturbefehl i
 
 4. Klicken Sie auf **Änderungen speichern**.
 
-**Zulassen von „Optimize at Edge“ durch Firewall-Regeln (optional)**
+## Zulassen, dass bei Edge durch Firewall-Regeln optimiert wird (optional)
 
 {{waf-allowlist-setup}}
 
-**Schritt 6: Testen der Konfiguration**
+## Schritt 6: Testen der Konfiguration
 
 **1. Testen des Bot-Traffics (sollte optimiert werden)**
 
@@ -372,7 +372,7 @@ Sie können auch die Registerkarte **Metriken** unter **AWS Console > CloudFront
 
 Wenn die Protokollgruppe nicht vorhanden ist, überprüfen Sie, ob die IAM-Berechtigungen in Schritt 4 korrekt aktualisiert wurden. Überprüfen Sie auch andere benachbarte AWS-Regionen. Der Edge-Speicherort, an dem Ihre Anfrage verarbeitet wurde, kann vom erwarteten Speicherort abweichen.
 
-**Fehlerbehebung**
+## Fehlerbehebung
 
 | Problem | Mögliche Ursache | Lösung |
 |-------|----------------|----------|
@@ -382,16 +382,16 @@ Wenn die Protokollgruppe nicht vorhanden ist, überprüfen Sie, ob die IAM-Berec
 | Cache berücksichtigt `cache-control: no-store` nicht | Der Mindest-TTL-Wert ist möglicherweise zu hoch | Setzen Sie in Ihrer Cache-Richtlinie den Mindest-TTL-Wert auf `0` (Schritt 3). Wenn Ihre Mindest-TTL bereits sehr kurz ist, liegt das Problem möglicherweise nicht daran. |
 | Regulärer Datenverkehr (nicht Agent-basiert) wird nach der Einrichtung unterbrochen | Fehlkonfiguration der Cache-Richtlinie | Wenn Sie eine neue Cache-Richtlinie erstellt haben (Szenario C), stellen Sie sicher, dass Sie alle Einstellungen aus der ursprünglichen verwalteten Richtlinie repliziert haben. |
 
-**Deaktivieren und Reaktivieren von „Optimize at Edge“**
+## Deaktivieren und erneutes Aktivieren von Optimieren in Edge
 
 Die Lambda@Edge-Funktion (`edgeoptimize-origin`) ist mit den Ursprungsanfrage- und Ursprungsantwortereignissen Ihres CloudFront-Verhaltens verknüpft. Da sie bei jeder durch dieses Verhalten laufenden Anfrage (sowohl menschlich als auch Agent-basiert) inline ausgeführt wird, beeinträchtigt ein Lambda@Edge-Ausfall den gesamten Live-Traffic, nicht nur Agent-basierte Anfragen. Wenn Sie einen Lambda@Edge-Ausfall feststellen, entfernen Sie umgehend die Funktionszuordnungen, um den normalen Traffic-Fluss zu Ihrem Standardursprung wiederherzustellen.
 
-**Erkennen eines Lambda@Edge-Ausfalls**
+### So erkennen Sie einen Lambda@Edge-Ausfall
 
 * **Dashboard „AWS Service Health“**: Überprüfen Sie das Dashboard [AWS Service Health](https://health.aws.amazon.com/health/status) auf aktive Vorfälle, die **Amazon CloudFront** oder **AWS Lambda** betreffen. Ein hier gemeldeter globaler oder regionaler Ausfall ist der schnellste Weg, um zu bestätigen, dass das Problem mit der AWS-Infrastrukturseite und nicht mit Ihrer Konfiguration zusammenhängt.
 * **Lambda@Edge-Fehler**: Navigieren Sie zu **AWS Console > CloudFront > Monitoring > [Ihre Verteilung]**. Öffnen Sie die Registerkarte **Lambda@Edge-Fehler** und überprüfen Sie das Diagramm **Ausführungsfehler** auf Ausführungsfehler. Wenn diese Werte hoch sind, könnte Lambda@Edge ausgefallen sein.
 
-**Trennen der Lambda@Edge-Funktion**
+### Trennen der Funktion Lambda@Edge
 
 **Navigation:** AWS Console > CloudFront > Verteilungen >[Ihre Verteilung] > Verhalten
 
@@ -415,7 +415,7 @@ Die Lambda@Edge-Funktion (`edgeoptimize-origin`) ist mit den Ursprungsanfrage- u
 
 Nach der Bereitstellung werden alle Traffic-Routen direkt zu Ihrem Standardursprung geleitet. Es wird keine Konfiguration gelöscht. Die Lambda-Funktion und ihre Zuordnungen können jederzeit wiederhergestellt werden.
 
-**Erneutes Anhängen der Lambda@Edge-Funktion**
+### Erneutes Anhängen der Funktion Lambda@Edge
 
 **Navigation:** AWS Console > CloudFront > Verteilungen >[Ihre Verteilung] > Verhalten
 

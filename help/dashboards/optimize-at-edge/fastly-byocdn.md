@@ -18,10 +18,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2705cf26faea9c09817bbdcec4b4c531552df7ba
+source-git-commit: e36ee407933e2d3d56cadf1c9517f23f24d41d91
 workflow-type: tm+mt
 source-wordcount: 350
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Bevor Sie die Fastly-VCL-Regeln einrichten, stellen Sie sicher, dass Sie Folgend
 * Einen API-Schlüssel für Edge Optimize, der von der LLM Optimizer-Benutzeroberfläche abgerufen wurde. Die einzelnen Schritte finden Sie unter [Abrufen Ihrer API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#production-api-key).
 * (Optional) Weitere Informationen zum Staging-Routing finden Sie unter [Staging-API-Schlüssel](/help/dashboards/optimize-at-edge/retrieve-api-keys.md#staging-api-key-optional).
 
-**Konfiguration**
+## Konfiguration
 
 Fügen Sie die folgenden drei VCL-Snippets zu Ihrem Fastly-Service hinzu. Diese Snippets verarbeiten Agent-basierte Routing-Anfragen an Edge Optimizer, die Cache-Schlüsseltrennung und das Failover zu Ihrem standardmäßigen Ursprung.
 
@@ -46,7 +46,7 @@ Fügen Sie die folgenden drei VCL-Snippets zu Ihrem Fastly-Service hinzu. Diese 
 
 ![Hinzufügen von VCL-Snippets](/help/assets/optimize-at-edge/add-vcl-snippets.png)
 
-**VCL_RECV-Snippet**
+### VCL_RECV Snippet
 
 ```
 unset req.http.x-edgeoptimize-url;
@@ -66,7 +66,7 @@ if (!req.http.x-edgeoptimize-request
 }
 ```
 
-**VCL_HASH-Snippet**
+### VCL_HASH Snippet
 
 ```
 if (req.http.x-edgeoptimize-config) {
@@ -75,7 +75,7 @@ if (req.http.x-edgeoptimize-config) {
 }
 ```
 
-**VCL_DELIVER-Snippet**
+### VCL_DELIVER Snippet
 
 ```
 if (req.http.x-edgeoptimize-config && resp.status >= 400) {
@@ -92,7 +92,7 @@ if (!req.http.x-edgeoptimize-config && req.http.x-edgeoptimize-request == "failo
 }
 ```
 
-**Failover**
+### Failover
 
 Das Snippet `vcl_deliver` wickelt ein Failover automatisch ab. Wenn Edge Optimize einen `4XX`- oder `5XX`-Fehler zurückgibt, wird die Anfrage neu gestartet und an Ihren Standardursprung zurückgeleitet, sodass der bzw. die Endbenutzende weiterhin eine Antwort erhält. Die Failover-Antworten enthalten den `x-edgeoptimize-fo: 1`-Header.
 
@@ -102,11 +102,11 @@ Das Snippet `vcl_deliver` wickelt ein Failover automatisch ab. Wenn Edge Optimiz
 | Edge Optimize gibt `4XX` oder `5XX` zurück | Anfrage wird neu gestartet und vom Standardursprung bereitgestellt. |
 | Failover-Antwort | Enthält den `x-edgeoptimize-fo: 1`-Header. |
 
-**Zulassen von „Optimize at Edge“ durch Firewall-Regeln (optional)**
+## Zulassen, dass bei Edge durch Firewall-Regeln optimiert wird (optional)
 
 {{waf-allowlist-setup}}
 
-**Überprüfen des Setups**
+## Überprüfen des Setups
 
 Stellen Sie nach Abschluss des Setups sicher, dass Bot-Traffic an Edge Optimize weitergeleitet wird und dass der menschliche Traffic nicht betroffen ist.
 
